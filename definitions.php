@@ -1,7 +1,18 @@
 <link rel="stylesheet" type="text/css" href="master.css">
 <?php
+	function cachezip($remote,$local) {
+		if( file_exists($local) ) {
+			return;
+		}
+		$tmpzip=tempnam(".","");
+		copy($remote,$tmpzip);
+		exec("cd fromStarExec; unzip $tmpzip; cd ..");
+	}
 	function jobid2csv($jobid) {
-		return "fromStarExec/Job" . $jobid . "_info.csv";
+		return "fromStarExec/Job$jobid/Job" . $jobid . "_info.csv";
+	}
+	function jobid2remote($jobid) {
+		return "https://www.starexec.org/starexec/secure/download?type=job&id=$jobid&returnids=true&getcompleted=false";
 	}
 	function jobid2scorefile($jobid) {
 		return "caches/Job" . $jobid . "_score.csv";
