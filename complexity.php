@@ -129,8 +129,8 @@
 		$score = $solvers[$solver]["score"];
 		echo "  <th><th colspan=5>$score</th>\n";
 		fwrite( $scorefileD, "$solver,$score\n" );
-		fclose( $scorefileD );
 	}
+	fclose( $scorefileD );
 ?>
 </table>
 </body>
