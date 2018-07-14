@@ -101,8 +101,8 @@
 		if( $solver == $lastsolver ) {
 			foreach( $bench as $p ) {
 				echo "  <td>" . $p["result"] . "</td>\n";
-				echo "  <td>" . bound_to_string($p["lower"]) . "</td>\n";
 				echo "  <td>" . bound_to_string($p["upper"]) . "</td>\n";
+				echo "  <td>" . bound_to_string($p["lower"]) . "</td>\n";
 				echo "  <td>" . $p["time"] . "</td>\n";
 				$score = 0;
 				foreach( $bench as $q ) {
