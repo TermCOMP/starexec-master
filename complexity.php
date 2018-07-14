@@ -10,7 +10,7 @@
 
 <table>
 <?php
-	function parse_upper( $string ) {
+	function parse_lower( $string ) {
 		if( preg_match( '/Omega\\(n\\^([0-9]+)\\)/', $string, $matches ) ) {
 			return $matches[1];
 		}
@@ -20,7 +20,7 @@
 		return 1001;
 	}
 
-	function parse_lower( $string ) {
+	function parse_upper( $string ) {
 		if( preg_match( '/O\\(n\\^([0-9]+)\\)/', $string, $matches ) ) {
 			return $matches[1];
 		}
@@ -46,7 +46,7 @@
 		if( preg_match( '/WORST_CASE\\(\\s*(.+)\\s*,\\s*(.+)\\s*\\)/', $string, $matches ) ) {
 			return [ parse_lower($matches[1]), parse_upper($matches[2]) ];
 		}
-		return [0,1000];
+		return [0,1001];
 	}
 
 	function parse_benchmark( $string ) {
@@ -94,8 +94,8 @@
 		$bounds = parse_bounds( $result );
 		$bench[$solver] = [
 			"result" => $result,
-			"upper" => $bounds[0],
-			"lower" => $bounds[1],
+			"lower" => $bounds[0],
+			"upper" => $bounds[1],
 			"time" => parse_time($record[8]) . "/" . parse_time($record[9]),
 		];
 		if( $solver == $lastsolver ) {
