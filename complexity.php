@@ -2,14 +2,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-</head>
-<body>
 <?php
 	include './definitions.php';
 	$jobid = $_GET["id"];
 	$csv = jobid2csv($jobid);
 	$scorefile = jobid2scorefile($jobid);
 ?>
+</head>
+<body>
 
 <table>
 <?php
@@ -88,8 +88,9 @@
 		if( $solver == $firstsolver ) {
 			$bench = [];
 			$benchmark = parse_benchmark( $record[1] );
+			$bmid = $record[2];
 			echo " <tr>\n";
-			echo "  <td>" . $benchmark . "</td>\n";
+			echo "  <td class=benchmark>" . $benchmark . "</td>\n";
 		}
 		$result = $record[11];
 		$bounds = parse_bounds( $result );
