@@ -85,6 +85,7 @@
 
 	foreach( $records as $record ) {
 		$solver = $record[3];
+		$solverid = $record[4];
 		if( $solver == $firstsolver ) {
 			$bench = [];
 			$benchmark = parse_benchmark( $record[1] );
@@ -129,7 +130,7 @@
 	foreach( array_keys($solvers) as $solver ) {
 		$score = $solvers[$solver]["score"];
 		echo "  <th><th colspan=5>$score</th>\n";
-		fwrite( $scorefileD, "$solver,$score\n" );
+		fwrite( $scorefileD, "$solver,$solverid,$score\n" );
 	}
 	fclose( $scorefileD );
 ?>
