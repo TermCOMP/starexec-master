@@ -88,9 +88,9 @@
 		if( $solver == $firstsolver ) {
 			$bench = [];
 			$benchmark = parse_benchmark( $record[1] );
-			$bmid = $record[2];
+			$url = bmid2url( $record[2] );
 			echo " <tr>\n";
-			echo "  <td class=benchmark>" . $benchmark . "</td>\n";
+			echo "  <td class=benchmark><a href='$url'>$benchmark</a></td>\n";
 		}
 		$result = $record[11];
 		$bounds = parse_bounds( $result );
