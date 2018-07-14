@@ -80,6 +80,11 @@
 		$solver = $records[$i][3];
 	} while( $solver != $firstsolver );
 
+	echo " <tr>\n";
+	echo "  <th>benchmark</th>\n";
+	foreach( array_keys($solvers) as $solver ) {
+		echo "  <th colspan=3>$solver</th>\n";
+	}
 	$bench = [];
 
 	foreach( $records as $record ) {
