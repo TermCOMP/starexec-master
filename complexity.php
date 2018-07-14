@@ -42,6 +42,11 @@
 		return $matches[1];
 	}
 
+	function parse_time( $string ) {
+		preg_match( '/([0-9]+\\.[0-9]?[0-9]?).*/', $string, $matches );
+		return $matches[1];
+	}
+
 	$file = new SplFileObject($csv);
 	$file->setFlags( SplFileObject::READ_CSV );
 	$records = [];
@@ -79,7 +84,7 @@
 			"result" => $result,
 			"lower" => $bounds[0],
 			"upper" => $bounds[1],
-			"time" => $record[8] . "/" . $record[9],
+			"time" => parse_time($record[8]) . "/" . parse_time($record[9]),
 		];
 		if( $solver == $lastsolver ) {
 			foreach( $bench as $p ) {
