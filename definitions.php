@@ -17,6 +17,20 @@
 	function jobid2scorefile($jobid) {
 		return "caches/Job" . $jobid . "_score.csv";
 	}
+	function pairid2remote($pairid) {
+		return "https://www.starexec.org/starexec/secure/details/pair.jsp?id=$pairid";
+	}
+	function result2style($result) {
+		if( $result == -1 ) {
+			return "class=no";
+		} else if( $result == 0 ) {
+			return "class=maybe";
+		} else if ( $result == 1 ) {
+			return "class=yes";
+		} else {
+			return "class=error";
+		}
+	}
 	function parse_benchmark( $string ) {
 		preg_match( '|[^/]*/[^/]*/(.*)$|', $string, $matches );
 		return $matches[1];
