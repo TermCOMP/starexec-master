@@ -85,6 +85,10 @@
 	foreach( array_keys($solvers) as $solver ) {
 		echo "  <th colspan=4>$solver</th>\n";
 	}
+	echo " <tr><th>\n";
+	foreach( array_keys($solvers) as $solver ) {
+		echo "  <th>score<th>upper<th>lower\n";
+	}
 	$bench = [];
 
 	foreach( $records as $record ) {
@@ -123,6 +127,10 @@
 			}
 			echo " </tr>\n";
 		}
+	}
+	echo " <tr>\n";
+	foreach( $solvers as $solver ) {
+		echo "  <th colspan=4>" . $solver["score"] . "</th>\n";
 	}
 ?>
 </table>
