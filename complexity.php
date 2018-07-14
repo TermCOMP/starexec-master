@@ -10,26 +10,38 @@
 
 <table>
 <?php
-	function parse_lower( $string ) {
+	function parse_upper( $string ) {
 		if( preg_match( '/Omega\\(n\\^([0-9]+)\\)/', $string, $matches ) ) {
 			return $matches[1];
 		}
 		if( $string == 'NON_POLY' ) {
-			return 999;
+			return 1000;
 		}
-		return 0;
+		return 1001;
 	}
 
-	function parse_upper( $string ) {
+	function parse_lower( $string ) {
 		if( preg_match( '/O\\(n\\^([0-9]+)\\)/', $string, $matches ) ) {
 			return $matches[1];
 		}
 		if( $string == 'POLY' ) {
 			return 999;
 		}
-		return 1000;
+		return 0;
 	}
 
+	function bound_to_string( $bound ) {
+		if( $bound < 999 ) {
+			return $bound;
+		}
+		if( $bound == 999 ) {
+			return 'Poly';
+		}
+		if( $bound == 1000 ) {
+			return 'NonPoly';
+		}
+		return 'Inf';
+	}
 	function parse_bounds( $string ) {
 		if( preg_match( '/WORST_CASE\\(\\s*(.+)\\s*,\\s*(.+)\\s*\\)/', $string, $matches ) ) {
 			return [ parse_lower($matches[1]), parse_upper($matches[2]) ];
@@ -82,15 +94,15 @@
 		$bounds = parse_bounds( $result );
 		$bench[$solver] = [
 			"result" => $result,
-			"lower" => $bounds[0],
-			"upper" => $bounds[1],
+			"upper" => $bounds[0],
+			"lower" => $bounds[1],
 			"time" => parse_time($record[8]) . "/" . parse_time($record[9]),
 		];
 		if( $solver == $lastsolver ) {
 			foreach( $bench as $p ) {
 				echo "  <td>" . $p["result"] . "</td>\n";
-				echo "  <td>" . $p["upper"] . "</td>\n";
-				echo "  <td>" . $p["lower"] . "</td>\n";
+				echo "  <td>" . bound_to_string($p["lower"]) . "</td>\n";
+				echo "  <td>" . bound_to_string($p["upper"]) . "</td>\n";
 				echo "  <td>" . $p["time"] . "</td>\n";
 				$score = 0;
 				foreach( $bench as $q ) {
