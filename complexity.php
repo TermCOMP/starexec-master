@@ -17,7 +17,7 @@
 		if( $string == 'NON_POLY' ) {
 			return 1000;
 		}
-		return 1001;
+		return 0;
 	}
 
 	function parse_upper( $string ) {
@@ -27,7 +27,7 @@
 		if( $string == 'POLY' ) {
 			return 999;
 		}
-		return 0;
+		return 1001;
 	}
 
 	function bound_to_string( $bound ) {
@@ -83,7 +83,7 @@
 	echo " <tr>\n";
 	echo "  <th>benchmark</th>\n";
 	foreach( array_keys($solvers) as $solver ) {
-		echo "  <th colspan=3>$solver</th>\n";
+		echo "  <th colspan=4>$solver</th>\n";
 	}
 	$bench = [];
 
@@ -106,9 +106,6 @@
 		if( $solver == $lastsolver ) {
 			foreach( $bench as $p ) {
 //				echo "  <td>" . $p["result"] . "</td>\n";
-				echo "  <td>" . bound_to_string($p["lower"]) . "</td>\n";
-				echo "  <td>" . bound_to_string($p["upper"]) . "</td>\n";
-				echo "  <td>" . $p["time"] . "</td>\n";
 				$score = 0;
 				foreach( $bench as $q ) {
 					if( $p["upper"] < $q["upper"] ) {
@@ -118,8 +115,11 @@
 						$score++;
 					}
 				}
-				echo "  <td>" . $score . "</td>\n";
 				$solvers[$solver]["score"] += $score;
+				echo "  <td>" . $score . "</td>\n";
+				echo "  <td>" . bound_to_string($p["lower"]) . "</td>\n";
+				echo "  <td>" . bound_to_string($p["upper"]) . "</td>\n";
+				echo "  <td>" . $p["time"] . "</td>\n";
 			}
 			echo " </tr>\n";
 		}
