@@ -109,7 +109,8 @@
 			"cpu" => parse_time($record[8]),
 		];
 		if( $solver == $lastsolver ) {
-			foreach( $bench as $p ) {
+			foreach( array_keys($bench) as $myname ) {
+				$p = $bench[$myname];
 //				echo "  <td>" . $p["result"] . "</td>\n";
 				$score = 0;
 				foreach( $bench as $q ) {
@@ -120,7 +121,7 @@
 						$score++;
 					}
 				}
-				$solvers[$solver]["score"] += $score;
+				$solvers[$myname]["score"] += $score;
 				echo "  <td>" . $score . "</td>\n";
 				echo "  <td>" . bound_to_string($p["lower"]) . "</td>\n";
 				echo "  <td>" . bound_to_string($p["upper"]) . "</td>\n";
