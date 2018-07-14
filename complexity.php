@@ -87,7 +87,7 @@
 	}
 	echo " <tr><th>\n";
 	foreach( array_keys($solvers) as $solver ) {
-		echo "  <th>score<th>upper<th>lower<th>cpu<th>time\n";
+		echo "  <th>score<th>lower<th>upper<th>cpu<th>time\n";
 	}
 	$bench = [];
 
