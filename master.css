@@ -1,0 +1,53 @@
+table {
+	border-spacing: 0pt 0pt;
+}
+td {
+	border: .5px solid silver;
+	text-align:center;
+}
+td, a {
+	text-decoration:none;
+}
+.category {
+	text-align:left;
+}
+.benchmark {
+	text-align:left;
+}
+.ranking {
+	text-align:left;
+}
+.score {
+	font-size:small;
+}
+.starexecid {
+	font-size:small;
+}
+.complete {
+	background-color: lightcyan;
+}
+.yes, .yes a {
+	background-color: mediumspringgreen;
+	white-space: nowrap;
+	color: black;
+}
+.no, .no a {
+	background-color: green;
+	white-space: nowrap;
+	color: white;
+}
+.maybe, .maybe a {
+	white-space: nowrap;
+	background-color: khaki;
+	color: black;
+}
+.error, .error a {
+	background-color: lightcoral; 
+}
+.time {
+	color: gray;
+}
+.conflict, .conflict .benchmark {
+	background-color: red;
+	color: white;
+}
