@@ -83,11 +83,11 @@
 	echo " <tr>\n";
 	echo "  <th>benchmark</th>\n";
 	foreach( array_keys($solvers) as $solver ) {
-		echo "  <th colspan=4>$solver</th>\n";
+		echo "  <th colspan=5>$solver</th>\n";
 	}
 	echo " <tr><th>\n";
 	foreach( array_keys($solvers) as $solver ) {
-		echo "  <th>score<th>upper<th>lower\n";
+		echo "  <th>score<th>upper<th>lower<th>cpu<th>time\n";
 	}
 	$bench = [];
 
@@ -105,7 +105,8 @@
 			"result" => $result,
 			"lower" => $bounds[0],
 			"upper" => $bounds[1],
-			"time" => parse_time($record[8]) . "/" . parse_time($record[9]),
+			"time" => parse_time($record[9]);
+			"cpu" => parse_time($record[8]),
 		];
 		if( $solver == $lastsolver ) {
 			foreach( $bench as $p ) {
@@ -123,6 +124,7 @@
 				echo "  <td>" . $score . "</td>\n";
 				echo "  <td>" . bound_to_string($p["lower"]) . "</td>\n";
 				echo "  <td>" . bound_to_string($p["upper"]) . "</td>\n";
+				echo "  <td>" . $p["cpu"] . "</td>\n";
 				echo "  <td>" . $p["time"] . "</td>\n";
 			}
 			echo " </tr>\n";
@@ -130,7 +132,7 @@
 	}
 	echo " <tr>\n";
 	foreach( $solvers as $solver ) {
-		echo "  <th colspan=4>" . $solver["score"] . "</th>\n";
+		echo "  <th colspan=5>" . $solver["score"] . "</th>\n";
 	}
 ?>
 </table>
