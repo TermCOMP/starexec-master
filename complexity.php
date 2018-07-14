@@ -5,9 +5,10 @@
 </head>
 <body>
 <?php
+	include './definitions.php';
 	$jobid = $_GET["id"];
-	$csv = "fromStarExec/Job" . $jobid . "_info.csv";
-	$scorefile = "caches/Job" . $jobid . "_score.csv";
+	$csv = jobid2csv($jobid);
+	$scorefile = jobid2scorefile($jobid);
 ?>
 
 <table>
@@ -50,17 +51,6 @@
 		}
 		return [0,1001];
 	}
-
-	function parse_benchmark( $string ) {
-		preg_match( '|[^/]*/[^/]*/(.*)$|', $string, $matches );
-		return $matches[1];
-	}
-
-	function parse_time( $string ) {
-		preg_match( '/([0-9]+\\.[0-9]?[0-9]?).*/', $string, $matches );
-		return $matches[1];
-	}
-
 	$file = new SplFileObject($csv);
 	$file->setFlags( SplFileObject::READ_CSV );
 	$records = [];
