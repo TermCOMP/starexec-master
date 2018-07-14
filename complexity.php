@@ -105,7 +105,7 @@
 			"result" => $result,
 			"lower" => $bounds[0],
 			"upper" => $bounds[1],
-			"time" => parse_time($record[9]);
+			"time" => parse_time($record[9]),
 			"cpu" => parse_time($record[8]),
 		];
 		if( $solver == $lastsolver ) {
