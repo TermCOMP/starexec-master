@@ -1,5 +1,6 @@
 table {
 	border-spacing: 0pt 0pt;
+	width: 100%;
 }
 td {
 	border: .5px solid silver;
@@ -43,6 +44,43 @@ td, a {
 }
 .error, .error a {
 	background-color: lightcoral; 
+}
+.low1, .low1 a {
+	background-color: #60C060;
+	white-space: nowrap;
+}
+.low2, .low2 a {
+	background-color: #60A060;
+	white-space: nowrap;
+}
+.low3, .low3 a {
+	background-color: #40A040;
+	white-space: nowrap;
+}
+.lowNP, .lowNP a {
+	background-color: #208020;
+	color: white;
+	white-space: nowrap;
+}
+.up0, .up0 a {
+	background-color: #00FFF0;
+	white-space: nowrap;
+}
+.up1, .up1 a {
+	background-color: #20FFC0;
+	white-space: nowrap;
+}
+.up2, .up2 a {
+	background-color: #A0E0B0;
+	white-space: nowrap;
+}
+.up3, .up3 a {
+	background-color: #D0FFF0;
+	white-space: nowrap;
+}
+.upP, .upP a {
+	background-color: #C0F0C0;
+	white-space: nowrap;
 }
 .time {
 	color: gray;

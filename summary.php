@@ -87,7 +87,7 @@
 				}
 			}
 		}
-		arsort($row);
+		uasort($row, function($s,$t) { return $s["score"] < $t["score"] ? 1 : -1; } );
 		echo " <tr class=complete>\n";
 		echo "  <td class=category><a href='$type.php?id=$job'>$catname</a>\n";
 		echo "  <td><a class=starexecid href='".jobid2url($job)."'>$job</a>\n  ";

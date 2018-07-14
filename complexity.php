@@ -34,16 +34,51 @@
 	}
 
 	function bound_to_string( $bound ) {
+		if( $bound == 0 ) {
+			return "1";
+		}
 		if( $bound < 999 ) {
-			return $bound;
+			return "n<sup>$bound</sup>";
 		}
 		if( $bound == 999 ) {
-			return 'Poly';
+			return 'n<sup>?</sup>';
 		}
 		if( $bound == 1000 ) {
 			return 'NonPoly';
 		}
-		return 'Inf';
+		return '&infin;';
+	}
+	function lower2style( $bound ) {
+		if( $bound == 0 ) {
+			return "class=maybe";
+		} else if( $bound == 1 ) {
+			return "class=low1";
+		} else if( $bound == 2 ) {
+			return "class=low2";
+		} else if( $bound < 999 ) {
+			return "class=low3";
+		} else if( $bound == 1000 ) {
+			return "class=lowNP";
+		} else {
+			return "class=error";
+		}	
+	}
+	function upper2style( $bound ) {
+		if( $bound == 0 ) {
+			return "class=up0";
+		} else if( $bound == 1 ) {
+			return "class=up1";
+		} else if( $bound == 2 ) {
+			return "class=up2";
+		} else if( $bound < 999 ) {
+			return "class=up3";
+		} else if( $bound == 999 ) {
+			return "class=upP";
+		} else if( $bound == 1000 ) {
+			return "class=yes";
+		} else {
+			return "class=maybe";
+		}
 	}
 	function parse_bounds( $string ) {
 		if( preg_match( '/WORST_CASE\\(\\s*(.+)\\s*,\\s*(.+)\\s*\\)/', $string, $matches ) ) {
@@ -75,11 +110,11 @@
 	echo " <tr>\n";
 	echo "  <th>benchmark</th>\n";
 	foreach( array_keys($solvers) as $solver ) {
-		echo "  <th colspan=5>$solver</th>\n";
+		echo "  <th colspan=4>$solver</th>\n";
 	}
 	echo " <tr><th>\n";
 	foreach( array_keys($solvers) as $solver ) {
-		echo "  <th>score<th>lower<th>upper<th>cpu<th>time\n";
+		echo "  <th>score<th>lower<th>upper<th>time\n";
 	}
 	$bench = [];
 
@@ -115,12 +150,10 @@
 					}
 				}
 				$solvers[$myname]["score"] += $score;
-//				echo "  <td>" . $p["result"] . "</td>\n";
 				echo "  <td>" . $score . "</td>\n";
-				echo "  <td>" . bound_to_string($p["lower"]) . "</td>\n";
-				echo "  <td>" . bound_to_string($p["upper"]) . "</td>\n";
-				echo "  <td>" . $p["cpu"] . "</td>\n";
-				echo "  <td>" . $p["time"] . "</td>\n";
+				echo "  <td " . lower2style($p["lower"]) . ">" . bound_to_string($p["lower"]) . "</td>\n";
+				echo "  <td " . upper2style($p["upper"]) . ">" . bound_to_string($p["upper"]) . "</td>\n";
+				echo "  <td class=time>" . $p["cpu"] . "/" . $p["time"] . "</td>\n";
 			}
 			echo " </tr>\n";
 		}
@@ -129,7 +162,7 @@
 	$scorefileD = fopen($scorefile,"w");
 	foreach( array_keys($solvers) as $solver ) {
 		$score = $solvers[$solver]["score"];
-		echo "  <th><th colspan=5>$score</th>\n";
+		echo "  <th><th colspan=4>$score</th>\n";
 		fwrite( $scorefileD, "$solver,$solverid,$score\n" );
 	}
 	fclose( $scorefileD );
