@@ -5,7 +5,9 @@
 </head>
 <body>
 <?php
-	$csv = "Job30091_info.csv";
+	$jobid = $_GET["id"];
+	$csv = "fromStarExec/Job" . $jobid . "_info.csv";
+	$scorefile = "caches/Job" . $jobid . "_score.csv";
 ?>
 
 <table>
@@ -111,7 +113,6 @@
 		if( $solver == $lastsolver ) {
 			foreach( array_keys($bench) as $myname ) {
 				$p = $bench[$myname];
-//				echo "  <td>" . $p["result"] . "</td>\n";
 				$score = 0;
 				foreach( $bench as $q ) {
 					if( $p["upper"] < $q["upper"] ) {
@@ -122,6 +123,7 @@
 					}
 				}
 				$solvers[$myname]["score"] += $score;
+//				echo "  <td>" . $p["result"] . "</td>\n";
 				echo "  <td>" . $score . "</td>\n";
 				echo "  <td>" . bound_to_string($p["lower"]) . "</td>\n";
 				echo "  <td>" . bound_to_string($p["upper"]) . "</td>\n";
@@ -132,8 +134,12 @@
 		}
 	}
 	echo " <tr>\n";
-	foreach( $solvers as $solver ) {
-		echo "  <th colspan=5>" . $solver["score"] . "</th>\n";
+	$scorefileD = fopen($scorefile,"w");
+	foreach( array_keys($solvers) as $solver ) {
+		$score = $solvers[$solver]["score"];
+		echo "  <th><th colspan=5>$score</th>\n";
+		fwrite( $scorefileD, "$solver,$score\n" );
+		fclose( $scorefileD );
 	}
 ?>
 </table>
