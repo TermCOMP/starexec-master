@@ -9,17 +9,23 @@ h2 {
 	font-weight:normal;
 }
 table {
-	border-spacing: 0pt 0pt;
 	width: 100%;
+	border-spacing: 0pt 0pt;
+	border-collapse: collapse;
+}
+th a {
+	color: black;
+	text-decoration: none;
 }
 td {
-	border: .5px solid silver;
+	border: .1pt solid silver;
 	text-align: center;
 }
 td a {
 	text-decoration: none;
 }
 .category {
+	white-space: nowrap;
 	text-align: left;
 }
 .benchmark {
@@ -107,12 +113,11 @@ td a {
 	background-color: #C0F0C0;
 	color: black;
 }
-.time, .time a {
-	color: gray;
+.time {
 	width: 1%;
 }
-.time th {
-	color: black;
+.time td, .time a {
+	color: gray;
 	width: 1%;
 }
 .no.time {

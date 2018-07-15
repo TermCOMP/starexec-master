@@ -60,7 +60,7 @@
 	echo " <tr>\n";
 	echo "  <th>benchmark</th>\n";
 	foreach( array_keys($solvers) as $solver ) {
-		echo "  <th>$solver</th>\n";
+		echo "  <th><a href='". solverid2url($solvers[$solver]['id']) . "'</a>$solver</a>\n";
 	}
 	echo " <tr><th>\n";
 	$bench = [];
@@ -75,11 +75,11 @@
 		$status = $record[7];
 		$result = str2result($record[11]);
 		$bench[$solver] = [
-			"status" => $status,
-			"result" => $result,
-			"time" => parse_time($record[9]),
-			"cpu" => parse_time($record[8]),
-			"pair" => $record[0],
+			'status' => $status,
+			'result' => $result,
+			'time' => parse_time($record[9]),
+			'cpu' => parse_time($record[8]),
+			'pair' => $record[0],
 		];
 		if( $solver == $lastsolver ) {
 			$conflict = false;

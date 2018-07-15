@@ -54,15 +54,15 @@ $competitions = [
 			
 		],
 		"Complexity Analysis" => [
-			"ITS Complexity" =>
+			"Complexity: ITS" =>
 				[ "type" => "complexity", "job" => 30054 ],
-			"C Integer Programs Complexity" =>
+			"Complexity: C Integer" =>
 				[ "type" => "complexity", "job" => 30055 ],
-			"Runtime Complexity Full Rewriting" =>
+			"Runtime Complexity: TRS" =>
 				[ "type" => "complexity", "job" => 30091 ],
-			"Runtime Complexity Innermost Rewriting" =>
+			"Runtime Complexity: TRS Innermost" =>
 				[ "type" => "complexity", "job" => 30092 ],
-			"Runtime Complexity Innermost Rewriting Certified" =>
+			"Runtime Complexity: TRS Innermost Certified" =>
 				[ "type" => "complexity", "job" => 30094 ],
 		],
 		"Demonstration" => [
@@ -71,11 +71,11 @@ $competitions = [
 			"TRS Innermost Certified" => [ "type" => "termination", "job" => 30097 ],
 			"HRS" => [ "type" => "termination", "job" => 30099 ],
 			"Java Bytecode" => [ "type" => "termination", "job" => 30100 ],
-			"Logic Programming" => [ "type" => "termination", "job" => 30101 ],
-			"Functional Programming" => [ "type" => "termination", "job" => 30102 ],
-			"Derivational Complexity - TRS" => [ "type" => "complexity", "job" => 30103 ],
-			"Derivational Complexity - TRS Certified" => [ "type" => "complexity", "job" => 30104 ],
-			"Runtime Complexity - TRS Certified" => [ "type" => "complexity", "job" => 30105 ],
+			"PROLOG" => [ "type" => "termination", "job" => 30101 ],
+			"Haskell" => [ "type" => "termination", "job" => 30102 ],
+			"Derivational Complexity: TRS" => [ "type" => "complexity", "job" => 30103 ],
+			"Derivational Complexity: TRS Certified" => [ "type" => "complexity", "job" => 30104 ],
+			"Runtime Complexity: TRS Certified" => [ "type" => "complexity", "job" => 30105 ],
 		],
 	],
 ]
