@@ -14,28 +14,39 @@ table {
 }
 td {
 	border: .5px solid silver;
-	text-align:center;
+	text-align: center;
 }
-td, a {
-	text-decoration:none;
+td a {
+	text-decoration: none;
 }
 .category {
-	text-align:left;
+	text-align: left;
 }
 .benchmark {
-	text-align:left;
+	text-align: left;
+	width: 50%;
 }
 .ranking {
-	text-align:left;
+	text-align: left;
+	width: 75%;
 }
 .score {
-	font-size:small;
+	font-size: small;
 }
 .starexecid {
-	font-size:small;
+	color: gray;
+	font-size: x-small;
+	vertical-align: bottom;
 }
 .complete {
 	background-color: #D0FFD0;
+}
+.incomplete {
+	background-color: antiquewhite;
+}
+.timeout, .timeout a {
+	background-color: darksalmon;
+	color: black;
 }
 .yes, .yes a {
 	background-color: mediumspringgreen;
@@ -53,48 +64,60 @@ td, a {
 	color: black;
 }
 .error, .error a {
-	background-color: lightcoral; 
+	background-color: red;
+	color: white; 
+}
+.starexecbug, .starexecbug a {
+	background-color: gray; 
+	color: white;
 }
 .low1, .low1 a {
 	background-color: #60C060;
-	white-space: nowrap;
+	color: black;
 }
 .low2, .low2 a {
 	background-color: #60A060;
-	white-space: nowrap;
+	color: black;
 }
 .low3, .low3 a {
 	background-color: #40A040;
-	white-space: nowrap;
+	color: black;
 }
 .lowNP, .lowNP a {
 	background-color: #208020;
 	color: white;
-	white-space: nowrap;
 }
 .up0, .up0 a {
 	background-color: #00FFF0;
-	white-space: nowrap;
+	color: black;
 }
 .up1, .up1 a {
-	background-color: #20FFC0;
-	white-space: nowrap;
+	background-color: #20FFE0;
+	color: black;
 }
 .up2, .up2 a {
-	background-color: #A0E0B0;
-	white-space: nowrap;
+	background-color: #80FFB0;
+	color: black;
 }
 .up3, .up3 a {
-	background-color: #D0FFF0;
-	white-space: nowrap;
+	background-color: #B0D0B0;
+	color: black;
 }
 .upP, .upP a {
 	background-color: #C0F0C0;
-	white-space: nowrap;
+	color: black;
 }
-.time {
+.time, .time a {
 	color: gray;
+	width: 1%;
 }
+.time th {
+	color: black;
+	width: 1%;
+}
+.no.time {
+	color: white;
+}	
 .conflict, .conflict .benchmark {
 	background-color: red;
 	color: white;

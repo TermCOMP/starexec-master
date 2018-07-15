@@ -31,9 +31,31 @@
 			return "class=error";
 		}
 	}
+	function status2style($status) {
+		if( $status == 'complete' ) {
+			return 'class=complete';
+		} else if( $status == 'incomplete' ) {
+			return 'class=incomplete';
+		} else if( substr($status,0,7) == 'timeout' || $status == 'memout' ) {
+			return 'class=timeout';
+		} else if( $status == 'run script error' ) {
+			return 'class=starexecbug';
+		} else {
+			return 'class=error';
+		}
+	}
+	function status2str($status) {
+		if( $status == 'run script error' ) {
+			return 'StarExec error';
+		} else {
+			return $status;
+		}
+	}
 	function parse_benchmark( $string ) {
 		preg_match( '|[^/]*/[^/]*/(.*)$|', $string, $matches );
-		return $matches[1];
+		$ret = $matches[1];
+		$ret = str_replace( '/', '/<wbr>',$ret );
+		return $ret;
 	}
 	function parse_time( $string ) {
 		preg_match( '/([0-9]+\\.[0-9]?[0-9]?).*/', $string, $matches );
@@ -47,5 +69,8 @@
 	}
 	function solverid2url($solverid) {
 		return "https://www.starexec.org/starexec/secure/details/solver.jsp?id=$solverid";
+	}
+	function filllink($url) {
+		return "<a href='$url' style='width:100%; height:100%; display:block;'>";
 	}
 ?>

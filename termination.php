@@ -72,8 +72,10 @@
 			$benchmark = parse_benchmark( $record[1] );
 			$url = bmid2url($record[2]);
 		}
+		$status = $record[7];
 		$result = str2result($record[11]);
 		$bench[$solver] = [
+			"status" => $status,
 			"result" => $result,
 			"time" => parse_time($record[9]),
 			"cpu" => parse_time($record[8]),
@@ -95,10 +97,15 @@
 			echo "  <td class=benchmark><a href='$url'>$benchmark</a></td>\n";
 			foreach( array_keys($bench) as $myname ) {
 				$p = $bench[$myname];
-				$result = $p["result"];
-				$url = pairid2remote($p["pair"]);
-				echo "  <td " . result2style($result) . "><a href='$url'>" . result2str($result);
-				echo "  <span class=time>" . $p["cpu"] . "/" . $p["time"] . "</span></a>";
+				$status = $p['status'];
+				$result = $p['result'];
+				$a = filllink(pairid2remote($p['pair']));
+				if( $status == 'complete' ) {
+					echo "  <td " . result2style($result) . ">$a" . result2str($result);
+					echo "  <span class=time>" . $p["cpu"] . "/" . $p["time"] . "</span></a>\n";
+				} else {
+					echo "  <td " . status2style($status) . ">$a" . status2str($status) . "</a>\n";
+				}
 			}
 			echo " </tr>\n";
 		}

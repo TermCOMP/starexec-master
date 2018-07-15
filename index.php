@@ -7,9 +7,11 @@
 ?>
 </head>
 <body>
-<h1>Termination Competition 2018</h1>
 <?php
-	$competition = [
+$competitions = [
+2018 => [
+	"name" => "Termination Competition 2018",
+	"mcats" => [
 		"Termination of Rewriting" => [
 			"TRS Standard" =>
 				[ "type" => "termination", "job" => 30034 ],
@@ -63,15 +65,34 @@
 			"Runtime Complexity Innermost Rewriting Certified" =>
 				[ "type" => "complexity", "job" => 30094 ],
 		],
-	];
+		"Demonstration" => [
+			"TRS Outermost" => [ "type" => "termination", "job" => 30096 ],
+			"TRS Outermost Certified" => [ "type" => "termination", "job" => 30098 ],
+			"TRS Innermost Certified" => [ "type" => "termination", "job" => 30097 ],
+			"HRS" => [ "type" => "termination", "job" => 30099 ],
+			"Java Bytecode" => [ "type" => "termination", "job" => 30100 ],
+			"Logic Programming" => [ "type" => "termination", "job" => 30101 ],
+			"Functional Programming" => [ "type" => "termination", "job" => 30102 ],
+			"Derivational Complexity - TRS" => [ "type" => "complexity", "job" => 30103 ],
+			"Derivational Complexity - TRS Certified" => [ "type" => "complexity", "job" => 30104 ],
+			"Runtime Complexity - TRS Certified" => [ "type" => "complexity", "job" => 30105 ],
+		],
+	],
+]
+];
 
-	foreach( array_keys($competition) as $mcatname ) {
+	$competition = $competitions[2018];
+	$mcats = $competition["mcats"];
+
+	echo "<h1>" . $competition["name"] . "</h1>";
+
+	foreach( array_keys($mcats) as $mcatname ) {
 	echo "<h2>$mcatname</h2>\n";
-	$mcat = $competition[$mcatname];
+	$mcat = $mcats[$mcatname];
 	$table = [];
 	$tools = [];
 	echo "<table>\n";
-	echo " <tr><th>category<th>id<th class=ranking>ranking\n";
+	echo " <tr><th>category<th class=ranking>ranking\n";
 	foreach( array_keys($mcat) as $catname ) {
 		$job = $mcat[$catname]["job"];
 		$type = $mcat[$catname]["type"];
@@ -89,8 +110,9 @@
 		}
 		uasort($row, function($s,$t) { return $s["score"] < $t["score"] ? 1 : -1; } );
 		echo " <tr class=complete>\n";
-		echo "  <td class=category><a href='$type.php?id=$job'>$catname</a>\n";
-		echo "  <td><a class=starexecid href='".jobid2url($job)."'>$job</a>\n  ";
+		echo "  <td class=category>\n";
+		echo "   <a href='$type.php?id=$job'>$catname</a>\n";
+		echo "   <a class=starexecid href='".jobid2url($job)."'>$job</a></sub>\n";
 		echo "  <td class=ranking>";
 		foreach( array_keys($row) as $tool) {
 			$score = $row[$tool]["score"];

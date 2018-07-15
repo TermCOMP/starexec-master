@@ -6,6 +6,7 @@
 	include './definitions.php';
 	$jobid = $_GET["id"];
 	$csv = jobid2csv($jobid);
+	cachezip(jobid2remote($jobid),$csv);
 	$scorefile = jobid2scorefile($jobid);
 ?>
 </head>
@@ -13,7 +14,7 @@
 
 <table>
 <?php
-	function parse_lower( $string ) {
+	function str2lower( $string ) {
 		if( preg_match( '/Omega\\(n\\^([0-9]+)\\)/', $string, $matches ) ) {
 			return $matches[1];
 		}
@@ -23,7 +24,7 @@
 		return 0;
 	}
 
-	function parse_upper( $string ) {
+	function str2upper( $string ) {
 		if( preg_match( '/O\\(n\\^([0-9]+)\\)/', $string, $matches ) ) {
 			return $matches[1];
 		}
@@ -33,7 +34,7 @@
 		return 1001;
 	}
 
-	function bound_to_string( $bound ) {
+	function bound2str( $bound ) {
 		if( $bound == 0 ) {
 			return "1";
 		}
@@ -80,9 +81,9 @@
 			return "class=maybe";
 		}
 	}
-	function parse_bounds( $string ) {
+	function str2bounds( $string ) {
 		if( preg_match( '/WORST_CASE\\(\\s*(.+)\\s*,\\s*(.+)\\s*\\)/', $string, $matches ) ) {
-			return [ parse_lower($matches[1]), parse_upper($matches[2]) ];
+			return [ str2lower($matches[1]), str2upper($matches[2]) ];
 		}
 		return [0,1001];
 	}
@@ -114,7 +115,7 @@
 	}
 	echo " <tr><th>\n";
 	foreach( array_keys($solvers) as $solver ) {
-		echo "  <th>score<th>lower<th>upper<th>time\n";
+		echo "  <th>score<th>lower<th>upper<th class=time>time\n";
 	}
 	$bench = [];
 
@@ -129,13 +130,15 @@
 			echo "  <td class=benchmark><a href='$url'>$benchmark</a></td>\n";
 		}
 		$result = $record[11];
-		$bounds = parse_bounds( $result );
+		$bounds = str2bounds( $result );
 		$bench[$solver] = [
-			"result" => $result,
-			"lower" => $bounds[0],
-			"upper" => $bounds[1],
-			"time" => parse_time($record[9]),
-			"cpu" => parse_time($record[8]),
+			'id' => $record[0],
+			'status' => $record[7],
+			'result' => $result,
+			'lower' => $bounds[0],
+			'upper' => $bounds[1],
+			'time' => parse_time($record[9]),
+			'cpu' => parse_time($record[8]),
 		];
 		if( $solver == $lastsolver ) {
 			foreach( array_keys($bench) as $myname ) {
@@ -149,11 +152,20 @@
 						$score++;
 					}
 				}
-				$solvers[$myname]["score"] += $score;
-				echo "  <td>" . $score . "</td>\n";
-				echo "  <td " . lower2style($p["lower"]) . ">" . bound_to_string($p["lower"]) . "</td>\n";
-				echo "  <td " . upper2style($p["upper"]) . ">" . bound_to_string($p["upper"]) . "</td>\n";
-				echo "  <td class=time>" . $p["cpu"] . "/" . $p["time"] . "</td>\n";
+				$a = filllink( pairid2remote($p['id']) );
+				$lower = $p['lower'];
+				$upper = $p['upper'];
+				$status = $p['status']; 
+				if( $status == 'complete' ) {
+					$solvers[$myname]['score'] += $score;
+					echo "  <td>" . $score . "\n";
+					echo "  <td " . lower2style($lower) . ">$a" . bound2str($lower) . "</a>\n";
+					echo "  <td " . upper2style($upper) . ">$a" . bound2str($upper) . "</a>\n";
+					echo "  <td class=time>$a" . $p["cpu"] . "/" . $p['time'] . "</a>\n";
+				} else {
+					echo "  <td colspan=4 ". status2style($status) . ">$a" .
+						status2str($status) . "</a>\n";
+				}
 			}
 			echo " </tr>\n";
 		}
