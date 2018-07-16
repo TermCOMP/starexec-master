@@ -99,12 +99,14 @@
 				$p = $bench[$myname];
 				$status = $p['status'];
 				$result = $p['result'];
-				$a = filllink(pairid2remote($p['pair']));
+				$url = pairid2remote($p['pair']);
 				if( $status == 'complete' ) {
-					echo "  <td " . result2style($result) . ">$a" . result2str($result);
-					echo "  <span class=time>" . $p["cpu"] . "/" . $p["time"] . "</span></a>\n";
+					echo "  <td " . result2style($result) . "><a href='$url' class=fill>" .
+						result2str($result) . "\n   <span class=time>" .
+						$p["cpu"] . "/" . $p["time"] . "</span></a>\n";
 				} else {
-					echo "  <td " . status2style($status) . ">$a" . status2str($status) . "</a>\n";
+					echo "  <td " . status2style($status) . "><a href='$url' class=fill>" .
+						status2str($status) . "</a>\n";
 				}
 			}
 			echo " </tr>\n";

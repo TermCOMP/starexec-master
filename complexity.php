@@ -152,7 +152,7 @@
 						$score++;
 					}
 				}
-				$a = filllink( pairid2remote($p['id']) );
+				$a = "<a href='". pairid2remote($p['id']) . "' class=fill>";
 				$lower = $p['lower'];
 				$upper = $p['upper'];
 				$status = $p['status']; 

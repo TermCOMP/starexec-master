@@ -70,7 +70,4 @@
 	function solverid2url($solverid) {
 		return "https://www.starexec.org/starexec/secure/details/solver.jsp?id=$solverid";
 	}
-	function filllink($url) {
-		return "<a href='$url' style='width:100%; height:100%; display:block;'>";
-	}
 ?>
