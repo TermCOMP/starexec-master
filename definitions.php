@@ -34,7 +34,7 @@
 	function status2style($status) {
 		if( $status == 'complete' ) {
 			return 'class=complete';
-		} else if( $status == 'incomplete' ) {
+		} else if( $status == 'incomplete' || $status == 'paused' || $status == 'pending submission' ) {
 			return 'class=incomplete';
 		} else if( substr($status,0,7) == 'timeout' || $status == 'memout' ) {
 			return 'class=timeout';
