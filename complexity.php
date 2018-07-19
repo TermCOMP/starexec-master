@@ -143,12 +143,14 @@
 		if( $solver == $lastsolver ) {
 			foreach( array_keys($bench) as $myname ) {
 				$p = $bench[$myname];
+				$upper = $p['upper'];
+				$lower = $p['lower'];
 				$score = 0;
 				foreach( $bench as $q ) {
-					if( $p["upper"] < $q["upper"] ) {
+					if( $upper < 1000 && $upper <= $q['upper'] ) {
 						$score++;
 					}
-					if( $p["lower"] > $q["lower"] ) {
+					if( $lower > 0 && $lower >= $q['lower'] ) {
 						$score++;
 					}
 				}
