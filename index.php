@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <?php
@@ -72,26 +72,30 @@ $competitions = [
 	foreach( $cats as $cat ) {
 		$catname = $cat[0];
 		$type = $cat[1];
-		$job = $cat[2];
+		$jobid = $cat[2];
 		$row = [];
-		// creating job specific php file
-		$jobphp = 'caches/'.$type.'_'.$job.'.php';
-		if( true || ! file_exists($jobphp) ) {
-			$file = fopen($jobphp,'w');
-			fwrite( $file,
+		// if job html exists, use it
+		$jobpath = 'caches/'.$type.'_'.$jobid.'.html';
+		if( ! file_exists($jobpath) ) {
+			// creating job specific php file
+			$jobpath = 'caches/'.$type.'_'.$jobid.'.php';
+			if( ! file_exists($jobpath) ) {
+				$file = fopen($jobpath,'w');
+				fwrite( $file,
 '<?php
 	$competitionname = '. str2str($competition['name']) . ';
 	$jobname = ' . str2str($catname) . ';
-	$jobid = ' . $job . ';
+	$jobid = ' . $jobid . ';
 	chdir("..");
 	include \'' . type2php($type) .'\';
 ?>'
-			); 
-			fclose($file);
+				); 
+				fclose($file);
+			}
 		}
 
 		// checking cached score file and making ranking
-		$fname = jobid2scorefile($job); 
+		$fname = jobid2scorefile($jobid); 
 		if( file_exists($fname) ) {
 			$file = new SplFileObject($fname);
 			$file->setFlags( SplFileObject::READ_CSV );
@@ -105,8 +109,8 @@ $competitions = [
 		uasort($row, function($s,$t) { return $s["score"] < $t["score"] ? 1 : -1; } );
 		echo " <tr class=complete>\n";
 		echo "  <td class=category>\n";
-		echo "   <a href='$jobphp'>$catname</a>\n";
-		echo "   <a class=starexecid href='".jobid2url($job)."'>$job</a></sub>\n";
+		echo "   <a href='$jobpath'>$catname</a>\n";
+		echo "   <a class=starexecid href='".jobid2url($jobid)."'>$jobid</a></sub>\n";
 		echo "  <td class=ranking>";
 		foreach( array_keys($row) as $tool) {
 			$score = $row[$tool]["score"];
