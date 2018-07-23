@@ -82,16 +82,17 @@
 		$jobid = $_GET['id'];
 		$jobname = $_GET['name'];
 	}
+	if( $jobid == NULL ) {
+		echo "</head>\n</html>\n";
+		exit('no job to present');
+	}
 	$csv = jobid2csv($jobid);
 	cachezip(jobid2remote($jobid),$csv);
 	$scorefile = jobid2scorefile($jobid);
-	echo "<title>$jobname</title>";
-?>
-</head>
-<body>
-
-<?php
-	echo "<h1>$jobname</h1>";
+	echo "<title>$jobname</title>\n";
+	echo "</head>\n";
+	echo "<body>\n";
+	echo "<h1>$jobname</h1>\n";
 	echo "<table>\n";
 	$file = new SplFileObject($csv);
 	$file->setFlags( SplFileObject::READ_CSV );

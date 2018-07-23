@@ -5,17 +5,10 @@
 <?php
 	include './definitions.php';
 	
-	if( $jobid == NULL ) {
-		$jobid = $_GET["id"];
-	}
-	$csv = jobid2csv($jobid);
-	cachezip(jobid2remote($jobid),$csv);
-	$scorefile = jobid2scorefile($jobid);
-
 	function str2result($str) {
-		if( $str == "YES" ) {
+		if( $str == 'YES' ) {
 			return 1;
-		} else if( $str == "NO" ) {
+		} else if( $str == 'NO' ) {
 			return -1;
 		} else {
 			return 0;
@@ -23,18 +16,28 @@
 	}
 	function result2str($result) {
 		if( $result == -1 ) {
-			return "NO";
+			return 'NO';
 		} else if( $result == 1 ) {
-			return "YES";
+			return 'YES';
 		} else {
-			return "MAYBE";
+			return 'MAYBE';
 		}
 	}
-?>
-</head>
-<body>
+	if( $jobid == NULL ) {
+		$jobid = $_GET['id'];
+	}
 
-<?php
+	if( $jobid == NULL ) {
+		echo '</head>';
+		exit('no job to present');
+	}
+	$csv = jobid2csv($jobid);
+	cachezip(jobid2remote($jobid),$csv);
+	$scorefile = jobid2scorefile($jobid);
+
+	echo " <title>$competitionname: $jobname</title>\n";
+	echo "</head>\n";
+	echo "<body>\n";
 	echo "<h1>$competitionname: $jobname";
 	echo "<a class=starexecid href='".jobid2url($jobid). "'>$jobid</a></h1>\n";
 	echo "<table>\n";
