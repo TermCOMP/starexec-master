@@ -5,7 +5,9 @@
 <?php
 	include './definitions.php';
 	
-	$jobid = $_GET["id"];
+	if( $jobid == NULL ) {
+		$jobid = $_GET["id"];
+	}
 	$csv = jobid2csv($jobid);
 	cachezip(jobid2remote($jobid),$csv);
 	$scorefile = jobid2scorefile($jobid);
@@ -13,27 +15,29 @@
 	function str2result($str) {
 		if( $str == "YES" ) {
 			return 1;
-		}
-		if( $str == "NO" ) {
+		} else if( $str == "NO" ) {
 			return -1;
+		} else {
+			return 0;
 		}
-		return 0;
 	}
 	function result2str($result) {
 		if( $result == -1 ) {
 			return "NO";
-		}
-		if( $result == 1 ) {
+		} else if( $result == 1 ) {
 			return "YES";
+		} else {
+			return "MAYBE";
 		}
-		return "MAYBE";
 	}
 ?>
 </head>
 <body>
 
-<table>
 <?php
+	echo "<h1>$competitionname: $jobname";
+	echo "<a class=starexecid href='".jobid2url($jobid). "'>$jobid</a></h1>\n";
+	echo "<table>\n";
 	$file = new SplFileObject($csv);
 	$file->setFlags( SplFileObject::READ_CSV );
 	$records = [];

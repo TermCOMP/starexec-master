@@ -4,50 +4,39 @@
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <?php
 	include './definitions.php';
-	$jobid = $_GET["id"];
-	$csv = jobid2csv($jobid);
-	cachezip(jobid2remote($jobid),$csv);
-	$scorefile = jobid2scorefile($jobid);
-?>
-</head>
-<body>
 
-<table>
-<?php
 	function str2lower( $string ) {
 		if( preg_match( '/Omega\\(n\\^([0-9]+)\\)/', $string, $matches ) ) {
 			return $matches[1];
-		}
-		if( $string == 'NON_POLY' ) {
+		} else if( $string == 'NON_POLY' ) {
 			return 1000;
+		} else {
+			return 0;
 		}
-		return 0;
 	}
 
 	function str2upper( $string ) {
 		if( preg_match( '/O\\(n\\^([0-9]+)\\)/', $string, $matches ) ) {
 			return $matches[1];
-		}
-		if( $string == 'POLY' ) {
+		} else if( $string == 'POLY' ) {
 			return 999;
+		} else {
+			return 1001;
 		}
-		return 1001;
 	}
 
 	function bound2str( $bound ) {
 		if( $bound == 0 ) {
 			return "1";
-		}
-		if( $bound < 999 ) {
+		} else if( $bound < 999 ) {
 			return "n<sup>$bound</sup>";
-		}
-		if( $bound == 999 ) {
+		} else if( $bound == 999 ) {
 			return 'n<sup>?</sup>';
-		}
-		if( $bound == 1000 ) {
+		} else if( $bound == 1000 ) {
 			return 'NonPoly';
+		} else {
+			return '&infin;';
 		}
-		return '&infin;';
 	}
 	function lower2style( $bound ) {
 		if( $bound == 0 ) {
@@ -87,6 +76,23 @@
 		}
 		return [0,1001];
 	}
+
+// initializing job info
+	if( $jobid == NULL ) {
+		$jobid = $_GET['id'];
+		$jobname = $_GET['name'];
+	}
+	$csv = jobid2csv($jobid);
+	cachezip(jobid2remote($jobid),$csv);
+	$scorefile = jobid2scorefile($jobid);
+	echo "<title>$jobname</title>";
+?>
+</head>
+<body>
+
+<?php
+	echo "<h1>$jobname</h1>";
+	echo "<table>\n";
 	$file = new SplFileObject($csv);
 	$file->setFlags( SplFileObject::READ_CSV );
 	$records = [];
@@ -109,7 +115,7 @@
 	} while( $solver != $firstsolver );
 
 	echo " <tr>\n";
-	echo "  <th>benchmark</th>\n";
+	echo "  <th class=benchmark>benchmark</th>\n";
 	foreach( array_keys($solvers) as $solver ) {
 		echo "  <th colspan=4>$solver</th>\n";
 	}

@@ -71,7 +71,7 @@ $competitions = [
 			"TRS Innermost Certified" => [ "type" => "termination", "job" => 30097 ],
 			"HRS" => [ "type" => "termination", "job" => 30099 ],
 			"Java Bytecode" => [ "type" => "termination", "job" => 30100 ],
-			"PROLOG" => [ "type" => "termination", "job" => 30101 ],
+			"Prolog" => [ "type" => "termination", "job" => 30101 ],
 			"Haskell" => [ "type" => "termination", "job" => 30102 ],
 			"Derivational Complexity: TRS" => [ "type" => "complexity", "job" => 30103 ],
 			"Derivational Complexity: TRS Certified" => [ "type" => "complexity", "job" => 30104 ],
@@ -92,11 +92,28 @@ $competitions = [
 	$table = [];
 	$tools = [];
 	echo "<table>\n";
-	echo " <tr><th>category<th class=ranking>ranking\n";
+	echo " <tr><th class=category>category<th class=ranking>ranking\n";
 	foreach( array_keys($mcat) as $catname ) {
-		$job = $mcat[$catname]["job"];
-		$type = $mcat[$catname]["type"];
+		$job = $mcat[$catname]['job'];
+		$type = $mcat[$catname]['type'];
 		$row = [];
+		// creating job specific php file
+		$jobphp = 'caches/'.$type.'_'.$job.'.php';
+		if( true || ! file_exists($jobphp) ) {
+			$file = fopen($jobphp,'w');
+			fwrite( $file,
+'<?php
+	$competitionname = '. str2str($competition['name']) . ';
+	$jobname = ' . str2str($catname) . ';
+	$jobid = ' . $job . ';
+	chdir("..");
+	include \'' . type2php($type) .'\';
+?>'
+			); 
+			fclose($file);
+		}
+
+		// checking cached score file and making ranking
 		$fname = jobid2scorefile($job); 
 		if( file_exists($fname) ) {
 			$file = new SplFileObject($fname);
@@ -111,7 +128,7 @@ $competitions = [
 		uasort($row, function($s,$t) { return $s["score"] < $t["score"] ? 1 : -1; } );
 		echo " <tr class=complete>\n";
 		echo "  <td class=category>\n";
-		echo "   <a href='$type.php?id=$job'>$catname</a>\n";
+		echo "   <a href='$jobphp'>$catname</a>\n";
 		echo "   <a class=starexecid href='".jobid2url($job)."'>$job</a></sub>\n";
 		echo "  <td class=ranking>";
 		foreach( array_keys($row) as $tool) {

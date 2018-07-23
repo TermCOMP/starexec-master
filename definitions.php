@@ -1,5 +1,20 @@
 <link rel="stylesheet" type="text/css" href="master.css">
 <?php
+
+	function type2php($type) {
+		if( $type == 'termination' ) {
+			return 'termination.php';
+		} else if( $type == 'complexity' ) {
+			return 'complexity.php';
+		} else {
+			return NULL;
+		}
+	}
+
+	function str2str($str) {// escape single quotes
+		return "'" . str_replace( ['\\', '\''], ['\\\\','\\\''], $str ) . "'";
+	}
+
 	function cachezip($remote,$local) {
 		if( file_exists($local) ) {
 			return;

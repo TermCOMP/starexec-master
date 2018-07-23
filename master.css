@@ -44,8 +44,10 @@ td a {
 }
 .starexecid {
 	color: gray;
-	font-size: x-small;
 	vertical-align: bottom;
+}
+.starexecid {
+	font-size: x-small;
 }
 .complete {
 	background-color: #D0FFD0;
