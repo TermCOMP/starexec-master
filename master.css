@@ -118,15 +118,14 @@ td a {
 	background-color: #C0F0C0;
 	color: black;
 }
-.time {
+td.time, th.time {
 	width: 1%;
 }
-.time td, .time a {
+span.time {
 	color: gray;
-	width: 1%;
 }
-.no.time {
-	color: white;
+td.no span.time {
+	color: lightgray;
 }	
 .conflict, .conflict .benchmark {
 	background-color: red;

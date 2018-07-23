@@ -10,92 +10,69 @@
 <?php
 $competitions = [
 2018 => [
-	"name" => "Termination Competition 2018",
-	"mcats" => [
+	'name' => 'Termination Competition 2018',
+	'mcats' => [
 		"Termination of Rewriting" => [
-			"TRS Standard" =>
-				[ "type" => "termination", "job" => 30034 ],
-			"TRS Standard Certified" =>
-				[ "type" => "termination", "job" => 30038 ],
-			"SRS Standard" =>
-				[ "type" => "termination", "job" => 30035 ],
-			"SRS Standard Certified" =>
-				[ "type" => "termination", "job" => 30039 ],
-			"TRS Relative" =>
-				[ "type" => "termination", "job" => 30036 ],
-			"TRS Relative Certified" =>
-				[ "type" => "termination", "job" => 30040 ],
-			"SRS Relative" =>
-				[ "type" => "termination", "job" => 30037 ],
-			"SRS Relative Certified" =>
-				[ "type" => "termination", "job" => 30041 ],
-			"TRS Equational" =>
-				[ "type" => "termination", "job" => 30042 ],
-			"TRS Equational Certified" =>
-				[ "type" => "termination", "job" => 30043 ],
-			"TRS Conditional" =>
-				[ "type" => "termination", "job" => 30044 ],
-			"TRS Context Sensitive" =>
-				[ "type" => "termination", "job" => 30045 ],
-			"TRS Innermost" =>
-				[ "type" => "termination", "job" => 30046 ],
-			"HRS (union beta)" =>
-				[ "type" => "termination", "job" => 30047 ],
+			[ 'TRS Standard', 'termination', 30034 ],
+			[ 'TRS Standard Certified', 'termination', 30038 ],
+			[ 'SRS Standard', 'termination', 30035 ],
+			[ 'SRS Standard Certified', 'termination', 30039 ],
+			[ 'TRS Relative', 'termination', 30036 ],
+			[ 'TRS Relative Certified', 'termination', 30040 ],
+			[ 'SRS Relative', 'termination', 30037 ],
+			[ 'SRS Relative Certified', 'termination', 30041 ],
+			[ 'TRS Equational', 'termination', 30042 ],
+			[ 'TRS Equational Certified', 'termination', 30043 ],
+			[ 'TRS Conditional', 'termination', 30044 ],
+			[ 'TRS Context Sensitive', 'termination', 30045 ],
+			[ 'TRS Innermost', 'termination', 30046 ],
+			[ 'HRS (union beta)', 'termination', 30047 ],
 		],
 	 	"Termination of Programs" => [
-			"C" =>
-				[ "type" => "termination", "job" => 30048 ],
-			"C Integer" =>
-				[ "type" => "termination", "job" => 30049 ],
-			"Integer Transition Systems" =>
-				[ "type" => "termination", "job" => 30050 ],
-			"Integer TRS Innermost" =>
-				[ "type" => "termination", "job" => 30051 ],
-			
+			[ 'C', 'termination', 30048 ],
+			[ 'C Integer', 'termination', 30049 ],
+			[ 'Integer Transition Systems', 'termination', 30050 ],
+			[ 'Integer TRS Innermost', 'termination', 30051 ],
 		],
 		"Complexity Analysis" => [
-			"Complexity: ITS" =>
-				[ "type" => "complexity", "job" => 30054 ],
-			"Complexity: C Integer" =>
-				[ "type" => "complexity", "job" => 30055 ],
-			"Runtime Complexity: TRS" =>
-				[ "type" => "complexity", "job" => 30091 ],
-			"Runtime Complexity: TRS Innermost" =>
-				[ "type" => "complexity", "job" => 30092 ],
-			"Runtime Complexity: TRS Innermost Certified" =>
-				[ "type" => "complexity", "job" => 30094 ],
+			['Complexity: ITS', 'complexity', 30054 ],
+			['Complexity: C Integer', 'complexity', 30055 ],
+			['Runtime Complexity: TRS', 'complexity', 30091 ],
+			['Runtime Complexity: TRS Innermost', 'complexity', 30092 ],
+			['Runtime Complexity: TRS Innermost Certified', 'complexity', 30094 ],
 		],
 		"Demonstration" => [
-			"TRS Outermost" => [ "type" => "termination", "job" => 30096 ],
-			"TRS Outermost Certified" => [ "type" => "termination", "job" => 30098 ],
-			"TRS Innermost Certified" => [ "type" => "termination", "job" => 30097 ],
-			"HRS" => [ "type" => "termination", "job" => 30099 ],
-			"Java Bytecode" => [ "type" => "termination", "job" => 30100 ],
-			"Prolog" => [ "type" => "termination", "job" => 30101 ],
-			"Haskell" => [ "type" => "termination", "job" => 30102 ],
-			"Derivational Complexity: TRS" => [ "type" => "complexity", "job" => 30103 ],
-			"Derivational Complexity: TRS Certified" => [ "type" => "complexity", "job" => 30104 ],
-			"Runtime Complexity: TRS Certified" => [ "type" => "complexity", "job" => 30105 ],
+			[ 'TRS Outermost', 'termination', 30096 ],
+			[ 'TRS Outermost Certified', 'termination', 30098 ],
+			[ 'TRS Innermost Certified', 'termination', 30097 ],
+			[ 'HRS', 'termination', 30099 ],
+			[ 'Java Bytecode', 'termination', 30100 ],
+			[ 'Prolog', 'termination', 30101 ],
+			[ 'Haskell', 'termination', 30102 ],
+			[ 'Derivational Complexity: TRS', 'complexity', 30103 ],
+			[ 'Derivational Complexity: TRS Certified', 'complexity', 30104 ],
+			[ 'Runtime Complexity: TRS Certified', 'complexity', 30105 ],
 		],
 	],
 ]
 ];
 
 	$competition = $competitions[2018];
-	$mcats = $competition["mcats"];
+	$mcats = $competition['mcats'];
 
-	echo "<h1>" . $competition["name"] . "</h1>";
+	echo "<h1>" . $competition['name'] . "</h1>";
 
 	foreach( array_keys($mcats) as $mcatname ) {
 	echo "<h2>$mcatname</h2>\n";
-	$mcat = $mcats[$mcatname];
+	$cats = $mcats[$mcatname];
 	$table = [];
 	$tools = [];
 	echo "<table>\n";
 	echo " <tr><th class=category>category<th class=ranking>ranking\n";
-	foreach( array_keys($mcat) as $catname ) {
-		$job = $mcat[$catname]['job'];
-		$type = $mcat[$catname]['type'];
+	foreach( $cats as $cat ) {
+		$catname = $cat[0];
+		$type = $cat[1];
+		$job = $cat[2];
 		$row = [];
 		// creating job specific php file
 		$jobphp = 'caches/'.$type.'_'.$job.'.php';
