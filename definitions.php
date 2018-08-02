@@ -32,7 +32,7 @@
 	function jobid2scorefile($jobid) {
 		return "caches/Job" . $jobid . "_score.csv";
 	}
-	function pairid2remote($pairid) {
+	function pairid2url($pairid) {
 		return "https://www.starexec.org/starexec/secure/details/pair.jsp?id=$pairid";
 	}
 	function result2style($result) {

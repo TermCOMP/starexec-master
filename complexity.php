@@ -105,30 +105,30 @@
 	unset( $records[0] );
 
 	$solvers = [];
-	$solver = $records[1][3];
-	$firstsolver = $solver;
 	$i = 1;
+	$solver = $records[$i][4];
+	$firstsolver = $solver;
 	do {
-		$solvers[$solver] = [ "score" => 0 ];
+		$solvers[$solver] = [ 'name' => $records[$i][3], 'score' => 0 ];
 		$lastsolver = $solver;
 		$i++;
-		$solver = $records[$i][3];
+		$solver = $records[$i][4];
 	} while( $solver != $firstsolver );
 
 	echo " <tr>\n";
 	echo "  <th class=benchmark>benchmark</th>\n";
-	foreach( array_keys($solvers) as $solver ) {
-		echo "  <th colspan=4>$solver</th>\n";
+	foreach( array_keys($solvers) as $id ) {
+		echo "  <th colspan=4>\n";
+		echo "   <a href='".solverid2url($id)."'>".$solvers[$id]['name']."</a>\n";
 	}
 	echo " <tr><th>\n";
-	foreach( array_keys($solvers) as $solver ) {
+	foreach( array_keys($solvers) as $id ) {
 		echo "  <th>score<th>lower<th>upper<th class=time>time\n";
 	}
 	$bench = [];
 
 	foreach( $records as $record ) {
-		$solver = $record[3];
-		$solverid = $record[4];
+		$solver = $record[4];
 		if( $solver == $firstsolver ) {
 			$bench = [];
 			$benchmark = parse_benchmark( $record[1] );
@@ -148,29 +148,29 @@
 			'cpu' => parse_time($record[8]),
 		];
 		if( $solver == $lastsolver ) {
-			foreach( array_keys($bench) as $myname ) {
-				$p = $bench[$myname];
-				$upper = $p['upper'];
-				$lower = $p['lower'];
+			foreach( array_keys($bench) as $me ) {
+				$my = $bench[$me];
+				$upper = $my['upper'];
+				$lower = $my['lower'];
 				$score = 0;
-				foreach( $bench as $q ) {
-					if( $upper < 1000 && $upper <= $q['upper'] ) {
+				foreach( $bench as $your ) {
+					if( $upper < 1000 && $upper <= $your['upper'] ) {
 						$score++;
 					}
-					if( $lower > 0 && $lower >= $q['lower'] ) {
+					if( $lower > 0 && $lower >= $your['lower'] ) {
 						$score++;
 					}
 				}
-				$a = "<a href='". pairid2remote($p['id']) . "' class=fill>";
-				$lower = $p['lower'];
-				$upper = $p['upper'];
-				$status = $p['status']; 
+				$a = "<a href='". pairid2url($my['id']) . "' class=fill>";
+				$lower = $my['lower'];
+				$upper = $my['upper'];
+				$status = $my['status'];
 				if( $status == 'complete' ) {
-					$solvers[$myname]['score'] += $score;
+					$solvers[$me]['score'] += $score;
 					echo "  <td>" . $score . "\n";
 					echo "  <td " . lower2style($lower) . ">$a" . bound2str($lower) . "</a>\n";
 					echo "  <td " . upper2style($upper) . ">$a" . bound2str($upper) . "</a>\n";
-					echo "  <td class=time>$a" . $p["cpu"] . "/" . $p['time'] . "</a>\n";
+					echo "  <td class=time>$a" . $my['cpu'] . "/" . $my['time'] . "</a>\n";
 				} else {
 					echo "  <td colspan=4 ". status2style($status) . ">$a" .
 						status2str($status) . "</a>\n";
@@ -181,10 +181,11 @@
 	}
 	echo " <tr>\n";
 	$scorefileD = fopen($scorefile,"w");
-	foreach( array_keys($solvers) as $solver ) {
-		$score = $solvers[$solver]["score"];
+	foreach( array_keys($solvers) as $id ) {
+		$name = $solvers[$id]['name'];
+		$score = $solvers[$id]['score'];
 		echo "  <th><th colspan=4>$score</th>\n";
-		fwrite( $scorefileD, "$solver,$solverid,$score\n" );
+		fwrite( $scorefileD, "$name,$id,$score\n" );
 	}
 	fclose( $scorefileD );
 ?>

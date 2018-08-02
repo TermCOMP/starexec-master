@@ -52,28 +52,28 @@
 	unset( $records[0] );
 
 	$solvers = [];
-	$solver = $records[1][3];
-	$solverid = $records[1][4];
+	$solvername = $records[1][3];
+	$solver = $records[1][4];
 	$firstsolver = $solver;
 	$i = 1;
 	do {
-		$solvers[$solver] = [ "id" => $solverid, "score" => 0 ];
+		$solvers[$solver] = [ 'name' => $solvername, 'score' => 0 ];
 		$lastsolver = $solver;
 		$i++;
-		$solver = $records[$i][3];
-		$solverid = $records[$i][4];
+		$solvername = $records[$i][3];
+		$solver = $records[$i][4];
 	} while( $solver != $firstsolver );
 
 	echo " <tr>\n";
 	echo "  <th>benchmark</th>\n";
-	foreach( array_keys($solvers) as $solver ) {
-		echo "  <th><a href='". solverid2url($solvers[$solver]['id']) . "'</a>$solver</a>\n";
+	foreach( array_keys($solvers) as $id ) {
+		echo "  <th><a href='". solverid2url($id) . "'>".$solvers[$id]['name']."</a>\n";
 	}
 	echo " <tr><th>\n";
 	$bench = [];
 
 	foreach( $records as $record ) {
-		$solver = $record[3];
+		$solver = $record[4];
 		if( $solver == $firstsolver ) {
 			$bench = [];
 			$benchmark = parse_benchmark( $record[1] );
@@ -90,27 +90,27 @@
 		];
 		if( $solver == $lastsolver ) {
 			$conflict = false;
-			foreach( array_keys($bench) as $myname ) {
-				$p = $bench[$myname];
-				$score = abs($p["result"]);
-				$solvers[$myname]["score"] += $score;
-				foreach( $bench as $q ) {
-					if( $p["result"] * $q["result"] < 0 ) {
+			foreach( array_keys($bench) as $me ) {
+				$my = $bench[$me];
+				$score = abs($my['result']);
+				$solvers[$me]['score'] += $score;
+				foreach( $bench as $your ) {
+					if( $my['result'] * $your['result'] < 0 ) {
 						$conflict = true;
 					}
 				}
 			}
 			echo " <tr".( $conflict ? " class=conflict" : "" ).">\n";
 			echo "  <td class=benchmark><a href='$url'>$benchmark</a></td>\n";
-			foreach( array_keys($bench) as $myname ) {
-				$p = $bench[$myname];
-				$status = $p['status'];
-				$result = $p['result'];
-				$url = pairid2remote($p['pair']);
+			foreach( array_keys($bench) as $me ) {
+				$my = $bench[$me];
+				$status = $my['status'];
+				$result = $my['result'];
+				$url = pairid2url($my['pair']);
 				if( $status == 'complete' ) {
 					echo "  <td " . result2style($result) . "><a href='$url' class=fill>" .
 						result2str($result) . "\n   <span class=time>" .
-						$p["cpu"] . "/" . $p["time"] . "</span></a>\n";
+						$my['cpu'] . "/" . $my['time'] . "</span></a>\n";
 				} else {
 					echo "  <td " . status2style($status) . "><a href='$url' class=fill>" .
 						status2str($status) . "</a>\n";
@@ -121,11 +121,11 @@
 	}
 	echo " <tr><th>\n";
 	$scorefileD = fopen($scorefile,"w");
-	foreach( array_keys($solvers) as $solver ) {
-		$score = $solvers[$solver]["score"];
-		$id = $solvers[$solver]["id"];
+	foreach( array_keys($solvers) as $id ) {
+		$score = $solvers[$id]['score'];
+		$name = $solvers[$id]['name'];
 		echo "  <th>$score</th>\n";
-		fwrite( $scorefileD, "$solver,$id,$score\n" );
+		fwrite( $scorefileD, "$name,$id,$score\n" );
 	}
 	fclose( $scorefileD );
 ?>
