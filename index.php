@@ -9,6 +9,64 @@
 <body>
 <?php
 $competitions = [
+2019 => [
+	"name" => "Termination Competition 2019",
+	"mcats" => [
+		"Termination of Rewriting" => [
+			"TRS Standard" =>
+				[ "type" => "termination", "job" => 33007 ],
+			"TRS Standard Certified" =>
+				[ "type" => "termination", "job" => 0 ],
+			"SRS Standard" =>
+				[ "type" => "termination", "job" => 32999 ],
+			"SRS Standard Certified" =>
+				[ "type" => "termination", "job" => 0 ],
+			"TRS Relative" =>
+				[ "type" => "termination", "job" => 0 ],
+			"TRS Relative Certified" =>
+				[ "type" => "termination", "job" => 0 ],
+			"SRS Relative" =>
+				[ "type" => "termination", "job" => 0 ],
+			"SRS Relative Certified" =>
+				[ "type" => "termination", "job" => 0 ],
+			"TRS Equational" =>
+				[ "type" => "termination", "job" => 0 ],
+			"TRS Equational Certified" =>
+				[ "type" => "termination", "job" => 0 ],
+			"TRS Conditional" =>
+				[ "type" => "termination", "job" => 0 ],
+			"TRS Context Sensitive" =>
+				[ "type" => "termination", "job" => 0 ],
+			"TRS Innermost" =>
+				[ "type" => "termination", "job" => 0 ],
+			"HRS (union beta)" =>
+				[ "type" => "termination", "job" => 0 ],
+		],
+	 	"Termination of Programs" => [
+			"C" =>
+				[ "type" => "termination", "job" => 0 ],
+			"C Integer" =>
+				[ "type" => "termination", "job" => 0 ],
+			"Integer Transition Systems" =>
+				[ "type" => "termination", "job" => 0 ],
+			"Integer TRS Innermost" =>
+				[ "type" => "termination", "job" => 0 ],
+			
+		],
+		"Complexity Analysis" => [
+			"Complexity: ITS" =>
+				[ "type" => "complexity", "job" => 0 ],
+			"Complexity: C Integer" =>
+				[ "type" => "complexity", "job" => 0 ],
+			"Runtime Complexity: TRS" =>
+				[ "type" => "complexity", "job" => 0 ],
+			"Runtime Complexity: TRS Innermost" =>
+				[ "type" => "complexity", "job" => 0 ],
+			"Runtime Complexity: TRS Innermost Certified" =>
+				[ "type" => "complexity", "job" => 0 ],
+		],
+	],
+],
 2018 => [
 	'name' => 'Termination Competition 2018',
 	'mcats' => [
@@ -57,8 +115,8 @@ $competitions = [
 ]
 ];
 
-	$competition = $competitions[2018];
-	$mcats = $competition['mcats'];
+	$competition = $competitions[2019];
+	$mcats = $competition["mcats"];
 
 	echo "<h1>" . $competition['name'] . "</h1>";
 
