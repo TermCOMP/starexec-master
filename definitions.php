@@ -27,6 +27,7 @@
 		if( $ret ) {
 			exit("failed to unzip job info; exit code: $ret\n".explode($out));
 		}
+		exec( "./fix-starexec-csv.sh -i '$local'" );
 	}
 	function jobid2csv($jobid) {
 		return "fromStarExec/Job$jobid/Job" . $jobid . "_info.csv";
