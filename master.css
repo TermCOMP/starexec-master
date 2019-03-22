@@ -35,6 +35,9 @@ td a {
 	text-align: left;
 	width: 50%;
 }
+.config {
+	font-weight: normal;
+}
 .ranking {
 	text-align: left;
 	width: 75%;

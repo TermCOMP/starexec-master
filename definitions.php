@@ -16,12 +16,17 @@
 	}
 
 	function cachezip($remote,$local) {
-		if( file_exists($local) ) {
+		if( file_exists($local) && filemtime($local) + 5 > time() ) {
 			return;
 		}
-		$tmpzip=tempnam(".","");
-		copy($remote,$tmpzip);
-		exec("cd fromStarExec; unzip $tmpzip; cd ..");
+		$tmpzip=tempnam("./fromStarExec","");
+		if( !copy($remote,$tmpzip) ) {
+			exit("failed to copy $remote to $tmpzip");
+		}
+		exec( "unzip -o $tmpzip -d fromStarExec", $out, $ret );
+		if( $ret ) {
+			exit("failed to unzip job info; exit code: $ret\n".explode($out));
+		}
 	}
 	function jobid2csv($jobid) {
 		return "fromStarExec/Job$jobid/Job" . $jobid . "_info.csv";
@@ -67,7 +72,7 @@
 		}
 	}
 	function parse_benchmark( $string ) {
-		preg_match( '|[^/]*/[^/]*/(.*)$|', $string, $matches );
+		preg_match( '|[^/]*/(.*)$|', $string, $matches );
 		$ret = $matches[1];
 		$ret = str_replace( '/', '/<wbr>',$ret );
 		return $ret;
@@ -84,5 +89,8 @@
 	}
 	function solverid2url($solverid) {
 		return "https://www.starexec.org/starexec/secure/details/solver.jsp?id=$solverid";
+	}
+	function configid2url($configid) {
+		return "https://www.starexec.org/starexec/secure/details/configuration.jsp?id=$configid";
 	}
 ?>

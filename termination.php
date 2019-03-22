@@ -54,22 +54,35 @@
 	$solvers = [];
 	$solvername = $records[1][3];
 	$solver = $records[1][4];
+	$config = $records[1][5];
+	$configid = $records[1][6];
 	$firstsolver = $solver;
 	$i = 1;
 	do {
-		$solvers[$solver] = [ 'name' => $solvername, 'score' => 0 ];
+		$solvers[$solver] = [
+			'name' => $solvername,
+			'config' => $config,
+			'configid' => $configid,
+			'score' => 0
+		];
 		$lastsolver = $solver;
 		$i++;
 		$solvername = $records[$i][3];
 		$solver = $records[$i][4];
+		$config = $records[$i][5];
+		$configid = $records[$i][6];
 	} while( $solver != $firstsolver );
 
 	echo " <tr>\n";
-	echo "  <th>benchmark</th>\n";
+	echo "  <th>benchmark\n";
 	foreach( array_keys($solvers) as $id ) {
 		echo "  <th><a href='". solverid2url($id) . "'>".$solvers[$id]['name']."</a>\n";
 	}
 	echo " <tr><th>\n";
+	foreach( $solvers as $s ) {
+		echo "  <th class='config'><a href='". configid2url($s['configid']) ."'>". $s['config']."</a>\n";
+	}
+	echo " <tr>\n";
 	$bench = [];
 
 	foreach( $records as $record ) {

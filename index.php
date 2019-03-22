@@ -13,57 +13,30 @@ $competitions = [
 	"name" => "Termination Competition 2019",
 	"mcats" => [
 		"Termination of Rewriting" => [
-			"TRS Standard" =>
-				[ "type" => "termination", "job" => 33007 ],
-			"TRS Standard Certified" =>
-				[ "type" => "termination", "job" => 0 ],
-			"SRS Standard" =>
-				[ "type" => "termination", "job" => 32999 ],
-			"SRS Standard Certified" =>
-				[ "type" => "termination", "job" => 0 ],
-			"TRS Relative" =>
-				[ "type" => "termination", "job" => 0 ],
-			"TRS Relative Certified" =>
-				[ "type" => "termination", "job" => 0 ],
-			"SRS Relative" =>
-				[ "type" => "termination", "job" => 0 ],
-			"SRS Relative Certified" =>
-				[ "type" => "termination", "job" => 0 ],
-			"TRS Equational" =>
-				[ "type" => "termination", "job" => 0 ],
-			"TRS Equational Certified" =>
-				[ "type" => "termination", "job" => 0 ],
-			"TRS Conditional" =>
-				[ "type" => "termination", "job" => 0 ],
-			"TRS Context Sensitive" =>
-				[ "type" => "termination", "job" => 0 ],
-			"TRS Innermost" =>
-				[ "type" => "termination", "job" => 0 ],
-			"HRS (union beta)" =>
-				[ "type" => "termination", "job" => 0 ],
+			[ 'TRS Standard', 'termination', 33010 ],
+			[ 'TRS Standard Certified', 'termination', 0 ],
+			[ 'SRS Standard', 'termination', 32999 ],
+			[ 'SRS Standard Certified', 'termination', 0 ],
+			[ 'TRS Relative', 'termination', 33012 ],
+			[ 'TRS Relative Certified', 'termination', 0 ],
+			[ 'SRS Relative', 'termination', 33017 ],
+			[ 'SRS Relative Certified', 'termination', 0 ],
+			[ 'TRS Equational', 'termination', 33020 ],
+			[ 'TRS Equational Certified', 'termination', 0 ],
+			[ 'TRS Conditional', 'termination', 33018 ],
+			[ 'TRS Context Sensitive', 'termination', 33019 ],
+			[ 'TRS Innermost', 'termination', 33021 ],
+			[ 'HRS (union beta)', 'termination', 33022 ],
 		],
 	 	"Termination of Programs" => [
-			"C" =>
-				[ "type" => "termination", "job" => 0 ],
-			"C Integer" =>
-				[ "type" => "termination", "job" => 0 ],
-			"Integer Transition Systems" =>
-				[ "type" => "termination", "job" => 0 ],
-			"Integer TRS Innermost" =>
-				[ "type" => "termination", "job" => 0 ],
-			
+			[ 'C', 'termination', 0 ],
+			[ 'C Integer', 'termination', 0 ],
+			[ 'Integer Transition Systems', 'termination', 33015 ],
+			[ 'Integer TRS Innermost', 'termination', 33016 ],
 		],
 		"Complexity Analysis" => [
-			"Complexity: ITS" =>
-				[ "type" => "complexity", "job" => 0 ],
-			"Complexity: C Integer" =>
-				[ "type" => "complexity", "job" => 0 ],
-			"Runtime Complexity: TRS" =>
-				[ "type" => "complexity", "job" => 0 ],
-			"Runtime Complexity: TRS Innermost" =>
-				[ "type" => "complexity", "job" => 0 ],
-			"Runtime Complexity: TRS Innermost Certified" =>
-				[ "type" => "complexity", "job" => 0 ],
+			['Complexity: ITS', 'complexity', 33014 ],
+			['Complexity: C Integer', 'complexity', 33013 ],
 		],
 	],
 ],
