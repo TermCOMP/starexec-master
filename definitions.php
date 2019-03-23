@@ -28,6 +28,7 @@
 			exit("failed to unzip job info; exit code: $ret\n".explode($out));
 		}
 		exec( "./fix-starexec-csv.sh -i '$local'" );
+		chmod( $local, 0766 );
 	}
 	function jobid2csv($jobid) {
 		return "fromStarExec/Job$jobid/Job" . $jobid . "_info.csv";
@@ -61,6 +62,8 @@
 			return 'class=timeout';
 		} else if( $status == 'run script error' ) {
 			return 'class=starexecbug';
+		} else if( $status == 'enqueued' ) {
+			return 'class=active';
 		} else {
 			return 'class=error';
 		}
@@ -70,6 +73,15 @@
 			return 'StarExec error';
 		} else {
 			return $status;
+		}
+	}
+	function status2complete($status) {
+		if( substr($status,0,7) == 'pending' ) {
+			return false;
+		} else if( $status == 'enqueued' ) {
+			return false;
+		} else {
+			return true;
 		}
 	}
 	function parse_benchmark( $string ) {

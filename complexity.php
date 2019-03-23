@@ -115,7 +115,9 @@
 			'name' => $records[$i][3],
 			'config' => $config,
 			'configid' => $configid,
-			'score' => 0
+			'score' => 0,
+			'togo' => 0,
+			'conflicts' => 0
 		];
 		$lastsolver = $solver;
 		$i++;
@@ -147,11 +149,18 @@
 			echo " <tr>\n";
 			echo "  <td class=benchmark><a href='$url'>$benchmark</a></td>\n";
 		}
+		$status = $record[7];
+		if( $status <> 'complete' &&
+			substr($status,0,7) <> 'timeout' &&
+			substr($status,0,6) <> 'memout'
+		) {
+			$solvers[$solver]['togo'] += 1;
+		}
 		$result = $record[11];
 		$bounds = str2bounds( $result );
 		$bench[$solver] = [
 			'id' => $record[0],
-			'status' => $record[7],
+			'status' => $status,
 			'result' => $result,
 			'lower' => $bounds[0],
 			'upper' => $bounds[1],

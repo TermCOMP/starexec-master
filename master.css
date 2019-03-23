@@ -45,11 +45,13 @@ td a {
 .score {
 	font-size: small;
 }
+.togo {
+	color: gray;
+	font-size: small;
+}
 .starexecid {
 	color: gray;
 	vertical-align: bottom;
-}
-.starexecid {
 	font-size: x-small;
 }
 .complete {
@@ -57,6 +59,10 @@ td a {
 }
 .incomplete {
 	background-color: antiquewhite;
+}
+.active {
+	background-color: fuchsia;
+	color: white;
 }
 .timeout, .timeout a {
 	background-color: darksalmon;
@@ -133,4 +139,8 @@ td.no span.time {
 .conflict, .conflict .benchmark {
 	background-color: red;
 	color: white;
+}
+.conflicts {
+	color: red;
+	font-weight: bold;
 }

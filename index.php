@@ -13,19 +13,19 @@ $competitions = [
 	"name" => "Termination Competition 2019",
 	"mcats" => [
 		"Termination of Rewriting" => [
-			[ 'TRS Standard', 'termination', 33010 ],
-			[ 'TRS Standard Certified', 'termination', 0 ],
+			[ 'TRS Standard', 'termination', 33124 ],
+			[ 'TRS Standard Certified', 'termination', 33116 ],
 			[ 'SRS Standard', 'termination', 32999 ],
-			[ 'SRS Standard Certified', 'termination', 0 ],
+			[ 'SRS Standard Certified', 'termination', 33117 ],
 			[ 'TRS Relative', 'termination', 33012 ],
-			[ 'TRS Relative Certified', 'termination', 0 ],
+			[ 'TRS Relative Certified', 'termination', 33126 ],
 			[ 'SRS Relative', 'termination', 33017 ],
-			[ 'SRS Relative Certified', 'termination', 0 ],
+			[ 'SRS Relative Certified', 'termination', 33127 ],
 			[ 'TRS Equational', 'termination', 33020 ],
-			[ 'TRS Equational Certified', 'termination', 0 ],
+			[ 'TRS Equational Certified', 'termination', 33128 ],
 			[ 'TRS Conditional', 'termination', 33018 ],
 			[ 'TRS Context Sensitive', 'termination', 33019 ],
-			[ 'TRS Innermost', 'termination', 33021 ],
+			[ 'TRS Innermost', 'termination', 33125 ],
 			[ 'HRS (union beta)', 'termination', 33022 ],
 		],
 	 	"Termination of Programs" => [
@@ -132,23 +132,44 @@ $competitions = [
 			$file->setFlags( SplFileObject::READ_CSV );
 			foreach( $file as $line ) {
 				if( !is_null($line[0]) ) {
-					$row[$line[0]] = [ "id" => $line[1], "score" => $line[2] ];
+					$row[$line[0]] = [ 'id' => $line[1], 'score' => $line[2], 'togo' => $line[3], 'conflicts' => $line[4] ];
 					$tools[$line[0]] = true;
 				}
 			}
 		}
-		uasort($row, function($s,$t) { return $s["score"] < $t["score"] ? 1 : -1; } );
-		echo " <tr class=complete>\n";
+		uasort($row, function($s,$t) { return $s['score'] < $t['score'] ? 1 : -1; } );
+		$togo = 0;
+		$conflicts = 0;
+		foreach( $row as $s ) {
+			$togo += $s['togo'];
+			$conflicts += $s['conflicts'];
+		}
+		if( $togo > 0 ) {
+			$class = 'incomplete';
+		} else {
+			$class = 'complete';
+		}
+		echo " <tr class=$class>\n";
 		echo "  <td class=category>\n";
 		echo "   <a href='$jobpath'>$catname</a>\n";
 		echo "   <a class=starexecid href='".jobid2url($jobid)."'>$jobid</a></sub>\n";
+		if( $conflicts > 0 ) {
+			echo "<a class=conflict href='$jobpath#conflict'>conflict</a>";
+		} 
 		echo "  <td class=ranking>";
-		foreach( array_keys($row) as $tool) {
-			$score = $row[$tool]["score"];
-			$id = $row[$tool]["id"];
+		foreach( array_keys($row) as $solver) {
+			$s = $row[$solver];
+			$score = $s['score'];
+			$togo = $s['togo'];
+			$conflicts = $s['conflicts'];
+			$id = $s['id'];
 			$url = solverid2url($id);
-			echo "   <a class=solver href='$url'>$tool</a>\n";
-			echo "   <span class=score>$score</span>;\n";
+			echo "   <a class=solver href='$url'>$solver</a>\n";
+			echo "   <span class=score>$score</span>";
+			if( $togo > 0 ) {
+				echo "<span class=togo>,$togo</span>";
+			}
+			echo ";";
 		}
 		echo "\n";
 	}

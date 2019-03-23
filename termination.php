@@ -40,6 +40,7 @@
 	echo "<body>\n";
 	echo "<h1>$competitionname: $jobname";
 	echo "<a class=starexecid href='".jobid2url($jobid). "'>$jobid</a></h1>\n";
+	echo "<a href='../$csv'>Job info CSV</a>\n";
 	echo "<table>\n";
 	$file = new SplFileObject($csv);
 	$file->setFlags( SplFileObject::READ_CSV );
@@ -63,7 +64,9 @@
 			'name' => $solvername,
 			'config' => $config,
 			'configid' => $configid,
-			'score' => 0
+			'score' => 0,
+			'togo' => 0,
+			'conflicts' => 0
 		];
 		$lastsolver = $solver;
 		$i++;
@@ -85,6 +88,7 @@
 	echo " <tr>\n";
 	$bench = [];
 
+	$conflicts = 0;
 	foreach( $records as $record ) {
 		$solver = $record[4];
 		if( $solver == $firstsolver ) {
@@ -93,6 +97,9 @@
 			$url = bmid2url($record[2]);
 		}
 		$status = $record[7];
+		if( !status2complete($status) ) {
+			$solvers[$solver]['togo'] += 1;
+		}
 		$result = str2result($record[11]);
 		$bench[$solver] = [
 			'status' => $status,
@@ -112,9 +119,21 @@
 						$conflict = true;
 					}
 				}
+				if( $conflict ) {
+					$solvers[$me]['conflicts'] += 1;
+				}
 			}
-			echo " <tr".( $conflict ? " class=conflict" : "" ).">\n";
-			echo "  <td class=benchmark><a href='$url'>$benchmark</a></td>\n";
+			if( $conflict ) {
+				echo " <tr class=conflict>\n";
+				$conflicts += 1;
+			} else {
+				echo " <tr>\n";
+			}
+			echo "  <td class=benchmark>\n";
+			if( $conflict && $conflicts == 1 ) {
+				echo "   <a name='conflict'/>\n";
+			}
+			echo "   <a href='$url'>$benchmark</a></td>\n";
 			foreach( array_keys($bench) as $me ) {
 				$my = $bench[$me];
 				$status = $my['status'];
@@ -135,10 +154,13 @@
 	echo " <tr><th>\n";
 	$scorefileD = fopen($scorefile,"w");
 	foreach( array_keys($solvers) as $id ) {
-		$score = $solvers[$id]['score'];
-		$name = $solvers[$id]['name'];
+		$s = $solvers[$id];
+		$score = $s['score'];
+		$name = $s['name'];
+		$togo = $s['togo'];
+		$conflicts = $s['conflicts'];
 		echo "  <th>$score</th>\n";
-		fwrite( $scorefileD, "$name,$id,$score\n" );
+		fwrite( $scorefileD, "$name,$id,$score,$togo,$conflicts\n" );
 	}
 	fclose( $scorefileD );
 ?>
