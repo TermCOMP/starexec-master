@@ -13,25 +13,25 @@ $competitions = [
 	"name" => "Termination Competition 2019",
 	"mcats" => [
 		"Termination of Rewriting" => [
-			[ 'TRS Standard', 'termination', 33124 ],
+			[ 'TRS Standard', 'termination', 33457 ],
 			[ 'TRS Standard Certified', 'termination', 33116 ],
-			[ 'SRS Standard', 'termination', 32999 ],
+			[ 'SRS Standard', 'termination', 33458 ],
 			[ 'SRS Standard Certified', 'termination', 33117 ],
 			[ 'TRS Relative', 'termination', 33012 ],
 			[ 'TRS Relative Certified', 'termination', 33126 ],
-			[ 'SRS Relative', 'termination', 33017 ],
+			[ 'SRS Relative', 'termination', 33461 ],
 			[ 'SRS Relative Certified', 'termination', 33127 ],
 			[ 'TRS Equational', 'termination', 33020 ],
 			[ 'TRS Equational Certified', 'termination', 33128 ],
-			[ 'TRS Conditional', 'termination', 33018 ],
+			[ 'TRS Conditional', 'termination', 33455 ],
 			[ 'TRS Context Sensitive', 'termination', 33019 ],
-			[ 'TRS Innermost', 'termination', 33125 ],
-			[ 'HRS (union beta)', 'termination', 33022 ],
+			[ 'TRS Innermost', 'termination', 33453 ],
+			[ 'HRS (union beta)', 'termination', 33452 ],
 		],
 	 	"Termination of Programs" => [
-			[ 'C', 'termination', 0 ],
-			[ 'C Integer', 'termination', 0 ],
-			[ 'Integer Transition Systems', 'termination', 33015 ],
+			[ 'C', 'termination', 33437 ],
+			[ 'C Integer', 'termination', 33454 ],
+			[ 'Integer Transition Systems', 'termination', 33456 ],
 			[ 'Integer TRS Innermost', 'termination', 33016 ],
 		],
 		"Complexity Analysis" => [
@@ -104,7 +104,7 @@ $competitions = [
 		$catname = $cat[0];
 		$type = $cat[1];
 		$jobid = $cat[2];
-		$row = [];
+
 		// if job html exists, use it
 		$jobpath = 'caches/'.$type.'_'.$jobid.'.html';
 		if( ! file_exists($jobpath) ) {
@@ -125,9 +125,15 @@ $competitions = [
 			}
 		}
 
+		$row = [];
+		$init = false;
+		$togo = 0;
+		$conflicts = 0;
+
 		// checking cached score file and making ranking
 		$fname = jobid2scorefile($jobid); 
 		if( file_exists($fname) ) {
+			$init = true;
 			$file = new SplFileObject($fname);
 			$file->setFlags( SplFileObject::READ_CSV );
 			foreach( $file as $line ) {
@@ -136,16 +142,15 @@ $competitions = [
 					$tools[$line[0]] = true;
 				}
 			}
+			uasort($row, function($s,$t) { return $s['score'] < $t['score'] ? 1 : -1; } );
+			foreach( $row as $s ) {
+				$togo += $s['togo'];
+				$conflicts += $s['conflicts'];
+			}
 		}
-		uasort($row, function($s,$t) { return $s['score'] < $t['score'] ? 1 : -1; } );
-		$togo = 0;
-		$conflicts = 0;
-		foreach( $row as $s ) {
-			$togo += $s['togo'];
-			$conflicts += $s['conflicts'];
-		}
-		if( $togo > 0 ) {
+		if( !$init || $togo > 0 ) {
 			$class = 'incomplete';
+			$jobpath .= '?refresh=1';
 		} else {
 			$class = 'complete';
 		}
@@ -153,23 +158,25 @@ $competitions = [
 		echo "  <td class=category>\n";
 		echo "   <a href='$jobpath'>$catname</a>\n";
 		echo "   <a class=starexecid href='".jobid2url($jobid)."'>$jobid</a></sub>\n";
-		if( $conflicts > 0 ) {
-			echo "<a class=conflict href='$jobpath#conflict'>conflict</a>";
-		} 
-		echo "  <td class=ranking>";
-		foreach( array_keys($row) as $solver) {
-			$s = $row[$solver];
-			$score = $s['score'];
-			$togo = $s['togo'];
-			$conflicts = $s['conflicts'];
-			$id = $s['id'];
-			$url = solverid2url($id);
-			echo "   <a class=solver href='$url'>$solver</a>\n";
-			echo "   <span class=score>$score</span>";
-			if( $togo > 0 ) {
-				echo "<span class=togo>,$togo</span>";
+		if( $init ) {
+			if( $conflicts > 0 ) {
+				echo "<a class=conflict href='$jobpath#conflict'>conflict</a>";
+			} 
+			echo "  <td class=ranking>";
+			foreach( array_keys($row) as $solver ) {
+				$s = $row[$solver];
+				$score = $s['score'];
+				$togo = $s['togo'];
+				$conflicts = $s['conflicts'];
+				$id = $s['id'];
+				$url = solverid2url($id);
+				echo "   <a class=solver href='$url'>$solver</a>\n";
+				echo "   <span class=score>$score</span>";
+				if( $togo > 0 ) {
+					echo "<span class=togo>,$togo</span>";
+				}
+				echo ";";
 			}
-			echo ";";
 		}
 		echo "\n";
 	}

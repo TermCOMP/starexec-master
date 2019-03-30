@@ -32,7 +32,9 @@
 		exit('no job to present');
 	}
 	$csv = jobid2csv($jobid);
-	cachezip(jobid2remote($jobid),$csv);
+	if( $_GET['refresh'] ) {
+		cachezip(jobid2remote($jobid),$csv);
+	}
 	$scorefile = jobid2scorefile($jobid);
 
 	echo " <title>$competitionname: $jobname</title>\n";
@@ -139,13 +141,17 @@
 				$status = $my['status'];
 				$result = $my['result'];
 				$url = pairid2url($my['pair']);
+				$outurl = pairid2outurl($my['pair']);
 				if( $status == 'complete' ) {
-					echo "  <td " . result2style($result) . "><a href='$url' class=fill>" .
-						result2str($result) . "\n   <span class=time>" .
-						$my['cpu'] . "/" . $my['time'] . "</span></a>\n";
+					echo "  <td " . result2style($result) . ">
+   <a href='$outurl'>" . result2str($result) . "</a>
+   <a href='$url'>
+    <span class=time>" . $my['cpu'] . "/" . $my['time'] . "</span>
+   </a>\n";
 				} else {
-					echo "  <td " . status2style($status) . "><a href='$url' class=fill>" .
-						status2str($status) . "</a>\n";
+					echo "  <td " . status2style($status) . ">
+   <a href='$url'>" . status2str($status) . "</a>
+   <a href='$outurl'>[out]</a>\n";
 				}
 			}
 			echo " </tr>\n";

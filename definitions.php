@@ -42,6 +42,9 @@
 	function pairid2url($pairid) {
 		return "https://www.starexec.org/starexec/secure/details/pair.jsp?id=$pairid";
 	}
+	function pairid2outurl($pairid) {
+		return "https://www.starexec.org/starexec/services/jobs/pairs/$pairid/stdout/1?limit=-1";
+	}
 	function result2style($result) {
 		if( $result == -1 ) {
 			return "class=no";
