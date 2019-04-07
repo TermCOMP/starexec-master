@@ -116,8 +116,13 @@
 			'config' => $config,
 			'configid' => $configid,
 			'score' => 0,
+			'conflicts' => 0,
+			'done' => 0,
 			'togo' => 0,
-			'conflicts' => 0
+			'cpu' => 0,
+			'time' => 0,
+			'upper' => 0,
+			'lower' => 0,
 		];
 		$lastsolver = $solver;
 		$i++;
@@ -130,30 +135,31 @@
 	echo "  <th class=benchmark>benchmark</th>\n";
 	foreach( array_keys($solvers) as $id ) {
 		$s = $solvers[$id];
-		echo "  <th colspan=4>\n";
+		echo "  <th colspan=3>\n";
 		echo "   <a href='".solverid2url($id)."'>".$s['name']."</a>\n";
 		echo "   <a class='config' href='".configid2url($s['configid'])."'>".$s['config']."</a>\n";
 	}
 	echo " <tr><th>\n";
 	foreach( array_keys($solvers) as $id ) {
-		echo "  <th>score<th>lower<th>upper<th class=time>time\n";
+		echo "  <th>lower<th>upper<th class=time>time\n";
 	}
 	$bench = [];
 
 	foreach( $records as $record ) {
 		$solver = $record[4];
+		$cpu = parse_time($record[8]);
+		$time = parse_time($record[9]);
 		if( $solver == $firstsolver ) {
 			$bench = [];
 			$benchmark = parse_benchmark( $record[1] );
 			$url = bmid2url( $record[2] );
-			echo " <tr>\n";
-			echo "  <td class=benchmark><a href='$url'>$benchmark</a></td>\n";
 		}
 		$status = $record[7];
-		if( $status <> 'complete' &&
-			substr($status,0,7) <> 'timeout' &&
-			substr($status,0,6) <> 'memout'
-		) {
+		if( status2complete($status) ) {
+			$solvers[$solver]['done'] += 1;
+			$solvers[$solver]['cpu'] += $cpu;
+			$solvers[$solver]['time'] += $time;
+		} else {
 			$solvers[$solver]['togo'] += 1;
 		}
 		$result = $record[11];
@@ -164,21 +170,36 @@
 			'result' => $result,
 			'lower' => $bounds[0],
 			'upper' => $bounds[1],
-			'time' => parse_time($record[9]),
-			'cpu' => parse_time($record[8]),
+			'time' => $time,
+			'cpu' => $cpu,
 		];
 		if( $solver == $lastsolver ) {
+			echo " <tr>\n";
+			echo "  <td class=benchmark><a href='$url'>$benchmark</a></td>\n";
 			foreach( array_keys($bench) as $me ) {
 				$my = $bench[$me];
 				$upper = $my['upper'];
 				$lower = $my['lower'];
-				$score = 0;
+				$upscore = 0;
+				$lowscore = 0;
 				foreach( $bench as $your ) {
 					if( $upper < 1000 && $upper <= $your['upper'] ) {
-						$score++;
+						$upscore++;
 					}
 					if( $lower > 0 && $lower >= $your['lower'] ) {
-						$score++;
+						$lowscore++;
+					}
+					if( $lower > $your['upper'] ) {
+						$my['conflicts']++;
+						$lowerstyle = 'class=conflict';
+					} else {
+						$lowerstyle = lower2style($lower);
+					}
+					if( $upper < $your['lower'] ) {
+						$my['conflicts']++;
+						$upperstyle = 'class=conflict';
+					} else {
+						$upperstyle = upper2style($upper);
 					}
 				}
 				$a = "<a href='". pairid2url($my['id']) . "' class=fill>";
@@ -186,13 +207,14 @@
 				$upper = $my['upper'];
 				$status = $my['status'];
 				if( $status == 'complete' ) {
-					$solvers[$me]['score'] += $score;
-					echo "  <td>" . $score . "\n";
-					echo "  <td " . lower2style($lower) . ">$a" . bound2str($lower) . "</a>\n";
-					echo "  <td " . upper2style($upper) . ">$a" . bound2str($upper) . "</a>\n";
+					$solvers[$me]['score'] += $upscore + $lowscore;
+					$solvers[$me]['upper'] += $upscore;
+					$solvers[$me]['lower'] += $lowscore;
+					echo "  <td $upperstyle>$a" . bound2str($upper) . " <span class=score>(+$upscore)</span></a>\n";
+					echo "  <td $lowerstyle>$a" . bound2str($lower) . " <span class=score>(+$lowscore)</span></a>\n";
 					echo "  <td class=time>$a" . $my['cpu'] . "/" . $my['time'] . "</a>\n";
 				} else {
-					echo "  <td colspan=4 ". status2style($status) . ">$a" .
+					echo "  <td colspan=3 ". status2style($status) . ">$a" .
 						status2str($status) . "</a>\n";
 				}
 			}
@@ -200,13 +222,12 @@
 		}
 	}
 	echo " <tr>\n";
-	$scorefileD = fopen($scorefile,"w");
-	foreach( array_keys($solvers) as $id ) {
-		$name = $solvers[$id]['name'];
-		$score = $solvers[$id]['score'];
-		echo "  <th><th colspan=4>$score</th>\n";
-		fwrite( $scorefileD, "$name,$id,$score\n" );
+	foreach( $solvers as $s ) {
+		$score = $s['score'];
+		echo "  <th><th colspan=3>$score</th>\n";
 	}
+	$scorefileD = fopen($scorefile,"w");
+	fwrite( $scorefileD, json_encode($solvers) );
 	fclose( $scorefileD );
 ?>
 </table>

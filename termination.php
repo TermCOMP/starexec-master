@@ -67,8 +67,14 @@
 			'config' => $config,
 			'configid' => $configid,
 			'score' => 0,
+			'conflicts' => 0,
+			'done' => 0,
 			'togo' => 0,
-			'conflicts' => 0
+			'cpu' => 0,
+			'time' => 0,
+			'YES' => 0,
+			'NO' => 0,
+			'MAYBE' => 0,
 		];
 		$lastsolver = $solver;
 		$i++;
@@ -93,21 +99,28 @@
 	$conflicts = 0;
 	foreach( $records as $record ) {
 		$solver = $record[4];
+		$status = $record[7];
+		$cpu = parse_time($record[8]);
+		$time = parse_time($record[9]); 
+		$result = str2result($record[11]);
 		if( $solver == $firstsolver ) {
 			$bench = [];
 			$benchmark = parse_benchmark( $record[1] );
 			$url = bmid2url($record[2]);
 		}
-		$status = $record[7];
-		if( !status2complete($status) ) {
+		if( status2complete($status) ) {
+			$solvers[$solver]['done'] += 1;
+			$solvers[$solver]['cpu'] += $cpu;
+			$solvers[$solver]['time'] += $time;
+			$solvers[$solver][result2str($result)] += 1;
+		} else {
 			$solvers[$solver]['togo'] += 1;
 		}
-		$result = str2result($record[11]);
 		$bench[$solver] = [
 			'status' => $status,
 			'result' => $result,
-			'time' => parse_time($record[9]),
-			'cpu' => parse_time($record[8]),
+			'time' => $time,
+			'cpu' => $cpu,
 			'pair' => $record[0],
 		];
 		if( $solver == $lastsolver ) {
@@ -158,16 +171,11 @@
 		}
 	}
 	echo " <tr><th>\n";
-	$scorefileD = fopen($scorefile,"w");
-	foreach( array_keys($solvers) as $id ) {
-		$s = $solvers[$id];
-		$score = $s['score'];
-		$name = $s['name'];
-		$togo = $s['togo'];
-		$conflicts = $s['conflicts'];
-		echo "  <th>$score</th>\n";
-		fwrite( $scorefileD, "$name,$id,$score,$togo,$conflicts\n" );
+	foreach( $solvers as $s ) {
+		echo "  <th>".$s['score']."</th>\n";
 	}
+	$scorefileD = fopen($scorefile,"w");
+	fwrite( $scorefileD, json_encode($solvers) );
 	fclose( $scorefileD );
 ?>
 </table>

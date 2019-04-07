@@ -1,6 +1,6 @@
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	font-size: medium;
 }
 h1 {
 	font-weight:normal;
@@ -28,12 +28,18 @@ td a {
 	width:100%; height:100%; display:block;
 }
 .category {
-	white-space: nowrap;
 	text-align: left;
 }
 .benchmark {
 	text-align: left;
-	width: 50%;
+}
+.solver, .solver a {
+	display: inline-block;
+	color: black;
+}
+.bestsolver, .bestsolver a {
+	color: black;
+	font-weight: bold;
 }
 .config {
 	font-weight: normal;
@@ -44,6 +50,7 @@ td a {
 }
 .score {
 	font-size: small;
+	font-weight: normal;
 }
 .togo {
 	color: gray;
@@ -70,16 +77,26 @@ td a {
 }
 .yes, .yes a {
 	background-color: mediumspringgreen;
-	white-space: nowrap;
 	color: black;
 }
-.no, .no a {
+.score .yes {
+	background: none;
+	color: black;
+}
+.bestyes {
+	background-color: mediumspringgreen;
+	color: black;
+	font-weight: bold;
+}
+.no, .no a, .bestno {
 	background-color: green;
-	white-space: nowrap;
 	color: white;
 }
+.score .no {
+	background: none;
+	color: darkgreen;
+}
 .maybe, .maybe a {
-	white-space: nowrap;
 	background-color: khaki;
 	color: black;
 }
@@ -97,14 +114,18 @@ td a {
 }
 .low2, .low2 a {
 	background-color: #60A060;
-	color: black;
+	color: #E0E0E0;
 }
 .low3, .low3 a {
 	background-color: #40A040;
-	color: black;
+	color: white;
 }
 .lowNP, .lowNP a {
 	background-color: #208020;
+	color: white;
+}
+.bestlow {
+	background-color: #60A060;
 	color: white;
 }
 .up0, .up0 a {
@@ -127,11 +148,20 @@ td a {
 	background-color: #C0F0C0;
 	color: black;
 }
+.bestup {
+	background-color: #00FFF0;
+	color: black;
+	font-weight: bold;
+}
 td.time, th.time {
 	width: 1%;
 }
-span.time {
+.time, .time a {
 	color: gray;
+}
+.besttime {
+	background-color: gray;
+	color: white;
 }
 td.no span.time {
 	color: lightgray;

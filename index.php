@@ -31,12 +31,23 @@ $competitions = [
 	 	"Termination of Programs" => [
 			[ 'C', 'termination', 33437 ],
 			[ 'C Integer', 'termination', 33454 ],
+			[ 'Logic Programming', 'termination', 33595 ],
 			[ 'Integer Transition Systems', 'termination', 33456 ],
 			[ 'Integer TRS Innermost', 'termination', 33016 ],
 		],
 		"Complexity Analysis" => [
-			['Complexity: ITS', 'complexity', 33014 ],
-			['Complexity: C Integer', 'complexity', 33013 ],
+			[ 'Complexity: ITS', 'complexity', 33014 ],
+			[ 'Complexity: C Integer', 'complexity', 33013 ],
+		],
+		"Demonstrations" => [
+			[ 'TRS Outermost', 'termination', 33568 ],
+			[ 'TRS Outermost Certified', 'termination', 33569 ],
+			[ 'TRS Innermost Certified', 'termination', 33570 ],
+			[ 'Java Bytecode', 'termination', 33571 ],
+			[ 'Haskell', 'termination', 33572 ],
+			[ 'Runtime Complexity: TRS', 'complexity', 33563 ],
+			[ 'Runtime Complexity: TRS Innermost', 'complexity', 33566 ],
+			[ 'Runtime Complexity: TRS Innermost Certified', 'complexity', 33567 ],
 		],
 	],
 ],
@@ -93,18 +104,27 @@ $competitions = [
 
 	echo "<h1>" . $competition['name'] . "</h1>";
 
-	foreach( array_keys($mcats) as $mcatname ) {
+foreach( array_keys($mcats) as $mcatname ) {
+	$total_done = 0;
+	$total_togo = 0;
+	$total_cpu = 0;
+	$total_time = 0;
 	echo "<h2>$mcatname</h2>\n";
 	$cats = $mcats[$mcatname];
 	$table = [];
 	$tools = [];
 	echo "<table>\n";
-	echo " <tr><th class=category>category<th class=ranking>ranking\n";
+	echo " <tr>
+  <th class=category>category
+  <th class=ranking>ranking\n";
 	foreach( $cats as $cat ) {
 		$catname = $cat[0];
 		$type = $cat[1];
 		$jobid = $cat[2];
-
+		$cat_done = 0;
+		$cat_togo = 0;
+		$cat_cpu = 0;
+		$cat_time = 0;
 		// if job html exists, use it
 		$jobpath = 'caches/'.$type.'_'.$jobid.'.html';
 		if( ! file_exists($jobpath) ) {
@@ -125,27 +145,24 @@ $competitions = [
 			}
 		}
 
-		$row = [];
 		$init = false;
 		$togo = 0;
 		$conflicts = 0;
+		$best = [ 'score' => 1, 'YES' => 1, 'NO' => 1, 'upper' => 1, 'lower' => 1, 'time' => INF ];
 
 		// checking cached score file and making ranking
 		$fname = jobid2scorefile($jobid); 
 		if( file_exists($fname) ) {
 			$init = true;
-			$file = new SplFileObject($fname);
-			$file->setFlags( SplFileObject::READ_CSV );
-			foreach( $file as $line ) {
-				if( !is_null($line[0]) ) {
-					$row[$line[0]] = [ 'id' => $line[1], 'score' => $line[2], 'togo' => $line[3], 'conflicts' => $line[4] ];
-					$tools[$line[0]] = true;
-				}
-			}
-			uasort($row, function($s,$t) { return $s['score'] < $t['score'] ? 1 : -1; } );
-			foreach( $row as $s ) {
+			$solvers = json_decode(file_get_contents($fname),TRUE);
+			uasort($solvers, function($s,$t) { return $s['score'] < $t['score'] ? 1 : -1; } );
+			foreach( $solvers as $s ) {
 				$togo += $s['togo'];
 				$conflicts += $s['conflicts'];
+				foreach( ['score','YES','NO','upper','lower'] as $key ) {
+					$best[$key] = max($best[$key], $s[$key]);
+				}
+				$best['time'] = min($best['time'], $s['time']);
 			}
 		}
 		if( !$init || $togo > 0 ) {
@@ -163,25 +180,67 @@ $competitions = [
 				echo "<a class=conflict href='$jobpath#conflict'>conflict</a>";
 			} 
 			echo "  <td class=ranking>";
-			foreach( array_keys($row) as $solver ) {
-				$s = $row[$solver];
+			$prev_score = $best['score'];
+			$rank = 1;
+			$count = 0;
+			foreach( array_keys($solvers) as $id ) {
+				$s = $solvers[$id];
 				$score = $s['score'];
 				$togo = $s['togo'];
+				$done = $s['done'];
+				$cpu = $s['cpu'];
+				$time = $s['time'];
 				$conflicts = $s['conflicts'];
-				$id = $s['id'];
+				$name = $s['name'];
 				$url = solverid2url($id);
-				echo "   <a class=solver href='$url'>$solver</a>\n";
-				echo "   <span class=score>$score</span>";
+				$count += 1;
+				if( $prev_score > $score ) {
+					$rank = $count;
+				}
+				$prev_score = $score;
+				echo "   <span class=". ( $rank == 1 ? 'best' : '' )."solver>\n";
+				echo "    $rank. <a href='$url'>$name</a>\n    <span class=score>(";
+				if( array_key_exists('YES', $s ) ) {
+					$yes = $s['YES'];
+					$no = $s['NO'];
+					echo "<span class=".( $yes == $best['YES'] ? 'bestyes' : 'yes' ).
+						 ">YES:$yes</span>, ";
+					echo "<span class=".( $no == $best['NO'] ? 'bestno' : 'no' ).
+						 ">NO:$no</span>";
+				} else if( array_key_exists('upper',$s) ) {
+					$upper = $s['upper'];
+					$lower = $s['lower'];
+					echo "<span class=".( $upper == $best['upper'] ? 'bestup' : 'upper' ).">UP:$upper</span>, ";
+					echo "<span class=".( $lower == $best['lower'] ? 'bestlow' : 'lower' ). ">LOW:$lower</span>";
+				} else {
+					echo "$score";
+				}
+				echo ", <span class=".( $time == $best['time'] ? 'besttime' : 'time' ).'>TIME:'.seconds2str($time).'</span>';
+				echo ")</span>";
 				if( $togo > 0 ) {
 					echo "<span class=togo>,$togo</span>";
 				}
-				echo ";";
+				echo "</span><br>\n";
+				$cat_cpu += $cpu;
+				$cat_time += $time;
+				$cat_done += $done;
+				$cat_togo += $togo;
+				$total_cpu += $cpu;
+				$total_time += $time;
+				$total_done += $done;
+				$total_togo += $togo;
 			}
 		}
 		echo "\n";
+		if( $cat_togo > 0 ) {
+			echo " <td>$cat_done/". ($cat_done+$cat_togo) ."\n";
+		}
 	}
 	echo "</table>";
-	}
+	echo "<p>Progress: $total_done/".($total_done+$total_togo).
+		 ", CPU Time: ".seconds2str($total_cpu).
+		 ", Node Time: ".seconds2str($total_time)."</p>\n";
+}
 
 ?>
 

@@ -1,6 +1,15 @@
 <link rel="stylesheet" type="text/css" href="master.css">
 <?php
 
+	function seconds2str($s) {
+		$d = floor($s/(24*60*60));
+		$s = $s%(24*60*60);
+		$h = floor($s/(60*60));
+		$s = $s%(60*60);
+		$m = floor($s/60);
+		$s = $s%60;
+		return ($d>0? $d .'d ' : '').sprintf("%'02d:%'02d:%'02d",$h,$m,$s);
+	}
 	function type2php($type) {
 		if( $type == 'termination' ) {
 			return 'termination.php';
@@ -37,7 +46,7 @@
 		return "https://www.starexec.org/starexec/secure/download?type=job&id=$jobid&returnids=true&getcompleted=false";
 	}
 	function jobid2scorefile($jobid) {
-		return "caches/Job" . $jobid . "_score.csv";
+		return "caches/Job" . $jobid . "_score.json";
 	}
 	function pairid2url($pairid) {
 		return "https://www.starexec.org/starexec/secure/details/pair.jsp?id=$pairid";
@@ -91,6 +100,7 @@
 		preg_match( '|[^/]*/(.*)$|', $string, $matches );
 		$ret = $matches[1];
 		$ret = str_replace( '/', '/<wbr>',$ret );
+		$ret = str_replace( '_', '_<wbr>',$ret );
 		return $ret;
 	}
 	function parse_time( $string ) {
