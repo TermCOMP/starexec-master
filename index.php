@@ -2,8 +2,24 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+	var rankseps = [];
+	var ranksep = ['<br>','; '];
+	var ranksepi = 0;
+	function toggle_rankseps() {
+		ranksepi = (ranksepi+1)%ranksep.length;
+		rankseps.forEach( function(s) { s.innerHTML = ranksep[ranksepi]; } );
+	}
+</script>
 <?php
 	include 'definitions.php';
+	$rankseps = 0;
+	function ranksep() {
+		global $rankseps;
+		$rankseps += 1;
+		return "<span id='ranksep$rankseps'><br></span>".
+			"<script>rankseps.push(document.getElementById('ranksep$rankseps'))</script>";
+	}
 ?>
 </head>
 <body>
@@ -102,7 +118,9 @@ $competitions = [
 	$competition = $competitions[2019];
 	$mcats = $competition["mcats"];
 
-	echo "<h1>" . $competition['name'] . "</h1>";
+	echo "<h1>" . $competition['name'] .
+		 "\n <a style='font-size: medium' onclick='toggle_rankseps()'>[list view]</a>\n</h1>\n";
+	
 
 foreach( array_keys($mcats) as $mcatname ) {
 	$total_done = 0;
@@ -174,7 +192,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 		echo " <tr class=$class>\n";
 		echo "  <td class=category>\n";
 		echo "   <a href='$jobpath'>$catname</a>\n";
-		echo "   <a class=starexecid href='".jobid2url($jobid)."'>$jobid</a></sub>\n";
+		echo "   <a class=starexecid href='".jobid2url($jobid)."'>$jobid</a>\n";
 		if( $init ) {
 			if( $conflicts > 0 ) {
 				echo "<a class=conflict href='$jobpath#conflict'>conflict</a>";
@@ -220,7 +238,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 				if( $togo > 0 ) {
 					echo "<span class=togo>,$togo</span>";
 				}
-				echo "</span><br>\n";
+				echo "</span>".ranksep()."\n";
 				$cat_cpu += $cpu;
 				$cat_time += $time;
 				$cat_done += $done;
@@ -231,7 +249,6 @@ foreach( array_keys($mcats) as $mcatname ) {
 				$total_togo += $togo;
 			}
 		}
-		echo "\n";
 		if( $cat_togo > 0 ) {
 			echo " <td>$cat_done/". ($cat_done+$cat_togo) ."\n";
 		}
