@@ -5,24 +5,6 @@
 <?php
 	include './definitions.php';
 	
-	function str2result($str) {
-		if( $str == 'YES' ) {
-			return 1;
-		} else if( $str == 'NO' ) {
-			return -1;
-		} else {
-			return 0;
-		}
-	}
-	function result2str($result) {
-		if( $result == -1 ) {
-			return 'NO';
-		} else if( $result == 1 ) {
-			return 'YES';
-		} else {
-			return 'MAYBE';
-		}
-	}
 	if( $jobid == NULL ) {
 		$jobid = $_GET['id'];
 	}
@@ -52,20 +34,31 @@
 	    $records[] = $row;
 	  }
 	}
+	$pairid_idx = array_search('pair id', $records[0]);
+	$benchmark_idx = array_search('benchmark', $records[0]);
+	$benchmark_id_idx = array_search('benchmark id', $records[0]);
+	$solver_idx = array_search('solver', $records[0]);
+	$solverid_idx = array_search('solver id', $records[0]);
+	$config_idx = array_search('configuration', $records[0]);
+	$configid_idx = array_search('configuration id', $records[0]);
+	$status_idx = array_search('status', $records[0]);
+	$cputime_idx = array_search('cpu time', $records[0]);
+	$wallclocktime_idx = array_search('wallclock time', $records[0]);
+	$memoryusage_idx = array_search('memory usage', $records[0]);
+	$result_idx = array_search('result', $records[0]);
+	$certificationresult_idx = array_search('certification-result', $records[0]);
 	unset( $records[0] );
 
 	$solvers = [];
-	$solvername = $records[1][3];
-	$solver = $records[1][4];
-	$config = $records[1][5];
-	$configid = $records[1][6];
-	$firstsolver = $solver;
+
 	$i = 1;
+	$solverid = $records[$i][$solverid_idx];
+	$firstsolver = $solverid;
 	do {
-		$solvers[$solver] = [
-			'name' => $solvername,
-			'config' => $config,
-			'configid' => $configid,
+		$solvers[$solverid] = [
+			'name' => $records[$i][$solver_idx],
+			'config' => $records[$i][$config_idx],
+			'configid' => $records[$i][$configid_idx],
 			'score' => 0,
 			'conflicts' => 0,
 			'done' => 0,
@@ -76,18 +69,15 @@
 			'NO' => 0,
 			'MAYBE' => 0,
 		];
-		$lastsolver = $solver;
+		$lastsolver = $solverid;
 		$i++;
-		$solvername = $records[$i][3];
-		$solver = $records[$i][4];
-		$config = $records[$i][5];
-		$configid = $records[$i][6];
-	} while( $solver != $firstsolver );
+		$solverid = $records[$i][$solverid_idx];
+	} while( $solverid != $firstsolver );
 
 	echo " <tr>\n";
 	echo "  <th>benchmark\n";
-	foreach( array_keys($solvers) as $id ) {
-		echo "  <th><a href='". solverid2url($id) . "'>".$solvers[$id]['name']."</a>\n";
+	foreach( array_keys($solvers) as $solverid ) {
+		echo "  <th><a href='". solverid2url($solverid) . "'>".$solvers[$solverid]['name']."</a>\n";
 	}
 	echo " <tr><th>\n";
 	foreach( $solvers as $s ) {
@@ -98,49 +88,44 @@
 
 	$conflicts = 0;
 	foreach( $records as $record ) {
-		$solver = $record[4];
-		$status = $record[7];
-		$cpu = parse_time($record[8]);
-		$time = parse_time($record[9]); 
-		$result = str2result($record[11]);
-		if( $solver == $firstsolver ) {
+		$solverid = $record[$solverid_idx];
+		$status = $record[$status_idx];
+		$cpu = parse_time($record[$cputime_idx]);
+		$time = parse_time($record[$wallclocktime_idx]);
+		$result = $record[$result_idx];
+		$cert = $certificationresult_idx ? $record[$certificationresult_idx] : '';
+		if( $solverid == $firstsolver ) {
 			$bench = [];
-			$benchmark = parse_benchmark( $record[1] );
-			$url = bmid2url($record[2]);
+			$benchmark = parse_benchmark( $record[$benchmark_idx] );
+			$url = bmid2url($record[$benchmark_id_idx]);
 		}
 		if( status2complete($status) ) {
-			$solvers[$solver]['done'] += 1;
-			$solvers[$solver]['cpu'] += $cpu;
-			$solvers[$solver]['time'] += $time;
-			$solvers[$solver][result2str($result)] += 1;
+			$solvers[$solverid]['done'] += 1;
+			$solvers[$solverid]['cpu'] += $cpu;
+			$solvers[$solverid]['time'] += $time;
+			$solvers[$solverid][$result] += 1;
+			$solvers[$solverid]['score'] += result2score($result);
 		} else {
-			$solvers[$solver]['togo'] += 1;
+			$solvers[$solverid]['togo'] += 1;
 		}
-		$bench[$solver] = [
+		$bench[$solverid] = [
 			'status' => $status,
 			'result' => $result,
+			'cert' => $cert,
 			'time' => $time,
 			'cpu' => $cpu,
-			'pair' => $record[0],
+			'pair' => $record[$pairid_idx],
 		];
-		if( $solver == $lastsolver ) {
-			$conflict = false;
+		if( $solverid == $lastsolver ) {
+			$resultcounter = [];
 			foreach( array_keys($bench) as $me ) {
-				$my = $bench[$me];
-				$score = abs($my['result']);
-				$solvers[$me]['score'] += $score;
-				foreach( $bench as $your ) {
-					if( $my['result'] * $your['result'] < 0 ) {
-						$conflict = true;
-					}
-				}
-				if( $conflict ) {
-					$solvers[$me]['conflicts'] += 1;
-				}
+				$result = $bench[$me]['result'];
+				$resultcounter[$result]++;
 			}
+			$conflict = $resultcounter['YES'] > 0 && $resultcounter['NO'] > 0;
 			if( $conflict ) {
-				echo " <tr class=conflict>\n";
 				$conflicts += 1;
+				echo " <tr class=conflict>\n";
 			} else {
 				echo " <tr>\n";
 			}
@@ -153,11 +138,12 @@
 				$my = $bench[$me];
 				$status = $my['status'];
 				$result = $my['result'];
+				$cert = $my['cert'];
 				$url = pairid2url($my['pair']);
 				$outurl = pairid2outurl($my['pair']);
 				if( $status == 'complete' ) {
-					echo "  <td " . result2style($result) . ">
-   <a href='$outurl'>" . result2str($result) . "</a>
+					echo "  <td " . result2style($result,$cert) . ">
+   <a href='$outurl'>" . result2str($result,$cert) . "</a>
    <a href='$url'>
     <span class=time>" . $my['cpu'] . "/" . $my['time'] . "</span>
    </a>\n";

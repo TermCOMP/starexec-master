@@ -54,15 +54,38 @@
 	function pairid2outurl($pairid) {
 		return "https://www.starexec.org/starexec/services/jobs/pairs/$pairid/stdout/1?limit=-1";
 	}
-	function result2style($result) {
-		if( $result == -1 ) {
-			return "class=no";
-		} else if( $result == 0 ) {
-			return "class=maybe";
-		} else if ( $result == 1 ) {
-			return "class=yes";
+	function result2score($result) {
+		switch($result) {
+		case 'YES':
+		case 'NO':
+			return 1;
+		default:
+			return 0;
+		}
+	}
+	function result2str($result,$cert) {
+		if( $result == 'YES' || $result == 'NO' ) {
+			return $cert . ' ' . $result;
 		} else {
-			return "class=error";
+			return $result;
+		}
+	}
+	function result2style($result,$cert) {
+		if( cert == 'UNSUPPORTED' ) {
+			return 'class=unsupported';
+		} else if (cert == 'REJECTED' ) {
+			return 'class=rejected';
+		} else {
+			switch( $result ) {
+			case 'YES':
+				return "class=yes";
+			case 'NO':
+				return 'class=no';
+			case 'MAYBE':
+				return "class=maybe";
+			default:
+				return "class=error";
+			}
 		}
 	}
 	function status2style($status) {

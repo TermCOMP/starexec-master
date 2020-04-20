@@ -100,6 +100,10 @@ td a {
 	background-color: khaki;
 	color: black;
 }
+.unsupported {
+	background-color: gray;
+	color: white;
+}
 .error, .error a {
 	background-color: red;
 	color: white; 
