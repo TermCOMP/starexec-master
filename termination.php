@@ -98,6 +98,7 @@
 			$bench = [];
 			$benchmark = parse_benchmark( $record[$benchmark_idx] );
 			$url = bmid2url($record[$benchmark_id_idx]);
+			$resultcounter = []; /* collects results for each benchmark */
 		}
 		if( status2complete($status) ) {
 			$solvers[$solverid]['done'] += 1;
@@ -105,6 +106,7 @@
 			$solvers[$solverid]['time'] += $time;
 			$solvers[$solverid][$result] += 1;
 			$solvers[$solverid]['score'] += result2score($result);
+			$resultscounter[$result]++;
 		} else {
 			$solvers[$solverid]['togo'] += 1;
 		}
@@ -117,13 +119,13 @@
 			'pair' => $record[$pairid_idx],
 		];
 		if( $solverid == $lastsolver ) {
-			$resultcounter = [];
-			foreach( array_keys($bench) as $me ) {
-				$result = $bench[$me]['result'];
-				$resultcounter[$result]++;
-			}
 			$conflict = $resultcounter['YES'] > 0 && $resultcounter['NO'] > 0;
 			if( $conflict ) {
+				foreach( array_keys($bench) as $me ) {
+					if( $bench[$me]['score'] > 0 ) {
+						$solver[$me]['conflicts']++;
+					}
+				}
 				$conflicts += 1;
 				echo " <tr class=conflict>\n";
 			} else {
