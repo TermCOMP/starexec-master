@@ -89,7 +89,7 @@ td a {
 	color: black;
 	font-weight: bold;
 }
-.NO, .NO a, .bestNO, .CERTIFIEDNO a, .bestCERTIFIEDNO {
+.NO, .NO a, .bestNO,  .CERTIFIEDNO, .CERTIFIEDNO a, .bestCERTIFIEDNO {
 	background-color: green;
 	color: white;
 }
@@ -168,7 +168,7 @@ td.time, th.time {
 	background-color: gray;
 	color: white;
 }
-td.no span.time {
+td.NO span.time, td.CERTIFIEDNO span.time {
 	color: lightgray;
 }	
 .conflict, .conflict .benchmark {
