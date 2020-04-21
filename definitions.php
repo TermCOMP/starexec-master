@@ -58,34 +58,27 @@
 		switch($result) {
 		case 'YES':
 		case 'NO':
+		case 'CERTIFIED YES':
+		case 'CERTIFIED NO':
 			return 1;
 		default:
 			return 0;
 		}
 	}
-	function result2str($result,$cert) {
-		if( $result == 'YES' || $result == 'NO' ) {
-			return $cert . ' ' . $result;
-		} else {
-			return $result;
-		}
-	}
-	function result2style($result,$cert) {
-		if( cert == 'UNSUPPORTED' ) {
-			return 'class=unsupported';
-		} else if (cert == 'REJECTED' ) {
-			return 'class=rejected';
-		} else {
-			switch( $result ) {
-			case 'YES':
-				return "class=yes";
-			case 'NO':
-				return 'class=no';
-			case 'MAYBE':
-				return "class=maybe";
-			default:
-				return "class=error";
-			}
+	function result2class($result) {
+		switch( $result ) {
+		case 'YES':
+			return 'YES';
+		case 'CERTIFIED YES':
+			return 'CERTIFIEDYES';
+		case 'NO':
+			return 'NO';
+		case 'CERTIFIED NO':
+			return 'CERTIFIEDNO';
+		case 'MAYBE':
+			return 'maybe';
+		default:
+			return 'error';
 		}
 	}
 	function status2style($status) {

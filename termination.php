@@ -49,68 +49,67 @@
 	$certificationresult_idx = array_search('certification-result', $records[0]);
 	unset( $records[0] );
 
-	$solvers = [];
+	$participants = [];
 
 	$i = 1;
-	$solverid = $records[$i][$solverid_idx];
-	$firstsolver = $solverid;
+	$configid = $records[$i][$configid_idx];
+	$first = $configid;
 	do {
-		$solvers[$solverid] = [
-			'name' => $records[$i][$solver_idx],
+		$participants[$configid] = [
+			'solver' => $records[$i][$solver_idx],
+			'solverid' => $records[$i][$solverid_idx],
 			'config' => $records[$i][$config_idx],
-			'configid' => $records[$i][$configid_idx],
+			'configid' => $configid,
 			'score' => 0,
 			'conflicts' => 0,
 			'done' => 0,
 			'togo' => 0,
 			'cpu' => 0,
 			'time' => 0,
-			'YES' => 0,
-			'NO' => 0,
-			'MAYBE' => 0,
 		];
-		$lastsolver = $solverid;
+		$last = $configid;
 		$i++;
-		$solverid = $records[$i][$solverid_idx];
-	} while( $solverid != $firstsolver );
+		$configid = $records[$i][$configid_idx];
+	} while( $configid != $first );
 
 	echo " <tr>\n";
 	echo "  <th>benchmark\n";
-	foreach( array_keys($solvers) as $solverid ) {
-		echo "  <th><a href='". solverid2url($solverid) . "'>".$solvers[$solverid]['name']."</a>\n";
+	foreach( $participants as $participant ) {
+		echo "  <th><a href='". solverid2url($participant['solverid']) . "'>".$participant['solver']."</a>\n";
 	}
 	echo " <tr><th>\n";
-	foreach( $solvers as $s ) {
-		echo "  <th class='config'><a href='". configid2url($s['configid']) ."'>". $s['config']."</a>\n";
+	foreach( $participants as $participant ) {
+		echo "  <th class='config'><a href='". configid2url($participant['configid']) ."'>". $participant['config']."</a>\n";
 	}
 	echo " <tr>\n";
 	$bench = [];
 
 	$conflicts = 0;
 	foreach( $records as $record ) {
-		$solverid = $record[$solverid_idx];
+		$configid = $record[$configid_idx];
+		$participant =& $participants[$configid];
 		$status = $record[$status_idx];
 		$cpu = parse_time($record[$cputime_idx]);
 		$time = parse_time($record[$wallclocktime_idx]);
 		$result = $record[$result_idx];
 		$cert = $certificationresult_idx ? $record[$certificationresult_idx] : '';
-		if( $solverid == $firstsolver ) {
+		if( $configid == $first ) {
 			$bench = [];
 			$benchmark = parse_benchmark( $record[$benchmark_idx] );
 			$url = bmid2url($record[$benchmark_id_idx]);
 			$resultcounter = []; /* collects results for each benchmark */
 		}
 		if( status2complete($status) ) {
-			$solvers[$solverid]['done'] += 1;
-			$solvers[$solverid]['cpu'] += $cpu;
-			$solvers[$solverid]['time'] += $time;
-			$solvers[$solverid][$result] += 1;
-			$solvers[$solverid]['score'] += result2score($result);
+			$participant['done'] += 1;
+			$participant['cpu'] += $cpu;
+			$participant['time'] += $time;
+			$participant[$result] += 1;
+			$participant['score'] += result2score($result);
 			$resultscounter[$result]++;
 		} else {
-			$solvers[$solverid]['togo'] += 1;
+			$participant['togo'] += 1;
 		}
-		$bench[$solverid] = [
+		$bench[$configid] = [
 			'status' => $status,
 			'result' => $result,
 			'cert' => $cert,
@@ -118,12 +117,12 @@
 			'cpu' => $cpu,
 			'pair' => $record[$pairid_idx],
 		];
-		if( $solverid == $lastsolver ) {
+		if( $configid == $last ) {
 			$conflict = $resultcounter['YES'] > 0 && $resultcounter['NO'] > 0;
 			if( $conflict ) {
 				foreach( array_keys($bench) as $me ) {
 					if( $bench[$me]['score'] > 0 ) {
-						$solver[$me]['conflicts']++;
+						$participants[$me]['conflicts']++;
 					}
 				}
 				$conflicts += 1;
@@ -144,8 +143,8 @@
 				$url = pairid2url($my['pair']);
 				$outurl = pairid2outurl($my['pair']);
 				if( $status == 'complete' ) {
-					echo "  <td " . result2style($result,$cert) . ">
-   <a href='$outurl'>" . result2str($result,$cert) . "</a>
+					echo '  <td class=' . result2class($result) . ">
+   <a href='$outurl'>" . $result . "</a>
    <a href='$url'>
     <span class=time>" . $my['cpu'] . "/" . $my['time'] . "</span>
    </a>\n";
@@ -159,11 +158,11 @@
 		}
 	}
 	echo " <tr><th>\n";
-	foreach( $solvers as $s ) {
+	foreach( $participants as $s ) {
 		echo "  <th>".$s['score']."</th>\n";
 	}
 	$scorefileD = fopen($scorefile,"w");
-	fwrite( $scorefileD, json_encode($solvers) );
+	fwrite( $scorefileD, json_encode($participants) );
 	fclose( $scorefileD );
 ?>
 </table>

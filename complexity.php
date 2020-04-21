@@ -121,8 +121,8 @@
 			'togo' => 0,
 			'cpu' => 0,
 			'time' => 0,
-			'upper' => 0,
-			'lower' => 0,
+			'UP' => 0,
+			'LOW' => 0,
 		];
 		$lastsolver = $solver;
 		$i++;
@@ -208,8 +208,8 @@
 				$status = $my['status'];
 				if( $status == 'complete' ) {
 					$solvers[$me]['score'] += $upscore + $lowscore;
-					$solvers[$me]['upper'] += $upscore;
-					$solvers[$me]['lower'] += $lowscore;
+					$solvers[$me]['UP'] += $upscore;
+					$solvers[$me]['LOW'] += $lowscore;
 					echo "  <td $upperstyle>$a" . bound2str($upper) . " <span class=score>(+$upscore)</span></a>\n";
 					echo "  <td $lowerstyle>$a" . bound2str($lower) . " <span class=score>(+$lowscore)</span></a>\n";
 					echo "  <td class=time>$a" . $my['cpu'] . "/" . $my['time'] . "</a>\n";

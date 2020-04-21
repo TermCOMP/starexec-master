@@ -43,6 +43,7 @@ td a {
 }
 .config {
 	font-weight: normal;
+	font-size: 75%;
 }
 .ranking {
 	text-align: left;
@@ -75,24 +76,24 @@ td a {
 	background-color: darksalmon;
 	color: black;
 }
-.yes, .yes a {
+.YES, .YES a, .CERTIFIEDYES, .CERTIFIEDYES a {
 	background-color: mediumspringgreen;
 	color: black;
 }
-.score .yes {
+.score .YES, .score .CERTIFIEDYES {
 	background: none;
 	color: black;
 }
-.bestyes {
+.bestYES, .bestCERTIFIEDYES {
 	background-color: mediumspringgreen;
 	color: black;
 	font-weight: bold;
 }
-.no, .no a, .bestno {
+.NO, .NO a, .bestNO, .CERTIFIEDNO a, .bestCERTIFIEDNO {
 	background-color: green;
 	color: white;
 }
-.score .no {
+.score .NO, .score .CERTIFIEDNO {
 	background: none;
 	color: darkgreen;
 }
@@ -128,7 +129,7 @@ td a {
 	background-color: #208020;
 	color: white;
 }
-.bestlow {
+.bestLOW {
 	background-color: #60A060;
 	color: white;
 }
@@ -152,7 +153,7 @@ td a {
 	background-color: #C0F0C0;
 	color: black;
 }
-.bestup {
+.bestUP {
 	background-color: #00FFF0;
 	color: black;
 	font-weight: bold;

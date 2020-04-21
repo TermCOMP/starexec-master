@@ -115,12 +115,21 @@ $competitions = [
 ]
 ];
 
-	$competition = $competitions[2019];
-	$mcats = $competition["mcats"];
+	$competition = $competitions['2019'];
+	$mcats = $competition['mcats'];
 
 	echo "<h1>" . $competition['name'] .
 		 "\n <a style='font-size: medium' onclick='toggle_rankseps()'>[list view]</a>\n</h1>\n";
 	
+
+$scored_keys = [
+	'CERTIFIED YES',
+	'CERTIFIED NO',
+	'YES',
+	'NO',
+	'UP',
+	'LOW',
+];
 
 foreach( array_keys($mcats) as $mcatname ) {
 	$total_done = 0;
@@ -166,7 +175,10 @@ foreach( array_keys($mcats) as $mcatname ) {
 		$init = false;
 		$togo = 0;
 		$conflicts = 0;
-		$best = [ 'score' => 1, 'YES' => 1, 'NO' => 1, 'upper' => 1, 'lower' => 1, 'time' => INF ];
+		$best = [ 'score' => 1, 'time' => INF ];
+		foreach( $scored_keys as $key ) {
+			$best[$key] = 1;
+		}
 
 		// checking cached score file and making ranking
 		$fname = jobid2scorefile($jobid); 
@@ -177,7 +189,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 			foreach( $solvers as $s ) {
 				$togo += $s['togo'];
 				$conflicts += $s['conflicts'];
-				foreach( ['score','YES','NO','upper','lower'] as $key ) {
+				foreach( $scored_keys as $key ) {
 					$best[$key] = max($best[$key], $s[$key]);
 				}
 				$best['time'] = min($best['time'], $s['time']);
@@ -201,15 +213,17 @@ foreach( array_keys($mcats) as $mcatname ) {
 			$prev_score = $best['score'];
 			$rank = 1;
 			$count = 0;
-			foreach( array_keys($solvers) as $id ) {
-				$s = $solvers[$id];
+			foreach( $solvers as $s ) {
 				$score = $s['score'];
 				$togo = $s['togo'];
 				$done = $s['done'];
 				$cpu = $s['cpu'];
 				$time = $s['time'];
 				$conflicts = $s['conflicts'];
-				$name = $s['name'];
+				$name = $s['solver'];
+				$id = $s['solverid'];
+				$config = $s['config'];
+				$configid = $s['configid'];
 				$url = solverid2url($id);
 				$count += 1;
 				if( $prev_score > $score ) {
@@ -218,22 +232,15 @@ foreach( array_keys($mcats) as $mcatname ) {
 				$prev_score = $score;
 				echo "   <span class=". ( $rank == 1 ? 'best' : '' )."solver>\n";
 				echo "    $rank. <a href='$url'>$name</a>\n    <span class=score>(";
-				if( array_key_exists('YES', $s ) ) {
-					$yes = $s['YES'];
-					$no = $s['NO'];
-					echo "<span class=".( $yes == $best['YES'] ? 'bestyes' : 'yes' ).
-						 ">YES:$yes</span>, ";
-					echo "<span class=".( $no == $best['NO'] ? 'bestno' : 'no' ).
-						 ">NO:$no</span>";
-				} else if( array_key_exists('upper',$s) ) {
-					$upper = $s['upper'];
-					$lower = $s['lower'];
-					echo "<span class=".( $upper == $best['upper'] ? 'bestup' : 'upper' ).">UP:$upper</span>, ";
-					echo "<span class=".( $lower == $best['lower'] ? 'bestlow' : 'lower' ). ">LOW:$lower</span>";
-				} else {
-					echo "$score";
+				foreach( $scored_keys as $key ) {
+					if( array_key_exists( $key, $s ) ) {
+						$subscore = $s[$key];
+						echo '<span class='.
+							( $subscore == $best[$key] ? 'best' : '' ). result2class($key) .
+						 '>'. $key . ':' . $subscore . '</span>, ';
+					}
 				}
-				echo ", <span class=".( $time == $best['time'] ? 'besttime' : 'time' ).'>TIME:'.seconds2str($time).'</span>';
+				echo "<span class=".( $time == $best['time'] ? 'besttime' : 'time' ).'>TIME:'.seconds2str($time).'</span>';
 				echo ")</span>";
 				if( $togo > 0 ) {
 					echo "<span class=togo>,$togo</span>";
