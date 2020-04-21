@@ -54,32 +54,33 @@
 	function pairid2outurl($pairid) {
 		return "https://www.starexec.org/starexec/services/jobs/pairs/$pairid/stdout/1?limit=-1";
 	}
+	$result_table = [
+		'YES' => [ 'class' => 'YES', 'score' => 1 ],
+		'NO' => [ 'class' => 'NO', 'score' => 1 ],
+		'CERTIFIED YES' => [ 'class' => 'CERTIFIEDYES', 'score' => 1 ],
+		'CERTIFIED NO' => [ 'class' => 'CERTIFIEDNO', 'score' => 1 ],
+		'REJECTED YES' => [ 'class' => 'error', 'score' => 0 ],
+		'REJECTED NO' => [ 'class' => 'error', 'score' => 0 ],
+		'UNSUPPORTED YES' => ['class' => 'unsupported', 'score' => 0 ],
+		'UNSUPPORTED NO' => ['class' => 'unsupported', 'score' => 0 ],
+		'MAYBE' => [ 'class' => 'maybe', 'score' => 0 ],
+		'TIMEOUT' => [ 'class' => 'timeout', 'score' => 0 ],
+	];
 	function result2score($result) {
-		switch($result) {
-		case 'YES':
-		case 'NO':
-		case 'CERTIFIED YES':
-		case 'CERTIFIED NO':
-			return 1;
-		default:
-			return 0;
+		global $result_table;
+		return $result_table[$result]['score'];
+	}
+	function result2str($result) {
+		global $result_table;
+		if( array_key_exists( $result, $result_table ) ) {
+			return $result;
+		} else {
+			return 'ERROR';
 		}
 	}
 	function result2class($result) {
-		switch( $result ) {
-		case 'YES':
-			return 'YES';
-		case 'CERTIFIED YES':
-			return 'CERTIFIEDYES';
-		case 'NO':
-			return 'NO';
-		case 'CERTIFIED NO':
-			return 'CERTIFIEDNO';
-		case 'MAYBE':
-			return 'maybe';
-		default:
-			return 'error';
-		}
+		global $result_table;
+		return $result_table[$result]['class'];
 	}
 	function status2style($status) {
 		if( $status == 'complete' ) {

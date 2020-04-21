@@ -101,7 +101,7 @@ td a {
 	background-color: khaki;
 	color: black;
 }
-.unsupported {
+.unsupported, .unsupported a {
 	background-color: gray;
 	color: white;
 }
@@ -168,7 +168,7 @@ td.time, th.time {
 	background-color: gray;
 	color: white;
 }
-td.NO span.time, td.CERTIFIEDNO span.time {
+td.NO span.time, td.CERTIFIEDNO span.time, td.unsupported span.time {
 	color: lightgray;
 }	
 .conflict, .conflict .benchmark {

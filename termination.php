@@ -144,7 +144,7 @@
 				$outurl = pairid2outurl($my['pair']);
 				if( $status == 'complete' ) {
 					echo '  <td class=' . result2class($result) . ">
-   <a href='$outurl'>" . $result . "</a>
+   <a href='$outurl'>" . result2str($result) . "</a>
    <a href='$url'>
     <span class=time>" . $my['cpu'] . "/" . $my['time'] . "</span>
    </a>\n";
