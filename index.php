@@ -230,8 +230,10 @@ foreach( array_keys($mcats) as $mcatname ) {
 					$rank = $count;
 				}
 				$prev_score = $score;
-				echo "   <span class=". ( $rank == 1 ? 'best' : '' )."solver>\n";
-				echo "    $rank. <a href='$url'>$name</a>\n    <span class=score>(";
+				echo '   <span class='. ( $rank == 1 ? 'best' : '' )."solver>\n";
+				echo "    $rank. <a href='$url'>$name</a>\n";
+				echo "    <a class='config' href='". configid2url($configid) ."'>$config</a>";
+				echo "    <span class=score>(";
 				foreach( $scored_keys as $key ) {
 					if( array_key_exists( $key, $s ) ) {
 						$subscore = $s[$key];
