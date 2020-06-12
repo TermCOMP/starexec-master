@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang='en'>
 <head>
  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -163,9 +164,6 @@
 '  <th colspan=3><a href="'. solverid2url($participant['solverid']) . '">'.$participant['solver'].'</a>
    <a class=config href="'. configid2url($participant['configid']) .'">'. $participant['config'].'</a>
 ';	}
-	echo
-' </tr>
-';
 	$bench = [];
 
 	$conflicts = 0;
@@ -214,10 +212,10 @@
 		];
 		if( $configid == $last ) {
 			echo
-'  <td class=benchmark>
+' <tr>
+  <td class=benchmark>
    <a href="'. $benchmark_url.'">'.$benchmark.'</a>
    <a class=starexecid href="'.$benchmark_remote.'">'.$benchmark_id.'</a>
-  </td>
 ';
 			foreach( array_keys($bench) as $me ) {
 				$my = $bench[$me];
@@ -266,9 +264,6 @@
 ';
 				}
 			}
-			echo
-' </tr>
-';
 		}
 	}
 	echo
@@ -276,9 +271,7 @@
 ';
 	foreach( $participants as $s ) {
 		$score = $s['score'];
-		echo
-'  <th><th colspan=3>'. $score .'</th>
-';
+		echo '  <th><th colspan=3>'. $score;
 	}
 	$scorefileD = fopen($scorefile,'w');
 	fwrite( $scorefileD, json_encode($participants) );

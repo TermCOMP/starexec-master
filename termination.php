@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang='en'>
 <head>
  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -86,9 +87,6 @@
 '  <th><a href="'. solverid2url($participant['solverid']) . '">'.$participant['solver'].'</a>
    <a class=config href="'. configid2url($participant['configid']) .'">'. $participant['config'].'</a>
 ';	}
-	echo
-' </tr>
-';
 	$bench = [];
 
 	$conflicts = 0;
@@ -193,18 +191,13 @@
 ' : '' );
 				}
 			}
-			echo
-' </tr>
-';
 		}
 	}
 	echo
 ' <tr><th>
 ';
 	foreach( $participants as $s ) {
-		echo
-'  <th>'.$s['score'].'</th>
-';
+		echo '  <th>'.$s['score'];
 	}
 	$scorefileD = fopen($scorefile,'w');
 	fwrite( $scorefileD, json_encode($participants) );

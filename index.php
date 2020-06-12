@@ -211,7 +211,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 		echo
 ' <tr class=' . $class . '>
   <td class=category>
-   <a href=' . $jobpath . '>' . $catname . '</a>
+   <a href="' . $jobpath . '">' . $catname . '</a>
    <a class=starexecid href="' . jobid2url($jobid) . '">' . $jobid . '</a>
 ';
 		if( $init ) {
