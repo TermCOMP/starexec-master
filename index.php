@@ -166,8 +166,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 			if( ! file_exists($jobpath) ) {
 				$file = fopen($jobpath,'w');
 				fwrite( $file,
-'<!DOCTYPE html>
-<?php
+'<?php
 	$competitionname = '. str2str($competition['name']) . ';
 	$jobname = ' . str2str($catname) . ';
 	$jobid = ' . $jobid . ';
