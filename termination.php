@@ -99,7 +99,7 @@
 		$time = parse_time($record[$wallclocktime_idx]);
 		$result = $record[$result_idx];
 		$cert = $certificationresult_idx ? $record[$certificationresult_idx] : '';
-		$certtime = $certificationtime_idx ? $record[$certificationtime_idx] : '';
+		$certtime = $certificationtime_idx ? $record[$certificationtime_idx] : 0;
 		if( $configid == $first ) {
 			$bench = [];
 			$benchmark = parse_benchmark( $record[$benchmark_idx] );
@@ -119,7 +119,7 @@
 			$participant[$result] += 1;
 			$participant['score'] += result2score($result);
 			$participant['certtime'] += $certtime;
-			$resultscounter[$result]++;
+			$resultcounter[$result]++;
 		} else {
 			$participant['togo'] += 1;
 		}
