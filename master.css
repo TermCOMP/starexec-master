@@ -2,7 +2,7 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: medium;
 }
-h1 {
+h1, h1 a {
 	font-weight:normal;
 }
 h2 {
@@ -134,11 +134,11 @@ td a {
 	color: white;
 }
 .up0, .up0 a {
-	background-color: #00FFF0;
+	background-color: #00B0FF;
 	color: black;
 }
 .up1, .up1 a {
-	background-color: #20FFE0;
+	background-color: #20FFD0;
 	color: black;
 }
 .up2, .up2 a {

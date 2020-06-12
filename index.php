@@ -1,7 +1,19 @@
+<?php
+	include 'definitions.php';
+	$rankseps = 0;
+	function ranksep() {
+		global $rankseps;
+		$rankseps += 1;
+		return
+'<span id="ranksep'. $rankseps . '"><br></span>
+<script>rankseps.push(document.getElementById("ranksep' . $rankseps . '"))</script>';
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="master.css">
 <script>
 	var rankseps = [];
 	var ranksep = ['<br>','; '];
@@ -11,16 +23,6 @@
 		rankseps.forEach( function(s) { s.innerHTML = ranksep[ranksepi]; } );
 	}
 </script>
-<?php
-	include 'definitions.php';
-	$rankseps = 0;
-	function ranksep() {
-		global $rankseps;
-		$rankseps += 1;
-		return "<span id='ranksep$rankseps'><br></span>".
-			"<script>rankseps.push(document.getElementById('ranksep$rankseps'))</script>";
-	}
-?>
 </head>
 <body>
 <?php
@@ -114,12 +116,14 @@ $competitions = [
 	],
 ]
 ];
-
 	$competition = $competitions['2019'];
 	$mcats = $competition['mcats'];
 
-	echo "<h1>" . $competition['name'] .
-		 "\n <a style='font-size: medium' onclick='toggle_rankseps()'>[list view]</a>\n</h1>\n";
+	echo
+'<h1>' . $competition['name'] . '
+ <a style="font-size: medium" onclick="toggle_rankseps()">[list view]</a>
+</h1>
+';
 	
 
 $scored_keys = [
@@ -136,14 +140,18 @@ foreach( array_keys($mcats) as $mcatname ) {
 	$total_togo = 0;
 	$total_cpu = 0;
 	$total_time = 0;
-	echo "<h2>$mcatname</h2>\n";
+	echo
+'<h2>' . $mcatname . '</h2>
+';
 	$cats = $mcats[$mcatname];
 	$table = [];
 	$tools = [];
-	echo "<table>\n";
-	echo " <tr>
+	echo
+'<table>
+ <tr>
   <th class=category>category
-  <th class=ranking>ranking\n";
+  <th class=ranking>ranking
+';
 	foreach( $cats as $cat ) {
 		$catname = $cat[0];
 		$type = $cat[1];
@@ -160,7 +168,8 @@ foreach( array_keys($mcats) as $mcatname ) {
 			if( ! file_exists($jobpath) ) {
 				$file = fopen($jobpath,'w');
 				fwrite( $file,
-'<?php
+'<!DOCTYPE html>
+<?php
 	$competitionname = '. str2str($competition['name']) . ';
 	$jobname = ' . str2str($catname) . ';
 	$jobid = ' . $jobid . ';
@@ -201,15 +210,21 @@ foreach( array_keys($mcats) as $mcatname ) {
 		} else {
 			$class = 'complete';
 		}
-		echo " <tr class=$class>\n";
-		echo "  <td class=category>\n";
-		echo "   <a href='$jobpath'>$catname</a>\n";
-		echo "   <a class=starexecid href='".jobid2url($jobid)."'>$jobid</a>\n";
+		echo
+' <tr class=' . $class . '>
+  <td class=category>
+   <a href=' . $jobpath . '>' . $catname . '</a>
+   <a class=starexecid href="' . jobid2url($jobid) . '">' . $jobid . '</a>
+';
 		if( $init ) {
 			if( $conflicts > 0 ) {
-				echo "<a class=conflict href='$jobpath#conflict'>conflict</a>";
+				echo
+'<a class=conflict href="' . $jobpath . '#conflict">conflict</a>
+';
 			} 
-			echo "  <td class=ranking>";
+			echo
+'  <td class=ranking>
+';
 			$prev_score = $best['score'];
 			$rank = 1;
 			$count = 0;
@@ -219,6 +234,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 				$done = $s['done'];
 				$cpu = $s['cpu'];
 				$time = $s['time'];
+				$certtime = $s['certtime'];
 				$conflicts = $s['conflicts'];
 				$name = $s['solver'];
 				$id = $s['solverid'];
@@ -230,24 +246,34 @@ foreach( array_keys($mcats) as $mcatname ) {
 					$rank = $count;
 				}
 				$prev_score = $score;
-				echo '   <span class='. ( $rank == 1 ? 'best' : '' )."solver>\n";
-				echo "    $rank. <a href='$url'>$name</a>\n";
-				echo "    <a class='config' href='". configid2url($configid) ."'>$config</a>";
-				echo "    <span class=score>(";
+				echo
+'   <span class='. ( $rank == 1 ? 'best' : '' ) . 'solver>
+    ' . $rank . '. <a href="'. $url . '">'. $name . '</a>
+    <a class=config href="' . configid2url($configid) . '">'. $config . '</a>
+    <span class=score>(';
 				foreach( $scored_keys as $key ) {
 					if( array_key_exists( $key, $s ) ) {
 						$subscore = $s[$key];
-						echo '<span class='.
-							( $subscore == $best[$key] ? 'best' : '' ). result2class($key) .
-						 '>'. $key . ':' . $subscore . '</span>, ';
+						echo '<span '. result2style( $key, $subscore == $best[$key] ) . '>'. $key . ':' . $subscore . '</span>, ';
 					}
 				}
-				echo "<span class=".( $time == $best['time'] ? 'besttime' : 'time' ).'>TIME:'.seconds2str($time).'</span>';
-				echo ")</span>";
-				if( $togo > 0 ) {
-					echo "<span class=togo>,$togo</span>";
+				echo
+'<span class='.( $time == $best['time'] ? 'besttime' : 'time' ).'>TIME:'.seconds2str($time).'</span>';
+				if( $certtime != 0 ) {
+					echo
+', <span class=time>Certification:'.seconds2str($certtime).'</span>';
 				}
-				echo "</span>".ranksep()."\n";
+				echo
+')</span>
+';
+				if( $togo > 0 ) {
+					echo
+'   <span class=togo>,' . $togo . '</span>';
+				}
+				echo
+'   </span>
+   ' . ranksep() . '
+';
 				$cat_cpu += $cpu;
 				$cat_time += $time;
 				$cat_done += $done;
@@ -259,17 +285,20 @@ foreach( array_keys($mcats) as $mcatname ) {
 			}
 		}
 		if( $cat_togo > 0 ) {
-			echo " <td>$cat_done/". ($cat_done+$cat_togo) ."\n";
+			echo
+' <td>' . $cat_done . '/' . ($cat_done + $cat_togo) . '
+';
 		}
 	}
-	echo "</table>";
-	echo "<p>Progress: $total_done/".($total_done+$total_togo).
-		 ", CPU Time: ".seconds2str($total_cpu).
-		 ", Node Time: ".seconds2str($total_time)."</p>\n";
+	echo
+'</table>
+<p>Progress: ' . $total_done . ($total_done + $total_togo) .
+', CPU Time: ' . seconds2str($total_cpu).
+', Node Time: ' . seconds2str($total_time) . '</p>
+';
 }
 
 ?>
-
 
 </body>
 </html>

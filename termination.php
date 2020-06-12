@@ -1,7 +1,7 @@
-<!DOCTYPE html>
 <html lang='en'>
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../master.css">
 <?php
 	include './definitions.php';
 	
@@ -19,13 +19,15 @@
 	}
 	$scorefile = jobid2scorefile($jobid);
 
-	echo " <title>$competitionname: $jobname</title>\n";
-	echo "</head>\n";
-	echo "<body>\n";
-	echo "<h1>$competitionname: $jobname";
-	echo "<a class=starexecid href='".jobid2url($jobid). "'>$jobid</a></h1>\n";
-	echo "<a href='../$csv'>Job info CSV</a>\n";
-	echo "<table>\n";
+	echo
+' <title>' . $competitionname . ': ' . $jobname . '</title>
+</head>
+<body>
+<h1><a href="..">' . $competitionname . '</a>: ' . $jobname .
+'<a class=starexecid href="' . jobid2url($jobid) . '">'. $jobid . '</a></h1>
+<a href="../'. $csv . '">Job info CSV</a>
+<table>
+';
 	$file = new SplFileObject($csv);
 	$file->setFlags( SplFileObject::READ_CSV );
 	$records = [];
@@ -47,6 +49,7 @@
 	$memoryusage_idx = array_search('memory usage', $records[0]);
 	$result_idx = array_search('result', $records[0]);
 	$certificationresult_idx = array_search('certification-result', $records[0]);
+	$certificationtime_idx = array_search('certification-time', $records[0]);
 	unset( $records[0] );
 
 	$participants = [];
@@ -66,22 +69,25 @@
 			'togo' => 0,
 			'cpu' => 0,
 			'time' => 0,
+			'certtime' => 0,
 		];
 		$last = $configid;
 		$i++;
 		$configid = $records[$i][$configid_idx];
 	} while( $configid != $first );
 
-	echo " <tr>\n";
-	echo "  <th>benchmark\n";
+	echo
+' <tr>
+  <th>benchmark
+';
 	foreach( $participants as $participant ) {
-		echo "  <th><a href='". solverid2url($participant['solverid']) . "'>".$participant['solver']."</a>\n";
-	}
-	echo " <tr><th>\n";
-	foreach( $participants as $participant ) {
-		echo "  <th class='config'><a href='". configid2url($participant['configid']) ."'>". $participant['config']."</a>\n";
-	}
-	echo " <tr>\n";
+		echo
+'  <th><a href="'. solverid2url($participant['solverid']) . '">'.$participant['solver'].'</a>
+   <a class=config href="'. configid2url($participant['configid']) .'">'. $participant['config'].'</a>
+';	}
+	echo
+' </tr>
+';
 	$bench = [];
 
 	$conflicts = 0;
@@ -93,11 +99,18 @@
 		$time = parse_time($record[$wallclocktime_idx]);
 		$result = $record[$result_idx];
 		$cert = $certificationresult_idx ? $record[$certificationresult_idx] : '';
+		$certtime = $certificationtime_idx ? $record[$certificationtime_idx] : '';
 		if( $configid == $first ) {
 			$bench = [];
 			$benchmark = parse_benchmark( $record[$benchmark_idx] );
-			$url = bmid2url($record[$benchmark_id_idx]);
+			$benchmark_id = $record[$benchmark_id_idx];
+			$benchmark_url = bmid2url($benchmark_id);
+			$benchmark_remote = bmid2remote($benchmark_id);
 			$resultcounter = []; /* collects results for each benchmark */
+			$show = false;
+		}
+		if( !status2pending($status) ) {
+			$show = true;
 		}
 		if( status2complete($status) ) {
 			$participant['done'] += 1;
@@ -105,6 +118,7 @@
 			$participant['time'] += $time;
 			$participant[$result] += 1;
 			$participant['score'] += result2score($result);
+			$participant['certtime'] += $certtime;
 			$resultscounter[$result]++;
 		} else {
 			$participant['togo'] += 1;
@@ -115,10 +129,11 @@
 			'cert' => $cert,
 			'time' => $time,
 			'cpu' => $cpu,
+			'certtime' => $certtime,
 			'pair' => $record[$pairid_idx],
 		];
-		if( $configid == $last ) {
-			$conflict = $resultcounter['YES'] > 0 && $resultcounter['NO'] > 0;
+		if( $configid == $last && $show ) {
+			$conflict = conflicting($resultcounter);
 			if( $conflict ) {
 				foreach( array_keys($bench) as $me ) {
 					if( $bench[$me]['score'] > 0 ) {
@@ -126,47 +141,74 @@
 					}
 				}
 				$conflicts += 1;
-				echo " <tr class=conflict>\n";
+				echo
+' <tr class=conflict>
+';
 			} else {
-				echo " <tr>\n";
+				echo
+' <tr>
+';
 			}
-			echo "  <td class=benchmark>\n";
+			echo
+'  <td class=benchmark>
+';
 			if( $conflict && $conflicts == 1 ) {
-				echo "   <a name='conflict'/>\n";
+				echo
+'   <a name="conflict"/>
+';
 			}
-			echo "   <a href='$url'>$benchmark</a></td>\n";
+			echo
+'   <a href="'. $benchmark_url.'">'.$benchmark.'</a>
+   <a class=starexecid href="'.$benchmark_remote.'">'.$benchmark_id.'</a></td>
+';
 			foreach( array_keys($bench) as $me ) {
 				$my = $bench[$me];
 				$status = $my['status'];
 				$result = $my['result'];
 				$cert = $my['cert'];
+				$certtime = $my['certtime'];
 				$url = pairid2url($my['pair']);
 				$outurl = pairid2outurl($my['pair']);
 				if( $status == 'complete' ) {
-					echo '  <td class=' . result2class($result) . ">
-   <a href='$outurl'>" . result2str($result) . "</a>
-   <a href='$url'>
-    <span class=time>" . $my['cpu'] . "/" . $my['time'] . "</span>
-   </a>\n";
+					echo
+'  <td ' . result2style($result) . '>
+   <a href="'. $outurl .'">' . result2str($result) . '</a>
+   <a href="'. $url .'">
+    <span class=time>' . $my['cpu'] . '/' . $my['time'] . '</span>
+';
+					if( $cert && $cert != '-' ) {
+						echo
+' (' . $cert . '&nbsp;<span class=time>'. $certtime . '</span>)
+';
+					}
+					echo
+'   </a>
+';
 				} else {
-					echo "  <td " . status2style($status) . ">
-   <a href='$url'>" . status2str($status) . "</a>
-   <a href='$outurl'>[out]</a>\n";
+					echo
+'  <td ' . status2style($status) . '>
+   <a href="'. $url . '">' . $status . '</a>
+' . (status2complete($status) ? '   <a href="'. $outurl .'">[out]</a>
+' : '' );
 				}
 			}
-			echo " </tr>\n";
+			echo
+' </tr>
+';
 		}
 	}
-	echo " <tr><th>\n";
+	echo
+' <tr><th>
+';
 	foreach( $participants as $s ) {
-		echo "  <th>".$s['score']."</th>\n";
+		echo
+'  <th>'.$s['score'].'</th>
+';
 	}
-	$scorefileD = fopen($scorefile,"w");
+	$scorefileD = fopen($scorefile,'w');
 	fwrite( $scorefileD, json_encode($participants) );
 	fclose( $scorefileD );
 ?>
 </table>
 </body>
 </html>
-
-
