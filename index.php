@@ -120,9 +120,7 @@ $competitions = [
 	$mcats = $competition['mcats'];
 
 	echo
-'<h1>' . $competition['name'] . '
- <a style="font-size: medium" onclick="toggle_rankseps()">[list view]</a>
-</h1>
+'<h1>' . $competition['name'] . '</h1>
 ';
 	
 

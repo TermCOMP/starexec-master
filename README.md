@@ -1,6 +1,5 @@
 This is a light-weight StarExec presenter using PHP.
 
-# Install
 Install a web server, enable PHP plugin and make the directory accessible.
 
 # Finalization
