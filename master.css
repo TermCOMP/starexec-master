@@ -1,0 +1,187 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: medium;
+}
+h1, h1 a {
+	font-weight:normal;
+}
+h2 {
+	font-weight:normal;
+}
+table {
+	width: 100%;
+	border-spacing: 0pt 0pt;
+	border-collapse: collapse;
+}
+th a {
+	color: black;
+	text-decoration: none;
+}
+td {
+	border: .1pt solid silver;
+	text-align: center;
+}
+td a {
+	text-decoration: none;
+}
+.fill {
+	width:100%; height:100%; display:block;
+}
+.category {
+	text-align: left;
+}
+.benchmark {
+	text-align: left;
+}
+.solver, .solver a {
+	display: inline-block;
+	color: black;
+}
+.bestsolver, .bestsolver a {
+	color: black;
+	font-weight: bold;
+}
+.config {
+	font-weight: normal;
+	font-size: 75%;
+}
+.ranking {
+	text-align: left;
+	width: 75%;
+}
+.score {
+	font-size: small;
+	font-weight: normal;
+}
+.score::before {
+	content: "(";
+}
+.score::after {
+	content: ")";
+}
+.togo {
+	color: gray;
+	font-size: small;
+}
+.starexecid {
+	color: gray;
+	vertical-align: bottom;
+	font-size: x-small;
+}
+.complete {
+	background-color: #D0FFD0;
+}
+.incomplete {
+	background-color: antiquewhite;
+}
+.active {
+	background-color: fuchsia;
+	color: white;
+}
+.timeout, .timeout a {
+	background-color: darksalmon;
+	color: black;
+}
+.YES, .YES a, .CERTIFIEDYES, .CERTIFIEDYES a {
+	background-color: mediumspringgreen;
+	color: black;
+}
+.score .YES, .score .CERTIFIEDYES {
+	background: none;
+	color: black;
+}
+.bestYES, .bestCERTIFIEDYES {
+	background-color: mediumspringgreen;
+	color: black;
+	font-weight: bold;
+}
+.NO, .NO a, .bestNO,  .CERTIFIEDNO, .CERTIFIEDNO a, .bestCERTIFIEDNO {
+	background-color: green;
+	color: white;
+}
+.score .NO, .score .CERTIFIEDNO {
+	background: none;
+	color: darkgreen;
+}
+.maybe, .maybe a {
+	background-color: khaki;
+	color: black;
+}
+.unsupported, .unsupported a {
+	background-color: gray;
+	color: white;
+}
+.error, .error a {
+	background-color: red;
+	color: white; 
+}
+.starexecbug, .starexecbug a {
+	background-color: gray; 
+	color: white;
+}
+.low1, .low1 a {
+	background-color: #60C060;
+	color: black;
+}
+.low2, .low2 a {
+	background-color: #60A060;
+	color: #E0E0E0;
+}
+.low3, .low3 a {
+	background-color: #40A040;
+	color: white;
+}
+.lowNP, .lowNP a {
+	background-color: #208020;
+	color: white;
+}
+.bestLOW {
+	background-color: #60A060;
+	color: white;
+}
+.up0, .up0 a {
+	background-color: #00B0FF;
+	color: black;
+}
+.up1, .up1 a {
+	background-color: #20E0E0;
+	color: black;
+}
+.up2, .up2 a {
+	background-color: #80FFB0;
+	color: black;
+}
+.up3, .up3 a {
+	background-color: #B0D0B0;
+	color: black;
+}
+.upP, .upP a {
+	background-color: #C0F0C0;
+	color: black;
+}
+.bestUP {
+	background-color: #00FFF0;
+	color: black;
+	font-weight: bold;
+}
+td.time, th.time {
+	width: 1%;
+}
+.time, .time a {
+	color: gray;
+}
+.besttime {
+	background-color: gray;
+	color: white;
+}
+td.NO span.time, td.CERTIFIEDNO span.time, td.unsupported span.time {
+	color: lightgray;
+}	
+.conflict, .conflict .benchmark {
+	background-color: red;
+	color: white;
+}
+.conflicts {
+	color: red;
+	font-weight: bold;
+}
