@@ -1,7 +1,8 @@
 <html lang='en'>
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<link rel="stylesheet" type="text/css" href="../master.css">
+ <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+ <meta http-equiv="Cache-Control" content="no-cache">
+ <link rel="stylesheet" type="text/css" href="../master.css">
 <?php
 	include './definitions.php';
 	

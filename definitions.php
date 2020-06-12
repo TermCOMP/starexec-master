@@ -1,8 +1,5 @@
 <?php
 
-    header('Content-Type: text/html' );
-	header('Cache-Control: no-cache');
-
 	function seconds2str($s) {
 		$d = floor($s/(24*60*60));
 		$s = $s%(24*60*60);

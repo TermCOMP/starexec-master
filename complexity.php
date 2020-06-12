@@ -1,7 +1,8 @@
 <html lang='en'>
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<link rel="stylesheet" type="text/css" href="../master.css">
+ <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+ <meta http-equiv="Cache-Control" content="no-cache">
+ <link rel="stylesheet" type="text/css" href="../master.css">
 <?php
 	include './definitions.php';
 
@@ -145,6 +146,8 @@
 			'cpu' => 0,
 			'time' => 0,
 			'certtime' => 0,
+			'UP' => 0,
+			'LOW' => 0,
 		];
 		$last = $configid;
 		$i++;
@@ -177,14 +180,13 @@
 		$lower = $bounds[0];
 		$upper = $bounds[1];
 		$cert = $certificationresult_idx ? $record[$certificationresult_idx] : '';
-		$certtime = $certificationtime_idx ? $record[$certificationtime_idx] : '';
+		$certtime = $certificationtime_idx ? $record[$certificationtime_idx] : 0;
 		if( $configid == $first ) {
 			$bench = [];
 			$benchmark = parse_benchmark( $record[$benchmark_idx] );
 			$benchmark_id = $record[$benchmark_id_idx];
 			$benchmark_url = bmid2url($benchmark_id);
 			$benchmark_remote = bmid2remote($benchmark_id);
-			$resultcounter = []; /* collects results for each benchmark */
 			$show = false;
 		}
 		if( !status2pending($status) ) {
@@ -194,10 +196,8 @@
 			$participant['done'] += 1;
 			$participant['cpu'] += $cpu;
 			$participant['time'] += $time;
-			$participant[$result] += 1;
 			$participant['score'] += result2score($result);
 			$participant['certtime'] += $certtime;
-			$resultscounter[$result]++;
 		} else {
 			$participant['togo'] += 1;
 		}
@@ -213,8 +213,12 @@
 			'upper' => $upper,
 		];
 		if( $configid == $last ) {
-			echo " <tr>\n";
-			echo "  <td class=benchmark><a href='$url'>$benchmark</a></td>\n";
+			echo
+'  <td class=benchmark>
+   <a href="'. $benchmark_url.'">'.$benchmark.'</a>
+   <a class=starexecid href="'.$benchmark_remote.'">'.$benchmark_id.'</a>
+  </td>
+';
 			foreach( array_keys($bench) as $me ) {
 				$my = $bench[$me];
 				$upper = $my['upper'];
@@ -229,19 +233,21 @@
 						$lowscore++;
 					}
 					if( $lower > $your['upper'] ) {
+						$conflicts++;
 						$my['conflicts']++;
 						$lowerstyle = 'class=conflict';
 					} else {
 						$lowerstyle = lower2style($lower);
 					}
 					if( $upper < $your['lower'] ) {
+						$conflicts++;
 						$my['conflicts']++;
 						$upperstyle = 'class=conflict';
 					} else {
 						$upperstyle = upper2style($upper);
 					}
 				}
-				$a = '<a href="'. pairid2url($my['id']) . '" class=fill>';
+				$a = '<a href="'. pairid2url($my['pair']) . '" class=fill>';
 				$lower = $my['lower'];
 				$upper = $my['upper'];
 				$status = $my['status'];
