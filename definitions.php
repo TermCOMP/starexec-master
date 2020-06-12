@@ -51,9 +51,7 @@
 		return "https://www.starexec.org/starexec/secure/details/pair.jsp?id=$pairid";
 	}
 	function pairid2outurl($pairid) {
-		return '../show.php?url='. urlencode(
-			'https://www.starexec.org/starexec/services/jobs/pairs/'. $pairid .'/stdout/1?limit=-1'
-		);
+		return 'https://www.starexec.org/starexec/services/jobs/pairs/'. $pairid .'/stdout/1?limit=-1';
 	}
 	$result_table = [
 		'YES' => [ 'class' => 'YES', 'score' => 1 ],
@@ -90,7 +88,7 @@
 		if( array_key_exists( $result, $result_table ) ) {
 			return 'class=' . ($best ? 'best' : '') . $result_table[$result]['class'];
 		} else {
-			return '';
+			return 'class=error';
 		}
 	}
 	function status2style($status) {
@@ -138,9 +136,7 @@
 		return "https://www.starexec.org/starexec/secure/details/job.jsp?id=$jobid";
 	}
 	function bmid2url($bmid) {
-		return '../show.php?url='. urlencode(
-			'https://www.starexec.org/starexec/services/benchmarks/'. $bmid .'/contents?limit=-1'
-		);
+		return 'https://www.starexec.org/starexec/services/benchmarks/'. $bmid .'/contents?limit=-1';
 	}
 	function bmid2remote($bmid) {
 		return "https://www.starexec.org/starexec/secure/details/benchmark.jsp?id=$bmid";

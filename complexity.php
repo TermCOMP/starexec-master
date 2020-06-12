@@ -157,13 +157,22 @@
 
 	echo
 ' <tr>
-  <th>benchmark
+  <th>
 ';
 	foreach( $participants as $participant ) {
 		echo
 '  <th colspan=3><a href="'. solverid2url($participant['solverid']) . '">'.$participant['solver'].'</a>
    <a class=config href="'. configid2url($participant['configid']) .'">'. $participant['config'].'</a>
-';	}
+';
+	}
+	echo ' <tr>
+  <th>benchmark
+';
+	foreach( $participants as $participant ) {
+		echo
+'  <td>UP<td>LOW<td>TIME
+';
+	}
 	$bench = [];
 
 	$conflicts = 0;
@@ -254,8 +263,8 @@
 					$participants[$me]['UP'] += $upscore;
 					$participants[$me]['LOW'] += $lowscore;
 					echo
-'  <td '. $upperstyle .'>'. $a . bound2str($upper) . ' <span class=score>(+'. $upscore .')</span></a>
-  <td '. $lowerstyle .'>'. $a . bound2str($lower) . ' <span class=score>(+'. $lowscore .')</span></a>
+'  <td '. $upperstyle .'>'. $a . bound2str($upper) . ' <span class=score>+'. $upscore .'</span></a>
+  <td '. $lowerstyle .'>'. $a . bound2str($lower) . ' <span class=score>+'. $lowscore .'</span></a>
   <td class=time>'. $a . $my['cpu'] .'/'. $my['time'] . '</a>
 ';
 				} else {

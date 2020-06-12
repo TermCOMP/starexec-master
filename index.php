@@ -1,31 +1,15 @@
 <?php
 	include 'definitions.php';
-	$rankseps = 0;
-	function ranksep() {
-		global $rankseps;
-		$rankseps += 1;
-		return
-'<span id="ranksep'. $rankseps . '"><br></span>
-<script>rankseps.push(document.getElementById("ranksep' . $rankseps . '"))</script>';
-	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="master.css">
-<script>
-	var rankseps = [];
-	var ranksep = ['<br>','; '];
-	var ranksepi = 0;
-	function toggle_rankseps() {
-		ranksepi = (ranksepi+1)%ranksep.length;
-		rankseps.forEach( function(s) { s.innerHTML = ranksep[ranksepi]; } );
-	}
-</script>
 </head>
 <body>
 <?php
+$show_config = $_GET['showconfig'];
 $competitions = [
 2019 => [
 	"name" => "Termination Competition 2019",
@@ -245,9 +229,13 @@ foreach( array_keys($mcats) as $mcatname ) {
 				$prev_score = $score;
 				echo
 '   <span class='. ( $rank == 1 ? 'best' : '' ) . 'solver>
-    ' . $rank . '. <a href="'. $url . '">'. $name . '</a>
-    <a class=config href="' . configid2url($configid) . '">'. $config . '</a>
-    <span class=score>(';
+    ' . $rank . '. <a href="'. $url . '">'. $name . '</a>';
+				if( $show_config ) {
+					echo '
+     <a class=config href="' . configid2url($configid) . '">'. $config . '</a>';
+				}
+				echo '
+    <span class=score>';
 				foreach( $scored_keys as $key ) {
 					if( array_key_exists( $key, $s ) ) {
 						$subscore = $s[$key];
@@ -261,15 +249,14 @@ foreach( array_keys($mcats) as $mcatname ) {
 ', <span class=time>Certification:'.seconds2str($certtime).'</span>';
 				}
 				echo
-')</span>
+'</span>
 ';
 				if( $togo > 0 ) {
 					echo
 '   <span class=togo>,' . $togo . '</span>';
 				}
 				echo
-'   </span>
-   ' . ranksep() . '
+'   </span><br/>
 ';
 				$cat_cpu += $cpu;
 				$cat_time += $time;
