@@ -5,9 +5,6 @@ Install a web server, enable PHP plugin and make the directory accessible.
 # Finalization
 When results are final, please do:
 ```
-cd caches
-for f in *.php; do php $f > ${f%.php}.html; done
-cd ..
-php index.php > index.html
+./finalize.sh dir
 ```
-and remove php files for safety.
+Then directory named ``dir`` containing necessary HTML files will be made.
