@@ -204,7 +204,8 @@ foreach( array_keys($mcats) as $mcatname ) {
 		$jobpath = 'caches/'.$type.'_'.$jobid.'.html';
 		if( ! file_exists($jobpath) ) {
 			// creating job specific php file
-			$jobpath = 'caches/'.$type.'_'.$jobid.'.php';
+			$jobfile = $type.'_'.$jobid.'.php';
+			$jobpath = 'caches/'.$jobfile;
 			if( ! file_exists($jobpath) ) {
 				$file = fopen($jobpath,'w');
 				fwrite( $file,
@@ -217,7 +218,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 ?>'
 				); 
 				fclose($file);
-				system('php "'. $jobpath . ' > /dev/null');
+				system('cd caches; php "'. $jobfile . ' > /dev/null');
 			}
 		}
 

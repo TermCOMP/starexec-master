@@ -1,1 +1,1 @@
-chmod a+w fromStarExec caches
+php index.php > /dev/null
