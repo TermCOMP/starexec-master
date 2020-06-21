@@ -218,7 +218,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 ?>'
 				); 
 				fclose($file);
-				system('cd caches; php "'. $jobfile . ' > /dev/null');
+				system('cd caches; php "'. $jobfile . '" > /dev/null');
 			}
 		}
 
