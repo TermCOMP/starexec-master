@@ -217,6 +217,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 ?>'
 				); 
 				fclose($file);
+				system('php "'. $jobpath . ' > /dev/null');
 			}
 		}
 
