@@ -34,8 +34,8 @@ $competitions = [
 			[ 'C', 'termination', 41176 ],
 			[ 'C Integer', 'termination', 41158 ],
 			[ 'Logic Programming', 'termination', 41167 ],
-			[ 'Integer Transition Systems', 'termination', 41165 ],
-			[ 'Integer TRS Innermost', 'termination', 41166 ],
+			[ 'Integer Transition Systems', 'termination', 41187 ],
+			[ 'Integer TRS Innermost', 'termination', 41188 ],
 		],
 		"Complexity Analysis" => [
 			[ 'Complexity: ITS', 'complexity',  ],
