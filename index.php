@@ -31,7 +31,7 @@ $competitions = [
 			[ 'HRS (union beta)', 'termination', 41164 ],
 		],
 	 	"Termination of Programs" => [
-			[ 'C', 'termination', 41157 ],
+			[ 'C', 'termination', 41176 ],
 			[ 'C Integer', 'termination', 41158 ],
 			[ 'Logic Programming', 'termination', 41167 ],
 			[ 'Integer Transition Systems', 'termination', 41165 ],
