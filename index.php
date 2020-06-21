@@ -218,7 +218,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 ?>'
 				); 
 				fclose($file);
-				system('cd caches; php "'. $jobfile . '" > /dev/null');
+				$ret = system( 'cd caches; php -f "'. $jobfile . '"; cd ..');
 			}
 		}
 
@@ -247,9 +247,9 @@ foreach( array_keys($mcats) as $mcatname ) {
 		}
 		if( !$init || $togo > 0 ) {
 			$class = 'incomplete';
-			$jobpath .= '?refresh=1';
 		} else {
 			$class = 'complete';
+			$jobpath .= '?complete=1';
 		}
 		echo
 ' <tr class=' . $class . '>

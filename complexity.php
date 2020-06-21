@@ -92,7 +92,7 @@
 		exit('no job to present');
 	}
 	$csv = jobid2csv($jobid);
-	if( $_GET['refresh'] ) {
+	if( !$_GET['complete'] ) {
 		cachezip(jobid2remote($jobid),$csv);
 	}
 	$scorefile = jobid2scorefile($jobid);
