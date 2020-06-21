@@ -157,7 +157,7 @@ $competitions = [
 	],
 ],
 ];
-	$competition = $competitions['2014'];
+	$competition = $competitions['2020'];
 	$mcats = $competition['mcats'];
 
 	echo
