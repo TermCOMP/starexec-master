@@ -11,6 +11,51 @@
 <?php
 $show_config = $_GET['showconfig'];
 $competitions = [
+2020 => [
+	"name" => "Termination Competition 2020",
+	"mcats" => [
+		"Termination of Rewriting" => [
+			[ 'TRS Standard', 'termination', 41175 ],
+			[ 'TRS Standard Certified', 'termination',  ],
+			[ 'SRS Standard', 'termination', 41171 ],
+			[ 'SRS Standard Certified', 'termination',  ],
+			[ 'TRS Relative', 'termination', 41174 ],
+			[ 'TRS Relative Certified', 'termination',  ],
+			[ 'SRS Relative', 'termination', 41168 ],
+			[ 'SRS Relative Certified', 'termination',  ],
+			[ 'TRS Equational', 'termination', 41172 ],
+			[ 'TRS Equational Certified', 'termination',  ],
+			[ 'TRS Conditional', 'termination', 41169 ],
+			[ 'TRS Context Sensitive', 'termination', 41170 ],
+			[ 'TRS Innermost', 'termination', 41173 ],
+			[ 'HRS (union beta)', 'termination', 41164 ],
+		],
+	 	"Termination of Programs" => [
+			[ 'C', 'termination', 41157 ],
+			[ 'C Integer', 'termination', 41158 ],
+			[ 'Logic Programming', 'termination', 41167 ],
+			[ 'Integer Transition Systems', 'termination', 41165 ],
+			[ 'Integer TRS Innermost', 'termination', 41166 ],
+		],
+		"Complexity Analysis" => [
+			[ 'Complexity: ITS', 'complexity',  ],
+			[ 'Complexity: C Integer', 'complexity',  ],
+			[ 'Derivational Complexity: TRS', 'complexity', 41159 ],
+			[ 'Derivational Complexity: TRS Innermost', 'complexity', 41160 ],
+			[ 'Derivational Complexity: TRS Innermost Certified', 'complexity',  ],
+			[ 'Runtime Complexity: TRS', 'complexity', 41161 ],
+			[ 'Runtime Complexity: TRS Innermost', 'complexity', 41163 ],
+			[ 'Runtime Complexity: TRS Innermost Certified', 'complexity',  ],
+		],
+		"Demonstrations" => [
+			[ 'TRS Outermost', 'termination',  ],
+			[ 'TRS Outermost Certified', 'termination',  ],
+			[ 'TRS Innermost Certified', 'termination',  ],
+			[ 'Java Bytecode', 'termination',  ],
+			[ 'Haskell', 'termination',  ],
+		],
+	],
+],
 2019 => [
 	"name" => "Termination Competition 2019",
 	"mcats" => [
@@ -98,9 +143,21 @@ $competitions = [
 			[ 'Runtime Complexity: TRS Certified', 'complexity', 30105 ],
 		],
 	],
-]
+],
+2014 => [
+	'name' => 'Termination Competition 2014',
+	'mcats' => [
+		"Termination of Rewriting" => [
+			[ 'TRS Standard', 'termination', 5373 ],
+			[ 'TRS Standard Certified', 'termination', 5377 ],
+			[ 'SRS Standard', 'termination', 5374 ],
+			[ 'SRS Standard Certified', 'termination', 5378 ],
+			[ 'TRS Relative', 'termination', 5375 ],
+		],
+	],
+],
 ];
-	$competition = $competitions['2019'];
+	$competition = $competitions['2014'];
 	$mcats = $competition['mcats'];
 
 	echo
