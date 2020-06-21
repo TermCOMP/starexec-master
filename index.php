@@ -195,6 +195,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 		$catname = $cat[0];
 		$type = $cat[1];
 		$jobid = $cat[2];
+		if( !$jobid ) continue;
 		$cat_done = 0;
 		$cat_togo = 0;
 		$cat_cpu = 0;
