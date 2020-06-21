@@ -15,13 +15,13 @@ $competitions = [
 	"name" => "Termination Competition 2020",
 	"mcats" => [
 		"Termination of Rewriting" => [
-			[ 'TRS Standard', 'termination', 41175 ],
+			[ 'TRS Standard', 'termination', 41179 ],
 			[ 'TRS Standard Certified', 'termination',  ],
-			[ 'SRS Standard', 'termination', 41171 ],
+			[ 'SRS Standard', 'termination', 41180 ],
 			[ 'SRS Standard Certified', 'termination',  ],
 			[ 'TRS Relative', 'termination', 41174 ],
 			[ 'TRS Relative Certified', 'termination',  ],
-			[ 'SRS Relative', 'termination', 41168 ],
+			[ 'SRS Relative', 'termination', 41181 ],
 			[ 'SRS Relative Certified', 'termination',  ],
 			[ 'TRS Equational', 'termination', 41172 ],
 			[ 'TRS Equational Certified', 'termination',  ],
@@ -195,7 +195,12 @@ foreach( array_keys($mcats) as $mcatname ) {
 		$catname = $cat[0];
 		$type = $cat[1];
 		$jobid = $cat[2];
-		if( !$jobid ) continue;
+		if( !$jobid ) {
+			echo
+' <tr class=' . $class . '>
+  <td class=category>'.$catname;
+			continue;
+		}
 		$cat_done = 0;
 		$cat_togo = 0;
 		$cat_cpu = 0;
