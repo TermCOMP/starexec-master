@@ -10,7 +10,6 @@
 <body>
 <?php
 $show_config = $_GET['showconfig'];
-$admin = $_GET['admin'];
 $competitions = [
 2020 => [
 	"name" => "Termination Competition 2020",
@@ -263,9 +262,6 @@ foreach( array_keys($mcats) as $mcatname ) {
    <a href="' . $jobpath . '">' . $catname . '</a>
    <a class=starexecid href="' . jobid2url($jobid) . '">' . $jobid . '</a>
 ';
-		if( $admin ) {
-			echo '<a href="https://www.starexec.org/starexec/services/pause/job/'.$jobid.'">pause</a>';
-		}
 		if( $init ) {
 			if( $conflicts > 0 ) {
 				echo
