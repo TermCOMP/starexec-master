@@ -46,7 +46,7 @@ $competitions = [
 			[ 'Derivational Complexity: TRS Innermost', 'complexity', 41222 ],
 			[ 'Derivational Complexity: TRS Innermost Certified', 'complexity',  ],
 			[ 'Runtime Complexity: TRS', 'complexity', 41223 ],
-			[ 'Runtime Complexity: TRS Innermost', 'complexity', 4122 ],
+			[ 'Runtime Complexity: TRS Innermost', 'complexity', 41224 ],
 			[ 'Runtime Complexity: TRS Innermost Certified', 'complexity',  ],
 		],
 		"Demonstrations" => [
