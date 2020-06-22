@@ -18,15 +18,15 @@ $competitions = [
 	"mcats" => [
 		"Termination of Rewriting" => [
 			[ 'TRS Standard', 'termination', 41206 ],
-			[ 'TRS Standard Certified', 'termination',  ],
+			[ 'TRS Standard Certified', 'termination', 41225 ],
 			[ 'SRS Standard', 'termination', 41210 ],
-			[ 'SRS Standard Certified', 'termination',  ],
+			[ 'SRS Standard Certified', 'termination', 41227 ],
 			[ 'TRS Relative', 'termination', 41208 ],
-			[ 'TRS Relative Certified', 'termination',  ],
+			[ 'TRS Relative Certified', 'termination', 41226 ],
 			[ 'SRS Relative', 'termination', 41209 ],
-			[ 'SRS Relative Certified', 'termination',  ],
+			[ 'SRS Relative Certified', 'termination',  41228],
 			[ 'TRS Equational', 'termination', 41213 ],
-			[ 'TRS Equational Certified', 'termination',  ],
+			[ 'TRS Equational Certified', 'termination', 41229 ],
 			[ 'TRS Conditional', 'termination', 41211 ],
 			[ 'TRS Context Sensitive', 'termination', 41212 ],
 			[ 'TRS Innermost', 'termination', 41214 ],
@@ -322,7 +322,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 ';
 				if( $togo > 0 ) {
 					echo
-'   <span class=togo>,' . $togo . '</span>';
+'   <span class=togo>, ' . $togo . ' to go</span>';
 				}
 				echo
 '   </span><br/>
