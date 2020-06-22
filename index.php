@@ -40,14 +40,11 @@ $competitions = [
 			[ 'Integer TRS Innermost', 'termination', 41220 ],
 		],
 		"Complexity Analysis" => [
-			[ 'Complexity: ITS', 'complexity',  ],
-			[ 'Complexity: C Integer', 'complexity',  ],
 			[ 'Derivational Complexity: TRS', 'complexity', 41221 ],
 			[ 'Derivational Complexity: TRS Innermost', 'complexity', 41222 ],
-			[ 'Derivational Complexity: TRS Innermost Certified', 'complexity',  ],
 			[ 'Runtime Complexity: TRS', 'complexity', 41223 ],
 			[ 'Runtime Complexity: TRS Innermost', 'complexity', 41224 ],
-			[ 'Runtime Complexity: TRS Innermost Certified', 'complexity',  ],
+
 		],
 		"Demonstrations" => [
 			[ 'TRS Outermost', 'termination',  ],
@@ -55,6 +52,12 @@ $competitions = [
 			[ 'TRS Innermost Certified', 'termination',  ],
 			[ 'Java Bytecode', 'termination',  ],
 			[ 'Haskell', 'termination',  ],
+			[ 'Complexity: ITS', 'complexity',  ],
+			[ 'Complexity: C Integer', 'complexity',  ],
+			[ 'Derivational Complexity: TRS Certified', 'complexity',  ],
+			[ 'Runtime Complexity: TRS Certified', 'complexity',  ],
+			[ 'Derivational Complexity: TRS Innermost Certified', 'complexity',  ],
+			[ 'Runtime Complexity: TRS Innermost Certified', 'complexity',  ],
 		],
 	],
 ],
