@@ -9,6 +9,7 @@
 </head>
 <body>
 <?php
+$refresh = ($argv[1] == 'refresh' );
 $show_config = $_GET['showconfig'];
 $competitions = [
 2020 => [
@@ -44,7 +45,7 @@ $competitions = [
 			[ 'Derivational Complexity: TRS Innermost', 'complexity', 41222 ],
 			[ 'Derivational Complexity: TRS Innermost Certified', 'complexity',  ],
 			[ 'Runtime Complexity: TRS', 'complexity', 41223 ],
-			[ 'Runtime Complexity: TRS Innermost', 'complexity', 41224 ],
+			[ 'Runtime Complexity: TRS Innermost', 'complexity', 4122 ],
 			[ 'Runtime Complexity: TRS Innermost Certified', 'complexity',  ],
 		],
 		"Demonstrations" => [
@@ -223,8 +224,10 @@ foreach( array_keys($mcats) as $mcatname ) {
 ?>'
 				); 
 				fclose($file);
-				$ret = system( 'cd caches; php -f "'. $jobfile . '"; cd ..');
 			}
+		}
+		if( $refresh ) {
+			$ret = system( 'cd caches; php -f "'. $jobfile . '"; cd ..');
 		}
 
 		$init = false;

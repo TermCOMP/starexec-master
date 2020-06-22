@@ -1,1 +1,1 @@
-php index.php > /dev/null
+(php index.php refresh > /dev/null; sleep 5) &
