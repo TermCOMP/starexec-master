@@ -264,7 +264,7 @@ foreach( array_keys($mcats) as $mcatname ) {
    <a class=starexecid href="' . jobid2url($jobid) . '">' . $jobid . '</a>
 ';
 		if( $admin ) {
-			echo '<a href="https://www.starexec.org/starexec/services/pause/job/'.$jobid.'">';
+			echo '<a href="https://www.starexec.org/starexec/services/pause/job/'.$jobid.'">pause</a>';
 		}
 		if( $init ) {
 			if( $conflicts > 0 ) {
