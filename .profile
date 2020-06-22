@@ -1,1 +1,1 @@
-(php index.php refresh > /dev/null; sleep 5) &
+(while [ 1 ]; do php index.php refresh > /dev/null; sleep 5; done) &
