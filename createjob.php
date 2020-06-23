@@ -43,6 +43,8 @@ foreach( $competition['mcats'] as $mcat_name => $cats ) {
     </select><br>
     <input type="hidden" name="subscribe" value="no">
     <input type="hidden" name="suppressTimestamp" value="yes">
+    <input type="number" name="postProcess" value='.
+    ( $cat['certified'] ? '651' : '649' ) . '>
     Participants:
 ';
         foreach( $cat['parts'] as $partname => $configid ) {
