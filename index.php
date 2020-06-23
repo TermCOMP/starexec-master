@@ -72,14 +72,20 @@ foreach( array_keys($mcats) as $mcatname ) {
   <th class=category>category
   <th class=ranking>ranking
 ';
-	foreach( array_keys($cats) as $catname ) {
-		$cat =& $cats[$catname];
+	foreach( $cats as $catname => $cat ) {
 		$type = $cat['type'];
 		$jobid = $cat['jobid'];
-		if( !$jobid ) {
+		if( !$jobid ) {// This means the job is not yet started or linked to starexec-master.
 			echo
-' <tr class=' . $class . '>
-  <td class=category>'.$catname;
+' <tr class=incomplete>
+  <td class=category>'.$catname .'
+  <td class=ranking>
+';
+			foreach( $cat['parts'] as $partname => $configid ) {
+				echo
+'   '. $partname. '<a class=starexecid href="'. configid2url($configid) .'">'. $configid .'</a>
+';
+			}
 			continue;
 		}
 		$cat_done = 0;
