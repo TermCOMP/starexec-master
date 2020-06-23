@@ -97,6 +97,7 @@
 		$cpu = parse_time($record[$cputime_idx]);
 		$time = parse_time($record[$wallclocktime_idx]);
 		$result = $record[$result_idx];
+		$score = result2score($result);
 		$cert = $certificationresult_idx ? $record[$certificationresult_idx] : '';
 		$certtime = $certificationtime_idx ? $record[$certificationtime_idx] : 0;
 		if( $configid == $first ) {
@@ -116,7 +117,7 @@
 			$participant['cpu'] += $cpu;
 			$participant['time'] += $time;
 			$participant[$result] += 1;
-			$participant['score'] += result2score($result);
+			$participant['score'] += $score;
 			$participant['certtime'] += $certtime;
 			$resultcounter[$result]++;
 		} else {
@@ -125,6 +126,7 @@
 		$bench[$configid] = [
 			'status' => $status,
 			'result' => $result,
+			'score' => $score,
 			'cert' => $cert,
 			'time' => $time,
 			'cpu' => $cpu,
@@ -132,17 +134,21 @@
 			'pair' => $record[$pairid_idx],
 		];
 		if( $configid == $last && $show ) {
-			$conflict = conflicting($resultcounter);
-			if( $conflict ) {
+			if( conflicting($resultcounter) ) {
 				foreach( array_keys($bench) as $me ) {
 					if( $bench[$me]['score'] > 0 ) {
 						$participants[$me]['conflicts']++;
 					}
 				}
-				$conflicts += 1;
 				echo
 ' <tr class=conflict>
 ';
+				if( $conflicts == 0 ) {
+				echo
+'   <a name="conflict"/>
+';
+				}
+				$conflicts += 1;
 			} else {
 				echo
 ' <tr>
@@ -150,10 +156,6 @@
 			}
 			echo
 '  <td class=benchmark>
-';
-			if( $conflict && $conflicts == 1 ) {
-				echo
-'   <a name="conflict"/>
 ';
 			}
 			echo
