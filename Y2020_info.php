@@ -8,11 +8,11 @@ $competition = [
 				'jobid' => 41206,
 				'spaceid' => 426103,
 				'parts' => [
-					348357,//NTI
-					350520,//NaTT
-					360055,//TTT2
-					360174,//AProVE
-					326595,//MuTerm
+					"NTI" => 348357,
+					"NaTT" => 350520,
+					"TTT2" => 360055,
+					"AProVE" => 360174,
+					"MuTerm" => 326595,
 				],
 			],
 			'TRS Standard Certified' => [
@@ -21,9 +21,9 @@ $competition = [
 				'spaceid' => 426103,
 				'certified' => true,
 				'parts' => [
-					360056,//TTT2
-					360177,//AProVE
-					360199,//NaTT
+					"TTT2" => 360056,
+					"AProVE" => 360177,
+					"NaTT" => 360199,
 				]
 			],
 			'SRS Standard' => [
@@ -31,12 +31,12 @@ $competition = [
 				'jobid' => 41210,
 				'spaceid' => 426158,
 				'parts' => [
-					326595,//MuTerm
-					350520,//NaTT
-					360055,//TTT2
-					360160,//matchbox
-					360174,//AProVE
-					360181,//MnM
+					"MuTerm" => 326595,
+					"NaTT" => 350520,
+					"TTT2" => 360055,
+					"matchbox" => 360160,
+					"AProVE" => 360174,
+					"MnM" => 360181,
 				]
 			],
 			'SRS Standard Certified' => [
@@ -44,9 +44,9 @@ $competition = [
 				'jobid' => 41232,
 				'spaceid' => 426158,
 				'parts' => [
-					360056,//TTT2
-					360177,//AProVE
-					360199,//NaTT
+					"TTT2" => 360056,
+					"AProVE" => 360177,
+					"NaTT" => 360199,
 				]
 			],
 			'TRS Relative' => [
@@ -54,9 +54,9 @@ $competition = [
 				'jobid' => 41208,
 				'spaceid' => 426233,
 				'parts' => [
-					350520,//NaTT
-					360055,//TTT2
-					360174,//AProVE
+					"NaTT" => 350520,
+					"TTT2" => 360055,
+					"AProVE" => 360174,
 				]
 			],
 			'TRS Relative Certified' => [
@@ -64,8 +64,8 @@ $competition = [
 				'jobid' =>  41231,
 				'spaceid' => 426233,
 				'parts' => [
-					360056,//TTT2
-					360177,//AProVE
+					"TTT2" => 360056,
+					"AProVE" => 360177,
 				]
 			],
 			'SRS Relative' => [
@@ -73,11 +73,11 @@ $competition = [
 				'jobid' =>  41209,
 				'spaceid' => 426149,
 				'parts' => [
-					350520,//NaTT
-					360055,//TTT2
-					360160,//matchbox
-					360174,//AProVE
-					360181,//MnM
+					"NaTT" => 350520,
+					"TTT2" => 360055,
+					"matchbox" => 360160,
+					"AProVE" => 360174,
+					"MnM" => 360181,
 				]
 			],
 			'SRS Relative Certified' => [
@@ -85,8 +85,8 @@ $competition = [
 				'jobid' =>  41233,
 				'spaceid' => 426149,
 			    'parts' => [
-					360056,//TTT2
-					360177,//AProVE
+					"TTT2" => 360056,
+					"AProVE" => 360177,
 				]
 			],
 			'TRS Equational' => [
@@ -94,9 +94,9 @@ $competition = [
 				'jobid' =>  41213,
 				'spaceid' => 426058,
 				'parts' => [
-					163986,//MuTerm
-					350520,//NaTT
-					360174,//AProVE
+					"MuTerm" => 163986,
+					"NaTT" => 350520,
+					"AProVE" => 360174,
 				]
 			],
 			'TRS Equational Certified' => [
@@ -104,8 +104,8 @@ $competition = [
 				'jobid' =>  41234,
 				'spaceid' => 426058,
 				'parts' => [
-					360177,//AProVE
-					360199,//NaTT
+					"AProVE" => 360177,
+					"NaTT" => 360199,
 				]
 			],
 			'TRS Conditional' => [
@@ -113,8 +113,8 @@ $competition = [
 				'jobid' =>  41211,
 				'spaceid' => 426154,
 				'parts' => [
-					326595,//MuTerm
-					360174,//AProVE
+					"MuTerm" => 326595,
+					"AProVE" => 360174,
 				],
 			],
 			'TRS Context Sensitive' => [
@@ -122,8 +122,8 @@ $competition = [
 				'jobid' =>  41212,
 				'spaceid' => 426022,
 				'parts' => [
-					163986,//MuTerm
-					360174,//AProVE
+					"MuTerm" => 163986,
+					"AProVE" => 360174,
 				]
 			],
 			'TRS Innermost' => [
@@ -131,8 +131,8 @@ $competition = [
 				'jobid' =>  41214,
 				'spaceid' => 425946,
 				'parts' => [
-					326595,//MuTerm
-					360174,//AProVE
+					"MuTerm" => 326595,
+					"AProVE" => 360174,
 				]
 			],
 			'HRS (union beta)' => [
@@ -140,8 +140,8 @@ $competition = [
 				'jobid' =>  41215,
 				'spaceid' => 426140,
 				'parts' => [
-					325830,//SizeChangeTool
-					359682,//Wanda
+					"SizeChangeTool" => 325830,
+					"Wanda" => 359682,
 				]
 			],
 		],
@@ -151,8 +151,8 @@ $competition = [
 				'jobid' =>  41216,
 				'spaceid' => 426173,
 				'parts' => [
-					360173,//AProVE
-					326627,//Ultimate
+					"AProVE" => 360173,
+					"Ultimate" => 326627,
 				]
 			],
 			'C Integer' => [
@@ -160,9 +160,9 @@ $competition = [
 				'jobid' =>  41217,
 				'spaceid' => 426063,
 				'parts' => [
-					326627,//Ultimate
-					359564,//irankfinder
-					360173,//AProVE
+					"Ultimate" => 326627,
+					"irankfinder" => 359564,
+					"AProVE" => 360173,
 				]
 			],
 			'Integer Transition Systems' => [
@@ -170,9 +170,9 @@ $competition = [
 				'jobid' =>  41219,
 				'spaceid' => 425924,
 				'parts' => [
-					23757,//Ctrl
-					359564,//irankfinder
-					360195,//LoAT
+					"Ctrl" => 23757,
+					"irankfinder" => 359564,
+					"LoAT" => 360195,
 				]
 			],
 			'Integer TRS Innermost' => [
@@ -180,8 +180,8 @@ $competition = [
 				'jobid' =>  41220,
 				'spaceid' => 425939,
 				'parts' => [
-					23758,//Ctrl
-					360174,//AProVE
+					"Ctrl" => 23758,
+					"AProVE" => 360174,
 				]
 			],
             'Haskell' => [
@@ -210,8 +210,8 @@ $competition = [
 				'jobid' =>  41218,
 				'spaceid' => 425993,
 				'parts' => [
-					348357,//NTI
-					360174,//AProVE
+					"NTI" => 348357,
+					"AProVE" => 360174,
 				]
 			],
             'Logic_Programming_with_Cut' => [
