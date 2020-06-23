@@ -134,7 +134,9 @@
 			'pair' => $record[$pairid_idx],
 		];
 		if( $configid == $last && $show ) {
+			$firstconflict = false;
 			if( conflicting($resultcounter) ) {
+				$firstconflict = $conflicts == 0;
 				foreach( array_keys($bench) as $me ) {
 					if( $bench[$me]['score'] > 0 ) {
 						$participants[$me]['conflicts']++;
@@ -143,11 +145,6 @@
 				echo
 ' <tr class=conflict>
 ';
-				if( $conflicts == 0 ) {
-					echo
-'   <a name="conflict"/>
-';
-				}
 				$conflicts += 1;
 			} else {
 				echo
@@ -157,6 +154,11 @@
 			echo
 '  <td class=benchmark>
 ';
+			if( $firstconflict ) {
+				echo
+'   <a name="conflict"/>
+';
+			}
 			echo
 '   <a href="'. $benchmark_url.'">'.$benchmark.'</a>
    <a class=starexecid href="'.$benchmark_remote.'">'.$benchmark_id.'</a></td>
