@@ -10,7 +10,7 @@
 </head>
 <body>
 <?php
-include 'Y2020_info.php';
+include 'Y2020_initial_info.php';
 
 $refresh = ($argv[1] == 'refresh' );
 $show_config = $_GET['showconfig'];
