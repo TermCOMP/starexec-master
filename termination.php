@@ -144,7 +144,7 @@
 ' <tr class=conflict>
 ';
 				if( $conflicts == 0 ) {
-				echo
+					echo
 '   <a name="conflict"/>
 ';
 				}
@@ -157,7 +157,6 @@
 			echo
 '  <td class=benchmark>
 ';
-			}
 			echo
 '   <a href="'. $benchmark_url.'">'.$benchmark.'</a>
    <a class=starexecid href="'.$benchmark_remote.'">'.$benchmark_id.'</a></td>
