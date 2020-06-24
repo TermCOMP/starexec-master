@@ -1,21 +1,28 @@
-<?php
-	include 'definitions.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<meta http-equiv="refresh" content="10">
 <link rel="stylesheet" type="text/css" href="master.css">
-</head>
-<body>
 <?php
+
+include 'definitions.php';
 include 'Y2020_initial_info.php';
 
 $refresh = in_array( 'refresh', $argv );
 $finalize = in_array( 'finalize', $argv );
 
 $show_config = $_GET['showconfig'];
+
+if( !$finalize ) {
+	echo
+'<meta http-equiv="refresh" content="10">
+';
+}
+
+echo
+'</head>
+<body>
+';
 
 $scored_keys = [
 	'CERTIFIED YES',
