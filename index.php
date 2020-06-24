@@ -12,7 +12,9 @@
 <?php
 include 'Y2020_initial_info.php';
 
-$refresh = ($argv[1] == 'refresh' );
+$refresh = in_array( 'refresh', $argv );
+$finalize = in_array( 'finalize', $argv );
+
 $show_config = $_GET['showconfig'];
 
 $scored_keys = [
@@ -92,30 +94,30 @@ foreach( array_keys($mcats) as $mcatname ) {
 		$cat_togo = 0;
 		$cat_cpu = 0;
 		$cat_time = 0;
-		// if job html exists, use it
-		$jobpath = 'caches/'.$type.'_'.$jobid.'.html';
+		// creating job specific php file
+		$jobphp = $type.'_'.$jobid.'.php';
+		$jobpath = 'caches/'.$jobphp;
 		if( ! file_exists($jobpath) ) {
-			// creating job specific php file
-			$jobfile = $type.'_'.$jobid.'.php';
-			$jobpath = 'caches/'.$jobfile;
-			if( ! file_exists($jobpath) ) {
-				$file = fopen($jobpath,'w');
-				fwrite( $file,
+			$file = fopen($jobpath,'w');
+			fwrite( $file,
 '<?php
-	$competitionname = '. str2str($competition['name']) . ';
-	$jobname = ' . str2str($catname) . ';
-	$jobid = ' . $jobid . ';
-	chdir("..");
-	include \'' . type2php($type) .'\';
+$competitionname = '. str2str($competition['name']) . ';
+$jobname = ' . str2str($catname) . ';
+$jobid = ' . $jobid . ';
+chdir("..");
+include \'' . type2php($type) .'\';
 ?>'
-				); 
-				fclose($file);
-			}
+			); 
+			fclose($file);
 		}
 		if( $refresh ) {
-			$ret = system( 'cd caches; php -f "'. $jobfile . '"; cd ..');
+			system( 'cd caches; php -f "'. $jobphp . '"; cd ..');
 		}
-
+		if( $finalize ) {
+			$jobhtml = $type.'_'.$jobid.'.html';
+			system( 'cd caches; php -f "'. $jobphp . '" > "'. $jobhtml .'" ; cd ..');
+			$jobpath = 'caches/'. $jobhtml;
+		}
 		$init = false;
 		$togo = 0;
 		$conflicts = 0;
@@ -143,7 +145,6 @@ foreach( array_keys($mcats) as $mcatname ) {
 			$class = 'incomplete';
 		} else {
 			$class = 'complete';
-			$jobpath .= '?complete=1';
 		}
 		echo
 ' <tr class=' . $class . '>
