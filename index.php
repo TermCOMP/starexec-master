@@ -4,10 +4,6 @@
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="master.css">
 <?php
-
-include 'definitions.php';
-include 'Y2020_info.php';
-
 $refresh = in_array( 'refresh', $argv );
 $finalize = in_array( 'finalize', $argv );
 
@@ -24,6 +20,9 @@ echo
 <body>
 ';
 
+include 'definitions.php';
+include 'Y2020_info.php';
+
 $scored_keys = [
 	'CERTIFIED YES',
 	'CERTIFIED NO',
@@ -34,10 +33,6 @@ $scored_keys = [
 ];
 
 $mcats = $competition['mcats'];
-
-echo
-'<h1>' . $competition['name'] . '</h1>
-';
 
 // Making demonstration categories
 $demos = [];

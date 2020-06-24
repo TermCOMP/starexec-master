@@ -1,6 +1,8 @@
+<h1>Termination Competition 2020 (first run)</h1>
+
 <?php
 $competition = [
-	"name" => "Termination Competition 2020",
+	"name" => "TermCOMP 2020-1",
 	"mcats" => [
 		"Termination of Rewriting" => [
 			'TRS Standard' => [
