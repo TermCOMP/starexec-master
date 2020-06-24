@@ -6,7 +6,7 @@
 <?php
 
 include 'definitions.php';
-include 'Y2020_initial_info.php';
+include 'Y2020_info.php';
 
 $refresh = in_array( 'refresh', $argv );
 $finalize = in_array( 'finalize', $argv );

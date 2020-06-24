@@ -1,11 +1,11 @@
 <?php
 $competition = [
-	"name" => "Termination Competition 2020",
+	"name" => "Termination Competition 2020 (Final)",
 	"mcats" => [
 		"Termination of Rewriting" => [
 			'TRS Standard' => [
 				'type' => 'termination',
-				'jobid' => 41206,
+//				'jobid' => 41206,
 				'spaceid' => 426103,
 				'parts' => [
 					"NTI" => 348357,
@@ -17,7 +17,7 @@ $competition = [
 			],
 			'TRS Standard Certified' => [
 				'type' => 'termination',
-				'jobid' => 41230,
+//				'jobid' => 41230,
 				'spaceid' => 426103,
 				'certified' => true,
 				'parts' => [
@@ -28,7 +28,7 @@ $competition = [
 			],
 			'SRS Standard' => [
 				'type' => 'termination',
-				'jobid' => 41210,
+//				'jobid' => 41210,
 				'spaceid' => 426158,
 				'parts' => [
 					"MuTerm" => 326595,
@@ -41,7 +41,7 @@ $competition = [
 			],
 			'SRS Standard Certified' => [
 				'type' => 'termination',
-				'jobid' => 41232,
+//				'jobid' => 41232,
 				'spaceid' => 426158,
 				'certified' => true,
 				'parts' => [
@@ -52,7 +52,7 @@ $competition = [
 			],
 			'TRS Relative' => [
 				'type' => 'termination',
-				'jobid' => 41208,
+//				'jobid' => 41208,
 				'spaceid' => 426233,
 				'parts' => [
 					"NaTT" => 350520,
@@ -62,7 +62,7 @@ $competition = [
 			],
 			'TRS Relative Certified' => [
 				'type' => 'termination',
-				'jobid' =>  41231,
+//				'jobid' =>  41231,
 				'spaceid' => 426233,
 				'certified' => true,
 				'parts' => [
@@ -72,7 +72,7 @@ $competition = [
 			],
 			'SRS Relative' => [
 				'type' => 'termination',
-				'jobid' =>  41209,
+//				'jobid' =>  41209,
 				'spaceid' => 426149,
 				'parts' => [
 					"NaTT" => 350520,
@@ -84,7 +84,7 @@ $competition = [
 			],
 			'SRS Relative Certified' => [
 				'type' => 'termination',
-				'jobid' =>  41233,
+//				'jobid' =>  41233,
 				'spaceid' => 426149,
 				'certified' => true,
 			    'parts' => [
@@ -94,7 +94,7 @@ $competition = [
 			],
 			'TRS Equational' => [
 				'type' => 'termination',
-				'jobid' =>  41213,
+//				'jobid' =>  41213,
 				'spaceid' => 426058,
 				'parts' => [
 					"MuTerm" => 163986,
@@ -104,7 +104,7 @@ $competition = [
 			],
 			'TRS Equational Certified' => [
 				'type' => 'termination',
-				'jobid' =>  41234,
+//				'jobid' =>  41234,
 				'spaceid' => 426058,
 				'certified' => true,
 				'parts' => [
@@ -114,7 +114,7 @@ $competition = [
 			],
 			'TRS Conditional' => [
 				'type' => 'termination',
-				'jobid' =>  41211,
+//				'jobid' =>  41211,
 				'spaceid' => 426154,
 				'parts' => [
 					"MuTerm" => 326595,
@@ -123,7 +123,7 @@ $competition = [
 			],
 			'TRS Context Sensitive' => [
 				'type' => 'termination',
-				'jobid' =>  41212,
+//				'jobid' =>  41212,
 				'spaceid' => 426022,
 				'parts' => [
 					"MuTerm" => 163986,
@@ -132,7 +132,7 @@ $competition = [
 			],
 			'TRS Innermost' => [
 				'type' => 'termination',
-				'jobid' =>  41214,
+//				'jobid' =>  41214,
 				'spaceid' => 425946,
 				'parts' => [
 					"MuTerm" => 326595,
@@ -141,7 +141,7 @@ $competition = [
 			],
 			'HRS (union beta)' => [
 				'type' => 'termination',
-				'jobid' =>  41215,
+//				'jobid' =>  41215,
 				'spaceid' => 426140,
 				'parts' => [
 					"SizeChangeTool" => 325830,
@@ -152,7 +152,7 @@ $competition = [
 	 	"Termination of Programs" => [
 			'C' => [
 				'type' => 'termination',
-				'jobid' =>  41216,
+//				'jobid' =>  41216,
 				'spaceid' => 426173,
 				'parts' => [
 					"AProVE" => 360173,
@@ -161,7 +161,7 @@ $competition = [
 			],
 			'C Integer' => [
 				'type' => 'termination',
-				'jobid' =>  41217,
+//				'jobid' =>  41217,
 				'spaceid' => 426063,
 				'parts' => [
 					"Ultimate" => 326627,
@@ -171,7 +171,7 @@ $competition = [
 			],
 			'Integer Transition Systems' => [
 				'type' => 'termination',
-				'jobid' =>  41219,
+//				'jobid' =>  41219,
 				'spaceid' => 425924,
 				'parts' => [
 					"Ctrl" => 23757,
@@ -181,7 +181,7 @@ $competition = [
 			],
 			'Integer TRS Innermost' => [
 				'type' => 'termination',
-				'jobid' =>  41220,
+//				'jobid' =>  41220,
 				'spaceid' => 425939,
 				'parts' => [
 					"Ctrl" => 23758,
@@ -211,7 +211,7 @@ $competition = [
             ],
 			'Logic Programming' => [
 				'type' => 'termination',
-				'jobid' =>  41218,
+//				'jobid' =>  41218,
 				'spaceid' => 425993,
 				'parts' => [
 					"NTI" => 348357,
@@ -251,28 +251,28 @@ $competition = [
 			'Derivational_Complexity: TRS' => [
 				'spaceid' => 425952,
 				'type' => 'complexity',
-				'jobid' => 41221,
+//				'jobid' => 41221,
 				'parts' => [
 				]
 			],
 			'Derivational_Complexity: TRS Innermost' => [
 				'spaceid' => 425864,
 				'type' => 'complexity',
-				'jobid' => 41222,
+//				'jobid' => 41222,
 				'parts' => [
 				]
 			],
 			'Runtime_Complexity: TRS' => [
 				'spaceid' => 426182,
 				'type' => 'complexity',
-				'jobid' =>  41223,
+//				'jobid' =>  41223,
 				'parts' => [
 				]
 			],
 			'Runtime_Complexity: TRS Innermost' => [
 				'spaceid' => 426027,
 				'type' => 'complexity',
-				'jobid' =>  41224,
+//				'jobid' =>  41224,
 				'parts' => [
 				]
 			],
