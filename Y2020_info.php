@@ -168,7 +168,7 @@ $competition = [
 				'spaceid' => 426063,
 				'parts' => [
 					"Ultimate" => 326627,
-					"irankfinder" => 359564,
+					"iRankFinder" => 360226,
 					"AProVE" => 360173,
 				]
 			],
@@ -178,7 +178,7 @@ $competition = [
 				'spaceid' => 425924,
 				'parts' => [
 					"Ctrl" => 23757,
-					"irankfinder" => 359564,
+					"iRankFinder" => 360226,
 					"LoAT" => 360195,
 				]
 			],
