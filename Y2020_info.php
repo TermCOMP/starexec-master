@@ -11,7 +11,7 @@ $competition = [
 //				'jobid' => 41206,
 				'spaceid' => 426103,
 				'parts' => [
-					"NTI" => 348357,
+					"NTI" => 360349,
 					"NaTT" => 350520,
 					"TTT2" => 360055,
 					"AProVE" => 360174,
@@ -217,7 +217,7 @@ $competition = [
 //				'jobid' =>  41218,
 				'spaceid' => 425993,
 				'parts' => [
-					"NTI" => 348357,
+					"NTI" => 360349,
 					"AProVE" => 360174,
 				]
 			],
