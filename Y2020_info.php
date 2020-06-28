@@ -17,17 +17,14 @@ $competition = [
 					"AProVE" => 360174,
 					"MuTerm" => 326595,
 				],
-			],
-			'TRS Standard Certified' => [
-				'type' => 'termination',
-//				'jobid' => 41230,
-				'spaceid' => 426103,
-				'certified' => true,
-				'parts' => [
-					"TTT2" => 360056,
-					"AProVE" => 360177,
-					"NaTT" => 360199,
-				]
+				'certified' => [
+//					jobid' => 41230,
+					'parts' => [
+						"TTT2" => 360056,
+						"AProVE" => 360177,
+						"NaTT" => 360199,
+					],
+				],
 			],
 			'SRS Standard' => [
 				'type' => 'termination',
@@ -40,18 +37,15 @@ $competition = [
 					"matchbox" => 360336,
 					"AProVE" => 360174,
 					"MnM" => 360367,
-				]
-			],
-			'SRS Standard Certified' => [
-				'type' => 'termination',
-//				'jobid' => 41232,
-				'spaceid' => 426158,
-				'certified' => true,
-				'parts' => [
-					"TTT2" => 360056,
-					"AProVE" => 360177,
-					"NaTT" => 360199,
-				]
+				],
+				'certified' => [
+//					'jobid' => 41232,
+					'parts' => [
+						"TTT2" => 360056,
+						"AProVE" => 360177,
+						"NaTT" => 360199,
+					],
+				],
 			],
 			'TRS Relative' => [
 				'type' => 'termination',
@@ -61,17 +55,14 @@ $competition = [
 					"NaTT" => 350520,
 					"TTT2" => 360055,
 					"AProVE" => 360174,
-				]
-			],
-			'TRS Relative Certified' => [
-				'type' => 'termination',
-//				'jobid' =>  41231,
-				'spaceid' => 426233,
-				'certified' => true,
-				'parts' => [
-					"TTT2" => 360056,
-					"AProVE" => 360177,
-				]
+				],
+				'certified' => [
+//					'jobid' =>  41231,
+					'parts' => [
+						"TTT2" => 360056,
+						"AProVE" => 360177,
+					],
+				],
 			],
 			'SRS Relative' => [
 				'type' => 'termination',
@@ -83,17 +74,14 @@ $competition = [
 					"matchbox" => 360337,
 					"AProVE" => 360174,
 					"MnM" => 360367,
-				]
-			],
-			'SRS Relative Certified' => [
-				'type' => 'termination',
-//				'jobid' =>  41233,
-				'spaceid' => 426149,
-				'certified' => true,
-			    'parts' => [
-					"TTT2" => 360056,
-					"AProVE" => 360177,
-				]
+				],
+				'certified' => [
+//					'jobid' =>  41233,
+				    'parts' => [
+						"TTT2" => 360056,
+						"AProVE" => 360177,
+					],
+				],
 			],
 			'TRS Equational' => [
 				'type' => 'termination',
@@ -103,17 +91,13 @@ $competition = [
 					"MuTerm" => 163986,
 					"NaTT" => 350520,
 					"AProVE" => 360174,
-				]
-			],
-			'TRS Equational Certified' => [
-				'type' => 'termination',
-//				'jobid' =>  41234,
-				'spaceid' => 426058,
-				'certified' => true,
-				'parts' => [
-					"AProVE" => 360177,
-					"NaTT" => 360199,
-				]
+				],
+				'certified' => [
+					'parts' => [
+						"AProVE" => 360177,
+						"NaTT" => 360199,
+					],
+				],
 			],
 			'TRS Conditional' => [
 				'type' => 'termination',
@@ -123,6 +107,10 @@ $competition = [
 					"MuTerm" => 326595,
 					"AProVE" => 360174,
 				],
+				'certified' => [
+					'parts' => [
+					],
+				],
 			],
 			'TRS Context Sensitive' => [
 				'type' => 'termination',
@@ -131,7 +119,11 @@ $competition = [
 				'parts' => [
 					"MuTerm" => 163986,
 					"AProVE" => 360174,
-				]
+				],
+				'certified' => [
+					'parts' => [
+					],
+				],
 			],
 			'TRS Innermost' => [
 				'type' => 'termination',
@@ -140,7 +132,11 @@ $competition = [
 				'parts' => [
 					"MuTerm" => 326595,
 					"AProVE" => 360174,
-				]
+				],
+				'certified' => [
+					'parts' => [
+					],
+				],
 			],
 			'HRS (union beta)' => [
 				'type' => 'termination',
@@ -149,7 +145,11 @@ $competition = [
 				'parts' => [
 					"SizeChangeTool" => 325830,
 					"Wanda" => 359682,
-				]
+				],
+				'certified' => [
+					'parts' => [
+					],
+				],
 			],
 		],
 	 	"Termination of Programs" => [
@@ -160,7 +160,11 @@ $competition = [
 				'parts' => [
 					"AProVE" => 360173,
 					"Ultimate" => 326627,
-				]
+				],
+				'certified' => [
+					'parts' => [
+					],
+				],
 			],
 			'C Integer' => [
 				'type' => 'termination',
@@ -170,7 +174,11 @@ $competition = [
 					"Ultimate" => 326627,
 					"iRankFinder" => 360226,
 					"AProVE" => 360173,
-				]
+				],
+				'certified' => [
+					'parts' => [
+					],
+				],
 			],
 			'Integer Transition Systems' => [
 				'type' => 'termination',
@@ -180,7 +188,11 @@ $competition = [
 					"Ctrl" => 23757,
 					"iRankFinder" => 360226,
 					"LoAT" => 360195,
-				]
+				],
+				'certified' => [
+					'parts' => [
+					],
+				],
 			],
 			'Integer TRS Innermost' => [
 				'type' => 'termination',
@@ -189,28 +201,44 @@ $competition = [
 				'parts' => [
 					"Ctrl" => 23758,
 					"AProVE" => 360174,
-				]
+				],
+				'certified' => [
+					'parts' => [
+					],
+				],
 			],
             'Haskell' => [
                 'spaceid' => 425990,
                 'type' => 'termination',
                 'jobid' => false,
                 'parts' => [
-                ]
+                ],
+				'certified' => [
+					'parts' => [
+					],
+				],
 			],
             'Java_Bytecode' => [
                 'spaceid' => 425927,
                 'type' => 'termination',
                 'jobid' => false,
                 'parts' => [
-                ]
+                ],
+				'certified' => [
+					'parts' => [
+					],
+				],
             ],
             'Java_Bytecode_Recursive' => [
                 'spaceid' => 426004,
                 'type' => 'termination',
                 'jobid' => false,
                 'parts' => [
-                ]
+                ],
+				'certified' => [
+					'parts' => [
+					],
+				],
             ],
 			'Logic Programming' => [
 				'type' => 'termination',
@@ -219,21 +247,33 @@ $competition = [
 				'parts' => [
 					"NTI" => 360349,
 					"AProVE" => 360174,
-				]
+				],
+				'certified' => [
+					'parts' => [
+					],
+				],
 			],
             'Logic_Programming_with_Cut' => [
                 'spaceid' => 425941,
                 'type' => 'termination',
                 'jobid' => false,
                 'parts' => [
-                ]
+                ],
+				'certified' => [
+					'parts' => [
+					],
+				],
             ],
             'Prolog' => [
                 'spaceid' => 425912,
                 'type' => 'termination',
                 'jobid' => false,
                 'parts' => [
-                ]
+                ],
+				'certified' => [
+					'parts' => [
+					],
+				],
             ],
 		],
 		"Complexity Analysis" => [
@@ -242,42 +282,66 @@ $competition = [
 				'type' => 'complexity',
 				'jobid' => false,
 				'parts' => [
-				]
+				],
+				'certified' => [
+					'parts' => [
+					],
+				],
 			],
 			'Complexity: ITS' => [
 				'spaceid' => 426066,
 				'type' => 'complexity',
 				'jobid' => false,
 				'parts' => [
-				]
+				],
+				'certified' => [
+					'parts' => [
+					],
+				],
 			],
 			'Derivational_Complexity: TRS' => [
 				'spaceid' => 425952,
 				'type' => 'complexity',
 //				'jobid' => 41221,
 				'parts' => [
-				]
+				],
+				'certified' => [
+					'parts' => [
+					],
+				],
 			],
 			'Derivational_Complexity: TRS Innermost' => [
 				'spaceid' => 425864,
 				'type' => 'complexity',
 //				'jobid' => 41222,
 				'parts' => [
-				]
+				],
+				'certified' => [
+					'parts' => [
+					],
+				],
 			],
 			'Runtime_Complexity: TRS' => [
 				'spaceid' => 426182,
 				'type' => 'complexity',
 //				'jobid' =>  41223,
 				'parts' => [
-				]
+				],
+				'certified' => [
+					'parts' => [
+					],
+				],
 			],
 			'Runtime_Complexity: TRS Innermost' => [
 				'spaceid' => 426027,
 				'type' => 'complexity',
 //				'jobid' =>  41224,
 				'parts' => [
-				]
+				],
+				'certified' => [
+					'parts' => [
+					],
+				],
 			],
 		],
 	],
