@@ -39,7 +39,7 @@ $competition = [
 					"TTT2" => 360055,
 					"matchbox" => 360336,
 					"AProVE" => 360174,
-					"MnM" => 360181,
+					"MnM" => 360367,
 				]
 			],
 			'SRS Standard Certified' => [
@@ -82,7 +82,7 @@ $competition = [
 					"TTT2" => 360055,
 					"matchbox" => 360337,
 					"AProVE" => 360174,
-					"MnM" => 360181,
+					"MnM" => 360367,
 				]
 			],
 			'SRS Relative Certified' => [
