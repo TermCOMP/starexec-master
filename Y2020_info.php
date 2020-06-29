@@ -304,9 +304,11 @@ $competition = [
 				'type' => 'complexity',
 //				'jobid' => 41221,
 				'parts' => [
+                                        "TcT" => 360388,
 				],
 				'certified' => [
 					'parts' => [
+                                                "TcT" => 360387,
 					],
 				],
 			],
@@ -315,9 +317,11 @@ $competition = [
 				'type' => 'complexity',
 //				'jobid' => 41222,
 				'parts' => [
+                                        "TcT" => 360385,
 				],
 				'certified' => [
 					'parts' => [
+                                                "TcT" => 360391,
 					],
 				],
 			],
@@ -326,9 +330,11 @@ $competition = [
 				'type' => 'complexity',
 //				'jobid' =>  41223,
 				'parts' => [
+                                        "TcT" => 360390,
 				],
 				'certified' => [
 					'parts' => [
+                                                "TcT" => 360389,
 					],
 				],
 			],
@@ -337,9 +343,11 @@ $competition = [
 				'type' => 'complexity',
 //				'jobid' =>  41224,
 				'parts' => [
+                                        "TcT" => 360386,
 				],
 				'certified' => [
 					'parts' => [
+                                                "TcT" => 360384,
 					],
 				],
 			],
