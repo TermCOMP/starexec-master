@@ -6,7 +6,7 @@
 </head>
 <body>
 <?php
-include 'Y2020_info.php';
+include 'competition_info.php';
 
 $i = 0;
 foreach( $raw_mcats as $mcat_name => $cats ) {
@@ -45,7 +45,7 @@ foreach( $raw_mcats as $mcat_name => $cats ) {
     <input type="hidden" name="subscribe" value="no">
     <input type="hidden" name="suppressTimestamp" value="yes">
     <input type="number" name="postProcess" value='.
-    ( $cat['certified'] ? '651' : '649' ) . '>
+    ( $cat['certified'] ? '651' : '363' ) . '>
     Participants:
 ';
         foreach( $cat['parts'] as $partname => $configid ) {

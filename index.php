@@ -21,7 +21,7 @@ echo
 ';
 
 include 'definitions.php';
-include 'Y2020_info.php';
+include 'competition_info.php';
 
 $scored_keys = [
 	'CERTIFIED YES',
