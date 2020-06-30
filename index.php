@@ -47,7 +47,7 @@ foreach( $mcats as $mcat_name => $cats ) {
 				break;
 			case 1:
 				$demos[$cat_name] = $cat;
-				unset($cat);
+				unset($mcats[$mcat_name][$cat_name]);
 				break;
 			}
 		}
