@@ -159,7 +159,7 @@ $competition = [
 				'spaceid' => 426173,
 				'parts' => [
 					"AProVE" => 360173,
-					"Ultimate" => 326627,
+					"Ultimate" => 360394,
 				],
 				'certified' => [
 					'parts' => [
@@ -171,7 +171,7 @@ $competition = [
 //				'jobid' =>  41217,
 				'spaceid' => 426063,
 				'parts' => [
-					"Ultimate" => 326627,
+					"Ultimate" => 360394,
 					"iRankFinder" => 360226,
 					"AProVE" => 360173,
 				],
