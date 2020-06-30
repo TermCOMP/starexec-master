@@ -9,7 +9,7 @@
 include 'Y2020_info.php';
 
 $i = 0;
-foreach( $competition['mcats'] as $mcat_name => $cats ) {
+foreach( $raw_mcats as $mcat_name => $cats ) {
     foreach( $cats as $cat_name => $cat ) {
         $i++;
         echo
@@ -21,7 +21,8 @@ foreach( $competition['mcats'] as $mcat_name => $cats ) {
     sid: <input type="number" name="sid" value='.$cat['spaceid'].'>
     desc: <input type="text" name="desc"><br>
     <select name="benchmarkingFramework">
-	    <option value="RUNSOLVER" selected="selected">runsolver</option>
+        <option value="BENCHEXEC" selected="selected">BenchExec</option>
+	    <option value="RUNSOLVER">runsolver</option>
     </select>
     <input type="hidden" name="preProcess" value="-1">
     <input type="hidden" name="seed" value=0>

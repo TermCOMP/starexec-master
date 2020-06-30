@@ -32,9 +32,8 @@ $scored_keys = [
 	'LOW',
 ];
 
-$raw_mcats = $competition['mcats'];
-
 // Making certified and demonstration categories
+$demos = [];
 $mcats = [];
 foreach( $raw_mcats as $mcat_name => $raw_cats ) {
 	$cats = [];
@@ -53,13 +52,14 @@ foreach( $raw_mcats as $mcat_name => $raw_cats ) {
 			}
 			break;
 		case 1:
-			$mcats['Demonstrations'][$cat_name] = $cat;
+			$demos[$cat_name] = $cat;
 			unset($cats[$cat_name]);
 			break;
 		}
 	}
 	$mcats[$mcat_name] = $cats;
 }
+$mcats['Demonstrations'] = $demos;
 
 // Main display
 foreach( array_keys($mcats) as $mcatname ) {
@@ -106,7 +106,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 			$file = fopen($jobpath,'w');
 			fwrite( $file,
 '<?php
-$competitionname = '. str2str($competition['name']) . ';
+$competitionname = '. str2str($name) . ';
 $jobname = ' . str2str($catname) . ';
 $jobid = ' . $jobid . ';
 chdir("..");
