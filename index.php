@@ -34,23 +34,28 @@ $scored_keys = [
 
 $mcats = $competition['mcats'];
 
-// Making demonstration categories
+// Making certified and demonstration categories
 $demos = [];
 foreach( $mcats as $mcat_name => $cats ) {
 	foreach( $cats as $cat_name => $cat ) {
-		if( array_key_exists( 'parts', $cat ) ) {
-			switch( count($cat['parts']) ) {
-			case 0:
-				if( !$cat['jobid'] > 0 ) {
-					unset($mcats[$mcat_name][$cat_name]);// remove unparticipated category
-				}
-				break;
-			case 1:
-				$demos[$cat_name] = $cat;
-				unset($mcats[$mcat_name][$cat_name]);
-				break;
+		$certcat = $cat['certified'];
+		unset( $cat['certified'] );
+		$certcat = array_replace( $cat, $certcat );
+		$cats[$cat_name . ' Certified'] = $certcat;
+	}
+	foreach( $cats as $cat_name => $cat ) {
+		switch( count($cat['parts']) ) {
+		case 0:
+			if( !$cat['jobid'] > 0 ) {
+				unset($cats[$cat_name]);// remove unparticipated category
 			}
+			break;
+		case 1:
+			$demos[$cat_name] = $cat;
+			unset($cats[$cat_name]);
+			break;
 		}
+		$mcats[$mcat_name] = $cats;
 	}
 }
 $dmcat =& $mcats['Demonstrations'];
