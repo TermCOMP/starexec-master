@@ -230,11 +230,6 @@ include \'' . type2php($type) .'\';
 				$total_togo += $togo;
 			}
 		}
-		if( $cat_togo > 0 ) {
-			echo
-' <td>' . $cat_done . '/' . ($cat_done + $cat_togo) . '
-';
-		}
 	}
 	echo
 '</table>
