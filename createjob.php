@@ -9,7 +9,7 @@
 include 'competition_info.php';
 
 $i = 0;
-foreach( $raw_mcats as $mcat_name => $cats ) {
+foreach( $mcats as $mcat_name => $cats ) {
     foreach( $cats as $cat_name => $cat ) {
         $i++;
         echo
