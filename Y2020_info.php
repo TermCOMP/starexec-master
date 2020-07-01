@@ -84,7 +84,7 @@ $raw_mcats = [
 		],
 		'TRS Equational' => [
 			'type' => 'termination',
-//			'jobid' =>  41213,
+			'jobid' =>  41490,
 			'spaceid' => 426058,
 			'parts' => [
 				"MuTerm" => 163986,
@@ -92,6 +92,7 @@ $raw_mcats = [
 				"AProVE" => 360174,
 			],
 			'certified' => [
+				'jobid' => 41491,
 				'parts' => [
 					"AProVE" => 360177,
 					"NaTT" => 360199,
@@ -100,7 +101,7 @@ $raw_mcats = [
 		],
 		'TRS Conditional' => [
 			'type' => 'termination',
-//			'jobid' =>  41211,
+			'jobid' =>  41492,
 			'spaceid' => 426154,
 			'parts' => [
 				"MuTerm" => 326595,
@@ -113,7 +114,7 @@ $raw_mcats = [
 		],
 		'TRS Context Sensitive' => [
 			'type' => 'termination',
-//			'jobid' =>  41212,
+			'jobid' =>  41493,
 			'spaceid' => 426022,
 			'parts' => [
 				"MuTerm" => 163986,
@@ -126,7 +127,7 @@ $raw_mcats = [
 		],
 		'TRS Innermost' => [
 			'type' => 'termination',
-//			'jobid' =>  41214,
+			'jobid' =>  41214,
 			'spaceid' => 425946,
 			'parts' => [
 				"MuTerm" => 326595,
@@ -139,7 +140,7 @@ $raw_mcats = [
 		],
 		'HRS (union beta)' => [
 			'type' => 'termination',
-//			'jobid' =>  41215,
+			'jobid' =>  41495,
 			'spaceid' => 426140,
 			'parts' => [
 				"SizeChangeTool" => 325830,
@@ -154,7 +155,7 @@ $raw_mcats = [
 	"Termination of Programs" => [
 		'C' => [
 			'type' => 'termination',
-//			'jobid' =>  41216,
+			'jobid' =>  41216,
 			'spaceid' => 426173,
 			'parts' => [
 				"AProVE" => 360173,
@@ -181,7 +182,7 @@ $raw_mcats = [
 		],
 		'Integer Transition Systems' => [
 			'type' => 'termination',
-//			'jobid' =>  41219,
+			'jobid' =>  41496,
 			'spaceid' => 425924,
 			'parts' => [
 				"Ctrl" => 23757,
@@ -195,7 +196,7 @@ $raw_mcats = [
 		],
 		'Integer TRS Innermost' => [
 			'type' => 'termination',
-//			'jobid' =>  41220,
+			'jobid' =>  41497,
 			'spaceid' => 425939,
 			'parts' => [
 				"Ctrl" => 23758,
@@ -242,7 +243,7 @@ $raw_mcats = [
 		],
 		'Logic Programming' => [
 			'type' => 'termination',
-//			'jobid' =>  41218,
+			'jobid' =>  41498,
 			'spaceid' => 425993,
 			'parts' => [
 				"NTI" => 360349,
