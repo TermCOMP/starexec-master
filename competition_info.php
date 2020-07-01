@@ -14,6 +14,7 @@ foreach( $raw_mcats as $mcat_name => $raw_cats ) {
 		$certcat = $cat;
 		$certcat['parts'] = $certparts;
 		$certcat['jobid'] = $certjobid;
+		$certcat['certified'] = true;
 		$cats[$cat_name] = $cat;
 		$cats[$cat_name . ' Certified'] = $certcat;
 	}
