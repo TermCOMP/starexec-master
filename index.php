@@ -46,12 +46,13 @@ foreach( array_keys($mcats) as $mcatname ) {
 		$type = $cat['type'];
 		$jobid = $cat['jobid'];
 		if( !$jobid ) {// This means the job is not yet started or linked to starexec-master.
-			echo ' <div class=category>'.$catname .'</div>'.PHP_EOL.
-				 '  <span class=ranking>'.PHP_EOL;
+			echo ' <div class=category>'.$catname.'<br/>'.PHP_EOL.
+				 '  <div class=ranking>'.PHP_EOL;
 			foreach( $cat['parts'] as $partname => $configid ) {
 				echo '   '. $partname. '<a class=starexecid href="'. configid2url($configid) .'">'. $configid .'</a>'.PHP_EOL;
 			}
-			echo '  </span>'.PHP_EOL;
+			echo '  </div>'.PHP_EOL.
+				 ' </div>';
 			continue;
 		}
 		$cat_done = 0;
@@ -107,13 +108,12 @@ foreach( array_keys($mcats) as $mcatname ) {
 		}
 		echo ' <div class=category>'.PHP_EOL.
 			 '  <a href="' . $jobpath . '">' . $catname . '</a>'.PHP_EOL.
-			 '   <a class=starexecid href="' . jobid2url($jobid) . '">' . $jobid . '</a>'.PHP_EOL;
+			 '  <a class=starexecid href="' . jobid2url($jobid) . '">' . $jobid . '</a>'.PHP_EOL;
 		if( $init ) {
 			if( $conflicts > 0 ) {
 				echo '<a class=conflict href="' . $jobpath . '#conflict">conflict</a>'.PHP_EOL;
 			} 
-			echo ' </div>'.PHP_EOL.
-				 '  <div class=ranking>'.PHP_EOL;
+			echo '  <table class=ranking>'.PHP_EOL;
 			$prev_score = $best['score'];
 			$rank = 1;
 			$count = 0;
@@ -137,29 +137,33 @@ foreach( array_keys($mcats) as $mcatname ) {
 				$prev_score = $score;
 				// Making progress bar
 				$total = $done + $togo;
-				echo '    <table style="width:100pt; display:inline-table; vertical-align:middle">'.PHP_EOL.
-					 '     <tr style="height:1ex">'.PHP_EOL;
+				echo '   <tr>'.PHP_EOL.
+					 '    <td>'.PHP_EOL.
+					 '     <table class=bar>'.PHP_EOL.
+					 '      <tr style="height:1ex">'.PHP_EOL;
 				foreach( $scored_keys as $key ) {
 					if( array_key_exists( $key, $s ) ) {
-						echo '<td ' . result2style($key) . ' style="width:'. (100 * $s[$key] / $total) . '%">'.PHP_EOL;
+						echo '       <td ' . result2style($key) . ' style="width:'. (100 * $s[$key] / $total) . '%">'.PHP_EOL;
 					}
 				}
 				if( $togo > 0 ) {
-					echo '   <td class=incomplete style="width:'. (100 * $togo / $total) . '%">'.PHP_EOL;
+					echo '       <td class=incomplete style="width:'. (100 * $togo / $total) . '%">'.PHP_EOL;
 			    }
 				$maybe = $total - $togo - $score;
 				if( $maybe > 0 ) {
-				   echo '   <td class=maybe style="width:'. (100 * ($total - $togo - $score) / $total) . '%">'.PHP_EOL;
+				   echo '       <td class=maybe style="width:'. (100 * ($total - $togo - $score) / $total) . '%">'.PHP_EOL;
 				}
-				echo '   </table>'.PHP_EOL;
+				echo '     </table>'.PHP_EOL;
 				// Textual display
-				echo '   <span class='. ( $rank == 1 ? 'best' : '' ) . 'solver>'.PHP_EOL.
-					 '    <a href="'. $url . '">'. $name . '</a>';
+				echo '     <td>'.PHP_EOL.
+					 '      <span class='. ( $rank == 1 ? 'best' : '' ) . 'solver>'.PHP_EOL.
+					 '       <a href="'. $url . '">'. $name . '</a>';
 				if( $show_config ) {
 					echo PHP_EOL.
-						'     <a class=config href="' . configid2url($configid) . '">'. $config . '</a>';
+						'       <a class=config href="' . configid2url($configid) . '">'. $config . '</a>';
 				}
-				echo '</span>'. PHP_EOL.'    <span class=score>';
+				echo '      </span>'. PHP_EOL.
+					 '      <span class=score>';
 				foreach( $scored_keys as $key ) {
 					if( array_key_exists( $key, $s ) ) {
 						$subscore = $s[$key];
@@ -174,7 +178,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 					echo ','.PHP_EOL.
 						 '   <span class=togo> ' . $togo . ' to go</span>';
 				}
-				echo '</span><br/>'.PHP_EOL;
+				echo '     </span>'.PHP_EOL;
 				$cat_cpu += $cpu;
 				$cat_time += $time;
 				$cat_done += $done;
@@ -184,12 +188,12 @@ foreach( array_keys($mcats) as $mcatname ) {
 				$total_done += $done;
 				$total_togo += $togo;
 			}
-			echo '   </div>'.PHP_EOL;
+			echo '  </table>'.PHP_EOL;
 		}
+		echo ' </div>'.PHP_EOL;
 	}
 	echo
-'</span>
-<p>Progress: ' . $total_done . ($total_done + $total_togo) .
+'<p>Progress: ' . $total_done . ($total_done + $total_togo) .
 ', CPU Time: ' . seconds2str($total_cpu).
 ', Node Time: ' . seconds2str($total_time) . '</p>
 ';

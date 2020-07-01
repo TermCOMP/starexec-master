@@ -27,10 +27,16 @@ td a {
 .fill {
 	width:100%; height:100%; display:block;
 }
-h3 .category {
-	text-align: left;
+.category, .category a {
 	color: black;
+	text-align: left;
+}
+div.category {
 	text-decoration: none;
+ 	display: inline-block;
+	vertical-align: top;
+	margin-right: 10pt;
+	margin-bottom: 10pt;
 }
 .benchmark {
 	text-align: left;
@@ -49,8 +55,15 @@ h3 .category {
 }
 .ranking {
 	text-align: left;
-	width: 75%;
+	border: .1pt solid silver;
+	padding-left: 5pt;
+	padding-right: 5pt;
 }
+.ranking td {
+	text-align: left;
+	border: none;
+}
+
 .score {
 	font-size: small;
 	font-weight: normal;
@@ -74,7 +87,7 @@ h3 .category {
 	background-color: #D0FFD0;
 }
 .incomplete {
-	background-color: antiquewhite;
+	background-color: white;
 }
 .active {
 	background-color: fuchsia;
@@ -194,4 +207,12 @@ td.NO span.time, td.CERTIFIEDNO span.time, td.unsupported span.time {
 .conflicts {
 	color: red;
 	font-weight: bold;
+}
+table .bar {
+	width:100pt;
+	vertical-align:middle;
+}
+.bar td {
+	border: .1pt solid silver;
+	text-align: center;
 }
