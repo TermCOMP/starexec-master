@@ -27,7 +27,7 @@ $raw_mcats = [
 		],
 		'SRS Standard' => [
 			'type' => 'termination',
-//			'jobid' => 41210,
+			'jobid' => 41485,
 			'spaceid' => 426158,
 			'parts' => [
 				"MuTerm" => 326595,
@@ -38,7 +38,7 @@ $raw_mcats = [
 				"MnM" => 360442,
 			],
 			'certified' => [
-//				'jobid' => 41232,
+				'jobid' => 41484,
 				'parts' => [
 					"TTT2" => 360056,
 					"AProVE" => 360177,
