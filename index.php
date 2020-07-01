@@ -176,9 +176,9 @@ foreach( array_keys($mcats) as $mcatname ) {
 				}
 				if( $togo > 0 ) {
 					echo ','.PHP_EOL.
-						 '   <span class=togo> ' . $togo . ' to go</span>'.PHP_EOL;
+						 '   <span class=togo> ' . $togo . ' to go</span>';
 				}
-				echo '     </span>'.PHP_EOL;
+				echo '</span>'.PHP_EOL;
 				$cat_cpu += $cpu;
 				$cat_time += $time;
 				$cat_done += $done;
