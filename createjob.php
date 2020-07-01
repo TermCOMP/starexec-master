@@ -17,7 +17,7 @@ foreach( $mcats as $mcat_name => $cats ) {
  action="https://www.starexec.org/starexec/secure/add/job"
  target="_blank">
     <input type="submit" value="'. $cat_name . '"><br>
-    queue: <input type="number" name="queue" value=1>
+    queue: <input type="number" name="queue" value=123407>
     sid: <input type="number" name="sid" value='.$cat['spaceid'].'>
     desc: <input type="text" name="desc"><br>
     <select name="benchmarkingFramework">
@@ -45,7 +45,7 @@ foreach( $mcats as $mcat_name => $cats ) {
     <input type="hidden" name="subscribe" value="no">
     <input type="hidden" name="suppressTimestamp" value="yes">
     <input type="number" name="postProcess" value='.
-    ( $cat['certified'] ? '651' : '363' ) . '>
+    ( $cat['certified'] ? '654' : '363' ) . '>
     Participants:
 ';
         foreach( $cat['parts'] as $partname => $configid ) {
