@@ -87,7 +87,7 @@ include \'' . type2php($type) .'\';
 			fclose($file);
 		}
 		if( $refresh ) {
-			system( 'cd caches; php -f "'. $jobphp . ' refresh"; cd ..');
+			system( 'cd caches; php -f "'. $jobphp . '" refresh; cd ..');
 		}
 		if( $finalize ) {
 			$jobhtml = $type.'_'.$jobid.'.html';
