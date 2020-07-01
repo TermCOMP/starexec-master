@@ -197,11 +197,24 @@ include \'' . type2php($type) .'\';
 ';
 				foreach( $scored_keys as $key ) {
 					if( array_key_exists( $key, $s ) ) {
-						echo '<td ' . result2style($key) . ' style="width:'. (100 * $s[$key] / $total) . '%">';
+						echo
+'<td ' . result2style($key) . ' style="width:'. (100 * $s[$key] / $total) . '%; height:2pt">
+';
 					}
 				}
-				echo '<td class=incomplete style="width:'. (100 * $togo / $total) . '%; height:2pt">
-   </table>
+				if( $togo > 0 ) {
+					echo
+'   <td class=incomplete style="width:'. (100 * $togo / $total) . '%; height:2pt">
+';
+			    }
+				$maybe = $total - $togo - $score;
+				if( $maybe > 0 ) {
+				   echo
+'   <td class=maybe style="width:'. (100 * ($total - $togo - $score) / $total) . '%; height:2pt">
+';
+				}
+				echo
+'   </table>
 ';
 				$cat_cpu += $cpu;
 				$cat_time += $time;
