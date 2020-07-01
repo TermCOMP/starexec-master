@@ -155,7 +155,7 @@ $raw_mcats = [
 	"Termination of Programs" => [
 		'C' => [
 			'type' => 'termination',
-			'jobid' => false,
+			'jobid' => 41518,
 			'spaceid' => 426173,
 			'parts' => [
 				"AProVE" => 360173,
@@ -168,7 +168,7 @@ $raw_mcats = [
 		],
 		'C Integer' => [
 			'type' => 'termination',
-//			'jobid' =>  41217,
+//			'jobid' =>  41519,
 			'spaceid' => 426063,
 			'parts' => [
 				"Ultimate" => 360394,
