@@ -157,7 +157,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 				// Textual display
 				echo '     <td>'.PHP_EOL.
 					 '      <span class='. ( $rank == 1 ? 'best' : '' ) . 'solver>'.PHP_EOL.
-					 '       <a href="'. $url . '">'. $name . '</a>';
+					 '       '. $rank .'. <a href="'. $url . '">'. $name . '</a>';
 				if( $show_config ) {
 					echo PHP_EOL.
 						'       <a class=config href="' . configid2url($configid) . '">'. $config . '</a>';
@@ -176,7 +176,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 				}
 				if( $togo > 0 ) {
 					echo ','.PHP_EOL.
-						 '   <span class=togo> ' . $togo . ' to go</span>';
+						 '   <span class=togo> ' . $togo . ' to go</span>'.PHP_EOL;
 				}
 				echo '     </span>'.PHP_EOL;
 				$cat_cpu += $cpu;
