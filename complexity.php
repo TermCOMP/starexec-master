@@ -82,17 +82,26 @@
 		}
 		return [0,1001];
 	}
+	
+	$refresh = in_array( 'refresh', $argv ) || $_GET['refresh'];
+	$finalize = in_array( 'finalize', $argv );
 
 	if( $jobid == NULL ) {
 		$jobid = $_GET['id'];
 	}
-
 	if( $jobid == NULL ) {
 		echo '</head>';
 		exit('no job to present');
 	}
+
+	if( !$finalize ) {
+		echo
+'<meta http-equiv="refresh" content="15">
+';
+	}
+
 	$csv = jobid2csv($jobid);
-	if( !$_GET['complete'] ) {
+	if( $refresh ) {
 		cachezip(jobid2remote($jobid),$csv);
 	}
 	$scorefile = jobid2scorefile($jobid);

@@ -20,12 +20,12 @@
 
 	if( !$finalize ) {
 		echo
-'<meta http-equiv="refresh" content="10">
+'<meta http-equiv="refresh" content="15">
 ';
 	}
 
 	$csv = jobid2csv($jobid);
-	if( $refresh && !$_GET['complete'] ) {
+	if( $refresh ) {
 		cachezip(jobid2remote($jobid),$csv);
 	}
 	$scorefile = jobid2scorefile($jobid);
