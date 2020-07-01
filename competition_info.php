@@ -8,12 +8,11 @@ $mcats = [];
 foreach( $raw_mcats as $mcat_name => $raw_cats ) {
 	$cats = [];
 	foreach( $raw_cats as $cat_name => $cat ) {
-		$certparts = $cat['certified']['parts'];
-		$certjobid = $cat['certified']['jobid'];
+		$certinfo = $cat['certified'];
 		unset( $cat['certified'] );
 		$certcat = $cat;
-		$certcat['parts'] = $certparts;
-		$certcat['jobid'] = $certjobid;
+		$certcat['parts'] = array_key_exists('parts',$certinfo) ? $certinfo['parts'] : [];
+		$certcat['jobid'] = array_key_exists('jobid',$certinfo) ? $certinfo['jobid'] : 0;
 		$certcat['certified'] = true;
 		$cats[$cat_name] = $cat;
 		$cats[$cat_name . ' Certified'] = $certcat;
