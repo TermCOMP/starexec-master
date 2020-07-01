@@ -8,9 +8,12 @@ $mcats = [];
 foreach( $raw_mcats as $mcat_name => $raw_cats ) {
 	$cats = [];
 	foreach( $raw_cats as $cat_name => $cat ) {
-		$certcat = $cat['certified'];
+		$certparts = $cat['certified']['parts'];
+		$certjobid = $cat['certified']['jobid'];
 		unset( $cat['certified'] );
-		$certcat = array_replace( $cat, $certcat );
+		$certcat = $cat;
+		$certcat['parts'] = $certparts;
+		$certcat['jobid'] = $certjobid;
 		$cats[$cat_name] = $cat;
 		$cats[$cat_name . ' Certified'] = $certcat;
 	}
