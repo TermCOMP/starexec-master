@@ -179,15 +179,29 @@ include \'' . type2php($type) .'\';
 					echo
 ', <span class=time>Certification:'.seconds2str($certtime).'</span>';
 				}
+				if( $togo > 0 ) {
+					echo
+',
+   <span class=togo> ' . $togo . ' to go</span>';
+				}
 				echo
 '</span>
 ';
-				if( $togo > 0 ) {
-					echo
-'   <span class=togo>, ' . $togo . ' to go</span>';
-				}
 				echo
 '   </span><br/>
+';
+				$total = $done + $togo;
+				echo
+'   <table style="width:100%">
+     <tr>
+';
+				foreach( $scored_keys as $key ) {
+					if( array_key_exists( $key, $s ) ) {
+						echo '<td ' . result2style($key) . ' style="width:'. (100 * $s[$key] / $total) . '%">';
+					}
+				}
+				echo '<td class=incomplete style="width:'. (100 * $togo / $total) . '%; height:2pt">
+   </table>
 ';
 				$cat_cpu += $cpu;
 				$cat_time += $time;

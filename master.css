@@ -59,7 +59,7 @@ td a {
 .score::after {
 	content: ")";
 }
-.togo {
+.ranking .togo {
 	color: gray;
 	font-size: small;
 }
@@ -119,7 +119,7 @@ td a {
 	background-color: gray; 
 	color: white;
 }
-.low1, .low1 a {
+.LOW, .low1, .low1 a {
 	background-color: #60C060;
 	color: black;
 }
@@ -139,7 +139,7 @@ td a {
 	background-color: #60A060;
 	color: white;
 }
-.up0, .up0 a {
+.UP, .up0, .up0 a {
 	background-color: #00B0FF;
 	color: black;
 }
