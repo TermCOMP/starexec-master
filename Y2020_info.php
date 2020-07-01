@@ -7,7 +7,7 @@ $raw_mcats = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [
 			'type' => 'termination',
-//			'jobid' => 41206,
+			'jobid' => 41483,
 			'spaceid' => 426103,
 			'parts' => [
 				"NTI" => 360349,
@@ -17,7 +17,7 @@ $raw_mcats = [
 				"MuTerm" => 326595,
 			],
 			'certified' => [
-//			jobid' => 41230,
+			'jobid' => 41482,
 				'parts' => [
 					"TTT2" => 360056,
 					"AProVE" => 360177,

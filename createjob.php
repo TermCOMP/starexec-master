@@ -16,7 +16,8 @@ foreach( $mcats as $mcat_name => $cats ) {
 '<form method="POST" id="myform'.$i.'"
  action="https://www.starexec.org/starexec/secure/add/job"
  target="_blank">
-    <input type="submit" value="'. $cat_name . '"><br>
+    <input type="submit" value="Create Job">
+    <input type="text" name="name" value="'. $cat_name . '"><br>
     queue: <input type="number" name="queue" value=123407>
     sid: <input type="number" name="sid" value='.$cat['spaceid'].'>
     desc: <input type="text" name="desc"><br>
