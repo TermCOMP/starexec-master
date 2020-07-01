@@ -38,32 +38,21 @@ foreach( array_keys($mcats) as $mcatname ) {
 	$total_togo = 0;
 	$total_cpu = 0;
 	$total_time = 0;
-	echo
-'<h2>' . $mcatname . '</h2>
-';
+	echo '<h2>'. $mcatname .'</h2>'.PHP_EOL;
 	$cats = $mcats[$mcatname];
 	$table = [];
 	$tools = [];
-	echo
-'<table>
- <tr>
-  <th class=category>category
-  <th class=ranking>ranking
-';
 	foreach( $cats as $catname => $cat ) {
 		$type = $cat['type'];
 		$jobid = $cat['jobid'];
 		if( !$jobid ) {// This means the job is not yet started or linked to starexec-master.
-			echo
-' <tr class=incomplete>
-  <td class=category>'.$catname .'
-  <td class=ranking>
-';
+			echo ' <div class=category>'.$catname.'<br/>'.PHP_EOL.
+				 '  <div class=ranking>'.PHP_EOL;
 			foreach( $cat['parts'] as $partname => $configid ) {
-				echo
-'   '. $partname. '<a class=starexecid href="'. configid2url($configid) .'">'. $configid .'</a>
-';
+				echo '   '. $partname. '<a class=starexecid href="'. configid2url($configid) .'">'. $configid .'</a>'.PHP_EOL;
 			}
+			echo '  </div>'.PHP_EOL.
+				 ' </div>';
 			continue;
 		}
 		$cat_done = 0;
@@ -76,22 +65,22 @@ foreach( array_keys($mcats) as $mcatname ) {
 		if( ! file_exists($jobpath) ) {
 			$file = fopen($jobpath,'w');
 			fwrite( $file,
-'<?php
-$competitionname = '. str2str($name) . ';
-$jobname = ' . str2str($catname) . ';
-$jobid = ' . $jobid . ';
-chdir("..");
-include \'' . type2php($type) .'\';
-?>'
+				'<?php'.PHP_EOL.
+				'$competitionname = '. str2str($competitionname) . ';'.PHP_EOL.
+				'$jobname = ' . str2str($catname) . ';'.PHP_EOL.
+				'$jobid = ' . $jobid . ';'.PHP_EOL.
+				'chdir("..");'.PHP_EOL.
+				'include \'' . type2php($type) .'\';'.PHP_EOL.
+				'?>'
 			); 
 			fclose($file);
 		}
 		if( $refresh ) {
-			system( 'cd caches; php -f "'. $jobphp . '"; cd ..');
+			system( 'cd caches; php -f "'. $jobphp . '" refresh; cd ..');
 		}
 		if( $finalize ) {
 			$jobhtml = $type.'_'.$jobid.'.html';
-			system( 'cd caches; php -f "'. $jobphp . '" > "'. $jobhtml .'" ; cd ..');
+			system( 'cd caches; php -f "'. $jobphp . ' finalize" > "'. $jobhtml .'" ; cd ..');
 			$jobpath = 'caches/'. $jobhtml;
 		}
 		$init = false;
@@ -117,26 +106,14 @@ include \'' . type2php($type) .'\';
 				$best['time'] = min($best['time'], $s['time']);
 			}
 		}
-		if( !$init || $togo > 0 ) {
-			$class = 'incomplete';
-		} else {
-			$class = 'complete';
-		}
-		echo
-' <tr class=' . $class . '>
-  <td class=category>
-   <a href="' . $jobpath . '">' . $catname . '</a>
-   <a class=starexecid href="' . jobid2url($jobid) . '">' . $jobid . '</a>
-';
+		echo ' <div class=category>'.PHP_EOL.
+			 '  <a href="' . $jobpath . '">' . $catname . '</a>'.PHP_EOL.
+			 '  <a class=starexecid href="' . jobid2url($jobid) . '">' . $jobid . '</a>'.PHP_EOL;
 		if( $init ) {
 			if( $conflicts > 0 ) {
-				echo
-'<a class=conflict href="' . $jobpath . '#conflict">conflict</a>
-';
+				echo '<a class=conflict href="' . $jobpath . '#conflict">conflict</a>'.PHP_EOL;
 			} 
-			echo
-'  <td class=ranking>
-';
+			echo '  <table class=ranking>'.PHP_EOL;
 			$prev_score = $best['score'];
 			$rank = 1;
 			$count = 0;
@@ -158,37 +135,50 @@ include \'' . type2php($type) .'\';
 					$rank = $count;
 				}
 				$prev_score = $score;
-				echo
-'   <span class='. ( $rank == 1 ? 'best' : '' ) . 'solver>
-    ' . $rank . '. <a href="'. $url . '">'. $name . '</a>';
-				if( $show_config ) {
-					echo '
-     <a class=config href="' . configid2url($configid) . '">'. $config . '</a>';
+				// Making progress bar
+				$total = $done + $togo;
+				echo '   <tr>'.PHP_EOL.
+					 '    <td>'.PHP_EOL.
+					 '     <table class=bar>'.PHP_EOL.
+					 '      <tr style="height:1ex">'.PHP_EOL;
+				foreach( $scored_keys as $key ) {
+					if( array_key_exists( $key, $s ) ) {
+						echo '       <td ' . result2style($key) . ' style="width:'. (100 * $s[$key] / $total) . '%">'.PHP_EOL;
+					}
 				}
-				echo '
-    <span class=score>';
+				if( $togo > 0 ) {
+					echo '       <td class=incomplete style="width:'. (100 * $togo / $total) . '%">'.PHP_EOL;
+			    }
+				$maybe = $total - $togo - $score;
+				if( $maybe > 0 ) {
+				   echo '       <td class=maybe style="width:'. (100 * ($total - $togo - $score) / $total) . '%">'.PHP_EOL;
+				}
+				echo '     </table>'.PHP_EOL;
+				// Textual display
+				echo '     <td>'.PHP_EOL.
+					 '      <span class='. ( $rank == 1 ? 'best' : '' ) . 'solver>'.PHP_EOL.
+					 '       <a href="'. $url . '">'. $name . '</a>';
+				if( $show_config ) {
+					echo PHP_EOL.
+						'       <a class=config href="' . configid2url($configid) . '">'. $config . '</a>';
+				}
+				echo '      </span>'. PHP_EOL.
+					 '      <span class=score>';
 				foreach( $scored_keys as $key ) {
 					if( array_key_exists( $key, $s ) ) {
 						$subscore = $s[$key];
 						echo '<span '. result2style( $key, $subscore == $best[$key] ) . '>'. $key . ':' . $subscore . '</span>, ';
 					}
 				}
-				echo
-'<span class='.( $time == $best['time'] ? 'besttime' : 'time' ).'>TIME:'.seconds2str($time).'</span>';
+				echo '<span class='.( $time == $best['time'] ? 'besttime' : 'time' ).'>TIME:'.seconds2str($time).'</span>';
 				if( $certtime != 0 ) {
-					echo
-', <span class=time>Certification:'.seconds2str($certtime).'</span>';
+					echo ', <span class=time>Certification:'.seconds2str($certtime).'</span>';
 				}
-				echo
-'</span>
-';
 				if( $togo > 0 ) {
-					echo
-'   <span class=togo>, ' . $togo . ' to go</span>';
+					echo ','.PHP_EOL.
+						 '   <span class=togo> ' . $togo . ' to go</span>';
 				}
-				echo
-'   </span><br/>
-';
+				echo '     </span>'.PHP_EOL;
 				$cat_cpu += $cpu;
 				$cat_time += $time;
 				$cat_done += $done;
@@ -198,11 +188,12 @@ include \'' . type2php($type) .'\';
 				$total_done += $done;
 				$total_togo += $togo;
 			}
+			echo '  </table>'.PHP_EOL;
 		}
+		echo ' </div>'.PHP_EOL;
 	}
 	echo
-'</table>
-<p>Progress: ' . $total_done . ($total_done + $total_togo) .
+'<p>Progress: ' . $total_done . ($total_done + $total_togo) .
 ', CPU Time: ' . seconds2str($total_cpu).
 ', Node Time: ' . seconds2str($total_time) . '</p>
 ';
