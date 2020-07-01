@@ -77,7 +77,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 			$file = fopen($jobpath,'w');
 			fwrite( $file,
 '<?php
-$competitionname = '. str2str($name) . ';
+$competitionname = '. str2str($competitionname) . ';
 $jobname = ' . str2str($catname) . ';
 $jobid = ' . $jobid . ';
 chdir("..");

@@ -2,7 +2,7 @@
 The initial result is <a href="https://termcomp.github.io/Y2020-1/">here</a>.
 
 <?php
-$name = 'TermComp 2020';
+$competitionname = 'TermComp 2020';
 $raw_mcats = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [
