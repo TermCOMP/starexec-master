@@ -219,7 +219,7 @@
 			'lower' => $lower,
 			'upper' => $upper,
 		];
-		if( $configid == $last ) {
+		if( $configid == $last && $show ) {
 			echo
 ' <tr>
   <td class=benchmark>
