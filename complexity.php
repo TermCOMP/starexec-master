@@ -205,7 +205,6 @@
 			$participant['done'] += 1;
 			$participant['cpu'] += $cpu;
 			$participant['time'] += $time;
-			$participant['score'] += result2score($result);
 			$participant['certtime'] += $certtime;
 		} else {
 			$participant['togo'] += 1;
@@ -261,9 +260,13 @@
 				$upper = $my['upper'];
 				$status = $my['status'];
 				if( $status == 'complete' ) {
-					$participants[$me]['score'] += $upscore + $lowscore;
-					$participants[$me]['UP'] += $upscore;
-					$participants[$me]['LOW'] += $lowscore;
+					if( $upscore == 0 && $lowscore == 0 ) {
+						$participants[$me]['unscored'] += 1;
+					} else {
+						$participants[$me]['UP'] += $upscore;
+						$participants[$me]['LOW'] += $lowscore;
+						$participants[$me]['score'] += $upscore + $lowscore;
+					}
 					echo
 '  <td '. $upperstyle .'>'. $a . bound2str($upper) . ' <span class=score>+'. $upscore .'</span></a>
   <td '. $lowerstyle .'>'. $a . bound2str($lower) . ' <span class=score>+'. $lowscore .'</span></a>

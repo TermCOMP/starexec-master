@@ -119,7 +119,11 @@
 			$participant['cpu'] += $cpu;
 			$participant['time'] += $time;
 			$participant[$result] += 1;
-			$participant['score'] += $score;
+			if( $score > 0 ) {
+				$participant['score'] += $score;
+			} else {
+				$participant['unscored'] += 1;
+			}
 			$participant['certtime'] += $certtime;
 			$resultcounter[$result]++;
 		} else {

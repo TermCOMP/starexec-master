@@ -104,6 +104,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 			$count = 0;
 			foreach( $solvers as $s ) {
 				$score = $s['score'];
+				$unscored = $s['unscored'];
 				$togo = $s['togo'];
 				$done = $s['done'];
 				$cpu = $s['cpu'];
@@ -121,7 +122,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 				}
 				$prev_score = $score;
 				// Making progress bar
-				$total = $done + $togo;
+				$total = $score + $unscored + $togo;
 				echo '   <tr>'.PHP_EOL.
 					 '    <td>'.PHP_EOL.
 					 '     <table class=bar>'.PHP_EOL.
@@ -134,9 +135,8 @@ foreach( array_keys($mcats) as $mcatname ) {
 				if( $togo > 0 ) {
 					echo '       <td class=incomplete style="width:'. (100 * $togo / $total) . '%">'.PHP_EOL;
 			    }
-				$maybe = $total - $togo - $score;
-				if( $maybe > 0 ) {
-				   echo '       <td class=maybe style="width:'. (100 * ($total - $togo - $score) / $total) . '%">'.PHP_EOL;
+				if( $unscored > 0 ) {
+				   echo '       <td class=maybe style="width:'. (100 * $unscored / $total) . '%">'.PHP_EOL;
 				}
 				echo '     </table>'.PHP_EOL;
 				// Textual display
