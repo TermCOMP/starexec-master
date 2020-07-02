@@ -16,8 +16,7 @@
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
 	$finalize = $_GET['finalize'];
-	}
-
+	
 	if( !$finalize ) {
 		echo
 '<meta http-equiv="refresh" content="15">
