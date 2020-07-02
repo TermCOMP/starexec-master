@@ -283,6 +283,7 @@ $raw_mcats = [
 			'type' => 'complexity',
 			'jobid' => false,
 			'parts' => [
+				"AProVE" => 360177,
 			],
 			'certified' => [
 				'parts' => [
@@ -294,11 +295,11 @@ $raw_mcats = [
 			'type' => 'complexity',
 			'jobid' => false,
 			'parts' => [
+				"AProVE" => 360179,
 			],
 			'certified' => [
 				'jobid' => 41525,
 				'parts' => [
-				"AProVE" => 360179,
 				],
 			],
 		],
