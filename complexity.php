@@ -7,6 +7,16 @@
 <?php
 	include './definitions.php';
 
+	if( !array_key_exists( 'id', $_GET ) ) {
+		echo '</head>';
+		exit('no job to present');
+	}
+	$jobid = $_GET['id'];
+	$competitionname = $_GET['competitionname'];
+	$jobname = $_GET['name'];
+	$refresh = $_GET['refresh'];
+	$finalize = $_GET['finalize'];
+
 	function str2lower( $string ) {
 		if( $string == 'Omega(1)' ) {
 			return 0;
@@ -83,29 +93,6 @@
 		return [0,1001];
 	}
 	
-	$refresh = in_array( 'refresh', $argv ) || $_GET['refresh'];
-	$finalize = in_array( 'finalize', $argv );
-
-	if( array_key_exists( 'id', $_GET ) ) {
-		$jobid = $_GET['id'];
-	}
-	if( array_key_exists( 'competitionname', $_GET ) ) {
-		$competitionname = $_GET['competitionname'];
-	}
-	if( array_key_exists( 'name', $_GET ) ) {
-		$jobname = $_GET['name'];
-	}
-	if( $jobid == NULL ) {
-		echo '</head>';
-		exit('no job to present');
-	}
-
-	if( !$finalize ) {
-		echo
-'<meta http-equiv="refresh" content="15">
-';
-	}
-
 	$csv = jobid2csv($jobid);
 	if( $refresh ) {
 		cachezip(jobid2remote($jobid),$csv);

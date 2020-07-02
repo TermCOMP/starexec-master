@@ -221,7 +221,7 @@ $raw_mcats = [
 		'Java_Bytecode' => [
 			'spaceid' => 425927,
 			'type' => 'termination',
-			'jobid' => false,
+			'jobid' => 41524,
 			'parts' => [
 				"AProVE" => 360174,
 			],
@@ -296,6 +296,7 @@ $raw_mcats = [
 			'parts' => [
 			],
 			'certified' => [
+				'jobid' => 41515,
 				'parts' => [
 				"AProVE" => 360179,
 				],
@@ -310,6 +311,7 @@ $raw_mcats = [
 				"AProVE" => 360175,
 			],
 			'certified' => [
+				'jobid' => 41517,
 				'parts' => [
 					"TcT" => 360387,
 				],
@@ -324,6 +326,7 @@ $raw_mcats = [
 				"AProVE" => 360175,
 			],
 			'certified' => [
+				'jobid' => 41528,
 				'parts' => [
 					"TcT" => 360391,
 				],
@@ -338,6 +341,7 @@ $raw_mcats = [
 				"AProVE" => 360179,
 			],
 			'certified' => [
+				'jobid' => 41529,
 				'parts' => [
 					"TcT" => 360389,
 				],
