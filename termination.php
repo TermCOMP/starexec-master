@@ -17,12 +17,6 @@
 	$refresh = $_GET['refresh'];
 	$finalize = $_GET['finalize'];
 	
-	if( !$finalize ) {
-		echo
-'<meta http-equiv="refresh" content="15">
-';
-	}
-
 	$csv = jobid2csv($jobid);
 	if( $refresh ) {
 		cachezip(jobid2remote($jobid),$csv);
