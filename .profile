@@ -1,1 +1,1 @@
-(while [ 1 ]; do php index.php finalize > /index.html; sleep 5; done) &
+(while [ 1 ]; do php index.php finalize > index.html; sleep 5; done) &
