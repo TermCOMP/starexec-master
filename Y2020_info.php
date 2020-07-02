@@ -210,7 +210,7 @@ $raw_mcats = [
 		'Haskell' => [
 			'spaceid' => 425990,
 			'type' => 'termination',
-			'jobid' => false,
+			'jobid' => 41564,
 			'parts' => [
 				"AProVE" => 360174,
 			],
@@ -282,7 +282,7 @@ $raw_mcats = [
 		'Complexity: C_Integer' => [
 			'spaceid' => 426011,
 			'type' => 'complexity',
-			'jobid' => false,
+			'jobid' => 41565,
 			'parts' => [
 				"AProVE" => 360180
 			],
@@ -294,7 +294,7 @@ $raw_mcats = [
 		'Complexity: ITS' => [
 			'spaceid' => 426066,
 			'type' => 'complexity',
-			'jobid' => false,
+			'jobid' => 41566,
 			'parts' => [
 				"AProVE" => 360179
 			],

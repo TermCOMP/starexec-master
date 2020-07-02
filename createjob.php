@@ -10,6 +10,9 @@ include 'competition_info.php';
 
 $i = 0;
 foreach( $mcats as $mcat_name => $cats ) {
+echo
+'<h2>'.$mcat_name.'</h2>
+';
     foreach( $cats as $cat_name => $cat ) {
         $i++;
         echo
