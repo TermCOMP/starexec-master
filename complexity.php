@@ -3,7 +3,7 @@
 <head>
  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
  <meta http-equiv="Cache-Control" content="no-cache">
- <link rel="stylesheet" type="text/css" href="../master.css">
+ <link rel="stylesheet" type="text/css" href="master.css">
 <?php
 	include './definitions.php';
 
@@ -86,8 +86,14 @@
 	$refresh = in_array( 'refresh', $argv ) || $_GET['refresh'];
 	$finalize = in_array( 'finalize', $argv );
 
-	if( $jobid == NULL ) {
+	if( array_key_exists( 'id', $_GET ) ) {
 		$jobid = $_GET['id'];
+	}
+	if( array_key_exists( 'competitionname', $_GET ) ) {
+		$competitionname = $_GET['competitionname'];
+	}
+	if( array_key_exists( 'name', $_GET ) ) {
+		$jobname = $_GET['name'];
 	}
 	if( $jobid == NULL ) {
 		echo '</head>';

@@ -10,15 +10,11 @@ $finalize = in_array( 'finalize', $argv );
 $show_config = $_GET['showconfig'];
 
 if( !$finalize ) {
-	echo
-'<meta http-equiv="refresh" content="10">
-';
+	echo '<meta http-equiv="refresh" content="10">'.PHP_EOL;
 }
 
-echo
-'</head>
-<body>
-';
+echo '</head>'.PHP_EOL.
+	 '<body>'.PHP_EOL;
 
 include 'definitions.php';
 include 'competition_info.php';
@@ -59,29 +55,18 @@ foreach( array_keys($mcats) as $mcatname ) {
 		$cat_togo = 0;
 		$cat_cpu = 0;
 		$cat_time = 0;
-		// creating job specific php file
-		$jobphp = $type.'_'.$jobid.'.php';
-		$jobpath = 'caches/'.$jobphp;
-		if( ! file_exists($jobpath) ) {
-			$file = fopen($jobpath,'w');
-			fwrite( $file,
-				'<?php'.PHP_EOL.
-				'$competitionname = '. str2str($competitionname) . ';'.PHP_EOL.
-				'$jobname = ' . str2str($catname) . ';'.PHP_EOL.
-				'$jobid = ' . $jobid . ';'.PHP_EOL.
-				'chdir("..");'.PHP_EOL.
-				'include \'' . type2php($type) .'\';'.PHP_EOL.
-				'?>'
-			); 
-			fclose($file);
-		}
-		if( $refresh ) {
-			system( 'cd caches; php -f "'. $jobphp . '" refresh; cd ..');
-		}
-		if( $finalize ) {
-			$jobhtml = $type.'_'.$jobid.'.html';
-			system( 'cd caches; php -f "'. $jobphp . ' finalize" > "'. $jobhtml .'" ; cd ..');
-			$jobpath = 'caches/'. $jobhtml;
+		$jobargs = [
+			'competitionname' => $competitionname,
+			'id' => $jobid,
+			'name' => $catname,
+		];
+		$jobpath = $type.'_'.$jobid.'.html';
+		if( $refresh || $finalize ) {
+			$jobargs['refresh'] = 1;
+			if( $finalize ) {
+				$jobargs['finalize'] = 1;
+			}
+			system( 'php-cgi -f "'. $type . '.php" '. http_build_query( $jobargs, '', ' ' ) .' > "'. $jobpath . '"');
 		}
 		$init = false;
 		$togo = 0;
