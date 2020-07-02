@@ -16,7 +16,7 @@
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
 	$finalize = $_GET['finalize'];
-	
+
 	$csv = jobid2csv($jobid);
 	if( $refresh ) {
 		cachezip(jobid2remote($jobid),$csv);
