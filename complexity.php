@@ -143,6 +143,7 @@
 			'config' => $records[$i][$config_idx],
 			'configid' => $configid,
 			'score' => 0,
+			'unscored' => 0,
 			'conflicts' => 0,
 			'done' => 0,
 			'togo' => 0,
@@ -259,7 +260,7 @@
 				$lower = $my['lower'];
 				$upper = $my['upper'];
 				$status = $my['status'];
-				if( $status == 'complete' ) {
+				if( status2complete($status) ) {
 					if( $upscore == 0 && $lowscore == 0 ) {
 						$participants[$me]['unscored'] += 1;
 					} else {

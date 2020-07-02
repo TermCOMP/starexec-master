@@ -68,6 +68,7 @@
 			'config' => $records[$i][$config_idx],
 			'configid' => $configid,
 			'score' => 0,
+			'unscored' => 0,
 			'conflicts' => 0,
 			'done' => 0,
 			'togo' => 0,
@@ -177,7 +178,7 @@
 				$certtime = $my['certtime'];
 				$url = pairid2url($my['pair']);
 				$outurl = pairid2outurl($my['pair']);
-				if( $status == 'complete' ) {
+				if( status2complete($status) ) {
 					echo
 '  <td ' . result2style($result) . '>
    <a href="'. $outurl .'">' . result2str($result) . '</a>
