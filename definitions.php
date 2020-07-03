@@ -35,6 +35,7 @@
 		if( $ret ) {
 			exit("failed to unzip job info; exit code: $ret\n".explode($out));
 		}
+		unlink($tmpzip);
 		exec( "./fix-starexec-csv.sh -i '$local'" );
 		chmod( $local, 0766 );
 	}
