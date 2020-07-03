@@ -114,10 +114,15 @@
 			return $status;
 		}
 	}
-	function status2complete($status) {
+	function status2finished($status) {
 		return
 			substr($status,0,7) <> 'pending' &&
 			$status <> 'enqueued';
+	}
+	function status2complete($status) {
+		return
+			status2finished($status) &&
+			substr($status,0,7) <> 'timeout';
 	}
 	function status2pending($status) {
 		return $status == 'pending submission';

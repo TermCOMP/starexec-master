@@ -115,7 +115,7 @@
 		if( !status2pending($status) ) {
 			$show = true;
 		}
-		if( status2complete($status) ) {
+		if( status2finished($status) ) {
 			$participant['done'] += 1;
 			$participant['cpu'] += $cpu;
 			$participant['time'] += $time;
