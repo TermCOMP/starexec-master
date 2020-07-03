@@ -105,7 +105,7 @@
 <body>
 <h1><a href="..">' . $competitionname . '</a>: ' . $jobname .
 '<a class=starexecid href="' . jobid2url($jobid) . '">'. $jobid . '</a></h1>
-<a href="../'. $csv . '">Job info CSV</a>
+<a href="'. $csv . '">Job info CSV</a>
 <table>
 ';
 	$file = new SplFileObject($csv);
