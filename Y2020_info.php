@@ -1,4 +1,4 @@
-<h1>Termination Competition 2020 (Final)</h1>
+<h1>Termination Competition 2020 (Final Run)</h1>
 The initial result is <a href="https://termcomp.github.io/Y2020-1/">here</a>.
 
 <?php

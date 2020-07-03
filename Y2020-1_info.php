@@ -1,4 +1,4 @@
-<h1>Termination Competition 2020 (first run)</h1>
+<h1>Termination Competition 2020 (First Run)</h1>
 
 <?php
 $competitionname = "TermCOMP 2020-1";
