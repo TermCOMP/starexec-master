@@ -67,7 +67,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 			if( $finalize ) {
 				$jobargs['finalize'] = 1;
 			}
-			$tmp = tempnam();
+			$tmp = tempnam('.','');
 			system( 'php-cgi -f "'. $type . '.php" '. http_build_query( $jobargs, '', ' ' ) .' > "'. $tmp . '"');
 			rename($tmp,$jobpath);
 		}
