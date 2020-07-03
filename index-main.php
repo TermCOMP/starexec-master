@@ -55,12 +55,13 @@ foreach( array_keys($mcats) as $mcatname ) {
 		$cat_togo = 0;
 		$cat_cpu = 0;
 		$cat_time = 0;
+		// creating job html
 		$jobargs = [
 			'competitionname' => $competitionname,
 			'id' => $jobid,
 			'name' => $catname,
 		];
-		$jobpath = $type.'_'.$jobid.'.html';
+		$jobpath = 'job_'.$jobid.'.html';
 		if( $refresh || $finalize ) {
 			$jobargs['refresh'] = 1;
 			if( $finalize ) {
