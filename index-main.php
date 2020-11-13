@@ -43,12 +43,12 @@ foreach( array_keys($mcats) as $mcatname ) {
 		$jobid = $cat['jobid'];
 		if( !$jobid ) {// This means the job is not yet started or linked to starexec-master.
 			echo ' <div class=category>'.$catname.'<br/>'.PHP_EOL.
-				 '  <div class=ranking>'.PHP_EOL;
+			     '  <div class=ranking>'.PHP_EOL;
 			foreach( $cat['parts'] as $partname => $configid ) {
 				echo '   '. $partname. '<a class=starexecid href="'. configid2url($configid) .'">'. $configid .'</a>'.PHP_EOL;
 			}
 			echo '  </div>'.PHP_EOL.
-				 ' </div>';
+			     ' </div>';
 			continue;
 		}
 		$cat_done = 0;
@@ -95,8 +95,8 @@ foreach( array_keys($mcats) as $mcatname ) {
 			}
 		}
 		echo ' <div class=category>'.PHP_EOL.
-			 '  <a href="' . $jobpath . '">' . $catname . '</a>'.PHP_EOL.
-			 '  <a class=starexecid href="' . jobid2url($jobid) . '">' . $jobid . '</a>'.PHP_EOL;
+		     '  <a href="' . $jobpath . '">' . $catname . '</a>'.PHP_EOL.
+		     '  <a class=starexecid href="' . jobid2url($jobid) . '">' . $jobid . '</a>'.PHP_EOL;
 		if( $init ) {
 			if( $conflicts > 0 ) {
 				echo '<a class=conflict href="' . $jobpath . '#conflict">conflict</a>'.PHP_EOL;
@@ -127,9 +127,9 @@ foreach( array_keys($mcats) as $mcatname ) {
 				// Making progress bar
 				$total = $score + $unscored + $togo;
 				echo '   <tr>'.PHP_EOL.
-					 '    <td>'.PHP_EOL.
-					 '     <table class=bar>'.PHP_EOL.
-					 '      <tr style="height:1ex">'.PHP_EOL;
+				     '    <td>'.PHP_EOL.
+				     '     <table class=bar>'.PHP_EOL.
+				     '      <tr style="height:1ex">'.PHP_EOL;
 				foreach( $scored_keys as $key ) {
 					if( array_key_exists( $key, $s ) ) {
 						echo '       <td ' . result2style($key) . ' style="width:'. (100 * $s[$key] / $total) . '%">'.PHP_EOL;
@@ -144,11 +144,11 @@ foreach( array_keys($mcats) as $mcatname ) {
 				echo '     </table>'.PHP_EOL;
 				// Textual display
 				echo '     <td>'.PHP_EOL.
-					 '      <span class='. ( $rank == 1 ? 'best' : '' ) . 'solver>'.PHP_EOL.
-					 '       '. $rank .'. <a href="'. $url . '">'. $name . '</a>';
+				     '      <span class='. ( $rank == 1 ? 'best' : '' ) . 'solver>'.PHP_EOL.
+				     '       '. $rank .'. <a href="'. $url . '">'. $name . '</a>';
 				if( $show_config ) {
 					echo PHP_EOL.
-						'       <a class=config href="' . configid2url($configid) . '">'. $config . '</a>';
+					     '       <a class=config href="' . configid2url($configid) . '">'. $config . '</a>';
 				}
 				echo '      </span>'. PHP_EOL.
 					 '      <span class=score>';
@@ -164,7 +164,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 				}
 				if( $togo > 0 ) {
 					echo ','.PHP_EOL.
-						 '   <span class=togo> ' . $togo . ' to go</span>';
+					     '   <span class=togo> ' . $togo . ' to go</span>';
 				}
 				echo '</span>'.PHP_EOL;
 				$cat_cpu += $cpu;

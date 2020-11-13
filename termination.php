@@ -30,7 +30,6 @@
 <h1><a href="..">' . $competitionname . '</a>: ' . $jobname .
 '<a class=starexecid href="' . jobid2url($jobid) . '">'. $jobid . '</a></h1>
 <a href="'. $csv . '">Job info CSV</a>
-<table>
 ';
 	$file = new SplFileObject($csv);
 	$file->setFlags( SplFileObject::READ_CSV );
@@ -80,16 +79,29 @@
 		$i++;
 		$configid = $records[$i][$configid_idx];
 	} while( $configid != $first );
-
-	echo
-' <tr>
+?>
+<table id="theTable">
+<script>
+var filteredTable = new FilteredTable(document.getElementById("theTable"));
+</script>
+ <tr>
   <th>benchmark
-';
+   <input type="text" placeholder="Filter..."
+          onkeyup="filteredTable.setFilter(0,this.value)">
+<?php
+	$i = 1;
 	foreach( $participants as $participant ) {
-		echo
-'  <th><a href="'. solverid2url($participant['solverid']) . '">'.$participant['solver'].'</a>
-   <a class=config href="'. configid2url($participant['configid']) .'">'. $participant['config'].'</a>
-';	}
+		echo '  <th><a href="'. solverid2url($participant['solverid']) . '">'.$participant['solver'].'</a>'.PHP_EOL.
+		     '   <a class=config href="'. configid2url($participant['configid']) .'">'. $participant['config'].'</a>'.PHP_EOL.
+		     '   <select oninput="filteredTable.setFilter(' . $i . ', this.value)">'.PHP_EOL.
+		     '    <option value="">--</option>'.PHP_EOL.
+		     '    <option value="YES">YES</option>'.PHP_EOL.
+		     '    <option value="NO">NO</option>'.PHP_EOL.
+		     '    <option value="MAYBE">MAYBE</option>'.PHP_EOL.
+		     '    <option value="timeout">timeout</option>'.PHP_EOL.
+		     '   </select>'.PHP_EOL;
+		$i++;
+	}
 	$bench = [];
 
 	$conflicts = 0;

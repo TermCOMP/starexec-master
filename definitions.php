@@ -159,3 +159,34 @@
 		return $YES > 0 && $NO > 0;
 	}
 ?>
+<script>
+class FilteredTable {
+	constructor(table) {
+		this.table = table;
+		this.filters = [];
+	}
+	refresh() {
+		var trs = this.table.getElementsByTagName("tr");
+		var i;
+		for(i = 1; i < trs.length; i++) {
+			var tds = trs[i].getElementsByTagName("td");
+			var test = true;
+			var j;
+			for(j = 0; j < this.filters.length; j++) {
+				var td = tds[j];
+				var text = td == null ? "" : (td.textContent || td.innerText);
+				var filter = this.filters[j];
+				if( filter != null && text.indexOf(filter) < 0) {
+					test = false;
+					break;
+				}
+			}
+			trs[i].style.display = test ? "" : "none";
+		}
+	}
+	setFilter(column,value) {
+		this.filters[column] = value;
+		this.refresh();
+	}
+}
+</script>
