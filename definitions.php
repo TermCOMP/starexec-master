@@ -178,8 +178,8 @@ class FilteredTable {
 			for(j = 0; j < this.filters.length; j++) {
 				var td = tds[j];
 				var text = td == null ? "" : (td.textContent || td.innerText);
-				var filter = this.filters[j];
-				if( filter != null && text.indexOf(filter) < 0) {
+				var id = this.filters[j];
+				if( id != null && text.indexOf(document.getElementById(id).value) < 0) {
 					test = false;
 					break;
 				}
@@ -187,9 +187,8 @@ class FilteredTable {
 			trs[i].style.display = test ? "" : "none";
 		}
 	}
-	setFilter(column,value) {
-		this.filters[column] = value;
-		this.refresh();
+	register(column,id) {
+		this.filters[column] = id;
 	}
 }
 </script>

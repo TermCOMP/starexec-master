@@ -88,18 +88,21 @@ var filteredTable = new FilteredTable(document.getElementById("theTable"));
  <tr class="head">
   <th>benchmark
 <?php
-	echo '   <input type="text" placeholder="Filter..." value="'.$benchFilter.'" onkeyup="filteredTable.setFilter(0,this.value)">'.PHP_EOL;
+	echo '   <input id="filter0" type="text" placeholder="Filter..." value="'.$benchFilter.'"'.PHP_EOL.
+	     '          onkeyup="filteredTable.refresh()">'.PHP_EOL.
+	     '   <script>filteredTable.register(0,"filter0");</script>'.PHP_EOL;
 	$i = 1;
 	foreach( $participants as $participant ) {
 		echo '  <th><a href="'. solverid2url($participant['solverid']) . '">'.$participant['solver'].'</a>'.PHP_EOL.
 		     '   <a class=config href="'. configid2url($participant['configid']) .'">'. $participant['config'].'</a>'.PHP_EOL.
-		     '   <select oninput="filteredTable.setFilter(' . $i . ', this.value)">'.PHP_EOL.
+		     '   <select id="filter'.$i.'" oninput="filteredTable.refresh()">'.PHP_EOL.
 		     '    <option value="">--</option>'.PHP_EOL.
 		     '    <option value="YES">YES</option>'.PHP_EOL.
 		     '    <option value="NO">NO</option>'.PHP_EOL.
 		     '    <option value="MAYBE">MAYBE</option>'.PHP_EOL.
 		     '    <option value="timeout">timeout</option>'.PHP_EOL.
-		     '   </select>'.PHP_EOL;
+		     '   </select>'.PHP_EOL.
+		     '   <script>filteredTable.register('.$i.',"filter'.$i.'");</script>'.PHP_EOL;
 		$i++;
 	}
 	$bench = [];
@@ -201,10 +204,14 @@ var filteredTable = new FilteredTable(document.getElementById("theTable"));
 	foreach( $participants as $s ) {
 		echo '  <th>'.$s['score'];
 	}
-	echo '</table>'.PHP_EOL.
-	     '<script>'.PHP_EOL.
-	     '	filteredTable.setFilter(0,"'.$benchFilter.'");'.PHP_EOL.
-	     '</script>'.PHP_EOL;
+?>
+</table>
+<script>
+	window.onpageshow = function (event) {
+		filteredTable.refresh();
+	}
+</script>
+<?php
 	$scorefileD = fopen($scorefile,'w');
 	fwrite( $scorefileD, json_encode($participants) );
 	fclose( $scorefileD );

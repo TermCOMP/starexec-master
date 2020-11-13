@@ -170,7 +170,8 @@ var filteredTable = new FilteredTable(document.getElementById("theTable"));
 
 	echo ' <tr class="head">'.PHP_EOL.
 	     '  <th>benchmark'.PHP_EOL.
-	     '   <input type="text" placeholder="Filter..." value="'.$benchFilter.'" onkeyup="filteredTable.setFilter(0,this.value)">'.PHP_EOL;
+	     '   <input id="filter0" type="text" placeholder="Filter..." value="'.$benchFilter.'" onkeyup="filteredTable.refresh()">'.PHP_EOL.
+	     '   <script>filteredTable.register(0,"filter0");</script>'.PHP_EOL;
 	foreach( $participants as $participant ) {
 		echo '  <th class="subhead">UP<th class="subhead">LOW<th class="subhead">TIME'.PHP_EOL;
 	}
@@ -278,10 +279,14 @@ var filteredTable = new FilteredTable(document.getElementById("theTable"));
 		$score = $s['score'];
 		echo '  <th><th colspan=3>'. $score;
 	}
-	echo '</table>'.PHP_EOL.
-	     '<script>'.PHP_EOL.
-	     '	filteredTable.setFilter(0,"'.$benchFilter.'");'.PHP_EOL.
-	     '</script>'.PHP_EOL;
+?>
+</table>
+<script>
+	window.onpageshow = function (event) {
+		filteredTable.refresh();
+	}
+</script>
+<?php
 	$scorefileD = fopen($scorefile,'w');
 	fwrite( $scorefileD, json_encode($participants) );
 	fclose( $scorefileD );
