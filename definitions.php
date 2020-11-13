@@ -168,7 +168,10 @@ class FilteredTable {
 	refresh() {
 		var trs = this.table.getElementsByTagName("tr");
 		var i;
-		for(i = 1; i < trs.length; i++) {
+		for(i = 0; i < trs.length; i++) {
+			if( trs[i].classList.contains("head") ) {// row of class "head" won't be filtered
+				continue;
+			}
 			var tds = trs[i].getElementsByTagName("td");
 			var test = true;
 			var j;

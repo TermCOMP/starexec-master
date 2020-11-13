@@ -16,6 +16,7 @@
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
 	$finalize = $_GET['finalize'];
+	$benchFilter = $_GET['benchfilter'];
 
 	$csv = jobid2csv($jobid);
 	if( $refresh ) {
@@ -84,11 +85,10 @@
 <script>
 var filteredTable = new FilteredTable(document.getElementById("theTable"));
 </script>
- <tr>
+ <tr class="head">
   <th>benchmark
-   <input type="text" placeholder="Filter..."
-          onkeyup="filteredTable.setFilter(0,this.value)">
 <?php
+	echo '   <input type="text" placeholder="Filter..." value="'.$benchFilter.'" onkeyup="filteredTable.setFilter(0,this.value)">'.PHP_EOL;
 	$i = 1;
 	foreach( $participants as $participant ) {
 		echo '  <th><a href="'. solverid2url($participant['solverid']) . '">'.$participant['solver'].'</a>'.PHP_EOL.
@@ -161,27 +161,17 @@ var filteredTable = new FilteredTable(document.getElementById("theTable"));
 						$participants[$me]['conflicts']++;
 					}
 				}
-				echo
-' <tr class=conflict>
-';
+				echo ' <tr class=conflict>'.PHP_EOL;
 				$conflicts += 1;
 			} else {
-				echo
-' <tr>
-';
+				echo ' <tr>'.PHP_EOL;
 			}
-			echo
-'  <td class=benchmark>
-';
+			echo '  <td class=benchmark>'.PHP_EOL;
 			if( $firstconflict ) {
-				echo
-'   <a name="conflict"/>
-';
+				echo '   <a name="conflict"/>'.PHP_EOL;
 			}
-			echo
-'   <a href="'. $benchmark_url.'">'.$benchmark.'</a>
-   <a class=starexecid href="'.$benchmark_remote.'">'.$benchmark_id.'</a></td>
-';
+			echo '   <a href="'. $benchmark_url.'">'.$benchmark.'</a>'.PHP_EOL.
+			     '   <a class=starexecid href="'.$benchmark_remote.'">'.$benchmark_id.'</a></td>'.PHP_EOL;
 			foreach( array_keys($bench) as $me ) {
 				$my = $bench[$me];
 				$status = $my['status'];
@@ -191,40 +181,33 @@ var filteredTable = new FilteredTable(document.getElementById("theTable"));
 				$url = pairid2url($my['pair']);
 				$outurl = pairid2outurl($my['pair']);
 				if( status2complete($status) ) {
-					echo
-'  <td ' . result2style($result) . '>
-   <a href="'. $outurl .'">' . result2str($result) . '</a>
-   <a href="'. $url .'">
-    <span class=time>' . $my['cpu'] . '/' . $my['time'] . '</span>
-';
+					echo '  <td ' . result2style($result) . '>'.PHP_EOL.
+					     '   <a href="'. $outurl .'">' . result2str($result) . '</a>'.PHP_EOL.
+					     '   <a href="'. $url .'">'.PHP_EOL.
+					     '    <span class=time>' . $my['cpu'] . '/' . $my['time'] . '</span>'.PHP_EOL;
 					if( $cert && $cert != '-' ) {
-						echo
-' (' . $cert . '&nbsp;<span class=time>'. $certtime . '</span>)
-';
+						echo ' (' . $cert . '&nbsp;<span class=time>'. $certtime . '</span>)'.PHP_EOL;
 					}
-					echo
-'   </a>
-';
+					echo '   </a>'.PHP_EOL;
 				} else {
-					echo
-'  <td ' . status2style($status) . '>
-   <a href="'. $url . '">' . $status . '</a>
-' . (status2complete($status) ? '   <a href="'. $outurl .'">[out]</a>
-' : '' );
+					echo '  <td ' . status2style($status) . '>'.PHP_EOL.
+					     '   <a href="'. $url . '">' . $status . '</a>'.PHP_EOL.
+					     (status2complete($status) ? '   <a href="'. $outurl .'">[out]</a>'.PHP_EOL : '' );
 				}
 			}
 		}
 	}
-	echo
-' <tr><th>
-';
+	echo ' <tr><th>'.PHP_EOL;
 	foreach( $participants as $s ) {
 		echo '  <th>'.$s['score'];
 	}
+	echo '</table>'.PHP_EOL.
+	     '<script>'.PHP_EOL.
+	     '	filteredTable.setFilter(0,"'.$benchFilter.'");'.PHP_EOL.
+	     '</script>'.PHP_EOL;
 	$scorefileD = fopen($scorefile,'w');
 	fwrite( $scorefileD, json_encode($participants) );
 	fclose( $scorefileD );
 ?>
-</table>
 </body>
 </html>

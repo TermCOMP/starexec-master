@@ -16,6 +16,7 @@
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
 	$finalize = $_GET['finalize'];
+	$benchFilter = $_GET['benchfilter'];
 
 	function str2lower( $string ) {
 		if( $string == 'Omega(1)' ) {
@@ -99,15 +100,17 @@
 	}
 	$scorefile = jobid2scorefile($jobid);
 
-	echo
-' <title>' . $competitionname . ': ' . $jobname . '</title>
-</head>
-<body>
-<h1><a href="..">' . $competitionname . '</a>: ' . $jobname .
-'<a class=starexecid href="' . jobid2url($jobid) . '">'. $jobid . '</a></h1>
-<a href="'. $csv . '">Job info CSV</a>
-<table>
-';
+	echo ' <title>' . $competitionname . ': ' . $jobname . '</title>'.PHP_EOL.
+	     '</head>'.PHP_EOL.
+	     '<body>'.PHP_EOL.
+	     '<h1><a href="..">' . $competitionname . '</a>: ' . $jobname .'<a class=starexecid href="' . jobid2url($jobid) . '">'. $jobid . '</a></h1>'.PHP_EOL.
+	     '<a href="'. $csv .'">Job info CSV</a>'.PHP_EOL;
+?>
+<table id="theTable">
+<script>
+var filteredTable = new FilteredTable(document.getElementById("theTable"));
+</script>
+<?php
 	$file = new SplFileObject($csv);
 	$file->setFlags( SplFileObject::READ_CSV );
 	$records = [];
@@ -158,23 +161,18 @@
 		$configid = $records[$i][$configid_idx];
 	} while( $configid != $first );
 
-	echo
-' <tr>
-  <th>
-';
+	echo ' <tr class="head">'.PHP_EOL.
+	     '<th>'.PHP_EOL;
 	foreach( $participants as $participant ) {
-		echo
-'  <th colspan=3><a href="'. solverid2url($participant['solverid']) . '">'.$participant['solver'].'</a>
-   <a class=config href="'. configid2url($participant['configid']) .'">'. $participant['config'].'</a>
-';
+		echo '  <th colspan=3><a href="'. solverid2url($participant['solverid']) . '">'.$participant['solver'].'</a>'.PHP_EOL.
+		     '   <a class=config href="'. configid2url($participant['configid']) .'">'. $participant['config'].'</a>'.PHP_EOL;
 	}
-	echo ' <tr>
-  <th>benchmark
-';
+
+	echo ' <tr class="head">'.PHP_EOL.
+	     '  <th>benchmark'.PHP_EOL.
+	     '   <input type="text" placeholder="Filter..." value="'.$benchFilter.'" onkeyup="filteredTable.setFilter(0,this.value)">'.PHP_EOL;
 	foreach( $participants as $participant ) {
-		echo
-'  <td>UP<td>LOW<td>TIME
-';
+		echo '  <th class="subhead">UP<th class="subhead">LOW<th class="subhead">TIME'.PHP_EOL;
 	}
 	$bench = [];
 
@@ -222,12 +220,10 @@
 			'upper' => $upper,
 		];
 		if( $configid == $last && $show ) {
-			echo
-' <tr>
-  <td class=benchmark>
-   <a href="'. $benchmark_url.'">'.$benchmark.'</a>
-   <a class=starexecid href="'.$benchmark_remote.'">'.$benchmark_id.'</a>
-';
+			echo ' <tr>'.PHP_EOL.
+			     '  <td class=benchmark>'.PHP_EOL.
+			     '   <a href="'. $benchmark_url.'">'.$benchmark.'</a>'.PHP_EOL.
+			     '   <a class=starexecid href="'.$benchmark_remote.'">'.$benchmark_id.'</a>'.PHP_EOL;
 			foreach( array_keys($bench) as $me ) {
 				$my = $bench[$me];
 				$upper = $my['upper'];
@@ -268,31 +264,28 @@
 						$participants[$me]['LOW'] += $lowscore;
 						$participants[$me]['score'] += $upscore + $lowscore;
 					}
-					echo
-'  <td '. $upperstyle .'>'. $a . bound2str($upper) . ' <span class=score>+'. $upscore .'</span></a>
-  <td '. $lowerstyle .'>'. $a . bound2str($lower) . ' <span class=score>+'. $lowscore .'</span></a>
-  <td class=time>'. $a . $my['cpu'] .'/'. $my['time'] . '</a>
-';
+					echo '  <td '. $upperstyle .'>'. $a . bound2str($upper) . ' <span class=score>+'. $upscore .'</span></a>'.PHP_EOL.
+					     '  <td '. $lowerstyle .'>'. $a . bound2str($lower) . ' <span class=score>+'. $lowscore .'</span></a>'.PHP_EOL.
+					     '  <td class=time>'. $a . $my['cpu'] .'/'. $my['time'] . '</a>'.PHP_EOL;
 				} else {
-					echo
-'  <td colspan=3 '. status2style($status) . '>'. $a . status2str($status) . '</a>
-';
+					echo '  <td colspan=3 '. status2style($status) . '>'. $a . status2str($status) . '</a>'.PHP_EOL;
 				}
 			}
 		}
 	}
-	echo
-' <tr>
-';
+	echo ' <tr>'.PHP_EOL;
 	foreach( $participants as $s ) {
 		$score = $s['score'];
 		echo '  <th><th colspan=3>'. $score;
 	}
+	echo '</table>'.PHP_EOL.
+	     '<script>'.PHP_EOL.
+	     '	filteredTable.setFilter(0,"'.$benchFilter.'");'.PHP_EOL.
+	     '</script>'.PHP_EOL;
 	$scorefileD = fopen($scorefile,'w');
 	fwrite( $scorefileD, json_encode($participants) );
 	fclose( $scorefileD );
 ?>
-</table>
 </body>
 </html>
 

@@ -13,9 +13,16 @@ table {
 	border-spacing: 0pt 0pt;
 	border-collapse: collapse;
 }
+tr.head {
+	background-color: turquoise;
+}
 th a {
 	color: black;
 	text-decoration: none;
+}
+th.subhead {
+	background-color: paleturquoise;
+	font-weight: normal;
 }
 td {
 	border: .1pt solid silver;
