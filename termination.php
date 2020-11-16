@@ -16,7 +16,6 @@
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
 	$finalize = $_GET['finalize'];
-	$benchFilter = $_GET['benchfilter'];
 
 	$csv = jobid2csv($jobid);
 	if( $refresh ) {
@@ -28,7 +27,7 @@
 ' <title>' . $competitionname . ': ' . $jobname . '</title>
 </head>
 <body>
-<h1><a href="..">' . $competitionname . '</a>: ' . $jobname .
+<h1><a href=".">' . $competitionname . '</a>: ' . $jobname .
 '<a class=starexecid href="' . jobid2url($jobid) . '">'. $jobid . '</a></h1>
 <a href="'. $csv . '">Job info CSV</a>
 ';
@@ -88,8 +87,7 @@ var filteredTable = new FilteredTable(document.getElementById("theTable"));
  <tr class="head">
   <th>benchmark
 <?php
-	echo '   <input id="filter0" type="text" placeholder="Filter..." value="'.$benchFilter.'"'.PHP_EOL.
-	     '          onkeyup="filteredTable.refresh()">'.PHP_EOL.
+	echo '   <input id="filter0" type="text" placeholder="Filter..." onkeyup="filteredTable.refresh()">'.PHP_EOL.
 	     '   <script>filteredTable.register(0,"filter0");</script>'.PHP_EOL;
 	$i = 1;
 	foreach( $participants as $participant ) {
@@ -207,6 +205,14 @@ var filteredTable = new FilteredTable(document.getElementById("theTable"));
 ?>
 </table>
 <script>
+	for( var key in get_args ) {
+		if( key.substr(0,6) == "filter" ) {
+			var e = document.getElementById(key);
+			if( e != null ) {
+				e.value = get_args[key];
+			}
+		}
+	}
 	window.onpageshow = function (event) {
 		filteredTable.refresh();
 	}

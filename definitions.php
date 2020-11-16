@@ -160,6 +160,17 @@
 	}
 ?>
 <script>
+var get_args = {};
+if( 1 < window.location.search.length ) {
+	var pairs = window.location.search.substring(1).split('&');
+	for( var i in pairs ) {
+		var ler = pairs[i];
+		var e = ler.indexOf('=');
+		var key = decodeURIComponent(ler.substring(0,e));
+		var val = decodeURIComponent(ler.substr(e+1));
+		get_args[key] = val;
+	}
+}
 class FilteredTable {
 	constructor(table) {
 		this.table = table;

@@ -103,7 +103,7 @@
 	echo ' <title>' . $competitionname . ': ' . $jobname . '</title>'.PHP_EOL.
 	     '</head>'.PHP_EOL.
 	     '<body>'.PHP_EOL.
-	     '<h1><a href="..">' . $competitionname . '</a>: ' . $jobname .'<a class=starexecid href="' . jobid2url($jobid) . '">'. $jobid . '</a></h1>'.PHP_EOL.
+	     '<h1><a href=".">' . $competitionname . '</a>: ' . $jobname .'<a class=starexecid href="' . jobid2url($jobid) . '">'. $jobid . '</a></h1>'.PHP_EOL.
 	     '<a href="'. $csv .'">Job info CSV</a>'.PHP_EOL;
 ?>
 <table id="theTable">
@@ -282,6 +282,14 @@ var filteredTable = new FilteredTable(document.getElementById("theTable"));
 ?>
 </table>
 <script>
+	for( var key in get_args ) {
+		if( key.substr(0,6) == "filter" ) {
+			var e = document.getElementById(key);
+			if( e != null ) {
+				e.value = get_args[key];
+			}
+		}
+	}
 	window.onpageshow = function (event) {
 		filteredTable.refresh();
 	}
