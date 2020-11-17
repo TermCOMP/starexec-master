@@ -1,6 +1,6 @@
-<h1>Termination Competition 2018</h1>
 <?php
-$competitionname = 'TermCOMP 2018';
+$title = 'Termination Competition 2018';
+$shortname = 'TermCOMP 2018';
 $raw_mcats = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [

@@ -1,8 +1,7 @@
-<h1>Termination Competition 2020 (Final Run)</h1>
-The initial result is <a href="https://termcomp.github.io/Y2020-1/">here</a>.
-
 <?php
-$competitionname = 'TermComp 2020';
+$title = 'Termination Competition 2020 (Final Run)';
+$note = 'The initial result is <a href=\"https://termcomp.github.io/Y2020-1/\">here</a>.';
+$shortname = 'TermComp 2020';
 $raw_mcats = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [

@@ -36,7 +36,7 @@
 			exit("failed to unzip job info; exit code: $ret\n".explode($out));
 		}
 		unlink($tmpzip);
-		exec( "./fix-starexec-csv.sh -i '$local'" );
+		exec( "./fix-starexec-csv.sh '$local'" );
 		chmod( $local, 0766 );
 	}
 	function jobid2csv($jobid) {
@@ -171,13 +171,22 @@ if( 1 < window.location.search.length ) {
 		get_args[key] = val;
 	}
 }
-class FilteredTable {
-	constructor(table) {
-		this.table = table;
-		this.filters = [];
-	}
-	refresh() {
-		var trs = this.table.getElementsByTagName("tr");
+function loadURL(obj,url) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      obj.innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}
+function FilteredTable(table) {
+	var ret = {};
+	ret.table = table;
+	ret.filters = [];
+	ret.refresh = function () {
+		var trs = ret.table.getElementsByTagName("tr");
 		var i;
 		for(i = 0; i < trs.length; i++) {
 			if( trs[i].classList.contains("head") ) {// row of class "head" won't be filtered
@@ -186,10 +195,10 @@ class FilteredTable {
 			var tds = trs[i].getElementsByTagName("td");
 			var test = true;
 			var j;
-			for(j = 0; j < this.filters.length; j++) {
+			for(j = 0; j < ret.filters.length; j++) {
 				var td = tds[j];
 				var text = td == null ? "" : (td.textContent || td.innerText);
-				var id = this.filters[j];
+				var id = ret.filters[j];
 				if( id != null && text.indexOf(document.getElementById(id).value) < 0) {
 					test = false;
 					break;
@@ -198,8 +207,9 @@ class FilteredTable {
 			trs[i].style.display = test ? "" : "none";
 		}
 	}
-	register(column,id) {
-		this.filters[column] = id;
+	ret.register = function(column,id) {
+		ret.filters[column] = id;
 	}
+	return ret;
 }
 </script>

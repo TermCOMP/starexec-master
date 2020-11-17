@@ -108,7 +108,7 @@
 ?>
 <table id="theTable">
 <script>
-var filteredTable = new FilteredTable(document.getElementById("theTable"));
+var filteredTable = FilteredTable(document.getElementById("theTable"));
 </script>
 <?php
 	$file = new SplFileObject($csv);

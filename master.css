@@ -223,3 +223,8 @@ table .bar {
 	border: .1pt solid silver;
 	text-align: center;
 }
+.stats {
+	color: gray;
+	vertical-align: bottom;
+	font-size: x-small;
+}

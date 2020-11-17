@@ -82,7 +82,7 @@
 ?>
 <table id="theTable">
 <script>
-var filteredTable = new FilteredTable(document.getElementById("theTable"));
+var filteredTable = FilteredTable(document.getElementById("theTable"));
 </script>
  <tr class="head">
   <th>benchmark
