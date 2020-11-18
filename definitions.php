@@ -178,7 +178,7 @@ function loadURL(obj,url) {
       obj.innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", url, true);
+  xhttp.open("GET", url, false);
   xhttp.send();
 }
 function FilteredTable(table) {
@@ -210,6 +210,30 @@ function FilteredTable(table) {
 	ret.register = function(column,id) {
 		ret.filters[column] = id;
 	}
+	return ret;
+}
+function StyleToggler(button, select, options) {
+	var ret = {};
+	ret.button = button;
+	ret.select = select;
+	ret.options = options;
+	ret.index = 0;
+	ret.apply = function(elm) {
+		var option = ret.options[ret.index];
+		ret.button.innerHTML = option.text;
+		var targets = elm.querySelectorAll(select);
+		for( var i = 0; i < targets.length; i++ ) {
+			for( var key in option.assign ) {
+				targets[i].style[key] = option.assign[key];
+			}
+		}
+	}
+	ret.toggle = function() {
+		ret.index = (ret.index + 1) % ret.options.length;
+		ret.apply(document);
+	}
+	ret.apply(document);
+	ret.button.onclick = ret.toggle;
 	return ret;
 }
 </script>

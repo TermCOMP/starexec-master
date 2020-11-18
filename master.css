@@ -226,5 +226,15 @@ table .bar {
 .stats {
 	color: gray;
 	vertical-align: bottom;
-	font-size: x-small;
+	font-size: small;
+}
+.button {
+	font-size: small;
+	font-weight: normal;
+}
+.button::before {
+	content: "[";
+}
+.button::after {
+	content: "]";
 }

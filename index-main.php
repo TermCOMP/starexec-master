@@ -15,11 +15,26 @@ echo ' <title>'.$title.'</title>'.PHP_EOL;
 ?>
 </head>
 <body>
+ <h1><?php echo $title; ?>
+ <span id=scoreToggler class=button></span>
+ <span id=columnToggler class=button></span>
+</h1>
+<script>
+var scoreToggler = StyleToggler(
+	document.getElementById("scoreToggler"), ".score", [
+		{ text: "Hide scores", assign: {display: "inline"} },
+		{ text: "Show scores", assign: {display: "none"} },
+	]
+);
+var columnToggler = StyleToggler(
+	document.getElementById("columnToggler"), "span.category", [
+		{ text: "One column", assign: {display: "inline"} },
+		{ text: "Many column", assign: {display: "block"} },
+	]
+);
+</script>
 <?php
-
-echo '<h1>'.$title.'</h1>'.PHP_EOL.
-     $note.PHP_EOL;
-
+echo $note.PHP_EOL;
 $scored_keys = [
 	'CERTIFIED YES',
 	'CERTIFIED NO',
@@ -36,7 +51,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 	$total_togo = 0;
 	$total_cpu = 0;
 	$total_time = 0;
-	echo '<h2>'. $mcatname .'<span id=stat'.$mcatindex.' class=stats></span></h2>'.PHP_EOL;
+	echo '<h2>'.$mcatname.'<span id=stat'.$mcatindex.' class=stats></span></h2>'.PHP_EOL;
 	$cats = $mcats[$mcatname];
 	$table = [];
 	$tools = [];
@@ -89,10 +104,12 @@ foreach( array_keys($mcats) as $mcatname ) {
 				$total_time += $s['time'];
 			}
 		}
-		echo ' <span id='.$jobid.'></span>'.PHP_EOL;
+		echo ' <span id='.$jobid.' class=category></span>'.PHP_EOL;
 		echo ' <script>'.PHP_EOL.
 		     '  function load'.$jobid.'() {'.PHP_EOL.
-			 '   loadURL(document.getElementById("'.$jobid.'"),"'.$graphpath.'");'.PHP_EOL.
+			 '   var elm = document.getElementById("'.$jobid.'");'.PHP_EOL.
+			 '   loadURL(elm,"'.$graphpath.'");'.PHP_EOL.
+			 '   scoreToggler.apply(elm);'.PHP_EOL.
 			 '  }'.PHP_EOL.
 			 '  load'.$jobid.'();'.PHP_EOL.
 			 '  setInterval(load'.$jobid.', 10000);'.PHP_EOL.
@@ -106,22 +123,6 @@ foreach( array_keys($mcats) as $mcatname ) {
 }
 
 ?>
-
-<p>
-[<span onclick="toggleClassStyle(this,'score','show scores','display','none','inline')">hide scores</span>]
-</P>
-
-<script>
-function toggleClassStyle(me, className, text, key, value, value2) {
-	var targets = document.getElementsByClassName(className);
-	var text2 = me.innerHTML;
-	me.innerHTML = text;
-	for( var i = 0; i < targets.length; i++ ) {
-		targets[i].style[key] = value;
-	}
-	me.onclick = function() { toggleClassStyle(me,className,text2,key,value2,value); };
-}
-</script>
 
 </body>
 </html>
