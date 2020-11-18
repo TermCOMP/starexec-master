@@ -15,7 +15,6 @@
 	$competitionname = $_GET['competitionname'];
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
-	$finalize = $_GET['finalize'];
 	$benchFilter = $_GET['benchfilter'];
 
 	function str2lower( $string ) {
@@ -147,6 +146,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			'configid' => $configid,
 			'score' => 0,
 			'unscored' => 0,
+			'scorestogo' => 0,
 			'conflicts' => 0,
 			'done' => 0,
 			'togo' => 0,
@@ -176,6 +176,8 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		echo '  <th class="subhead">UP<th class="subhead">LOW<th class="subhead">TIME'.PHP_EOL;
 	}
 	$bench = [];
+	// Max score for each benchmark, for up and low
+	$maxscore = count($participants) * 2;
 
 	$conflicts = 0;
 	foreach( $records as $record ) {
@@ -208,6 +210,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			$participant['certtime'] += $certtime;
 		} else {
 			$participant['togo'] += 1;
+			$participant['scorestogo'] += $maxscore;
 		}
 		$bench[$configid] = [
 			'status' => $status,
@@ -258,13 +261,10 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				$upper = $my['upper'];
 				$status = $my['status'];
 				if( status2complete($status) ) {
-					if( $upscore == 0 && $lowscore == 0 ) {
-						$participants[$me]['unscored'] += 1;
-					} else {
-						$participants[$me]['UP'] += $upscore;
-						$participants[$me]['LOW'] += $lowscore;
-						$participants[$me]['score'] += $upscore + $lowscore;
-					}
+					$participants[$me]['UP'] += $upscore;
+					$participants[$me]['LOW'] += $lowscore;
+					$participants[$me]['score'] += $upscore + $lowscore;
+					$participants[$me]['unscored'] += $maxscore - $upscore - $lowscore;
 					echo '  <td '. $upperstyle .'>'. $a . bound2str($upper) . ' <span class=score>+'. $upscore .'</span></a>'.PHP_EOL.
 					     '  <td '. $lowerstyle .'>'. $a . bound2str($lower) . ' <span class=score>+'. $lowscore .'</span></a>'.PHP_EOL.
 					     '  <td class=time>'. $a . $my['cpu'] .'/'. $my['time'] . '</a>'.PHP_EOL;

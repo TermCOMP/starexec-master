@@ -35,16 +35,6 @@ var columnToggler = StyleToggler(
 </script>
 <?php
 echo $note.PHP_EOL;
-$scored_keys = [
-	'CERTIFIED YES',
-	'CERTIFIED NO',
-	'YES',
-	'NO',
-	'UP',
-	'LOW',
-];
-
-// Main display
 $mcatindex = 0;
 foreach( array_keys($mcats) as $mcatname ) {
 	$total_done = 0;
@@ -81,17 +71,13 @@ foreach( array_keys($mcats) as $mcatname ) {
 			if( $finalize ) {
 				$jobargs['finalize'] = 1;
 			}
-			$tmp = tempnam('.','');
-			system( 'php-cgi -f "'. $type . '.php" '. http_build_query( $jobargs, '', ' ' ) .' > "'. $tmp . '"');
-			rename($tmp,$jobpath);
+			system( 'php-cgi -f "'. $type . '.php" '. http_build_query( $jobargs, '', ' ' ) .' > "'. $jobpath . '"');
 			// making graph
 			$jobargs = [
 				'mcat' => $mcatname,
 				'cat' => $catname,
 			];
-			$tmp = tempnam('.','');
-			system( 'php-cgi -f "graph.php" '. http_build_query( $jobargs, '', ' ' ) .' > "'. $tmp . '"');
-			rename($tmp,$graphpath);
+			system( 'php-cgi -f "graph.php" '. http_build_query( $jobargs, '', ' ' ) .' > "'. $graphpath . '"');
 		}
 		// checking cached score file and making ranking
 		$fname = jobid2scorefile($jobid); 

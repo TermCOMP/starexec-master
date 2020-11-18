@@ -15,7 +15,6 @@
 	$competitionname = $_GET['competitionname'];
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
-	$finalize = $_GET['finalize'];
 
 	$csv = jobid2csv($jobid);
 	if( $refresh ) {
@@ -68,6 +67,7 @@
 			'configid' => $configid,
 			'score' => 0,
 			'unscored' => 0,
+			'scorestogo' => 0,
 			'conflicts' => 0,
 			'done' => 0,
 			'togo' => 0,
@@ -142,6 +142,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			$resultcounter[$result]++;
 		} else {
 			$participant['togo'] += 1;
+			$participant['scorestogo'] += 1;
 		}
 		$bench[$configid] = [
 			'status' => $status,
