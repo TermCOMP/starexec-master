@@ -94,8 +94,10 @@ foreach( array_keys($mcats) as $mcatname ) {
 		echo ' <script>'.PHP_EOL.
 		     '  function load'.$jobid.'() {'.PHP_EOL.
 			 '   var elm = document.getElementById("'.$jobid.'");'.PHP_EOL.
-			 '   loadURL(elm,"'.$graphpath.'");'.PHP_EOL.
-			 '   scoreToggler.apply(elm);'.PHP_EOL.
+			 '   loadURL("'.$graphpath.'", function (xhttp) {'.PHP_EOL.
+			 '    elm.innerHTML = xhttp.responseText;'.PHP_EOL.
+			 '    scoreToggler.apply(elm);'.PHP_EOL.
+			 '   });'.PHP_EOL.
 			 '  }'.PHP_EOL.
 			 '  load'.$jobid.'();'.PHP_EOL.
 			 '  setInterval(load'.$jobid.', 10000);'.PHP_EOL.
