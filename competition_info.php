@@ -1,6 +1,6 @@
 <?php
 
-include 'Y2020_info.php';
+include 'Y2021_info.php';
 
 // Making certified and demonstration categories
 $demos = [];
@@ -11,14 +11,14 @@ foreach( $raw_mcats as $mcat_name => $raw_cats ) {
 		$certinfo = $cat['certified'];
 		unset( $cat['certified'] );
 		$certcat = $cat;
-		$certcat['parts'] = array_key_exists('parts',$certinfo) ? $certinfo['parts'] : [];
+		$certcat['participants'] = array_key_exists('participants',$certinfo) ? $certinfo['participants'] : [];
 		$certcat['jobid'] = array_key_exists('jobid',$certinfo) ? $certinfo['jobid'] : 0;
 		$certcat['certified'] = true;
 		$cats[$cat_name] = $cat;
 		$cats[$cat_name . ' Certified'] = $certcat;
 	}
 	foreach( $cats as $cat_name => $cat ) {
-		switch( count($cat['parts']) ) {
+		switch( count($cat['participants']) ) {
 		case 0:
 			if( !$cat['jobid'] > 0 ) {
 				unset($cats[$cat_name]);// remove unparticipated category

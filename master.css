@@ -52,6 +52,11 @@ div.category {
 	display: inline-block;
 	color: black;
 }
+.ranking ul {
+	margin: 3pt;
+	margin-left: 13pt;
+	padding: 0pt;
+}
 .bestsolver, .bestsolver a {
 	color: black;
 	font-weight: bold;

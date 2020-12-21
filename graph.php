@@ -33,17 +33,6 @@ $scored_keys = [
 $type = $cat['type'];
 $jobid = $cat['jobid'];
 $fname = jobid2scorefile($jobid); 
-if( !$jobid || !file_exists($fname) ) {// This means the job is not yet started or linked to starexec-master.
-	echo ' <div class=category>'.$catname.'</div>'.PHP_EOL.
-	     ' <div class=ranking>'.PHP_EOL;
-	foreach( $cat['parts'] as $partname => $configid ) {
-		echo '  '. $partname. '<a class=starexecid href="'. configid2url($configid) .'">'. $configid .'</a>'.PHP_EOL;
-	}
-	echo ' </div>'.PHP_EOL.
-		 '</body>'.PHP_EOL.
-		 '</html>'.PHP_EOL;
-	exit(0);
-}
 $cat_done = 0;
 $cat_togo = 0;
 $cat_cpu = 0;
