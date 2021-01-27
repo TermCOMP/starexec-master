@@ -9,6 +9,7 @@
 		$s = $s%60;
 		return ($d>0? $d .'d ' : '').sprintf("%'02d:%'02d:%'02d",$h,$m,$s);
 	}
+
 	function type2php($type) {
 		if( $type == 'termination' ) {
 			return 'termination.php';
@@ -41,6 +42,24 @@
 	}
 	function jobid2csv($jobid) {
 		return "fromStarExec/Job$jobid/Job" . $jobid . "_info.csv";
+	}
+	function parse_results($csv, &$records) {
+		$file = new SplFileObject($csv);
+		$file->setFlags( SplFileObject::READ_CSV );
+		$header = $file->current();
+		$file->next();
+		for(; !$file->eof(); $file->next() ) {
+			$row = $file->current();
+			if( !is_null($row[0]) ) {
+				$record = [];
+				foreach( $header as $i => $field ) {
+					$record[$field] = $row[$i];
+				}
+				$here = &$records[$record['benchmark id']];
+				$here['benchmark'] = $record['benchmark'];
+				$here['participants'][$record['configuration id']] = $record;
+			}
+		}
 	}
 	function jobid2remote($jobid) {
 		return "https://www.starexec.org/starexec/secure/download?type=job&id=$jobid&returnids=true&getcompleted=false";

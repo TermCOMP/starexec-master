@@ -12,6 +12,7 @@
 		exit('no job to present');
 	}
 	$jobid = $_GET['id'];
+	$overlay = array_key_exists('overlay', $_GET) ? $_GET['overlay'] : false;
 	$competitionname = $_GET['competitionname'];
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
@@ -20,6 +21,14 @@
 	if( $refresh ) {
 		cachezip(jobid2remote($jobid),$csv);
 	}
+	$benchmarks = [];
+	parse_results($csv,$benchmarks);
+	if( $overlay ) {
+		$over_csv = jobid2csv($overlay);
+		cachezip(jobid2remote($overlay),$over_csv);
+		parse_results($over_csv,$benchmarks);
+	}
+
 	$scorefile = jobid2scorefile($jobid);
 
 	echo ' <title>' . $competitionname . ': ' . $jobname . '</title>'.PHP_EOL.
@@ -28,41 +37,11 @@
 	     '<h1><a href=".">' . $competitionname . '</a>: ' . $jobname .
 	     '<a class=starexecid href="' . jobid2url($jobid) . '">'. $jobid . '</a></h1>'.PHP_EOL.
 	     ' <a href="'. $csv . '">Job info CSV</a>'.PHP_EOL;
-	$file = new SplFileObject($csv);
-	$file->setFlags( SplFileObject::READ_CSV );
-	$records = [];
-	foreach( $file as $row ) {
-	  if( !is_null($row[0]) ) {
-	    $records[] = $row;
-	  }
-	}
-	$pairid_idx = array_search('pair id', $records[0]);
-	$benchmark_idx = array_search('benchmark', $records[0]);
-	$benchmark_id_idx = array_search('benchmark id', $records[0]);
-	$solver_idx = array_search('solver', $records[0]);
-	$solverid_idx = array_search('solver id', $records[0]);
-	$config_idx = array_search('configuration', $records[0]);
-	$configid_idx = array_search('configuration id', $records[0]);
-	$status_idx = array_search('status', $records[0]);
-	$cputime_idx = array_search('cpu time', $records[0]);
-	$wallclocktime_idx = array_search('wallclock time', $records[0]);
-	$memoryusage_idx = array_search('memory usage', $records[0]);
-	$result_idx = array_search('result', $records[0]);
-	$certificationresult_idx = array_search('certification-result', $records[0]);
-	$certificationtime_idx = array_search('certification-time', $records[0]);
-	unset( $records[0] );
 
+	// initializing the list of participants
 	$participants = [];
-
-	$i = 1;
-	$configid = $records[$i][$configid_idx];
-	$first = $configid;
-	do {
-		$participants[$configid] = [
-			'solver' => $records[$i][$solver_idx],
-			'solverid' => $records[$i][$solverid_idx],
-			'config' => $records[$i][$config_idx],
-			'configid' => $configid,
+	foreach( $benchmarks[array_key_first($benchmarks)]['participants'] as $configid => $participant ) {
+		$participants[$configid] = array_merge($participant, [
 			'score' => 0,
 			'unscored' => 0,
 			'scorestogo' => 0,
@@ -72,11 +51,8 @@
 			'cpu' => 0,
 			'time' => 0,
 			'certtime' => 0,
-		];
-		$last = $configid;
-		$i++;
-		$configid = $records[$i][$configid_idx];
-	} while( $configid != $first );
+		]);
+	}
 ?>
 <table id="theTable">
 <script>
@@ -89,8 +65,8 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 	     '   <script>filteredTable.register(0,"filter0");</script>'.PHP_EOL;
 	$i = 1;
 	foreach( $participants as $participant ) {
-		echo '  <th><a href="'. solverid2url($participant['solverid']) . '">'.$participant['solver'].'</a>'.PHP_EOL.
-		     '   <a class=config href="'. configid2url($participant['configid']) .'">'. $participant['config'].'</a>'.PHP_EOL.
+		echo '  <th><a href="'. solverid2url($participant['solver id']) . '">'.$participant['solver'].'</a>'.PHP_EOL.
+		     '   <a class=config href="'. configid2url($participant['configuration id']) .'">'. $participant['config'].'</a>'.PHP_EOL.
 		     '   <select id="filter'.$i.'" oninput="filteredTable.refresh()">'.PHP_EOL.
 		     '    <option value="">--</option>'.PHP_EOL.
 		     '    <option value="YES">YES</option>'.PHP_EOL.
@@ -104,55 +80,48 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 	$bench = [];
 
 	$conflicts = 0;
-	foreach( $records as $record ) {
-		$configid = $record[$configid_idx];
-		$participant =& $participants[$configid];
-		$status = $record[$status_idx];
-		$cpu = parse_time($record[$cputime_idx]);
-		$time = parse_time($record[$wallclocktime_idx]);
-		$result = $record[$result_idx];
-		$score = result2score($result);
-		$cert = $certificationresult_idx ? $record[$certificationresult_idx] : '';
-		$certtime = $certificationtime_idx ? $record[$certificationtime_idx] : 0;
-		if( $configid == $first ) {
-			$bench = [];
-			$benchmark = parse_benchmark( $record[$benchmark_idx] );
-			$benchmark_id = $record[$benchmark_id_idx];
-			$benchmark_url = bmid2url($benchmark_id);
-			$benchmark_remote = bmid2remote($benchmark_id);
-			$resultcounter = []; /* collects results for each benchmark */
-			$show = false;
-		}
-		if( !status2pending($status) ) {
-			$show = true;
-		}
-		if( status2finished($status) ) {
-			$participant['done'] += 1;
-			$participant['cpu'] += $cpu;
-			$participant['time'] += $time;
-			$participant[$result] += 1;
-			if( $score > 0 ) {
-				$participant['score'] += $score;
+	foreach( $benchmarks as $benchmark_id => $benchmark ) {
+		$bench = [];
+		$resultcounter = []; /* collects results for each benchmark */
+		$show = false;
+		foreach( $benchmark['participants'] as $configid => $record ) {
+			$participant =& $participants[$configid];
+			$status = $record['status'];
+			$cpu = parse_time($record['cpu time']);
+			$time = parse_time($record['wallclock time']);
+			$result = $record['result'];
+			$score = result2score($result);
+			$cert = $record['certification result'];
+			$certtime = $record['certification time'];
+			$show = $show || !status2pending($status);
+			if( status2finished($status) ) {
+				$participant['done'] += 1;
+				$participant['cpu'] += $cpu;
+				$participant['time'] += $time;
+				$participant[$result] += 1;
+				if( $score > 0 ) {
+					$participant['score'] += $score;
+				} else {
+					$participant['unscored'] += 1;
+				}
+				$participant['certtime'] += $certtime;
+				$resultcounter[$result]++;
 			} else {
-				$participant['unscored'] += 1;
+				$participant['togo'] += 1;
+				$participant['scorestogo'] += 1;
 			}
-			$participant['certtime'] += $certtime;
-			$resultcounter[$result]++;
-		} else {
-			$participant['togo'] += 1;
-			$participant['scorestogo'] += 1;
+			$bench[$configid] = [
+				'status' => $status,
+				'result' => $result,
+				'score' => $score,
+				'cert' => $cert,
+				'time' => $time,
+				'cpu' => $cpu,
+				'certtime' => $certtime,
+				'pair' => $record['pair id'],
+			];
 		}
-		$bench[$configid] = [
-			'status' => $status,
-			'result' => $result,
-			'score' => $score,
-			'cert' => $cert,
-			'time' => $time,
-			'cpu' => $cpu,
-			'certtime' => $certtime,
-			'pair' => $record[$pairid_idx],
-		];
-		if( $configid == $last && $show ) {
+		if( $show ) {
 			$firstconflict = false;
 			if( conflicting($resultcounter) ) {
 				$firstconflict = $conflicts == 0;
@@ -170,10 +139,9 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			if( $firstconflict ) {
 				echo '   <a name="conflict"/>'.PHP_EOL;
 			}
-			echo '   <a href="'. $benchmark_url.'">'.$benchmark.'</a>'.PHP_EOL.
-			     '   <a class=starexecid href="'.$benchmark_remote.'">'.$benchmark_id.'</a></td>'.PHP_EOL;
-			foreach( array_keys($bench) as $me ) {
-				$my = $bench[$me];
+			echo '   <a href="'.bmid2url($benchmark_id).'">'.parse_benchmark( $benchmark['benchmark'] ).'</a>'.PHP_EOL.
+			     '   <a class=starexecid href="'.bmid2remote($benchmark_id).'">'.$benchmark_id.'</a></td>'.PHP_EOL;
+			foreach( $bench as $me => $my ) {
 				$status = $my['status'];
 				$result = $my['result'];
 				$cert = $my['cert'];
