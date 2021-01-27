@@ -42,6 +42,7 @@ td a {
 div.category {
  	display: inline-block;
 	vertical-align: top;
+	text-align: left;
 	margin-right: 10pt;
 	margin-bottom: 10pt;
 }

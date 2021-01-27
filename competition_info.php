@@ -1,6 +1,6 @@
 <?php
 
-include 'Y2021_info.php';
+include 'Y2020_info.php';
 
 // Making certified and demonstration categories
 $demos = [];

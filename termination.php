@@ -22,14 +22,12 @@
 	}
 	$scorefile = jobid2scorefile($jobid);
 
-	echo
-' <title>' . $competitionname . ': ' . $jobname . '</title>
-</head>
-<body>
-<h1><a href=".">' . $competitionname . '</a>: ' . $jobname .
-'<a class=starexecid href="' . jobid2url($jobid) . '">'. $jobid . '</a></h1>
-<a href="'. $csv . '">Job info CSV</a>
-';
+	echo ' <title>' . $competitionname . ': ' . $jobname . '</title>'.PHP_EOL.
+	     '</head>'.PHP_EOL.
+	     '<body>'.PHP_EOL.
+	     '<h1><a href=".">' . $competitionname . '</a>: ' . $jobname .
+	     '<a class=starexecid href="' . jobid2url($jobid) . '">'. $jobid . '</a></h1>'.PHP_EOL.
+	     ' <a href="'. $csv . '">Job info CSV</a>'.PHP_EOL;
 	$file = new SplFileObject($csv);
 	$file->setFlags( SplFileObject::READ_CSV );
 	$records = [];

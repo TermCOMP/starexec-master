@@ -32,6 +32,7 @@ $scored_keys = [
 
 $type = $cat['type'];
 $jobid = $cat['jobid'];
+$parts = $cat['participants'];
 $fname = jobid2scorefile($jobid); 
 $cat_done = 0;
 $cat_togo = 0;
