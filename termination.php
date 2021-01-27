@@ -17,17 +17,17 @@
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
 
-	$csv = jobid2csv($jobid);
-	if( $refresh ) {
-		cachezip(jobid2remote($jobid),$csv);
-	}
 	$benchmarks = [];
-	parse_results($csv,$benchmarks);
 	if( $overlay ) {
 		$over_csv = jobid2csv($overlay);
 		cachezip(jobid2remote($overlay),$over_csv);
 		parse_results($over_csv,$benchmarks);
 	}
+	$csv = jobid2csv($jobid);
+	if( $refresh ) {
+		cachezip(jobid2remote($jobid),$csv);
+	}
+	parse_results($csv,$benchmarks);
 
 	$scorefile = jobid2scorefile($jobid);
 
