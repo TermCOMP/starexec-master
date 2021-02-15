@@ -24,12 +24,13 @@
 		return "'" . str_replace( ['\\', '\''], ['\\\\','\\\''], $str ) . "'";
 	}
 
-	function cachezip($remote,$local) {
-		if( file_exists($local) && filemtime($local) + 5 > time() ) {
+	function cachezip($remote,$local,$refresh) {
+		if( file_exists($local) && ( !$refresh || filemtime($local) + 5 > time() ) ) {
 			return;
 		}
 		$tmpzip=tempnam("./fromStarExec","");
 		if( !copy($remote,$tmpzip) ) {
+			print_r(error_get_last());
 			exit("failed to copy $remote to $tmpzip");
 		}
 		exec( "unzip -o $tmpzip -d fromStarExec", $out, $ret );
@@ -66,6 +67,9 @@
 	}
 	function jobid2scorefile($jobid) {
 		return "caches/Job" . $jobid . "_score.json";
+	}
+	function jobid2sumfile($jobid) {
+		return "caches/Job" . $jobid . "_sum.json";
 	}
 	function pairid2url($pairid) {
 		return "https://www.starexec.org/starexec/secure/details/pair.jsp?id=$pairid";
@@ -176,6 +180,41 @@
 		$YES = array_key_exists('YES', $results) ? $results['YES'] : 0;
 		$NO = array_key_exists('NO', $results) ? $results['NO'] : 0;
 		return $YES > 0 && $NO > 0;
+	}
+
+	// Making certified and demonstration categories
+	function make_categories($raw_mcats) {
+		$demos = [];
+		$mcats = [];
+		foreach( $raw_mcats as $mcat_name => $raw_cats ) {
+			$cats = [];
+			foreach( $raw_cats as $cat_name => $cat ) {
+				$cats[$cat_name] = $cat;
+				if( array_key_exists('certified',$cat) ) {
+					$certinfo = $cat['certified'];
+					unset( $cat['certified'] );
+					$certcat = $cat;
+					$certcat['participants'] = array_key_exists('participants',$certinfo) ? $certinfo['participants'] : [];
+					$certcat['jobid'] = array_key_exists('jobid',$certinfo) ? $certinfo['jobid'] : 0;
+					$certcat['certified'] = true;
+					$cats[$cat_name . ' Certified'] = $certcat;
+				}
+			}
+			foreach( $cats as $cat_name => $cat ) {
+				$cnt = array_key_exists('participants',$cat) ? count($cat['participants']) : 0;
+				if( $cnt == 0 && !$cat['jobid'] > 0 ) {
+					unset($cats[$cat_name]);// remove unparticipated category
+				} else if( $cnt == 1 ) {
+					$demos[$cat_name] = $cat;
+					unset($cats[$cat_name]);
+				}
+			}
+			$mcats[$mcat_name] = $cats;
+		}
+		if( $demos != [] ) {
+			$mcats['Demonstrations'] = $demos;
+		}
+		return $mcats;
 	}
 ?>
 <script src="definitions.js"></script>

@@ -1,7 +1,8 @@
 <?php
 $title = 'Termination Competition 2020 (First Run)';
 $shortname = "TermCOMP 2020-1";
-$raw_mcats = [
+$note = 'The final result is <a href=\"https://termcomp.github.io/Y2020/\">here</a>.';
+$categories = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [
 			'type' => 'termination',

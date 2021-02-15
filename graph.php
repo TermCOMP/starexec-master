@@ -2,19 +2,18 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
 <link rel="stylesheet" type="text/css" href="master.css">
 <?php
-$refresh = in_array( 'refresh', $argv );
-$finalize = in_array( 'finalize', $argv );
-
-$show_config = $_GET['showconfig'];
-$mcatname = $_GET['mcat'];
-$catname = $_GET['cat'];
 
 include 'definitions.php';
-include 'competition_info.php';
 
-$cat = $mcats[$mcatname][$catname];
+$mcatname = $_GET['mcatname'];
+$catname = $_GET['name'];
+$jobid = $_GET['id'];
+$type = $_GET['type'];
 
 ?>
 </head>
@@ -30,10 +29,6 @@ $scored_keys = [
 	'LOW',
 ];
 
-$type = $cat['type'];
-$jobid = $cat['jobid'];
-$parts = $cat['participants'];
-$fname = jobid2scorefile($jobid); 
 $cat_done = 0;
 $cat_togo = 0;
 $cat_cpu = 0;
@@ -46,13 +41,13 @@ foreach( $scored_keys as $key ) {
 }
 
 // checking cached score file and making ranking
-$solvers = json_decode(file_get_contents($fname),TRUE);
+$solvers = json_decode(file_get_contents(jobid2scorefile($jobid)),TRUE);
 uasort($solvers, function($s,$t) { return $s['score'] < $t['score'] ? 1 : -1; } );
 foreach( $solvers as $s ) {
 	$togo += $s['togo'];
 	$conflicts += $s['conflicts'];
 	foreach( $scored_keys as $key ) {
-		$best[$key] = max($best[$key], $s[$key]);
+		$best[$key] = max($best[$key], array_key_exists($key,$s) ? $s[$key] : 0);
 	}
 	$best['time'] = min($best['time'], $s['time']);
 }
@@ -67,7 +62,10 @@ echo ' <table class=ranking>'.PHP_EOL;
 $prev_score = $best['score'];
 $rank = 1;
 $count = 0;
-foreach( $solvers as $s ) {
+foreach( $solvers as $configid => $s ) {
+	$name = $s['solver'];
+	$id = $s['solver id'];
+	$config = $s['configuration'];
 	$score = $s['score'];
 	$unscored = $s['unscored'];
 	$scorestogo = $s['scorestogo'];
@@ -77,10 +75,6 @@ foreach( $solvers as $s ) {
 	$time = $s['time'];
 	$certtime = $s['certtime'];
 	$conflicts = $s['conflicts'];
-	$name = $s['solver'];
-	$id = $s['solverid'];
-	$config = $s['config'];
-	$configid = $s['configid'];
 	$url = solverid2url($id);
 	$count += 1;
 	if( $prev_score > $score ) {
@@ -100,21 +94,18 @@ foreach( $solvers as $s ) {
 	}
 	if( $scorestogo > 0 ) {
 		echo '       <td class=incomplete style="width:'. (100 * $scorestogo / $total) . '%">'.PHP_EOL;
-    }
+	}
 	if( $unscored > 0 ) {
-	   echo '       <td class=maybe style="width:'. (100 * $unscored / $total) . '%">'.PHP_EOL;
+		echo '       <td class=maybe style="width:'. (100 * $unscored / $total) . '%">'.PHP_EOL;
 	}
 	echo '     </table>'.PHP_EOL;
 	// Textual display
 	echo '     <td>'.PHP_EOL.
 	     '      <span class='. ( $rank == 1 ? 'best' : '' ) . 'solver>'.PHP_EOL.
-	     '       '. $rank .'. <a href="'. $url . '">'. $name . '</a>';
-	if( $show_config ) {
-		echo PHP_EOL.
-		     '       <a class=config href="' . configid2url($configid) . '">'. $config . '</a>';
-	}
-	echo '      </span>'. PHP_EOL.
-		 '      <span class=score>';
+	     '       '. $rank .'. <a href="'. $url . '">'. $name . '</a>'.PHP_EOL.
+	     '       <a class=config href="' . configid2url($configid) . '">'. $config . '</a>'.PHP_EOL.
+	     '      </span>'. PHP_EOL.
+	     '      <span class=score>';
 	foreach( $scored_keys as $key ) {
 		if( array_key_exists( $key, $s ) ) {
 			$subscore = $s[$key];
@@ -127,7 +118,7 @@ foreach( $solvers as $s ) {
 	}
 	if( $togo > 0 ) {
 		echo ','.PHP_EOL.
-		     '   <span class=togo> ' . $togo . ' to go</span>';
+		     '   <span class=togo>TOGO:' . $togo . '</span>';
 	}
 	echo '</span>'.PHP_EOL;
 	$cat_cpu += $cpu;

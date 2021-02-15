@@ -1,7 +1,7 @@
 <?php
 $title = 'Termination Competition 2018';
 $shortname = 'TermCOMP 2018';
-$raw_mcats = [
+$categories = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [
 			'type' => 'termination',

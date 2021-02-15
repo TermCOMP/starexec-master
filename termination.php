@@ -5,31 +5,30 @@
  <meta http-equiv="Cache-Control" content="no-cache">
  <link rel="stylesheet" type="text/css" href="master.css">
 <?php
+	error_reporting( E_ALL ^ E_NOTICE ); 
 	include './definitions.php';
 	
-	if( !array_key_exists( 'id', $_GET ) ) {
+	$jobid = array_key_exists('id', $_GET) ? $_GET['id'] : false;
+	$overlay = array_key_exists('overlay', $_GET) ? $_GET['overlay'] : false;
+	if( !$jobid && !$overlay ) {
 		echo '</head>';
 		exit('no job to present');
 	}
-	$jobid = $_GET['id'];
-	$overlay = array_key_exists('overlay', $_GET) ? $_GET['overlay'] : false;
 	$competitionname = $_GET['competitionname'];
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
 
 	$benchmarks = [];
+	if( $jobid ) {
+		$csv = jobid2csv($jobid);
+		cachezip(jobid2remote($jobid),$csv,$refresh);
+		parse_results($csv,$benchmarks);
+	}
 	if( $overlay ) {
 		$over_csv = jobid2csv($overlay);
-		cachezip(jobid2remote($overlay),$over_csv);
+		cachezip(jobid2remote($overlay),$csv,$refresh);
 		parse_results($over_csv,$benchmarks);
 	}
-	$csv = jobid2csv($jobid);
-	if( $refresh ) {
-		cachezip(jobid2remote($jobid),$csv);
-	}
-	parse_results($csv,$benchmarks);
-
-	$scorefile = jobid2scorefile($jobid);
 
 	echo ' <title>' . $competitionname . ': ' . $jobname . '</title>'.PHP_EOL.
 	     '</head>'.PHP_EOL.
@@ -41,7 +40,10 @@
 	// initializing the list of participants
 	$participants = [];
 	foreach( $benchmarks[array_key_first($benchmarks)]['participants'] as $configid => $participant ) {
-		$participants[$configid] = array_merge($participant, [
+		$participants[$configid] = [
+			'solver' => $participant['solver'],
+			'solver id' => $participant['solver id'],
+			'configuration' => $participant['configuration'],
 			'score' => 0,
 			'unscored' => 0,
 			'scorestogo' => 0,
@@ -51,7 +53,7 @@
 			'cpu' => 0,
 			'time' => 0,
 			'certtime' => 0,
-		]);
+		];
 	}
 ?>
 <table id="theTable">
@@ -66,7 +68,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 	$i = 1;
 	foreach( $participants as $participant ) {
 		echo '  <th><a href="'. solverid2url($participant['solver id']) . '">'.$participant['solver'].'</a>'.PHP_EOL.
-		     '   <a class=config href="'. configid2url($participant['configuration id']) .'">'. $participant['config'].'</a>'.PHP_EOL.
+		     '   <a class=config href="'. configid2url($participant['configuration id']) .'">'. $participant['configuration'].'</a>'.PHP_EOL.
 		     '   <select id="filter'.$i.'" oninput="filteredTable.refresh()">'.PHP_EOL.
 		     '    <option value="">--</option>'.PHP_EOL.
 		     '    <option value="YES">YES</option>'.PHP_EOL.
@@ -166,9 +168,24 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		}
 	}
 	echo ' <tr><th>'.PHP_EOL;
+	$sum = [
+		'done' => 0,
+		'togo' => 0,
+		'cpu' => 0,
+		'time' => 0,
+	];
 	foreach( $participants as $s ) {
 		echo '  <th>'.$s['score'];
+		$sum['done'] += $s['done'];
+		$sum['togo'] += $s['togo'];
+		$sum['scorestogo'] += $s['scorestogo'];
+		$s['cpu'] = (int)$s['cpu'];// eliminate round errors
+		$sum['cpu'] += $s['cpu'];
+		$s['time'] = (int)$s['time'];// eliminate round errors
+		$sum['time'] += $s['time'];
 	}
+	file_put_contents( jobid2sumfile($jobid), json_encode($sum), LOCK_EX );
+	file_put_contents( jobid2scorefile($jobid), json_encode($participants), LOCK_EX );
 ?>
 </table>
 <script>
@@ -184,10 +201,5 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		filteredTable.refresh();
 	}
 </script>
-<?php
-	$scorefileD = fopen($scorefile,'w');
-	fwrite( $scorefileD, json_encode($participants) );
-	fclose( $scorefileD );
-?>
 </body>
 </html>

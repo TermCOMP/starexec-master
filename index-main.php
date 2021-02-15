@@ -5,21 +5,28 @@
 <link rel="stylesheet" type="text/css" href="master.css">
 <?php
 include 'definitions.php';
-include 'competition_info.php';
+include 'Y2020_info.php';
+$mcats = make_categories($categories);
 
-$refresh = in_array( 'refresh', $argv );
+$refresh = in_array( 'refresh', $argv ) || array_key_exists( 'refresh', $_GET );
 $finalize = in_array( 'finalize', $argv );
-$show_config = $_GET['showconfig'];
 
 echo ' <title>'.$title.'</title>'.PHP_EOL;
 ?>
 </head>
 <body>
  <h1><?php echo $title; ?>
+ <span id=configToggler class=button></span>
  <span id=scoreToggler class=button></span>
  <span id=columnToggler class=button></span>
 </h1>
 <script>
+var configToggler = StyleToggler(
+	document.getElementById("configToggler"), ".config", [
+		{ text: "Hide configs", assign: {display: "inline"} },
+		{ text: "Show configs", assign: {display: "none"} },
+	]
+);
 var scoreToggler = StyleToggler(
 	document.getElementById("scoreToggler"), ".score", [
 		{ text: "Hide scores", assign: {display: "inline"} },
@@ -41,10 +48,19 @@ foreach( array_keys($mcats) as $mcatname ) {
 	$total_togo = 0;
 	$total_cpu = 0;
 	$total_time = 0;
-	echo '<h2>'.$mcatname.'<span id=stat'.$mcatindex.' class=stats></span></h2>'.PHP_EOL;
+	echo '<h2>'.$mcatname.' <span id=stat'.$mcatindex.' class=stats></span></h2>'.PHP_EOL;
 	$cats = $mcats[$mcatname];
 	$table = [];
 	$tools = [];
+	echo ' <script>'.PHP_EOL.
+	     '  var progress'.$mcatindex.' = [];'.PHP_EOL.
+	     '  function updateProgress'.$mcatindex.'() {'.PHP_EOL.
+	     '   var sum = progress'.$mcatindex.'.reduce(function(a,b){return {done: a.done + b.done, cpu: a.cpu + b.cpu, time: a.time + b.time, togo: a.togo + b.togo}});'.PHP_EOL.
+	     '   document.getElementById("stat'.$mcatindex.'").innerHTML ='.PHP_EOL.
+	     '    "Progress: " + Math.floor(1000 * sum.done / (sum.done + sum.togo))/10 +'.PHP_EOL.
+	     '    "%, CPU Time: " + seconds2str(sum.cpu) + ", Node Time: "+ seconds2str(sum.time);'.PHP_EOL.
+	     '  }'.PHP_EOL.
+	      '</script>'.PHP_EOL;
 	foreach( $cats as $catname => $cat ) {
 		$type = $cat['type'];
 		$jobid = $cat['jobid'];
@@ -62,54 +78,38 @@ foreach( array_keys($mcats) as $mcatname ) {
 			continue;
 		}
 		// creating job html
-		$jobargs = [
-			'competitionname' => $shortname,
-			'id' => $jobid,
-			'name' => $catname,
-		];
 		$jobpath = 'job_'.$jobid.'.html';
 		$graphpath = 'graph_'.$jobid.'.html';
 		if( $refresh || $finalize ) {
-			$jobargs['refresh'] = 1;
-			if( $finalize ) {
-				$jobargs['finalize'] = 1;
-			}
-			system( 'php-cgi -f "'. $type . '.php" '. http_build_query( $jobargs, '', ' ' ) .' > "'. $jobpath . '"');
-			// making graph
 			$jobargs = [
-				'mcat' => $mcatname,
-				'cat' => $catname,
+				'id' => $jobid,
+				'name' => $catname,
+				'mcatname' => $mcatname,
+				'type' => $type,
+				'competitionname' => $shortname,
+				'refresh' => $refresh,
 			];
-			system( 'php-cgi -f "graph.php" '. http_build_query( $jobargs, '', ' ' ) .' > "'. $graphpath . '"');
-		}
-		// checking cached score file and making ranking
-		$fname = jobid2scorefile($jobid); 
-		if( file_exists($fname) ) {
-			$solvers = json_decode(file_get_contents($fname),TRUE);
-			foreach( $solvers as $s ) {
-				$total_togo += $s['togo'];
-				$total_done = $s['done'];
-				$total_cpu += $s['cpu'];
-				$total_time += $s['time'];
-			}
+			$query = http_build_query( $jobargs, '', ' ' );
+			system( 'php-cgi -f "'. $type . '.php" '. $query .' > "'. $jobpath . '"');
+			system( 'php-cgi -f "graph.php" '. $query .' > "'. $graphpath . '"');
 		}
 		echo ' <span id='.$jobid.' class=category></span>'.PHP_EOL;
 		echo ' <script>'.PHP_EOL.
 		     '  function load'.$jobid.'() {'.PHP_EOL.
-			 '   var elm = document.getElementById("'.$jobid.'");'.PHP_EOL.
-			 '   loadURL("'.$graphpath.'", function (xhttp) {'.PHP_EOL.
-			 '    elm.innerHTML = xhttp.responseText;'.PHP_EOL.
-			 '    scoreToggler.apply(elm);'.PHP_EOL.
-			 '   });'.PHP_EOL.
-			 '  }'.PHP_EOL.
-			 '  load'.$jobid.'();'.PHP_EOL.
-			 '  setInterval(load'.$jobid.', 10000);'.PHP_EOL.
-			 ' </script>'.PHP_EOL;
+		     '   var elm = document.getElementById("'.$jobid.'");'.PHP_EOL.
+		     '   loadURL("'.$graphpath.'", function(xhttp) {'.PHP_EOL.
+		     '    elm.innerHTML = xhttp.responseText;'.PHP_EOL.
+		     '    scoreToggler.apply(elm);'.PHP_EOL.
+		     '   });'.PHP_EOL.
+		     '   loadURL("'.jobid2sumfile($jobid).'", function(xhttp) {'.PHP_EOL.
+		     '    progress'.$mcatindex.'['.$jobid.'] = JSON.parse(xhttp.responseText);'.PHP_EOL.
+		     '    updateProgress'.$mcatindex.'();'.PHP_EOL.
+		     '   });'.PHP_EOL.
+		     '  }'.PHP_EOL.
+		     '  load'.$jobid.'();'.PHP_EOL.
+		     '  setInterval(load'.$jobid.', 10000);'.PHP_EOL.
+		     ' </script>'.PHP_EOL;
 	}
-	echo '<script>'.PHP_EOL.
-	     '	document.getElementById("stat'.$mcatindex.'").innerHTML = "Progress: ' . round(100 * $total_done / ($total_done + $total_togo), 2) .
-	     '%, CPU Time: '.seconds2str($total_cpu).', Node Time: '.seconds2str($total_time).'";'.PHP_EOL.
-		 '</script>'.PHP_EOL;
 	$mcatindex++;
 }
 
