@@ -26,7 +26,7 @@
 	}
 	if( $overlay ) {
 		$over_csv = jobid2csv($overlay);
-		cachezip(jobid2remote($overlay),$csv,$refresh);
+		cachezip(jobid2remote($overlay),$over_csv,$refresh);
 		parse_results($over_csv,$benchmarks);
 	}
 
