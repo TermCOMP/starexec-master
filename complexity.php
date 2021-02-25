@@ -94,9 +94,10 @@
 		return [0,1001];
 	}
 	$benchmarks = [];
+	$participants = [];
 	$csv = jobid2csv($jobid);
 	cachezip(jobid2remote($jobid),$csv,$refresh);
-	parse_results($csv,$benchmarks);
+	parse_results($csv,$benchmarks,$participants);
 
 	echo ' <title>' . $competitionname . ': ' . $jobname . '</title>'.PHP_EOL.
 	     '</head>'.PHP_EOL.
@@ -135,11 +136,14 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		echo '  <th colspan=3><a href="'. solverid2url($participant['solverid']) . '">'.$participant['solver'].'</a>'.PHP_EOL.
 		     '   <a class=config href="'. configid2url($participant['configid']) .'">'. $participant['config'].'</a>'.PHP_EOL;
 	}
-
-	echo ' <tr class="head">'.PHP_EOL.
-	     '  <th>benchmark'.PHP_EOL.
-	     '   <input id="filter0" type="text" placeholder="Filter..." value="'.$benchFilter.'" onkeyup="filteredTable.refresh()">'.PHP_EOL.
-	     '   <script>filteredTable.register(0,"filter0");</script>'.PHP_EOL;
+?>
+ <tr class="head">
+  <th>benchmark
+   <input id="filter0" type="text" placeholder="Filter..." onkeyup="filteredTable.refresh()">
+   <script>filteredTable.register(0,"filter0");</script>
+  <th style="display:none">
+   <script>filteredTable.register(1,"resultsFilter");</script>
+<?php
 	foreach( $participants as $participant ) {
 		echo '  <th class="subhead">UP<th class="subhead">LOW<th class="subhead">TIME'.PHP_EOL;
 	}
@@ -194,8 +198,8 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			];
 		}
 		if( $show ) {
-			$firstconflict = false;
-			if( conflicting($resultcounter) ) {
+			$d = results2description($resultcounter);
+			if( $d['conflicting'] ) {
 				$firstconflict = $conflicts == 0;
 				foreach( array_keys($bench) as $me ) {
 					if( $bench[$me]['score'] > 0 ) {
@@ -203,16 +207,17 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 					}
 				}
 				echo ' <tr class=conflict>'.PHP_EOL;
+				if( $conflicts == 0 ) {
+					echo '  <a name="conflict"/>'.PHP_EOL;
+				}
 				$conflicts += 1;
 			} else {
 				echo ' <tr>'.PHP_EOL;
 			}
-			echo '  <td class=benchmark>'.PHP_EOL;
-			if( $firstconflict ) {
-				echo '   <a name="conflict"/>'.PHP_EOL;
-			}
-			echo '   <a href="'.bmid2url($benchmark_id).'">'.parse_benchmark( $benchmark['benchmark'] ).'</a>'.PHP_EOL.
-			     '   <a class=starexecid href="'.bmid2remote($benchmark_id).'">'.$benchmark_id.'</a></td>'.PHP_EOL;
+			echo '  <td class=benchmark>'.PHP_EOL.
+			     '   <a href="'.bmid2url($benchmark_id).'">'.parse_benchmark( $benchmark['benchmark'] ).'</a>'.PHP_EOL.
+			     '   <a class=starexecid href="'.bmid2remote($benchmark_id).'">'.$benchmark_id.'</a></td>'.PHP_EOL.
+			     '  <td style="display:none">'.$d['key'];
 			foreach( $bench as $me => $my ) {
 				$status = $my['status'];
 				$result = $my['result'];

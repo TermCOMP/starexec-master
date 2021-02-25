@@ -4,6 +4,7 @@
  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
  <meta http-equiv="Cache-Control" content="no-cache">
  <link rel="stylesheet" type="text/css" href="master.css">
+
 <?php
 	error_reporting( E_ALL ^ E_NOTICE ); 
 	include './definitions.php';
@@ -19,56 +20,53 @@
 	$refresh = $_GET['refresh'];
 
 	$benchmarks = [];
+	$participants = [];
 	if( $jobid ) {
 		$csv = jobid2csv($jobid);
 		cachezip(jobid2remote($jobid),$csv,$refresh);
-		parse_results($csv,$benchmarks);
+		parse_results($csv,$benchmarks,$participants);
+	}
+	foreach( $participants as &$participant ) {
+		$participant['ranked'] = true;
 	}
 	if( $overlay ) {
-		$over_csv = jobid2csv($overlay);
-		cachezip(jobid2remote($overlay),$over_csv,$refresh);
-		parse_results($over_csv,$benchmarks);
+		$overcsv = jobid2csv($overlay);
+		cachezip(jobid2remote($overlay),$overcsv,$refresh);
+		parse_results($overcsv,$benchmarks,$participants);
 	}
 
 	echo ' <title>' . $competitionname . ': ' . $jobname . '</title>'.PHP_EOL.
 	     '</head>'.PHP_EOL.
 	     '<body>'.PHP_EOL.
-	     '<h1><a href=".">' . $competitionname . '</a>: ' . $jobname .
-	     '<a class=starexecid href="' . jobid2url($jobid) . '">'. $jobid . '</a></h1>'.PHP_EOL.
-	     ' <a href="'. $csv . '">Job info CSV</a>'.PHP_EOL;
-
-	// initializing the list of participants
-	$participants = [];
-	foreach( $benchmarks[array_key_first($benchmarks)]['participants'] as $configid => $participant ) {
-		$participants[$configid] = [
-			'solver' => $participant['solver'],
-			'solver id' => $participant['solver id'],
-			'configuration' => $participant['configuration'],
-			'score' => 0,
-			'unscored' => 0,
-			'scorestogo' => 0,
-			'conflicts' => 0,
-			'done' => 0,
-			'togo' => 0,
-			'cpu' => 0,
-			'time' => 0,
-			'certtime' => 0,
-		];
-	}
+	     '<h1><a href=".">' . $competitionname . '</a>: ' . $jobname .PHP_EOL.
+	     ' <a class=starexecid href="' . jobid2url($jobid) . '">'. $jobid . '</a>'.PHP_EOL.
+	     ' <a class=csv href="'. $csv . '">Job info CSV</a>'.PHP_EOL;
 ?>
+ <span class="headerFollower">Showing
+  <select id="resultsFilter" type="text" placeholder="Filter..." oninput="filteredTable.refresh()">
+   <option value="">all</option>
+   <option value="i">interesting</option>
+   <option value="c">conflicting</option>
+   <option value="u">unsolved</option>
+   <option value="s">solo</option>
+  </select> results.
+ </span>
+</h1>
 <table id="theTable">
 <script>
 var filteredTable = FilteredTable(document.getElementById("theTable"));
 </script>
  <tr class="head">
   <th>benchmark
+   <input id="filter0" type="text" placeholder="Filter..." onkeyup="filteredTable.refresh()">
+   <script>filteredTable.register(0,"filter0");</script>
+  <th style="display:none">
+   <script>filteredTable.register(1,"resultsFilter");</script>
 <?php
-	echo '   <input id="filter0" type="text" placeholder="Filter..." onkeyup="filteredTable.refresh()">'.PHP_EOL.
-	     '   <script>filteredTable.register(0,"filter0");</script>'.PHP_EOL;
-	$i = 1;
-	foreach( $participants as $participant ) {
+	$i = 2;
+	foreach( $participants as $configid => &$participant ) {
 		echo '  <th><a href="'. solverid2url($participant['solver id']) . '">'.$participant['solver'].'</a>'.PHP_EOL.
-		     '   <a class=config href="'. configid2url($participant['configuration id']) .'">'. $participant['configuration'].'</a>'.PHP_EOL.
+		     '   <a class=config href="'. configid2url($configid) .'">'. $participant['configuration'].'</a>'.PHP_EOL.
 		     '   <select id="filter'.$i.'" oninput="filteredTable.refresh()">'.PHP_EOL.
 		     '    <option value="">--</option>'.PHP_EOL.
 		     '    <option value="YES">YES</option>'.PHP_EOL.
@@ -89,17 +87,17 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		foreach( $benchmark['participants'] as $configid => $record ) {
 			$participant =& $participants[$configid];
 			$status = $record['status'];
-			$cpu = parse_time($record['cpu time']);
-			$time = parse_time($record['wallclock time']);
-			$result = $record['result'];
-			$score = result2score($result);
-			$cert = $record['certification result'];
-			$certtime = $record['certification time'];
 			$show = $show || !status2pending($status);
 			if( status2finished($status) ) {
+				$cpu = parse_time($record['cpu time']);
+				$time = parse_time($record['wallclock time']);
 				$participant['done'] += 1;
 				$participant['cpu'] += $cpu;
 				$participant['time'] += $time;
+				$result = status2timeout($status) ? "TIMEOUT" : $record['result'];
+				$score = result2score($result);
+				$cert = $record['certification result'];
+				$certtime = $record['certification time'];
 				$participant[$result] += 1;
 				if( $score > 0 ) {
 					$participant['score'] += $score;
@@ -107,10 +105,11 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 					$participant['unscored'] += 1;
 				}
 				$participant['certtime'] += $certtime;
-				$resultcounter[$result]++;
+				$resultcounter[$result] += 1;
 			} else {
 				$participant['togo'] += 1;
 				$participant['scorestogo'] += 1;
+				$resultcounter['togo'] += 1;
 			}
 			$bench[$configid] = [
 				'status' => $status,
@@ -124,25 +123,25 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			];
 		}
 		if( $show ) {
-			$firstconflict = false;
-			if( conflicting($resultcounter) ) {
-				$firstconflict = $conflicts == 0;
+			$d = results2description($resultcounter);
+			if( $d['conflicting'] ) {
 				foreach( array_keys($bench) as $me ) {
 					if( $bench[$me]['score'] > 0 ) {
 						$participants[$me]['conflicts']++;
 					}
 				}
 				echo ' <tr class=conflict>'.PHP_EOL;
+				if( $conflicts == 0 ) {
+					echo '  <a name="conflict"/>'.PHP_EOL;
+				}
 				$conflicts += 1;
 			} else {
 				echo ' <tr>'.PHP_EOL;
 			}
-			echo '  <td class=benchmark>'.PHP_EOL;
-			if( $firstconflict ) {
-				echo '   <a name="conflict"/>'.PHP_EOL;
-			}
-			echo '   <a href="'.bmid2url($benchmark_id).'">'.parse_benchmark( $benchmark['benchmark'] ).'</a>'.PHP_EOL.
-			     '   <a class=starexecid href="'.bmid2remote($benchmark_id).'">'.$benchmark_id.'</a></td>'.PHP_EOL;
+			echo '  <td class=benchmark>'.PHP_EOL.
+			     '   <a href="'.bmid2url($benchmark_id).'">'.parse_benchmark( $benchmark['benchmark'] ).'</a>'.PHP_EOL.
+			     '   <a class=starexecid href="'.bmid2remote($benchmark_id).'">'.$benchmark_id.'</a></td>'.PHP_EOL.
+			     '  <td style="display:none">'.$d['key'];
 			foreach( $bench as $me => $my ) {
 				$status = $my['status'];
 				$result = $my['result'];
@@ -174,18 +173,20 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		'cpu' => 0,
 		'time' => 0,
 	];
-	foreach( $participants as $s ) {
-		echo '  <th>'.$s['score'];
-		$sum['done'] += $s['done'];
-		$sum['togo'] += $s['togo'];
-		$sum['scorestogo'] += $s['scorestogo'];
+	foreach( $participants as &$s ) {
 		$s['cpu'] = (int)$s['cpu'];// eliminate round errors
-		$sum['cpu'] += $s['cpu'];
 		$s['time'] = (int)$s['time'];// eliminate round errors
-		$sum['time'] += $s['time'];
+		echo '  <th>'.$s['score'];
+		if( array_key_exists('ranked',$s) ) {
+			$sum['done'] += $s['done'];
+			$sum['togo'] += $s['togo'];
+			$sum['scorestogo'] += $s['scorestogo'];
+			$sum['cpu'] += $s['cpu'];
+			$sum['time'] += $s['time'];
+		}
 	}
-	file_put_contents( jobid2sumfile($jobid), json_encode($sum), LOCK_EX );
-	file_put_contents( jobid2scorefile($jobid), json_encode($participants), LOCK_EX );
+	file_put_contents( jobid2sumfile($jobid), json_encode($sum) );
+	file_put_contents( jobid2scorefile($jobid), json_encode($participants) );
 ?>
 </table>
 <script>

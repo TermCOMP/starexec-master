@@ -1,5 +1,7 @@
 <?php
 
+set_time_limit(300);
+
 	function seconds2str($s) {
 		$d = floor($s/(24*60*60));
 		$s = $s%(24*60*60);
@@ -44,7 +46,7 @@
 	function jobid2csv($jobid) {
 		return "fromStarExec/Job$jobid/Job" . $jobid . "_info.csv";
 	}
-	function parse_results($csv, &$records) {
+	function parse_results($csv, &$benchmarks, &$participants) {
 		$file = new SplFileObject($csv);
 		$file->setFlags( SplFileObject::READ_CSV );
 		$header = $file->current();
@@ -56,9 +58,28 @@
 				foreach( $header as $i => $field ) {
 					$record[$field] = $row[$i];
 				}
-				$here = &$records[$record['benchmark id']];
+				$here = &$benchmarks[$record['benchmark id']];
 				$here['benchmark'] = $record['benchmark'];
 				$here['participants'][$record['configuration id']] = $record;
+			}
+		}
+		// adding to the list of participants
+		foreach( $benchmarks[array_key_first($benchmarks)]['participants'] as $configid => $participant ) {
+			if( !array_key_exists( $configid, $participants ) ) {
+				$participants[$configid] = [
+					'solver' => $participant['solver'],
+					'solver id' => $participant['solver id'],
+					'configuration' => $participant['configuration'],
+					'score' => 0,
+					'unscored' => 0,
+					'scorestogo' => 0,
+					'conflicts' => 0,
+					'done' => 0,
+					'togo' => 0,
+					'cpu' => 0,
+					'time' => 0,
+					'certtime' => 0,
+				];
 			}
 		}
 	}
@@ -138,14 +159,13 @@
 		}
 	}
 	function status2finished($status) {
-		return
-			substr($status,0,7) <> 'pending' &&
-			$status <> 'enqueued';
+		return substr($status,0,7) <> 'pending' && $status <> 'enqueued';
+	}
+	function status2timeout($status) {
+		return substr($status,0,7) == 'timeout';
 	}
 	function status2complete($status) {
-		return
-			status2finished($status) &&
-			substr($status,0,7) <> 'timeout';
+		return status2finished($status) && ! status2timeout($status);
 	}
 	function status2pending($status) {
 		return $status == 'pending submission';
@@ -176,12 +196,24 @@
 	function configid2url($configid) {
 		return "https://www.starexec.org/starexec/secure/details/configuration.jsp?id=$configid";
 	}
-	function conflicting($results) {
+	function results2description($results) {
 		$YES = array_key_exists('YES', $results) ? $results['YES'] : 0;
 		$NO = array_key_exists('NO', $results) ? $results['NO'] : 0;
-		return $YES > 0 && $NO > 0;
+		$MAYBE = array_key_exists('MAYBE', $results) ? $results['MAYBE'] : 0;
+		$TIMEOUT = array_key_exists('TIMEOUT', $results) ? $results['TIMEOUT'] : 0;
+		$togo = array_key_exists('togo', $results) && $results['togo'] > 0;
+		$conflicting = $YES > 0 && $NO > 0;
+		$interesting = $YES + $NO > 0 && $MAYBE + $TIMEOUT > 0;
+		$solo = $YES + $NO == 1 && $togo == 0;
+		$unsolved = $YES + $NO == 0;
+		return [
+			'conflicting' => $conflicting,
+			'interesting' => $interesting,
+			'solo' => $solo,
+			'unsolved' => $unsolved,
+			'key' => ($conflicting ? 'c':'').($interesting ? 'i' : '').($solo ? 's' : '').($unsolved ? 'u' : ''),
+		];
 	}
-
 	// Making certified and demonstration categories
 	function make_categories($raw_mcats) {
 		$demos = [];

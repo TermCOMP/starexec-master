@@ -46,10 +46,12 @@ uasort($solvers, function($s,$t) { return $s['score'] < $t['score'] ? 1 : -1; } 
 foreach( $solvers as $s ) {
 	$togo += $s['togo'];
 	$conflicts += $s['conflicts'];
-	foreach( $scored_keys as $key ) {
-		$best[$key] = max($best[$key], array_key_exists($key,$s) ? $s[$key] : 0);
+	if( array_key_exists('ranked', $s ) ) {
+		foreach( $scored_keys as $key ) {
+			$best[$key] = max($best[$key], array_key_exists($key,$s) ? $s[$key] : 0);
+		}
+		$best['time'] = min($best['time'], $s['time']);
 	}
-	$best['time'] = min($best['time'], $s['time']);
 }
 $jobpath = 'job_'.$jobid.'.html';
 echo ' <div class=category>'.PHP_EOL.
@@ -75,15 +77,18 @@ foreach( $solvers as $configid => $s ) {
 	$time = $s['time'];
 	$certtime = $s['certtime'];
 	$conflicts = $s['conflicts'];
+	$ranked = array_key_exists('ranked', $s);
 	$url = solverid2url($id);
-	$count += 1;
-	if( $prev_score > $score ) {
-		$rank = $count;
+	if( $ranked ) {
+		$count += 1;
+		if( $prev_score > $score ) {
+			$rank = $count;
+		}
 	}
 	$prev_score = $score;
 	// Making progress bar
 	$total = $score + $unscored + $scorestogo;
-	echo '   <tr>'.PHP_EOL.
+	echo '   <tr'.($ranked ? '>' : ' class=ignored>').PHP_EOL.
 	     '    <td>'.PHP_EOL.
 	     '     <table class=bar>'.PHP_EOL.
 	     '      <tr style="height:1ex">'.PHP_EOL;
@@ -101,15 +106,15 @@ foreach( $solvers as $configid => $s ) {
 	echo '     </table>'.PHP_EOL;
 	// Textual display
 	echo '     <td>'.PHP_EOL.
-	     '      <span class='. ( $rank == 1 ? 'best' : '' ) . 'solver>'.PHP_EOL.
-	     '       '. $rank .'. <a href="'. $url . '">'. $name . '</a>'.PHP_EOL.
+	     '      <span class='.( $ranked && $rank == 1 ? 'best' : '' ). 'solver>'.PHP_EOL.
+	     '       '.($ranked ? $rank : '-').'. <a href="'. $url . '">'. $name . '</a>'.PHP_EOL.
 	     '       <a class=config href="' . configid2url($configid) . '">'. $config . '</a>'.PHP_EOL.
 	     '      </span>'. PHP_EOL.
 	     '      <span class=score>';
 	foreach( $scored_keys as $key ) {
 		if( array_key_exists( $key, $s ) ) {
 			$subscore = $s[$key];
-			echo '<span '. result2style( $key, $subscore == $best[$key] ) . '>'. $key . ':' . $subscore . '</span>, ';
+			echo '<span '. result2style( $key, $ranked && $subscore == $best[$key] ) . '>'. $key . ':' . $subscore . '</span>, ';
 		}
 	}
 	echo '<span class='.( $time == $best['time'] ? 'besttime' : 'time' ).'>TIME:'.seconds2str($time).'</span>';

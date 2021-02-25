@@ -2,34 +2,45 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
 <link rel="stylesheet" type="text/css" href="master.css">
 <?php
 include 'definitions.php';
-include 'Y2020_info.php';
+
+$competition = array_key_exists( 'competition', $_GET ) ? $_GET['competition'] : 'Y2020';
+include $competition.'_info.php';
 $mcats = make_categories($categories);
 
-$refresh = in_array( 'refresh', $argv ) || array_key_exists( 'refresh', $_GET );
-$finalize = in_array( 'finalize', $argv );
+$refresh = array_key_exists( 'refresh', $_GET );
+$finalize = array_key_exists( 'finalize', $_GET );
 
 echo ' <title>'.$title.'</title>'.PHP_EOL;
 ?>
 </head>
 <body>
  <h1><?php echo $title; ?>
- <span id=configToggler class=button></span>
- <span id=scoreToggler class=button></span>
- <span id=columnToggler class=button></span>
+ <span class="headerFollower">
+  <?php echo $note.PHP_EOL; ?>
+  <span id=configToggler class=button></span>
+  <span id=scoreToggler class=button></span>
+  <span id=columnToggler class=button></span>
+ </span>
 </h1>
 <script>
 var configToggler = StyleToggler(
 	document.getElementById("configToggler"), ".config", [
-		{ text: "Hide configs", assign: {display: "inline"} },
 		{ text: "Show configs", assign: {display: "none"} },
+		{ text: "Hide configs", assign: {display: ""} },
 	]
 );
+if( get_args["showconfig"] ) {
+	configToggler.toggle();
+}
 var scoreToggler = StyleToggler(
 	document.getElementById("scoreToggler"), ".score", [
-		{ text: "Hide scores", assign: {display: "inline"} },
+		{ text: "Hide scores", assign: {display: ""} },
 		{ text: "Show scores", assign: {display: "none"} },
 	]
 );
@@ -41,7 +52,6 @@ var columnToggler = StyleToggler(
 );
 </script>
 <?php
-echo $note.PHP_EOL;
 $mcatindex = 0;
 foreach( array_keys($mcats) as $mcatname ) {
 	$total_done = 0;
@@ -64,6 +74,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 	foreach( $cats as $catname => $cat ) {
 		$type = $cat['type'];
 		$jobid = $cat['jobid'];
+		$overlay = array_key_exists( 'overlay', $cat ) ? $cat['overlay'] : false;
 		if( !$jobid ) {// This means the job is not yet started or linked to starexec-master.
 			echo ' <div class=category>'.$catname.PHP_EOL.
 			     '  <div class=ranking>'.PHP_EOL.
@@ -89,6 +100,9 @@ foreach( array_keys($mcats) as $mcatname ) {
 				'competitionname' => $shortname,
 				'refresh' => $refresh,
 			];
+			if( $overlay ) {
+				$jobargs['overlay'] = $overlay;
+			}
 			$query = http_build_query( $jobargs, '', ' ' );
 			system( 'php-cgi -f "'. $type . '.php" '. $query .' > "'. $jobpath . '"');
 			system( 'php-cgi -f "graph.php" '. $query .' > "'. $graphpath . '"');
@@ -100,6 +114,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 		     '   loadURL("'.$graphpath.'", function(xhttp) {'.PHP_EOL.
 		     '    elm.innerHTML = xhttp.responseText;'.PHP_EOL.
 		     '    scoreToggler.apply(elm);'.PHP_EOL.
+		     '    configToggler.apply(elm);'.PHP_EOL.
 		     '   });'.PHP_EOL.
 		     '   loadURL("'.jobid2sumfile($jobid).'", function(xhttp) {'.PHP_EOL.
 		     '    progress'.$mcatindex.'['.$jobid.'] = JSON.parse(xhttp.responseText);'.PHP_EOL.

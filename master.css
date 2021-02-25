@@ -5,8 +5,15 @@ body {
 h1, h1 a {
 	font-weight:normal;
 }
+.headerFollower {
+	font-size: medium;
+	vertical-align: bottom;
+}
 h2 {
 	font-weight:normal;
+}
+tr.ignored {
+	background-color: silver;
 }
 table {
 	width: 100%;
@@ -95,6 +102,17 @@ div.category {
 	color: gray;
 	vertical-align: bottom;
 	font-size: x-small;
+}
+.csv {
+	color: dimgray;
+	vertical-align: bottom;
+	font-size: x-small;
+}
+.csv::before {
+	content: "[";
+}
+.csv::after {
+	content: "]";
 }
 .complete {
 	background-color: #D0FFD0;
