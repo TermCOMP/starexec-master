@@ -15,6 +15,7 @@ $mcats = make_categories($categories);
 
 $refresh = array_key_exists( 'refresh', $_GET );
 $finalize = array_key_exists( 'finalize', $_GET );
+$showconfig = array_key_exists( 'showconfig', $_GET );
 
 echo ' <title>'.$title.'</title>'.PHP_EOL;
 ?>
@@ -31,23 +32,21 @@ echo ' <title>'.$title.'</title>'.PHP_EOL;
 <script>
 var configToggler = StyleToggler(
 	document.getElementById("configToggler"), ".config", [
-		{ text: "Show configs", assign: {display: "none"} },
-		{ text: "Hide configs", assign: {display: ""} },
-	]
+		{ text: "Show configs", assign: { display: "none" } },
+		{ text: "Hide configs", assign: { display: "" } },
+	],
+	<?php echo $showconfig ? '1' : '0'; ?>
 );
-if( get_args["showconfig"] ) {
-	configToggler.toggle();
-}
 var scoreToggler = StyleToggler(
 	document.getElementById("scoreToggler"), ".score", [
-		{ text: "Hide scores", assign: {display: ""} },
-		{ text: "Show scores", assign: {display: "none"} },
+		{ text: "Hide scores", assign: { display: "" } },
+		{ text: "Show scores", assign: { display: "none" } },
 	]
 );
 var columnToggler = StyleToggler(
 	document.getElementById("columnToggler"), "span.category", [
-		{ text: "One column", assign: {display: "inline"} },
-		{ text: "Many column", assign: {display: "block"} },
+		{ text: "One column", assign: { display: "inline" } },
+		{ text: "Many column", assign: { display: "block" } },
 	]
 );
 </script>
@@ -98,6 +97,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 				'mcatname' => $mcatname,
 				'type' => $type,
 				'competitionname' => $shortname,
+				'tpdbver' => $tpdbver,
 				'refresh' => $refresh,
 			];
 			if( $overlay ) {

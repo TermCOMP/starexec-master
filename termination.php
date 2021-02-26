@@ -18,6 +18,7 @@
 	$competitionname = $_GET['competitionname'];
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
+	$tpdbver = $_GET['tpdbver'];
 
 	$benchmarks = [];
 	$participants = [];
@@ -138,8 +139,10 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			} else {
 				echo ' <tr>'.PHP_EOL;
 			}
+			$bm_name = $benchmark['benchmark'];
+			$bm_url = $tpdbver ? bm2url($bm_name,$tpdbver) : bmid2url($benchmark_id);
 			echo '  <td class=benchmark>'.PHP_EOL.
-			     '   <a href="'.bmid2url($benchmark_id).'">'.parse_benchmark( $benchmark['benchmark'] ).'</a>'.PHP_EOL.
+			     '   <a href="'.$bm_url.'">'.format_bm($bm_name).'</a>'.PHP_EOL.
 			     '   <a class=starexecid href="'.bmid2remote($benchmark_id).'">'.$benchmark_id.'</a></td>'.PHP_EOL.
 			     '  <td style="display:none">'.$d['key'];
 			foreach( $bench as $me => $my ) {

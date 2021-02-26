@@ -2,6 +2,7 @@
 $title = 'Termination Competition 2020 (First Run)';
 $shortname = "TermCOMP 2020-1";
 $note = 'The final result is <a href=\"https://termcomp.github.io/Y2020/\">here</a>.';
+$tpdbver = '11.1';
 $categories = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [

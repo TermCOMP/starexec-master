@@ -170,7 +170,7 @@ set_time_limit(300);
 	function status2pending($status) {
 		return $status == 'pending submission';
 	}
-	function parse_benchmark( $string ) {
+	function format_bm( $string ) {
 		preg_match( '|[^/]*/(.*)$|', $string, $matches );
 		$ret = $matches[1];
 		$ret = str_replace( '/', '/<wbr>',$ret );
@@ -183,6 +183,9 @@ set_time_limit(300);
 	}
 	function jobid2url($jobid) {
 		return "https://www.starexec.org/starexec/secure/details/job.jsp?id=$jobid";
+	}
+	function bm2url($bm,$tpdbver) {
+		return "https://termcomp.github.io/tpdb.html?ver=".$tpdbver."&path=".urlencode($bm);
 	}
 	function bmid2url($bmid) {
 		return 'https://www.starexec.org/starexec/services/benchmarks/'. $bmid .'/contents?limit=-1';
@@ -199,13 +202,32 @@ set_time_limit(300);
 	function results2description($results) {
 		$YES = array_key_exists('YES', $results) ? $results['YES'] : 0;
 		$NO = array_key_exists('NO', $results) ? $results['NO'] : 0;
+		if( array_key_exists('UP', $results) ) {
+			$UP = $results['UP'];
+			$nUP = count(array_filter($UP,function($up){return $up < 1000;}));
+			$vUP = count(array_unique($UP));
+		} else {
+			$UP = [1000];
+			$nUP = 0;
+			$vUP = 1;
+		}
+		if( array_key_exists('LOW', $results) ) {
+			$LOW = $results['LOW'];
+			$nLOW = count(array_filter($LOW,function($low){return $low > 0;}));
+			$vLOW = count(array_unique($LOW));
+		} else {
+			$LOW = [0];
+			$nLOW = 0;
+			$vLOW = 1;
+		}
 		$MAYBE = array_key_exists('MAYBE', $results) ? $results['MAYBE'] : 0;
 		$TIMEOUT = array_key_exists('TIMEOUT', $results) ? $results['TIMEOUT'] : 0;
+		$FAILED = $MAYBE + $TIMEOUT;
 		$togo = array_key_exists('togo', $results) && $results['togo'] > 0;
-		$conflicting = $YES > 0 && $NO > 0;
-		$interesting = $YES + $NO > 0 && $MAYBE + $TIMEOUT > 0;
-		$solo = $YES + $NO == 1 && $togo == 0;
-		$unsolved = $YES + $NO == 0;
+		$conflicting = ($YES > 0 && $NO > 0) || min($UP) < max($LOW);
+		$interesting = ($YES + $NO > 0 && $FAILED > 0) || $vUP > 1 || $vLOW > 1;
+		$solo = ($YES == 1 || $NO == 1 || $nUP == 1 || $nLOW == 1) && $togo == 0;
+		$unsolved = $YES == 0 && $NO == 0 && $nUP == 0 && $nLOW == 0;
 		return [
 			'conflicting' => $conflicting,
 			'interesting' => $interesting,

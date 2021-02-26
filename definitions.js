@@ -67,12 +67,12 @@ function FilteredTable(table) {
 	}
 	return ret;
 }
-function StyleToggler(button, select, options) {
+function StyleToggler(button, select, options, index = 0) {
 	var ret = {};
 	ret.button = button;
 	ret.select = select;
 	ret.options = options;
-	ret.index = 0;
+	ret.index = index;
 	ret.apply = function(elm) {
 		var option = ret.options[ret.index];
 		ret.button.innerHTML = option.text;
