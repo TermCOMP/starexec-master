@@ -1,9 +1,12 @@
 #!/bin/bash
 
-mkdir "$1"
-mkdir "$1/fromStarExec"
-cp definitions.js master.css "$1"
+comp=$1
+shift
 
-php-cgi -f index-main.php competition="$1" finalize=1 > "$1/index.html"
-mv graph_*.html job_*.html "$1"
-mv fromStarExec/* "$1/fromStarExec"
+mkdir "$comp"
+mkdir "$comp/fromStarExec"
+cp definitions.js master.css "$comp"
+
+php-cgi -f index-main.php competition="$comp" finalize=1 $* > "$comp/index.html"
+mv graph_*.html job_*.html "$comp"
+mv fromStarExec/* "$comp/fromStarExec"
