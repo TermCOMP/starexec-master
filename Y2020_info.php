@@ -1,7 +1,7 @@
 <?php
 $title = 'Termination Competition 2020';
 $shortname = 'TermComp 2020';
-$note = '(Final Run. First run is <a href=\"https://termcomp.github.io/Y2020-1/\">here</a>)';
+$note = '(Final Run. First run is <a href="https://termcomp.github.io/Y2020-1/">here</a>)';
 $tpdbver = '11.1';
 $categories = [
 	"Termination of Rewriting" => [

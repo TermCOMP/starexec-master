@@ -96,7 +96,7 @@ set_time_limit(300);
 		return "https://www.starexec.org/starexec/secure/details/pair.jsp?id=$pairid";
 	}
 	function pairid2outurl($pairid) {
-		return 'show.php?url=https://www.starexec.org/starexec/services/jobs/pairs/'. $pairid .'/stdout/1?limit=-1';
+		return 'https://www.starexec.org/starexec/services/jobs/pairs/'. $pairid .'/stdout/1?limit=-1';
 	}
 	$result_table = [
 		'YES' => [ 'class' => 'YES', 'score' => 1 ],
