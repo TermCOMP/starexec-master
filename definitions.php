@@ -86,11 +86,8 @@ set_time_limit(300);
 	function jobid2remote($jobid) {
 		return "https://www.starexec.org/starexec/secure/download?type=job&id=$jobid&returnids=true&getcompleted=false";
 	}
-	function jobid2scorefile($jobid) {
-		return "caches/Job" . $jobid . "_score.json";
-	}
 	function jobid2sumfile($jobid) {
-		return "caches/Job" . $jobid . "_sum.json";
+		return "Job" . $jobid . "_sum.json";
 	}
 	function pairid2url($pairid) {
 		return "https://www.starexec.org/starexec/secure/details/pair.jsp?id=$pairid";

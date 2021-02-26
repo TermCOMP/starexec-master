@@ -117,7 +117,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 		     '    configToggler.apply(elm);'.PHP_EOL.
 		     '   });'.PHP_EOL.
 		     '   loadURL("'.jobid2sumfile($jobid).'", function(xhttp) {'.PHP_EOL.
-		     '    progress'.$mcatindex.'['.$jobid.'] = JSON.parse(xhttp.responseText);'.PHP_EOL.
+		     '    progress'.$mcatindex.'['.$jobid.'] = JSON.parse(xhttp.responseText)["all"];'.PHP_EOL.
 		     '    updateProgress'.$mcatindex.'();'.PHP_EOL.
 		     '   });'.PHP_EOL.
 		     '  }'.PHP_EOL.

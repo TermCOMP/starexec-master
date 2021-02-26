@@ -269,8 +269,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			$sum['time'] += $s['time'];
 		}
 	}
-	file_put_contents( jobid2sumfile($jobid), json_encode($sum), LOCK_EX );
-	file_put_contents( jobid2scorefile($jobid), json_encode($participants), LOCK_EX );
+	file_put_contents( jobid2sumfile($jobid), json_encode( ['all' => $sum, 'participants' => $participants] ) );
 ?>
 </table>
 <script>

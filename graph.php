@@ -41,11 +41,11 @@ foreach( $scored_keys as $key ) {
 }
 
 // checking cached score file and making ranking
-$solvers = json_decode(file_get_contents(jobid2scorefile($jobid)),TRUE);
+$sum = json_decode(file_get_contents(jobid2sumfile($jobid)),TRUE);
+$solvers = $sum['participants'];
+$all = $sum['all'];
 uasort($solvers, function($s,$t) { return $s['score'] < $t['score'] ? 1 : -1; } );
 foreach( $solvers as $s ) {
-	$togo += $s['togo'];
-	$conflicts += $s['conflicts'];
 	if( array_key_exists('ranked', $s ) ) {
 		foreach( $scored_keys as $key ) {
 			$best[$key] = max($best[$key], array_key_exists($key,$s) ? $s[$key] : 0);
