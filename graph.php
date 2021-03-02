@@ -12,7 +12,9 @@ include 'definitions.php';
 
 $mcatname = $_GET['mcatname'];
 $catname = $_GET['name'];
-$jobid = $_GET['id'];
+$id = $_GET['id'];
+$ids = explode('_',$id);
+$jobid = $ids[0];
 $type = $_GET['type'];
 
 ?>
@@ -41,7 +43,7 @@ foreach( $scored_keys as $key ) {
 }
 
 // checking cached score file and making ranking
-$sum = json_decode(file_get_contents(jobid2sumfile($jobid)),TRUE);
+$sum = json_decode(file_get_contents(id2sumfile($id)),TRUE);
 $solvers = $sum['participants'];
 $all = $sum['all'];
 uasort($solvers, function($s,$t) { return $s['score'] < $t['score'] ? 1 : -1; } );
@@ -53,7 +55,7 @@ foreach( $solvers as $s ) {
 		$best['time'] = min($best['time'], $s['time']);
 	}
 }
-$jobpath = 'job_'.$jobid.'.html';
+$jobpath = 'job_'.$id.'.html';
 echo ' <div class=category>'.PHP_EOL.
      '  <a href="' . $jobpath . '">' . $catname . '</a>'.PHP_EOL.
      '  <a class=starexecid href="' . jobid2url($jobid) . '">' . $jobid . '</a>'.PHP_EOL;

@@ -86,8 +86,8 @@ set_time_limit(300);
 	function jobid2remote($jobid) {
 		return "https://www.starexec.org/starexec/secure/download?type=job&id=$jobid&returnids=true&getcompleted=false";
 	}
-	function jobid2sumfile($jobid) {
-		return "Job" . $jobid . "_sum.json";
+	function id2sumfile($id) {
+		return "Job" . $id . ".json";
 	}
 	function pairid2url($pairid) {
 		return "https://www.starexec.org/starexec/secure/details/pair.jsp?id=$pairid";
@@ -246,14 +246,14 @@ set_time_limit(300);
 					unset( $cat['certified'] );
 					$certcat = $cat;
 					$certcat['participants'] = array_key_exists('participants',$certinfo) ? $certinfo['participants'] : [];
-					$certcat['jobid'] = array_key_exists('jobid',$certinfo) ? $certinfo['jobid'] : 0;
+					$certcat['id'] = array_key_exists('id',$certinfo) ? $certinfo['id'] : 0;
 					$certcat['certified'] = true;
 					$cats[$cat_name . ' Certified'] = $certcat;
 				}
 			}
 			foreach( $cats as $cat_name => $cat ) {
 				$cnt = array_key_exists('participants',$cat) ? count($cat['participants']) : 0;
-				if( $cnt == 0 && !$cat['jobid'] > 0 ) {
+				if( $cnt == 0 && !$cat['id'] > 0 ) {
 					unset($cats[$cat_name]);// remove unparticipated category
 				} else if( $cnt == 1 ) {
 					$demos[$cat_name] = $cat;

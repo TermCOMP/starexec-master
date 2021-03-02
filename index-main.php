@@ -17,8 +17,8 @@ $refresh = array_key_exists( 'refresh', $_GET );
 $finalize = array_key_exists( 'finalize', $_GET );
 $showconfig = array_key_exists( 'showconfig', $_GET );
 
-echo ' <title>'.$title.'</title>'.PHP_EOL;
 ?>
+ <title><?php echo $title; ?></title>
 </head>
 <body>
  <h1><?php echo $title; ?>
@@ -70,11 +70,14 @@ foreach( array_keys($mcats) as $mcatname ) {
 	     '    "%, CPU Time: " + seconds2str(sum.cpu) + ", Node Time: "+ seconds2str(sum.time);'.PHP_EOL.
 	     '  }'.PHP_EOL.
 	      '</script>'.PHP_EOL;
+	$catindex = 0;
 	foreach( $cats as $catname => $cat ) {
 		$type = $cat['type'];
-		$jobid = $cat['jobid'];
-		$overlay = array_key_exists( 'overlay', $cat ) ? $cat['overlay'] : false;
-		if( !$jobid ) {// This means the job is not yet started or linked to starexec-master.
+		$id = $cat['id'];
+		$jobids = explode('-',$id);
+		$jobid = $jobids[0];
+		$overlay = array_key_exists( 1, $jobids ) ? $jobids[1] : false;
+		if( !$id ) {// This means the job is not yet started or linked to starexec-master.
 			echo ' <div class=category>'.$catname.PHP_EOL.
 			     '  <div class=ranking>'.PHP_EOL.
 			     '   <ul>'.PHP_EOL;
@@ -88,11 +91,11 @@ foreach( array_keys($mcats) as $mcatname ) {
 			continue;
 		}
 		// creating job html
-		$jobpath = 'job_'.$jobid.'.html';
-		$graphpath = 'graph_'.$jobid.'.html';
+		$jobpath = 'job_'.$id.'.html';
+		$graphpath = 'graph_'.$id.'.html';
 		if( $refresh || $finalize ) {
 			$jobargs = [
-				'id' => $jobid,
+				'id' => $id,
 				'name' => $catname,
 				'mcatname' => $mcatname,
 				'type' => $type,
@@ -100,30 +103,28 @@ foreach( array_keys($mcats) as $mcatname ) {
 				'tpdbver' => $tpdbver,
 				'refresh' => $refresh,
 			];
-			if( $overlay ) {
-				$jobargs['overlay'] = $overlay;
-			}
 			$query = http_build_query( $jobargs, '', ' ' );
 			system( 'php-cgi -f "'. $type . '.php" '. $query .' > "'. $jobpath . '"');
 			system( 'php-cgi -f "graph.php" '. $query .' > "'. $graphpath . '"');
 		}
-		echo ' <span id='.$jobid.' class=category></span>'.PHP_EOL;
+		echo ' <span id="'.$id.'" class=category></span>'.PHP_EOL;
 		echo ' <script>'.PHP_EOL.
-		     '  function load'.$jobid.'() {'.PHP_EOL.
-		     '   var elm = document.getElementById("'.$jobid.'");'.PHP_EOL.
+		     '  function load'.$id.'() {'.PHP_EOL.
+		     '   var elm = document.getElementById("'.$id.'");'.PHP_EOL.
 		     '   loadURL("'.$graphpath.'", function(xhttp) {'.PHP_EOL.
 		     '    elm.innerHTML = xhttp.responseText;'.PHP_EOL.
 		     '    scoreToggler.apply(elm);'.PHP_EOL.
 		     '    configToggler.apply(elm);'.PHP_EOL.
 		     '   });'.PHP_EOL.
-		     '   loadURL("'.jobid2sumfile($jobid).'", function(xhttp) {'.PHP_EOL.
-		     '    progress'.$mcatindex.'['.$jobid.'] = JSON.parse(xhttp.responseText)["all"];'.PHP_EOL.
+		     '   loadURL("'.id2sumfile($id).'", function(xhttp) {'.PHP_EOL.
+		     '    progress'.$mcatindex.'['.$catindex.'] = JSON.parse(xhttp.responseText)["all"];'.PHP_EOL.
 		     '    updateProgress'.$mcatindex.'();'.PHP_EOL.
 		     '   });'.PHP_EOL.
 		     '  }'.PHP_EOL.
-		     '  load'.$jobid.'();'.PHP_EOL.
-		     '  setInterval(load'.$jobid.', 10000);'.PHP_EOL.
+		     '  load'.$id.'();'.PHP_EOL.
+		     '  setInterval(load'.$id.', 10000);'.PHP_EOL.
 		     ' </script>'.PHP_EOL;
+		$catindex++;
 	}
 	$mcatindex++;
 }

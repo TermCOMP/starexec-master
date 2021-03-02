@@ -9,12 +9,14 @@
 	error_reporting( E_ALL ^ E_NOTICE ); 
 	include './definitions.php';
 	
-	$jobid = array_key_exists('id', $_GET) ? $_GET['id'] : false;
-	$overlay = array_key_exists('overlay', $_GET) ? $_GET['overlay'] : false;
-	if( !$jobid && !$overlay ) {
+	if( !array_key_exists('id', $_GET) ) {
 		echo '</head>';
 		exit('no job to present');
 	}
+	$id = $_GET['id'];
+	$jobids = explode( '_', $id );
+	$jobid = $jobids[0];
+	$overlay = array_key_exists(1,$jobids) ? $jobids[1] : false;
 	$competitionname = $_GET['competitionname'];
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
@@ -22,11 +24,9 @@
 
 	$benchmarks = [];
 	$participants = [];
-	if( $jobid ) {
-		$csv = jobid2csv($jobid);
-		cachezip(jobid2remote($jobid),$csv,$refresh);
-		parse_results($csv,$benchmarks,$participants);
-	}
+	$csv = jobid2csv($jobid);
+	cachezip(jobid2remote($jobid),$csv,$refresh);
+	parse_results($csv,$benchmarks,$participants);
 	foreach( $participants as &$participant ) {
 		$participant['ranked'] = true;
 	}
@@ -188,8 +188,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			$sum['time'] += $s['time'];
 		}
 	}
-
-	file_put_contents( jobid2sumfile($jobid), json_encode( ['all' => $sum, 'participants' => $participants] ) );
+	file_put_contents( id2sumfile($id), json_encode( ['all' => $sum, 'participants' => $participants] ) );
 ?>
 </table>
 <script>
