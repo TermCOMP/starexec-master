@@ -1,11 +1,11 @@
 <?php
 $title = 'Termination Competition 2021 (First Run)';
-$shortname = 'TermComp 2021-1';
+$shortname = 'TermCOMP 2021-1';
 $raw_mcats = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [
 			'type' => 'termination',
-			'jobid' => null,
+			'id' => null,
 			'spaceid' => 426103,
 			'participants' => [
 				"NTI" => 360349,
@@ -15,7 +15,7 @@ $raw_mcats = [
 				"MuTerm" => 326595,
 			],
 			'certified' => [
-			'jobid' => null,
+			'id' => null,
 				'participants' => [
 					"TTT2" => 360056,
 					"AProVE" => 360177,
@@ -25,7 +25,7 @@ $raw_mcats = [
 		],
 		'SRS Standard' => [
 			'type' => 'termination',
-			'jobid' => null,
+			'id' => null,
 			'spaceid' => 426158,
 			'participants' => [
 				"MuTerm" => 326595,
@@ -36,7 +36,7 @@ $raw_mcats = [
 				"MnM" => 360442,
 			],
 			'certified' => [
-				'jobid' => null,
+				'id' => null,
 				'participants' => [
 					"TTT2" => 360056,
 					"AProVE" => 360177,
@@ -46,7 +46,7 @@ $raw_mcats = [
 		],
 		'TRS Relative' => [
 			'type' => 'termination',
-			'jobid' => null,
+			'id' => null,
 			'spaceid' => 426233,
 			'participants' => [
 				"NaTT" => 350520,
@@ -54,7 +54,7 @@ $raw_mcats = [
 				"AProVE" => 360174,
 			],
 			'certified' => [
-				'jobid' => null,
+				'id' => null,
 				'participants' => [
 					"TTT2" => 360056,
 					"AProVE" => 360177,
@@ -63,7 +63,7 @@ $raw_mcats = [
 		],
 		'SRS Relative' => [
 			'type' => 'termination',
-			'jobid' => null,
+			'id' => null,
 			'spaceid' => 426149,
 			'participants' => [
 				"NaTT" => 350520,
@@ -73,7 +73,7 @@ $raw_mcats = [
 				"MnM" => 360442,
 			],
 			'certified' => [
-				'jobid' => null,
+				'id' => null,
 				'participants' => [
 					"TTT2" => 360056,
 					"AProVE" => 360177,
@@ -82,7 +82,7 @@ $raw_mcats = [
 		],
 		'TRS Equational' => [
 			'type' => 'termination',
-			'jobid' => null,
+			'id' => null,
 			'spaceid' => 426058,
 			'participants' => [
 				"MuTerm" => 163986,
@@ -90,7 +90,7 @@ $raw_mcats = [
 				"AProVE" => 360174,
 			],
 			'certified' => [
-				'jobid' => null,
+				'id' => null,
 				'participants' => [
 					"AProVE" => 360177,
 					"NaTT" => 360199,
@@ -99,7 +99,7 @@ $raw_mcats = [
 		],
 		'TRS Conditional' => [
 			'type' => 'termination',
-			'jobid' => null,
+			'id' => null,
 			'spaceid' => 426154,
 			'participants' => [
 				"MuTerm" => 326595,
@@ -112,7 +112,7 @@ $raw_mcats = [
 		],
 		'TRS Context Sensitive' => [
 			'type' => 'termination',
-			'jobid' => null,
+			'id' => null,
 			'spaceid' => 426022,
 			'participants' => [
 				"MuTerm" => 163986,
@@ -125,7 +125,7 @@ $raw_mcats = [
 		],
 		'TRS Innermost' => [
 			'type' => 'termination',
-			'jobid' => null,
+			'id' => null,
 			'spaceid' => 425946,
 			'participants' => [
 				"MuTerm" => 326595,
@@ -138,7 +138,7 @@ $raw_mcats = [
 		],
 		'HRS (union beta)' => [
 			'type' => 'termination',
-			'jobid' => null,
+			'id' => null,
 			'spaceid' => 426140,
 			'participants' => [
 				"SizeChangeTool" => 325830,
@@ -153,7 +153,7 @@ $raw_mcats = [
 	"Termination of Programs" => [
 		'C' => [
 			'type' => 'termination',
-			'jobid' => null,
+			'id' => null,
 			'spaceid' => 426173,
 			'participants' => [
 				"AProVE" => 360173,
@@ -166,7 +166,7 @@ $raw_mcats = [
 		],
 		'C Integer' => [
 			'type' => 'termination',
-			'jobid' => null,
+			'id' => null,
 			'spaceid' => 426063,
 			'participants' => [
 				"Ultimate" => 360394,
@@ -180,7 +180,7 @@ $raw_mcats = [
 		],
 		'Integer Transition Systems' => [
 			'type' => 'termination',
-			'jobid' => null,
+			'id' => null,
 			'spaceid' => 425924,
 			'participants' => [
 				"Ctrl" => 23757,
@@ -194,7 +194,7 @@ $raw_mcats = [
 		],
 		'Integer TRS Innermost' => [
 			'type' => 'termination',
-			'jobid' => null,
+			'id' => null,
 			'spaceid' => 425939,
 			'participants' => [
 				"Ctrl" => 23758,
@@ -208,7 +208,7 @@ $raw_mcats = [
 		'Haskell' => [
 			'spaceid' => 425990,
 			'type' => 'termination',
-			'jobid' => null,
+			'id' => null,
 			'participants' => [
 				"AProVE" => 360174,
 			],
@@ -220,7 +220,7 @@ $raw_mcats = [
 		'Java_Bytecode' => [
 			'spaceid' => 425927,
 			'type' => 'termination',
-			'jobid' => null,
+			'id' => null,
 			'participants' => [
 				"AProVE" => 360174,
 			],
@@ -232,7 +232,7 @@ $raw_mcats = [
 		'Java_Bytecode_Recursive' => [
 			'spaceid' => 426004,
 			'type' => 'termination',
-			'jobid' => false,
+			'id' => false,
 			'participants' => [
 			],
 			'certified' => [
@@ -242,7 +242,7 @@ $raw_mcats = [
 		],
 		'Logic Programming' => [
 			'type' => 'termination',
-			'jobid' => null,
+			'id' => null,
 			'spaceid' => 425993,
 			'participants' => [
 				"NTI" => 360349,
@@ -256,7 +256,7 @@ $raw_mcats = [
 		'Logic_Programming_with_Cut' => [
 			'spaceid' => 425941,
 			'type' => 'termination',
-			'jobid' => false,
+			'id' => false,
 			'participants' => [
 			],
 			'certified' => [
@@ -267,7 +267,7 @@ $raw_mcats = [
 		'Prolog' => [
 			'spaceid' => 425912,
 			'type' => 'termination',
-			'jobid' => false,
+			'id' => false,
 			'participants' => [
 			],
 			'certified' => [
@@ -280,7 +280,7 @@ $raw_mcats = [
 		'Complexity: C_Integer' => [
 			'spaceid' => 426011,
 			'type' => 'complexity',
-			'jobid' => null,
+			'id' => null,
 			'participants' => [
 				"AProVE" => 360180
 			],
@@ -292,12 +292,12 @@ $raw_mcats = [
 		'Complexity: ITS' => [
 			'spaceid' => 426066,
 			'type' => 'complexity',
-			'jobid' => null,
+			'id' => null,
 			'participants' => [
 				"AProVE" => 360179
 			],
 			'certified' => [
-				'jobid' => false,
+				'id' => false,
 				'participants' => [
 				],
 			],
@@ -305,13 +305,13 @@ $raw_mcats = [
 		'Derivational_Complexity: TRS' => [
 			'spaceid' => 425952,
 			'type' => 'complexity',
-			'jobid' => null,
+			'id' => null,
 			'participants' => [
 				"TcT" => 360388,
 				"AProVE" => 360175,
 			],
 			'certified' => [
-				'jobid' => null,
+				'id' => null,
 				'participants' => [
 					"TcT" => 360387,
 				],
@@ -320,13 +320,13 @@ $raw_mcats = [
 		'Derivational_Complexity: TRS Innermost' => [
 			'spaceid' => 425864,
 			'type' => 'complexity',
-			'jobid' => null,
+			'id' => null,
 			'participants' => [
 				"TcT" => 360385,
 				"AProVE" => 360175,
 			],
 			'certified' => [
-				'jobid' => null,
+				'id' => null,
 				'participants' => [
 					"TcT" => 360391,
 				],
@@ -335,13 +335,13 @@ $raw_mcats = [
 		'Runtime_Complexity: TRS' => [
 			'spaceid' => 426182,
 			'type' => 'complexity',
-			'jobid' => null,
+			'id' => null,
 			'participants' => [
 				"TcT" => 360390,
 				"AProVE" => 360179,
 			],
 			'certified' => [
-				'jobid' => null,
+				'id' => null,
 				'participants' => [
 					"TcT" => 360389,
 				],
@@ -350,13 +350,13 @@ $raw_mcats = [
 		'Runtime_Complexity: TRS Innermost' => [
 			'spaceid' => 426027,
 			'type' => 'complexity',
-			'jobid' => null,
+			'id' => null,
 			'participants' => [
 				"TcT" => 360386,
 				"AProVE" => 360179,
 			],
 			'certified' => [
-				'jobid' => null,
+				'id' => null,
 				'participants' => [
 					"TcT" => 360384,
 					"AProVE" => 360177,
