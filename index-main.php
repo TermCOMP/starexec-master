@@ -15,7 +15,6 @@ $mcats = make_categories($categories);
 
 $refresh = array_key_exists( 'refresh', $_GET );
 $finalize = array_key_exists( 'finalize', $_GET );
-$showconfig = array_key_exists( 'showconfig', $_GET );
 
 ?>
  <title><?php echo $title; ?></title>
@@ -74,7 +73,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 	foreach( $cats as $catname => $cat ) {
 		$type = $cat['type'];
 		$id = $cat['id'];
-		$jobids = explode('-',$id);
+		$jobids = explode('_',$id);
 		$jobid = $jobids[0];
 		$overlay = array_key_exists( 1, $jobids ) ? $jobids[1] : false;
 		if( !$id ) {// This means the job is not yet started or linked to starexec-master.

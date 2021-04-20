@@ -27,14 +27,15 @@
 	$csv = jobid2csv($jobid);
 	cachezip(jobid2remote($jobid),$csv,$refresh);
 	parse_results($csv,$benchmarks,$participants);
-	foreach( $participants as &$participant ) {
-		$participant['ranked'] = true;
+	foreach( $participants as &$p ) {
+		$p['ranked'] = true;
 	}
 	if( $overlay ) {
 		$overcsv = jobid2csv($overlay);
 		cachezip(jobid2remote($overlay),$overcsv,$refresh);
 		parse_results($overcsv,$benchmarks,$participants);
 	}
+var_dump($participants);
 
 	echo ' <title>' . $competitionname . ': ' . $jobname . '</title>'.PHP_EOL.
 	     '</head>'.PHP_EOL.
@@ -65,9 +66,9 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
    <script>filteredTable.register(1,"resultsFilter");</script>
 <?php
 	$i = 2;
-	foreach( $participants as $configid => &$participant ) {
-		echo '  <th><a href="'. solverid2url($participant['solver id']) . '">'.$participant['solver'].'</a>'.PHP_EOL.
-		     '   <a class=config href="'. configid2url($configid) .'">'. $participant['configuration'].'</a>'.PHP_EOL.
+	foreach( $participants as $configid => &$p ) {
+		echo '  <th><a href="'. solverid2url($p['solver id']) . '">'.$p['solver'].'</a>'.PHP_EOL.
+		     '   <a class=config href="'. configid2url($configid) .'">'. $p['configuration'].'</a>'.PHP_EOL.
 		     '   <select id="filter'.$i.'" oninput="filteredTable.refresh()">'.PHP_EOL.
 		     '    <option value="">--</option>'.PHP_EOL.
 		     '    <option value="YES">YES</option>'.PHP_EOL.
@@ -86,30 +87,30 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		$resultcounter = []; /* collects results for each benchmark */
 		$show = false;
 		foreach( $benchmark['participants'] as $configid => $record ) {
-			$participant =& $participants[$configid];
+			$p =& $participants[$configid];
 			$status = $record['status'];
 			$show = $show || !status2pending($status);
 			if( status2finished($status) ) {
 				$cpu = parse_time($record['cpu time']);
 				$time = parse_time($record['wallclock time']);
-				$participant['done'] += 1;
-				$participant['cpu'] += $cpu;
-				$participant['time'] += $time;
+				$p['done'] += 1;
+				$p['cpu'] += $cpu;
+				$p['time'] += $time;
 				$result = status2timeout($status) ? "TIMEOUT" : $record['result'];
 				$score = result2score($result);
 				$cert = $record['certification result'];
 				$certtime = $record['certification time'];
-				$participant[$result] += 1;
+				$p[$result] += 1;
 				if( $score > 0 ) {
-					$participant['score'] += $score;
+					$p['score'] += $score;
 				} else {
-					$participant['unscored'] += 1;
+					$p['unscored'] += 1;
 				}
-				$participant['certtime'] += $certtime;
+				$p['certtime'] += $certtime;
 				$resultcounter[$result] += 1;
 			} else {
-				$participant['togo'] += 1;
-				$participant['scorestogo'] += 1;
+				$p['togo'] += 1;
+				$p['scorestogo'] += 1;
 				$resultcounter['togo'] += 1;
 			}
 			$bench[$configid] = [
@@ -176,16 +177,16 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		'cpu' => 0,
 		'time' => 0,
 	];
-	foreach( $participants as &$s ) {
-		$s['cpu'] = (int)$s['cpu'];// eliminate round errors
-		$s['time'] = (int)$s['time'];// eliminate round errors
-		echo '  <th>'.$s['score'];
-		if( array_key_exists('ranked',$s) ) {
-			$sum['done'] += $s['done'];
-			$sum['togo'] += $s['togo'];
-			$sum['scorestogo'] += $s['scorestogo'];
-			$sum['cpu'] += $s['cpu'];
-			$sum['time'] += $s['time'];
+	foreach( $participants as &$p ) {
+		$p['cpu'] = (int)$p['cpu'];// eliminate round errors
+		$p['time'] = (int)$p['time'];// eliminate round errors
+		echo '  <th>'.$p['score'];
+		if( array_key_exists('ranked',$p) ) {
+			$sum['done'] += $p['done'];
+			$sum['togo'] += $p['togo'];
+			$sum['scorestogo'] += $p['scorestogo'];
+			$sum['cpu'] += $p['cpu'];
+			$sum['time'] += $p['time'];
 		}
 	}
 	file_put_contents( id2sumfile($id), json_encode( ['all' => $sum, 'participants' => $participants] ) );

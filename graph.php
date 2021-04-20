@@ -57,8 +57,10 @@ foreach( $solvers as $s ) {
 }
 $jobpath = 'job_'.$id.'.html';
 echo ' <div class=category>'.PHP_EOL.
-     '  <a href="' . $jobpath . '">' . $catname . '</a>'.PHP_EOL.
-     '  <a class=starexecid href="' . jobid2url($jobid) . '">' . $jobid . '</a>'.PHP_EOL;
+     '  <a href="' . $jobpath . '">' . $catname . '</a>'.PHP_EOL;
+foreach( $ids as $i ) {
+	echo '  <a class=starexecid href="' . jobid2url($i) . '">' . $i . '</a>'.PHP_EOL;
+}
 if( $conflicts > 0 ) {
 	echo '<a class=conflict href="' . $jobpath . '#conflict">conflict</a>'.PHP_EOL;
 } 
