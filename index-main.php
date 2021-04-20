@@ -92,20 +92,18 @@ foreach( array_keys($mcats) as $mcatname ) {
 		// creating job html
 		$jobpath = 'job_'.$id.'.html';
 		$graphpath = 'graph_'.$id.'.html';
-		if( $refresh || $finalize ) {
-			$jobargs = [
-				'id' => $id,
-				'name' => $catname,
-				'mcatname' => $mcatname,
-				'type' => $type,
-				'competitionname' => $shortname,
-				'tpdbver' => $tpdbver,
-				'refresh' => $refresh,
-			];
-			$query = http_build_query( $jobargs, '', ' ' );
-			system( 'php-cgi -f "'. $type . '.php" '. $query .' > "'. $jobpath . '"');
-			system( 'php-cgi -f "graph.php" '. $query .' > "'. $graphpath . '"');
-		}
+		$jobargs = [
+			'id' => $id,
+			'name' => $catname,
+			'mcatname' => $mcatname,
+			'type' => $type,
+			'competitionname' => $shortname,
+			'tpdbver' => $tpdbver,
+			'refresh' => $refresh,
+		];
+		$query = http_build_query( $jobargs, '', ' ' );
+		system( 'php-cgi -f "'. $type . '.php" '. $query .' > "'. $jobpath . '"');
+		system( 'php-cgi -f "graph.php" '. $query .' > "'. $graphpath . '"');
 		echo ' <span id="'.$id.'" class=category></span>'.PHP_EOL;
 		echo ' <script>'.PHP_EOL.
 		     '  function load'.$id.'() {'.PHP_EOL.

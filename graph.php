@@ -98,7 +98,7 @@ foreach( $solvers as $configid => $s ) {
 	     '      <tr style="height:1ex">'.PHP_EOL;
 	foreach( $scored_keys as $key ) {
 		if( array_key_exists($key,$s) && $s[$key] > 0 ) {
-			echo '       <td ' . result2style($key) . ' style="width:'. (100 * $s[$key] / $total) . '%">'.PHP_EOL;
+			echo '       <td class="' . result2class($key) . '" style="width:'. (100 * $s[$key] / $total) . '%">'.PHP_EOL;
 		}
 	}
 	if( $scorestogo > 0 ) {
@@ -110,7 +110,7 @@ foreach( $solvers as $configid => $s ) {
 	echo '     </table>'.PHP_EOL;
 	// Textual display
 	echo '     <td>'.PHP_EOL.
-	     '      <span class='.( $ranked && $rank == 1 ? 'best' : '' ). 'solver>'.PHP_EOL.
+	     '      <span class="'.( $ranked && $rank == 1 ? 'best ' : '' ). 'solver">'.PHP_EOL.
 	     '       '.($ranked ? $rank : '-').'. <a href="'. $url . '">'. $name . '</a>'.PHP_EOL.
 	     '       <a class=config href="' . configid2url($configid) . '">'. $config . '</a>'.PHP_EOL.
 	     '      </span>'. PHP_EOL.
@@ -118,10 +118,14 @@ foreach( $solvers as $configid => $s ) {
 	foreach( $scored_keys as $key ) {
 		if( array_key_exists( $key, $s ) ) {
 			$subscore = $s[$key];
-			echo '<span '. result2style( $key, $ranked && $subscore == $best[$key] ) . '>'. $key . ':' . $subscore . '</span>, ';
+			echo '<span class="';
+			if( $ranked && $subscore == $best[$key] ) {
+				echo 'best ';
+			}
+			echo result2class($key) . '">'. $key . ':' . $subscore . '</span>, ';
 		}
 	}
-	echo '<span class='.( $time == $best['time'] ? 'besttime' : 'time' ).'>TIME:'.seconds2str($time).'</span>';
+	echo '<span class="'.( $time == $best['time'] ? 'best ' : '' ).'time">TIME:'.seconds2str($time).'</span>';
 	if( $certtime != 0 ) {
 		echo ', <span class=time>Certification:'.seconds2str($certtime).'</span>';
 	}

@@ -65,7 +65,7 @@ div.category {
 	margin-left: 13pt;
 	padding: 0pt;
 }
-.bestsolver, .bestsolver a {
+.best.solver, .best.solver a {
 	color: black;
 	font-weight: bold;
 }
@@ -128,24 +128,24 @@ div.category {
 	background-color: darksalmon;
 	color: black;
 }
-.YES, .YES a, .CERTIFIEDYES, .CERTIFIEDYES a {
+.YES, .YES a {
 	background-color: mediumspringgreen;
 	color: black;
 }
-.score .YES, .score .CERTIFIEDYES {
+.score .YES {
 	background: none;
 	color: black;
 }
-.bestYES, .bestCERTIFIEDYES {
+.best.YES {
 	background-color: mediumspringgreen;
 	color: black;
 	font-weight: bold;
 }
-.NO, .NO a, .bestNO,  .CERTIFIEDNO, .CERTIFIEDNO a, .bestCERTIFIEDNO {
+.NO, .NO a, .score .best.NO {
 	background-color: green;
 	color: white;
 }
-.score .NO, .score .CERTIFIEDNO {
+.score .NO {
 	background: none;
 	color: darkgreen;
 }
@@ -181,7 +181,7 @@ div.category {
 	background-color: #208020;
 	color: white;
 }
-.bestLOW {
+.best.LOW {
 	background-color: #60A060;
 	color: white;
 }
@@ -209,7 +209,7 @@ div.category {
 	background-color: #C0F0C0;
 	color: black;
 }
-.bestUP {
+.best.UP {
 	background-color: #00FFF0;
 	color: black;
 	font-weight: bold;
@@ -224,11 +224,11 @@ td.time, th.time {
 .time, .time a {
 	color: gray;
 }
-.besttime {
+.best.time {
 	background-color: gray;
 	color: white;
 }
-td.NO span.time, td.CERTIFIEDNO span.time, td.unsupported span.time {
+td.NO span.time, td.unsupported span.time {
 	color: lightgray;
 }	
 .conflict, .conflict .benchmark {

@@ -98,8 +98,8 @@ set_time_limit(300);
 	$result_table = [
 		'YES' => [ 'class' => 'YES', 'score' => 1 ],
 		'NO' => [ 'class' => 'NO', 'score' => 1 ],
-		'CERTIFIED YES' => [ 'class' => 'CERTIFIEDYES', 'score' => 1 ],
-		'CERTIFIED NO' => [ 'class' => 'CERTIFIEDNO', 'score' => 1 ],
+		'CERTIFIED YES' => [ 'class' => 'YES', 'score' => 1 ],
+		'CERTIFIED NO' => [ 'class' => 'NO', 'score' => 1 ],
 		'REJECTED YES' => [ 'class' => 'error', 'score' => 0 ],
 		'REJECTED NO' => [ 'class' => 'error', 'score' => 0 ],
 		'UNSUPPORTED YES' => ['class' => 'unsupported', 'score' => 0 ],
@@ -125,13 +125,9 @@ set_time_limit(300);
 			return 'ERROR';
 		}
 	}
-	function result2style( $result, $best = false ) {
+	function result2class( $result ) {
 		global $result_table;
-		if( array_key_exists( $result, $result_table ) ) {
-			return 'class=' . ($best ? 'best' : '') . $result_table[$result]['class'];
-		} else {
-			return 'class=error';
-		}
+		return array_key_exists( $result, $result_table ) ? $result_table[$result]['class'] : 'error';
 	}
 	function status2style($status) {
 		if( $status == 'complete' ) {

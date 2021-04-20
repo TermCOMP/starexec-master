@@ -153,7 +153,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				$url = pairid2url($my['pair']);
 				$outurl = pairid2outurl($my['pair']);
 				if( status2complete($status) ) {
-					echo '  <td ' . result2style($result) . '>'.PHP_EOL.
+					echo '  <td class="' . result2class($result) . '">'.PHP_EOL.
 					     '   <a href="'. $outurl .'">' . result2str($result) . '</a>'.PHP_EOL.
 					     '   <a href="'. $url .'">'.PHP_EOL.
 					     '    <span class=time>' . $my['cpu'] . '/' . $my['time'] . '</span>'.PHP_EOL;
