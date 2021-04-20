@@ -35,7 +35,6 @@
 		cachezip(jobid2remote($overlay),$overcsv,$refresh);
 		parse_results($overcsv,$benchmarks,$participants);
 	}
-var_dump($participants);
 
 	echo ' <title>' . $competitionname . ': ' . $jobname . '</title>'.PHP_EOL.
 	     '</head>'.PHP_EOL.
