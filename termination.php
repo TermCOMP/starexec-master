@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
- <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
- <meta http-equiv="Cache-Control" content="no-cache">
- <link rel="stylesheet" type="text/css" href="master.css">
+ <meta charset="utf-8">
+ <meta http-equiv="Cache-Control" content="no-cache, no-store">
+ <link rel="stylesheet" href="master.css">
 
 <?php
 	error_reporting( E_ALL ^ E_NOTICE ); 
@@ -15,8 +15,13 @@
 	}
 	$id = $_GET['id'];
 	$jobids = explode( '_', $id );
-	$jobid = $jobids[0];
-	$overlay = array_key_exists(1,$jobids) ? $jobids[1] : false;
+	$jobidc = count($jobids);
+	if( $jobidc > 1 ) {
+		$jobidc--;
+		$overlay = $jobids[$jobidc];
+	} else {
+		$overlay = false;
+	}
 	$competitionname = $_GET['competitionname'];
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
@@ -24,9 +29,11 @@
 
 	$benchmarks = [];
 	$participants = [];
-	$csv = jobid2csv($jobid);
-	cachezip(jobid2remote($jobid),$csv,$refresh);
-	parse_results($csv,$benchmarks,$participants);
+	for( $i = 0; $i < $jobidc; $i++ ) {
+		$csv = jobid2csv($jobids[$i]);
+		cachezip(jobid2remote($jobids[$i]),$csv,$refresh);
+		parse_results($csv,$benchmarks,$participants);
+	}
 	foreach( $participants as &$p ) {
 		$p['ranked'] = true;
 	}
@@ -36,12 +43,14 @@
 		parse_results($overcsv,$benchmarks,$participants);
 	}
 
-	echo ' <title>' . $competitionname . ': ' . $jobname . '</title>'.PHP_EOL.
+	echo ' <title>'. $competitionname .': '. $jobname .'</title>'.PHP_EOL.
 	     '</head>'.PHP_EOL.
 	     '<body>'.PHP_EOL.
-	     '<h1><a href=".">' . $competitionname . '</a>: ' . $jobname .PHP_EOL.
-	     ' <a class=starexecid href="' . jobid2url($jobid) . '">'. $jobid . '</a>'.PHP_EOL.
-	     ' <a class=csv href="'. $csv . '">Job info CSV</a>'.PHP_EOL;
+	     '<h1><a href=".">'. $competitionname .'</a>: '. $jobname .PHP_EOL;
+	for( $i = 0; $i < $jobidc; $i++ ) {
+		echo ' <a class=starexecid href="'. jobid2url($jobids[$i]) .'">'. $jobids[$i] .'</a>'.PHP_EOL.
+		     ' <a class=csv href="'. jobid2csv($jobids[$i]) .'">Job info CSV</a>'.PHP_EOL;
+	}
 ?>
  <span class="headerFollower">Showing
   <select id="resultsFilter" type="text" placeholder="Filter..." oninput="filteredTable.refresh()">

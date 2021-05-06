@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="Expires" content="0" />
+<meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <link rel="stylesheet" type="text/css" href="master.css">
 <?php
 include 'definitions.php';
@@ -102,10 +102,14 @@ foreach( array_keys($mcats) as $mcatname ) {
 			'refresh' => $refresh,
 		];
 		$query = http_build_query( $jobargs, '', ' ' );
-		system( 'php-cgi -f "'. $type . '.php" '. $query .' > "'. $jobpath . '"');
-		system( 'php-cgi -f "graph.php" '. $query .' > "'. $graphpath . '"');
-		echo ' <span id="'.$id.'" class=category></span>'.PHP_EOL;
-		echo ' <script>'.PHP_EOL.
+		$tmp = tempnam('','');
+		system( 'php-cgi -f "'. $type . '.php" '. $query .' > "'. $tmp . '"');
+		rename($tmp,$jobpath);
+		$tmp = tempnam('','');
+		system( 'php-cgi -f "graph.php" '. $query .' > "'. $tmp . '"');
+		rename($tmp,$graphpath);
+		echo ' <span id="'.$id.'" class=category></span>'.PHP_EOL.
+		     ' <script>'.PHP_EOL.
 		     '  function load'.$id.'() {'.PHP_EOL.
 		     '   var elm = document.getElementById("'.$id.'");'.PHP_EOL.
 		     '   loadURL("'.$graphpath.'", function(xhttp) {'.PHP_EOL.

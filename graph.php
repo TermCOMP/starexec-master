@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="max-age=5, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
 <link rel="stylesheet" type="text/css" href="master.css">
@@ -82,6 +82,7 @@ foreach( $solvers as $configid => $s ) {
 	$certtime = $s['certtime'];
 	$conflicts = $s['conflicts'];
 	$ranked = array_key_exists('ranked', $s);
+	$timeout = $s['TIMEOUT'];
 	$url = solverid2url($id);
 	if( $ranked ) {
 		$count += 1;
@@ -122,16 +123,16 @@ foreach( $solvers as $configid => $s ) {
 			if( $ranked && $subscore == $best[$key] ) {
 				echo 'best ';
 			}
-			echo result2class($key) . '">'. $key . ':' . $subscore . '</span>, ';
+			echo result2class($key) . '">'. $key . ':' . $subscore . '</span>,'.PHP_EOL;
 		}
 	}
-	echo '<span class="'.( $time == $best['time'] ? 'best ' : '' ).'time">TIME:'.seconds2str($time).'</span>';
+	echo '<span class="'.( $time == $best['time'] ? 'best ' : '' ).'time">TIME:'.seconds2str($time).'</span>,'.PHP_EOL.
+	     '<span class="time">OUT: '.$timeout.'</span>';
 	if( $certtime != 0 ) {
-		echo ', <span class=time>Certification:'.seconds2str($certtime).'</span>';
+		echo ','.PHP_EOL.'<span class=time>Certification:'.seconds2str($certtime).'</span>';
 	}
 	if( $togo > 0 ) {
-		echo ','.PHP_EOL.
-		     '   <span class=togo>TOGO:' . $togo . '</span>';
+		echo ','.PHP_EOL.'<span class=togo>TOGO:' . $togo . '</span>';
 	}
 	echo '</span>'.PHP_EOL;
 	$cat_cpu += $cpu;

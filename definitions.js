@@ -24,14 +24,18 @@ function seconds2str(s) {
 	return (d>0? d + 'd ' : '') + h + ':' + String(m).padStart(2,0) + ':' + String(s).padStart(2,0);
 }
 function loadURL(url,handle) {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      handle(this);
-    }
-  };
-  xhttp.open("GET", url);
-  xhttp.send();
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			handle(this);
+		}
+	};
+	xhttp.open("GET", url);
+	xhttp.setRequestHeader("Cache-Control", "no-cache, no-store, max-age=0");
+	// fallbacks for IE and older browsers:
+	xhttp.setRequestHeader("Expires", "Tue, 01 Jan 1980 1:00:00 GMT");
+	xhttp.setRequestHeader("Pragma", "no-cache");
+	xhttp.send();
 }
 function FilteredTable(table) {
 	var ret = {};
