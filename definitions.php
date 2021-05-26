@@ -32,8 +32,8 @@ set_time_limit(300);
 		}
 		$tmpzip=tempnam("./fromStarExec","");
 		if( !copy($remote,$tmpzip) ) {
-			print_r(error_get_last());
-			exit("failed to copy $remote to $tmpzip");
+			print_r(error_get_last()["message"]);
+			return;
 		}
 		exec( "unzip -o $tmpzip -d fromStarExec", $out, $ret );
 		if( $ret ) {
@@ -46,41 +46,64 @@ set_time_limit(300);
 	function jobid2csv($jobid) {
 		return "fromStarExec/Job$jobid/Job" . $jobid . "_info.csv";
 	}
-	function parse_results($csv, &$benchmarks, &$participants) {
+	function row2record($header,$row) {
+		if( is_null($row[0]) ) {
+			return null;
+		}
+		$record = [];
+		foreach( $header as $i => $field ) {
+			$record[$field] = $row[$i];
+		}
+		return $record;
+	}
+	function parse_results($csv, &$benchmarks, &$participants, $layer) {
 		$file = new SplFileObject($csv);
 		$file->setFlags( SplFileObject::READ_CSV );
 		$header = $file->current();
 		$file->next();
-		for(; !$file->eof(); $file->next() ) {
-			$row = $file->current();
-			if( !is_null($row[0]) ) {
-				$record = [];
-				foreach( $header as $i => $field ) {
-					$record[$field] = $row[$i];
-				}
+		$proc = function($record) {
+			global $benchmarks;
+			if( $record != null ) {
 				$here = &$benchmarks[$record['benchmark id']];
 				$here['benchmark'] = $record['benchmark'];
 				$here['participants'][$record['configuration id']] = $record;
 			}
-		}
-		// adding to the list of participants
-		foreach( $benchmarks[array_key_first($benchmarks)]['participants'] as $configid => $participant ) {
-			if( !array_key_exists( $configid, $participants ) ) {
-				$participants[$configid] = [
-					'solver' => $participant['solver'],
-					'solver id' => $participant['solver id'],
-					'configuration' => $participant['configuration'],
-					'score' => 0,
-					'unscored' => 0,
-					'scorestogo' => 0,
-					'conflicts' => 0,
-					'done' => 0,
-					'togo' => 0,
-					'cpu' => 0,
-					'time' => 0,
-					'certtime' => 0,
-				];
+		};
+		// first tool
+		$record = row2record($header,$file->current());
+		$file->next();
+		$proc($record);
+		$configid = $record['configuration id'];
+		$first = $configid;
+		// first loop
+		for(;;) {
+			$participants[$configid] = [
+				'layer' => $layer,
+				'solver' => $record['solver'],
+				'solver id' => $record['solver id'],
+				'configuration' => $record['configuration'],
+				'score' => 0,
+				'unscored' => 0,
+				'scorestogo' => 0,
+				'conflicts' => 0,
+				'done' => 0,
+				'togo' => 0,
+				'cpu' => 0,
+				'time' => 0,
+				'certtime' => 0,
+				'TIMEOUT' => 0,
+			];
+			$record = row2record($header,$file->current());
+			$file->next();
+			$proc($record);
+			$configid = $record['configuration id'];
+			if( $configid == $first ) {
+				break;
 			}
+		}
+		// remaining
+		for(; !$file->eof(); $file->next() ) {
+			$proc(row2record($header,$file->current()));
 		}
 	}
 	function jobid2remote($jobid) {
@@ -95,39 +118,34 @@ set_time_limit(300);
 	function pairid2outurl($pairid) {
 		return 'https://www.starexec.org/starexec/services/jobs/pairs/'. $pairid .'/stdout/1?limit=-1';
 	}
-	$result_table = [
-		'YES' => [ 'class' => 'YES', 'score' => 1 ],
-		'NO' => [ 'class' => 'NO', 'score' => 1 ],
-		'CERTIFIED YES' => [ 'class' => 'YES', 'score' => 1 ],
-		'CERTIFIED NO' => [ 'class' => 'NO', 'score' => 1 ],
-		'REJECTED YES' => [ 'class' => 'error', 'score' => 0 ],
-		'REJECTED NO' => [ 'class' => 'error', 'score' => 0 ],
-		'UNSUPPORTED YES' => ['class' => 'unsupported', 'score' => 0 ],
-		'UNSUPPORTED NO' => ['class' => 'unsupported', 'score' => 0 ],
-		'MAYBE' => [ 'class' => 'maybe', 'score' => 0 ],
-		'TIMEOUT' => [ 'class' => 'timeout', 'score' => 0 ],
-		'UP' => [ 'class' => 'UP', 'score' => 1 ],
-		'LOW' => [ 'class' => 'LOW', 'score' => 1 ],
-	];
-	function result2score($result) {
-		global $result_table;
-		if( array_key_exists( $result, $result_table ) ) {
-			return $result_table[$result]['score'];
-		} else {
+	function result2score($result,$cert) {
+		if( $cert == 'REJECTED' || $cert == 'UNSUPPORTED' ) {
 			return 0;
 		}
-	}
-	function result2str($result) {
-		global $result_table;
-		if( array_key_exists( $result, $result_table ) ) {
-			return $result;
-		} else {
-			return 'ERROR';
+		switch($result) {
+			case 'YES': case 'NO': case 'UP': case 'LOW': return 1;
+			default: return 0;
 		}
 	}
-	function result2class( $result ) {
-		global $result_table;
-		return array_key_exists( $result, $result_table ) ? $result_table[$result]['class'] : 'error';
+	function result2str($result,$cert) {
+		switch($result) {
+			case 'YES': case 'NO': case 'UP': case 'LOW':
+				switch($cert) {
+					case '': return $result;
+					case 'CERTIFIED': return $result.'✔';
+					default: return $cert.' '.$result;
+				}
+			case 'MAYBE': case 'TIMEOUT': return $result;
+			default: return 'ERROR';
+		}
+	}
+	function result2class($result,$cert) {
+		switch($result) {
+			case 'YES': case 'NO': case 'UP': case 'LOW':
+				return $cert ? $cert.' '.$result : $result;
+			case 'MAYBE': case 'TIMEOUT': return $result;
+			default: return 'ERROR';
+		}
 	}
 	function status2style($status) {
 		if( $status == 'complete' ) {
@@ -236,16 +254,15 @@ set_time_limit(300);
 		foreach( $raw_mcats as $mcat_name => $raw_cats ) {
 			$cats = [];
 			foreach( $raw_cats as $cat_name => $cat ) {
-				$cats[$cat_name] = $cat;
 				if( array_key_exists('certified',$cat) ) {
 					$certinfo = $cat['certified'];
 					unset( $cat['certified'] );
-					$certcat = $cat;
-					$certcat['participants'] = array_key_exists('participants',$certinfo) ? $certinfo['participants'] : [];
-					$certcat['id'] = array_key_exists('id',$certinfo) ? $certinfo['id'] : 0;
-					$certcat['certified'] = true;
-					$cats[$cat_name . ' Certified'] = $certcat;
+					if( array_key_exists('id',$certinfo) && $certinfo['id'] ) {
+						$cat['id'] .= '_'.$certinfo['id'];
+					}
+					array_merge($cat['participants'],$certinfo['participants']);
 				}
+				$cats[$cat_name] = $cat;
 			}
 			foreach( $cats as $cat_name => $cat ) {
 				$cnt = array_key_exists('participants',$cat) ? count($cat['participants']) : 0;

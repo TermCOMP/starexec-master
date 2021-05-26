@@ -16,12 +16,6 @@
 	$id = $_GET['id'];
 	$jobids = explode( '_', $id );
 	$jobidc = count($jobids);
-	if( $jobidc > 1 ) {
-		$jobidc--;
-		$overlay = $jobids[$jobidc];
-	} else {
-		$overlay = false;
-	}
 	$competitionname = $_GET['competitionname'];
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
@@ -29,20 +23,18 @@
 
 	$benchmarks = [];
 	$participants = [];
+	$sum = [];
 	for( $i = 0; $i < $jobidc; $i++ ) {
 		$csv = jobid2csv($jobids[$i]);
 		cachezip(jobid2remote($jobids[$i]),$csv,$refresh);
-		parse_results($csv,$benchmarks,$participants);
+		parse_results($csv,$benchmarks,$participants,$i);
+		$sum[$i] = [
+			'done' => 0,
+			'togo' => 0,
+			'cpu' => 0,
+			'time' => 0,
+		];
 	}
-	foreach( $participants as &$p ) {
-		$p['ranked'] = true;
-	}
-	if( $overlay ) {
-		$overcsv = jobid2csv($overlay);
-		cachezip(jobid2remote($overlay),$overcsv,$refresh);
-		parse_results($overcsv,$benchmarks,$participants);
-	}
-
 	echo ' <title>'. $competitionname .': '. $jobname .'</title>'.PHP_EOL.
 	     '</head>'.PHP_EOL.
 	     '<body>'.PHP_EOL.
@@ -105,16 +97,22 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				$p['cpu'] += $cpu;
 				$p['time'] += $time;
 				$result = status2timeout($status) ? "TIMEOUT" : $record['result'];
-				$score = result2score($result);
-				$cert = $record['certification result'];
-				$certtime = $record['certification time'];
-				$p[$result] += 1;
+				$cert = $record['certification-result'];
+				if( $cert == '-' ) {
+					$cert = false;
+				}
+				$certtime = $record['certification-time'];
+				if( !is_numeric($certtime) ) {
+					$certtime = 0;
+				}
+				$p['certtime'] += $certtime;
+				$score = result2score($result,$cert);
+				$p[$cert ? $result.';'.$cert : $result] += 1;
 				if( $score > 0 ) {
 					$p['score'] += $score;
 				} else {
 					$p['unscored'] += 1;
 				}
-				$p['certtime'] += $certtime;
 				$resultcounter[$result] += 1;
 			} else {
 				$p['togo'] += 1;
@@ -123,13 +121,13 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			}
 			$bench[$configid] = [
 				'status' => $status,
-				'result' => $result,
-				'score' => $score,
 				'cert' => $cert,
 				'time' => $time,
 				'cpu' => $cpu,
 				'certtime' => $certtime,
 				'pair' => $record['pair id'],
+				'result' => $result,
+				'score' => $score,
 			];
 		}
 		if( $show ) {
@@ -162,12 +160,12 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				$url = pairid2url($my['pair']);
 				$outurl = pairid2outurl($my['pair']);
 				if( status2complete($status) ) {
-					echo '  <td class="' . result2class($result) . '">'.PHP_EOL.
-					     '   <a href="'. $outurl .'">' . result2str($result) . '</a>'.PHP_EOL.
+					echo '  <td class="' . result2class($result,$cert) . '">'.PHP_EOL.
+					     '   <a href="'. $outurl .'">' . result2str($result,$cert) . '</a>'.PHP_EOL.
 					     '   <a href="'. $url .'">'.PHP_EOL.
 					     '    <span class=time>' . $my['cpu'] . '/' . $my['time'] . '</span>'.PHP_EOL;
-					if( $cert && $cert != '-' ) {
-						echo ' (' . $cert . '&nbsp;<span class=time>'. $certtime . '</span>)'.PHP_EOL;
+					if( $cert ) {
+						echo ' (' . '<span class=time>'. $certtime . '</span>)'.PHP_EOL;
 					}
 					echo '   </a>'.PHP_EOL;
 				} else {
@@ -179,25 +177,18 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		}
 	}
 	echo ' <tr><th>'.PHP_EOL;
-	$sum = [
-		'done' => 0,
-		'togo' => 0,
-		'cpu' => 0,
-		'time' => 0,
-	];
 	foreach( $participants as &$p ) {
 		$p['cpu'] = (int)$p['cpu'];// eliminate round errors
 		$p['time'] = (int)$p['time'];// eliminate round errors
 		echo '  <th>'.$p['score'];
-		if( array_key_exists('ranked',$p) ) {
-			$sum['done'] += $p['done'];
-			$sum['togo'] += $p['togo'];
-			$sum['scorestogo'] += $p['scorestogo'];
-			$sum['cpu'] += $p['cpu'];
-			$sum['time'] += $p['time'];
-		}
+		$summer = &$sum[$p['layer']];
+		$summer['done'] += $p['done'];
+		$summer['togo'] += $p['togo'];
+		$summer['scorestogo'] += $p['scorestogo'];
+		$summer['cpu'] += $p['cpu'];
+		$summer['time'] += $p['time'];
 	}
-	file_put_contents( id2sumfile($id), json_encode( ['all' => $sum, 'participants' => $participants] ) );
+	file_put_contents( id2sumfile($id), json_encode( ['layers' => $sum, 'participants' => $participants] ) );
 ?>
 </table>
 <script>

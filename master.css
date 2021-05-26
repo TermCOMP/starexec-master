@@ -124,7 +124,7 @@ div.category {
 	background-color: fuchsia;
 	color: white;
 }
-.timeout, .timeout a {
+.TIMEOUT, .TIMEOUT a {
 	background-color: darksalmon;
 	color: black;
 }
@@ -149,11 +149,11 @@ div.category {
 	background: none;
 	color: darkgreen;
 }
-.maybe, .maybe a {
+.MAYBE, .MAYBE a {
 	background-color: khaki;
 	color: black;
 }
-.unsupported, .unsupported a {
+.UNSUPPORTED, .UNSUPPORTED a {
 	background-color: gray;
 	color: white;
 }
@@ -228,6 +228,9 @@ td.time, th.time {
 	background-color: gray;
 	color: white;
 }
+span.certified.time::before {
+	content: "✔";
+}
 td.NO span.time, td.unsupported span.time {
 	color: lightgray;
 }	
@@ -247,6 +250,9 @@ table .bar {
 	border: .1pt solid silver;
 	text-align: center;
 }
+td.CERTIFIED {
+	border: 1pt solid blue;
+}
 .stats {
 	color: gray;
 	vertical-align: bottom;
@@ -261,4 +267,10 @@ table .bar {
 }
 .button::after {
 	content: "]";
+}
+tr.layer1 {
+	background-color:rgb(185, 228, 255);
+}
+.CERTIFIED .rank::before {
+	content: "✔";
 }

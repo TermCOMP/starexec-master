@@ -61,9 +61,12 @@ foreach( array_keys($mcats) as $mcatname ) {
 	$table = [];
 	$tools = [];
 	echo ' <script>'.PHP_EOL.
+	     '  function summer(a,b){'.PHP_EOL.
+	     '   return {done: a.done + b.done, cpu: a.cpu + b.cpu, time: a.time + b.time, togo: a.togo + b.togo};'.PHP_EOL.
+	     '  }'.PHP_EOL.
 	     '  var progress'.$mcatindex.' = [];'.PHP_EOL.
 	     '  function updateProgress'.$mcatindex.'() {'.PHP_EOL.
-	     '   var sum = progress'.$mcatindex.'.reduce(function(a,b){return {done: a.done + b.done, cpu: a.cpu + b.cpu, time: a.time + b.time, togo: a.togo + b.togo}});'.PHP_EOL.
+	     '   var sum = progress'.$mcatindex.'.reduce(summer);'.PHP_EOL.
 	     '   document.getElementById("stat'.$mcatindex.'").innerHTML ='.PHP_EOL.
 	     '    "Progress: " + Math.floor(1000 * sum.done / (sum.done + sum.togo))/10 +'.PHP_EOL.
 	     '    "%, CPU Time: " + seconds2str(sum.cpu) + ", Node Time: "+ seconds2str(sum.time);'.PHP_EOL.
@@ -118,7 +121,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 		     '    configToggler.apply(elm);'.PHP_EOL.
 		     '   });'.PHP_EOL.
 		     '   loadURL("'.id2sumfile($id).'", function(xhttp) {'.PHP_EOL.
-		     '    progress'.$mcatindex.'['.$catindex.'] = JSON.parse(xhttp.responseText)["all"];'.PHP_EOL.
+		     '    progress'.$mcatindex.'['.$catindex.'] = JSON.parse(xhttp.responseText)["layers"].reduce(summer);'.PHP_EOL.
 		     '    updateProgress'.$mcatindex.'();'.PHP_EOL.
 		     '   });'.PHP_EOL.
 		     '  }'.PHP_EOL.

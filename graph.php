@@ -23,12 +23,14 @@ $type = $_GET['type'];
 <?php
 
 $scored_keys = [
-	'CERTIFIED YES',
-	'CERTIFIED NO',
-	'YES',
-	'NO',
-	'UP',
-	'LOW',
+	'YES' => ['result' => 'YES', 'cert' => ''],
+	'NO' => ['result' => 'NO', 'cert' => ''],
+	'UP' => ['result' => 'UP', 'cert' => ''],
+	'LOW' => ['result' => 'LOW', 'cert' => ''],
+	'YES;CERTIFIED' => ['result' => 'YES', 'cert' => 'CERTIFIED'],
+	'NO;CERTIFIED' => ['result' => 'NO', 'cert' => 'CERTIFIED'],
+	'UP;CERTIFIED' => ['result' => 'UP', 'cert' => 'CERTIFIED'],
+	'LOW;CERTIFIED' => ['result' => 'LOW', 'cert' => 'CERTIFIED'],
 ];
 
 $cat_done = 0;
@@ -37,23 +39,34 @@ $cat_cpu = 0;
 $cat_time = 0;
 $togo = 0;
 $conflicts = 0;
-$best = [ 'score' => 1, 'time' => INF ];
-foreach( $scored_keys as $key ) {
-	$best[$key] = 1;
-}
 
 // checking cached score file and making ranking
 $sum = json_decode(file_get_contents(id2sumfile($id)),TRUE);
 $solvers = $sum['participants'];
-$all = $sum['all'];
+$layers = $sum['layers'];
 uasort($solvers, function($s,$t) { return $s['score'] < $t['score'] ? 1 : -1; } );
-foreach( $solvers as $s ) {
-	if( array_key_exists('ranked', $s ) ) {
-		foreach( $scored_keys as $key ) {
-			$best[$key] = max($best[$key], array_key_exists($key,$s) ? $s[$key] : 0);
-		}
-		$best['time'] = min($best['time'], $s['time']);
+$best = [];
+for( $i = 0; $i < count($layers); $i++ ) {
+	$best[$i] = [ 'score' => 1, 'time' => INF ];
+	foreach( $scored_keys as $key => $val ) {
+		$best[$i][$key] = 1;
 	}
+}
+foreach( $solvers as $s ) {
+	$layer = $s['layer'];
+	foreach( $scored_keys as $key => $val ) {
+		$best[$layer][$key] = max($best[$layer][$key], array_key_exists($key,$s) ? $s[$key] : 0);
+	}
+	$best[$layer]['time'] = min($best[$layer]['time'], $s['time']);
+}
+
+$rank = [];
+$count = [];
+$prev_score = [];
+for( $i = 0; $i < count($layers); $i++ ) {
+	$rank[$i] = 1;
+	$count[$i] = 0;
+	$prev_score[$i] = 1;
 }
 $jobpath = 'job_'.$id.'.html';
 echo ' <div class=category>'.PHP_EOL.
@@ -65,10 +78,8 @@ if( $conflicts > 0 ) {
 	echo '<a class=conflict href="' . $jobpath . '#conflict">conflict</a>'.PHP_EOL;
 } 
 echo ' <table class=ranking>'.PHP_EOL;
-$prev_score = $best['score'];
-$rank = 1;
-$count = 0;
 foreach( $solvers as $configid => $s ) {
+	$layer = $s['layer'];
 	$name = $s['solver'];
 	$id = $s['solver id'];
 	$config = $s['configuration'];
@@ -81,58 +92,56 @@ foreach( $solvers as $configid => $s ) {
 	$time = $s['time'];
 	$certtime = $s['certtime'];
 	$conflicts = $s['conflicts'];
-	$ranked = array_key_exists('ranked', $s);
 	$timeout = $s['TIMEOUT'];
 	$url = solverid2url($id);
-	if( $ranked ) {
-		$count += 1;
-		if( $prev_score > $score ) {
-			$rank = $count;
-		}
+	$count[$layer] += 1;
+	if( $prev_score[$layer] != $score ) {
+		$rank[$layer] = $count[$layer];
+		$prev_score[$layer] = $score;
 	}
-	$prev_score = $score;
 	// Making progress bar
 	$total = $score + $unscored + $scorestogo;
-	echo '   <tr'.($ranked ? '>' : ' class=ignored>').PHP_EOL.
+	$cert = $certtime ? 'CERTIFIED' : false;
+	echo '   <tr class="layer'.$layer.($cert ? ' '.$cert : '').'">'.PHP_EOL.
 	     '    <td>'.PHP_EOL.
-	     '     <table class=bar>'.PHP_EOL.
+	     '     <table class="bar">'.PHP_EOL.
 	     '      <tr style="height:1ex">'.PHP_EOL;
-	foreach( $scored_keys as $key ) {
+	foreach( $scored_keys as $key => $val ) {
 		if( array_key_exists($key,$s) && $s[$key] > 0 ) {
-			echo '       <td class="' . result2class($key) . '" style="width:'. (100 * $s[$key] / $total) . '%">'.PHP_EOL;
+			echo '       <td class="' . result2class($val['result'],$val['cert']) . '" style="width:'. (100 * $s[$key] / $total) . '%">'.PHP_EOL;
 		}
 	}
 	if( $scorestogo > 0 ) {
 		echo '       <td class=incomplete style="width:'. (100 * $scorestogo / $total) . '%">'.PHP_EOL;
 	}
 	if( $unscored > 0 ) {
-		echo '       <td class=maybe style="width:'. (100 * $unscored / $total) . '%">'.PHP_EOL;
+		echo '       <td class=MAYBE style="width:'. (100 * $unscored / $total) . '%">'.PHP_EOL;
 	}
 	echo '     </table>'.PHP_EOL;
 	// Textual display
 	echo '     <td>'.PHP_EOL.
-	     '      <span class="'.( $ranked && $rank == 1 ? 'best ' : '' ). 'solver">'.PHP_EOL.
-	     '       '.($ranked ? $rank : '-').'. <a href="'. $url . '">'. $name . '</a>'.PHP_EOL.
-	     '       <a class=config href="' . configid2url($configid) . '">'. $config . '</a>'.PHP_EOL.
+	     '      <span class="'.( $rank[$layer] == 1 ? 'best ' : '' ). 'solver">'.PHP_EOL.
+	     '       <span class="rank">'.$rank[$layer].'.</span> <a class="tool" href="'. $url . '">'. $name . '</a>'.PHP_EOL.
+	     '       <a class="config" href="' . configid2url($configid) . '">'. $config . '</a>'.PHP_EOL.
 	     '      </span>'. PHP_EOL.
-	     '      <span class=score>';
-	foreach( $scored_keys as $key ) {
+	     '      <span class="score">';
+	foreach( $scored_keys as $key => $val ) {
 		if( array_key_exists( $key, $s ) ) {
 			$subscore = $s[$key];
 			echo '<span class="';
-			if( $ranked && $subscore == $best[$key] ) {
+			if( $subscore == $best[$layer][$key] ) {
 				echo 'best ';
 			}
-			echo result2class($key) . '">'. $key . ':' . $subscore . '</span>,'.PHP_EOL;
+			echo result2class($val['result'],$val['cert']) . '">'. $val['result'] . ':' . $subscore . '</span>,'.PHP_EOL;
 		}
 	}
-	echo '<span class="'.( $time == $best['time'] ? 'best ' : '' ).'time">TIME:'.seconds2str($time).'</span>,'.PHP_EOL.
-	     '<span class="time">OUT: '.$timeout.'</span>';
+	echo '<span class="'.( $time == $best[$layer]['time'] ? 'best ' : '' ).'time">TIME:'.seconds2str($time).'</span>';
+//	     ',<span class="time">OUT: '.$timeout.'</span>';
 	if( $certtime != 0 ) {
-		echo ','.PHP_EOL.'<span class=time>Certification:'.seconds2str($certtime).'</span>';
+		echo '<span class="certified time">'.seconds2str($certtime).'</span>';
 	}
 	if( $togo > 0 ) {
-		echo ','.PHP_EOL.'<span class=togo>TOGO:' . $togo . '</span>';
+		echo ','.PHP_EOL.'<span class="togo">TOGO:' . $togo . '</span>';
 	}
 	echo '</span>'.PHP_EOL;
 	$cat_cpu += $cpu;

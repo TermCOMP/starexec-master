@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
- <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
- <meta http-equiv="Cache-Control" content="no-cache">
- <link rel="stylesheet" type="text/css" href="master.css">
+ <meta charset="utf-8">
+ <meta http-equiv="Cache-Control" content="no-cache, no-store">
+ <link rel="stylesheet" href="master.css">
 
 <?php
 	error_reporting( E_ALL ^ E_NOTICE ); 
 	include './definitions.php';
 
-	$jobid = array_key_exists('id', $_GET) ? $_GET['id'] : false;
-	if( !$jobid ) {
+	if( !array_key_exists('id', $_GET) ) {
 		echo '</head>';
 		exit('no job to present');
 	}
+	$id = $_GET['id'];
+	$jobids = explode( '_', $id );
+	$jobidc = count($jobids);
 	$competitionname = $_GET['competitionname'];
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
@@ -59,7 +61,7 @@
 	}
 	function lower2style( $bound ) {
 		if( $bound == 0 ) {
-			return 'class=maybe';
+			return 'class=MAYBE';
 		} else if( $bound == 1 ) {
 			return 'class=low1';
 		} else if( $bound == 2 ) {
@@ -86,7 +88,7 @@
 		} else if( $bound == 1000 ) {
 			return 'class=yes';
 		} else {
-			return 'class=maybe';
+			return 'class=MAYBE';
 		}
 	}
 	function str2bounds( $string ) {
@@ -97,19 +99,26 @@
 	}
 	$benchmarks = [];
 	$participants = [];
-	$csv = jobid2csv($jobid);
-	cachezip(jobid2remote($jobid),$csv,$refresh);
-	parse_results($csv,$benchmarks,$participants);
-	foreach( $participants as &$participant ) {
-		$participant['ranked'] = true;
+	$sum = [];
+	for( $i = 0; $i < $jobidc; $i++ ) {
+		$csv = jobid2csv($jobids[$i]);
+		cachezip(jobid2remote($jobids[$i]),$csv,$refresh);
+		parse_results($csv,$benchmarks,$participants,$i);
+		$sum[$i] = [
+			'done' => 0,
+			'togo' => 0,
+			'cpu' => 0,
+			'time' => 0,
+		];
 	}
-
-	echo ' <title>' . $competitionname . ': ' . $jobname . '</title>'.PHP_EOL.
+	echo ' <title>'. $competitionname .': '. $jobname .'</title>'.PHP_EOL.
 	     '</head>'.PHP_EOL.
 	     '<body>'.PHP_EOL.
-	     '<h1><a href=".">' . $competitionname . '</a>: ' . $jobname .PHP_EOL.
-	     ' <a class=starexecid href="' . jobid2url($jobid) . '">'. $jobid . '</a>'.PHP_EOL.
-	     ' <a class=csv href="'. $csv . '">Job info CSV</a>'.PHP_EOL;
+	     '<h1><a href=".">'. $competitionname .'</a>: '. $jobname .PHP_EOL;
+	foreach( $jobids as $jobid ) {
+		echo ' <a class=starexecid href="'. jobid2url($jobid) .'">'. $jobid .'</a>'.PHP_EOL.
+		     ' <a class=csv href="'. jobid2csv($jobid) .'">Job info CSV</a>'.PHP_EOL;
+	}
 ?>
  <span class="headerFollower">Showing
   <select id="resultsFilter" type="text" placeholder="Filter..." oninput="filteredTable.refresh()">
@@ -129,9 +138,9 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 
 	echo ' <tr class="head">'.PHP_EOL.
 	     '<th>'.PHP_EOL;
-	foreach( $participants as &$participant ) {
-		echo '  <th colspan=3><a href="'. solverid2url($participant['solverid']) . '">'.$participant['solver'].'</a>'.PHP_EOL.
-		     '   <a class=config href="'. configid2url($participant['configid']) .'">'. $participant['config'].'</a>'.PHP_EOL;
+	foreach( $participants as $configid => &$p ) {
+		echo '  <th colspan=3><a href="'. solverid2url($p['solver id']) . '">'.$p['solver'].'</a>'.PHP_EOL.
+		     '   <a class=config href="'. configid2url($configid) .'">'. $p['configuration'].'</a>'.PHP_EOL;
 	}
 ?>
  <tr class="head">
@@ -141,7 +150,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
   <th style="display:none">
    <script>filteredTable.register(1,"resultsFilter");</script>
 <?php
-	foreach( $participants as &$participant ) {
+	foreach( $participants as &$p ) {
 		echo '  <th class="subhead">UP<th class="subhead">LOW<th class="subhead">TIME'.PHP_EOL;
 	}
 	$bench = [];
@@ -154,15 +163,15 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		$resultcounter = []; /* collects results for each benchmark */
 		$show = false;
 		foreach( $benchmark['participants'] as $configid => $record ) {
-			$participant =& $participants[$configid];
+			$p =& $participants[$configid];
 			$status = $record['status'];
 			$show = $show || !status2pending($status);
 			if( status2finished($status) ) {
 				$cpu = parse_time($record['cpu time']);
 				$time = parse_time($record['wallclock time']);
-				$participant['done'] += 1;
-				$participant['cpu'] += $cpu;
-				$participant['time'] += $time;
+				$p['done'] += 1;
+				$p['cpu'] += $cpu;
+				$p['time'] += $time;
 				if( status2timeout($status) ) {
 					$resultcounter['TIMEOUT'] += 1;
 					$lower = 0;
@@ -173,14 +182,20 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 					$lower = $bounds[0];
 					$upper = $bounds[1];
 				}
-				$cert = $record['certification result'];
-				$certtime = $record['certification time'];
-				$participant['certtime'] += $certtime;
+				$cert = $record['certification-result'];
+				if( $cert == '-' ) {
+					$cert = false;
+				}
+				$certtime = $record['certification-time'];
+				if( !is_numeric($certtime) ) {
+					$certtime = 0;
+				}
+				$p['certtime'] += $certtime;
 				$resultcounter['LOW'][] = $lower;
 				$resultcounter['UP'][] = $upper;
 			} else {
-				$participant['togo'] += 1;
-				$participant['scorestogo'] += 1;
+				$p['togo'] += 1;
+				$p['scorestogo'] += 1;
 				$resultcounter['togo'] += 1;
 			}
 			$bench[$configid] = [
@@ -213,7 +228,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			$bm_name = $benchmark['benchmark'];
 			$bm_url = $tpdbver ? bm2url($bm_name,$tpdbver) : bmid2url($benchmark_id);
 			echo '  <td class=benchmark>'.PHP_EOL.
-			     '   <a href="'.$bm_url.'">'.format_bm( $bm_name ).'</a>'.PHP_EOL.
+			     '   <a href="'.$bm_url.'">'.format_bm($bm_name).'</a>'.PHP_EOL.
 			     '   <a class=starexecid href="'.bmid2remote($benchmark_id).'">'.$benchmark_id.'</a></td>'.PHP_EOL.
 			     '  <td style="display:none">'.$d['key'];
 			foreach( $bench as $me => $my ) {
@@ -250,26 +265,19 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			}
 		}
 	}
-	echo ' <tr>'.PHP_EOL;
-	$sum = [
-		'done' => 0,
-		'togo' => 0,
-		'cpu' => 0,
-		'time' => 0,
-	];
-	foreach( $participants as $s ) {
-		$s['cpu'] = (int)$s['cpu'];// eliminate round errors
-		$s['time'] = (int)$s['time'];// eliminate round errors
-		echo '  <th><th colspan=3>'.$s['score'];
-		if( array_key_exists('ranked',$s) ) {
-			$sum['done'] += $s['done'];
-			$sum['togo'] += $s['togo'];
-			$sum['scorestogo'] += $s['scorestogo'];
-			$sum['cpu'] += $s['cpu'];
-			$sum['time'] += $s['time'];
-		}
+	echo ' <tr><th>'.PHP_EOL;
+	foreach( $participants as &$p ) {
+		$p['cpu'] = (int)$p['cpu'];// eliminate round errors
+		$p['time'] = (int)$p['time'];// eliminate round errors
+		echo '  <th>'.$p['score'];
+		$summer = &$sum[$p['layer']];
+		$summer['done'] += $p['done'];
+		$summer['togo'] += $p['togo'];
+		$summer['scorestogo'] += $p['scorestogo'];
+		$summer['cpu'] += $p['cpu'];
+		$summer['time'] += $p['time'];
 	}
-	file_put_contents( jobid2sumfile($jobid), json_encode( ['all' => $sum, 'participants' => $participants] ) );
+	file_put_contents( id2sumfile($id), json_encode( ['layers' => $sum, 'participants' => $participants] ) );
 ?>
 </table>
 <script>
@@ -287,5 +295,3 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 </script>
 </body>
 </html>
-
-
