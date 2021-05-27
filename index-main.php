@@ -9,9 +9,9 @@
 <?php
 include 'definitions.php';
 
-$competition = array_key_exists( 'competition', $_GET ) ? $_GET['competition'] : 'Y2020';
+$competition = array_key_exists( 'competition', $_GET ) ? $_GET['competition'] : 'Y2021';
 include $competition.'_info.php';
-$mcats = make_categories($categories);
+$mcats = make_categories($categories,$closed);
 
 $refresh = array_key_exists( 'refresh', $_GET );
 $finalize = array_key_exists( 'finalize', $_GET );

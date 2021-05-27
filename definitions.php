@@ -250,30 +250,29 @@ set_time_limit(300);
 		];
 	}
 	// Making certified and demonstration categories
-	function make_categories($raw_mcats) {
+	function make_categories($raw_mcats,$closed) {
 		$demos = [];
 		$mcats = [];
 		foreach( $raw_mcats as $mcat_name => $raw_cats ) {
 			$cats = [];
 			foreach( $raw_cats as $cat_name => $cat ) {
-				if( array_key_exists('id',$cat) && array_key_exists('certified',$cat) ) {
+				if( $cat['id'] ) {
 					$certinfo = $cat['certified'];
-					if( array_key_exists('id',$certinfo) && $certinfo['id'] ) {
+					if( $certinfo['id'] ) {
 						$cat['id'] .= '_'.$certinfo['id'];
 					}
 				}
 				$cats[$cat_name] = $cat;
-			}
-/*			foreach( $cats as $cat_name => $cat ) {
-				$cnt = array_key_exists('participants',$cat) ? count($cat['participants']) : 0;
-				if( $cnt == 0 && !$cat['id'] > 0 ) {
-					unset($cats[$cat_name]);// remove unparticipated category
-				} else if( $cnt == 1 ) {
-					$demos[$cat_name] = $cat;
-					unset($cats[$cat_name]);
+				if( $closed ) {
+					$cnt = array_key_exists('participants',$cat) ? count($cat['participants']) : 0;
+					if( $cnt == 0 && !$cat['id'] > 0 ) {
+						unset($cats[$cat_name]);// remove unparticipated category
+					} else if( $cnt == 1 ) {
+						$demos[$cat_name] = $cat;
+						unset($cats[$cat_name]);
+					}
 				}
 			}
-*/
 			$mcats[$mcat_name] = $cats;
 		}
 		if( $demos != [] ) {

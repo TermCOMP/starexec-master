@@ -4,6 +4,7 @@ $shortname = 'TermCOMP 2021-1';
 $showconfig = true;
 $note = '';
 $tpdbver = '11.1';
+$closed = false;
 $categories = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [

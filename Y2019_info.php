@@ -1,6 +1,9 @@
 <?php
 $title = 'Termination Competition 2019';
 $shortname = 'TermCOMP 2019';
+$note = '';
+$showconfig = false;
+$closed = true;
 $tpdbver = '11.0';
 $categories = [
 	"Termination of Rewriting" => [

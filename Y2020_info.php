@@ -1,8 +1,9 @@
 <?php
 $title = 'Termination Competition 2020';
 $shortname = 'TermComp 2020';
-$showconfig = false;
 $note = '(Final Run. First run is <a href="https://termcomp.github.io/Y2020-1/">here</a>)';
+$showconfig = false;
+$closed = true;
 $tpdbver = '11.1';
 $categories = [
 	"Termination of Rewriting" => [
@@ -109,6 +110,7 @@ $categories = [
 				"AProVE" => 360174,
 			],
 			'certified' => [
+				'id' => false,
 				'participants' => [
 				],
 			],
@@ -122,6 +124,7 @@ $categories = [
 				"AProVE" => 360174,
 			],
 			'certified' => [
+				'id' => false,
 				'participants' => [
 				],
 			],
@@ -135,6 +138,7 @@ $categories = [
 				"AProVE" => 360174,
 			],
 			'certified' => [
+				'id' => false,
 				'participants' => [
 				],
 			],
@@ -148,6 +152,7 @@ $categories = [
 				"Wanda" => 359682,
 			],
 			'certified' => [
+				'id' => false,
 				'participants' => [
 				],
 			],
@@ -163,6 +168,7 @@ $categories = [
 				"Ultimate" => 360394,
 			],
 			'certified' => [
+				'id' => false,
 				'participants' => [
 				],
 			],
@@ -177,6 +183,7 @@ $categories = [
 				"AProVE" => 360173,
 			],
 			'certified' => [
+				'id' => false,
 				'participants' => [
 				],
 			],
@@ -191,6 +198,7 @@ $categories = [
 				"LoAT" => 360195,
 			],
 			'certified' => [
+				'id' => false,
 				'participants' => [
 				],
 			],
@@ -204,6 +212,7 @@ $categories = [
 				"AProVE" => 360174,
 			],
 			'certified' => [
+				'id' => false,
 				'participants' => [
 				],
 			],
@@ -216,6 +225,7 @@ $categories = [
 				"AProVE" => 360174,
 			],
 			'certified' => [
+				'id' => false,
 				'participants' => [
 				],
 			],
@@ -228,6 +238,7 @@ $categories = [
 				"AProVE" => 360174,
 			],
 			'certified' => [
+				'id' => false,
 				'participants' => [
 				],
 			],
@@ -239,6 +250,7 @@ $categories = [
 			'participants' => [
 			],
 			'certified' => [
+				'id' => false,
 				'participants' => [
 				],
 			],
@@ -252,6 +264,7 @@ $categories = [
 				"AProVE" => 360174,
 			],
 			'certified' => [
+				'id' => false,
 				'participants' => [
 				],
 			],
@@ -263,6 +276,7 @@ $categories = [
 			'participants' => [
 			],
 			'certified' => [
+				'id' => false,
 				'participants' => [
 				],
 			],
@@ -274,6 +288,7 @@ $categories = [
 			'participants' => [
 			],
 			'certified' => [
+				'id' => false,
 				'participants' => [
 				],
 			],
@@ -288,6 +303,7 @@ $categories = [
 				"AProVE" => 360180
 			],
 			'certified' => [
+				'id' => false,
 				'participants' => [
 				],
 			],
