@@ -258,7 +258,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 					     '  <td '. lower2style($lower) .'>'. $a . bound2str($lower) . ' <span class=score>+'. $lowscore .'</span></a>'.PHP_EOL.
 					     '  <td class=time>'. $a . $my['cpu'] .'/'. $my['time'] . '</a>'.PHP_EOL;
 				} else {
-					echo '  <td colspan=3 ' . status2style($status) . '>'.PHP_EOL.
+					echo '  <td colspan=3 class="' . status2class($status) . '">'.PHP_EOL.
 					     '   <a href="'. $url . '">' . $status . '</a>'.PHP_EOL.
 					     (status2complete($status) ? '   <a href="'. $outurl .'">[out]</a>'.PHP_EOL : '' );
 				}

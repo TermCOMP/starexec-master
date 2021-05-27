@@ -81,14 +81,16 @@ foreach( array_keys($mcats) as $mcatname ) {
 		$overlay = array_key_exists( 1, $jobids ) ? $jobids[1] : false;
 		if( !$id ) {// This means the job is not yet started or linked to starexec-master.
 			echo ' <div class=category>'.$catname.PHP_EOL.
-			     '  <div class=ranking>'.PHP_EOL.
-			     '   <ul>'.PHP_EOL;
-			foreach( $cat['participants'] as $partname => $configid ) {
-				echo '   <li>'. $partname.
-				     '<a class=starexecid href="'. configid2url($configid) .'">'. $configid .'</a></li>'.PHP_EOL;
+			     '  <div class=ranking>'.PHP_EOL;
+			foreach( $cat['certified']['participants'] as $partname => $configid ) {
+				echo '   <div class="CERTIFIED participant">'.PHP_EOL.
+				     '   '.$partname.'<a class=starexecid href="'. configid2url($configid) .'">'. $configid .'</a></div>'.PHP_EOL;
 			}
-			echo '   </ul>'.PHP_EOL.
-			     '  </div>'.PHP_EOL.
+			foreach( $cat['participants'] as $partname => $configid ) {
+				echo '   <div class="participant">'. $partname.
+				     '<a class=starexecid href="'. configid2url($configid) .'">'. $configid .'</a></div>'.PHP_EOL;
+			}
+			echo '  </div>'.PHP_EOL.
 			     ' </div>';
 			continue;
 		}

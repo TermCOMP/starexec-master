@@ -161,15 +161,15 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				$outurl = pairid2outurl($my['pair']);
 				if( status2complete($status) ) {
 					echo '  <td class="' . result2class($result,$cert) . '">'.PHP_EOL.
-					     '   <a href="'. $outurl .'">' . result2str($result,$cert) . '</a>'.PHP_EOL.
+					     '   <a href="'. $outurl .'">' . result2str($result) . '</a>'.PHP_EOL.
 					     '   <a href="'. $url .'">'.PHP_EOL.
-					     '    <span class=time>' . $my['cpu'] . '/' . $my['time'] . '</span>'.PHP_EOL;
+					     '    <span class="time">' . $my['cpu'] . '/' . $my['time'] . '</span>'.PHP_EOL;
 					if( $cert ) {
-						echo ' (' . '<span class=time>'. $certtime . '</span>)'.PHP_EOL;
+						echo '    '.cert2str($cert).'<span class="time">'. $certtime . '</span>'.PHP_EOL;
 					}
 					echo '   </a>'.PHP_EOL;
 				} else {
-					echo '  <td ' . status2style($status) . '>'.PHP_EOL.
+					echo '  <td class="' . status2class($status) . '">'.PHP_EOL.
 					     '   <a href="'. $url . '">' . $status . '</a>'.PHP_EOL.
 					     (status2complete($status) ? '   <a href="'. $outurl .'">[out]</a>'.PHP_EOL : '' );
 				}

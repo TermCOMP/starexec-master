@@ -124,33 +124,39 @@ div.category {
 	background-color: fuchsia;
 	color: white;
 }
-.TIMEOUT, .TIMEOUT a {
+.timeout, .timeout a {
 	background-color: darksalmon;
 	color: black;
 }
 .YES, .YES a {
-	background-color: mediumspringgreen;
+	background-color:#60F0A0;
 	color: black;
 }
-.score .YES {
-	background: none;
+.CERTIFIED.YES, .CERTIFIED.YES a {
+	background-color:#00F080;
 	color: black;
 }
-.best.YES {
-	background-color: mediumspringgreen;
-	color: black;
+.score .best.YES {
 	font-weight: bold;
 }
-.NO, .NO a, .score .best.NO {
-	background-color: green;
+.score :not(.best).YES {
+	background: none;
+	color: black;
+}
+.NO, .NO a {
+	background-color: #60A060;
 	color: white;
 }
-.score .NO {
+.CERTIFIED.NO, .CERTIFIED.NO a {
+	background-color:#408040;
+	color: white;
+}
+.score :not(.best).NO {
 	background: none;
-	color: darkgreen;
+	color: #006000;
 }
 .MAYBE, .MAYBE a {
-	background-color: khaki;
+	background-color: #E0D080;
 	color: black;
 }
 .UNSUPPORTED, .UNSUPPORTED a {
@@ -223,6 +229,7 @@ td.time, th.time {
 }
 .time, .time a {
 	color: gray;
+	font-size: small;
 }
 .best.time {
 	background-color: gray;
@@ -251,7 +258,7 @@ table .bar {
 	text-align: center;
 }
 td.CERTIFIED {
-	border: 1pt solid blue;
+	border: 1.5pt solid black;
 }
 .stats {
 	color: gray;
@@ -269,8 +276,14 @@ td.CERTIFIED {
 	content: "]";
 }
 tr.layer1 {
-	background-color:rgb(185, 228, 255);
+	background-color:#C0E0FF;
 }
 .CERTIFIED .rank::before {
+	content: "✔";
+}
+div.participant::before {
+	content: " • ";
+}
+div.CERTIFIED.participant::before {
 	content: "✔";
 }

@@ -1,7 +1,10 @@
 <?php
 $title = 'Termination Competition 2021 (First Run)';
 $shortname = 'TermCOMP 2021-1';
-$raw_mcats = [
+$showconfig = true;
+$note = '';
+$tpdbver = '11.1';
+$categories = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [
 			'type' => 'termination',

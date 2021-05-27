@@ -37,7 +37,7 @@ set_time_limit(300);
 		}
 		exec( "unzip -o $tmpzip -d fromStarExec", $out, $ret );
 		if( $ret ) {
-			exit("failed to unzip job info; exit code: $ret\n".explode($out));
+			exit("failed to unzip job info; exit code: $ret\n".$out);
 		}
 		unlink($tmpzip);
 		exec( "./fix-starexec-csv.sh '$local'" );
@@ -127,39 +127,41 @@ set_time_limit(300);
 			default: return 0;
 		}
 	}
-	function result2str($result,$cert) {
+	function result2str($result) {
 		switch($result) {
 			case 'YES': case 'NO': case 'UP': case 'LOW':
-				switch($cert) {
-					case '': return $result;
-					case 'CERTIFIED': return $result.'✔';
-					default: return $cert.' '.$result;
-				}
 			case 'MAYBE': case 'TIMEOUT': return $result;
 			default: return 'ERROR';
+		}
+	}
+	function cert2str($cert) {
+		switch($cert) {
+			case 'CERTIFIED':	return '✔';
+			default: return $cert;
 		}
 	}
 	function result2class($result,$cert) {
 		switch($result) {
 			case 'YES': case 'NO': case 'UP': case 'LOW':
 				return $cert ? $cert.' '.$result : $result;
-			case 'MAYBE': case 'TIMEOUT': return $result;
-			default: return 'ERROR';
+			case 'MAYBE': return $result;
+			case 'TIMEOUT': return 'timeout';
+			default: return 'error';
 		}
 	}
-	function status2style($status) {
+	function status2class($status) {
 		if( $status == 'complete' ) {
-			return 'class=complete';
+			return 'complete';
 		} else if( $status == 'incomplete' || $status == 'paused' || $status == 'pending submission' ) {
-			return 'class=incomplete';
+			return 'incomplete';
 		} else if( substr($status,0,7) == 'timeout' || $status == 'memout' ) {
-			return 'class=timeout';
+			return 'timeout';
 		} else if( $status == 'run script error' ) {
-			return 'class=starexecbug';
+			return 'starexecbug';
 		} else if( $status == 'enqueued' ) {
-			return 'class=active';
+			return 'active';
 		} else {
-			return 'class=error';
+			return 'error';
 		}
 	}
 	function status2str($status) {
@@ -254,17 +256,15 @@ set_time_limit(300);
 		foreach( $raw_mcats as $mcat_name => $raw_cats ) {
 			$cats = [];
 			foreach( $raw_cats as $cat_name => $cat ) {
-				if( array_key_exists('certified',$cat) ) {
+				if( array_key_exists('id',$cat) && array_key_exists('certified',$cat) ) {
 					$certinfo = $cat['certified'];
-					unset( $cat['certified'] );
 					if( array_key_exists('id',$certinfo) && $certinfo['id'] ) {
 						$cat['id'] .= '_'.$certinfo['id'];
 					}
-					array_merge($cat['participants'],$certinfo['participants']);
 				}
 				$cats[$cat_name] = $cat;
 			}
-			foreach( $cats as $cat_name => $cat ) {
+/*			foreach( $cats as $cat_name => $cat ) {
 				$cnt = array_key_exists('participants',$cat) ? count($cat['participants']) : 0;
 				if( $cnt == 0 && !$cat['id'] > 0 ) {
 					unset($cats[$cat_name]);// remove unparticipated category
@@ -273,6 +273,7 @@ set_time_limit(300);
 					unset($cats[$cat_name]);
 				}
 			}
+*/
 			$mcats[$mcat_name] = $cats;
 		}
 		if( $demos != [] ) {
