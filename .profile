@@ -5,4 +5,4 @@ while [ 1 ]; do
   cp tmp index.html
   echo Done! Sleeping...
   sleep 5
-done
+done&
