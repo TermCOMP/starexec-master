@@ -2,7 +2,7 @@
 $title = 'Termination Competition 2021 (First Run)';
 $shortname = 'TermCOMP 2021-1';
 $showconfig = true;
-$note = '';
+$note = 'Registration is open, via pull-requests on <a href=https://github.com/TermCOMP/starexec-master/blob/master/Y2021_info.php>this file</a>!';
 $tpdbver = '11.1';
 $closed = false;
 $categories = [
