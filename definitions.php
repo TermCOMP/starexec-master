@@ -176,7 +176,7 @@ set_time_limit(300);
 		if( $result == 'YES' || $result == 'NO' ) {
 			return 1;
 		}
-		if( array_key_exists('up',$result) ) {
+		if( is_array($result) && array_key_exists('up',$result) ) {
 			$up = $result['up'];
 			$low = $result['low'];
 			if( $low == 1000 ) {
@@ -191,7 +191,7 @@ set_time_limit(300);
 			case 'YES': case 'NO':
 			case 'MAYBE': case 'TIMEOUT': return $result;
 			default:
-				if( array_key_exists('up',$result) ) {
+				if( is_array($result) && array_key_exists('up',$result) ) {
 					$low = $result['low'];
 					$up = $result['up'];
 					if( $low == 1000 ) {
@@ -218,7 +218,7 @@ set_time_limit(300);
 			case 'MAYBE': return $result;
 			case 'TIMEOUT': return 'timeout';
 			default:
-				if( array_key_exists('up',$result) ) {
+				if( is_array($result) && array_key_exists('up',$result) ) {
 					$low = $result['low'];
 					$up = $result['up'];
 					return ($cert ? $cert.' ' : '').(

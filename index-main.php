@@ -108,7 +108,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 		];
 		$query = http_build_query( $jobargs, '', ' ' );
 		$tmp = tempnam('','');
-		system( 'php-cgi -f "'. $type . '.php" '. $query .' > "'. $tmp . '"');
+		system( 'php-cgi -f "job.php" '. $query .' > "'. $tmp . '"');
 		rename($tmp,$jobpath);
 		$tmp = tempnam('','');
 		system( 'php-cgi -f "graph.php" '. $query .' > "'. $tmp . '"');
