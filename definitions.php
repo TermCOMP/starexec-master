@@ -82,7 +82,7 @@ set_time_limit(300);
 				'solver' => $record['solver'],
 				'solver id' => $record['solver id'],
 				'configuration' => $record['configuration'],
-				'score' => 0,
+				'score' => 0.0,
 				'unscored' => 0,
 				'scorestogo' => 0,
 				'conflicts' => 0,
@@ -118,20 +118,91 @@ set_time_limit(300);
 	function pairid2outurl($pairid) {
 		return 'https://www.starexec.org/starexec/services/jobs/pairs/'. $pairid .'/stdout/1?limit=-1';
 	}
+// For complexity
+	function bound2str( $bound ) {
+		switch( $bound ) {
+			case 0: return '1';
+			case 1: return 'n';
+			case 999: return 'n<sup>?</sup>';
+			case 1000: return 'NonPoly';
+			case 1001: return '&omega;';
+			default: return 'n<sup>'.$bound.'</sup>';
+		}
+	}
+	function str2lower( $string ) {
+		if( $string == 'Omega(1)' ) {
+			return 0;
+		} else if( preg_match( '/Omega\\(n\\^([0-9]+)\\)/', $string, $matches ) ) {
+			return $matches[1];
+		} else if( $string == 'NON_POLY' ) {
+			return 1000;
+		} else {
+			return 0;
+		}
+	}
+	function str2upper( $string ) {
+		if( $string == 'O(1)' ) {
+			return 0;
+		} else if( preg_match( '/O\\(n\\^([0-9]+)\\)/', $string, $matches ) ) {
+			return $matches[1];
+		} else if( $string == 'POLY' ) {
+			return 999;
+		} else {
+			return 1001;
+		}
+	}
+	function parse_result($str) {
+		switch($str) {
+			case 'YES': case 'NO': case 'MAYBE':
+				return $str;
+			default:
+				if( preg_match( '/WORST_CASE\\(\\s*(.+)\\s*,\\s*(.+)\\s*\\)/', $str, $matches ) ) {
+					$low = str2lower($matches[1]);
+					$up = str2upper($matches[2]);
+					if( $low == 0 && $up == 1001 ) {// no information
+						return 'MAYBE';
+					}
+					if( $low <= $up ) {// valid answer
+						return [ 'low' => $low, 'up' => $up ];
+					}
+				}
+				return $str;
+		}
+	}
 	function result2score($result,$cert) {
 		if( $cert == 'REJECTED' || $cert == 'UNSUPPORTED' ) {
 			return 0;
 		}
-		switch($result) {
-			case 'YES': case 'NO': case 'UP': case 'LOW': return 1;
-			default: return 0;
+		if( $result == 'YES' || $result == 'NO' ) {
+			return 1;
 		}
+		if( array_key_exists('up',$result) ) {
+			$up = $result['up'];
+			$low = $result['low'];
+			if( $low == 1000 ) {
+				return 2.0;
+			}
+			return (1.0 - .5^$low) + ($up >= 999 ? 0.0 : .5^($up-$low));
+		}
+		return 0.0;
 	}
 	function result2str($result) {
 		switch($result) {
-			case 'YES': case 'NO': case 'UP': case 'LOW':
+			case 'YES': case 'NO':
 			case 'MAYBE': case 'TIMEOUT': return $result;
-			default: return 'ERROR';
+			default:
+				if( array_key_exists('up',$result) ) {
+					$low = $result['low'];
+					$up = $result['up'];
+					if( $low == 1000 ) {
+						return 'NON-POLY';
+					}
+					if( $low == $up ) {
+						return '&Theta;('.bound2str($low).')';
+					}
+					return ($low > 0 ? '&Omega;('.bound2str($low).')' : '').'―'.($up < 999 ? 'O('.bound2str($up).')' : '');
+				}
+				return 'ERROR';
 		}
 	}
 	function cert2str($cert) {
@@ -142,11 +213,21 @@ set_time_limit(300);
 	}
 	function result2class($result,$cert) {
 		switch($result) {
-			case 'YES': case 'NO': case 'UP': case 'LOW':
-				return $cert ? $cert.' '.$result : $result;
+			case 'YES': case 'NO':
+				return ($cert ? $cert.' ' : '').$result;
 			case 'MAYBE': return $result;
 			case 'TIMEOUT': return 'timeout';
-			default: return 'error';
+			default:
+				if( array_key_exists('up',$result) ) {
+					$low = $result['low'];
+					$up = $result['up'];
+					return ($cert ? $cert.' ' : '').(
+						$low == 1000 ? 'lowNP' :
+						$up >= 999 ? 'low'.($low < 3 ? $low : '3') :
+						'up'.($up - $low < 3 ? $up - $low : '3')
+					);
+				}
+				return 'error';
 		}
 	}
 	function status2class($status) {

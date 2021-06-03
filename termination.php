@@ -96,7 +96,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				$p['done'] += 1;
 				$p['cpu'] += $cpu;
 				$p['time'] += $time;
-				$result = status2timeout($status) ? "TIMEOUT" : $record['result'];
+				$result = status2timeout($status) ? "TIMEOUT" : parse_result($record['result']);
 				$cert = $record['certification-result'];
 				if( $cert == '-' ) {
 					$cert = false;
