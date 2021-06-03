@@ -6,8 +6,8 @@
  <link rel="stylesheet" href="master.css">
 
 <?php
-	error_reporting( E_ALL ^ E_NOTICE ); 
 	include './definitions.php';
+	error_reporting( E_ALL ^ E_NOTICE ); 
 	
 	if( !array_key_exists('id', $_GET) ) {
 		echo '</head>';
