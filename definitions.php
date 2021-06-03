@@ -222,9 +222,10 @@ set_time_limit(300);
 					$low = $result['low'];
 					$up = $result['up'];
 					return ($cert ? $cert.' ' : '').(
-						$low == 1000 ? 'lowNP' :
-						$up >= 999 ? 'low'.($low < 3 ? $low : '3') :
-						'up'.($up - $low < 3 ? $up - $low : '3')
+						$low == 1000 ? 'lowNP' : (// some version of PHP demands parentheses here 
+							$up >= 999 ? 'low'.($low < 3 ? $low : '3') :
+							'up'.($up - $low < 3 ? $up - $low : '3')
+						)
 					);
 				}
 				return 'error';
