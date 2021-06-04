@@ -199,11 +199,11 @@ td.LOW, .LOW.d3, .LOW.d3 a {
 	background: none;
 	color: 20E0E0;
 }
-.UP.d0, .UP.d0 a {
+td.UP, .UP.d0, .UP.d0 a {
 	background-color: #00ffff;
 	color: black;
 }
-td.UP, .UP.d1, .UP.d1 a {
+.UP.d1, .UP.d1 a {
 	background-color: #a0fff0;
 	color: black;
 }
