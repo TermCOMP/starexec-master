@@ -83,7 +83,7 @@ set_time_limit(300);
 				'solver id' => $record['solver id'],
 				'configuration' => $record['configuration'],
 				'score' => 0.0,
-				'unscored' => 0,
+				'miss' => 0.0,
 				'scorestogo' => 0,
 				'conflicts' => 0,
 				'done' => 0,
@@ -163,37 +163,55 @@ set_time_limit(300);
 						return 'MAYBE';
 					}
 					if( $low <= $up ) {// valid answer
-						return [ 'low' => $low, 'up' => $up ];
+						return [ 'LOW' => $low, 'UP' => $up ];
 					}
 				}
 				return $str;
 		}
 	}
-	function result2score($result,$cert) {
-		if( $cert == 'REJECTED' || $cert == 'UNSUPPORTED' ) {
-			return 0;
-		}
-		if( $result == 'YES' || $result == 'NO' ) {
-			return 1;
-		}
-		if( is_array($result) && array_key_exists('up',$result) ) {
-			$up = $result['up'];
-			$low = $result['low'];
-			if( $low == 1000 ) {
-				return 2.0;
+	$scored_keys = [
+		'YES' => ['result' => 'YES', 'cert' => ''],
+		'NO' => ['result' => 'NO', 'cert' => ''],
+		'UP' => ['result' => 'UP', 'cert' => ''],
+		'LOW' => ['result' => 'LOW', 'cert' => ''],
+		'CERTIFIED YES' => ['result' => 'YES', 'cert' => 'CERTIFIED'],
+		'CERTIFIED NO' => ['result' => 'NO', 'cert' => 'CERTIFIED'],
+		'CERTIFIED UP' => ['result' => 'UP', 'cert' => 'CERTIFIED'],
+		'CERTIFIED LOW' => ['result' => 'LOW', 'cert' => 'CERTIFIED'],
+	];
+	function result2scores($result,$cert) {
+		if( $cert != 'REJECTED' && $cert != 'UNSUPPORTED' ) {
+			$pre = $cert == 'CERTIFIED' ? $cert.' ' : '';
+			if( $result == 'YES' ) {
+				return ['score' => 1, 'miss' => 0, $pre.'YES' => 1];
 			}
-			return (1.0 - .5^$low) + ($up >= 999 ? 0.0 : .5^($up-$low));
+			if( $result == 'NO' ) {
+				return ['score' => 1, 'miss' => 0, $pre.'NO' => 1];
+			}
+			if( is_array($result) && array_key_exists('UP',$result) ) {
+				$ratio = 0.75;
+				$up = $result['UP'];
+				$low = $result['LOW'];
+				$lowscore = $low == 1000 ? 1.0 : 1.0 - $ratio**$low;
+				$upscore = $up >= 999 ? 0.0 : $ratio**$up;
+				return [
+					'score' => $upscore + $lowscore,
+					'miss' => 1.0 - $upscore - $lowscore,
+					$pre.'UP' => $upscore, 
+					$pre.'LOW' => $lowscore,
+				];
+			}
 		}
-		return 0.0;
+		return ['score' => 0, 'miss' => 1];
 	}
 	function result2str($result) {
 		switch($result) {
 			case 'YES': case 'NO':
 			case 'MAYBE': case 'TIMEOUT': return $result;
 			default:
-				if( is_array($result) && array_key_exists('up',$result) ) {
-					$low = $result['low'];
-					$up = $result['up'];
+				if( is_array($result) && array_key_exists('UP',$result) ) {
+					$low = $result['LOW'];
+					$up = $result['UP'];
 					if( $low == 1000 ) {
 						return 'NON-POLY';
 					}
@@ -211,25 +229,22 @@ set_time_limit(300);
 			default: return $cert;
 		}
 	}
+	function key2class($result,$cert) {
+		return ($cert ? $cert.' ' : '').(
+			in_array($result,['YES','NO','MAYBE','TIMEOUT','LOW','UP']) ? $result : 'error');
+	}
 	function result2class($result,$cert) {
-		switch($result) {
-			case 'YES': case 'NO':
-				return ($cert ? $cert.' ' : '').$result;
-			case 'MAYBE': return $result;
-			case 'TIMEOUT': return 'timeout';
-			default:
-				if( is_array($result) && array_key_exists('up',$result) ) {
-					$low = $result['low'];
-					$up = $result['up'];
-					return ($cert ? $cert.' ' : '').(
-						$low == 1000 ? 'lowNP' : (// some version of PHP demands parentheses here 
-							$up >= 999 ? 'low'.($low < 3 ? $low : '3') :
-							'up'.($up - $low < 3 ? $up - $low : '3')
-						)
-					);
-				}
-				return 'error';
+		if( is_string($result) ) {
+			return key2class($result,$cert);
 		}
+		$low = $result['LOW'];
+		$up = $result['UP'];
+		return ($cert ? $cert.' ' : '').(
+			$low == 1000 ? 'LOW np' : (// some version of PHP demands parentheses here 
+				$up >= 999 ? 'LOW d'.($low < 3 ? $low : '3') :
+				'UP d'.($up - $low < 3 ? $up - $low : '3')
+			)
+		);
 	}
 	function status2class($status) {
 		if( $status == 'complete' ) {

@@ -171,19 +171,23 @@ div.category {
 	background-color: gray; 
 	color: white;
 }
-.LOW, .low1, .low1 a {
-	background-color: #60C060;
+.score .LOW {
+	background: none;
+	color: #208020;
+}
+.LOW.d1, .LOW.d1 a {
+	background-color: #b0e0b0;
 	color: black;
 }
-.low2, .low2 a {
-	background-color: #60A060;
-	color: #E0E0E0;
+.LOW.d2, .LOW.d2 a {
+	background-color: #80d080;
+	color: black;
 }
-.low3, .low3 a {
+td.LOW, .LOW.d3, .LOW.d3 a {
 	background-color: #40A040;
 	color: white;
 }
-.lowNP, .lowNP a {
+.LOW.np, .LOW.np a {
 	background-color: #208020;
 	color: white;
 }
@@ -191,27 +195,27 @@ div.category {
 	background-color: #60A060;
 	color: white;
 }
-.score .LOW {
+.score .UP {
 	background: none;
-	color: #208020;
+	color: 20E0E0;
 }
-.up0, .up0 a {
+.UP.d0, .UP.d0 a {
 	background-color: #00ffff;
 	color: black;
 }
-.UP, .up1, .up1 a {
-	background-color: #a0ffe0;
+td.UP, .UP.d1, .UP.d1 a {
+	background-color: #a0fff0;
 	color: black;
 }
-.up2, .up2 a {
-	background-color: #c0ffd0;
+.UP.d2, .UP.d2 a {
+	background-color: #b0ffc0;
 	color: black;
 }
-.up3, .up3 a {
-	background-color: #c0d0d0;
+.UP.d3, .UP.d3 a {
+	background-color: #c0f0c0;
 	color: black;
 }
-.upP, .upP a {
+.UP.poly, .UP.poly a {
 	background-color: #C0F0C0;
 	color: black;
 }
@@ -219,10 +223,6 @@ div.category {
 	background-color: #00FFF0;
 	color: black;
 	font-weight: bold;
-}
-.score .UP {
-	background: none;
-	color: 20E0E0;
 }
 td.time, th.time {
 	width: 1%;

@@ -15,23 +15,11 @@ $catname = $_GET['name'];
 $id = $_GET['id'];
 $ids = explode('_',$id);
 $jobid = $ids[0];
-$type = $_GET['type'];
 
 ?>
 </head>
 <body>
 <?php
-
-$scored_keys = [
-	'YES' => ['result' => 'YES', 'cert' => ''],
-	'NO' => ['result' => 'NO', 'cert' => ''],
-	'UP' => ['result' => 'UP', 'cert' => ''],
-	'LOW' => ['result' => 'LOW', 'cert' => ''],
-	'YES;CERTIFIED' => ['result' => 'YES', 'cert' => 'CERTIFIED'],
-	'NO;CERTIFIED' => ['result' => 'NO', 'cert' => 'CERTIFIED'],
-	'UP;CERTIFIED' => ['result' => 'UP', 'cert' => 'CERTIFIED'],
-	'LOW;CERTIFIED' => ['result' => 'LOW', 'cert' => 'CERTIFIED'],
-];
 
 $cat_done = 0;
 $cat_togo = 0;
@@ -84,7 +72,7 @@ foreach( $solvers as $configid => $s ) {
 	$id = $s['solver id'];
 	$config = $s['configuration'];
 	$score = $s['score'];
-	$unscored = $s['unscored'];
+	$miss = $s['miss'];
 	$scorestogo = $s['scorestogo'];
 	$togo = $s['togo'];
 	$done = $s['done'];
@@ -100,7 +88,7 @@ foreach( $solvers as $configid => $s ) {
 		$prev_score[$layer] = $score;
 	}
 	// Making progress bar
-	$total = $score + $unscored + $scorestogo;
+	$total = $score + $miss + $scorestogo;
 	$cert = $certtime ? 'CERTIFIED' : false;
 	echo '   <tr class="layer'.$layer.($cert ? ' '.$cert : '').'">'.PHP_EOL.
 	     '    <td>'.PHP_EOL.
@@ -108,14 +96,14 @@ foreach( $solvers as $configid => $s ) {
 	     '      <tr style="height:1ex">'.PHP_EOL;
 	foreach( $scored_keys as $key => $val ) {
 		if( array_key_exists($key,$s) && $s[$key] > 0 ) {
-			echo '       <td class="' . result2class($val['result'],$val['cert']) . '" style="width:'. (100 * $s[$key] / $total) . '%">'.PHP_EOL;
+			echo '       <td class="'.$key.'" style="width:'.(100 * $s[$key] / $total).'%">'.PHP_EOL;
 		}
 	}
 	if( $scorestogo > 0 ) {
 		echo '       <td class=incomplete style="width:'. (100 * $scorestogo / $total) . '%">'.PHP_EOL;
 	}
-	if( $unscored > 0 ) {
-		echo '       <td class=MAYBE style="width:'. (100 * $unscored / $total) . '%">'.PHP_EOL;
+		if( $miss > 0 ) {
+		echo '       <td class=MAYBE style="width:'. (100 * $miss / $total) . '%">'.PHP_EOL;
 	}
 	echo '     </table>'.PHP_EOL;
 	// Textual display
@@ -128,11 +116,10 @@ foreach( $solvers as $configid => $s ) {
 	foreach( $scored_keys as $key => $val ) {
 		if( array_key_exists( $key, $s ) ) {
 			$subscore = $s[$key];
-			echo '<span class="';
-			if( $subscore == $best[$layer][$key] ) {
-				echo 'best ';
+			if( $subscore > 0 ) {
+				echo '<span class="'.( $subscore == $best[$layer][$key] ? 'best ' : '' ).$key.'">'.
+				     $val['result'].':'.( is_int($subscore) ? $subscore : number_format($subscore,2) ).'</span>,'.PHP_EOL;
 			}
-			echo result2class($val['result'],$val['cert']) . '">'. $val['result'] . ':' . $subscore . '</span>,'.PHP_EOL;
 		}
 	}
 	echo '<span class="'.( $time == $best[$layer]['time'] ? 'best ' : '' ).'time">TIME:'.seconds2str($time).'</span>';

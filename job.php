@@ -90,6 +90,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			$p =& $participants[$configid];
 			$status = $record['status'];
 			$show = $show || !status2pending($status);
+			$score = 0;
 			if( status2finished($status) ) {
 				$cpu = parse_time($record['cpu time']);
 				$time = parse_time($record['wallclock time']);
@@ -106,18 +107,16 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 					$certtime = 0;
 				}
 				$p['certtime'] += $certtime;
-				$score = result2score($result,$cert);
-				$p[$cert ? $result.';'.$cert : $result] += 1;
-				if( $score > 0 ) {
-					$p['score'] += $score;
-				} else {
-					$p['unscored'] += 1;
+				$scores = result2scores($result,$cert);
+				foreach( $scores as $key => $val ) {
+					$p[$key] += $val;
 				}
-				$resultcounter[$result] += 1;
+				$score = $scores['score'];
 			} else {
 				$p['togo'] += 1;
 				$p['scorestogo'] += 1;
 				$resultcounter['togo'] += 1;
+				$score = 0;
 			}
 			$bench[$configid] = [
 				'status' => $status,
@@ -180,7 +179,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 	foreach( $participants as &$p ) {
 		$p['cpu'] = (int)$p['cpu'];// eliminate round errors
 		$p['time'] = (int)$p['time'];// eliminate round errors
-		echo '  <th>'.$p['score'];
+		echo '  <th>'.number_format($p['score'],2);
 		$summer = &$sum[$p['layer']];
 		$summer['done'] += $p['done'];
 		$summer['togo'] += $p['togo'];
