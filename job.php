@@ -98,12 +98,17 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				$p['cpu'] += $cpu;
 				$p['time'] += $time;
 				$result = status2timeout($status) ? "TIMEOUT" : parse_result($record['result']);
-				$cert = $record['certification-result'];
-				if( $cert == '-' ) {
+				if( array_key_exists('certification-result',$record) ) {
+					$cert = $record['certification-result'];
+					if( $cert == '-' ) {
+						$cert = false;
+					}
+					$certtime = $record['certification-time'];
+					if( !is_numeric($certtime) ) {
+						$certtime = 0;
+					}
+				} else {
 					$cert = false;
-				}
-				$certtime = $record['certification-time'];
-				if( !is_numeric($certtime) ) {
 					$certtime = 0;
 				}
 				$p['certtime'] += $certtime;
