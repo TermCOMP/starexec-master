@@ -12,16 +12,6 @@ set_time_limit(300);
 		return ($d>0? $d .'d ' : '').sprintf("%'02d:%'02d:%'02d",$h,$m,$s);
 	}
 
-	function type2php($type) {
-		if( $type == 'termination' ) {
-			return 'termination.php';
-		} else if( $type == 'complexity' ) {
-			return 'complexity.php';
-		} else {
-			return NULL;
-		}
-	}
-
 	function str2str($str) {// escape single quotes
 		return "'" . str_replace( ['\\', '\''], ['\\\\','\\\''], $str ) . "'";
 	}
@@ -56,7 +46,18 @@ set_time_limit(300);
 		}
 		return $record;
 	}
+	$scored_keys = [
+		'YES' => ['result' => 'YES', 'cert' => ''],
+		'NO' => ['result' => 'NO', 'cert' => ''],
+		'UP' => ['result' => 'UP', 'cert' => ''],
+		'LOW' => ['result' => 'LOW', 'cert' => ''],
+		'CERTIFIED YES' => ['result' => 'YES', 'cert' => 'CERTIFIED'],
+		'CERTIFIED NO' => ['result' => 'NO', 'cert' => 'CERTIFIED'],
+		'CERTIFIED UP' => ['result' => 'UP', 'cert' => 'CERTIFIED'],
+		'CERTIFIED LOW' => ['result' => 'LOW', 'cert' => 'CERTIFIED'],
+	];
 	function parse_results($csv, &$benchmarks, &$participants, $layer) {
+		global $scored_keys;
 		$file = new SplFileObject($csv);
 		$file->setFlags( SplFileObject::READ_CSV );
 		$header = $file->current();
@@ -82,8 +83,8 @@ set_time_limit(300);
 				'solver' => $record['solver'],
 				'solver id' => $record['solver id'],
 				'configuration' => $record['configuration'],
-				'score' => 0.0,
-				'miss' => 0.0,
+				'score' => 0,
+				'miss' => 0,
 				'scorestogo' => 0,
 				'conflicts' => 0,
 				'done' => 0,
@@ -93,6 +94,9 @@ set_time_limit(300);
 				'certtime' => 0,
 				'TIMEOUT' => 0,
 			];
+			foreach( $scored_keys as $key => $val ) {
+				$participants[$configid][$key] = 0;
+			}
 			$record = row2record($header,$file->current());
 			$file->next();
 			$proc($record);
@@ -169,16 +173,6 @@ set_time_limit(300);
 				return $str;
 		}
 	}
-	$scored_keys = [
-		'YES' => ['result' => 'YES', 'cert' => ''],
-		'NO' => ['result' => 'NO', 'cert' => ''],
-		'UP' => ['result' => 'UP', 'cert' => ''],
-		'LOW' => ['result' => 'LOW', 'cert' => ''],
-		'CERTIFIED YES' => ['result' => 'YES', 'cert' => 'CERTIFIED'],
-		'CERTIFIED NO' => ['result' => 'NO', 'cert' => 'CERTIFIED'],
-		'CERTIFIED UP' => ['result' => 'UP', 'cert' => 'CERTIFIED'],
-		'CERTIFIED LOW' => ['result' => 'LOW', 'cert' => 'CERTIFIED'],
-	];
 	function result2scores($result,$cert) {
 		if( $cert != 'REJECTED' && $cert != 'UNSUPPORTED' ) {
 			$pre = $cert == 'CERTIFIED' ? $cert.' ' : '';

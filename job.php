@@ -33,6 +33,7 @@
 			'togo' => 0,
 			'cpu' => 0,
 			'time' => 0,
+			'scorestogo' => 0,
 		];
 	}
 	echo ' <title>'. $competitionname .': '. $jobname .'</title>'.PHP_EOL.
