@@ -133,10 +133,24 @@ $categories = [
 			'spaceid' => 425946,
 			'participants' => [
 				"MuTerm" => 326595,
-				"AProVE" => 360174,
+				"AProVE" => 551423,
 			],
 			'certified' => [
 				'participants' => [
+					"AProVE" => 551426,
+				],
+			],
+		],
+		'TRS Outermost' => [
+			'type' => 'termination',
+			'id' => null,
+			'spaceid' => null,
+			'participants' => [
+				"AProVE" => 551423,
+			],
+			'certified' => [
+				'participants' => [
+					"AProVE" => 551426,
 				],
 			],
 		],
@@ -202,7 +216,7 @@ $categories = [
 			'spaceid' => 425939,
 			'participants' => [
 				"Ctrl" => 23758,
-				"AProVE" => 360174,
+				"AProVE" => 551423,
 			],
 			'certified' => [
 				'participants' => [
