@@ -55,13 +55,13 @@ $categories = [
 			'participants' => [
 				"NaTT" => 350520,
 				"TTT2" => 360055,
-				"AProVE" => 360174,
+				"AProVE" => 551423,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
 					"TTT2" => 360056,
-					"AProVE" => 360177,
+					"AProVE" => 551426,
 				],
 			],
 		],
@@ -265,7 +265,7 @@ $categories = [
 			'spaceid' => 425993,
 			'participants' => [
 				"NTI+cTI" => 549725,
-				"AProVE" => 360174,
+				"AProVE" => 551423,
 			],
 			'certified' => [
 				'participants' => [
@@ -275,8 +275,9 @@ $categories = [
 		'Logic_Programming_with_Cut' => [
 			'spaceid' => 425941,
 			'type' => 'termination',
-			'id' => false,
+			'id' => null,
 			'participants' => [
+				"AProVE" => 551423,
 			],
 			'certified' => [
 				'participants' => [
@@ -286,8 +287,9 @@ $categories = [
 		'Prolog' => [
 			'spaceid' => 425912,
 			'type' => 'termination',
-			'id' => false,
+			'id' => null,
 			'participants' => [
+				"AProVE" => 551423,
 			],
 			'certified' => [
 				'participants' => [
