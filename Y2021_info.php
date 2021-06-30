@@ -250,7 +250,7 @@ $categories = [
 		'Java_Bytecode_Recursive' => [
 			'spaceid' => 426004,
 			'type' => 'termination',
-			'id' => false,
+			'id' => null,
 			'participants' => [
 				"AProVE" => 551423,
 			],
@@ -318,7 +318,7 @@ $categories = [
 				"AProVE" => 551428
 			],
 			'certified' => [
-				'id' => false,
+				'id' => null,
 				'participants' => [
 				],
 			],

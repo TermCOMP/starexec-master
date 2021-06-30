@@ -79,7 +79,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 		$jobids = explode('_',$id);
 		$jobid = $jobids[0];
 		$overlay = array_key_exists( 1, $jobids ) ? $jobids[1] : false;
-		if( !$id ) {// This means the job is not yet started or linked to starexec-master.
+		if( $id == null ) {// This means the job is not yet started or linked to starexec-master.
 			echo ' <div class=category>'.$catname.PHP_EOL.
 			     '  <div class=ranking>'.PHP_EOL;
 			foreach( $cat['certified']['participants'] as $partname => $configid ) {

@@ -347,7 +347,7 @@ set_time_limit(300);
 		foreach( $raw_mcats as $mcat_name => $raw_cats ) {
 			$cats = [];
 			foreach( $raw_cats as $cat_name => $cat ) {
-				if( $cat['id'] ) {
+				if( $cat['id'] != null ) {
 					$certinfo = $cat['certified'];
 					if( $certinfo['id'] ) {
 						$cat['id'] .= '_'.$certinfo['id'];
@@ -356,7 +356,7 @@ set_time_limit(300);
 				$cats[$cat_name] = $cat;
 				if( $closed ) {
 					$cnt = array_key_exists('participants',$cat) ? count($cat['participants']) : 0;
-					if( $cnt == 0 && !$cat['id'] > 0 ) {
+					if( $cnt == 0 && $cat['id'] != null ) {
 						unset($cats[$cat_name]);// remove unparticipated category
 					} else if( $cnt == 1 ) {
 						$demos[$cat_name] = $cat;
