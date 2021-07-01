@@ -37,7 +37,7 @@ $categories = [
 				"TTT2" => 360055,
 				"matchbox" => 360336,
 				"AProVE" => 551423,
-				"MnM" => 360442,
+				"MnM" => 552058,
 			],
 			'certified' => [
 				'id' => null,
@@ -74,7 +74,7 @@ $categories = [
 				"TTT2" => 360055,
 				"matchbox" => 360337,
 				"AProVE" => 551423,
-				"MnM" => 360442,
+				"MnM" => 552058,
 			],
 			'certified' => [
 				'id' => null,
