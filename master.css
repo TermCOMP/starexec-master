@@ -160,15 +160,19 @@ div.category {
 	color: black;
 }
 .UNSUPPORTED, .UNSUPPORTED a {
-	background-color: gray;
+	background-color: #888888;
 	color: white;
 }
+.REJECTED, .REJECTED a {
+	background-color: #CC0000;
+	color: white; 
+}
 .error, .error a {
-	background-color: red;
+	background-color: #FF0000;
 	color: white; 
 }
 .starexecbug, .starexecbug a {
-	background-color: gray; 
+	background-color: #FF0000; 
 	color: white;
 }
 .score .LOW {
