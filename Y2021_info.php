@@ -157,7 +157,7 @@ $categories = [
 		],
 		'HRS (union beta)' => [
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47674,
 			'spaceid' => 466209,
 			'participants' => [
 				"SizeChangeTool" => 325830,
