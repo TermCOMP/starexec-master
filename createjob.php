@@ -6,22 +6,27 @@
 </head>
 <body>
 <?php
-include 'competition_info.php';
+include 'definitions.php';
+include $_GET['competition'].'_info.php';
 
 $i = 0;
-foreach( $mcats as $mcat_name => $cats ) {
+foreach( $categories as $mcat_name => $cats ) {
 echo
 '<h2>'.$mcat_name.'</h2>
 ';
-    foreach( $cats as $cat_name => $cat ) {
-        $i++;
-        echo
+	foreach( $cats as $cat_name => $cat ) {
+		foreach(
+			[	['name' => $cat_name, 'postproc' => 363, 'participants' => $cat['participants'] ],
+				['name' => $cat_name.' Certified', 'postproc' => 721, participants => $cat['certified']['participants'] ]
+			] as $job ) {
+			$i++;
+			echo
 '<form method="POST" id="myform'.$i.'"
  action="https://www.starexec.org/starexec/secure/add/job"
  target="_blank">
     <input type="submit" value="Create Job">
-    <input type="text" name="name" value="'. $cat_name . '" style="width:80%"><br>
-    queue: <input type="number" name="queue" value=123407>
+    <input type="text" name="name" value="'. $job['name'] . '" style="width:80%"><br>
+    queue: <input type="number" name="queue" value=149144>
     sid: <input type="number" name="sid" value='.$cat['spaceid'].'>
     desc: <input type="text" name="desc"><br>
     <select name="benchmarkingFramework">
@@ -29,10 +34,10 @@ echo
 	    <option value="RUNSOLVER">runsolver</option>
     </select>
     <input type="hidden" name="preProcess" value="-1">
-    <input type="hidden" name="seed" value=0>
-    cpuTimeout: <input type="number" name="cpuTimeout" value=1200>
-    wallclockTimeout: <input type="number" name="wallclockTimeout" value=300>
-    maxMem: <input type="number" name="maxMem" value=128><br>
+    <input type="hidden" name="seed" value="0">
+    cpuTimeout: <input type="number" name="cpuTimeout" value="1200">
+    wallclockTimeout: <input type="number" name="wallclockTimeout" value="300">
+    maxMem: <input type="number" name="maxMem" value="128"><br>
     pause: <input type="radio" name="pause" value="yes" id="pause_yes">
     <label for="pause_yes">yes</label>
     <input checked type="radio" name="pause" value="no" id="pause_no">
@@ -45,22 +50,26 @@ echo
     <select name="traversal">
         <option value="depth">depth</option>
         <option value="robin">robin</option>
-    </select><br>
+    </select>
     <input type="hidden" name="subscribe" value="no">
     <input type="hidden" name="suppressTimestamp" value="yes">
-    <input type="number" name="postProcess" value='.
-    ( $cat['certified'] ? '654' : '363' ) . '>
+    <input type="hidden" name="resultsInterval" value="0">
+    <input type="hidden" name="saveOtherOutput" value="false">
+    <input type="hidden" name="killDelay" value="0">
+    <input type="hidden" name="softTimeLimit" value="0">
+    postProcess: <input type="number" name="postProcess" value='. $job['postproc'] . '><br>
     Participants:
 ';
-        foreach( $cat['parts'] as $partname => $configid ) {
-            echo
+			foreach( $job['participants'] as $partname => $configid ) {
+				echo
 '   '. $partname .': <input type="number" name="configs" value='. $configid . '>;
 ';
-        }
-        echo
+			}
+			echo
 '</form><br>
 ';
-    }
+		}
+	}
 }
 ?>
 </body>
