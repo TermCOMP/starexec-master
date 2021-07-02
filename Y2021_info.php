@@ -199,7 +199,7 @@ $categories = [
 		],
 		'Integer Transition Systems' => [
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47675,
 			'spaceid' => 466219,
 			'participants' => [
 				"Ctrl" => 23757,
