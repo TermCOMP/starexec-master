@@ -297,7 +297,7 @@ $categories = [
 			],
 		],
 	],
-	"Complexity Analysis" => [
+	'Complexity Analysis' => [
 		'Complexity: C_Integer' => [
 			'spaceid' => 466341,
 			'type' => 'complexity',

@@ -114,7 +114,10 @@ set_time_limit(300);
 		return "https://www.starexec.org/starexec/secure/download?type=job&id=$jobid&returnids=true&getcompleted=false";
 	}
 	function id2sumfile($id) {
-		return "Job" . $id . ".json";
+		return 'Job'.$id.'.json';
+	}
+	function spaceid2url($id) {
+		return 'https://www.starexec.org/starexec/secure/explore/spaces.jsp?id='.$id;
 	}
 	function pairid2url($pairid) {
 		return "https://www.starexec.org/starexec/secure/details/pair.jsp?id=$pairid";
