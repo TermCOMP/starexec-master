@@ -103,7 +103,7 @@ $categories = [
 		],
 		'TRS Conditional' => [
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47670,
 			'spaceid' => 466363,
 			'participants' => [
 				"MuTerm" => 326595,
@@ -116,7 +116,7 @@ $categories = [
 		],
 		'TRS Context Sensitive' => [
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47671,
 			'spaceid' => 466359,
 			'participants' => [
 				"MuTerm" => 163986,
