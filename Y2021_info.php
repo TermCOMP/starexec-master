@@ -29,7 +29,7 @@ $categories = [
 		],
 		'SRS Standard' => [
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47661,
 			'spaceid' => 466081,
 			'participants' => [
 				"MuTerm" => 326595,
@@ -40,7 +40,7 @@ $categories = [
 				"MnM" => 552058,
 			],
 			'certified' => [
-				'id' => null,
+				'id' => 47662,
 				'participants' => [
 					"TTT2" => 360056,
 					"AProVE" => 551426,
@@ -50,7 +50,7 @@ $categories = [
 		],
 		'TRS Relative' => [
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47664,
 			'spaceid' => 466103,
 			'participants' => [
 				"NaTT" => 552075,
@@ -58,7 +58,7 @@ $categories = [
 				"AProVE" => 551423,
 			],
 			'certified' => [
-				'id' => null,
+				'id' => 47665,
 				'participants' => [
 					"TTT2" => 360056,
 					"AProVE" => 551426,
