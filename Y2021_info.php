@@ -86,7 +86,7 @@ $categories = [
 		],
 		'TRS Equational' => [
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47668,
 			'spaceid' => 466098,
 			'participants' => [
 				"MuTerm" => 163986,
@@ -94,7 +94,7 @@ $categories = [
 				"AProVE" => 551423,
 			],
 			'certified' => [
-				'id' => null,
+				'id' => 47669,
 				'participants' => [
 					"AProVE" => 551426,
 					"NaTT" => 360199,
