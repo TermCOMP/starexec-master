@@ -236,7 +236,7 @@ $categories = [
 				],
 			],
 		],
-		'Java_Bytecode' => [
+		'Java Bytecode' => [
 			'spaceid' => 466222,
 			'type' => 'termination',
 			'id' => null,
@@ -248,7 +248,7 @@ $categories = [
 				],
 			],
 		],
-		'Java_Bytecode_Recursive' => [
+		'Java Bytecode Recursive' => [
 			'spaceid' => 466352,
 			'type' => 'termination',
 			'id' => null,
@@ -273,7 +273,7 @@ $categories = [
 				],
 			],
 		],
-		'Logic_Programming_with_Cut' => [
+		'Logic Programming with Cut' => [
 			'spaceid' => 466237,
 			'type' => 'termination',
 			'id' => null,
@@ -324,7 +324,7 @@ $categories = [
 				],
 			],
 		],
-		'Derivational_Complexity: TRS' => [
+		'Derivational Complexity: TRS' => [
 			'spaceid' => 466043,
 			'type' => 'complexity',
 			'id' => 47678,
@@ -339,7 +339,7 @@ $categories = [
 				],
 			],
 		],
-		'Derivational_Complexity: TRS Innermost' => [
+		'Derivational Complexity: TRS Innermost' => [
 			'spaceid' => 466273,
 			'type' => 'complexity',
 			'id' => 47680,
@@ -354,7 +354,7 @@ $categories = [
 				],
 			],
 		],
-		'Runtime_Complexity: TRS' => [
+		'Runtime Complexity: TRS' => [
 			'spaceid' => 466246,
 			'type' => 'complexity',
 			'id' => 47682,
@@ -369,7 +369,7 @@ $categories = [
 				],
 			],
 		],
-		'Runtime_Complexity: TRS Innermost' => [
+		'Runtime Complexity: TRS Innermost' => [
 			'spaceid' => 466379,
 			'type' => 'complexity',
 			'id' => 47684,
