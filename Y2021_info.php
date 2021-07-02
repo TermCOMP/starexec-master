@@ -327,13 +327,13 @@ $categories = [
 		'Derivational_Complexity: TRS' => [
 			'spaceid' => 466043,
 			'type' => 'complexity',
-			'id' => null,
+			'id' => 47678,
 			'participants' => [
 				"TcT" => 360388,
 				"AProVE" => 551421,
 			],
 			'certified' => [
-				'id' => null,
+				'id' => 47679,
 				'participants' => [
 					"TcT" => 360387,
 				],
@@ -342,13 +342,13 @@ $categories = [
 		'Derivational_Complexity: TRS Innermost' => [
 			'spaceid' => 466273,
 			'type' => 'complexity',
-			'id' => null,
+			'id' => 47680,
 			'participants' => [
 				"TcT" => 360385,
 				"AProVE" => 551421,
 			],
 			'certified' => [
-				'id' => null,
+				'id' => 47681,
 				'participants' => [
 					"TcT" => 360391,
 				],
