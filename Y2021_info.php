@@ -262,7 +262,7 @@ $categories = [
 		],
 		'Logic Programming' => [
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47677,
 			'spaceid' => 466183,
 			'participants' => [
 				"NTI+cTI" => 549725,
