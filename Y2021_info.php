@@ -129,13 +129,14 @@ $categories = [
 		],
 		'TRS Innermost' => [
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47672,
 			'spaceid' => 466200,
 			'participants' => [
 				"MuTerm" => 326595,
 				"AProVE" => 551423,
 			],
 			'certified' => [
+				'id' => 47673,
 				'participants' => [
 					"AProVE" => 551426,
 				],
