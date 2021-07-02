@@ -67,7 +67,7 @@ $categories = [
 		],
 		'SRS Relative' => [
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47666,
 			'spaceid' => 466194,
 			'participants' => [
 				"NaTT" => 552075,
@@ -77,7 +77,7 @@ $categories = [
 				"MnM" => 552058,
 			],
 			'certified' => [
-				'id' => null,
+				'id' => 47667,
 				'participants' => [
 					"TTT2" => 360056,
 					"AProVE" => 551426,
