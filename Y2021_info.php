@@ -9,7 +9,7 @@ $categories = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47659,
 			'spaceid' => 466107,
 			'participants' => [
 				"NTI" => 549724,
@@ -19,7 +19,7 @@ $categories = [
 				"MuTerm" => 326595,
 			],
 			'certified' => [
-			'id' => null,
+			'id' => 47660,
 				'participants' => [
 					"TTT2" => 360056,
 					"AProVE" => 551426,
