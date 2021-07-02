@@ -20,6 +20,9 @@
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
 	$tpdbver = $_GET['tpdbver'];
+	$type = $_GET['type'];
+
+	$max_score = $type == 'complexity' ? 2.0 : 1;
 
 	$benchmarks = [];
 	$participants = [];
@@ -120,7 +123,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				$score = $scores['score'];
 			} else {
 				$p['togo'] += 1;
-				$p['scorestogo'] += 1;
+				$p['scorestogo'] += $max_score;
 				$resultcounter['togo'] += 1;
 				$score = 0;
 			}

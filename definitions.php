@@ -186,14 +186,14 @@ set_time_limit(300);
 				return ['score' => 1, 'miss' => 0, $pre.'NO' => 1];
 			}
 			if( is_array($result) && array_key_exists('UP',$result) ) {
-				$ratio = 0.75;
+				$ratio = 0.5;
 				$up = $result['UP'];
 				$low = $result['LOW'];
 				$lowscore = $low == 1000 ? 1.0 : 1.0 - $ratio**$low;
-				$upscore = $up >= 999 ? 0.0 : $ratio**$up;
+				$upscore = $up >= 1000 ? 0.0 : ($up == 999 ? 1.0 : 1.0 + $ratio**$up);
 				return [
 					'score' => $upscore + $lowscore,
-					'miss' => 1.0 - $upscore - $lowscore,
+					'miss' => 2.0 - $upscore - $lowscore,
 					$pre.'UP' => $upscore, 
 					$pre.'LOW' => $lowscore,
 				];
