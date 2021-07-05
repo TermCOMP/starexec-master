@@ -79,6 +79,9 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		     '    <option value="NO">NO</option>'.PHP_EOL.
 		     '    <option value="MAYBE">MAYBE</option>'.PHP_EOL.
 		     '    <option value="timeout">timeout</option>'.PHP_EOL.
+		     '    <option value="REJECTED">REJECTED</option>'.PHP_EOL.
+		     '    <option value="UNSUPPORTED">UNSUPPORTED</option>'.PHP_EOL.
+		     '    <option value="ERROR">ERROR</option>'.PHP_EOL.
 		     '   </select>'.PHP_EOL.
 		     '   <script>filteredTable.register('.$i.',"filter'.$i.'");</script>'.PHP_EOL;
 		$i++;
