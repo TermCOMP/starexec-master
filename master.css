@@ -164,7 +164,7 @@ div.category {
 	color: white;
 }
 .REJECTED, .REJECTED a {
-	background-color: #CC0000;
+	background-color: #FF5500;
 	color: white; 
 }
 .error, .error a {
