@@ -172,7 +172,7 @@ $categories = [
 	"Termination of Programs" => [
 		'C' => [
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47704,
 			'spaceid' => 466367,
 			'participants' => [
 				"AProVE" => 551429,
@@ -185,7 +185,7 @@ $categories = [
 		],
 		'C Integer' => [
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47705,
 			'spaceid' => 466376,
 			'participants' => [
 				"Ultimate" => 552091,
