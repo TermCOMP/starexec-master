@@ -176,7 +176,7 @@ set_time_limit(300);
 				return $str;
 		}
 	}
-	function result2scores($result,$cert) {
+	function result2scores($result,$cert,$max_score) {
 		if( $cert != 'REJECTED' && $cert != 'UNSUPPORTED' ) {
 			$pre = $cert == 'CERTIFIED' ? $cert.' ' : '';
 			if( $result == 'YES' ) {
@@ -199,7 +199,7 @@ set_time_limit(300);
 				];
 			}
 		}
-		return ['score' => 0, 'miss' => 1];
+		return ['score' => 0, 'miss' => $max_score];
 	}
 	function result2str($result) {
 		switch($result) {

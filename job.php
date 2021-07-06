@@ -119,7 +119,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 					$certtime = 0;
 				}
 				$p['certtime'] += $certtime;
-				$scores = result2scores($result,$cert);
+				$scores = result2scores($result,$cert,$max_score);
 				foreach( $scores as $key => $val ) {
 					$p[$key] += $val;
 				}
