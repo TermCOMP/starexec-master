@@ -23,7 +23,7 @@ $categories = [
 				'participants' => [
 					"TTT2" => 552235,
 					"AProVE" => 552179,
-					"NaTT" => 360199,
+					"NaTT" => 552274,
 				],
 			],
 		],
@@ -44,7 +44,7 @@ $categories = [
 				'participants' => [
 					"TTT2" => 552235,
 					"AProVE" => 552179,
-					"NaTT" => 360199,
+					"NaTT" => 552278,
 				],
 			],
 		],
