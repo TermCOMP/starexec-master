@@ -209,28 +209,26 @@ set_time_limit(300);
 			return $ret;
 		}
 		$pre = $cert == 'CERTIFIED' ? $cert.' ' : '';
-		if( array_key_exists('YES',$claim) ) {
-			$ret['score']++;
-			$ret['miss']--;
-			$ret[$pre.'YES'] = 1;
-		}
 		if( array_key_exists('NO',$claim) ) {
 			$ret['score']++;
 			$ret['miss']--;
 			$ret[$pre.'NO'] = 1;
-		}
-		if( array_key_exists('UP',$claim) ) {
-			$upscore = .5**$claim['UP'];
-			$ret['score'] += $upscore;
-			$ret['miss'] -= $upscore;
-			$ret[$pre.'UP'] = $upscore;
-		}
-		if( array_key_exists('LOW',$claim) ) {
+		} else if( array_key_exists('LOW',$claim) ) {
 			$low = $claim['LOW'];
 			$lowscore = $low == 1000 ? 1.0 : 1.0 - .5**$low;
 			$ret['score'] += $lowscore;
 			$ret['miss'] -= $lowscore;
 			$ret[$pre.'LOW'] = $lowscore;
+		}
+		if( array_key_exists('UP',$claim) ) {
+			$upscore = 1 + .5**$claim['UP'];
+			$ret['score'] += $upscore;
+			$ret['miss'] -= $upscore;
+			$ret[$pre.'UP'] = $upscore;
+		} else if( array_key_exists('YES',$claim) ) {
+			$ret['score']++;
+			$ret['miss']--;
+			$ret[$pre.'YES'] = 1;
 		}
 		return $ret;
 	}
