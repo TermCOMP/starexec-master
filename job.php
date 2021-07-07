@@ -91,7 +91,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 	$conflicts = 0;
 	foreach( $benchmarks as $benchmark_id => $benchmark ) {
 		$bench = [];
-		$resultcounter = []; /* collects results for each benchmark */
+		init_claim_set($claims); /* collects results for each benchmark */
 		$show = false;
 		foreach( $benchmark['participants'] as $configid => $record ) {
 			$p =& $participants[$configid];
@@ -104,7 +104,6 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				$p['done'] += 1;
 				$p['cpu'] += $cpu;
 				$p['time'] += $time;
-				$result = status2timeout($status) ? "TIMEOUT" : parse_result($record['result']);
 				if( array_key_exists('certification-result',$record) ) {
 					$cert = $record['certification-result'];
 					if( $cert == '-' ) {
@@ -119,7 +118,9 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 					$certtime = 0;
 				}
 				$p['certtime'] += $certtime;
-				$scores = result2scores($result,$cert,$max_score);
+				$claim = status2timeout($status) ? maybe_claim() : str2claim($record['result']);
+				add_claim($claims,$claim);
+				$scores = claim2scores($claim,$cert,$max_score);
 				foreach( $scores as $key => $val ) {
 					$p[$key] += $val;
 				}
@@ -127,7 +128,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			} else {
 				$p['togo'] += 1;
 				$p['scorestogo'] += $max_score;
-				$resultcounter['togo'] += 1;
+				add_claim_togo($claims);
 				$score = 0;
 			}
 			$bench[$configid] = [
@@ -137,12 +138,12 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				'cpu' => $cpu,
 				'certtime' => $certtime,
 				'pair' => $record['pair id'],
-				'result' => $result,
+				'claim' => $claim,
 				'score' => $score,
 			];
 		}
 		if( $show ) {
-			$d = results2description($resultcounter);
+			$d = claims2description($claims);
 			if( $d['conflicting'] ) {
 				foreach( array_keys($bench) as $me ) {
 					if( $bench[$me]['score'] > 0 ) {
@@ -165,14 +166,14 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			     '  <td style="display:none">'.$d['key'];
 			foreach( $bench as $me => $my ) {
 				$status = $my['status'];
-				$result = $my['result'];
+				$claim = $my['claim'];
 				$cert = $my['cert'];
 				$certtime = $my['certtime'];
 				$url = pairid2url($my['pair']);
 				$outurl = pairid2outurl($my['pair']);
 				if( status2complete($status) ) {
-					echo '  <td class="' . result2class($result,$cert) . '">'.PHP_EOL.
-					     '   <a href="'. $outurl .'">' . result2str($result) . '</a>'.PHP_EOL.
+					echo '  <td class="' . claim2class($claim,$cert) . '">'.PHP_EOL.
+					     '   <a href="'. $outurl .'">' . claim2str($claim) . '</a>'.PHP_EOL.
 					     '   <a href="'. $url .'">'.PHP_EOL.
 					     '    <span class="time">' . $my['cpu'] . '/' . $my['time'] . '</span>'.PHP_EOL;
 					if( $cert ) {

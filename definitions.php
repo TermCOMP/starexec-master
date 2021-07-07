@@ -158,67 +158,105 @@ set_time_limit(300);
 			return 1001;
 		}
 	}
-	function parse_result($str) {
-		switch($str) {
-			case 'YES': case 'NO': case 'MAYBE':
-				return $str;
-			default:
-				if( preg_match( '/WORST_CASE\\(\\s*(.+)\\s*,\\s*(.+)\\s*\\)/', $str, $matches ) ) {
-					$low = str2lower($matches[1]);
-					$up = str2upper($matches[2]);
-					if( $low == 0 && $up == 1001 ) {// no information
-						return 'MAYBE';
-					}
-					if( $low <= $up ) {// valid answer
-						return [ 'LOW' => $low, 'UP' => $up ];
-					}
-				}
-				return $str;
+	function maybe_claim() {
+		return ['MAYBE' => 1];
+	}
+	function str2claim($str) {
+		$ret = [];
+		if( $str == 'YES' || $str == 'NO' ) {
+			$ret[$str] = 1;
+		} else if( preg_match( '/WORST_CASE\\(\\s*(.+)\\s*,\\s*(.+)\\s*\\)/', $str, $matches ) ) {
+			$low = str2lower($matches[1]);
+			$up = str2upper($matches[2]);
+			if( $low > 0 ) {
+				$ret['LOW'] = $low;
+			}
+			if( $up < 1001 ) {
+				$ret['YES'] = 1;
+				$ret['UP'] = $up;
+			}
+		} else {
+			$ret['MAYBE'] = 1;
+		}
+		return $ret;
+	}
+	function init_claim_set(&$claims) {
+		$claims['YES'] = 0;
+		$claims['NO'] = 0;
+		$claims['MAYBE'] = 0;
+		$claims['UP'] = [];
+		$claims['LOW'] = [];
+		$claims['togo'] = 0;
+	}
+	function add_claim(&$claims,$claim) {
+		foreach( ['YES','NO','MAYBE'] as $key ) {
+			if( array_key_exists($key,$claim) ) {
+				$claims[$key]++;
+			}
+		}
+		foreach( ['UP','LOW'] as $key ) {
+			if( array_key_exists($key,$claim) ) {
+				array_push($claims[$key],$claim[$key]);
+			}
 		}
 	}
-	function result2scores($result,$cert,$max_score) {
-		if( $cert != 'REJECTED' && $cert != 'UNSUPPORTED' ) {
-			$pre = $cert == 'CERTIFIED' ? $cert.' ' : '';
-			if( $result == 'YES' ) {
-				return ['score' => 1, 'miss' => 0, $pre.'YES' => 1];
-			}
-			if( $result == 'NO' ) {
-				return ['score' => 1, 'miss' => 0, $pre.'NO' => 1];
-			}
-			if( is_array($result) && array_key_exists('UP',$result) ) {
-				$ratio = 0.5;
-				$up = $result['UP'];
-				$low = $result['LOW'];
-				$lowscore = $low == 1000 ? 1.0 : 1.0 - $ratio**$low;
-				$upscore = $up >= 1000 ? 0.0 : ($up == 999 ? 1.0 : 1.0 + $ratio**$up);
-				return [
-					'score' => $upscore + $lowscore,
-					'miss' => 2.0 - $upscore - $lowscore,
-					$pre.'UP' => $upscore, 
-					$pre.'LOW' => $lowscore,
-				];
-			}
-		}
-		return ['score' => 0, 'miss' => $max_score];
+	function add_claim_togo(&$claims) {
+			$claims['togo']++;
 	}
-	function result2str($result) {
-		switch($result) {
-			case 'YES': case 'NO':
-			case 'MAYBE': case 'TIMEOUT': return $result;
-			default:
-				if( is_array($result) && array_key_exists('UP',$result) ) {
-					$low = $result['LOW'];
-					$up = $result['UP'];
-					if( $low == 1000 ) {
-						return 'NON-POLY';
-					}
-					if( $low == $up ) {
-						return '&Theta;('.bound2str($low).')';
-					}
-					return ($low > 0 ? '&Omega;('.bound2str($low).')' : '').'―'.($up < 999 ? 'O('.bound2str($up).')' : '');
-				}
-				return 'ERROR';
+	function claim2scores($claim,$cert,$max_score) {
+		$ret = ['score' => 0, 'miss' => $max_score ];
+		if( $cert == 'REJECTED' || $cert == 'UNSUPPORTED' ) {
+			return $ret;
 		}
+		$pre = $cert == 'CERTIFIED' ? $cert.' ' : '';
+		if( array_key_exists('YES',$claim) ) {
+			$ret['score']++;
+			$ret['miss']--;
+			$ret[$pre.'YES'] = 1;
+		}
+		if( array_key_exists('NO',$claim) ) {
+			$ret['score']++;
+			$ret['miss']--;
+			$ret[$pre.'NO'] = 1;
+		}
+		if( array_key_exists('UP',$claim) ) {
+			$upscore = .5**$claim['UP'];
+			$ret['score'] += $upscore;
+			$ret['miss'] -= $upscore;
+			$ret[$pre.'UP'] = $upscore;
+		}
+		if( array_key_exists('LOW',$claim) ) {
+			$low = $claim['LOW'];
+			$lowscore = $low == 1000 ? 1.0 : 1.0 - .5**$low;
+			$ret['score'] += $lowscore;
+			$ret['miss'] -= $lowscore;
+			$ret[$pre.'LOW'] = $lowscore;
+		}
+		return $ret;
+	}
+	function claim2str($claim) {
+		if( array_key_exists('NO',$claim) ) {
+			return 'NO';
+		}
+		if( array_key_exists('UP',$claim) ) {
+			$up = $claim['UP'];
+			$low = array_key_exists('LOW',$claim) ? $claim['LOW'] : 0;
+			if( $low == $up ) {
+				return '&Theta;('.bound2str($up).')';
+			}
+			return ($low == 0 ? '' : '&Omega;('.bound2str($low).')').'―'.($up == 999 ? 'POLY' : 'O('.bound2str($up).')');
+		}
+		if( array_key_exists('LOW',$claim) ) {
+			$low = $claim['LOW'];
+			if( $low == 1000 ) {
+				return 'NON_POLY';
+			}
+			return '&Omega;('.bound2str($low).')―';
+		}
+		if( array_key_exists('YES',$claim) ) {
+			return 'YES';
+		}
+		return 'MAYBE';
 	}
 	function cert2str($cert) {
 		switch($cert) {
@@ -226,22 +264,23 @@ set_time_limit(300);
 			default: return $cert;
 		}
 	}
-	function key2class($result,$cert) {
-		return ($cert ? $cert.' ' : '').(
-			in_array($result,['YES','NO','MAYBE','TIMEOUT','LOW','UP']) ? $result : 'error');
-	}
-	function result2class($result,$cert) {
-		if( is_string($result) ) {
-			return key2class($result,$cert);
+	function claim2class($claim,$cert) {
+		$pre = $cert ? $cert.' ' : '';
+		if( array_key_exists('NO',$claim) ) {
+			return $pre.'NO';
 		}
-		$low = $result['LOW'];
-		$up = $result['UP'];
-		return ($cert ? $cert.' ' : '').(
-			$low == 1000 ? 'LOW np' : (// some version of PHP demands parentheses here 
-				$up >= 999 ? 'LOW d'.($low < 3 ? $low : '3') :
-				'UP d'.($up - $low < 3 ? $up - $low : '3')
-			)
-		);
+		if( array_key_exists('UP',$claim) ) {
+			$diff = $claim['UP'] - (array_key_exists('LOW',$claim) ? $claim['LOW'] : 0);
+			return $pre.'UP d'.($diff < 3 ? $diff : '3');
+		}
+		if( array_key_exists('LOW',$claim) ) {
+			$low = $claim['LOW'];
+			return $pre.'LOW '.( $low == 1000 ? 'np' : 'd'.($low < 3 ? $low : '3') );
+		}
+		if(	array_key_exists('YES',$claim) ) {
+			return $pre.'YES';
+		}
+		return 'MAYBE';
 	}
 	function status2class($status) {
 		if( $status == 'complete' ) {
@@ -306,35 +345,36 @@ set_time_limit(300);
 	function configid2url($configid) {
 		return "https://www.starexec.org/starexec/secure/details/configuration.jsp?id=$configid";
 	}
-	function results2description($results) {
-		$YES = array_key_exists('YES', $results) ? $results['YES'] : 0;
-		$NO = array_key_exists('NO', $results) ? $results['NO'] : 0;
-		if( array_key_exists('UP', $results) ) {
-			$UP = $results['UP'];
-			$nUP = count(array_filter($UP,function($up){return $up < 1000;}));
-			$vUP = count(array_unique($UP));
-		} else {
+	function claims2description($claims) {
+		$YES = $claims['YES'];
+		$NO = $claims['NO'];
+		$MAYBE = $claims['MAYBE'];
+		$UP = $claims['UP'];
+		$LOW = $claims['LOW'];
+		$togo = $claims['togo'];
+		if( empty($UP) ) {
 			$UP = [1000];
+			$minUP = 1000;
 			$nUP = 0;
 			$vUP = 1;
-		}
-		if( array_key_exists('LOW', $results) ) {
-			$LOW = $results['LOW'];
-			$nLOW = count(array_filter($LOW,function($low){return $low > 0;}));
-			$vLOW = count(array_unique($LOW));
 		} else {
-			$LOW = [0];
+			$minUP = min($UP);
+			$nUP = count(array_filter($UP,function($up){return $up == $minUP;}));
+			$vUP = count(array_unique($UP));
+		}
+		if( empty($LOW) ) {
+			$maxLOW = 0;
 			$nLOW = 0;
 			$vLOW = 1;
+		} else {
+			$maxLOW = max($LOW);
+			$nLOW = count(array_filter($LOW,function($low){return $low == $maxLOW;}));
+			$vLOW = count(array_unique($LOW));
 		}
-		$MAYBE = array_key_exists('MAYBE', $results) ? $results['MAYBE'] : 0;
-		$TIMEOUT = array_key_exists('TIMEOUT', $results) ? $results['TIMEOUT'] : 0;
-		$FAILED = $MAYBE + $TIMEOUT;
-		$togo = array_key_exists('togo', $results) && $results['togo'] > 0;
-		$conflicting = ($YES > 0 && $NO > 0) || min($UP) < max($LOW);
-		$interesting = ($YES + $NO > 0 && $FAILED > 0) || $vUP > 1 || $vLOW > 1;
-		$solo = ($YES == 1 || $NO == 1 || $nUP == 1 || $nLOW == 1) && $togo == 0;
+		$conflicting = ( $YES > 0 && $NO > 0 ) || $minUP < $maxLOW;
 		$unsolved = $YES == 0 && $NO == 0 && $nUP == 0 && $nLOW == 0;
+		$interesting = ( ( $YES > 0 || $NO > 0 ) && $MAYBE > 0) || $vUP > 1 || $vLOW > 1;
+		$solo = ($YES == 1 || $NO == 1 || $nUP == 1 || $nLOW == 1) && $togo == 0;
 		return [
 			'conflicting' => $conflicting,
 			'interesting' => $interesting,
