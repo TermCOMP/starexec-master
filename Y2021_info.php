@@ -1,10 +1,10 @@
 <?php
-$title = 'Termination Competition 2021 (First Run)';
-$shortname = 'TermCOMP 2021-1';
+$title = 'Termination Competition 2021';
+$shortname = 'TermCOMP 2021';
 $showconfig = true;
 $note = '';
 $tpdbver = '11.2';
-$closed = true;
+$closed = false;
 $categories = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [
