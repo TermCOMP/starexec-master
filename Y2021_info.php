@@ -9,7 +9,7 @@ $categories = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [
 			'type' => 'termination',
-			'id' => 47659,
+			'id' => null,
 			'spaceid' => 466107,
 			'participants' => [
 				"NTI" => 549724,
@@ -19,7 +19,7 @@ $categories = [
 				"MuTerm" => 326595,
 			],
 			'certified' => [
-			'id' => 47660,
+			'id' => null,
 				'participants' => [
 					"TTT2" => 552235,
 					"AProVE" => 552179,
@@ -29,7 +29,7 @@ $categories = [
 		],
 		'SRS Standard' => [
 			'type' => 'termination',
-			'id' => 47661,
+			'id' => null,
 			'spaceid' => 466081,
 			'participants' => [
 				"MuTerm" => 326595,
@@ -40,7 +40,7 @@ $categories = [
 				"MnM" => 552513,
 			],
 			'certified' => [
-				'id' => 47662,
+				'id' => null,
 				'participants' => [
 					"TTT2" => 552235,
 					"AProVE" => 552179,
@@ -50,7 +50,7 @@ $categories = [
 		],
 		'TRS Relative' => [
 			'type' => 'termination',
-			'id' => 47664,
+			'id' => null,
 			'spaceid' => 466103,
 			'participants' => [
 				"NaTT" => 552075,
@@ -58,7 +58,7 @@ $categories = [
 				"AProVE" => 551423,
 			],
 			'certified' => [
-				'id' => 47665,
+				'id' => null,
 				'participants' => [
 					"TTT2" => 552235,
 					"AProVE" => 552179,
@@ -67,7 +67,7 @@ $categories = [
 		],
 		'SRS Relative' => [
 			'type' => 'termination',
-			'id' => 47666,
+			'id' => null,
 			'spaceid' => 466194,
 			'participants' => [
 				"NaTT" => 552075,
@@ -77,7 +77,7 @@ $categories = [
 				"MnM" => 552058,
 			],
 			'certified' => [
-				'id' => 47667,
+				'id' => null,
 				'participants' => [
 					"TTT2" => 552235,
 					"AProVE" => 552179,
@@ -86,7 +86,7 @@ $categories = [
 		],
 		'TRS Equational' => [
 			'type' => 'termination',
-			'id' => 47668,
+			'id' => null,
 			'spaceid' => 466098,
 			'participants' => [
 				"MuTerm" => 163986,
@@ -94,7 +94,7 @@ $categories = [
 				"AProVE" => 551423,
 			],
 			'certified' => [
-				'id' => 47669,
+				'id' => null,
 				'participants' => [
 					"AProVE" => 552179,
 					"NaTT" => 552357,
@@ -103,7 +103,7 @@ $categories = [
 		],
 		'TRS Conditional' => [
 			'type' => 'termination',
-			'id' => 47670,
+			'id' => null,
 			'spaceid' => 466363,
 			'participants' => [
 				"MuTerm" => 326595,
@@ -116,27 +116,28 @@ $categories = [
 		],
 		'TRS Context Sensitive' => [
 			'type' => 'termination',
-			'id' => 47671,
+			'id' => null,
 			'spaceid' => 466359,
 			'participants' => [
 				"MuTerm" => 163986,
 				"AProVE" => 551423,
 			],
 			'certified' => [
+				'id' => null,
 				'participants' => [
 				],
 			],
 		],
 		'TRS Innermost' => [
 			'type' => 'termination',
-			'id' => 47672,
+			'id' => null,
 			'spaceid' => 466200,
 			'participants' => [
 				"MuTerm" => 326595,
 				"AProVE" => 551423,
 			],
 			'certified' => [
-				'id' => 47673,
+				'id' => null,
 				'participants' => [
 					"AProVE" => 552179,
 				],
@@ -150,6 +151,7 @@ $categories = [
 				"AProVE" => 551423,
 			],
 			'certified' => [
+				'id' => null,
 				'participants' => [
 					"AProVE" => 552179,
 				],
@@ -157,13 +159,14 @@ $categories = [
 		],
 		'HRS (union beta)' => [
 			'type' => 'termination',
-			'id' => 47674,
+			'id' => null,
 			'spaceid' => 466209,
 			'participants' => [
 				"SizeChangeTool" => 325830,
 				"Wanda" => 359682,
 			],
 			'certified' => [
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -172,20 +175,21 @@ $categories = [
 	"Termination of Programs" => [
 		'C' => [
 			'type' => 'termination',
-			'id' => 47704,
+			'id' => null,
 			'spaceid' => 466367,
 			'participants' => [
 				"AProVE" => 551429,
 				"Ultimate" => 552352,
 			],
 			'certified' => [
+				'id' => null,
 				'participants' => [
 				],
 			],
 		],
 		'C Integer' => [
 			'type' => 'termination',
-			'id' => 47705,
+			'id' => null,
 			'spaceid' => 466376,
 			'participants' => [
 				"Ultimate" => 552352,
@@ -193,13 +197,14 @@ $categories = [
 				"AProVE" => 551429,
 			],
 			'certified' => [
+				'id' => null,
 				'participants' => [
 				],
 			],
 		],
 		'Integer Transition Systems' => [
 			'type' => 'termination',
-			'id' => 47675,
+			'id' => null,
 			'spaceid' => 466219,
 			'participants' => [
 				"Ctrl" => 23757,
@@ -207,13 +212,14 @@ $categories = [
 				"LoAT" => 551398,
 			],
 			'certified' => [
+				'id' => null,
 				'participants' => [
 				],
 			],
 		],
 		'Integer TRS Innermost' => [
 			'type' => 'termination',
-			'id' => 47676,
+			'id' => null,
 			'spaceid' => 466410,
 			'participants' => [
 				"Ctrl" => 23758,
@@ -232,6 +238,7 @@ $categories = [
 				"AProVE" => 551423,
 			],
 			'certified' => [
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -244,6 +251,7 @@ $categories = [
 				"AProVE" => 551423,
 			],
 			'certified' => [
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -256,19 +264,21 @@ $categories = [
 				"AProVE" => 551423,
 			],
 			'certified' => [
+				'id' => null,
 				'participants' => [
 				],
 			],
 		],
 		'Logic Programming' => [
 			'type' => 'termination',
-			'id' => 47677,
+			'id' => null,
 			'spaceid' => 466183,
 			'participants' => [
 				"NTI+cTI" => 549725,
 				"AProVE" => 551423,
 			],
 			'certified' => [
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -281,6 +291,7 @@ $categories = [
 				"AProVE" => 551423,
 			],
 			'certified' => [
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -293,6 +304,7 @@ $categories = [
 				"AProVE" => 551423,
 			],
 			'certified' => [
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -307,6 +319,7 @@ $categories = [
 				"AProVE" => 551427
 			],
 			'certified' => [
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -327,13 +340,13 @@ $categories = [
 		'Derivational Complexity: TRS' => [
 			'spaceid' => 466043,
 			'type' => 'complexity',
-			'id' => 47678,
+			'id' => null,
 			'participants' => [
 				"TcT" => 360388,
 				"AProVE" => 551421,
 			],
 			'certified' => [
-				'id' => 47679,
+				'id' => null,
 				'participants' => [
 					"TcT" => 360387,
 				],
@@ -342,13 +355,13 @@ $categories = [
 		'Derivational Complexity: TRS Innermost' => [
 			'spaceid' => 466273,
 			'type' => 'complexity',
-			'id' => 47680,
+			'id' => null,
 			'participants' => [
 				"TcT" => 360385,
 				"AProVE" => 551421,
 			],
 			'certified' => [
-				'id' => 47681,
+				'id' => null,
 				'participants' => [
 					"TcT" => 360391,
 				],
@@ -357,13 +370,13 @@ $categories = [
 		'Runtime Complexity: TRS' => [
 			'spaceid' => 466246,
 			'type' => 'complexity',
-			'id' => 47682,
+			'id' => null,
 			'participants' => [
 				"TcT" => 360390,
 				"AProVE" => 551428,
 			],
 			'certified' => [
-				'id' => 47683,
+				'id' => null,
 				'participants' => [
 					"TcT" => 360389,
 				],
@@ -372,13 +385,13 @@ $categories = [
 		'Runtime Complexity: TRS Innermost' => [
 			'spaceid' => 466379,
 			'type' => 'complexity',
-			'id' => 47684,
+			'id' => null,
 			'participants' => [
 				"TcT" => 360386,
 				"AProVE" => 551428,
 			],
 			'certified' => [
-				'id' => 47685,
+				'id' => null,
 				'participants' => [
 					"TcT" => 360384,
 					"AProVE" => 552179,
