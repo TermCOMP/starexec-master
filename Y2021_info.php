@@ -2,6 +2,7 @@
 $title = 'Termination Competition 2021';
 $shortname = 'TermCOMP 2021';
 $showconfig = true;
+$showscore = false;
 $note = '';
 $tpdbver = '11.2';
 $closed = true;
