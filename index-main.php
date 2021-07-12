@@ -41,7 +41,7 @@ var scoreToggler = StyleToggler(
 		{ text: "Hide scores", assign: { display: "" } },
 		{ text: "Show scores", assign: { display: "none" } },
 	],
-	<?php echo $showscore ? '1' : '0' ?>
+	<?php echo $showscore ? '1' : '0'; ?>
 );
 var columnToggler = StyleToggler(
 	document.getElementById("columnToggler"), "span.category", [
