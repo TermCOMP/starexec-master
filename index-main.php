@@ -38,8 +38,8 @@ var configToggler = StyleToggler(
 );
 var scoreToggler = StyleToggler(
 	document.getElementById("scoreToggler"), ".score", [
-		{ text: "Hide scores", assign: { display: "" } },
 		{ text: "Show scores", assign: { display: "none" } },
+		{ text: "Hide scores", assign: { display: "" } },
 	],
 	<?php echo $showscore ? '1' : '0'; ?>
 );
