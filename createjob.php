@@ -38,9 +38,9 @@ echo
     cpuTimeout: <input type="number" name="cpuTimeout" value="1200">
     wallclockTimeout: <input type="number" name="wallclockTimeout" value="300">
     maxMem: <input type="number" name="maxMem" value="128"><br>
-    pause: <input type="radio" name="pause" value="yes" id="pause_yes">
+    pause: <input checked type="radio" name="pause" value="yes" id="pause_yes">
     <label for="pause_yes">yes</label>
-    <input checked type="radio" name="pause" value="no" id="pause_no">
+    <input type="radio" name="pause" value="no" id="pause_no">
     <label for="pause_no">no</label>
     <input type="hidden" name="runChoice" value="choose">
     <select name="benchChoice">
