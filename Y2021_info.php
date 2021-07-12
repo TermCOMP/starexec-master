@@ -233,7 +233,7 @@ $categories = [
 		'Haskell' => [
 			'spaceid' => 466206,
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47906,
 			'participants' => [
 				"AProVE" => 551423,
 			],
@@ -246,7 +246,7 @@ $categories = [
 		'Java Bytecode' => [
 			'spaceid' => 466222,
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47905,
 			'participants' => [
 				"AProVE" => 551423,
 			],
@@ -259,7 +259,7 @@ $categories = [
 		'Java Bytecode Recursive' => [
 			'spaceid' => 466352,
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47907,
 			'participants' => [
 				"AProVE" => 551423,
 			],
@@ -286,7 +286,7 @@ $categories = [
 		'Logic Programming with Cut' => [
 			'spaceid' => 466237,
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47903,
 			'participants' => [
 				"AProVE" => 551423,
 			],
@@ -299,7 +299,7 @@ $categories = [
 		'Prolog' => [
 			'spaceid' => 466034,
 			'type' => 'termination',
-			'id' => null,
+			'id' => 47904,
 			'participants' => [
 				"AProVE" => 551423,
 			],
@@ -311,10 +311,10 @@ $categories = [
 		],
 	],
 	'Complexity Analysis' => [
-		'Complexity: C_Integer' => [
+		'Complexity: C Integer' => [
 			'spaceid' => 466341,
 			'type' => 'complexity',
-			'id' => null,
+			'id' => 47893,
 			'participants' => [
 				"AProVE" => 551427
 			],
@@ -327,7 +327,7 @@ $categories = [
 		'Complexity: ITS' => [
 			'spaceid' => 466146,
 			'type' => 'complexity',
-			'id' => null,
+			'id' => 47894,
 			'participants' => [
 				"AProVE" => 552182
 			],

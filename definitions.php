@@ -396,7 +396,7 @@ set_time_limit(300);
 				}
 				$cats[$cat_name] = $cat;
 				if( $closed ) {
-					$cnt = array_key_exists('participants',$cat) ? count($cat['participants']) : 0;
+					$cnt = count($cat['participants']) + count($certinfo['participants']);
 					if( $cnt == 0 && $cat['id'] != null ) {
 						unset($cats[$cat_name]);// remove unparticipated category
 					} else if( $cnt == 1 ) {
