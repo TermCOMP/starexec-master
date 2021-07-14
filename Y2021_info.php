@@ -98,7 +98,7 @@ $categories = [
 				'id' => 47880,
 				'participants' => [
 					"AProVE" => 552179,
-					"NaTT" => 552357,
+//					"NaTT" => 552357,
 				],
 			],
 		],
@@ -234,7 +234,7 @@ $categories = [
 		'Haskell' => [
 			'spaceid' => 466206,
 			'type' => 'termination',
-			'id' => 47906,
+			'id' => 47958,
 			'participants' => [
 				"AProVE" => 551423,
 			],
