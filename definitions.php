@@ -265,7 +265,7 @@ set_time_limit(300);
 	function claim2class($claim,$cert) {
 		switch($cert) {
 			case 'certification timeout': $pre = 'certout '; break;
-			case 'CERTIFIED': case 'REJECTED': case 'UNSUPPORTED': $pre = $claim . ' '; break;
+			case 'CERTIFIED': case 'REJECTED': case 'UNSUPPORTED': $pre = $cert . ' '; break;
 			default: $pre = ''; break;
 		}
 		if( array_key_exists('NO',$claim) ) {
