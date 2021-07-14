@@ -10,7 +10,8 @@ include 'definitions.php';
 include $_GET['competition'].'_info.php';
 
 $i = 0;
-foreach( $categories as $mcat_name => $cats ) {
+
+foreach( make_categories($categories,$closed) as $mcat_name => $cats ) {
 echo
 '<h2>'.$mcat_name.'</h2>
 ';
@@ -19,8 +20,9 @@ echo
 			[	['name' => $cat_name, 'postproc' => 363, 'participants' => $cat['participants'] ],
 				['name' => $cat_name.' Certified', 'postproc' => 723, participants => $cat['certified']['participants'] ]
 			] as $job ) {
-			$i++;
-			echo
+			if( $job['participants'] != [] ) {
+    			$i++;
+    			echo
 '<form method="POST" id="myform'.$i.'"
  action="https://www.starexec.org/starexec/secure/add/job"
  target="_blank">
@@ -60,14 +62,15 @@ echo
     postProcess: <input type="number" name="postProcess" value='. $job['postproc'] . '><br>
     Participants:
 ';
-			foreach( $job['participants'] as $partname => $configid ) {
-				echo
+				foreach( $job['participants'] as $partname => $configid ) {
+					echo
 '   '. $partname .': <input type="number" name="configs" value='. $configid . '>;
 ';
-			}
-			echo
+				}
+				echo
 '</form><br>
 ';
+			}
 		}
 	}
 }
