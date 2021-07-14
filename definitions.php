@@ -47,14 +47,14 @@ set_time_limit(300);
 		return $record;
 	}
 	$scored_keys = [
-		'YES' => ['result' => 'YES', 'cert' => ''],
-		'NO' => ['result' => 'NO', 'cert' => ''],
-		'UP' => ['result' => 'UP', 'cert' => ''],
-		'LOW' => ['result' => 'LOW', 'cert' => ''],
 		'CERTIFIED YES' => ['result' => 'YES', 'cert' => 'CERTIFIED'],
 		'CERTIFIED NO' => ['result' => 'NO', 'cert' => 'CERTIFIED'],
 		'CERTIFIED UP' => ['result' => 'UP', 'cert' => 'CERTIFIED'],
 		'CERTIFIED LOW' => ['result' => 'LOW', 'cert' => 'CERTIFIED'],
+		'YES' => ['result' => 'YES', 'cert' => ''],
+		'NO' => ['result' => 'NO', 'cert' => ''],
+		'UP' => ['result' => 'UP', 'cert' => ''],
+		'LOW' => ['result' => 'LOW', 'cert' => ''],
 	];
 	function parse_results($csv, &$benchmarks, &$participants, $layer) {
 		global $scored_keys;
