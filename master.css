@@ -242,6 +242,9 @@ td.time, th.time {
 span.certified.time::before {
 	content: "✔";
 }
+.score>.CERTIFIED::before {
+	content: "✔";
+}
 td.NO span.time, td.unsupported span.time {
 	color: lightgray;
 }	
@@ -263,9 +266,6 @@ table .bar {
 }
 td.CERTIFIED {
 	border: 1.5pt solid black;
-}
-.score>.CERTIFIED::before {
-	content: "✔";
 }
 .stats {
 	color: gray;
