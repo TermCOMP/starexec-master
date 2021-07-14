@@ -261,8 +261,11 @@ table .bar {
 	border: .1pt solid silver;
 	text-align: center;
 }
-td.CERTIFIED, .score>.CERTIFIED {
+td.CERTIFIED {
 	border: 1.5pt solid black;
+}
+.score>.CERTIFIED::before {
+	content: "✔";
 }
 .stats {
 	color: gray;
