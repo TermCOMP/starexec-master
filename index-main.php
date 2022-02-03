@@ -110,7 +110,7 @@ foreach( array_keys($mcats) as $mcatname ) {
 			'mcatname' => $mcatname,
 			'type' => $type,
 			'competitionname' => $shortname,
-			'tpdbver' => $tpdbver,
+			'db' => $db,
 			'refresh' => $refresh,
 		];
 		$query = http_build_query( $jobargs, '', ' ' );

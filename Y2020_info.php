@@ -4,7 +4,7 @@ $shortname = 'TermComp 2020';
 $note = '(Final Run. First run is <a href="https://termcomp.github.io/Y2020-1/">here</a>)';
 $showconfig = false;
 $closed = true;
-$tpdbver = '11.1';
+$db = 'TPDB 11.1';
 $categories = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [

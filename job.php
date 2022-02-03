@@ -19,7 +19,8 @@
 	$competitionname = $_GET['competitionname'];
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
-	$tpdbver = $_GET['tpdbver'];
+	$db = $_GET['db'];
+	$cops = $_GET['cops'];
 	$type = $_GET['type'];
 
 	$max_score = $type == 'complexity' ? 2.0 : 1;
@@ -55,6 +56,7 @@
    <option value="c">conflicting</option>
    <option value="u">unsolved</option>
    <option value="s">solo</option>
+   <option value="f">finished</option>
   </select> results.
  </span>
 </h1>
@@ -159,7 +161,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				echo ' <tr>'.PHP_EOL;
 			}
 			$bm_name = $benchmark['benchmark'];
-			$bm_url = $tpdbver ? bm2url($bm_name,$tpdbver) : bmid2url($benchmark_id);
+			$bm_url = bm2url($bm_name,$benchmark_id,$db);
 			echo '  <td class=benchmark>'.PHP_EOL.
 			     '   <a href="'.$bm_url.'">'.format_bm($bm_name).'</a>'.PHP_EOL.
 			     '   <a class=starexecid href="'.bmid2remote($benchmark_id).'">'.$benchmark_id.'</a></td>'.PHP_EOL.
@@ -200,7 +202,9 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		$summer['cpu'] += $p['cpu'];
 		$summer['time'] += $p['time'];
 	}
-	file_put_contents( id2sumfile($id), json_encode( ['layers' => $sum, 'participants' => $participants] ) );
+	file_put_contents( id2sumfile($id), json_encode(
+		[ 'layers' => $sum, 'participants' => $participants, 'conflicting' => $conflicts > 0 ]
+	) );
 ?>
 </table>
 <script>

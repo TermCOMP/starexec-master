@@ -66,7 +66,8 @@ set_time_limit(300);
 			global $benchmarks;
 			if( $record != null ) {
 				$here = &$benchmarks[$record['benchmark id']];
-				$here['benchmark'] = $record['benchmark'];
+				preg_match( '|[^/]*/(.*)$|', $record['benchmark'], $matches );
+				$here['benchmark'] = $matches[1];
 				$here['participants'][$record['configuration id']] = $record;
 			}
 		};
@@ -319,9 +320,7 @@ set_time_limit(300);
 		return $status == 'pending submission';
 	}
 	function format_bm( $string ) {
-		preg_match( '|[^/]*/(.*)$|', $string, $matches );
-		$ret = $matches[1];
-		$ret = str_replace( '/', '/<wbr>',$ret );
+		$ret = str_replace( '/', '/<wbr>',$string );
 		$ret = str_replace( '_', '_<wbr>',$ret );
 		return $ret;
 	}
@@ -332,10 +331,13 @@ set_time_limit(300);
 	function jobid2url($jobid) {
 		return "https://www.starexec.org/starexec/secure/details/job.jsp?id=$jobid";
 	}
-	function bm2url($bm,$tpdbver) {
-		return "https://termcomp.github.io/tpdb.html?ver=".$tpdbver."&path=".urlencode($bm);
-	}
-	function bmid2url($bmid) {
+	function bm2url($bm,$bmid,$db) {
+		if( preg_match( '/TPDB(\\s*([0-9.]+))?/', $db, $matches ) == 1 ) {
+			return 'https://termcomp.github.io/tpdb.html?'.($matches[1]=='' ? '' : 'ver='.$matches[2].'&').'path='.urlencode($bm);
+		}
+		if( preg_match( '/COPS/', $db ) == 1 ) {
+			return 'http://cops.uibk.ac.at/problems/'.$bm;
+		}
 		return 'https://www.starexec.org/starexec/services/benchmarks/'. $bmid .'/contents?limit=-1';
 	}
 	function bmid2remote($bmid) {
@@ -374,15 +376,17 @@ set_time_limit(300);
 			$vLOW = count(array_unique($LOW));
 		}
 		$conflicting = ( $YES > 0 && $NO > 0 ) || $minUP < $maxLOW;
-		$unsolved = $YES == 0 && $NO == 0 && $nUP == 0 && $nLOW == 0;
 		$interesting = ( ( $YES > 0 || $NO > 0 ) && $MAYBE > 0) || $vUP > 1 || $vLOW > 1;
-		$solo = ($YES == 1 || $NO == 1 || $nUP == 1 || $nLOW == 1) && $togo == 0;
+		$finished = $togo == 0;
+		$unsolved = $finished && $YES == 0 && $NO == 0 && $nUP == 0 && $nLOW == 0;
+		$solo = $finished && ($YES == 1 || $NO == 1 || $nUP == 1 || $nLOW == 1);
 		return [
 			'conflicting' => $conflicting,
 			'interesting' => $interesting,
+			'finished' => $finished,
 			'solo' => $solo,
 			'unsolved' => $unsolved,
-			'key' => ($conflicting ? 'c':'').($interesting ? 'i' : '').($solo ? 's' : '').($unsolved ? 'u' : ''),
+			'key' => ($conflicting ? 'c':'').($interesting ? 'i' : '').($solo ? 's' : '').($unsolved ? 'u' : '').($finished ? 'f':''),
 		];
 	}
 	// Making certified and demonstration categories
