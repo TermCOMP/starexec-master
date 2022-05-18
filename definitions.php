@@ -336,7 +336,8 @@ set_time_limit(300);
 			return 'https://termcomp.github.io/tpdb.html?'.($matches[1]=='' ? '' : 'ver='.$matches[2].'&').'path='.urlencode($bm);
 		}
 		if( preg_match( '/COPS/', $db ) == 1 ) {
-			return 'http://cops.uibk.ac.at/problems/'.$bm;
+			preg_match( '/(.*)\.trs/', $bm, $matches );
+			return 'http://cops.uibk.ac.at/?q='.$matches[1];
 		}
 		return 'https://www.starexec.org/starexec/services/benchmarks/'. $bmid .'/contents?limit=-1';
 	}
