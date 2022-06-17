@@ -169,23 +169,28 @@ set_time_limit(300);
 		return ['memout' => 1];
 	}
 	function str2claim($str) {
-		$ret = [];
 		if( $str == 'YES' || $str == 'NO' ) {
-			$ret[$str] = 1;
-		} else if( preg_match( '/WORST_CASE\\(\\s*(.+)\\s*,\\s*(.+)\\s*\\)/', $str, $matches ) ) {
+			return [ $str => 1 ];
+		}
+		if( preg_match( '/WORST_CASE\\(\\s*(.+)\\s*,\\s*(.+)\\s*\\)/', $str, $matches ) ) {
+			$ret = [];
 			$low = str2lower($matches[1]);
 			$up = str2upper($matches[2]);
+			$set = false;
 			if( $low > 0 ) {
 				$ret['LOW'] = $low;
+				$set = true;
 			}
 			if( $up < 1001 ) {
 				$ret['YES'] = 1;
 				$ret['UP'] = $up;
+				$set = true;
 			}
-		} else {
-			$ret['MAYBE'] = 1;
+			if( $set ) {
+				return $ret;
+			}
 		}
-		return $ret;
+		return [ 'MAYBE' => 1 ];
 	}
 	function init_claim_set(&$claims) {
 		$claims['YES'] = 0;
