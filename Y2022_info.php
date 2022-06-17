@@ -102,7 +102,7 @@ $categories = [
 				],
 			],
 		],
-		'TRS Conditional' => [
+		'TRS Conditional (Operational Termination)' => [
 			'type' => 'termination',
 			'id' => null,
 			'spaceid' => 466363,
@@ -115,7 +115,7 @@ $categories = [
 				],
 			],
 		],
-		'TRS Conditional (Pure Termination)' => [
+		'TRS Conditional (Termination)' => [
 			'type' => 'termination',
 			'id' => null,
 			'spaceid' => 466363,
