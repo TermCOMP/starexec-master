@@ -15,4 +15,8 @@ The registration procedure is as follows.
    ```
    is in the 'participants' component of the category you participate,
    where `Tool` is replaced by a short name of your tool and `1234` by the configuration id. Then please make *pull request*.
-
+1. If your tool has participated in the previous year, please remove the comment lines
+   ```
+       // 'Tool' => 1234,
+   ```
+   for your last year's configuration.

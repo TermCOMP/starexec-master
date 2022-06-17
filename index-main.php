@@ -9,7 +9,7 @@
 <?php
 include 'definitions.php';
 
-$competition = array_key_exists( 'competition', $_GET ) ? $_GET['competition'] : 'Y2021';
+$competition = array_key_exists( 'competition', $_GET ) ? $_GET['competition'] : 'Y2022';
 include $competition.'_info.php';
 $mcats = make_categories($categories,$closed);
 
@@ -51,6 +51,9 @@ var columnToggler = StyleToggler(
 );
 </script>
 <?php
+if( !$closed ) {
+	echo 'Registration is open! Please register following the README of <a href="https://github.com/TermCOMP/starexec-master">this repository</a>';
+}
 $mcatindex = 0;
 foreach( array_keys($mcats) as $mcatname ) {
 	$total_done = 0;
