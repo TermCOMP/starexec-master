@@ -81,6 +81,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		     '    <option value="NO">NO</option>'.PHP_EOL.
 		     '    <option value="MAYBE">MAYBE</option>'.PHP_EOL.
 		     '    <option value="timeout">timeout</option>'.PHP_EOL.
+		     '    <option value="memout">memout</option>'.PHP_EOL.
 		     '    <option value="REJECTED">REJECTED</option>'.PHP_EOL.
 		     '    <option value="UNSUPPORTED">UNSUPPORTED</option>'.PHP_EOL.
 		     '    <option value="ERROR">ERROR</option>'.PHP_EOL.
@@ -120,7 +121,9 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 					$certtime = 0;
 				}
 				$p['certtime'] += $certtime;
-				$claim = status2timeout($status) ? maybe_claim() : str2claim($record['result']);
+				$claim =
+					status2timeout($status) ? timeout_claim() :
+					(status2memout($status) ? memout_claim() : str2claim($record['result']));
 				add_claim($claims,$claim);
 				$scores = claim2scores($claim,$cert,$max_score);
 				foreach( $scores as $key => $val ) {
@@ -203,7 +206,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		$summer['time'] += $p['time'];
 	}
 	file_put_contents( id2sumfile($id), json_encode(
-		[ 'layers' => $sum, 'participants' => $participants, 'conflicting' => $conflicts > 0 ]
+			[ 'layers' => $sum, 'participants' => $participants, 'conflicting' => $conflicts > 0 ]
 	) );
 ?>
 </table>

@@ -80,7 +80,7 @@ foreach( $solvers as $configid => $s ) {
 	$time = $s['time'];
 	$certtime = $s['certtime'];
 	$conflicts = $s['conflicts'];
-	$timeout = $s['TIMEOUT'];
+	$timeout = $s['timeout'];
 	$url = solverid2url($id);
 	$count[$layer] += 1;
 	if( $prev_score[$layer] != $score ) {
@@ -99,12 +99,6 @@ foreach( $solvers as $configid => $s ) {
 			echo '       <td class="'.$key.'" style="width:'.(100 * $s[$key] / $total).'%">'.PHP_EOL;
 		}
 	}
-	if( $scorestogo > 0 ) {
-		echo '       <td class=incomplete style="width:'. (100 * $scorestogo / $total) . '%">'.PHP_EOL;
-	}
-		if( $miss > 0 ) {
-		echo '       <td class=MAYBE style="width:'. (100 * $miss / $total) . '%">'.PHP_EOL;
-	}
 	echo '     </table>'.PHP_EOL;
 	// Textual display
 	echo '     <td>'.PHP_EOL.
@@ -118,12 +112,11 @@ foreach( $solvers as $configid => $s ) {
 			$subscore = $s[$key];
 			if( $subscore > 0 ) {
 				echo '<span class="'.( $subscore == $best[$layer][$key] ? 'best ' : '' ).$key.'">'.
-				     $val['result'].':'.( is_int($subscore) ? $subscore : number_format($subscore,2) ).'</span>,'.PHP_EOL;
+				     (array_key_exists('text',$val) ? $val['text'] : $key).':'.( is_int($subscore) ? $subscore : number_format($subscore,2) ).'</span>,'.PHP_EOL;
 			}
 		}
 	}
-	echo '<span class="'.( $time == $best[$layer]['time'] ? 'best ' : '' ).'time">TIME:'.seconds2str($time).'</span>';
-//	     ',<span class="time">OUT: '.$timeout.'</span>';
+	echo '<span class="'.( $time == $best[$layer]['time'] ? 'best ' : '' ).'time">TIME:'.seconds2str($time).'</span>'. PHP_EOL;
 	if( $certtime != 0 ) {
 		echo '<span class="certified time">'.seconds2str($certtime).'</span>';
 	}

@@ -47,14 +47,18 @@ set_time_limit(300);
 		return $record;
 	}
 	$scored_keys = [
-		'CERTIFIED YES' => ['result' => 'YES', 'cert' => 'CERTIFIED'],
-		'CERTIFIED NO' => ['result' => 'NO', 'cert' => 'CERTIFIED'],
-		'CERTIFIED UP' => ['result' => 'UP', 'cert' => 'CERTIFIED'],
-		'CERTIFIED LOW' => ['result' => 'LOW', 'cert' => 'CERTIFIED'],
-		'YES' => ['result' => 'YES', 'cert' => ''],
-		'NO' => ['result' => 'NO', 'cert' => ''],
-		'UP' => ['result' => 'UP', 'cert' => ''],
-		'LOW' => ['result' => 'LOW', 'cert' => ''],
+		'CERTIFIED YES' => ['text' => 'YES', 'scored' => true],
+		'CERTIFIED NO' => ['text' => 'NO', 'scored' => true],
+		'CERTIFIED UP' => ['text' => 'UP', 'scored' => true],
+		'CERTIFIED LOW' => ['text' => 'LOW', 'scored' => true],
+		'YES' => ['scored' => true],
+		'NO' => ['scored' => true],
+		'UP' => ['scored' => true],
+		'LOW' => ['scored' => true],
+		'togo' => ['scored' => false],
+		'MAYBE' => ['scored' => false],
+		'timeout' => ['scored' => false],
+		'memout' => ['scored' => false],
 	];
 	function parse_results($csv, &$benchmarks, &$participants, $layer) {
 		global $scored_keys;
@@ -93,7 +97,6 @@ set_time_limit(300);
 				'cpu' => 0,
 				'time' => 0,
 				'certtime' => 0,
-				'TIMEOUT' => 0,
 			];
 			foreach( $scored_keys as $key => $val ) {
 				$participants[$configid][$key] = 0;
@@ -159,8 +162,11 @@ set_time_limit(300);
 			return 1001;
 		}
 	}
-	function maybe_claim() {
-		return ['MAYBE' => 1];
+	function timeout_claim() {
+		return ['timeout' => 1];
+	}
+	function memout_claim() {
+		return ['memout' => 1];
 	}
 	function str2claim($str) {
 		$ret = [];
@@ -184,13 +190,19 @@ set_time_limit(300);
 	function init_claim_set(&$claims) {
 		$claims['YES'] = 0;
 		$claims['NO'] = 0;
-		$claims['MAYBE'] = 0;
 		$claims['UP'] = [];
 		$claims['LOW'] = [];
+		$claims['miss'] = 0;
 		$claims['togo'] = 0;
 	}
 	function add_claim(&$claims,$claim) {
-		foreach( ['YES','NO','MAYBE'] as $key ) {
+		foreach( ['MAYBE','timeout','memout'] as $key ) {
+			if( array_key_exists($key,$claim) ) {
+				$claims['miss']++;
+				return;
+			}
+		}
+		foreach( ['YES','NO'] as $key ) {
 			if( array_key_exists($key,$claim) ) {
 				$claims[$key]++;
 			}
@@ -230,6 +242,15 @@ set_time_limit(300);
 			$ret['score']++;
 			$ret['miss']--;
 			$ret[$pre.'YES'] = 1;
+		}
+		if( array_key_exists('MAYBE',$claim) ) {
+			$ret['MAYBE'] = 1;
+		}
+		if( array_key_exists('timeout',$claim) ) {
+			$ret['timeout'] = 1;
+		}
+		if( array_key_exists('memout',$claim) ) {
+			$ret['memout'] = 1;
 		}
 		return $ret;
 	}
@@ -283,29 +304,13 @@ set_time_limit(300);
 		if(	array_key_exists('YES',$claim) ) {
 			return $pre.'YES';
 		}
-		return 'MAYBE';
-	}
-	function status2class($status) {
-		if( $status == 'complete' ) {
-			return 'complete';
-		} else if( $status == 'incomplete' || $status == 'paused' || $status == 'pending submission' ) {
-			return 'incomplete';
-		} else if( substr($status,0,7) == 'timeout' || $status == 'memout' ) {
+		if( array_key_exists('timeout',$claim) ) {
 			return 'timeout';
-		} else if( $status == 'run script error' ) {
-			return 'starexecbug';
-		} else if( $status == 'enqueued' ) {
-			return 'active';
-		} else {
-			return 'error';
 		}
-	}
-	function status2str($status) {
-		if( $status == 'run script error' ) {
-			return 'StarExec error';
-		} else {
-			return $status;
+		if( array_key_exists('memout',$claim) ) {
+			return 'memout';
 		}
+		return 'MAYBE';
 	}
 	function status2finished($status) {
 		return substr($status,0,7) <> 'pending' && $status <> 'enqueued';
@@ -313,11 +318,31 @@ set_time_limit(300);
 	function status2timeout($status) {
 		return substr($status,0,7) == 'timeout';
 	}
+	function status2memout($status) {
+		return $status == 'memout';
+	}
 	function status2complete($status) {
 		return status2finished($status) && ! status2timeout($status);
 	}
 	function status2pending($status) {
 		return $status == 'pending submission';
+	}
+	function status2class($status) {
+		if( $status == 'complete' ) {
+			return 'complete';
+		} else if( $status == 'incomplete' || $status == 'paused' || $status == 'pending submission' ) {
+			return 'incomplete';
+		} else if( status2timeout($status) ) {
+			return 'timeout';
+		} else if( status2memout($status) ) {
+			return 'memout';
+		} else if( $status == 'run script error' ) {
+			return 'starexecbug';
+		} else if( $status == 'enqueued' ) {
+			return 'active';
+		} else {
+			return 'error';
+		}
 	}
 	function format_bm( $string ) {
 		$ret = str_replace( '/', '/<wbr>',$string );
@@ -353,9 +378,9 @@ set_time_limit(300);
 	function claims2description($claims) {
 		$YES = $claims['YES'];
 		$NO = $claims['NO'];
-		$MAYBE = $claims['MAYBE'];
 		$UP = $claims['UP'];
 		$LOW = $claims['LOW'];
+		$MAYBE = $claims['miss'];
 		$togo = $claims['togo'];
 		if( empty($UP) ) {
 			$UP = [1000];

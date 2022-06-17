@@ -124,74 +124,90 @@ div.category {
 	background-color: fuchsia;
 	color: white;
 }
-.timeout, .timeout a {
+.timeout, .timeout * {
 	background-color: darksalmon;
 	color: black;
 }
-.YES, .YES a {
+.memout, .memout * {
+	background-color: darksalmon;
+	color: black;
+}
+.score>.timeout, .score>.memout {
+	background: none;
+	color:darksalmon;
+}
+.YES, .YES * {
 	background-color:#60F0A0;
 	color: black;
 }
-.CERTIFIED.YES, .CERTIFIED.YES a {
+.CERTIFIED.YES, .CERTIFIED.YES * {
 	background-color:#00F080;
-	color: black;
 }
-.score .best.YES {
+.score>.best.YES {
+	background-color:#60F0A0;
 	font-weight: bold;
 }
-.score :not(.best).YES {
+.score>:not(.best).YES {
 	background: none;
-	color: black;
+	font-weight: bold;
+	color:#008020;
 }
-.NO, .NO a {
+.NO, .NO * {
 	background-color: #60A060;
 	color: white;
 }
-.CERTIFIED.NO, .CERTIFIED.NO a {
+.CERTIFIED.NO {
 	background-color:#408040;
+}
+.score>.best.NO {
+	background-color: #60A060;
 	color: white;
 }
-.score :not(.best).NO {
+.score>:not(.best).NO {
 	background: none;
 	color: #006000;
 }
-.MAYBE, .MAYBE a {
+.MAYBE, .MAYBE * {
 	background-color: #E0D080;
 	color: black;
 }
-.UNSUPPORTED, .UNSUPPORTED a {
+.score>.MAYBE {
+	background: none;
+	color: #A09040;
+}
+.UNSUPPORTED, .UNSUPPORTED * {
 	background-color: #888888;
 	color: white;
 }
-.REJECTED, .REJECTED a {
+.REJECTED, .REJECTED * {
 	background-color: #FF5500;
 	color: white; 
 }
-.error, .error a {
+.error, .error * {
 	background-color: #FF0000;
 	color: white; 
 }
-.starexecbug, .starexecbug a {
+.starexecbug, .starexecbug * {
 	background-color: #FF0000; 
 	color: white;
 }
-.score .LOW {
+.score>.LOW {
 	background: none;
 	color: #208020;
 }
-.LOW.d1, .LOW.d1 a {
+.LOW.d1, .LOW.d1 * {
 	background-color: #b0e0b0;
 	color: black;
 }
-.LOW.d2, .LOW.d2 a {
+.LOW.d2, .LOW.d2 * {
 	background-color: #80d080;
 	color: black;
 }
-td.LOW, .LOW.d3, .LOW.d3 a {
+td.LOW, .LOW.d3, .LOW.d3 * {
 	background-color: #40A040;
 	color: white;
 }
-.LOW.np, .LOW.np a {
+.LOW.np, .LOW.np * {
 	background-color: #208020;
 	color: white;
 }
@@ -203,23 +219,23 @@ td.LOW, .LOW.d3, .LOW.d3 a {
 	background: none;
 	color: black;
 }
-.UP.d0, .UP.d0 a {
+.UP.d0, .UP.d0 * {
 	background-color: #00D0FF;
 	color: black;
 }
-td.UP, .UP.d1, .UP.d1 a {
+td.UP, .UP.d1, .UP.d1 * {
 	background-color: #a0fff0;
 	color: black;
 }
-.UP.d2, .UP.d2 a {
+.UP.d2, .UP.d2 * {
 	background-color: #b0ffc0;
 	color: black;
 }
-.UP.d3, .UP.d3 a {
+.UP.d3, .UP.d3 * {
 	background-color: #c0f0c0;
 	color: black;
 }
-.UP.poly, .UP.poly a {
+.UP.poly, .UP.poly * {
 	background-color: #C0F0C0;
 	color: black;
 }
