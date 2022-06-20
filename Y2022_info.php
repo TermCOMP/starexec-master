@@ -411,6 +411,18 @@ $categories = [
 				],
 			],
 		],
+		'Runtime Complexity: TRS Parallel Innermost' => [
+			'spaceid' => 466379,
+			'type' => 'complexity',
+			'id' => null,
+			'participants' => [
+			],
+			'certified' => [
+				'id' => null,
+				'participants' => [
+				],
+			],
+		],
 	],
 ];
 ?>
