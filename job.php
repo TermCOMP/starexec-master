@@ -182,7 +182,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 					     '   <a href="'. $url .'">'.PHP_EOL.
 					     '    <span class="time">' . $my['cpu'] . '/' . $my['time'] . '</span>'.PHP_EOL;
 					if( $cert ) {
-						echo '    '.cert2str($cert).' <span class="time">'. $certtime . '</span>'.PHP_EOL;
+						echo '    '.cert2str($cert).'<span class="time">'. $certtime . '</span>'.PHP_EOL;
 					}
 					echo '   </a>'.PHP_EOL;
 				} else {
