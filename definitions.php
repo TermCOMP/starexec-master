@@ -406,18 +406,20 @@ set_time_limit(300);
 			$nLOW = count(array_filter($LOW,function($low){return $low == $maxLOW;}));
 			$vLOW = count(array_unique($LOW));
 		}
+		$begun = !($YES == 0 && $NO == 0 && $MAYBE == 0 && empty($UP) && empty($LOW));
 		$conflicting = ( $YES > 0 && $NO > 0 ) || $minUP < $maxLOW;
 		$interesting = ( ( $YES > 0 || $NO > 0 ) && $MAYBE > 0) || $vUP > 1 || $vLOW > 1;
 		$finished = $togo == 0;
 		$unsolved = $finished && $YES == 0 && $NO == 0 && $nUP == 0 && $nLOW == 0;
 		$solo = $finished && ($YES == 1 || $NO == 1 || $nUP == 1 || $nLOW == 1);
 		return [
+			'begun' => $begun,
 			'conflicting' => $conflicting,
 			'interesting' => $interesting,
 			'finished' => $finished,
 			'solo' => $solo,
 			'unsolved' => $unsolved,
-			'key' => ($conflicting ? 'c':'').($interesting ? 'i' : '').($solo ? 's' : '').($unsolved ? 'u' : '').($finished ? 'f':''),
+			'key' => ($begun ? 'b':'').($conflicting ? 'c':'').($interesting ? 'i' : '').($solo ? 's' : '').($unsolved ? 'u' : '').($finished ? 'f':''),
 		];
 	}
 	// Making certified and demonstration categories

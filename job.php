@@ -51,6 +51,7 @@
 ?>
  <span class="headerFollower">Showing
   <select id="resultsFilter" type="text" placeholder="Filter..." oninput="filteredTable.refresh()">
+   <option value="b">started</option>
    <option value="">all</option>
    <option value="i">interesting</option>
    <option value="c">conflicting</option>
@@ -95,11 +96,9 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 	foreach( $benchmarks as $benchmark_id => $benchmark ) {
 		$bench = [];
 		init_claim_set($claims); /* collects results for each benchmark */
-		$show = false;
 		foreach( $benchmark['participants'] as $configid => $record ) {
 			$p =& $participants[$configid];
 			$status = $record['status'];
-			$show = $show || !status2pending($status);
 			$score = 0;
 			if( status2finished($status) ) {
 				$cpu = parse_time($record['cpu time']);
@@ -147,49 +146,47 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				'score' => $score,
 			];
 		}
-		if( $show ) {
-			$d = claims2description($claims);
-			if( $d['conflicting'] ) {
-				foreach( array_keys($bench) as $me ) {
-					if( $bench[$me]['score'] > 0 ) {
-						$participants[$me]['conflicts']++;
-					}
+		$d = claims2description($claims);
+		if( $d['conflicting'] ) {
+			foreach( array_keys($bench) as $me ) {
+				if( $bench[$me]['score'] > 0 ) {
+					$participants[$me]['conflicts']++;
 				}
-				echo ' <tr class=conflict>'.PHP_EOL;
-				if( $conflicts == 0 ) {
-					echo '  <a name="conflict"/>'.PHP_EOL;
-				}
-				$conflicts += 1;
-			} else {
-				echo ' <tr>'.PHP_EOL;
 			}
-			$bm_name = $benchmark['benchmark'];
-			$bm_url = bm2url($bm_name,$benchmark_id,$db);
-			echo '  <td class=benchmark>'.PHP_EOL.
-			     '   <a href="'.$bm_url.'">'.format_bm($bm_name).'</a>'.PHP_EOL.
-			     '   <a class=starexecid href="'.bmid2remote($benchmark_id).'">'.$benchmark_id.'</a></td>'.PHP_EOL.
-			     '  <td style="display:none">'.$d['key'];
-			foreach( $bench as $me => $my ) {
-				$status = $my['status'];
-				$claim = $my['claim'];
-				$cert = $my['cert'];
-				$certtime = $my['certtime'];
-				$url = pairid2url($my['pair']);
-				$outurl = pairid2outurl($my['pair']);
-				if( status2complete($status) ) {
-					echo '  <td class="' . claim2class($claim,$cert) . '">'.PHP_EOL.
-					     '   <a href="'. $outurl .'">' . claim2str($claim) . '</a>'.PHP_EOL.
-					     '   <a href="'. $url .'">'.PHP_EOL.
-					     '    <span class="time">' . $my['cpu'] . '/' . $my['time'] . '</span>'.PHP_EOL;
-					if( $cert ) {
-						echo '    '.cert2str($cert).'<span class="time">'. $certtime . '</span>'.PHP_EOL;
-					}
-					echo '   </a>'.PHP_EOL;
-				} else {
-					echo '  <td class="' . status2class($status) . '">'.PHP_EOL.
-					     '   <a href="'. $url . '">' . $status . '</a>'.PHP_EOL.
-					     (status2complete($status) ? '   <a href="'. $outurl .'">[out]</a>'.PHP_EOL : '' );
+			echo ' <tr class=conflict>'.PHP_EOL;
+			if( $conflicts == 0 ) {
+				echo '  <a name="conflict"/>'.PHP_EOL;
+			}
+			$conflicts += 1;
+		} else {
+			echo ' <tr>'.PHP_EOL;
+		}
+		$bm_name = $benchmark['benchmark'];
+		$bm_url = bm2url($bm_name,$benchmark_id,$db);
+		echo '  <td class=benchmark>'.PHP_EOL.
+		     '   <a href="'.$bm_url.'">'.format_bm($bm_name).'</a>'.PHP_EOL.
+		     '   <a class=starexecid href="'.bmid2remote($benchmark_id).'">'.$benchmark_id.'</a></td>'.PHP_EOL.
+		     '  <td style="display:none">'.$d['key'];
+		foreach( $bench as $me => $my ) {
+			$status = $my['status'];
+			$claim = $my['claim'];
+			$cert = $my['cert'];
+			$certtime = $my['certtime'];
+			$url = pairid2url($my['pair']);
+			$outurl = pairid2outurl($my['pair']);
+			if( status2complete($status) ) {
+				echo '  <td class="' . claim2class($claim,$cert) . '">'.PHP_EOL.
+				     '   <a href="'. $outurl .'">' . claim2str($claim) . '</a>'.PHP_EOL.
+				     '   <a href="'. $url .'">'.PHP_EOL.
+				     '    <span class="time">' . $my['cpu'] . '/' . $my['time'] . '</span>'.PHP_EOL;
+				if( $cert ) {
+					echo '    '.cert2str($cert).'<span class="time">'. $certtime . '</span>'.PHP_EOL;
 				}
+				echo '   </a>'.PHP_EOL;
+			} else {
+				echo '  <td class="' . status2class($status) . '">'.PHP_EOL.
+				     '   <a href="'. $url . '">' . $status . '</a>'.PHP_EOL.
+				     (status2complete($status) ? '   <a href="'. $outurl .'">[out]</a>'.PHP_EOL : '' );
 			}
 		}
 	}
