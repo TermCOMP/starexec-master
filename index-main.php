@@ -49,33 +49,77 @@ var columnToggler = StyleToggler(
 		{ text: "Many column", assign: { display: "block" } },
 	]
 );
+// team scoring
+var teamScores = [<?php foreach($teams as $team) { echo '[],'; } ?>];
+const solver_id2team_id = {
+<?php
+$team_id = 0;
+foreach( $teams as $team => $solvers ) {
+	foreach( $mcats as $mcat => $cats ) {
+		foreach( $cats as $cat => $info ) {
+			foreach( $solvers as $solver ) {
+				if( array_key_exists($solver,$info['participants']) ) {
+					echo '	"'.$info['participants'][$solver].'": "'.$team_id.'",'.PHP_EOL;
+				}
+				if( array_key_exists($solver,$info['certified']['participants']) ) {
+					echo '	"'.$info['certified']['participants'][$solver].'": "'.$team_id.'",'.PHP_EOL;
+				}
+			}
+		}
+	}
+	$team_id++;
+}
+?>
+};
+function updateScores(catname,participants) {
+	// first set score for the team of this category 0
+	for( let solver_id in participants ) {
+		teamScores[solver_id2team_id[solver_id]][catname] = 0;
+	}
+	// then add up scores of the team, in case it participates in certified category. We don't support two tools from one team!
+	for( let solver_id in participants ) {
+		teamScores[solver_id2team_id[solver_id]][catname] += participants[solver_id].score;
+	}
+	for( var i = 0; i < teamScores.length; i++ ) {
+		let elt = document.querySelector("#team"+i+">.score");
+		let score = Object.values(teamScores[i]).reduce((x,y) => { return x + y; }, 0);
+		elt.innerHTML = score;
+	}
+}
 </script>
 <?php
 if( !$closed ) {
 	echo 'Registration is open! Please register following the README of <a href="https://github.com/TermCOMP/starexec-master">this repository</a>';
 }
-$mcatindex = 0;
-foreach( array_keys($mcats) as $mcatname ) {
+// creating team ranking
+$team_id = 0;
+foreach( $teams as $team => $solvers ) {
+	echo '<span id="team'.$team_id.'">'.$team.'<span class="score"></span></span>'.PHP_EOL;
+	$team_id++;
+}
+$mcatid = 0;
+$catid = 0;
+foreach( $mcats as $mcatname => $cats ) {
 	$total_done = 0;
 	$total_togo = 0;
 	$total_cpu = 0;
 	$total_time = 0;
-	echo '<h2>'.$mcatname.' <span id=stat'.$mcatindex.' class=stats></span></h2>'.PHP_EOL;
-	$cats = $mcats[$mcatname];
+	echo '<h2>'.$mcatname.' <span id=stat'.$mcatid.' class=stats></span></h2>'.PHP_EOL;
 	$table = [];
 	$tools = [];
+	// creating progress summary
 	echo ' <script>'.PHP_EOL.
 	     '  function summer(a,b){'.PHP_EOL.
 	     '   return {done: a.done + b.done, cpu: a.cpu + b.cpu, time: a.time + b.time, togo: a.togo + b.togo};'.PHP_EOL.
 	     '  }'.PHP_EOL.
-	     '  var progress'.$mcatindex.' = [];'.PHP_EOL.
-	     '  function updateProgress'.$mcatindex.'() {'.PHP_EOL.
-	     '   var sum = progress'.$mcatindex.'.reduce(summer);'.PHP_EOL.
-	     '   document.getElementById("stat'.$mcatindex.'").innerHTML ='.PHP_EOL.
+	     '  var progress'.$mcatid.' = [];'.PHP_EOL.
+	     '  function updateProgress'.$mcatid.'() {'.PHP_EOL.
+	     '   var sum = progress'.$mcatid.'.reduce(summer);'.PHP_EOL.
+	     '   document.getElementById("stat'.$mcatid.'").innerHTML ='.PHP_EOL.
 	     '    "Progress: " + Math.floor(1000 * sum.done / (sum.done + sum.togo))/10 +'.PHP_EOL.
 	     '    "%, CPU Time: " + seconds2str(sum.cpu) + ", Node Time: "+ seconds2str(sum.time);'.PHP_EOL.
 	     '  }'.PHP_EOL.
-	      '</script>'.PHP_EOL;
+	     '</script>'.PHP_EOL;
 	$catindex = 0;
 	foreach( $cats as $catname => $cat ) {
 		$type = $cat['type'];
@@ -133,16 +177,19 @@ foreach( array_keys($mcats) as $mcatname ) {
 		     '    configToggler.apply(elm);'.PHP_EOL.
 		     '   });'.PHP_EOL.
 		     '   loadURL("'.id2sumfile($id).'", function(xhttp) {'.PHP_EOL.
-		     '    progress'.$mcatindex.'['.$catindex.'] = JSON.parse(xhttp.responseText)["layers"].reduce(summer);'.PHP_EOL.
-		     '    updateProgress'.$mcatindex.'();'.PHP_EOL.
+		     '    var data = JSON.parse(xhttp.responseText);'.PHP_EOL.
+		     '    progress'.$mcatid.'['.$catindex.'] = data["layers"].reduce(summer);'.PHP_EOL.
+		     '    updateProgress'.$mcatid.'();'.PHP_EOL.
+		     '    updateScores("'.$catname.'",data["participants"]);'.PHP_EOL.
 		     '   });'.PHP_EOL.
 		     '  }'.PHP_EOL.
 		     '  load'.$id.'();'.PHP_EOL.
 		     '  setInterval(load'.$id.', 10000);'.PHP_EOL.
 		     ' </script>'.PHP_EOL;
 		$catindex++;
+		$catid++;
 	}
-	$mcatindex++;
+	$mcatid++;
 }
 
 ?>
