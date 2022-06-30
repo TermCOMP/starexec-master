@@ -427,8 +427,8 @@ set_time_limit(300);
 		foreach( $raw_mcats as $mcat_name => $raw_cats ) {
 			$cats = [];
 			foreach( $raw_cats as $cat_name => $cat ) {
+				$certinfo = $cat['certified'];
 				if( $cat['id'] != null ) {
-					$certinfo = $cat['certified'];
 					if( array_key_exists('id',$certinfo) && $certinfo['id'] != null ) {
 						$cat['id'] .= '_'.$certinfo['id'];
 					}
