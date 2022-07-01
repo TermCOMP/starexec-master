@@ -212,11 +212,14 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 
 	// last row is scores
 	// vbs
-	echo '  <th>'.number_format($vbs['score'],2);
+	$vbs_score = $vbs['score'];
+	echo '  <th>'.number_format($vbs_score,2);
 	foreach( $participants as &$p ) {
 		$p['cpu'] = (int)$p['cpu'];// eliminate round errors
 		$p['time'] = (int)$p['time'];// eliminate round errors
-		echo '  <th>'.number_format($p['score'],2);
+		$score = $p['score'];
+		$p['normalized'] = $score / $vbs_score;
+		echo '  <th>'.number_format($score,2);
 		$summer = &$sum[$p['layer']];
 		$summer['done'] += $p['done'];
 		$summer['togo'] += $p['togo'];

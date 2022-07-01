@@ -71,6 +71,9 @@ foreach( $teams as $team => $solvers ) {
 }
 ?>
 };
+
+const score_exponent = 2;// Ln norm. 2 means Euclidean
+
 function updateScores(catname,participants) {
 	// first set score for the team of this category 0
 	for( let solver_id in participants ) {
@@ -78,12 +81,13 @@ function updateScores(catname,participants) {
 	}
 	// then add up scores of the team, in case it participates in certified category. We don't support two tools from one team!
 	for( let solver_id in participants ) {
-		teamScores[solver_id2team_id[solver_id]][catname] += participants[solver_id].score;
+		let score = participants[solver_id].normalized;
+		teamScores[solver_id2team_id[solver_id]][catname] += Math.pow(score,score_exponent);
 	}
 	for( var i = 0; i < teamScores.length; i++ ) {
 		let elt = document.querySelector("#team"+i+">.score");
-		let score = Object.values(teamScores[i]).reduce((x,y) => { return x + y; }, 0);
-		elt.innerHTML = score;
+		let score_sum = Object.values(teamScores[i]).reduce((x,y) => { return x + y; }, 0);
+		elt.innerHTML = Math.pow(score_sum,1/score_exponent).toFixed(2);
 	}
 }
 </script>
