@@ -32,14 +32,11 @@
 		$csv = jobid2csv($jobids[$i]);
 		cachezip(jobid2remote($jobids[$i]),$csv,$refresh);
 		parse_results($csv,$benchmarks,$participants,$i);
-		$sum[$i] = [
-			'done' => 0,
-			'togo' => 0,
-			'cpu' => 0,
-			'time' => 0,
-			'scorestogo' => 0,
-		];
+		$sum[$i] = new_scores();
 	}
+	// virtual best solver
+	$vbs = new_scores();
+
 	echo ' <title>'. $competitionname .': '. $jobname .'</title>'.PHP_EOL.
 	     '</head>'.PHP_EOL.
 	     '<body>'.PHP_EOL.
@@ -51,6 +48,7 @@
 ?>
  <span class="headerFollower">Showing
   <select id="resultsFilter" type="text" placeholder="Filter..." oninput="filteredTable.refresh()">
+   <option value="b">started</option>
    <option value="">all</option>
    <option value="i">interesting</option>
    <option value="c">conflicting</option>
@@ -71,11 +69,9 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
   <th style="display:none">
    <script>filteredTable.register(1,"resultsFilter");</script>
 <?php
-	$i = 2;
-	foreach( $participants as $configid => &$p ) {
-		echo '  <th><a href="'. solverid2url($p['solver id']) . '">'.$p['solver'].'</a>'.PHP_EOL.
-		     '   <a class=config href="'. configid2url($configid) .'">'. $p['configuration'].'</a>'.PHP_EOL.
-		     '   <select id="filter'.$i.'" oninput="filteredTable.refresh()">'.PHP_EOL.
+
+	function makeFilterField($i) {
+		echo '   <select id="filter'.$i.'" oninput="filteredTable.refresh()">'.PHP_EOL.
 		     '    <option value="">--</option>'.PHP_EOL.
 		     '    <option value="YES">YES</option>'.PHP_EOL.
 		     '    <option value="NO">NO</option>'.PHP_EOL.
@@ -87,6 +83,16 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		     '    <option value="ERROR">ERROR</option>'.PHP_EOL.
 		     '   </select>'.PHP_EOL.
 		     '   <script>filteredTable.register('.$i.',"filter'.$i.'");</script>'.PHP_EOL;
+	}
+
+	// 2nd row is for the virtual best solver
+	echo '  <th>VBS'.PHP_EOL;
+	makeFilterField($i);
+	$i = 3;
+	foreach( $participants as $configid => &$p ) {
+		echo '  <th><a href="'. solverid2url($p['solver id']) . '">'.$p['solver'].'</a>'.PHP_EOL.
+		     '   <a class=config href="'. configid2url($configid) .'">'. $p['configuration'].'</a>'.PHP_EOL;
+		makeFilterField($i);
 		$i++;
 	}
 	$bench = [];
@@ -95,11 +101,9 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 	foreach( $benchmarks as $benchmark_id => $benchmark ) {
 		$bench = [];
 		init_claim_set($claims); /* collects results for each benchmark */
-		$show = false;
 		foreach( $benchmark['participants'] as $configid => $record ) {
 			$p =& $participants[$configid];
 			$status = $record['status'];
-			$show = $show || !status2pending($status);
 			$score = 0;
 			if( status2finished($status) ) {
 				$cpu = parse_time($record['cpu time']);
@@ -147,53 +151,68 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				'score' => $score,
 			];
 		}
-		if( $show ) {
-			$d = claims2description($claims);
-			if( $d['conflicting'] ) {
-				foreach( array_keys($bench) as $me ) {
-					if( $bench[$me]['score'] > 0 ) {
-						$participants[$me]['conflicts']++;
-					}
+		$d = claims2description($claims);
+		$conflicting = $d['conflicting'];
+		if( $conflicting ) {
+			foreach( array_keys($bench) as $me ) {
+				if( $bench[$me]['score'] > 0 ) {
+					$participants[$me]['conflicts']++;
 				}
-				echo ' <tr class=conflict>'.PHP_EOL;
-				if( $conflicts == 0 ) {
-					echo '  <a name="conflict"/>'.PHP_EOL;
-				}
-				$conflicts += 1;
-			} else {
-				echo ' <tr>'.PHP_EOL;
 			}
-			$bm_name = $benchmark['benchmark'];
-			$bm_url = bm2url($bm_name,$benchmark_id,$db);
-			echo '  <td class=benchmark>'.PHP_EOL.
-			     '   <a href="'.$bm_url.'">'.format_bm($bm_name).'</a>'.PHP_EOL.
-			     '   <a class=starexecid href="'.bmid2remote($benchmark_id).'">'.$benchmark_id.'</a></td>'.PHP_EOL.
-			     '  <td style="display:none">'.$d['key'];
-			foreach( $bench as $me => $my ) {
-				$status = $my['status'];
-				$claim = $my['claim'];
-				$cert = $my['cert'];
-				$certtime = $my['certtime'];
-				$url = pairid2url($my['pair']);
-				$outurl = pairid2outurl($my['pair']);
-				if( status2complete($status) ) {
-					echo '  <td class="' . claim2class($claim,$cert) . '">'.PHP_EOL.
-					     '   <a href="'. $outurl .'">' . claim2str($claim) . '</a>'.PHP_EOL.
-					     '   <a href="'. $url .'">'.PHP_EOL.
-					     '    <span class="time">' . $my['cpu'] . '/' . $my['time'] . '</span>'.PHP_EOL;
-					if( $cert ) {
-						echo '    '.cert2str($cert).'<span class="time">'. $certtime . '</span>'.PHP_EOL;
-					}
-					echo '   </a>'.PHP_EOL;
-				} else {
-					echo '  <td class="' . status2class($status) . '">'.PHP_EOL.
-					     '   <a href="'. $url . '">' . $status . '</a>'.PHP_EOL.
-					     (status2complete($status) ? '   <a href="'. $outurl .'">[out]</a>'.PHP_EOL : '' );
+			echo ' <tr class=conflict>'.PHP_EOL;
+			if( $conflicts == 0 ) {
+				echo '  <a name="conflict"/>'.PHP_EOL;
+			}
+			$conflicts += 1;
+		} else {
+			echo ' <tr>'.PHP_EOL;
+		}
+
+		$bm_name = $benchmark['benchmark'];
+		$bm_url = bm2url($bm_name,$benchmark_id,$db);
+		echo '  <td class=benchmark>'.PHP_EOL.
+		     '   <a href="'.$bm_url.'">'.format_bm($bm_name).'</a>'.PHP_EOL.
+		     '   <a class=starexecid href="'.bmid2remote($benchmark_id).'">'.$benchmark_id.'</a></td>'.PHP_EOL.
+		     '  <td style="display:none">'.$d['key'];
+		// virtual best solver
+		if( $conflicting ) {
+			echo '  <td>';
+		} else {
+			$claim = $d['vbs'];
+			echo '  <td class="'.claim2class($claim,'').'">'.claim2str($claim);
+			$scores = claim2scores($claim,'',$max_score);
+			foreach( $scores as $key => $val ) {
+				$vbs[$key] += $val;
+			}
+		}
+		foreach( $bench as $me => $my ) {
+			$status = $my['status'];
+			$claim = $my['claim'];
+			$cert = $my['cert'];
+			$certtime = $my['certtime'];
+			$url = pairid2url($my['pair']);
+			$outurl = pairid2outurl($my['pair']);
+			if( status2complete($status) ) {
+				echo '  <td class="' . claim2class($claim,$cert) . '">'.PHP_EOL.
+				     '   <a href="'. $outurl .'">' . claim2str($claim) . '</a>'.PHP_EOL.
+				     '   <a href="'. $url .'">'.PHP_EOL.
+				     '    <span class="time">' . $my['cpu'] . '/' . $my['time'] . '</span>'.PHP_EOL;
+				if( $cert ) {
+					echo '    '.cert2str($cert).'<span class="time">'. $certtime . '</span>'.PHP_EOL;
 				}
+				echo '   </a>'.PHP_EOL;
+			} else {
+				echo '  <td class="' . status2class($status) . '">'.PHP_EOL.
+				     '   <a href="'. $url . '">' . $status . '</a>'.PHP_EOL.
+				     (status2complete($status) ? '   <a href="'. $outurl .'">[out]</a>'.PHP_EOL : '' );
 			}
 		}
 	}
 	echo ' <tr><th>'.PHP_EOL;
+
+	// last row is scores
+	// vbs
+	echo '  <th>'.number_format($vbs['score'],2);
 	foreach( $participants as &$p ) {
 		$p['cpu'] = (int)$p['cpu'];// eliminate round errors
 		$p['time'] = (int)$p['time'];// eliminate round errors

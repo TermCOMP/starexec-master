@@ -60,6 +60,19 @@ set_time_limit(300);
 		'timeout' => ['scored' => false],
 		'memout' => ['scored' => false],
 	];
+	function new_scores() {
+		return [
+			'score' => 0,
+			'miss' => 0,
+			'scorestogo' => 0,
+			'conflicts' => 0,
+			'done' => 0,
+			'togo' => 0,
+			'cpu' => 0,
+			'time' => 0,
+			'certtime' => 0,
+		];
+	}
 	function parse_results($csv, &$benchmarks, &$participants, $layer) {
 		global $scored_keys;
 		$file = new SplFileObject($csv);
@@ -83,21 +96,12 @@ set_time_limit(300);
 		$first = $configid;
 		// first loop
 		for(;;) {
-			$participants[$configid] = [
+			$participants[$configid] = array_merge( new_scores(), [
 				'layer' => $layer,
 				'solver' => $record['solver'],
 				'solver id' => $record['solver id'],
 				'configuration' => $record['configuration'],
-				'score' => 0,
-				'miss' => 0,
-				'scorestogo' => 0,
-				'conflicts' => 0,
-				'done' => 0,
-				'togo' => 0,
-				'cpu' => 0,
-				'time' => 0,
-				'certtime' => 0,
-			];
+			]);
 			foreach( $scored_keys as $key => $val ) {
 				$participants[$configid][$key] = 0;
 			}
@@ -381,43 +385,53 @@ set_time_limit(300);
 		return "https://www.starexec.org/starexec/secure/details/configuration.jsp?id=$configid";
 	}
 	function claims2description($claims) {
+		$best = [];
 		$YES = $claims['YES'];
+		if( $YES > 0 ) {
+			$best['YES'] = 1;
+		}
 		$NO = $claims['NO'];
+		if( $NO > 0 ) {
+			$best['NO'] = 1;
+		}
 		$UP = $claims['UP'];
 		$LOW = $claims['LOW'];
 		$MAYBE = $claims['miss'];
 		$togo = $claims['togo'];
 		if( empty($UP) ) {
-			$UP = [1000];
-			$minUP = 1000;
 			$nUP = 0;
-			$vUP = 1;
+			$vUP = 0;
 		} else {
 			$minUP = min($UP);
+			$best['UP'] = $minUP;
 			$nUP = count(array_filter($UP,function($up){return $up == $minUP;}));
-			$vUP = count(array_unique($UP));
+			$vUP = count(array_unique($UP));// number of different UP claims
 		}
 		if( empty($LOW) ) {
 			$maxLOW = 0;
 			$nLOW = 0;
-			$vLOW = 1;
+			$vLOW = 0;
 		} else {
 			$maxLOW = max($LOW);
+			$best['LOW'] = $maxLOW;
 			$nLOW = count(array_filter($LOW,function($low){return $low == $maxLOW;}));
 			$vLOW = count(array_unique($LOW));
 		}
-		$conflicting = ( $YES > 0 && $NO > 0 ) || $minUP < $maxLOW;
+		$begun = !($YES == 0 && $NO == 0 && $MAYBE == 0 && empty($UP) && empty($LOW));
+		$conflicting = ( $YES > 0 && $NO > 0 ) || isset($minUP) && $minUP < $maxLOW;
 		$interesting = ( ( $YES > 0 || $NO > 0 ) && $MAYBE > 0) || $vUP > 1 || $vLOW > 1;
 		$finished = $togo == 0;
 		$unsolved = $finished && $YES == 0 && $NO == 0 && $nUP == 0 && $nLOW == 0;
 		$solo = $finished && ($YES == 1 || $NO == 1 || $nUP == 1 || $nLOW == 1);
 		return [
+			'vbs' => $best,
+			'begun' => $begun,
 			'conflicting' => $conflicting,
 			'interesting' => $interesting,
 			'finished' => $finished,
 			'solo' => $solo,
 			'unsolved' => $unsolved,
-			'key' => ($conflicting ? 'c':'').($interesting ? 'i' : '').($solo ? 's' : '').($unsolved ? 'u' : '').($finished ? 'f':''),
+			'key' => ($begun ? 'b':'').($conflicting ? 'c':'').($interesting ? 'i' : '').($solo ? 's' : '').($unsolved ? 'u' : '').($finished ? 'f':''),
 		];
 	}
 	// Making certified and demonstration categories
