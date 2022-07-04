@@ -211,6 +211,8 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 	echo ' <tr><th>'.PHP_EOL;
 
 	// last row is scores
+	// the highest score
+	$max_score = max(array_map(function($p){return $p['score'];},$participants));
 	// vbs
 	$vbs_score = $vbs['score'];
 	echo '  <th>'.number_format($vbs_score,2);
