@@ -176,7 +176,7 @@ $categories = [
 			'spaceid' => 466209,
 			'participants' => [
 //				"SizeChangeTool" => 325830,
-//				"Wanda" => 359682,
+				"Wanda" => 359682,
 			],
 			'certified' => [
 				'id' => null,
