@@ -50,7 +50,8 @@ var columnToggler = StyleToggler(
 	]
 );
 // team scoring
-var teamScores = [<?php foreach($teams as $team) { echo '[],'; } ?>];
+var teamCategoryScores = [<?php foreach($teams as $team) { echo '[],'; } ?>];
+var teamScores = [<?php foreach($teams as $team) { echo '0,'; } ?>];
 const solver_id2team_id = {
 <?php
 $team_id = 0;
@@ -75,19 +76,34 @@ foreach( $teams as $team => $solvers ) {
 const score_exponent = 2;// Ln norm. 2 means Euclidean
 
 function updateScores(catname,participants) {
-	// first set score for the team of this category 0
+	// first clear scores for the teams of this category
 	for( let solver_id in participants ) {
-		teamScores[solver_id2team_id[solver_id]][catname] = 0;
+		teamCategoryScores[solver_id2team_id[solver_id]][catname] = 0;
 	}
-	// then add up scores of the team, in case it participates in certified category. We don't support two tools from one team!
+	// then add up scores of the team, in case it participates in certified category. We don't support two tools from one team in the same category!
 	for( let solver_id in participants ) {
 		let score = participants[solver_id].normalized;
-		teamScores[solver_id2team_id[solver_id]][catname] += Math.pow(score,score_exponent);
+		teamCategoryScores[solver_id2team_id[solver_id]][catname] += Math.pow(score,score_exponent);
 	}
-	for( var i = 0; i < teamScores.length; i++ ) {
-		let elt = document.querySelector("#team"+i+">.score");
-		let score_sum = Object.values(teamScores[i]).reduce((x,y) => { return x + y; }, 0);
-		elt.innerHTML = Math.pow(score_sum,1/score_exponent).toFixed(2);
+	// updating the team scores
+	for( let i in teamScores ) {
+		let score_sum = Object.values(teamCategoryScores[i]).reduce((x,y) => { return x + y; }, 0);
+		teamScores[i] = Math.pow(score_sum,1/score_exponent).toFixed(4);
+	}
+	// sorting the team ranking. For smooth display, do not apply sorting directly on the dom objects.
+	let ranking = Object.keys(teamScores).sort( (i,j) => { return teamScores[j] - teamScores[i];} );
+	// refreshing the display. For smooth display, do not move elements if they don't have to.
+	let div = document.getElementById("team_ranking");
+	var cur = div.fistChild;
+	for( var i = 0; i < ranking.length; i++ ) {
+		let span = document.getElementById("team"+ranking[i]);
+		let elt = span.querySelector(".score");
+		elt.innerHTML = teamScores[ranking[i]];
+		if( span == cur ) {
+			cur = cur.nextSibling;
+		} else {
+			div.insertBefore(span,cur);
+		}
 	}
 }
 </script>
@@ -95,12 +111,15 @@ function updateScores(catname,participants) {
 if( !$closed ) {
 	echo 'Registration is open! Please register following the README of <a href="https://github.com/TermCOMP/starexec-master">this repository</a>';
 }
+echo ' <div id="team_ranking">'.PHP_EOL;
 // creating team ranking
 $team_id = 0;
 foreach( $teams as $team => $solvers ) {
-	echo '<span id="team'.$team_id.'">'.$team.'<span class="score"></span></span>'.PHP_EOL;
+	echo '  <span id="team'.$team_id.'">'.$team.'<span class="score"></span></span>'.PHP_EOL;
 	$team_id++;
 }
+echo ' </div>'.PHP_EOL;
+
 $mcatid = 0;
 $catid = 0;
 foreach( $mcats as $mcatname => $cats ) {
@@ -183,9 +202,11 @@ foreach( $mcats as $mcatname => $cats ) {
 		     '   loadURL("'.id2sumfile($id).'", function(xhttp) {'.PHP_EOL.
 		     '    var data = JSON.parse(xhttp.responseText);'.PHP_EOL.
 		     '    progress'.$mcatid.'['.$catindex.'] = data["layers"].reduce(summer);'.PHP_EOL.
-		     '    updateProgress'.$mcatid.'();'.PHP_EOL.
-		     '    updateScores("'.$catname.'",data["participants"]);'.PHP_EOL.
-		     '   });'.PHP_EOL.
+		     '    updateProgress'.$mcatid.'();'.PHP_EOL;
+		if( $mcatname != 'Demonstrations' ) {
+			echo '    updateScores("'.$catname.'",data["participants"]);'.PHP_EOL;
+		}
+		echo '   });'.PHP_EOL.
 		     '  }'.PHP_EOL.
 		     '  load'.$id.'();'.PHP_EOL.
 		     '  setInterval(load'.$id.', 10000);'.PHP_EOL.
