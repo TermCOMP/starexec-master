@@ -94,11 +94,14 @@ function updateScores(catname,participants) {
 	let ranking = Object.keys(teamScores).sort( (i,j) => { return teamScores[j] - teamScores[i];} );
 	// refreshing the display. For smooth display, do not move elements if they don't have to.
 	let div = document.getElementById("team_ranking");
-	var cur = div.fistChild;
+	var cur = div.firstElementChild;
 	for( var i = 0; i < ranking.length; i++ ) {
 		let span = document.getElementById("team"+ranking[i]);
+		let score = teamScores[ranking[i]];
 		let elt = span.querySelector(".score");
-		elt.innerHTML = teamScores[ranking[i]];
+		if( elt.innerHTML != score ) {// don't touch unless necessary
+			elt.innerHTML = score;
+		}
 		if( span == cur ) {
 			cur = cur.nextSibling;
 		} else {
