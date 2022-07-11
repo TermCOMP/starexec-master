@@ -222,7 +222,7 @@ $categories = [
 			'participants' => [
 //				"Ctrl" => 23757,
 //				"iRankFinder" => 360226,
-//				"LoAT" => 551398,
+				"LoAT" => 551398,
 			],
 			'certified' => [
 				'id' => null,
