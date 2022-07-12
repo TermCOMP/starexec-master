@@ -120,7 +120,7 @@ div.category {
 .incomplete {
 	background-color: white;
 }
-.active {
+.enqueued {
 	background-color: fuchsia;
 	color: white;
 }

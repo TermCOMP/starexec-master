@@ -166,6 +166,9 @@ set_time_limit(300);
 			return 1001;
 		}
 	}
+	function error_claim() {
+		return ['error' => 1];
+	}
 	function timeout_claim() {
 		return ['timeout' => 1];
 	}
@@ -313,6 +316,9 @@ set_time_limit(300);
 		if(	array_key_exists('YES',$claim) ) {
 			return $pre.'YES';
 		}
+		if( array_key_exists('error',$claim) ) {
+			return 'error';
+		}
 		if( array_key_exists('timeout',$claim) ) {
 			return 'timeout';
 		}
@@ -321,8 +327,26 @@ set_time_limit(300);
 		}
 		return 'MAYBE';
 	}
+	function status2complete($status) {
+		return $status == 'complete';
+	}
+	function status2pending($status) {
+		return substr($status,0,7) == 'pending';
+	}
+	function status2enqueued($status) {
+		return $status == 'enqueued';
+	}
+	function status2incomplete($status) {
+		return $status == 'incomplete';
+	}
+	function status2paused($status) {
+		return $status == 'paused';
+	}
 	function status2finished($status) {
-		return substr($status,0,7) <> 'pending' && $status <> 'enqueued';
+		return !status2pending($status) && !status2enqueued($status) && !status2incomplete($status) && !status2paused($status);
+	}
+	function status2error($status) {
+		return strstr($status, 'error') != false;
 	}
 	function status2timeout($status) {
 		return substr($status,0,7) == 'timeout';
@@ -330,25 +354,17 @@ set_time_limit(300);
 	function status2memout($status) {
 		return $status == 'memout';
 	}
-	function status2complete($status) {
-		return status2finished($status) && ! status2timeout($status);
-	}
-	function status2pending($status) {
-		return $status == 'pending submission';
-	}
 	function status2class($status) {
-		if( $status == 'complete' ) {
+		if( status2complete($status) ) {
 			return 'complete';
-		} else if( $status == 'incomplete' || $status == 'paused' || $status == 'pending submission' ) {
+		} else if( status2incomplete($status) ) {
 			return 'incomplete';
 		} else if( status2timeout($status) ) {
 			return 'timeout';
 		} else if( status2memout($status) ) {
 			return 'memout';
-		} else if( $status == 'run script error' ) {
-			return 'starexecbug';
-		} else if( $status == 'enqueued' ) {
-			return 'active';
+		} else if( status2enqueued($status) ) {
+			return 'enqueued';
 		} else {
 			return 'error';
 		}
