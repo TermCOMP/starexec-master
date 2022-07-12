@@ -125,8 +125,9 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				}
 				$p['certtime'] += $certtime;
 				$claim =
-					status2timeout($status) ? timeout_claim() :
-					(status2memout($status) ? memout_claim() : str2claim($record['result']));
+					status2error($status) ? error_claim() :
+					(status2timeout($status) ? timeout_claim() :
+					(status2memout($status) ? memout_claim() : str2claim($record['result'])));
 				add_claim($claims,$claim);
 				$scores = claim2scores($claim,$cert,$max_score);
 				foreach( $scores as $key => $val ) {
