@@ -5,47 +5,45 @@ $note = '';
 $showconfig = false;
 $closed = true;
 $db = 'TPDB 11.0';
+
+$teams = [];
+
 $categories = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [
 			'type' => 'termination',
 			'id' => 33457,
-		],
-		'TRS Standard Certified' => [
-			'type' => 'termination',
-			'id' => 33116,
+			'certified' => [
+				'id' => 33116,
+			],
 		],
 		'SRS Standard' => [
 			'type' => 'termination',
 			'id' => 33458,
-		],
-		'SRS Standard Certified' => [
-			'type' => 'termination',
-			'id' => 33117,
+			'certified' => [
+				'id' => 33117,
+			],
 		],
 		'TRS Relative' => [
 			'type' => 'termination',
 			'id' => 33012,
-		],
-		'TRS Relative Certified' => [
-			'type' => 'termination',
-			'id' => 33126,
+			'certified' => [
+				'id' => 33126,
+			],
 		],
 		'SRS Relative' => [
 			'type' => 'termination',
 			'id' => 33461,
-		],
-		'SRS Relative Certified' => [
-			'type' => 'termination',
-			'id' => 33127,
+			'certified' => [
+				'id' => 33127,
+			],
 		],
 		'TRS Equational' => [
 			'type' => 'termination',
 			'id' => 33020,
-		],
-		'TRS Equational Certified' => [
-			'type' => 'termination',
-			'id' => 33128,
+			'certified' => [
+				'id' => 33128,
+			],
 		],
 		'TRS Conditional' => [
 			'type' => 'termination',
@@ -58,6 +56,9 @@ $categories = [
 		'TRS Innermost' => [
 			'type' => 'termination',
 			'id' => 33453,
+			'certified' => [
+				'id' => 33570,
+			],
 		],
 		'HRS (union beta)' => [
 			'type' => 'termination',
@@ -100,14 +101,9 @@ $categories = [
 		'TRS Outermost' => [
 			'type' => 'termination',
 			'id' => 33568,
-		],
-		'TRS Outermost Certified' => [
-			'type' => 'termination',
-			'id' => 33569,
-		],
-		'TRS Innermost Certified' => [
-			'type' => 'termination',
-			'id' => 33570,
+			'certified' => [
+				'id' => 33569,
+			],
 		],
 		'Java Bytecode' => [
 			'type' => 'termination',
@@ -124,10 +120,9 @@ $categories = [
 		'Runtime Complexity: TRS Innermost' => [
 			'type' => 'complexity',
 			'id' => 33566,
-		],
-		'Runtime Complexity: TRS Innermost Certified' => [
-			'type' => 'complexity',
-			'id' => 33567,
+			'certified' => [
+				'id' => 33567,
+			],
 		],
 	],
 ];

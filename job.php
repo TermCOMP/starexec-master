@@ -3,7 +3,6 @@
 <head>
  <meta charset="utf-8">
  <meta http-equiv="Cache-Control" content="no-cache, no-store">
- <link rel="stylesheet" href="master.css">
 
 <?php
 	include './definitions.php';
@@ -17,12 +16,23 @@
 	$jobids = explode( '_', $id );
 	$jobidc = count($jobids);
 	$competition = $_GET['competition'];
-	$competitionname = $_GET['competitionname'];
-	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
-	$db = $_GET['db'];
+	$bm_db = $_GET['db'];
+	$bm_prefix = array_key_exists('dir',$_GET) ? $_GET['dir'].'/' : '';
 	$cops = $_GET['cops'];
 	$type = $_GET['type'];
+
+	echo ' <link rel="stylesheet" href="';
+	if( isset($competition) ) {// This means it is generating an HTML in the competition directory.
+		$competitionname = $_GET['competitionname'];
+		$jobname = $_GET['name'];
+		echo '../';
+	} else {// just displaying a job.
+		$competitionname = 'Job '.$id;
+		$jobname = $id;
+	}
+	echo 'master.css">'.PHP_EOL;
+
 
 	$max_score = $type == 'complexity' ? 2.0 : 1;
 
@@ -32,7 +42,7 @@
 	for( $i = 0; $i < $jobidc; $i++ ) {
 		$csv = jobid2csv($jobids[$i]);
 		cachezip(jobid2remote($jobids[$i]),$csv,$refresh);
-		parse_results($csv,$results,$participants,$i);
+		parse_results($csv,$bm_prefix,$results,$participants,$i);
 		$sum[$i] = new_scores();
 	}
 	// virtual best solver
@@ -98,10 +108,10 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 	}
 
 	$conflicts = 0;
-	foreach( $benchmarks as $benchmark_id => $benchmark ) {
+	foreach( $results as $bm_name => $records ) {
 		$bench = [];
 		init_claim_set($claims); /* collects results for each benchmark */
-		foreach( $benchmark['participants'] as $configid => $record ) {
+		foreach( $records['participants'] as $configid => $record ) {
 			$p =& $participants[$configid];
 			$status = $record['status'];
 			$score = 0;
@@ -169,11 +179,11 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			echo ' <tr>'.PHP_EOL;
 		}
 
-		$bm_name = $benchmark['benchmark'];
-		$bm_url = bm2url($bm_name,$benchmark_id,$db);
+		$bm_id = $records['benchmark id'];
+		$bm_url = bm2url($bm_name,$bm_id,$bm_db,$bm_prefix);
 		echo '  <td class=benchmark>'.PHP_EOL.
 		     '   <a href="'.$bm_url.'">'.format_bm($bm_name).'</a>'.PHP_EOL.
-		     '   <a class=starexecid href="'.bmid2remote($benchmark_id).'">'.$benchmark_id.'</a></td>'.PHP_EOL.
+		     '   <a class="starexecid" href="'.bmid2remote($bm_id).'">'.$bm_id.'</a></td>'.PHP_EOL.
 		     '  <td style="display:none">'.$d['key'];
 		// virtual best solver
 		if( $conflicting ) {
@@ -181,7 +191,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		} else {
 			$claim = $d['vbs'];
 			$claim_str = claim2str($claim);
-			$vbs_results[$benchmark_id] = $claim_str;
+			$vbs_results[$bm_name] = $claim_str;
 			echo '  <td class="'.claim2class($claim,'').'">'.$claim_str;
 			$scores = claim2scores($claim,'',$max_score);
 			foreach( $scores as $key => $val ) {
@@ -232,7 +242,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		$summer['cpu'] += $p['cpu'];
 		$summer['time'] += $p['time'];
 	}
-	file_put_contents( id2sumfile($competition,$id), json_encode(
+	file_put_contents( jobname2sumfile($competition,$jobname), json_encode(
 			[ 'layers' => $sum, 'participants' => $participants, 'conflicting' => $conflicts > 0 ]
 	) );
 	file_put_contents( jobname2vbsfile($competition,$jobname), json_encode($vbs_results) );
