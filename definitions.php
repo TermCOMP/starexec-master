@@ -121,8 +121,11 @@ set_time_limit(300);
 	function jobid2remote($jobid) {
 		return "https://www.starexec.org/starexec/secure/download?type=job&id=$jobid&returnids=true&getcompleted=false";
 	}
-	function id2sumfile($id) {
-		return 'Job'.$id.'.json';
+	function id2sumfile($competition,$id) {
+		return $competition.'/Job'.$id.'.json';
+	}
+	function jobname2vbsfile($competition,$jobname) {
+		return $competition.'/'.preg_replace('/[: \\/\\\\]/','_',$jobname).'_VBS.json';
 	}
 	function spaceid2url($id) {
 		return 'https://www.starexec.org/starexec/secure/explore/spaces.jsp?id='.$id;

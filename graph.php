@@ -10,6 +10,7 @@
 
 include 'definitions.php';
 
+$competition = $_GET['competition'];
 $mcatname = $_GET['mcatname'];
 $catname = $_GET['name'];
 $id = $_GET['id'];
@@ -29,7 +30,7 @@ $togo = 0;
 $conflicts = 0;
 
 // checking cached score file and making ranking
-$sum = json_decode(file_get_contents(id2sumfile($id)),TRUE);
+$sum = json_decode(file_get_contents(id2sumfile($competition,$id)),TRUE);
 $solvers = $sum['participants'];
 $layers = $sum['layers'];
 uasort($solvers, function($s,$t) { return $s['score'] < $t['score'] ? 1 : -1; } );

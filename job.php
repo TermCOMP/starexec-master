@@ -16,6 +16,7 @@
 	$id = $_GET['id'];
 	$jobids = explode( '_', $id );
 	$jobidc = count($jobids);
+	$competition = $_GET['competition'];
 	$competitionname = $_GET['competitionname'];
 	$jobname = $_GET['name'];
 	$refresh = $_GET['refresh'];
@@ -25,17 +26,18 @@
 
 	$max_score = $type == 'complexity' ? 2.0 : 1;
 
-	$benchmarks = [];
+	$results = [];
 	$participants = [];
 	$sum = [];
 	for( $i = 0; $i < $jobidc; $i++ ) {
 		$csv = jobid2csv($jobids[$i]);
 		cachezip(jobid2remote($jobids[$i]),$csv,$refresh);
-		parse_results($csv,$benchmarks,$participants,$i);
+		parse_results($csv,$results,$participants,$i);
 		$sum[$i] = new_scores();
 	}
 	// virtual best solver
 	$vbs = new_scores();
+	$vbs_results = [];
 
 	echo ' <title>'. $competitionname .': '. $jobname .'</title>'.PHP_EOL.
 	     '</head>'.PHP_EOL.
@@ -94,7 +96,6 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		makeFilterField($i);
 		$i++;
 	}
-	$bench = [];
 
 	$conflicts = 0;
 	foreach( $benchmarks as $benchmark_id => $benchmark ) {
@@ -179,7 +180,9 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			echo '  <td>';
 		} else {
 			$claim = $d['vbs'];
-			echo '  <td class="'.claim2class($claim,'').'">'.claim2str($claim);
+			$claim_str = claim2str($claim);
+			$vbs_results[$benchmark_id] = $claim_str;
+			echo '  <td class="'.claim2class($claim,'').'">'.$claim_str;
 			$scores = claim2scores($claim,'',$max_score);
 			foreach( $scores as $key => $val ) {
 				$vbs[$key] += $val;
@@ -229,9 +232,10 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		$summer['cpu'] += $p['cpu'];
 		$summer['time'] += $p['time'];
 	}
-	file_put_contents( id2sumfile($id), json_encode(
+	file_put_contents( id2sumfile($competition,$id), json_encode(
 			[ 'layers' => $sum, 'participants' => $participants, 'conflicting' => $conflicts > 0 ]
 	) );
+	file_put_contents( jobname2vbsfile($competition,$jobname), json_encode($vbs_results) );
 ?>
 </table>
 <script>
