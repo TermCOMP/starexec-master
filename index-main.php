@@ -11,7 +11,7 @@ include 'definitions.php';
 
 $competition = array_key_exists( 'competition', $_GET ) ? $_GET['competition'] : 'Y2022';
 
-if( preg_match('/\\.\\.?|.*[\\/:].*/') ) {
+if( preg_match('/\\.\\.?|.*[\\/:].*/',$competition) ) {
 	echo "Bad competition name.".PHP_EOL;
 	exit(-1);
 }
@@ -181,8 +181,8 @@ foreach( $mcats as $mcatname => $cats ) {
 			continue;
 		}
 		// creating job html
-		$jobpath = $competition.'/job_'.$id.'.html';
-		$graphpath = $competition.'/graph_'.$id.'.html';
+		$jobpath = jobname2local($competition,$catname);
+		$graphpath = jobname2graph($competition,$catname);
 		$jobargs = [
 			'id' => $id,
 			'name' => $catname,
@@ -191,6 +191,7 @@ foreach( $mcats as $mcatname => $cats ) {
 			'competition' => $competition,
 			'competitionname' => $shortname,
 			'db' => $db,
+			'dir' => $cat['dir'],
 			'refresh' => $refresh,
 		];
 		$query = http_build_query( $jobargs, '', ' ' );
@@ -209,7 +210,7 @@ foreach( $mcats as $mcatname => $cats ) {
 		     '    scoreToggler.apply(elm);'.PHP_EOL.
 		     '    configToggler.apply(elm);'.PHP_EOL.
 		     '   });'.PHP_EOL.
-		     '   loadURL("'.id2sumfile($competition,$id).'", function(xhttp) {'.PHP_EOL.
+		     '   loadURL("'.jobname2sumfile($competition,$catname).'", function(xhttp) {'.PHP_EOL.
 		     '    var data = JSON.parse(xhttp.responseText);'.PHP_EOL.
 		     '    progress'.$mcatid.'['.$catindex.'] = data["layers"].reduce(summer);'.PHP_EOL.
 		     '    updateProgress'.$mcatid.'();'.PHP_EOL;

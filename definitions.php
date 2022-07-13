@@ -59,6 +59,7 @@ set_time_limit(300);
 		'MAYBE' => ['scored' => false],
 		'timeout' => ['scored' => false],
 		'memout' => ['scored' => false],
+		'error' => ['scored' => false],
 	];
 	function new_scores() {
 		return [
@@ -73,25 +74,26 @@ set_time_limit(300);
 			'certtime' => 0,
 		];
 	}
-	function parse_results($csv, &$benchmarks, &$participants, $layer) {
+	function parse_record(&$record,$bm_dir,$len,&$results) {
+		if( $record != null ) {
+			$bm_raw = $record['benchmark'];
+			unset($record['benchmark']);
+			$bm_name = substr( $bm_raw, strpos($bm_raw,$bm_dir) + $len);
+			$here = &$results[$bm_name];
+			$here['participants'][$record['configuration id']] = $record;
+		}
+	};
+	function parse_results($csv, $bm_dir, &$results, &$participants, $layer) {
 		global $scored_keys;
+		$len = strlen($bm_dir);
 		$file = new SplFileObject($csv);
 		$file->setFlags( SplFileObject::READ_CSV );
 		$header = $file->current();
 		$file->next();
-		$proc = function($record) {
-			global $benchmarks;
-			if( $record != null ) {
-				$here = &$benchmarks[$record['benchmark id']];
-				preg_match( '|[^/]*/(.*)$|', $record['benchmark'], $matches );
-				$here['benchmark'] = $matches[1];
-				$here['participants'][$record['configuration id']] = $record;
-			}
-		};
 		// first tool
 		$record = row2record($header,$file->current());
 		$file->next();
-		$proc($record);
+		parse_record($record,$bm_dir,$len,$results);
 		$configid = $record['configuration id'];
 		$first = $configid;
 		// first loop
@@ -107,7 +109,7 @@ set_time_limit(300);
 			}
 			$record = row2record($header,$file->current());
 			$file->next();
-			$proc($record);
+			parse_record($record,$bm_dir,$len,$results);
 			$configid = $record['configuration id'];
 			if( $configid == $first ) {
 				break;
@@ -115,17 +117,29 @@ set_time_limit(300);
 		}
 		// remaining
 		for(; !$file->eof(); $file->next() ) {
-			$proc(row2record($header,$file->current()));
+			parse_record(row2record($header,$file->current()),$bm_dir,$len,$results);
 		}
 	}
 	function jobid2remote($jobid) {
 		return "https://www.starexec.org/starexec/secure/download?type=job&id=$jobid&returnids=true&getcompleted=false";
 	}
+	function escape_filename($name) {
+		return preg_replace('/[: \\/\\\\]/','_',$name);
+	}
+	function jobname2local($competition,$jobname) {
+		return $competition.'/'.escape_filename($jobname).'.html';
+	}
+	function jobname2graph($competition,$jobname) {
+		return $competition.'/'.escape_filename($jobname).'.graph.html';
+	}
+	function jobname2sumfile($competition,$jobname) {
+		return $competition.'/'.escape_filename($jobname).'.json';
+	}
 	function id2sumfile($competition,$id) {
 		return $competition.'/Job'.$id.'.json';
 	}
 	function jobname2vbsfile($competition,$jobname) {
-		return $competition.'/'.preg_replace('/[: \\/\\\\]/','_',$jobname).'_VBS.json';
+		return $competition.'/'.escape_filename($jobname).'.VBS.json';
 	}
 	function spaceid2url($id) {
 		return 'https://www.starexec.org/starexec/secure/explore/spaces.jsp?id='.$id;
@@ -211,7 +225,7 @@ set_time_limit(300);
 		$claims['togo'] = 0;
 	}
 	function add_claim(&$claims,$claim) {
-		foreach( ['MAYBE','timeout','memout'] as $key ) {
+		foreach( ['MAYBE','timeout','memout','error'] as $key ) {
 			if( array_key_exists($key,$claim) ) {
 				$claims['miss']++;
 				return;
@@ -266,6 +280,9 @@ set_time_limit(300);
 		}
 		if( array_key_exists('memout',$claim) ) {
 			$ret['memout'] = 1;
+		}
+		if( array_key_exists('error',$claim) ) {
+			$ret['error'] = 1;
 		}
 		return $ret;
 	}
@@ -384,9 +401,9 @@ set_time_limit(300);
 	function jobid2url($jobid) {
 		return "https://www.starexec.org/starexec/secure/details/job.jsp?id=$jobid";
 	}
-	function bm2url($bm,$bmid,$db) {
+	function bm2url($bm,$bmid,$db,$bm_prefix) {
 		if( preg_match( '/TPDB(\\s*([0-9.]+))?/', $db, $matches ) == 1 ) {
-			return 'https://termcomp.github.io/tpdb.html?'.($matches[1]=='' ? '' : 'ver='.$matches[2].'&').'path='.urlencode($bm);
+			return 'https://termcomp.github.io/tpdb.html?'.($matches[1]=='' ? '' : 'ver='.$matches[2].'&').'path='.urlencode($bm_prefix.$bm);
 		}
 		if( preg_match( '/COPS/', $db ) == 1 ) {
 			preg_match( '/(.*)\.trs/', $bm, $matches );
@@ -467,7 +484,7 @@ set_time_limit(300);
 					}
 				}
 				$cats[$cat_name] = $cat;
-				if( $closed ) {
+				if( $closed && array_key_exists('participants',$cat) ) {
 					$cnt = count($cat['participants']) + count($certinfo['participants']);
 					if( $cnt == 0 && $cat['id'] != null ) {
 						unset($cats[$cat_name]);// remove unparticipated category

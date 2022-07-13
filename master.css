@@ -184,12 +184,8 @@ div.category {
 	color: white; 
 }
 .error, .error * {
-	background-color: #FF0000;
+	background-color: #808080;
 	color: white; 
-}
-.starexecbug, .starexecbug * {
-	background-color: #FF0000; 
-	color: white;
 }
 .score>.LOW {
 	background: none;

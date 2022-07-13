@@ -5,6 +5,22 @@ $note = '(Final Run. First run is <a href="https://termcomp.github.io/Y2020-1/">
 $showconfig = false;
 $closed = true;
 $db = 'TPDB 11.1';
+
+$teams = [
+	'RWTH Aachen' => ['AProVE','LoAT'],
+	'HTWK Leipzig' => ['matchbox'],
+	'U. Innsbruck' => ['TTT2', 'TcT'],
+	'MU-TERM' => ['MuTerm'],
+	'Berufsakademie Saarland' => ['MnM'],
+	'U. de La Réunion' => ['NTI', 'NTI+cTI'],
+	'Radboud U. Nijmegen' => ['Wanda', 'Ctrl'],
+	'AIST' => ['NaTT'],
+	'U. Freiburg' => ['Ultimate'],
+	'LSV Cachan' => ['SizeChangeTool'],
+	'U. Complutense de Madrid' => ['iRankFinder'],
+	'Gumma U.' => ['SOL'],
+];
+
 $categories = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [
@@ -110,7 +126,7 @@ $categories = [
 				"AProVE" => 360174,
 			],
 			'certified' => [
-				'id' => false,
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -124,7 +140,7 @@ $categories = [
 				"AProVE" => 360174,
 			],
 			'certified' => [
-				'id' => false,
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -138,7 +154,7 @@ $categories = [
 				"AProVE" => 360174,
 			],
 			'certified' => [
-				'id' => false,
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -152,7 +168,7 @@ $categories = [
 				"Wanda" => 359682,
 			],
 			'certified' => [
-				'id' => false,
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -168,7 +184,7 @@ $categories = [
 				"Ultimate" => 360394,
 			],
 			'certified' => [
-				'id' => false,
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -183,7 +199,7 @@ $categories = [
 				"AProVE" => 360173,
 			],
 			'certified' => [
-				'id' => false,
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -198,7 +214,7 @@ $categories = [
 				"LoAT" => 360195,
 			],
 			'certified' => [
-				'id' => false,
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -212,7 +228,7 @@ $categories = [
 				"AProVE" => 360174,
 			],
 			'certified' => [
-				'id' => false,
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -225,7 +241,7 @@ $categories = [
 				"AProVE" => 360174,
 			],
 			'certified' => [
-				'id' => false,
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -238,7 +254,7 @@ $categories = [
 				"AProVE" => 360174,
 			],
 			'certified' => [
-				'id' => false,
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -246,11 +262,11 @@ $categories = [
 		'Java_Bytecode_Recursive' => [
 			'spaceid' => 426004,
 			'type' => 'termination',
-			'id' => false,
+			'id' => null,
 			'participants' => [
 			],
 			'certified' => [
-				'id' => false,
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -264,7 +280,7 @@ $categories = [
 				"AProVE" => 360174,
 			],
 			'certified' => [
-				'id' => false,
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -272,11 +288,11 @@ $categories = [
 		'Logic_Programming_with_Cut' => [
 			'spaceid' => 425941,
 			'type' => 'termination',
-			'id' => false,
+			'id' => null,
 			'participants' => [
 			],
 			'certified' => [
-				'id' => false,
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -284,11 +300,11 @@ $categories = [
 		'Prolog' => [
 			'spaceid' => 425912,
 			'type' => 'termination',
-			'id' => false,
+			'id' => null,
 			'participants' => [
 			],
 			'certified' => [
-				'id' => false,
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -303,7 +319,7 @@ $categories = [
 				"AProVE" => 360180
 			],
 			'certified' => [
-				'id' => false,
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -316,7 +332,7 @@ $categories = [
 				"AProVE" => 360179
 			],
 			'certified' => [
-				'id' => false,
+				'id' => null,
 				'participants' => [
 				],
 			],

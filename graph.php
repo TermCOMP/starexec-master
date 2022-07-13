@@ -12,7 +12,7 @@ include 'definitions.php';
 
 $competition = $_GET['competition'];
 $mcatname = $_GET['mcatname'];
-$catname = $_GET['name'];
+$name = $_GET['name'];
 $id = $_GET['id'];
 $ids = explode('_',$id);
 $jobid = $ids[0];
@@ -30,7 +30,7 @@ $togo = 0;
 $conflicts = 0;
 
 // checking cached score file and making ranking
-$sum = json_decode(file_get_contents(id2sumfile($competition,$id)),TRUE);
+$sum = json_decode(file_get_contents(jobname2sumfile($competition,$name)),TRUE);
 $solvers = $sum['participants'];
 $layers = $sum['layers'];
 uasort($solvers, function($s,$t) { return $s['score'] < $t['score'] ? 1 : -1; } );
@@ -57,9 +57,9 @@ for( $i = 0; $i < count($layers); $i++ ) {
 	$count[$i] = 0;
 	$prev_score[$i] = 1;
 }
-$jobpath = 'job_'.$id.'.html';
+$jobpath = jobname2local($competition,$name);
 echo ' <div class=category>'.PHP_EOL.
-     '  <a href="' . $jobpath . '">' . $catname . '</a>'.PHP_EOL;
+     '  <a href="' . $jobpath . '">' . $name . '</a>'.PHP_EOL;
 foreach( $ids as $i ) {
 	echo '  <a class=starexecid href="' . jobid2url($i) . '">' . $i . '</a>'.PHP_EOL;
 }
