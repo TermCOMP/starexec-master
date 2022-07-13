@@ -84,7 +84,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		     '   <script>filteredTable.register('.$i.',"filter'.$i.'");</script>'.PHP_EOL;
 	}
 
-	// 2nd row is for the virtual best solver
+	// 2nd column is for the virtual best solver
 	echo '  <th>VBS'.PHP_EOL;
 	makeFilterField($i);
 	$i = 3;
