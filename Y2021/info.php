@@ -10,18 +10,19 @@ $closed = true;
 
 
 $teams = [// List of teams.
-	'RWTH Aachen' => ['AProVE','LoAT'],
-	'HTWK Leipzig' => ['matchbox'],
-	'U. Innsbruck' => ['TTT2', 'TcT'],
+	'AProVE' => ['AProVE'],
+	'iRankFinder' => ['iRankFinder'],
+	'LoAT' => ['LoAT'],
+	'Matchbox' => ['matchbox'],
 	'MU-TERM' => ['MuTerm'],
-	'Berufsakademie Saarland' => ['MnM'],
-	'U. de La Réunion' => ['NTI', 'NTI+cTI'],
-	'Radboud U. Nijmegen' => ['Wanda', 'Ctrl'],
-	'AIST' => ['NaTT'],
-	'U. Freiburg' => ['Ultimate'],
-	'LSV Cachan' => ['SizeChangeTool'],
-	'U. Complutense de Madrid' => ['iRankFinder'],
-	'Gumma U.' => ['SOL'],
+	'MultumNonMulta' => ['MnM'],
+	'NaTT' => ['NaTT'],
+	'NTI' => ['NTI', 'NTI+cTI'],
+	'SizeChangeTool' => ['SizeChangeTool'],
+	'SOL' => ['SOL'],
+	'Tyrolean Tools' => ['TTT2', 'TcT'],
+	'Ultimate' => ['Ultimate'],
+	'Wanda-Ctrl' => ['Wanda', 'Ctrl'],
 ];
 $categories = [
 	"Termination of Rewriting" => [

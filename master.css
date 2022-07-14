@@ -125,11 +125,11 @@ div.category {
 	color: white;
 }
 .timeout, .timeout * {
-	background-color: darksalmon;
+	background-color: #E0B0A0;
 	color: black;
 }
 .memout, .memout * {
-	background-color: darksalmon;
+	background-color: #E0A0A0;
 	color: black;
 }
 .score>.timeout, .score>.memout {

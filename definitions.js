@@ -5,7 +5,7 @@ if( 1 < window.location.search.length ) {
 		var ler = pairs[i];
 		var e = ler.indexOf('=');
 		var key = decodeURIComponent(ler.substring(0,e));
-		var val = decodeURIComponent(ler.substr(e+1));
+		var val = decodeURIComponent(ler.substring(e+1));
 		get_args[key] = val;
 	}
 }

@@ -75,7 +75,7 @@
 	}
 ?>
  <span class="headerFollower">Showing
-  <select id="resultsFilter" type="text" placeholder="Filter..." oninput="filteredTable.refresh()">
+  <select id="filter1" type="text" placeholder="Filter..." oninput="filteredTable.refresh()">
    <option value="s">started</option>
    <option value="">all</option>
    <option value="i">interesting</option>
@@ -96,7 +96,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
    <input id="filter0" type="text" placeholder="Filter..." onkeyup="filteredTable.refresh()">
    <script>filteredTable.register(0,"filter0");</script>
   <th style="display:none">
-   <script>filteredTable.register(1,"resultsFilter");</script>
+   <script>filteredTable.register(1,"filter1");</script>
 <?php
 
 	function makeFilterField($i) {
@@ -198,10 +198,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 					$participants[$me]['conflicts']++;
 				}
 			}
-			echo ' <tr class=conflict>'.PHP_EOL;
-			if( $conflicts == 0 ) {
-				echo '  <a name="conflict"/>'.PHP_EOL;
-			}
+			echo ' <tr class="conflict">'.PHP_EOL;
 			$conflicts += 1;
 		} else {
 			echo ' <tr>'.PHP_EOL;
@@ -276,15 +273,16 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 	}
 	if( isset($out_path) ) {
 		file_put_contents( $out_path.jobname2sumfile($jobname), json_encode(
-				[ 'layers' => $sum, 'participants' => $participants, 'conflicting' => $conflicts > 0 ]
+				[ 'layers' => $sum, 'participants' => $participants, 'conflicting' => $conflicts > 0 ],
+				JSON_PRETTY_PRINT
 		) );
-		file_put_contents( $out_path.jobname2vbsfile($jobname), json_encode($vbs_results) );
+		file_put_contents( $out_path.jobname2vbsfile($jobname), json_encode($vbs_results,JSON_PRETTY_PRINT) );
 	}
 ?>
 </table>
 <script>
 	for( var key in get_args ) {
-		if( key.substr(0,6) == "filter" ) {
+		if( key.substring(0,6) == "filter" ) {
 			var e = document.getElementById(key);
 			if( e != null ) {
 				e.value = get_args[key];

@@ -27,7 +27,6 @@ $cat_togo = 0;
 $cat_cpu = 0;
 $cat_time = 0;
 $togo = 0;
-$conflicts = 0;
 
 // checking cached score file and making ranking
 $sum = json_decode(file_get_contents($competition.'/'.jobname2sumfile($name)),TRUE);
@@ -61,10 +60,10 @@ $jobpath = jobname2local($name);
 echo ' <div class=category>'.PHP_EOL.
      '  <a href="' . $jobpath . '">' . $name . '</a>'.PHP_EOL;
 foreach( $ids as $i ) {
-	echo '  <a class=starexecid href="' . jobid2url($i) . '">' . $i . '</a>'.PHP_EOL;
+	echo '  <a class="starexecid" href="' . jobid2url($i) . '">' . $i . '</a>'.PHP_EOL;
 }
-if( $conflicts > 0 ) {
-	echo '<a class=conflict href="' . $jobpath . '#conflict">conflict</a>'.PHP_EOL;
+if( $sum['conflicting'] ) {
+	echo '<a class="conflict" href="' . $jobpath . '?filter1=c">conflicting</a>'.PHP_EOL;
 } 
 echo ' <table class=ranking>'.PHP_EOL;
 foreach( $solvers as $configid => $s ) {

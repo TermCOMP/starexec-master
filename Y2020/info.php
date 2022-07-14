@@ -8,20 +8,7 @@ $closed = true;
 $db = 'TPDB 11.1';
 $previous = 'Y2019';
 
-
 $teams = [
-	'RWTH Aachen' => ['AProVE','LoAT'],
-	'HTWK Leipzig' => ['matchbox'],
-	'U. Innsbruck' => ['TTT2', 'TcT'],
-	'MU-TERM' => ['MuTerm'],
-	'Berufsakademie Saarland' => ['MnM'],
-	'U. de La Réunion' => ['NTI', 'NTI+cTI'],
-	'Radboud U. Nijmegen' => ['Wanda', 'Ctrl'],
-	'AIST' => ['NaTT'],
-	'U. Freiburg' => ['Ultimate'],
-	'LSV Cachan' => ['SizeChangeTool'],
-	'U. Complutense de Madrid' => ['iRankFinder'],
-	'Gumma U.' => ['SOL'],
 ];
 
 $categories = [
