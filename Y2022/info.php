@@ -6,6 +6,24 @@ $showscore = false;
 $note = '';
 $db = 'TPDB 11.3';
 $closed = false;
+$previous = 'Y2021';
+
+$teams = [
+	'AProVE' => ['AProVE'],
+	'iRankFinder' => ['iRankFinder'],
+	'LoAT' => ['LoAT'],
+	'Matchbox' => ['matchbox'],
+	'MU-TERM' => ['MuTerm'],
+	'MultumNonMulta' => ['MnM'],
+	'NaTT' => ['NaTT'],
+	'NTI' => ['NTI', 'NTI+cTI'],
+	'SizeChangeTool' => ['SizeChangeTool'],
+	'SOL' => ['SOL'],
+	'Tyrolean Tools' => ['TTT2', 'TcT'],
+	'Ultimate' => ['Ultimate'],
+	'Wanda-Ctrl' => ['Wanda', 'Ctrl'],
+];
+
 $categories = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [
@@ -21,7 +39,7 @@ $categories = [
 //				"MuTerm" => 326595,
 			],
 			'certified' => [
-			'id' => null,
+				'id' => null,
 				'participants' => [
 //					"TTT2" => 552235,
 //					"AProVE" => 552179,
@@ -118,6 +136,7 @@ $categories = [
 //				"AProVE" => 551423,
 			],
 			'certified' => [
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -129,6 +148,7 @@ $categories = [
 			'participants' => [
 			],
 			'certified' => [
+				'id' => null,
 				'participants' => [
 				],
 			],
@@ -247,11 +267,13 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'Integer_TRS_Innermost',
 			'spaceid' => 466410,
+			'id' => null,
 			'participants' => [
 //				"Ctrl" => 23758,
 //				"AProVE" => 551423,
 			],
 			'certified' => [
+				'id' => null,
 				'participants' => [
 				],
 			],

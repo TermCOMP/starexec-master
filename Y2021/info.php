@@ -8,7 +8,6 @@ $db = 'TPDB 11.2';
 $previous = 'Y2020';
 $closed = true;
 
-
 $teams = [// List of teams.
 	'AProVE' => ['AProVE'],
 	'iRankFinder' => ['iRankFinder'],

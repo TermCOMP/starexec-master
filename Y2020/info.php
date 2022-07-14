@@ -9,8 +9,20 @@ $db = 'TPDB 11.1';
 $previous = 'Y2019';
 
 $teams = [
+	'AProVE' => ['AProVE'],
+	'iRankFinder' => ['iRankFinder'],
+	'LoAT' => ['LoAT'],
+	'Matchbox' => ['matchbox'],
+	'MU-TERM' => ['MuTerm'],
+	'MultumNonMulta' => ['MnM'],
+	'NaTT' => ['NaTT'],
+	'NTI' => ['NTI', 'NTI+cTI'],
+	'SizeChangeTool' => ['SizeChangeTool'],
+	'SOL' => ['SOL'],
+	'Tyrolean Tools' => ['TTT2', 'TcT'],
+	'Ultimate' => ['Ultimate'],
+	'Wanda-Ctrl' => ['Wanda', 'Ctrl'],
 ];
-
 $categories = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [

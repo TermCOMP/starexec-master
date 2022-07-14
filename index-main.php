@@ -70,38 +70,42 @@ var columnToggler = StyleToggler(
 		{ text: "Many column", assign: { display: "block" } },
 	]
 );
-// team scoring
-var teamCategoryScores = [<?php foreach($teams as $team) { echo '[],'; } ?>];
-var teamScores = [<?php foreach($teams as $team) { echo '0,'; } ?>];
-const solver_id2team_id = {
 <?php
-$team_id = 0;
-foreach( $teams as $team => $solvers ) {
-	foreach( $mcats as $mcat => $cats ) {
-		foreach( $cats as $cat => $info ) {
-			foreach( $solvers as $solver ) {
-				if( array_key_exists($solver,$info['participants']) ) {
-					echo '	"'.$info['participants'][$solver].'": "'.$team_id.'",'.PHP_EOL;
-				}
-				if( array_key_exists($solver,$info['certified']['participants']) ) {
-					echo '	"'.$info['certified']['participants'][$solver].'": "'.$team_id.'",'.PHP_EOL;
+if( isset($team_ranking) ) {
+	// team scoring
+	echo 'var teamCategoryScores = [';
+	foreach($teams as $team) { echo '[],'; }
+	echo '];'.PHP_EOL;
+	echo 'var teamScores = [';
+	foreach($teams as $team) { echo '0,'; }
+	echo '];'.PHP_EOL;
+	echo 'const solver_id2team_id = {'.PHP_EOL;
+	$team_id = 0;
+	foreach( $teams as $team => $solvers ) {
+		foreach( $mcats as $mcat => $cats ) {
+			foreach( $cats as $cat => $info ) {
+				foreach( $solvers as $solver ) {
+					if( array_key_exists($solver,$info['participants']) ) {
+						echo '	"'.$info['participants'][$solver].'": "'.$team_id.'",'.PHP_EOL;
+					}
+					if( array_key_exists($solver,$info['certified']['participants']) ) {
+						echo '	"'.$info['certified']['participants'][$solver].'": "'.$team_id.'",'.PHP_EOL;
+					}
 				}
 			}
 		}
+		$team_id++;
 	}
-	$team_id++;
-}
-?>
-};
+	echo '};'.PHP_EOL;
 
-const score_exponent = 2;// Ln norm. 2 means Euclidean
+	echo 'const score_exponent = 2;// Ln norm. 2 means Euclidean
 
 function updateScores(catname,participants) {
 	// first clear scores for the teams of this category
 	for( let solver_id in participants ) {
 		teamCategoryScores[solver_id2team_id[solver_id]][catname] = 0;
 	}
-	// then add up scores of the team, in case it participates in certified category. We don't support two tools from one team in the same category!
+	// then add up scores of the team, in case it participates in certified category. We don\'t support two tools from one team in the same category!
 	for( let solver_id in participants ) {
 		let score = participants[solver_id].normalized;
 		teamCategoryScores[solver_id2team_id[solver_id]][catname] += Math.pow(score,score_exponent);
@@ -113,14 +117,14 @@ function updateScores(catname,participants) {
 	}
 	// sorting the team ranking. For smooth display, do not apply sorting directly on the dom objects.
 	let ranking = Object.keys(teamScores).sort( (i,j) => { return teamScores[j] - teamScores[i];} );
-	// refreshing the display. For smooth display, do not move elements if they don't have to.
+	// refreshing the display. For smooth display, do not move elements if they don\'t have to.
 	let div = document.getElementById("team_ranking");
 	var cur = div.firstElementChild;
 	for( var i = 0; i < ranking.length; i++ ) {
 		let span = document.getElementById("team"+ranking[i]);
 		let score = teamScores[ranking[i]];
 		let elt = span.querySelector(".score");
-		if( elt.innerHTML != score ) {// don't touch unless necessary
+		if( elt.innerHTML != score ) {// don\'t touch unless necessary
 			elt.innerHTML = score;
 		}
 		if( span == cur ) {
@@ -131,18 +135,21 @@ function updateScores(catname,participants) {
 	}
 }
 </script>
-<?php
+';
+	echo ' <div id="team_ranking">Team Ranking:'.PHP_EOL;
+	// creating team ranking
+	$team_id = 0;
+	foreach( $teams as $team => $solvers ) {
+		echo '  <span id="team'.$team_id.'">'.$team.'<span class="score"></span></span>'.PHP_EOL;
+		$team_id++;
+	}
+	echo ' </div>'.PHP_EOL;
+} else {
+	echo '</script>'.PHP_EOL;
+}
 if( !$closed ) {
 	echo 'Registration is open! Please register following the README of <a href="https://github.com/TermCOMP/starexec-master">this repository</a>';
 }
-echo ' <div id="team_ranking">'.PHP_EOL;
-// creating team ranking
-$team_id = 0;
-foreach( $teams as $team => $solvers ) {
-	echo '  <span id="team'.$team_id.'">'.$team.'<span class="score"></span></span>'.PHP_EOL;
-	$team_id++;
-}
-echo ' </div>'.PHP_EOL;
 
 $mcatid = 0;
 $catid = 0;
