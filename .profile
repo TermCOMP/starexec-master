@@ -1,8 +1,8 @@
-cp index-wait.html index.html
+competition=Y2022
+cp index-wait.html $competition/index.html
 while [ 1 ]; do
   echo Refreshing...
-  php-cgi -f index-main.php refresh $* > tmp
-  cp tmp index.html
+  ./generate.sh $competition refresh
   echo Done! Sleeping...
   sleep 5
 done&

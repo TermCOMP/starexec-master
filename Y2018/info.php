@@ -56,7 +56,7 @@ $categories = [
 		],
 		'TRS Context Sensitive' => [
 			'type' => 'termination',
-			'dir' => 'TRS_Context_Sensitive',
+			'dir' => 'TRS_Contextsensitive',
 			'id' => 30045,
 		],
 		'TRS Innermost' => [

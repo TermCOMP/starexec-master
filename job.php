@@ -15,23 +15,26 @@
 	$id = $_GET['id'];
 	$jobids = explode( '_', $id );
 	$jobidc = count($jobids);
-	$competition = $_GET['competition'];
 	$refresh = $_GET['refresh'];
 	$bm_db = $_GET['db'];
 	$bm_prefix = array_key_exists('dir',$_GET) ? $_GET['dir'].'/' : '';
 	$cops = $_GET['cops'];
 	$type = $_GET['type'];
 
-	echo ' <link rel="stylesheet" href="';
-	if( isset($competition) ) {// This means it is generating an HTML in the competition directory.
+	if( array_key_exists('competition',$_GET) ) {// This means it is generating an HTML in the competition directory.
+		$competition = $_GET['competition'];
 		$competitionname = $_GET['competitionname'];
 		$jobname = $_GET['name'];
-		echo '../';
+		$out_path = preg_replace('~[:/]~','_',$competition).'/';
+		$root = '../';
 	} else {// just displaying a job.
+		$competition = 'Job_'.$id;
 		$competitionname = 'Job '.$id;
 		$jobname = $id;
+		$root = '';
 	}
-	echo 'master.css">'.PHP_EOL;
+	echo ' <script src="'.$root.'definitions.js"></script>'.PHP_EOL.
+	     ' <link rel="stylesheet" href="'.$root.'master.css">'.PHP_EOL;
 
 
 	$max_score = $type == 'complexity' ? 2.0 : 1;
@@ -49,6 +52,19 @@
 	$vbs = new_scores();
 	$vbs_results = [];
 
+	if( array_key_exists('previous-competition',$_GET) ) {
+		$past_competition = $_GET['previous-competition'];
+		$past_claims = (array)json_decode(
+			file_get_contents(
+				array_key_exists('previous-category',$_GET) ?
+				$_GET['previous-category'] :
+				$past_competition.'/'.jobname2vbsfile($jobname)
+			)
+		);
+	} else {
+		$past_claims = [];
+	}
+
 	echo ' <title>'. $competitionname .': '. $jobname .'</title>'.PHP_EOL.
 	     '</head>'.PHP_EOL.
 	     '<body>'.PHP_EOL.
@@ -65,7 +81,7 @@
    <option value="i">interesting</option>
    <option value="c">conflicting</option>
    <option value="u">unsolved</option>
-   <option value="s">solo</option>
+   <option value="n">new</option>
    <option value="f">finished</option>
   </select> results.
  </span>
@@ -96,21 +112,32 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		     '   <script>filteredTable.register('.$i.',"filter'.$i.'");</script>'.PHP_EOL;
 	}
 
-	// 2nd column is for the virtual best solver
-	echo '  <th>VBS'.PHP_EOL;
-	makeFilterField($i);
-	$i = 3;
+	$i = 2;
 	foreach( $participants as $configid => &$p ) {
-		echo '  <th><a href="'. solverid2url($p['solver id']) . '">'.$p['solver'].'</a>'.PHP_EOL.
+		echo '  <th><a href="'. solverid2url($p['solver id']).'">'.$p['solver'].'</a>'.PHP_EOL.
 		     '   <a class=config href="'. configid2url($configid) .'">'. $p['configuration'].'</a>'.PHP_EOL;
 		makeFilterField($i);
 		$i++;
+	}
+	// 2nd last column is for the virtual best solver
+	echo '  <th>VBS'.PHP_EOL;
+	makeFilterField($i);
+	if( !empty($past_claims) ) {
+		// the last column is for past results
+		echo '  <th>'.$past_competition.PHP_EOL;
+		makeFilterField(++$i);
 	}
 
 	$conflicts = 0;
 	foreach( $results as $bm_name => $records ) {
 		$bench = [];
 		init_claim_set($claims); /* collects results for each benchmark */
+		if( isset($past_claims) && array_key_exists($bm_name,$past_claims) ) {
+			$past_claim = (array)$past_claims[$bm_name];
+			add_claim($claims,$past_claim);
+		} else {
+			$past_claim = null;
+		}
 		foreach( $records['participants'] as $configid => $record ) {
 			$p =& $participants[$configid];
 			$status = $record['status'];
@@ -162,7 +189,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				'score' => $score,
 			];
 		}
-		$d = claims2description($claims);
+		$d = claims2description( $claims, $past_claim ?? [] );
 		$conflicting = $d['conflicting'];
 		if( $conflicting ) {
 			foreach( array_keys($bench) as $me ) {
@@ -185,19 +212,6 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		     '   <a href="'.$bm_url.'">'.format_bm($bm_name).'</a>'.PHP_EOL.
 		     '   <a class="starexecid" href="'.bmid2remote($bm_id).'">'.$bm_id.'</a></td>'.PHP_EOL.
 		     '  <td style="display:none">'.$d['key'];
-		// virtual best solver
-		if( $conflicting ) {
-			echo '  <td>';
-		} else {
-			$claim = $d['vbs'];
-			$claim_str = claim2str($claim);
-			$vbs_results[$bm_name] = $claim_str;
-			echo '  <td class="'.claim2class($claim,'').'">'.$claim_str;
-			$scores = claim2scores($claim,'',$max_score);
-			foreach( $scores as $key => $val ) {
-				$vbs[$key] += $val;
-			}
-		}
 		foreach( $bench as $me => $my ) {
 			$status = $my['status'];
 			$claim = $my['claim'];
@@ -219,6 +233,22 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				     '   <a href="'. $url . '">' . $status . '</a>'.PHP_EOL.
 				     (status2complete($status) ? '   <a href="'. $outurl .'">[out]</a>'.PHP_EOL : '' );
 			}
+		}
+		// virtual best solver
+		if( $conflicting ) {
+			echo '  <td>';
+		} else {
+			$claim = $d['vbs'];
+			$vbs_results[$bm_name] = $claim;
+			$claim_str = claim2str($claim);
+			echo '  <td class="'.claim2class($claim,'').'">'.$claim_str.PHP_EOL;
+			$scores = claim2scores($claim,'',$max_score);
+			foreach( $scores as $key => $val ) {
+				$vbs[$key] += $val;
+			}
+		}
+		if( $past_claim != null ) {
+			echo '  <td class="'.claim2class($past_claim,'').'">'.claim2str($past_claim).PHP_EOL;
 		}
 	}
 	echo ' <tr><th>'.PHP_EOL;
@@ -242,10 +272,12 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		$summer['cpu'] += $p['cpu'];
 		$summer['time'] += $p['time'];
 	}
-	file_put_contents( jobname2sumfile($competition,$jobname), json_encode(
-			[ 'layers' => $sum, 'participants' => $participants, 'conflicting' => $conflicts > 0 ]
-	) );
-	file_put_contents( jobname2vbsfile($competition,$jobname), json_encode($vbs_results) );
+	if( isset($out_path) ) {
+		file_put_contents( $out_path.jobname2sumfile($jobname), json_encode(
+				[ 'layers' => $sum, 'participants' => $participants, 'conflicting' => $conflicts > 0 ]
+		) );
+		file_put_contents( $out_path.jobname2vbsfile($jobname), json_encode($vbs_results) );
+	}
 ?>
 </table>
 <script>

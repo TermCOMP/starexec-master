@@ -30,7 +30,7 @@ $togo = 0;
 $conflicts = 0;
 
 // checking cached score file and making ranking
-$sum = json_decode(file_get_contents(jobname2sumfile($competition,$name)),TRUE);
+$sum = json_decode(file_get_contents($competition.'/'.jobname2sumfile($name)),TRUE);
 $solvers = $sum['participants'];
 $layers = $sum['layers'];
 uasort($solvers, function($s,$t) { return $s['score'] < $t['score'] ? 1 : -1; } );
@@ -57,7 +57,7 @@ for( $i = 0; $i < count($layers); $i++ ) {
 	$count[$i] = 0;
 	$prev_score[$i] = 1;
 }
-$jobpath = jobname2local($competition,$name);
+$jobpath = jobname2local($name);
 echo ' <div class=category>'.PHP_EOL.
      '  <a href="' . $jobpath . '">' . $name . '</a>'.PHP_EOL;
 foreach( $ids as $i ) {

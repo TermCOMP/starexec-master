@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-<link rel="stylesheet" type="text/css" href="master.css">
+ <meta charset="utf-8">
+ <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+ <meta http-equiv="Pragma" content="no-cache">
+ <meta http-equiv="Expires" content="0">
 <?php
 include 'definitions.php';
 
-$competition = array_key_exists( 'competition', $_GET ) ? $_GET['competition'] : 'Y2022';
+if( !array_key_exists('competition',$_GET) ) {
+	echo 'No competition to present.'.PHP_EOL;
+	exit(-1);
+}
+
+$competition = $_GET['competition'];
 
 if( preg_match('/\\.\\.?|.*[\\/:].*/',$competition) ) {
 	echo "Bad competition name.".PHP_EOL;
 	exit(-1);
 }
+if( array_key_exists('root',$_GET) ) {
+	$root_html = $_GET['root'].'/';
+	$path_html = '';
+} else {
+	$path_html = $competition.'/';
+	$root_html = '';
+}
+
+echo ' <link rel="stylesheet" type="text/css" href="'.$root_html.'master.css">'.PHP_EOL;
+
+echo ' <script src="'.$root_html.'definitions.js"></script>'.PHP_EOL;
 
 include $competition.'/info.php';
 $mcats = make_categories($categories,$closed);
@@ -156,7 +171,7 @@ foreach( $mcats as $mcatname => $cats ) {
 	foreach( $cats as $catname => $cat ) {
 		$type = $cat['type'];
 		$id = $cat['id'];
-		$spaceid = $cat['spaceid'];
+		$spaceid = array_key_exists('spaceid',$cat) ? $cat['spaceid'] : null;
 		$jobids = explode('_',$id);
 		$jobid = $jobids[0];
 		$overlay = array_key_exists( 1, $jobids ) ? $jobids[1] : false;
@@ -181,8 +196,8 @@ foreach( $mcats as $mcatname => $cats ) {
 			continue;
 		}
 		// creating job html
-		$jobpath = jobname2local($competition,$catname);
-		$graphpath = jobname2graph($competition,$catname);
+		$job_file = jobname2local($catname);
+		$graph_file = jobname2graph($catname);
 		$jobargs = [
 			'id' => $id,
 			'name' => $catname,
@@ -194,23 +209,29 @@ foreach( $mcats as $mcatname => $cats ) {
 			'dir' => $cat['dir'],
 			'refresh' => $refresh,
 		];
+		if( isset($previous) ) {
+			$jobargs['previous-competition'] = $previous;
+			if( array_key_exists('previous',$cat) ) {
+				$jobargs['previous-category'] = $cat['previous'];
+			}
+		}
 		$query = http_build_query( $jobargs, '', ' ' );
 		$tmp = tempnam('','');
 		system( 'php-cgi -f "job.php" '. $query .' > "'. $tmp . '"');
-		rename($tmp,$jobpath);
+		rename($tmp,$competition.'/'.$job_file);
 		$tmp = tempnam('','');
 		system( 'php-cgi -f "graph.php" '. $query .' > "'. $tmp . '"');
-		rename($tmp,$graphpath);
+		rename($tmp,$competition.'/'.$graph_file);
 		echo ' <span id="'.$id.'" class=category></span>'.PHP_EOL.
 		     ' <script>'.PHP_EOL.
 		     '  function load'.$id.'() {'.PHP_EOL.
 		     '   var elm = document.getElementById("'.$id.'");'.PHP_EOL.
-		     '   loadURL("'.$graphpath.'", function(xhttp) {'.PHP_EOL.
+		     '   loadURL("'.$path_html.$graph_file.'", function(xhttp) {'.PHP_EOL.
 		     '    elm.innerHTML = xhttp.responseText;'.PHP_EOL.
 		     '    scoreToggler.apply(elm);'.PHP_EOL.
 		     '    configToggler.apply(elm);'.PHP_EOL.
 		     '   });'.PHP_EOL.
-		     '   loadURL("'.jobname2sumfile($competition,$catname).'", function(xhttp) {'.PHP_EOL.
+		     '   loadURL("'.$path_html.jobname2sumfile($catname).'", function(xhttp) {'.PHP_EOL.
 		     '    var data = JSON.parse(xhttp.responseText);'.PHP_EOL.
 		     '    progress'.$mcatid.'['.$catindex.'] = data["layers"].reduce(summer);'.PHP_EOL.
 		     '    updateProgress'.$mcatid.'();'.PHP_EOL;

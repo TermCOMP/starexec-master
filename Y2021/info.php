@@ -24,8 +24,8 @@ $categories = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [
 			'type' => 'termination',
+			'dir' => 'TRS_Standard',
 			'id' => 47877,
-			'spaceid' => 466107,
 			'participants' => [
 				"NTI" => 549724,
 				"NaTT" => 552075,
@@ -44,8 +44,9 @@ $categories = [
 		],
 		'SRS Standard' => [
 			'type' => 'termination',
-			'id' => 47878,
+			'dir' => 'SRS_Standard',
 			'spaceid' => 466081,
+			'id' => 47878,
 			'participants' => [
 				"MuTerm" => 326595,
 				"NaTT" => 552075,
@@ -65,8 +66,9 @@ $categories = [
 		],
 		'TRS Relative' => [
 			'type' => 'termination',
-			'id' => 47871,
+			'dir' => 'TRS_Relative',
 			'spaceid' => 466103,
+			'id' => 47871,
 			'participants' => [
 				"NaTT" => 552075,
 				"TTT2" => 552234,
@@ -82,8 +84,9 @@ $categories = [
 		],
 		'SRS Relative' => [
 			'type' => 'termination',
-			'id' => 47874,
+			'dir' => 'SRS_Relative',
 			'spaceid' => 466194,
+			'id' => 47874,
 			'participants' => [
 				"NaTT" => 552075,
 				"TTT2" => 552234,
@@ -101,8 +104,9 @@ $categories = [
 		],
 		'TRS Equational' => [
 			'type' => 'termination',
-			'id' => 47879,
+			'dir' => 'TRS_Equational',
 			'spaceid' => 466098,
+			'id' => 47879,
 			'participants' => [
 				"MuTerm" => 163986,
 				"NaTT" => 350520,
@@ -118,8 +122,9 @@ $categories = [
 		],
 		'TRS Conditional' => [
 			'type' => 'termination',
-			'id' => 47881,
+			'dir' => 'TRS_Conditional',
 			'spaceid' => 466363,
+			'id' => 47881,
 			'participants' => [
 				"MuTerm" => 326595,
 				"AProVE" => 551423,
@@ -131,8 +136,9 @@ $categories = [
 		],
 		'TRS Context Sensitive' => [
 			'type' => 'termination',
-			'id' => 47882,
+			'dir' => 'TRS_Contextsensitive',
 			'spaceid' => 466359,
+			'id' => 47882,
 			'participants' => [
 				"MuTerm" => 163986,
 				"AProVE" => 551423,
@@ -145,8 +151,9 @@ $categories = [
 		],
 		'TRS Innermost' => [
 			'type' => 'termination',
-			'id' => 47883,
+			'dir' => 'TRS_Innermost',
 			'spaceid' => 466200,
+			'id' => 47883,
 			'participants' => [
 				"MuTerm" => 326595,
 				"AProVE" => 551423,
@@ -160,8 +167,10 @@ $categories = [
 		],
 		'TRS Outermost' => [
 			'type' => 'termination',
-			'id' => 47885,
+			'dir' => 'TRS_Outermost',
+			'previous' => 'Y2019/TRS_Outermost.VBS.json',
 			'spaceid' => 466242,
+			'id' => 47885,
 			'participants' => [
 				"AProVE" => 551423,
 			],
@@ -174,8 +183,9 @@ $categories = [
 		],
 		'HRS (union beta)' => [
 			'type' => 'termination',
-			'id' => 47887,
+			'dir' => 'Higher_Order_Rewriting_Union_Beta',
 			'spaceid' => 466209,
+			'id' => 47887,
 			'participants' => [
 				"SizeChangeTool" => 325830,
 				"Wanda" => 359682,
@@ -190,8 +200,9 @@ $categories = [
 	"Termination of Programs" => [
 		'C' => [
 			'type' => 'termination',
-			'id' => 47888,
+			'dir' => 'C',
 			'spaceid' => 466367,
+			'id' => 47888,
 			'participants' => [
 				"AProVE" => 551429,
 				"Ultimate" => 552352,
@@ -204,8 +215,9 @@ $categories = [
 		],
 		'C Integer' => [
 			'type' => 'termination',
-			'id' => 47889,
+			'dir' => 'C_Integer',
 			'spaceid' => 466376,
+			'id' => 47889,
 			'participants' => [
 				"Ultimate" => 552352,
 				"iRankFinder" => 360226,
@@ -219,8 +231,9 @@ $categories = [
 		],
 		'Integer Transition Systems' => [
 			'type' => 'termination',
-			'id' => 47892,
+			'dir' => 'Integer_Transition_Systems',
 			'spaceid' => 466219,
+			'id' => 47892,
 			'participants' => [
 				"Ctrl" => 23757,
 				"iRankFinder" => 360226,
@@ -234,8 +247,9 @@ $categories = [
 		],
 		'Integer TRS Innermost' => [
 			'type' => 'termination',
-			'id' => 47890,
+			'dir' => 'Integer_TRS_Innermost',
 			'spaceid' => 466410,
+			'id' => 47890,
 			'participants' => [
 				"Ctrl" => 23758,
 				"AProVE" => 551423,
@@ -246,8 +260,9 @@ $categories = [
 			],
 		],
 		'Haskell' => [
-			'spaceid' => 466206,
 			'type' => 'termination',
+			'dir' => 'Haskell',
+			'spaceid' => 466206,
 			'id' => 47958,
 			'participants' => [
 				"AProVE" => 551423,
@@ -259,8 +274,9 @@ $categories = [
 			],
 		],
 		'Java Bytecode' => [
-			'spaceid' => 466222,
 			'type' => 'termination',
+			'dir' => 'Java_Bytecode',
+			'spaceid' => 466222,
 			'id' => 47905,
 			'participants' => [
 				"AProVE" => 551423,
@@ -272,8 +288,9 @@ $categories = [
 			],
 		],
 		'Java Bytecode Recursive' => [
-			'spaceid' => 466352,
 			'type' => 'termination',
+			'dir' => 'Java_Bytecode_Recursive',
+			'spaceid' => 466352,
 			'id' => 47907,
 			'participants' => [
 				"AProVE" => 551423,
@@ -286,6 +303,7 @@ $categories = [
 		],
 		'Logic Programming' => [
 			'type' => 'termination',
+			'dir' => 'Logic_Programming',
 			'id' => 47891,
 			'spaceid' => 466183,
 			'participants' => [
@@ -299,8 +317,9 @@ $categories = [
 			],
 		],
 		'Logic Programming with Cut' => [
-			'spaceid' => 466237,
 			'type' => 'termination',
+			'dir' => 'Logic_Programming_with_Cut',
+			'spaceid' => 466237,
 			'id' => 47903,
 			'participants' => [
 				"AProVE" => 551423,
@@ -312,8 +331,9 @@ $categories = [
 			],
 		],
 		'Prolog' => [
-			'spaceid' => 466034,
 			'type' => 'termination',
+			'dir' => 'Prolog',
+			'spaceid' => 466034,
 			'id' => 47904,
 			'participants' => [
 				"AProVE" => 551423,
@@ -327,8 +347,9 @@ $categories = [
 	],
 	'Complexity Analysis' => [
 		'Complexity: C Integer' => [
-			'spaceid' => 466341,
 			'type' => 'complexity',
+			'dir' => 'Complexity_C_Integer',
+			'spaceid' => 466341,
 			'id' => 47893,
 			'participants' => [
 				"AProVE" => 551427
@@ -340,8 +361,9 @@ $categories = [
 			],
 		],
 		'Complexity: ITS' => [
-			'spaceid' => 466146,
 			'type' => 'complexity',
+			'dir' => 'Complexity_ITS',
+			'spaceid' => 466146,
 			'id' => 47894,
 			'participants' => [
 				"AProVE" => 552182
@@ -353,8 +375,9 @@ $categories = [
 			],
 		],
 		'Derivational Complexity: TRS' => [
-			'spaceid' => 466043,
 			'type' => 'complexity',
+			'dir' => 'Derivational_Complexity_Full_Rewriting',
+			'spaceid' => 466043,
 			'id' => 47897,
 			'participants' => [
 				"TcT" => 360388,
@@ -368,8 +391,9 @@ $categories = [
 			],
 		],
 		'Derivational Complexity: TRS Innermost' => [
-			'spaceid' => 466273,
 			'type' => 'complexity',
+			'dir' => 'Derivational_Complexity_Innermost_Rewriting',
+			'spaceid' => 466273,
 			'id' => 47899,
 			'participants' => [
 				"TcT" => 360385,
@@ -383,8 +407,9 @@ $categories = [
 			],
 		],
 		'Runtime Complexity: TRS' => [
-			'spaceid' => 466246,
 			'type' => 'complexity',
+			'dir' => 'Runtime_Complexity_Full_Rewriting',
+			'spaceid' => 466246,
 			'id' => 47896,
 			'participants' => [
 				"TcT" => 360390,
@@ -398,9 +423,10 @@ $categories = [
 			],
 		],
 		'Runtime Complexity: TRS Innermost' => [
-			'spaceid' => 466379,
 			'type' => 'complexity',
+			'dir' => 'Runtime_Complexity_Innermost_Rewriting',
 			'id' => 47901,
+			'spaceid' => 466379,
 			'participants' => [
 				"TcT" => 360386,
 				"AProVE" => 551428,

@@ -126,20 +126,20 @@ set_time_limit(300);
 	function escape_filename($name) {
 		return preg_replace('/[: \\/\\\\]/','_',$name);
 	}
-	function jobname2local($competition,$jobname) {
-		return $competition.'/'.escape_filename($jobname).'.html';
+	function jobname2local($jobname) {
+		return escape_filename($jobname).'.html';
 	}
-	function jobname2graph($competition,$jobname) {
-		return $competition.'/'.escape_filename($jobname).'.graph.html';
+	function jobname2graph($jobname) {
+		return escape_filename($jobname).'.graph.html';
 	}
-	function jobname2sumfile($competition,$jobname) {
-		return $competition.'/'.escape_filename($jobname).'.json';
+	function jobname2sumfile($jobname) {
+		return escape_filename($jobname).'.json';
 	}
-	function id2sumfile($competition,$id) {
-		return $competition.'/Job'.$id.'.json';
+	function id2sumfile($id) {
+		return 'Job'.$id.'.json';
 	}
-	function jobname2vbsfile($competition,$jobname) {
-		return $competition.'/'.escape_filename($jobname).'.VBS.json';
+	function jobname2vbsfile($jobname) {
+		return escape_filename($jobname).'.VBS.json';
 	}
 	function spaceid2url($id) {
 		return 'https://www.starexec.org/starexec/secure/explore/spaces.jsp?id='.$id;
@@ -350,20 +350,19 @@ set_time_limit(300);
 	function status2complete($status) {
 		return $status == 'complete';
 	}
-	function status2pending($status) {
-		return substr($status,0,7) == 'pending';
-	}
 	function status2enqueued($status) {
 		return $status == 'enqueued';
 	}
 	function status2incomplete($status) {
-		return $status == 'incomplete';
+		return $status == 'incomplete' ||
+			substr($status,0,7) == 'pending' ||
+			$status == 'running';
 	}
 	function status2paused($status) {
 		return $status == 'paused';
 	}
 	function status2finished($status) {
-		return !status2pending($status) && !status2enqueued($status) && !status2incomplete($status) && !status2paused($status);
+		return !status2enqueued($status) && !status2incomplete($status) && !status2paused($status);
 	}
 	function status2error($status) {
 		return strstr($status, 'error') != false;
@@ -420,15 +419,15 @@ set_time_limit(300);
 	function configid2url($configid) {
 		return "https://www.starexec.org/starexec/secure/details/configuration.jsp?id=$configid";
 	}
-	function claims2description($claims) {
-		$best = [];
+	function claims2description($claims,$past_claim) {
+		$vbs = [];
 		$YES = $claims['YES'];
 		if( $YES > 0 ) {
-			$best['YES'] = 1;
+			$vbs['YES'] = 1;
 		}
 		$NO = $claims['NO'];
 		if( $NO > 0 ) {
-			$best['NO'] = 1;
+			$vbs['NO'] = 1;
 		}
 		$UP = $claims['UP'];
 		$LOW = $claims['LOW'];
@@ -439,7 +438,7 @@ set_time_limit(300);
 			$vUP = 0;
 		} else {
 			$minUP = min($UP);
-			$best['UP'] = $minUP;
+			$vbs['UP'] = $minUP;
 			$nUP = count(array_filter($UP,function($up){return $up == $minUP;}));
 			$vUP = count(array_unique($UP));// number of different UP claims
 		}
@@ -449,7 +448,7 @@ set_time_limit(300);
 			$vLOW = 0;
 		} else {
 			$maxLOW = max($LOW);
-			$best['LOW'] = $maxLOW;
+			$vbs['LOW'] = $maxLOW;
 			$nLOW = count(array_filter($LOW,function($low){return $low == $maxLOW;}));
 			$vLOW = count(array_unique($LOW));
 		}
@@ -458,16 +457,16 @@ set_time_limit(300);
 		$interesting = ( ( $YES > 0 || $NO > 0 ) && $MAYBE > 0) || $vUP > 1 || $vLOW > 1;
 		$finished = $togo == 0;
 		$unsolved = $finished && $YES == 0 && $NO == 0 && $nUP == 0 && $nLOW == 0;
-		$solo = $finished && ($YES == 1 || $NO == 1 || $nUP == 1 || $nLOW == 1);
+		$new = $interesting && empty($past_claim);
 		return [
-			'vbs' => $best,
+			'vbs' => $vbs,
 			'begun' => $begun,
 			'conflicting' => $conflicting,
 			'interesting' => $interesting,
 			'finished' => $finished,
-			'solo' => $solo,
+			'new' => $new,
 			'unsolved' => $unsolved,
-			'key' => ($begun ? 'b':'').($conflicting ? 'c':'').($interesting ? 'i' : '').($solo ? 's' : '').($unsolved ? 'u' : '').($finished ? 'f':''),
+			'key' => ($begun ? 'b':'').($conflicting ? 'c':'').($interesting ? 'i' : '').($new ? 'n' : '').($unsolved ? 'u' : '').($finished ? 'f':''),
 		];
 	}
 	// Making certified and demonstration categories
@@ -477,7 +476,7 @@ set_time_limit(300);
 		foreach( $raw_mcats as $mcat_name => $raw_cats ) {
 			$cats = [];
 			foreach( $raw_cats as $cat_name => $cat ) {
-				$certinfo = $cat['certified'];
+				$certinfo = $cat['certified'] ?? [];
 				if( $cat['id'] != null ) {
 					if( array_key_exists('id',$certinfo) && $certinfo['id'] != null ) {
 						$cat['id'] .= '_'.$certinfo['id'];
@@ -502,4 +501,3 @@ set_time_limit(300);
 		return $mcats;
 	}
 ?>
-<script src="definitions.js"></script>

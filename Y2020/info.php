@@ -3,8 +3,11 @@ $title = 'Termination Competition 2020';
 $shortname = 'TermComp 2020';
 $note = '(Final Run. First run is <a href="https://termcomp.github.io/Y2020-1/">here</a>)';
 $showconfig = false;
+$showscore = false;
 $closed = true;
 $db = 'TPDB 11.1';
+$previous = 'Y2019';
+
 
 $teams = [
 	'RWTH Aachen' => ['AProVE','LoAT'],
@@ -25,8 +28,10 @@ $categories = [
 	"Termination of Rewriting" => [
 		'TRS Standard' => [
 			'type' => 'termination',
+			'dir' => 'TRS_Standard',
 			'id' => 41483,
 			'spaceid' => 426103,
+			'previous' => 'Y2018/TRS_Standard.VBS.json',
 			'participants' => [
 				"NTI" => 360349,
 				"NaTT" => 350520,
@@ -45,6 +50,7 @@ $categories = [
 		],
 		'SRS Standard' => [
 			'type' => 'termination',
+			'dir' => 'SRS_Standard',
 			'id' => 41485,
 			'spaceid' => 426158,
 			'participants' => [
@@ -66,6 +72,7 @@ $categories = [
 		],
 		'TRS Relative' => [
 			'type' => 'termination',
+			'dir' => 'TRS_Relative',
 			'id' => 41486,
 			'spaceid' => 426233,
 			'participants' => [
@@ -83,6 +90,7 @@ $categories = [
 		],
 		'SRS Relative' => [
 			'type' => 'termination',
+			'dir' => 'SRS_Relative',
 			'id' =>  41488,
 			'spaceid' => 426149,
 			'participants' => [
@@ -102,6 +110,7 @@ $categories = [
 		],
 		'TRS Equational' => [
 			'type' => 'termination',
+			'dir' => 'TRS_Equational',
 			'id' =>  41490,
 			'spaceid' => 426058,
 			'participants' => [
@@ -119,6 +128,7 @@ $categories = [
 		],
 		'TRS Conditional' => [
 			'type' => 'termination',
+			'dir' => 'TRS_Conditional',
 			'id' =>  41511,
 			'spaceid' => 426154,
 			'participants' => [
@@ -133,6 +143,7 @@ $categories = [
 		],
 		'TRS Context Sensitive' => [
 			'type' => 'termination',
+			'dir' => 'TRS_Contextsensitive',
 			'id' =>  41493,
 			'spaceid' => 426022,
 			'participants' => [
@@ -147,6 +158,7 @@ $categories = [
 		],
 		'TRS Innermost' => [
 			'type' => 'termination',
+			'dir' => 'TRS_Innermost',
 			'id' =>  41494,
 			'spaceid' => 425946,
 			'participants' => [
@@ -161,6 +173,7 @@ $categories = [
 		],
 		'HRS (union beta)' => [
 			'type' => 'termination',
+			'dir' => 'Higher_Order_Rewriting_Union_Beta',
 			'id' =>  41495,
 			'spaceid' => 426140,
 			'participants' => [
@@ -177,6 +190,7 @@ $categories = [
 	"Termination of Programs" => [
 		'C' => [
 			'type' => 'termination',
+			'dir' => 'C',
 			'id' => 41518,
 			'spaceid' => 426173,
 			'participants' => [
@@ -191,6 +205,7 @@ $categories = [
 		],
 		'C Integer' => [
 			'type' => 'termination',
+			'dir' => 'C_Integer',
 			'id' =>  41519,
 			'spaceid' => 426063,
 			'participants' => [
@@ -206,6 +221,7 @@ $categories = [
 		],
 		'Integer Transition Systems' => [
 			'type' => 'termination',
+			'dir' => 'Integer_Transition_Systems',
 			'id' =>  41496,
 			'spaceid' => 425924,
 			'participants' => [
@@ -221,6 +237,7 @@ $categories = [
 		],
 		'Integer TRS Innermost' => [
 			'type' => 'termination',
+			'dir' => 'Integer_TRS_Innermost',
 			'id' =>  41497,
 			'spaceid' => 425939,
 			'participants' => [
@@ -236,6 +253,7 @@ $categories = [
 		'Haskell' => [
 			'spaceid' => 425990,
 			'type' => 'termination',
+			'dir' => 'Haskell',
 			'id' => 41564,
 			'participants' => [
 				"AProVE" => 360174,
@@ -246,9 +264,10 @@ $categories = [
 				],
 			],
 		],
-		'Java_Bytecode' => [
+		'Java Bytecode' => [
 			'spaceid' => 425927,
 			'type' => 'termination',
+			'dir' => 'Java_Bytecode',
 			'id' => 41524,
 			'participants' => [
 				"AProVE" => 360174,
@@ -259,7 +278,7 @@ $categories = [
 				],
 			],
 		],
-		'Java_Bytecode_Recursive' => [
+		'Java Bytecode Recursive' => [
 			'spaceid' => 426004,
 			'type' => 'termination',
 			'id' => null,
@@ -273,6 +292,7 @@ $categories = [
 		],
 		'Logic Programming' => [
 			'type' => 'termination',
+			'dir' => 'Logic_Programming',
 			'id' =>  41498,
 			'spaceid' => 425993,
 			'participants' => [
@@ -285,9 +305,10 @@ $categories = [
 				],
 			],
 		],
-		'Logic_Programming_with_Cut' => [
+		'Logic Programming with Cut' => [
 			'spaceid' => 425941,
 			'type' => 'termination',
+			'dir' => 'Logic_Programming_with_Cut',
 			'id' => null,
 			'participants' => [
 			],
@@ -300,6 +321,7 @@ $categories = [
 		'Prolog' => [
 			'spaceid' => 425912,
 			'type' => 'termination',
+			'dir' => 'Prolog',
 			'id' => null,
 			'participants' => [
 			],
@@ -311,9 +333,10 @@ $categories = [
 		],
 	],
 	"Complexity Analysis" => [
-		'Complexity: C_Integer' => [
+		'Complexity: C Integer' => [
 			'spaceid' => 426011,
 			'type' => 'complexity',
+			'dir' => 'Complexity_C_Integer',
 			'id' => 41565,
 			'participants' => [
 				"AProVE" => 360180
@@ -327,6 +350,7 @@ $categories = [
 		'Complexity: ITS' => [
 			'spaceid' => 426066,
 			'type' => 'complexity',
+			'dir' => 'Complexity_ITS',
 			'id' => 41566,
 			'participants' => [
 				"AProVE" => 360179
@@ -337,9 +361,11 @@ $categories = [
 				],
 			],
 		],
-		'Derivational_Complexity: TRS' => [
+		'Derivational Complexity: TRS' => [
 			'spaceid' => 425952,
 			'type' => 'complexity',
+			'dir' => 'Derivational_Complexity_Full_Rewriting',
+			'previous' => 'Y2018/Derivational_Complexity__TRS.VBS.json',
 			'id' => 41499,
 			'participants' => [
 				"TcT" => 360388,
@@ -352,9 +378,10 @@ $categories = [
 				],
 			],
 		],
-		'Derivational_Complexity: TRS Innermost' => [
+		'Derivational Complexity: TRS Innermost' => [
 			'spaceid' => 425864,
 			'type' => 'complexity',
+			'dir' => 'Derivational_Complexity_Innermost_Rewriting',
 			'id' => 41500,
 			'participants' => [
 				"TcT" => 360385,
@@ -367,9 +394,10 @@ $categories = [
 				],
 			],
 		],
-		'Runtime_Complexity: TRS' => [
+		'Runtime Complexity: TRS' => [
 			'spaceid' => 426182,
 			'type' => 'complexity',
+			'dir' => 'Runtime_Complexity_Full_Rewriting',
 			'id' =>  41508,
 			'participants' => [
 				"TcT" => 360390,
@@ -382,9 +410,10 @@ $categories = [
 				],
 			],
 		],
-		'Runtime_Complexity: TRS Innermost' => [
+		'Runtime Complexity: TRS Innermost' => [
 			'spaceid' => 426027,
 			'type' => 'complexity',
+			'dir' => 'Runtime_Complexity_Innermost_Rewriting',
 			'id' =>  41507,
 			'participants' => [
 				"TcT" => 360386,
