@@ -1,0 +1,3516 @@
+{
+    "TCT_12\/polycounter-10.xml": {
+        "LOW": "1"
+    },
+    "TCT_12\/polycounter-5.xml": {
+        "YES": 1,
+        "UP": "5",
+        "LOW": "1"
+    },
+    "TCT_12\/recursion-10.xml": {
+        "YES": 1,
+        "UP": "10",
+        "LOW": "1"
+    },
+    "TCT_12\/recursion-5.xml": {
+        "YES": 1,
+        "UP": "5",
+        "LOW": "1"
+    },
+    "TCT_12\/sat.xml": {
+        "LOW": "1"
+    },
+    "SK90\/2.02.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.03.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.07.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.09.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.11.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.12.xml": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "3"
+    },
+    "SK90\/2.13.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.14.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.15.xml": {
+        "LOW": 1000
+    },
+    "SK90\/2.16.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "2"
+    },
+    "SK90\/2.17.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.18.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "SK90\/2.19.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "2"
+    },
+    "SK90\/2.20.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.21.xml": {
+        "LOW": 1000
+    },
+    "SK90\/2.22.xml": {
+        "LOW": 1000
+    },
+    "SK90\/2.23.xml": {
+        "LOW": "3"
+    },
+    "SK90\/2.24.xml": {
+        "LOW": 1000
+    },
+    "SK90\/2.25.xml": {
+        "LOW": 1000
+    },
+    "SK90\/2.26.xml": {
+        "LOW": 1000
+    },
+    "SK90\/2.27.xml": {
+        "LOW": "1"
+    },
+    "SK90\/2.28.xml": {
+        "LOW": "1"
+    },
+    "SK90\/2.29.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.30.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/2.31.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.36.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.37.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/2.38.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.39.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "2"
+    },
+    "SK90\/2.40.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.41.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.42.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.43.xml": {
+        "LOW": 1000
+    },
+    "SK90\/2.44.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.45.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.47.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.48.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/2.49.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/2.50.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.51.xml": {
+        "LOW": "1"
+    },
+    "SK90\/2.52.xml": {
+        "LOW": "1"
+    },
+    "SK90\/2.53.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.54.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.55.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.59.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/2.61.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.05.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "SK90\/4.06.xml": {
+        "LOW": 1000
+    },
+    "SK90\/4.07.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/4.09.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/4.10.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "SK90\/4.12.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/4.13.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/4.16.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/4.17.xml": {
+        "LOW": "2"
+    },
+    "SK90\/4.18.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/4.22.xml": {
+        "LOW": "1"
+    },
+    "SK90\/4.24.xml": {
+        "LOW": 1000
+    },
+    "SK90\/4.25.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/4.26.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/4.27.xml": {
+        "LOW": "1"
+    },
+    "SK90\/4.28.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/4.29.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/4.30.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/4.31.xml": {
+        "LOW": 1000
+    },
+    "SK90\/4.34.xml": {
+        "LOW": 1000
+    },
+    "SK90\/4.35.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/4.38.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/4.42.xml": {
+        "LOW": "1"
+    },
+    "SK90\/4.43.xml": {
+        "LOW": "1"
+    },
+    "SK90\/4.45.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/4.47.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/4.48.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/4.51.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/4.53.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/4.54.xml": {
+        "LOW": 1000
+    },
+    "SK90\/4.57.xml": {
+        "MAYBE": 1
+    },
+    "SK90\/4.59.xml": {
+        "LOW": 1000
+    },
+    "SK90\/4.60.xml": {
+        "LOW": 1000
+    },
+    "SK90\/4.61.xml": {
+        "LOW": 1000
+    },
+    "Secret_05_TRS\/aprove2.xml": {
+        "LOW": "1"
+    },
+    "Secret_05_TRS\/aprove3.xml": {
+        "LOW": "1"
+    },
+    "Secret_05_TRS\/aprove4.xml": {
+        "LOW": "1"
+    },
+    "Secret_05_TRS\/aprove5.xml": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "Secret_05_TRS\/cime2.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Secret_05_TRS\/cime3.xml": {
+        "LOW": 1000
+    },
+    "Secret_05_TRS\/cime4.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Secret_05_TRS\/cime5.xml": {
+        "LOW": "1"
+    },
+    "Secret_05_TRS\/tpa1.xml": {
+        "LOW": "1"
+    },
+    "Secret_05_TRS\/tpa2.xml": {
+        "LOW": "1"
+    },
+    "Secret_05_TRS\/tpa3.xml": {
+        "LOW": "2"
+    },
+    "Secret_05_TRS\/tpa4.xml": {
+        "LOW": "2"
+    },
+    "Secret_05_TRS\/tpa5.xml": {
+        "LOW": "1"
+    },
+    "Secret_05_TRS\/ttt1.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Secret_05_TRS\/ttt2.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_mixed_05\/ex1.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_mixed_05\/ex2.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_mixed_05\/ex3.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_mixed_05\/ex4.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_mixed_05\/ex5.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_mixed_05\/ex6.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_mixed_05\/ExSec11_1_Luc02a.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_mixed_05\/muladd.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_mixed_05\/test10.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_mixed_05\/test76.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_mixed_05\/test77.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_mixed_05\/test830.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_mixed_05\/tricky1.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "HirokawaMiddeldorp_04\/n002.xml": {
+        "LOW": 1000
+    },
+    "HirokawaMiddeldorp_04\/n003.xml": {
+        "LOW": 1000
+    },
+    "HirokawaMiddeldorp_04\/n004.xml": {
+        "LOW": 1000
+    },
+    "HirokawaMiddeldorp_04\/n005.xml": {
+        "LOW": 1000
+    },
+    "HirokawaMiddeldorp_04\/n006.xml": {
+        "LOW": 1000
+    },
+    "HirokawaMiddeldorp_04\/n007.xml": {
+        "LOW": 1000
+    },
+    "HirokawaMiddeldorp_04\/t001.xml": {
+        "LOW": "1"
+    },
+    "HirokawaMiddeldorp_04\/t002.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "HirokawaMiddeldorp_04\/t003.xml": {
+        "LOW": "1"
+    },
+    "HirokawaMiddeldorp_04\/t004.xml": {
+        "LOW": 1000
+    },
+    "HirokawaMiddeldorp_04\/t009.xml": {
+        "LOW": "1"
+    },
+    "HirokawaMiddeldorp_04\/t011.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "HirokawaMiddeldorp_04\/t012.xml": {
+        "LOW": "1"
+    },
+    "HirokawaMiddeldorp_04\/t013.xml": {
+        "LOW": "1"
+    },
+    "HirokawaMiddeldorp_04\/t014.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_07\/kabasci01.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_07\/kabasci02.xml": {
+        "LOW": "3"
+    },
+    "AProVE_07\/kabasci03.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "AProVE_07\/kabasci04.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/kabasci05.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/otto01.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_07\/otto02.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/otto03.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/otto04.xml": {
+        "LOW": 1000
+    },
+    "AProVE_07\/otto05.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/otto06.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/otto07.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/otto08.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/otto09.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/otto10.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/otto11.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/otto12.xml": {
+        "LOW": 1000
+    },
+    "AProVE_07\/otto13.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann01.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann02.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann03.xml": {
+        "LOW": "3"
+    },
+    "AProVE_07\/thiemann04.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann05.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann06.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann07.xml": {
+        "LOW": "2"
+    },
+    "AProVE_07\/thiemann08.xml": {
+        "LOW": 1000
+    },
+    "AProVE_07\/thiemann09.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann10.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann11.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann12.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann13.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann14.xml": {
+        "LOW": "2"
+    },
+    "AProVE_07\/thiemann15.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann16.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann17.xml": {
+        "LOW": "2"
+    },
+    "AProVE_07\/thiemann18.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann19.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann20.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann21.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann22.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann23.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann24.xml": {
+        "LOW": "2"
+    },
+    "AProVE_07\/thiemann25.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann26.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann27.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann28.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann29.xml": {
+        "LOW": "2"
+    },
+    "AProVE_07\/thiemann30.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann31.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann32.xml": {
+        "LOW": "2"
+    },
+    "AProVE_07\/thiemann33.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann34.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann36.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann37.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann38.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann40.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann41.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/wiehe01.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/wiehe02.xml": {
+        "LOW": "2"
+    },
+    "AProVE_07\/wiehe03.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/wiehe05.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/wiehe06.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/wiehe07.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/wiehe08.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/wiehe09.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/wiehe11.xml": {
+        "LOW": "1"
+    },
+    "AProVE_07\/wiehe12.xml": {
+        "LOW": "2"
+    },
+    "Strategy_removed_CSR_05\/Ex14_AEGL02.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex15_Luc98.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex1_2_AEL03.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex1_2_Luc02c.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex1_GL02a.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex1_GM03.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex1_Luc02b.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex1_Zan97.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex26_Luc03b.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex2_Luc03b.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex3_12_Luc96a.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex3_2_Luc97.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex3_3_25_Bor03.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex49_GM04.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/Ex4_4_Luc96b.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex4_7_15_Bor03.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex4_7_37_Bor03.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex4_7_56_Bor03.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex4_7_77_Bor03.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex4_Zan97.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex5_7_Luc97.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex5_Zan97.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex6_15_AEL02.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex6_9_Luc02c.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex6_GM04.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex6_Luc98.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex7_BLR02.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex8_BLR02.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/Ex9_BLR02.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/ExAppendixB_AEL03.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/ExConc_Zan97.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/ExIntrod_GM01.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/ExIntrod_GM04.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/ExIntrod_GM99.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_CSR_05\/ExIntrod_Zan97.xml": {
+        "LOW": 1000
+    },
+    "GTSSK07\/cade01.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade03.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade04t.xml": {
+        "LOW": "1"
+    },
+    "GTSSK07\/cade05t.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade06.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade07.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade08.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade09.xml": {
+        "LOW": "1"
+    },
+    "GTSSK07\/cade10.xml": {
+        "LOW": "1"
+    },
+    "GTSSK07\/cade11.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade12t.xml": {
+        "LOW": "1"
+    },
+    "GTSSK07\/cade13t.xml": {
+        "LOW": "1"
+    },
+    "GTSSK07\/cade14.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade15.xml": {
+        "LOW": 1000
+    },
+    "GTSSK07\/cade16.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade17.xml": {
+        "LOW": "2"
+    },
+    "Waldmann_06\/jwmatchb1.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Waldmann_06\/jwmatchb2.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Waldmann_06\/jwno1.xml": {
+        "LOW": 1000
+    },
+    "Waldmann_06\/jwno4.xml": {
+        "LOW": 1000
+    },
+    "Waldmann_06\/jwno6.xml": {
+        "LOW": 1000
+    },
+    "Der95\/06.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Der95\/07.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Der95\/08.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Der95\/11.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Der95\/12.xml": {
+        "LOW": "1"
+    },
+    "Der95\/18.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Der95\/20.xml": {
+        "LOW": "1"
+    },
+    "Der95\/21.xml": {
+        "LOW": 1000
+    },
+    "Der95\/27.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Der95\/31.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Der95\/32.xml": {
+        "LOW": "1"
+    },
+    "Der95\/33.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Rubio_04\/bintrees.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Rubio_04\/bn122.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Rubio_04\/division.xml": {
+        "LOW": "1"
+    },
+    "Rubio_04\/elimdupl.xml": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "Rubio_04\/enno.xml": {
+        "LOW": "1"
+    },
+    "Rubio_04\/gcd.xml": {
+        "LOW": "1"
+    },
+    "Rubio_04\/gm.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Rubio_04\/gmnp.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Rubio_04\/koen.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Rubio_04\/logarquot.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Rubio_04\/ma96.xml": {
+        "LOW": 1000
+    },
+    "Rubio_04\/mfp95.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Rubio_04\/nestrec.xml": {
+        "LOW": 1000
+    },
+    "Rubio_04\/p266.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Rubio_04\/polo2.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Rubio_04\/prov.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Rubio_04\/quick.xml": {
+        "LOW": "2"
+    },
+    "Rubio_04\/quotminus.xml": {
+        "LOW": "1"
+    },
+    "Rubio_04\/revlist.xml": {
+        "LOW": 1000
+    },
+    "Rubio_04\/selsort.xml": {
+        "LOW": "2"
+    },
+    "Rubio_04\/test4.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Rubio_04\/test829.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Rubio_04\/wst99.xml": {
+        "LOW": "1"
+    },
+    "Secret_06_TRS\/10.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Secret_06_TRS\/4.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Secret_06_TRS\/6.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Secret_06_TRS\/addList.xml": {
+        "LOW": "1"
+    },
+    "Secret_06_TRS\/divExp.xml": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "Secret_06_TRS\/division.xml": {
+        "LOW": "1"
+    },
+    "Secret_06_TRS\/double.xml": {
+        "LOW": "1"
+    },
+    "Secret_06_TRS\/gen-1.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Secret_06_TRS\/gen-17.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Secret_06_TRS\/gen-28.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Secret_06_TRS\/logarithm.xml": {
+        "LOW": "1"
+    },
+    "Secret_06_TRS\/nrOfNodes.xml": {
+        "LOW": "2"
+    },
+    "Secret_06_TRS\/reverse.xml": {
+        "LOW": "2"
+    },
+    "Secret_06_TRS\/sumList.xml": {
+        "LOW": "2"
+    },
+    "Secret_06_TRS\/times.xml": {
+        "LOW": "1"
+    },
+    "Secret_06_TRS\/toList.xml": {
+        "LOW": "1"
+    },
+    "Secret_06_TRS\/tpa04.xml": {
+        "LOW": "1"
+    },
+    "Secret_06_TRS\/tpa05.xml": {
+        "LOW": "2"
+    },
+    "Secret_06_TRS\/tpa06.xml": {
+        "LOW": "1"
+    },
+    "Secret_06_TRS\/tpa07.xml": {
+        "LOW": "2"
+    },
+    "Secret_06_TRS\/tpa08.xml": {
+        "LOW": "2"
+    },
+    "Secret_06_TRS\/tpa09.xml": {
+        "LOW": "2"
+    },
+    "Secret_06_TRS\/tpa10.xml": {
+        "LOW": "2"
+    },
+    "AProVE_06\/div_notCeTermin.xml": {
+        "LOW": "1"
+    },
+    "AProVE_06\/div_notTermin.xml": {
+        "LOW": "1"
+    },
+    "AProVE_06\/factorial1.xml": {
+        "LOW": "4"
+    },
+    "AProVE_06\/factorial2.xml": {
+        "LOW": "3"
+    },
+    "AProVE_06\/identity.xml": {
+        "LOW": "1"
+    },
+    "AProVE_06\/logarithm.xml": {
+        "LOW": "1"
+    },
+    "AProVE_06\/modulo.xml": {
+        "LOW": "1"
+    },
+    "AProVE_06\/nonterm.xml": {
+        "LOW": 1000
+    },
+    "AProVE_06\/quicksort.xml": {
+        "LOW": "2"
+    },
+    "AProVE_06\/quot.xml": {
+        "LOW": "1"
+    },
+    "AProVE_06\/sizeChange.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_06\/tower.xml": {
+        "LOW": 1000
+    },
+    "AProVE_06\/tower_sizeChange.xml": {
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.14.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.16.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.17.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.19.xml": {
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.2.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.20a.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.22.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.23.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.25.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Strategy_removed_AG01\/#4.26.xml": {
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.27.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.28.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.29.xml": {
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.30.xml": {
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.30a.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.30b.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.30c.xml": {
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.32.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.33.xml": {
+        "LOW": "2"
+    },
+    "Strategy_removed_AG01\/#4.34.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.35.xml": {
+        "LOW": 1000
+    },
+    "Strategy_removed_AG01\/#4.36.xml": {
+        "LOW": "2"
+    },
+    "Strategy_removed_AG01\/#4.37.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.37a.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.7.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Various_04\/04.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Various_04\/08.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Various_04\/10.xml": {
+        "LOW": "1"
+    },
+    "Various_04\/11.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Various_04\/12.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Various_04\/13.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Various_04\/14.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Various_04\/15.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Various_04\/18.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Various_04\/22.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Various_04\/23.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Various_04\/24.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_04\/AAECC-ring.xml": {
+        "LOW": "1"
+    },
+    "AProVE_04\/AAECC.xml": {
+        "LOW": "1"
+    },
+    "AProVE_04\/fac.xml": {
+        "LOW": "2"
+    },
+    "AProVE_04\/IJCAR_1.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_04\/IJCAR_12.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "2"
+    },
+    "AProVE_04\/IJCAR_18.xml": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "2"
+    },
+    "AProVE_04\/IJCAR_26.xml": {
+        "YES": 1,
+        "UP": "4",
+        "LOW": "3"
+    },
+    "AProVE_04\/IJCAR_26a.xml": {
+        "YES": 1,
+        "UP": "4",
+        "LOW": "3"
+    },
+    "AProVE_04\/JFP_Ex31.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_04\/JFP_Ex51.xml": {
+        "LOW": 1000
+    },
+    "AProVE_04\/Liveness6.1.xml": {
+        "LOW": "1"
+    },
+    "AProVE_04\/Liveness6.2.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_04\/Liveness6.3.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_04\/Liveness6.4.xml": {
+        "LOW": "1"
+    },
+    "AProVE_04\/Liveness8.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_04\/Liveness_WRS.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_04\/LPAR_intlist.xml": {
+        "LOW": "1"
+    },
+    "AProVE_04\/rta1.xml": {
+        "LOW": 1000
+    },
+    "AProVE_04\/rta2.xml": {
+        "LOW": "1"
+    },
+    "AProVE_04\/rta3.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#3.1.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.10.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#3.12.xml": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "3"
+    },
+    "AG01\/#3.13.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#3.15.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.16.xml": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "2"
+    },
+    "AG01\/#3.17.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AG01\/#3.17a.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AG01\/#3.18.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#3.19.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#3.2.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.22.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "2"
+    },
+    "AG01\/#3.23.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.24.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.26.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#3.29.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "AG01\/#3.31.xml": {
+        "LOW": 1000
+    },
+    "AG01\/#3.33.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "AG01\/#3.35.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.36.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#3.37.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.38.xml": {
+        "LOW": 1000
+    },
+    "AG01\/#3.39.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.4.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#3.40.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.41.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.42.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#3.47.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.48.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#3.49.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#3.5.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.51.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.52.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.53.xml": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "3"
+    },
+    "AG01\/#3.53a.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "AG01\/#3.53b.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.54.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#3.55.xml": {
+        "LOW": "2"
+    },
+    "AG01\/#3.56.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.57.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#3.5a.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#3.5b.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#3.6.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#3.6a.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AG01\/#3.6b.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#3.7.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.8a.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.8b.xml": {
+        "LOW": "1"
+    },
+    "AG01\/#4.30c.xml": {
+        "LOW": "1"
+    },
+    "AProVE_08\/id_inc.xml": {
+        "LOW": "1"
+    },
+    "AProVE_08\/log.xml": {
+        "LOW": "1"
+    },
+    "AProVE_08\/parting01_reverse.xml": {
+        "LOW": "2"
+    },
+    "AProVE_08\/parting02_doublelist.xml": {
+        "LOW": "1"
+    },
+    "AProVE_08\/parting03_minsort.xml": {
+        "LOW": "2"
+    },
+    "AProVE_08\/parting04_maxsort_h.xml": {
+        "LOW": "2"
+    },
+    "AProVE_08\/parting05_maxsort.xml": {
+        "LOW": "2"
+    },
+    "AProVE_08\/round.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_08\/round_nonterm.xml": {
+        "LOW": 1000
+    },
+    "AProVE_08\/thiemann40_modified.xml": {
+        "LOW": "2"
+    },
+    "AProVE_09_Inductive\/div.xml": {
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/divhard.xml": {
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/gcd.xml": {
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/gcd2.xml": {
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/gcdhard.xml": {
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/log.xml": {
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/maxsort.xml": {
+        "LOW": "2"
+    },
+    "AProVE_09_Inductive\/maxsortcondition.xml": {
+        "LOW": "2"
+    },
+    "AProVE_09_Inductive\/minsort.xml": {
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/mod.xml": {
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/qsort.xml": {
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/qsortlast.xml": {
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/qsortmiddle.xml": {
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/zerolist.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "CiME_04\/ack_prolog.xml": {
+        "LOW": "1"
+    },
+    "CiME_04\/append-hard.xml": {
+        "LOW": "1"
+    },
+    "CiME_04\/append-wrong.xml": {
+        "LOW": 1000
+    },
+    "CiME_04\/append.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "CiME_04\/big.xml": {
+        "LOW": 1000
+    },
+    "CiME_04\/dpqs.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "CiME_04\/fact-hard.xml": {
+        "LOW": "2"
+    },
+    "CiME_04\/filliatre.xml": {
+        "LOW": "1"
+    },
+    "CiME_04\/filliatre2.xml": {
+        "LOW": "1"
+    },
+    "CiME_04\/filliatre3.xml": {
+        "LOW": "1"
+    },
+    "CiME_04\/intersect.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "CiME_04\/list-sum-prod-assoc-append.xml": {
+        "LOW": "2"
+    },
+    "CiME_04\/list-sum-prod-assoc.xml": {
+        "LOW": "2"
+    },
+    "CiME_04\/list-sum-prod-bin-assoc-distr-app.xml": {
+        "LOW": 1000
+    },
+    "CiME_04\/list-sum-prod-bin-assoc.xml": {
+        "LOW": 1000
+    },
+    "CiME_04\/list-sum-prod-bin.xml": {
+        "LOW": 1000
+    },
+    "CiME_04\/list-sum-prod.xml": {
+        "LOW": "2"
+    },
+    "CiME_04\/log2.xml": {
+        "LOW": "1"
+    },
+    "CiME_04\/lse.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "2"
+    },
+    "CiME_04\/maude2.xml": {
+        "LOW": "1"
+    },
+    "CiME_04\/mucrl1.xml": {
+        "LOW": "1"
+    },
+    "CiME_04\/ternary-hard.xml": {
+        "LOW": "1"
+    },
+    "CiME_04\/ternary.xml": {
+        "LOW": "1"
+    },
+    "CiME_04\/tree.xml": {
+        "LOW": "1"
+    },
+    "Mixed_TRS\/Ex1_Luc04b_GM.xml": {
+        "LOW": "1"
+    },
+    "Mixed_TRS\/fossacs.xml": {
+        "LOW": "1"
+    },
+    "Mixed_TRS\/gcd.xml": {
+        "LOW": "1"
+    },
+    "Mixed_TRS\/gcdMinMax.xml": {
+        "LOW": "1"
+    },
+    "Mixed_TRS\/gcd_triple.xml": {
+        "LOW": "1"
+    },
+    "Mixed_TRS\/hydra-Zantema06.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Mixed_TRS\/hydra.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Mixed_TRS\/jones1.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Mixed_TRS\/jones2.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Mixed_TRS\/jones4.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Mixed_TRS\/jones5.xml": {
+        "LOW": "1"
+    },
+    "Mixed_TRS\/jones6.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Mixed_TRS\/minsort.xml": {
+        "LOW": 1000
+    },
+    "Mixed_TRS\/perfect.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Mixed_TRS\/perfect2.xml": {
+        "LOW": 1000
+    },
+    "Mixed_TRS\/test1.xml": {
+        "LOW": "1"
+    },
+    "Mixed_TRS\/while.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Secret_07_TRS\/3.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Secret_07_TRS\/aprove01.xml": {
+        "LOW": "1"
+    },
+    "Secret_07_TRS\/aprove02.xml": {
+        "LOW": "1"
+    },
+    "Secret_07_TRS\/aprove03.xml": {
+        "LOW": "1"
+    },
+    "Secret_07_TRS\/aprove04.xml": {
+        "LOW": "1"
+    },
+    "Secret_07_TRS\/aprove05.xml": {
+        "LOW": "1"
+    },
+    "Secret_07_TRS\/aprove06.xml": {
+        "LOW": "1"
+    },
+    "Secret_07_TRS\/aprove07.xml": {
+        "LOW": "1"
+    },
+    "Secret_07_TRS\/aprove08.xml": {
+        "LOW": "1"
+    },
+    "Secret_07_TRS\/aprove09.xml": {
+        "LOW": "1"
+    },
+    "Secret_07_TRS\/aprove10.xml": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "Secret_07_TRS\/secret1.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Secret_07_TRS\/secret3.xml": {
+        "LOW": 1000
+    },
+    "Secret_07_TRS\/secret4.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Secret_07_TRS\/secret5.xml": {
+        "LOW": 1000
+    },
+    "Endrullis_06\/direct.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Zantema_05\/z10.xml": {
+        "LOW": "1"
+    },
+    "Zantema_05\/z12.xml": {
+        "LOW": "1"
+    },
+    "Zantema_05\/z13.xml": {
+        "LOW": "1"
+    },
+    "Zantema_05\/z14.xml": {
+        "LOW": "1"
+    },
+    "Zantema_05\/z15.xml": {
+        "LOW": "1"
+    },
+    "Zantema_05\/z16.xml": {
+        "LOW": "1"
+    },
+    "Zantema_05\/z17.xml": {
+        "LOW": "1"
+    },
+    "Zantema_05\/z18.xml": {
+        "LOW": "1"
+    },
+    "Zantema_05\/z23.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Zantema_05\/z24.xml": {
+        "LOW": "1"
+    },
+    "Zantema_05\/z26.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Zantema_05\/z27.xml": {
+        "LOW": "1"
+    },
+    "Zantema_05\/z28.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/1.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/10.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/11.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/12.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/13.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/14.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/15.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/16.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/17.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/18.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/19.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/2.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/20.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/21.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/22.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/23.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/24.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/3.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/4.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/5.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/6.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/7.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/8.xml": {
+        "LOW": "1"
+    },
+    "Beerendonk_07\/9.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex14_AEGL02_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex14_AEGL02_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex14_AEGL02_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex14_AEGL02_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex14_AEGL02_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex14_Luc06_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex14_Luc06_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex15_Luc06_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex15_Luc06_FR.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex15_Luc06_GM.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex15_Luc06_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex15_Luc06_Z.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex15_Luc98_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex15_Luc98_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex15_Luc98_GM.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex15_Luc98_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex15_Luc98_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex16_Luc06_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex16_Luc06_GM.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex16_Luc06_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex18_Luc06_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex18_Luc06_FR.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex18_Luc06_GM.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex18_Luc06_Z.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex1_2_AEL03_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex1_2_AEL03_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_2_AEL03_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_2_AEL03_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_2_AEL03_Z.xml": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "2"
+    },
+    "Transformed_CSR_04\/Ex1_2_Luc02c_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex1_2_Luc02c_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_2_Luc02c_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_2_Luc02c_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_2_Luc02c_Z.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex1_GL02a_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex1_GL02a_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_GL02a_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_GL02a_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_GL02a_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex1_GM03_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex1_GM03_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_GM03_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_GM03_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_GM03_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_GM99_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex1_GM99_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_GM99_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_Luc02b_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex1_Luc02b_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_Luc02b_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_Luc02b_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_Luc02b_Z.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex1_Luc04b_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex1_Luc04b_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_Luc04b_GM.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex1_Luc04b_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_Luc04b_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_Zan97_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex1_Zan97_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex1_Zan97_GM.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex1_Zan97_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex23_Luc06_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex23_Luc06_FR.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex23_Luc06_GM.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex23_Luc06_Z.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex24_GM04_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex24_GM04_FR.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex24_GM04_GM.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex24_GM04_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex24_GM04_Z.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex24_Luc06_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex24_Luc06_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex24_Luc06_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex25_Luc06_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex25_Luc06_FR.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex25_Luc06_GM.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex25_Luc06_Z.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex26_Luc03b_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex26_Luc03b_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex26_Luc03b_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex26_Luc03b_L.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex26_Luc03b_Z.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex2_Luc02a_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex2_Luc02a_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex2_Luc02a_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex2_Luc02a_L.xml": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "3"
+    },
+    "Transformed_CSR_04\/Ex2_Luc02a_Z.xml": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "3"
+    },
+    "Transformed_CSR_04\/Ex2_Luc03b_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex2_Luc03b_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex2_Luc03b_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex2_Luc03b_L.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex2_Luc03b_Z.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex3_12_Luc96a_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex3_12_Luc96a_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex3_12_Luc96a_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex3_12_Luc96a_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex3_12_Luc96a_Z.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex3_2_Luc97_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex3_2_Luc97_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex3_2_Luc97_GM.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex3_2_Luc97_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex3_2_Luc97_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex3_3_25_Bor03_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex3_3_25_Bor03_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex3_3_25_Bor03_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex3_3_25_Bor03_L.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex3_3_25_Bor03_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex49_GM04_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex49_GM04_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex49_GM04_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex49_GM04_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex49_GM04_Z.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex4_4_Luc96b_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex4_4_Luc96b_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex4_4_Luc96b_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex4_4_Luc96b_L.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex4_4_Luc96b_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex4_7_15_Bor03_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex4_7_15_Bor03_FR.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex4_7_15_Bor03_GM.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex4_7_15_Bor03_L.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex4_7_15_Bor03_Z.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex4_7_37_Bor03_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex4_7_37_Bor03_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex4_7_37_Bor03_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex4_7_37_Bor03_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex4_7_37_Bor03_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex4_7_56_Bor03_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex4_7_56_Bor03_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex4_7_56_Bor03_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex4_7_56_Bor03_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex4_7_56_Bor03_Z.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex4_7_77_Bor03_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex4_7_77_Bor03_FR.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex4_7_77_Bor03_GM.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex4_7_77_Bor03_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex4_DLMMU04_C.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex4_DLMMU04_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex4_DLMMU04_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex4_DLMMU04_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex4_DLMMU04_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex4_Zan97_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex4_Zan97_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex4_Zan97_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex4_Zan97_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex4_Zan97_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex5_7_Luc97_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex5_7_Luc97_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex5_7_Luc97_GM.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex5_7_Luc97_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex5_7_Luc97_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex5_DLMMU04_C.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex5_DLMMU04_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex5_DLMMU04_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex5_DLMMU04_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex5_DLMMU04_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex5_Zan97_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex5_Zan97_FR.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex5_Zan97_GM.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex5_Zan97_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex5_Zan97_Z.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex6_15_AEL02_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex6_15_AEL02_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex6_15_AEL02_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex6_15_AEL02_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex6_15_AEL02_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex6_9_Luc02c_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex6_9_Luc02c_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex6_9_Luc02c_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex6_9_Luc02c_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex6_9_Luc02c_Z.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex6_GM04_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex6_GM04_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex6_GM04_GM.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex6_Luc98_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex6_Luc98_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex6_Luc98_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex6_Luc98_L.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex6_Luc98_Z.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex7_BLR02_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex7_BLR02_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex7_BLR02_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex7_BLR02_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex7_BLR02_Z.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex8_BLR02_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex8_BLR02_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex8_BLR02_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex8_BLR02_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex8_BLR02_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex9_BLR02_C.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex9_BLR02_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex9_BLR02_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex9_BLR02_L.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex9_BLR02_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex9_Luc04_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex9_Luc04_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex9_Luc04_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex9_Luc06_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex9_Luc06_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/Ex9_Luc06_GM.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/ExAppendixB_AEL03_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/ExAppendixB_AEL03_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExAppendixB_AEL03_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExAppendixB_AEL03_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExAppendixB_AEL03_Z.xml": {
+        "LOW": "2"
+    },
+    "Transformed_CSR_04\/ExConc_Zan97_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/ExConc_Zan97_FR.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/ExConc_Zan97_GM.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/ExConc_Zan97_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExIntrod_GM01_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/ExIntrod_GM01_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExIntrod_GM01_GM.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/ExIntrod_GM01_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExIntrod_GM01_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExIntrod_GM04_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/ExIntrod_GM04_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExIntrod_GM04_GM.xml": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/ExIntrod_GM04_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExIntrod_GM04_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExIntrod_GM99_C.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/ExIntrod_GM99_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExIntrod_GM99_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExIntrod_GM99_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExIntrod_GM99_Z.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_Zan97_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/ExIntrod_Zan97_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExIntrod_Zan97_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExIntrod_Zan97_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExIntrod_Zan97_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExProp7_Luc06_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/ExProp7_Luc06_FR.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/ExProp7_Luc06_GM.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/ExProp7_Luc06_L.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/ExProp7_Luc06_Z.xml": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/ExSec11_1_Luc02a_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/ExSec11_1_Luc02a_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExSec11_1_Luc02a_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExSec11_1_Luc02a_L.xml": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "3"
+    },
+    "Transformed_CSR_04\/ExSec11_1_Luc02a_Z.xml": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "3"
+    },
+    "Transformed_CSR_04\/ExSec4_2_DLMMU04_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/ExSec4_2_DLMMU04_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExSec4_2_DLMMU04_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExSec4_2_DLMMU04_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/ExSec4_2_DLMMU04_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_complete-noand_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_complete-noand_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_complete-noand_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_complete_C.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_complete_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_complete_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_complete_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_complete_noand_C.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_complete_noand_GM.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_complete_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nokinds-noand_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nokinds-noand_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nokinds-noand_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nokinds_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nokinds_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nokinds_GM.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nokinds_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nokinds_noand_C.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nokinds_noand_GM.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nokinds_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts-noand_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts-noand_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts_noand_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts_noand_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_complete-noand_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_complete-noand_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_complete-noand_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_complete_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_complete_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_complete_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_complete_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_complete_noand_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_complete_noand_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_complete_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nokinds-noand_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nokinds-noand_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nokinds-noand_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nokinds_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nokinds_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nokinds_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nokinds_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nokinds_noand_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nokinds_noand_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nokinds_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nosorts-noand_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nosorts-noand_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nosorts-noand_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nosorts_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nosorts_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nosorts_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nosorts_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nosorts_noand_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nosorts_noand_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nosorts_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/MYNAT_complete-noand_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/MYNAT_complete-noand_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/MYNAT_complete-noand_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/MYNAT_complete_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/MYNAT_complete_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/MYNAT_complete_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/MYNAT_complete_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/MYNAT_complete_noand_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/MYNAT_complete_noand_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/MYNAT_complete_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/MYNAT_nokinds-noand_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/MYNAT_nokinds-noand_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/MYNAT_nokinds-noand_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/MYNAT_nokinds_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/MYNAT_nokinds_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/MYNAT_nokinds_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/MYNAT_nokinds_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/MYNAT_nokinds_noand_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/MYNAT_nokinds_noand_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/MYNAT_nokinds_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/MYNAT_nosorts-noand_FR.xml": {
+        "LOW": "2"
+    },
+    "Transformed_CSR_04\/MYNAT_nosorts-noand_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/MYNAT_nosorts_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/MYNAT_nosorts_FR.xml": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "2"
+    },
+    "Transformed_CSR_04\/MYNAT_nosorts_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/MYNAT_nosorts_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/MYNAT_nosorts_noand_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/MYNAT_nosorts_noand_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_complete-noand_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_complete-noand_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_complete-noand_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/OvConsOS_complete_C.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/OvConsOS_complete_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_complete_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_complete_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_complete_noand_C.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/OvConsOS_complete_noand_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_complete_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/OvConsOS_nokinds-noand_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_nokinds-noand_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_nokinds-noand_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/OvConsOS_nokinds_C.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/OvConsOS_nokinds_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_nokinds_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_nokinds_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_nokinds_noand_C.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/OvConsOS_nokinds_noand_GM.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/OvConsOS_nokinds_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts-noand_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts-noand_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts-noand_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_noand_C.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_noand_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_Z.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PALINDROME_complete-noand_FR.xml": {
+        "LOW": "2"
+    },
+    "Transformed_CSR_04\/PALINDROME_complete-noand_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PALINDROME_complete-noand_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PALINDROME_complete_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PALINDROME_complete_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PALINDROME_complete_GM.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PALINDROME_complete_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PALINDROME_complete_noand_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PALINDROME_complete_noand_GM.xml": {
+        "LOW": "2"
+    },
+    "Transformed_CSR_04\/PALINDROME_complete_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds-noand_FR.xml": {
+        "LOW": "2"
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds-noand_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds-noand_Z.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds_FR.xml": {
+        "LOW": "2"
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds_GM.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds_noand_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds_noand_GM.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds_Z.xml": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PALINDROME_nosorts_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PALINDROME_nosorts_GM.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PALINDROME_nosorts_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PALINDROME_nosorts_noand_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PALINDROME_nosorts_noand_GM.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PEANO_complete-noand_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PEANO_complete-noand_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PEANO_complete-noand_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PEANO_complete_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PEANO_complete_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PEANO_complete_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PEANO_complete_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PEANO_complete_noand_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PEANO_complete_noand_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PEANO_complete_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PEANO_nokinds-noand_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PEANO_nokinds-noand_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PEANO_nokinds-noand_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PEANO_nokinds_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PEANO_nokinds_FR.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PEANO_nokinds_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PEANO_nokinds_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PEANO_nokinds_noand_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PEANO_nokinds_noand_GM.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PEANO_nokinds_Z.xml": {
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PEANO_nosorts-noand_FR.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PEANO_nosorts-noand_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PEANO_nosorts_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PEANO_nosorts_FR.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PEANO_nosorts_GM.xml": {
+        "LOW": "2"
+    },
+    "Transformed_CSR_04\/PEANO_nosorts_L.xml": {
+        "LOW": 1000
+    },
+    "Transformed_CSR_04\/PEANO_nosorts_noand_C.xml": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PEANO_nosorts_noand_GM.xml": {
+        "LOW": "2"
+    }
+}

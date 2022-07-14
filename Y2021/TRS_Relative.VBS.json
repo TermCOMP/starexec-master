@@ -1,0 +1,296 @@
+{
+    "Relative_05\/rt1-1.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rt1-2.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rt1-3.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rt1-4.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rt1-5.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rt2-1.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rt2-2.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rt2-3.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rt2-4.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rt2-5.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rt2-7.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rt2-8.xml": {
+        "NO": 1
+    },
+    "Relative_05\/rt3-1.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rt3-2.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rt3-3.xml": {
+        "NO": 1
+    },
+    "Relative_05\/rt3-4.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rt3-5.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rt3-6.xml": {
+        "NO": 1
+    },
+    "Relative_05\/rt3-7.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rt3-8.xml": {
+        "NO": 1
+    },
+    "Relative_05\/rt3-9.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rtL-cbn1.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rtL-cbn5.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rtL-cbo.xml": {
+        "MAYBE": 1
+    },
+    "Relative_05\/rtL-evnz.xml": {
+        "NO": 1
+    },
+    "Relative_05\/rtL-evo.xml": {
+        "NO": 1
+    },
+    "Relative_05\/rtL-me2.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rtL-me3.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rtL-pwl.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rtL-rw2.xml": {
+        "MAYBE": 1
+    },
+    "Relative_05\/rtL-rw5.xml": {
+        "MAYBE": 1
+    },
+    "Relative_05\/rtL-wl1nz.xml": {
+        "YES": 1
+    },
+    "Relative_05\/rtL-wl1o.xml": {
+        "MAYBE": 1
+    },
+    "INVY_15\/#3.10_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.15_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.16_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.17a_mset.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.17_mset.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.18_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.19_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.1_gen.xml": {
+        "NO": 1
+    },
+    "INVY_15\/#3.1_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.22_rand.xml": {
+        "MAYBE": 1
+    },
+    "INVY_15\/#3.23_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.24_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.26_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.29_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.2_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.35_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.36_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.37_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.38_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.39_rand.xml": {
+        "MAYBE": 1
+    },
+    "INVY_15\/#3.40_rand.xml": {
+        "MAYBE": 1
+    },
+    "INVY_15\/#3.41_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.42_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.47_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.48_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.49_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.4_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.52_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.53a_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.53b_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.53_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.54_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.55_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.56_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.57_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.5a_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.5b_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.5_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.6a_rand.xml": {
+        "MAYBE": 1
+    },
+    "INVY_15\/#3.6b_rand.xml": {
+        "MAYBE": 1
+    },
+    "INVY_15\/#3.6_rand.xml": {
+        "MAYBE": 1
+    },
+    "INVY_15\/#3.7_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.8a_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#3.8b_rand.xml": {
+        "YES": 1
+    },
+    "INVY_15\/#4.30c_rand.xml": {
+        "MAYBE": 1
+    },
+    "INVY_15\/ex1.xml": {
+        "NO": 1
+    },
+    "INVY_15\/ex2.xml": {
+        "YES": 1
+    },
+    "INVY_15\/ex3.xml": {
+        "NO": 1
+    },
+    "INVY_15\/ex4.xml": {
+        "YES": 1
+    },
+    "INVY_15\/ex6.xml": {
+        "NO": 1
+    },
+    "INVY_15\/ex7.xml": {
+        "NO": 1
+    },
+    "INVY_15\/invNSS03.xml": {
+        "YES": 1
+    },
+    "INVY_15\/quicktest.xml": {
+        "YES": 1
+    },
+    "INVY_15\/quicktest_sum.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_TRS\/abp.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_relative_TRS\/abp2.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_TRS\/assoc.xml": {
+        "NO": 1
+    },
+    "Mixed_relative_TRS\/carbridge.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_TRS\/gcd.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_relative_TRS\/gcd_list.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_relative_TRS\/gcd_many.xml": {
+        "NO": 1
+    },
+    "Mixed_relative_TRS\/ijcar2006.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_TRS\/relsubst.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_TRS\/rt-rw4.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_TRS\/trafic.xml": {
+        "YES": 1
+    }
+}

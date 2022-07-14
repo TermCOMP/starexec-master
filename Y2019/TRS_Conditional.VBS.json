@@ -1,0 +1,353 @@
+{
+    "COPS\/262.xml": {
+        "YES": 1
+    },
+    "COPS\/263.xml": {
+        "YES": 1
+    },
+    "COPS\/264.xml": {
+        "YES": 1
+    },
+    "COPS\/266.xml": {
+        "YES": 1
+    },
+    "COPS\/267.xml": {
+        "YES": 1
+    },
+    "COPS\/268.xml": {
+        "NO": 1
+    },
+    "COPS\/271.xml": {
+        "YES": 1
+    },
+    "COPS\/272.xml": {
+        "YES": 1
+    },
+    "COPS\/286.xml": {
+        "NO": 1
+    },
+    "COPS\/288.xml": {
+        "YES": 1
+    },
+    "COPS\/289.xml": {
+        "MAYBE": 1
+    },
+    "COPS\/292.xml": {
+        "YES": 1
+    },
+    "COPS\/293.xml": {
+        "NO": 1
+    },
+    "COPS\/294.xml": {
+        "YES": 1
+    },
+    "COPS\/307.xml": {
+        "YES": 1
+    },
+    "COPS\/308.xml": {
+        "YES": 1
+    },
+    "COPS\/310.xml": {
+        "YES": 1
+    },
+    "COPS\/311.xml": {
+        "MAYBE": 1
+    },
+    "COPS\/312.xml": {
+        "MAYBE": 1
+    },
+    "COPS\/315.xml": {
+        "YES": 1
+    },
+    "COPS\/316.xml": {
+        "YES": 1
+    },
+    "COPS\/317.xml": {
+        "YES": 1
+    },
+    "COPS\/319.xml": {
+        "YES": 1
+    },
+    "COPS\/321.xml": {
+        "YES": 1
+    },
+    "COPS\/322.xml": {
+        "YES": 1
+    },
+    "COPS\/323.xml": {
+        "YES": 1
+    },
+    "COPS\/324.xml": {
+        "NO": 1
+    },
+    "COPS\/325.xml": {
+        "YES": 1
+    },
+    "COPS\/326.xml": {
+        "YES": 1
+    },
+    "COPS\/329.xml": {
+        "YES": 1
+    },
+    "COPS\/330.xml": {
+        "NO": 1
+    },
+    "COPS\/332.xml": {
+        "YES": 1
+    },
+    "COPS\/333.xml": {
+        "YES": 1
+    },
+    "COPS\/334.xml": {
+        "YES": 1
+    },
+    "COPS\/337.xml": {
+        "MAYBE": 1
+    },
+    "COPS\/339.xml": {
+        "YES": 1
+    },
+    "COPS\/340.xml": {
+        "YES": 1
+    },
+    "COPS\/341.xml": {
+        "YES": 1
+    },
+    "COPS\/342.xml": {
+        "MAYBE": 1
+    },
+    "COPS\/343.xml": {
+        "YES": 1
+    },
+    "COPS\/344.xml": {
+        "YES": 1
+    },
+    "COPS\/351.xml": {
+        "YES": 1
+    },
+    "COPS\/353.xml": {
+        "YES": 1
+    },
+    "COPS\/354.xml": {
+        "YES": 1
+    },
+    "COPS\/355.xml": {
+        "NO": 1
+    },
+    "COPS\/356.xml": {
+        "YES": 1
+    },
+    "COPS\/358.xml": {
+        "YES": 1
+    },
+    "COPS\/359.xml": {
+        "YES": 1
+    },
+    "COPS\/361.xml": {
+        "NO": 1
+    },
+    "COPS\/364.xml": {
+        "YES": 1
+    },
+    "COPS\/365.xml": {
+        "YES": 1
+    },
+    "COPS\/366.xml": {
+        "YES": 1
+    },
+    "COPS\/367.xml": {
+        "YES": 1
+    },
+    "COPS\/368.xml": {
+        "YES": 1
+    },
+    "COPS\/369.xml": {
+        "YES": 1
+    },
+    "COPS\/370.xml": {
+        "YES": 1
+    },
+    "COPS\/371.xml": {
+        "YES": 1
+    },
+    "COPS\/372.xml": {
+        "YES": 1
+    },
+    "COPS\/373.xml": {
+        "YES": 1
+    },
+    "COPS\/374.xml": {
+        "YES": 1
+    },
+    "COPS\/375.xml": {
+        "YES": 1
+    },
+    "COPS\/376.xml": {
+        "YES": 1
+    },
+    "COPS\/377.xml": {
+        "YES": 1
+    },
+    "COPS\/378.xml": {
+        "YES": 1
+    },
+    "COPS\/379.xml": {
+        "NO": 1
+    },
+    "COPS\/380.xml": {
+        "YES": 1
+    },
+    "COPS\/381.xml": {
+        "YES": 1
+    },
+    "COPS\/382.xml": {
+        "YES": 1
+    },
+    "COPS\/383.xml": {
+        "YES": 1
+    },
+    "COPS\/384.xml": {
+        "YES": 1
+    },
+    "COPS\/385.xml": {
+        "YES": 1
+    },
+    "COPS\/387.xml": {
+        "YES": 1
+    },
+    "COPS\/388.xml": {
+        "YES": 1
+    },
+    "COPS\/389.xml": {
+        "NO": 1
+    },
+    "COPS\/390.xml": {
+        "YES": 1
+    },
+    "COPS\/391.xml": {
+        "YES": 1
+    },
+    "COPS\/403.xml": {
+        "YES": 1
+    },
+    "COPS\/404.xml": {
+        "YES": 1
+    },
+    "COPS\/405.xml": {
+        "MAYBE": 1
+    },
+    "COPS\/406.xml": {
+        "YES": 1
+    },
+    "COPS\/407.xml": {
+        "NO": 1
+    },
+    "COPS\/408.xml": {
+        "YES": 1
+    },
+    "COPS\/409.xml": {
+        "NO": 1
+    },
+    "COPS\/410.xml": {
+        "YES": 1
+    },
+    "COPS\/411.xml": {
+        "NO": 1
+    },
+    "Mixed_CTRS_2014\/ex1-lucmes-wrla14.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_CTRS_2014\/ex1-muterm14.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ex2-lucmes-wrla14.xml": {
+        "NO": 1
+    },
+    "Mixed_CTRS_2014\/ex2-muterm14.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ex3-muterm14.xml": {
+        "NO": 1
+    },
+    "Mixed_CTRS_2014\/hosc08-ex5-aecc-p46.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/jlap09-ex16.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/jlap09-ex17.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/logic.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/lucMarMes.xml": {
+        "NO": 1
+    },
+    "Mixed_CTRS_2014\/mar.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_CTRS_2014\/mar_simple1.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_CTRS_2014\/mar_simple2.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_CTRS_2014\/minus1.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ohl.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ohl190.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ohl194.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ohl196.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ohl206.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ohl211.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ohl216.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ohl228.xml": {
+        "NO": 1
+    },
+    "Mixed_CTRS_2014\/ohl230.xml": {
+        "NO": 1
+    },
+    "Mixed_CTRS_2014\/plus1.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/sche128.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS\/AAECC-ring-cond.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS\/AAECCcond.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS\/fib.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS\/gcd.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS\/quick.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS\/quicksort.xml": {
+        "YES": 1
+    },
+    "Mixed_CTRS\/quotrem.xml": {
+        "YES": 1
+    }
+}

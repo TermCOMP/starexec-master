@@ -1,0 +1,917 @@
+{
+    "Mixed_relative_SRS\/dup02.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/dup03.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/dup04.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/un01.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/un03.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/zr01.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/zr02.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/zr02new.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/zr03.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/zr04.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/zr04new.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/zr05.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/zr06.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/zr07.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/zr08.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/zr09.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/zr10.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/zr11.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/zr12.xml": {
+        "YES": 1
+    },
+    "Mixed_relative_SRS\/zr13.xml": {
+        "NO": 1
+    },
+    "ICFP_2010_relative\/107220.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/107236.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/123759.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/124211.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/124269.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/124791.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/127538.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/128056.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/128182.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/128280.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/128430.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/128486.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/128515.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/128550.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/128620.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/128691.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/131633.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/131982.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/132235.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/132478.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/132540.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/132622.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/132720.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/132738.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/132782.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/132833.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/132864.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/132920.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/132957.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/132969.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/133010.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/133159.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/133486.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/133881.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/134918.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/135115.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/135328.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/135604.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/135652.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/135782.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/135936.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/136051.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/136562.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/136623.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/137404.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/137809.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/138194.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/138269.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/138330.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/138477.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/138993.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/139004.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/139018.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/139025.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/139036.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/139100.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/139163.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/139167.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/139174.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/139180.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/139185.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/139190.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/139214.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/139236.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/139256.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/139282.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/139310.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/139378.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/140287.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/140318.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/140359.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/140631.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/140639.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/140649.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/140654.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/140659.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/140664.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/142142.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/142146.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/142150.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/142157.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/3268.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3336.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3385.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3450.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3467.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3498.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3533.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3562.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3589.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3633.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3680.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3705.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3729.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3746.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/3762.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3770.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/3786.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3817.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3831.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3842.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3856.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3861.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3865.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3916.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/3930.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3939.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/3989.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/3995.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4002.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/4017.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4029.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4036.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4046.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/4051.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4057.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4074.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4106.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/41378.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4141.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4157.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4181.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4200.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4248.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/4282.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4374.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/4412.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4484.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4487.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4816.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4819.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4824.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4827.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/4840.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4847.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4854.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4893.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4920.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4934.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/4938.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4943.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4953.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4964.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4970.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/4979.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/4991.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/5011.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/5076.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/5109.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/5130.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/54097.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/63142.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/64160.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/88143.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/88172.xml": {
+        "YES": 1
+    },
+    "ICFP_2010_relative\/91242.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/97888.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/97901.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/97917.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010_relative\/97929.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_19\/random-10.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-105.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-106.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_19\/random-109.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-11.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-110.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-113.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-115.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-116.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-120.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-123.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-126.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-130.xml": {
+        "NO": 1
+    },
+    "Waldmann_19\/random-134.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-137.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-14.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-140.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-141.xml": {
+        "NO": 1
+    },
+    "Waldmann_19\/random-142.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-145.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-146.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-148.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-149.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-150.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-151.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-152.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-159.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-16.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-160.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-162.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-163.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_19\/random-164.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-166.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-168.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-172.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-173.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-175.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_19\/random-176.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_19\/random-177.xml": {
+        "NO": 1
+    },
+    "Waldmann_19\/random-182.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_19\/random-184.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-186.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-187.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-195.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-198.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-202.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-207.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_19\/random-208.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-209.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_19\/random-210.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-212.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-216.xml": {
+        "NO": 1
+    },
+    "Waldmann_19\/random-221.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-226.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-227.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-228.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-232.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-24.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-26.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-27.xml": {
+        "NO": 1
+    },
+    "Waldmann_19\/random-28.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-33.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-34.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-35.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-38.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-39.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-41.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-42.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-43.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-45.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-46.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-50.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-52.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-57.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-58.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-59.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_19\/random-60.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-62.xml": {
+        "NO": 1
+    },
+    "Waldmann_19\/random-65.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-66.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-67.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-68.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_19\/random-70.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-72.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-75.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-76.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-77.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-78.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-79.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-80.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-81.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-82.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-84.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-86.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-89.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-92.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-93.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-95.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-98.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-99.xml": {
+        "NO": 1
+    },
+    "Zantema_06_relative\/cars.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06_relative\/rel01.xml": {
+        "YES": 1
+    },
+    "Zantema_06_relative\/rel02.xml": {
+        "YES": 1
+    },
+    "Zantema_06_relative\/rel03.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06_relative\/rel04.xml": {
+        "YES": 1
+    },
+    "Zantema_06_relative\/rel05.xml": {
+        "YES": 1
+    },
+    "Zantema_06_relative\/rel06.xml": {
+        "YES": 1
+    },
+    "Zantema_06_relative\/rel07.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06_relative\/rel08.xml": {
+        "YES": 1
+    },
+    "Zantema_06_relative\/rel09.xml": {
+        "YES": 1
+    },
+    "Zantema_06_relative\/rel10.xml": {
+        "YES": 1
+    },
+    "Zantema_06_relative\/rel11.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06_relative\/rel12.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06_relative\/rel13.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_relative\/r1.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_relative\/r10.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_relative\/r2.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_relative\/r3.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_relative\/r4.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_relative\/r5.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_relative\/r6.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_relative\/r7.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_relative\/r8.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_relative\/r9.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_relative\/rbeans.xml": {
+        "YES": 1
+    }
+}

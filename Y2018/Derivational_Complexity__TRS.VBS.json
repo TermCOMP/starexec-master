@@ -1,0 +1,5711 @@
+{
+    "AProVE_04\/Liveness6.1.xml": {
+        "MAYBE": 1
+    },
+    "AProVE_04\/Liveness6.2.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "AProVE_04\/Liveness6.3.xml": {
+        "MAYBE": 1
+    },
+    "AProVE_04\/Liveness6.4.xml": {
+        "MAYBE": 1
+    },
+    "AProVE_04\/Liveness8.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "AProVE_04\/Liveness_WRS.xml": {
+        "YES": 1,
+        "UP": "3"
+    },
+    "AProVE_04\/LPAR_intlist.xml": {
+        "MAYBE": 1
+    },
+    "Applicative_05\/Ex2_6_1Composition.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Applicative_05\/ReverseLastInit.xml": {
+        "YES": 1,
+        "UP": "3"
+    },
+    "Applicative_05\/TypeEx5.xml": {
+        "MAYBE": 1
+    },
+    "AProVE_08\/round.xml": {
+        "MAYBE": 1
+    },
+    "AProVE_08\/round_nonterm.xml": {
+        "MAYBE": 1
+    },
+    "AProVE_06\/identity.xml": {
+        "MAYBE": 1
+    },
+    "AProVE_06\/nonterm.xml": {
+        "MAYBE": 1
+    },
+    "AProVE_06\/tower_sizeChange.xml": {
+        "MAYBE": 1
+    },
+    "AotoYamada_05\/005.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "AotoYamada_05\/017.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "AotoYamada_05\/023.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "AotoYamada_05\/025.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "AG01\/#3.12.xml": {
+        "MAYBE": 1
+    },
+    "AG01\/#3.15.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "AG01\/#3.17.xml": {
+        "YES": 1,
+        "UP": "10"
+    },
+    "AG01\/#3.17a.xml": {
+        "YES": 1,
+        "UP": "6"
+    },
+    "AG01\/#3.24.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "AG01\/#3.26.xml": {
+        "MAYBE": 1
+    },
+    "AG01\/#3.33.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "AG01\/#3.35.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "AG01\/#3.37.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "AG01\/#3.49.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "AG01\/#3.51.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "AG01\/#3.56.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "AG01\/#3.7.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Gebhardt_06\/01.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/02.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/03.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/04.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/05.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/06.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/07.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/08.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/09.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/10.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/11.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/12.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/13.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/14.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/15.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/16.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/17.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/18.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/19.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/20.xml": {
+        "MAYBE": 1
+    },
+    "Endrullis_06\/direct.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Endrullis_06\/linear1.xml": {
+        "MAYBE": 1
+    },
+    "Endrullis_06\/linear2.xml": {
+        "MAYBE": 1
+    },
+    "Endrullis_06\/pair3rotate.xml": {
+        "MAYBE": 1
+    },
+    "Endrullis_06\/pair3swap.xml": {
+        "MAYBE": 1
+    },
+    "Endrullis_06\/quadruple1.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Endrullis_06\/quadruple2.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/107193.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/107220.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/107236.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/123759.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/124211.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/124269.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/124791.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/127538.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/128056.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/128182.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/128280.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/128430.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/128486.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/128515.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/128550.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/128620.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/128691.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/130161.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/130304.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/130472.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/130962.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/131633.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/131982.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/132235.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/132478.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/132540.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/132611.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/132622.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/132720.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/132738.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/132782.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/132833.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/132848.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/132864.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/132920.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/132957.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/132969.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/133010.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/133079.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/133159.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/133236.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/133432.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/133486.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/133532.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/133827.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/133881.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/134918.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/135115.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/135328.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/135410.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/135505.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/135601.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/135604.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/135652.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/135659.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/135714.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/135782.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/135936.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/136051.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/136280.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/136323.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/136354.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/136463.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/136497.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/136534.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/136562.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/136571.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/136601.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/136623.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/136693.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/136934.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/137087.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/137136.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/137316.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/137404.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/137621.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/137623.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/137715.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/137799.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/137809.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/137956.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/138089.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/138142.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/138194.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/138254.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/138269.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/138330.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/138468.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/138477.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/138993.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/139004.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/139018.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/139025.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/139036.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/139100.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/139163.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/139167.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/139174.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/139180.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/139185.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/139190.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/139214.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/139236.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/139256.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/139282.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/139310.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/139378.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/140287.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/140318.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/140359.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/140631.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/140639.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/140654.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/140659.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/140664.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/142142.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/142146.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/142150.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/142157.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/147437.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/148543.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/149251.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/149277.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/149297.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/149319.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/149361.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/149415.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/149633.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/149713.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/149849.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/149915.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/150067.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/150188.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/150258.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/150468.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/150630.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/150725.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/150815.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/150839.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/150877.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/151247.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/152694.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/152786.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/152865.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/152949.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/153034.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/153090.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/153170.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/153243.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/153288.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/153371.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/153444.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/157150.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/157161.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/157275.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/157388.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/157436.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/157466.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/157593.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/157603.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/157713.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/158152.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/158208.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/158342.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/158477.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/158620.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/159731.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/160068.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/160210.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/160234.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/160254.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/160263.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/160324.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/160364.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/160398.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/160427.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/160462.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/160475.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/160660.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/161519.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/161533.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/161593.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/161864.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/161917.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/161930.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/162016.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/162075.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/162095.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/162244.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/165713.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/165755.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/165904.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/165936.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/165975.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/166001.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/166465.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/166493.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/166558.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/166848.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/167041.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/167087.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/167240.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/167294.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/167310.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/167391.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/167433.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/167452.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/167526.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/167636.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/167742.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/180915.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/182946.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/183803.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/184957.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/185453.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/185628.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/186023.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/186222.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/186333.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/186617.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/186775.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/186810.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/186919.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/186973.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/187254.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/187837.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/188004.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/188238.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/188261.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/188296.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/188674.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/188696.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/211471.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/211639.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/211857.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/211915.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/211960.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/211978.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/212026.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/212037.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/212043.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/212062.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/212094.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/212117.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/212189.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/212263.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/212308.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/212364.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/212421.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/212480.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/212534.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/212612.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/212693.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/212774.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/212795.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/212892.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/213051.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/213147.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/213218.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/213281.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/213407.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/213437.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/213537.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/213560.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/213611.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/213719.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/213865.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/214011.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/214091.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/214169.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/214183.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/214261.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/214320.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/230780.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/230819.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/230948.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/231043.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/231149.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/231230.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/231300.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/231378.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/231480.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/231604.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/24100.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/246924.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/247020.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/247254.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/247504.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/247906.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/247992.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/248060.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/249386.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/249459.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/249663.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/25192.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/25388.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/25395.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/25409.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/25416.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/25422.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/254704.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/25711.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/25726.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/25731.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/25734.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/25736.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/25743.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/25775.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/25808.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/25849.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/259405.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/259625.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26069.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26103.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26105.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26110.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26116.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26123.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26127.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26130.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26132.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26186.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26226.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26291.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/262998.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/263745.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/264033.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/264370.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/264405.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26683.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26741.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26845.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26862.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26871.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/26875.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26879.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26882.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26886.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26896.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26903.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26910.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26916.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26919.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26923.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26927.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26931.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26933.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26940.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26943.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26946.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26949.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26951.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26954.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26957.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26960.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26965.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26969.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26972.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26974.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26976.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26978.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26980.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26986.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26993.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/26998.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27001.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27003.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27006.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27009.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27013.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27015.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27019.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27023.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27026.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27028.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27030.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27034.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27036.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27039.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27131.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27134.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27213.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/27235.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/27280.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/28293.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/28464.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/28643.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/28838.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/29415.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3268.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3336.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3385.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3450.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3467.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3498.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3533.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3562.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3589.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3633.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3680.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3705.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3729.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3746.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3762.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3770.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/3786.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3817.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3831.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3842.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/3856.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3861.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3865.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3916.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/3927.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3930.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3939.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/39830.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/39849.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3989.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/3995.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4002.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/40033.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/40093.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4017.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4029.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4036.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4046.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4051.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/40540.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4057.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/40708.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4074.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/40976.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4106.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/41378.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4141.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/41427.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4157.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/41688.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4181.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/41838.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/41843.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/41865.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4200.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4206.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/42170.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/42321.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/42466.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4248.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/42683.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4282.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4314.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/43266.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/43603.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/43621.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/43650.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4374.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/43987.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4412.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/44332.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4484.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/4487.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/45720.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/45757.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/45970.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4816.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4819.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4824.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/48262.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/48267.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4827.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/48328.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/48374.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4840.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4847.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4854.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/48686.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4893.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/4920.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4934.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4938.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/4943.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/4953.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4964.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4970.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4979.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/4991.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/5011.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/5076.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/50904.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/5109.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/5130.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/51424.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/51577.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/51842.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/53216.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/54097.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/54532.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/54622.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/56144.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/57132.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/57278.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/57355.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/57453.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/57799.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/57852.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/58125.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/58194.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/58221.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/58301.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/63142.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/64160.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/65081.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/68322.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/68535.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/68989.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/81452.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/84886.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/84977.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/85039.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/85079.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/85267.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/85294.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/85345.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/85380.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/85477.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/85590.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/85650.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/85675.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/85721.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/85749.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/85782.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/85834.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/85874.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/85920.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/86025.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/86052.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/86452.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/86499.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/86526.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/86559.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/86577.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/86617.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/86636.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/86745.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/86816.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/86857.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/88143.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/88156.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/88172.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/88183.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/88208.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/88283.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/91210.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/91218.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/91233.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/91242.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/91254.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/95858.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/95899.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/95952.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/95978.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96029.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96065.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96086.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96104.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96119.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96156.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96176.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96198.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96224.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96239.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96256.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/96274.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96289.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/96302.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96334.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/96370.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96403.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96417.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96438.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96464.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "ICFP_2010\/96485.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96523.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96563.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96612.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96642.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/96673.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/97885.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/97888.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/97901.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/97917.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/97929.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/98362.xml": {
+        "MAYBE": 1
+    },
+    "ICFP_2010\/98623.xml": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/n002.xml": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/n003.xml": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/n004.xml": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/n005.xml": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/n006.xml": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/n008.xml": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/t000.xml": {
+        "YES": 1,
+        "UP": "4"
+    },
+    "HirokawaMiddeldorp_04\/t004.xml": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/t006.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "HirokawaMiddeldorp_04\/t007.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "HirokawaMiddeldorp_04\/t008.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "HirokawaMiddeldorp_04\/t009.xml": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/t010.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "HirokawaMiddeldorp_04\/t011.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "HirokawaMiddeldorp_04\/t012.xml": {
+        "MAYBE": 1
+    },
+    "Bouchare_06\/01.xml": {
+        "MAYBE": 1
+    },
+    "Bouchare_06\/02.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Bouchare_06\/03.xml": {
+        "MAYBE": 1
+    },
+    "Bouchare_06\/04.xml": {
+        "MAYBE": 1
+    },
+    "Bouchare_06\/05.xml": {
+        "MAYBE": 1
+    },
+    "Bouchare_06\/06.xml": {
+        "MAYBE": 1
+    },
+    "Bouchare_06\/07.xml": {
+        "MAYBE": 1
+    },
+    "Bouchare_06\/08.xml": {
+        "MAYBE": 1
+    },
+    "Bouchare_06\/09.xml": {
+        "MAYBE": 1
+    },
+    "Bouchare_06\/10.xml": {
+        "MAYBE": 1
+    },
+    "Bouchare_06\/11.xml": {
+        "MAYBE": 1
+    },
+    "Bouchare_06\/12.xml": {
+        "MAYBE": 1
+    },
+    "Bouchare_06\/13.xml": {
+        "MAYBE": 1
+    },
+    "Bouchare_06\/14.xml": {
+        "MAYBE": 1
+    },
+    "Bouchare_06\/15.xml": {
+        "MAYBE": 1
+    },
+    "Bouchare_06\/16.xml": {
+        "MAYBE": 1
+    },
+    "Bouchare_06\/17.xml": {
+        "MAYBE": 1
+    },
+    "Bouchare_06\/18.xml": {
+        "MAYBE": 1
+    },
+    "AProVE_10\/ex5.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Der95\/01.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Der95\/02.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Der95\/03.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Der95\/04.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Der95\/06.xml": {
+        "MAYBE": 1
+    },
+    "Der95\/07.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Der95\/09.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Der95\/17.xml": {
+        "YES": 1,
+        "UP": "6"
+    },
+    "Der95\/20.xml": {
+        "MAYBE": 1
+    },
+    "Der95\/27.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "CiME_04\/dpqs.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "CiME_04\/filliatre.xml": {
+        "MAYBE": 1
+    },
+    "CiME_04\/filliatre2.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/1-matchbox.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/1.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/10.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/2-matchbox.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/2.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/3-matchbox.xml": {
+        "YES": 1,
+        "UP": "5"
+    },
+    "Secret_06_SRS\/3.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/5-matchbox.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/5.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/6.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/7.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/8.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/9.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/aprove00.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/aprove01.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/aprove02.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/aprove03.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/aprove04.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/aprove05.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/aprove06.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/aprove07.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/aprove08.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/aprove09.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/multum1.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/multum2.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/multum3.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/multum4.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Secret_06_SRS\/multum5.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/multum6.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/secr1.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/secr10.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/secr2.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/secr3.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/secr4.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/secr5.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/secr6.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/secr7.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/secr8.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_SRS\/secr9.xml": {
+        "MAYBE": 1
+    },
+    "Secret_05_TRS\/matchbox2.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Secret_05_TRS\/teparla1.xml": {
+        "MAYBE": 1
+    },
+    "Secret_05_TRS\/teparla2.xml": {
+        "MAYBE": 1
+    },
+    "Secret_05_TRS\/teparla3.xml": {
+        "MAYBE": 1
+    },
+    "Secret_05_TRS\/ttt2.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/dj.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/num-514.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/num-515.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/num-518.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/num-519.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/num-520.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/num-521.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/num-525.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/num-527.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/num-530.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/num-539.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/x01.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/x02.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/x03.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/x04.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/x05.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/x06.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/x07.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/x08.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/x09.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_SRS\/x10.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_TRS\/10.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Secret_06_TRS\/2.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_TRS\/3.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_TRS\/4.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_TRS\/5.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_TRS\/6.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Secret_06_TRS\/7.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Secret_06_TRS\/8.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Secret_06_TRS\/9.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Secret_06_TRS\/tpa01.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_TRS\/tpa02.xml": {
+        "MAYBE": 1
+    },
+    "Secret_06_TRS\/tpa03.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_TRS\/1.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Mixed_TRS\/2.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_TRS\/4.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Mixed_TRS\/6.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_TRS\/beans.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_TRS\/Ex1_Luc04b_GM.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_TRS\/jones1.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Mixed_TRS\/jones4.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Mixed_TRS\/jones6.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Mixed_SRS\/01-oppelt08.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/01.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/02-oppelt08.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/02.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/03-oppelt08.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/03.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/04-oppelt08.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/04.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/05-oppelt08.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/05.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/06-oppelt08.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/06.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/07-oppelt08.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/07.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/08-oppelt08.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/08.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/09.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/1.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/2.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/3.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Mixed_SRS\/4.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/s6.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Mixed_SRS\/touzet.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/turing_add.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Mixed_SRS\/turing_copy.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_SRS\/turing_mult.xml": {
+        "MAYBE": 1
+    },
+    "Secret_05_SRS\/aprove1.xml": {
+        "MAYBE": 1
+    },
+    "Secret_05_SRS\/aprove2.xml": {
+        "MAYBE": 1
+    },
+    "Secret_05_SRS\/aprove3.xml": {
+        "MAYBE": 1
+    },
+    "Secret_05_SRS\/aprove4.xml": {
+        "MAYBE": 1
+    },
+    "Secret_05_SRS\/aprove5.xml": {
+        "MAYBE": 1
+    },
+    "Secret_05_SRS\/jambox1.xml": {
+        "MAYBE": 1
+    },
+    "Secret_05_SRS\/jambox2.xml": {
+        "MAYBE": 1
+    },
+    "Secret_05_SRS\/jambox3.xml": {
+        "MAYBE": 1
+    },
+    "Secret_05_SRS\/jambox4.xml": {
+        "MAYBE": 1
+    },
+    "Secret_05_SRS\/jambox5.xml": {
+        "MAYBE": 1
+    },
+    "Secret_05_SRS\/matchbox1.xml": {
+        "YES": 1,
+        "UP": "9"
+    },
+    "Secret_05_SRS\/matchbox2.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Secret_05_SRS\/torpa1.xml": {
+        "MAYBE": 1
+    },
+    "Secret_05_SRS\/torpa2.xml": {
+        "MAYBE": 1
+    },
+    "Secret_05_SRS\/torpa3.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Secret_05_SRS\/torpa4.xml": {
+        "MAYBE": 1
+    },
+    "Rubio_04\/aoto.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Rubio_04\/bintrees.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Rubio_04\/bn129.xml": {
+        "MAYBE": 1
+    },
+    "Rubio_04\/gmnp.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Rubio_04\/koen.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Rubio_04\/lescanne.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Rubio_04\/lindau.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Rubio_04\/mfp90b.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Rubio_04\/mfp95.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Rubio_04\/nestrec.xml": {
+        "MAYBE": 1
+    },
+    "Rubio_04\/p266.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Rubio_04\/test4.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Rubio_04\/test829.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Trafo_06\/dup01.xml": {
+        "YES": 1,
+        "UP": "5"
+    },
+    "Trafo_06\/dup05.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/dup06.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/dup07.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/dup08.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/dup09.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/dup10.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/dup11.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/dup12.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/dup13.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/dup14.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/dup15.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/dup16.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Trafo_06\/dup17.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/hom01.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/hom02.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/hom03.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/un02.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/un04.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/un05.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/un06.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/un07.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/un08.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/un09.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/un10.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/un11.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/un12.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/un13.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/un14.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/un15.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/un16.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/un17.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/un18.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_mixed_05\/ex1.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_mixed_05\/ex3.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_mixed_05\/ex4.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_mixed_05\/ex5.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_mixed_05\/ex6.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_mixed_05\/gkg.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_mixed_05\/n001.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_mixed_05\/test830.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Various_04\/07.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Various_04\/15.xml": {
+        "MAYBE": 1
+    },
+    "Various_04\/18.xml": {
+        "YES": 1,
+        "UP": "3"
+    },
+    "Various_04\/19.xml": {
+        "MAYBE": 1
+    },
+    "Various_04\/21.xml": {
+        "YES": 1,
+        "UP": "7"
+    },
+    "Various_04\/23.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Various_04\/24.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Various_04\/25.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Various_04\/27.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex14_AEGL02_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex14_Luc06_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex15_Luc06_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex15_Luc06_FR.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Transformed_CSR_04\/Ex15_Luc06_GM.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Transformed_CSR_04\/Ex15_Luc06_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex15_Luc06_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex15_Luc06_Z.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex15_Luc98_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex16_Luc06_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex16_Luc06_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex16_Luc06_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex16_Luc06_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex16_Luc06_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex18_Luc06_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex18_Luc06_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex18_Luc06_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex18_Luc06_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex18_Luc06_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex18_Luc06_Z.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_2_Luc02c_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_GL02a_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_GM03_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_GM99_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Luc02b_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Luc04b_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Luc04b_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Luc04b_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Luc04b_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Luc04b_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Luc04b_Z.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Zan97_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Zan97_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Zan97_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Zan97_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Zan97_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex23_Luc06_C.xml": {
+        "YES": 1,
+        "UP": "16"
+    },
+    "Transformed_CSR_04\/Ex23_Luc06_FR.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Transformed_CSR_04\/Ex23_Luc06_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex23_Luc06_iGM.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Transformed_CSR_04\/Ex23_Luc06_L.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex23_Luc06_Z.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex24_GM04_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex24_Luc06_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex25_Luc06_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex25_Luc06_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex25_Luc06_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex25_Luc06_iGM.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Transformed_CSR_04\/Ex25_Luc06_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex25_Luc06_Z.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex26_Luc03b_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex2_Luc03b_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex3_12_Luc96a_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex3_2_Luc97_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex3_3_25_Bor03_L.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex49_GM04_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex4_4_Luc96b_L.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex4_7_15_Bor03_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex4_7_15_Bor03_FR.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Transformed_CSR_04\/Ex4_7_15_Bor03_GM.xml": {
+        "YES": 1,
+        "UP": "3"
+    },
+    "Transformed_CSR_04\/Ex4_7_15_Bor03_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex4_7_15_Bor03_L.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex4_7_15_Bor03_Z.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex4_7_56_Bor03_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex4_7_77_Bor03_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex4_7_77_Bor03_FR.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex4_7_77_Bor03_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex4_7_77_Bor03_iGM.xml": {
+        "YES": 1,
+        "UP": "3"
+    },
+    "Transformed_CSR_04\/Ex4_7_77_Bor03_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex4_DLMMU04_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex4_Zan97_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex5_7_Luc97_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex5_DLMMU04_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex5_Zan97_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex5_Zan97_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex5_Zan97_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex5_Zan97_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex5_Zan97_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex5_Zan97_Z.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex6_15_AEL02_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex6_9_Luc02c_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex6_GM04_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex6_GM04_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex6_GM04_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex6_GM04_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex6_GM04_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex6_Luc98_L.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex7_BLR02_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex8_BLR02_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex9_BLR02_L.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex9_Luc06_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex9_Luc06_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex9_Luc06_GM.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Transformed_CSR_04\/Ex9_Luc06_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExConc_Zan97_C.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Transformed_CSR_04\/ExConc_Zan97_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExConc_Zan97_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExConc_Zan97_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExConc_Zan97_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExConc_Zan97_Z.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM01_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM01_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM01_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM01_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM01_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM01_Z.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM04_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM04_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM04_GM.xml": {
+        "YES": 1,
+        "UP": "3"
+    },
+    "Transformed_CSR_04\/ExIntrod_GM04_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM04_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM04_Z.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM99_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExProp7_Luc06_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExProp7_Luc06_FR.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Transformed_CSR_04\/ExProp7_Luc06_GM.xml": {
+        "YES": 1,
+        "UP": "12"
+    },
+    "Transformed_CSR_04\/ExProp7_Luc06_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExProp7_Luc06_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExProp7_Luc06_Z.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExSec4_2_DLMMU04_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_complete-noand_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_complete_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nokinds-noand_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nokinds_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts-noand_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts-noand_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts_noand_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts_noand_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts_noand_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_complete-noand_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_complete_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nokinds-noand_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nokinds_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nosorts-noand_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nosorts_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/MYNAT_complete-noand_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/MYNAT_complete_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/MYNAT_nokinds-noand_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/MYNAT_nokinds_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/MYNAT_nosorts-noand_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_complete-noand_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_complete_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nokinds-noand_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nokinds_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts-noand_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts-noand_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts-noand_Z.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_noand_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_noand_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_noand_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_Z.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_complete-noand_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_complete_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds-noand_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds-noand_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds-noand_Z.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds_noand_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds_noand_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds_noand_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nokinds_Z.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nosorts-noand_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nosorts-noand_L.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Transformed_CSR_04\/PALINDROME_nosorts_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nosorts_FR.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nosorts_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nosorts_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nosorts_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nosorts_noand_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nosorts_noand_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PALINDROME_nosorts_noand_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_complete-noand_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_complete_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_nokinds-noand_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_nokinds_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_nosorts-noand_FR.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Transformed_CSR_04\/PEANO_nosorts-noand_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_nosorts_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_nosorts_FR.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Transformed_CSR_04\/PEANO_nosorts_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_nosorts_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_nosorts_L.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_nosorts_noand_C.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_nosorts_noand_GM.xml": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_nosorts_noand_iGM.xml": {
+        "MAYBE": 1
+    },
+    "SK90\/2.01.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/2.02.xml": {
+        "YES": 1,
+        "UP": "3"
+    },
+    "SK90\/2.03.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/2.04.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/2.06.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/2.09.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/2.10.xml": {
+        "MAYBE": 1
+    },
+    "SK90\/2.11.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/2.14.xml": {
+        "MAYBE": 1
+    },
+    "SK90\/2.31.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/2.33.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/2.34.xml": {
+        "MAYBE": 1
+    },
+    "SK90\/2.36.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/2.38.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/2.39.xml": {
+        "YES": 1,
+        "UP": "6"
+    },
+    "SK90\/2.41.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/2.42.xml": {
+        "MAYBE": 1
+    },
+    "SK90\/2.46.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/2.47.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/2.48.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/2.49.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/2.50.xml": {
+        "MAYBE": 1
+    },
+    "SK90\/2.53.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/2.54.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/2.55.xml": {
+        "MAYBE": 1
+    },
+    "SK90\/2.56.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/2.60.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/2.61.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.01.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.04.xml": {
+        "MAYBE": 1
+    },
+    "SK90\/4.07.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/4.08.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/4.11.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/4.12.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/4.15.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/4.16.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.19.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.25.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/4.26.xml": {
+        "YES": 1,
+        "UP": "10"
+    },
+    "SK90\/4.27.xml": {
+        "MAYBE": 1
+    },
+    "SK90\/4.29.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/4.30.xml": {
+        "YES": 1,
+        "UP": "3"
+    },
+    "SK90\/4.32.xml": {
+        "MAYBE": 1
+    },
+    "SK90\/4.33.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.34.xml": {
+        "MAYBE": 1
+    },
+    "SK90\/4.35.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.36.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.37.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.38.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/4.39.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/4.43.xml": {
+        "MAYBE": 1
+    },
+    "SK90\/4.44.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.45.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.46.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.47.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.48.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.51.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.52.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/4.55.xml": {
+        "MAYBE": 1
+    },
+    "SK90\/4.56.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Secret_07_TRS\/1.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_TRS\/2.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_TRS\/3.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_TRS\/4.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_TRS\/5.xml": {
+        "MAYBE": 1
+    },
+    "Secret_07_TRS\/7.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/Ex1_Zan97.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/Ex4_7_15_Bor03.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/Ex4_7_77_Bor03.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/Ex5_Zan97.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/Ex6_GM04.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/ExConc_Zan97.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/ExIntrod_GM01.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/ExIntrod_GM04.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_AG01\/#4.17.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_AG01\/#4.18.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_AG01\/#4.20.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Strategy_removed_AG01\/#4.20a.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Strategy_removed_AG01\/#4.21.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Strategy_removed_AG01\/#4.25.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_AG01\/#4.28.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Strategy_removed_AG01\/#4.37.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Strategy_removed_AG01\/#4.37a.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw01.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw02.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw03.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw04.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw05.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw06.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw07.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw08.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw09.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw11.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw12.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw13.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw14.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw15.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw16.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw17.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw18.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/jw19.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw20.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw21.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw22.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw23.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw24.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw25.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw26.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw27.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw28.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw29.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw30.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw31.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw32.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw33.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw34.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw35.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw36.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw37.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw38.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw39.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw40.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw41.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw42.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw43.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/jw44.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Zantema_05\/jw47.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Zantema_05\/jw50.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/z01.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z02.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/z03.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/z05.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z06.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z07.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z08.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z11.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z12.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z13.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z14.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z15.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z16.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z17.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z18.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z19.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z20.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z21.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z22.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z23.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z24.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z25.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z26.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Zantema_05\/z29.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z30.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/syracuse.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z001.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z002.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z003.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z004.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z005.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z006.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z007.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Zantema_04\/z008.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z009.xml": {
+        "YES": 1,
+        "UP": "3"
+    },
+    "Zantema_04\/z010.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z011.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z012.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z013.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z014.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z015.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z017.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z018.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z019.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z020.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z021.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z022.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z023.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z024.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z025.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Zantema_04\/z026.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z027.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z028.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z029.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z030.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z031.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z032.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z033.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z034.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z035.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z036.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z037.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z038.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z039.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z040.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z041.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z042.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z043.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z044.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z045.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z046.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z047.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z048.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z049.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z050.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z051.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z052.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z053.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z054.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z055.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z056.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z057.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z058.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z059.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z060.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z061.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z062.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z063.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z064.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z065.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z066.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Zantema_04\/z067.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z068.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Zantema_04\/z069.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z070.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z071.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z072.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z073.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z074.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z075.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z076.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z077.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z078.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z079.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z080.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z081.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z082.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z083.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z084.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Zantema_04\/z085.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z086.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z087.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z088.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z089.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z090.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z091.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z092.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Zantema_04\/z093.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Zantema_04\/z094.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z095.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z096.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z097.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z098.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z100.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z101.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z102.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z103.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z104.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z105.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z106.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Zantema_04\/z107.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z108.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z109.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z110.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z111.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z112.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z113.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z114.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z115.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z116.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_04\/z117.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z118.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z119.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z120.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z121.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z122.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z123.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z124.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Zantema_04\/z125.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z126.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z127.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z128.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/01.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/02.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/03.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/04.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/05.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/06.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/07.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/08.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/09.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/10.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/11.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/12.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/13.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/14.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/15.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/16.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Zantema_06\/17.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_06\/18.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/abc.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/beans1.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Zantema_06\/beans2.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/beans3.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/beans4.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/beans5.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/beans6.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/beans7.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/loop1.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/loop2.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/while1.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/while2.xml": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Waldmann_06_SRS\/e.xml": {
+        "YES": 1,
+        "UP": "3"
+    },
+    "Waldmann_06_SRS\/jw1.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06_SRS\/jw3.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06_SRS\/jw4.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06_SRS\/jw5.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06_SRS\/pi.xml": {
+        "YES": 1,
+        "UP": "4"
+    },
+    "Waldmann_06_SRS\/sym-1.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06_SRS\/sym-2.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06_SRS\/sym-4.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06_SRS\/sym-5.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06_SRS\/sym-6.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06_SRS\/uni-1.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06_SRS\/uni-2.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06_SRS\/uni-3.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06_SRS\/uni-4.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06_SRS\/uni-5.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06_SRS\/uni-6.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06_SRS\/uni-7.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06_SRS\/z086-variant.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwaprove1.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwaprove2.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwcime1.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwcime2.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Waldmann_06\/jwmatchb1.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwmatchb2.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwno1.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwno2.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwno3.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwno4.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwno5.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwno6.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwno7.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwno8.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwno9.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwtpa1.xml": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Waldmann_06\/jwtpa2.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwttt.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-1.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-10.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-11.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-12.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-13.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-14.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-15.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-16.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-17.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-18.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-19.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-2.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-20.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-21.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-22.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-3.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-4.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-5.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-6.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-7.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-8.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-1.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-10.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-100.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-101.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-104.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-105.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-106.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-107.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-108.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-109.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-11.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-110.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-111.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-112.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-113.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-114.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-120.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-121.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-122.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-123.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-124.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-125.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-126.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-127.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-128.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-129.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-13.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-131.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-132.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-133.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-134.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-135.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-14.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-140.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-146.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-149.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-15.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-152.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-158.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-159.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-16.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-160.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-163.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-164.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-165.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-168.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-17.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-170.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-174.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-176.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-177.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-178.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-179.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-180.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-181.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-186.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-19.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-190.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-191.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-194.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-195.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-198.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-199.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-20.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-200.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-201.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-202.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-203.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-204.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-206.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-207.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-209.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-21.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-210.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-211.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-213.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-215.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-217.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-219.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-22.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-220.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-221.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-222.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-223.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-224.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-225.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-226.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-227.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-23.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-231.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-232.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-233.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-236.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-237.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-238.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-239.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-241.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-243.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-247.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-248.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-249.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-255.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-257.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-260.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-263.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-265.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-267.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-270.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-271.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-272.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-273.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-274.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-275.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-279.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-281.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-282.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-283.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-284.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-285.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-286.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-287.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-288.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-289.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-291.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-292.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-293.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-294.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-296.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-297.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-298.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-299.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-3.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-30.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-300.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-301.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-303.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-304.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-309.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-31.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-32.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-327.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-328.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-330.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-335.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-337.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-338.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-339.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-340.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-341.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-343.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-345.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-346.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-347.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-348.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-35.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-350.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-351.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-352.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-353.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-354.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-355.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-356.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-359.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-360.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-361.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-362.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-363.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-366.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-367.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-368.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-369.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-373.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-374.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-375.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-376.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-377.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-378.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-382.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-383.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-384.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-385.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-386.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-389.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-391.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-392.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-395.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-396.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-399.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-4.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-40.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-400.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-401.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-402.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-403.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-406.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-408.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-409.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-41.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-410.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-412.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-413.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-414.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-415.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-416.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-417.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-418.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-427.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-429.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-430.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-431.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-434.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-435.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-436.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-437.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-438.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-439.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-44.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-441.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-443.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-446.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-448.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-45.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-450.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-451.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-452.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-453.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-454.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-455.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-456.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-460.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-461.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-462.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-465.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-467.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-468.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-469.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-47.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-470.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-472.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-473.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-474.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-475.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-476.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-477.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-478.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-479.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-48.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-480.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-482.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-484.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-485.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-487.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-488.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-489.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-49.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-491.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-492.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-493.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-494.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-495.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-497.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-498.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-499.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-502.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-503.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-506.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-507.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-508.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-51.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-511.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-52.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-522.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-526.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-532.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-535.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-536.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-540.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-541.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-543.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-545.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-546.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-547.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-548.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-549.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-550.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-551.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-552.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-553.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-556.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-558.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-559.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-560.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-561.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-563.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-564.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-565.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-566.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-568.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-57.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-59.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-61.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-64.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-65.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-66.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-67.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-7.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-70.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-71.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-72.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-74.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-76.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-82.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-83.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-84.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-85.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-86.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-88.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-9.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-90.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-91.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-92.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-94.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-95.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-98.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-99.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-2-num-1.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-2-num-2.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-2-num-3.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-2-num-4.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-1.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-10.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-11.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-12.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-13.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-14.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-15.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-16.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-17.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-18.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-19.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-2.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-20.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-21.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-3.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-4.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-5.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-6.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-7.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-8.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-9.xml": {
+        "MAYBE": 1
+    }
+}

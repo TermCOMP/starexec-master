@@ -1,0 +1,326 @@
+{
+    "Transformed_outermost_08\/cariboo_ex1.xml": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/cariboo_ex2.xml": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/cariboo_ex3.xml": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/cariboo_ex4.xml": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/cariboo_ex5.xml": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/cariboo_ex6.xml": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/ex5.3.xml": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/ex5.4.xml": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/ex5.5.xml": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/ex5.6.xml": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/ex5.7.xml": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/ex5.8.xml": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/f20.xml": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/f30.xml": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/f4.xml": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/f40.xml": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/morse.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex14_AEGL02.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex14_Luc06.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex15_Luc06.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex15_Luc98.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex16_Luc06.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex18_Luc06.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex1_2_AEL03.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex1_2_Luc02c.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex1_GL02a.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex1_GM03.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex1_GM99.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex1_Luc02b.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex1_Luc04b.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex1_Zan97.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex23_Luc06.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex24_GM04.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex24_Luc06.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex25_Luc06.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex26_Luc03b.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex2_Luc02a.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex2_Luc03b.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex3_12_Luc96a.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex3_2_Luc97.xml": {
+        "MAYBE": 1
+    },
+    "CSR_04\/Ex3_3_25_Bor03.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex49_GM04.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex4_4_Luc96b.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex4_7_15_Bor03.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex4_7_37_Bor03.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex4_7_56_Bor03.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex4_7_77_Bor03.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex4_DLMMU04.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex4_Zan97.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex5_7_Luc97.xml": {
+        "MAYBE": 1
+    },
+    "CSR_04\/Ex5_DLMMU04.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex5_Zan97.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex6_15_AEL02.xml": {
+        "MAYBE": 1
+    },
+    "CSR_04\/Ex6_9_Luc02c.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex6_GM04.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex6_Luc98.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex7_BLR02.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex8_BLR02.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex9_BLR02.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex9_Luc04.xml": {
+        "YES": 1
+    },
+    "CSR_04\/Ex9_Luc06.xml": {
+        "YES": 1
+    },
+    "CSR_04\/ExAppendixB_AEL03.xml": {
+        "YES": 1
+    },
+    "CSR_04\/ExConc_Zan97.xml": {
+        "YES": 1
+    },
+    "CSR_04\/ExIntrod_GM01.xml": {
+        "YES": 1
+    },
+    "CSR_04\/ExIntrod_GM04.xml": {
+        "YES": 1
+    },
+    "CSR_04\/ExIntrod_GM99.xml": {
+        "YES": 1
+    },
+    "CSR_04\/ExIntrod_Zan97.xml": {
+        "YES": 1
+    },
+    "CSR_04\/ExProp7_Luc06.xml": {
+        "YES": 1
+    },
+    "CSR_04\/ExSec11_1_Luc02a.xml": {
+        "YES": 1
+    },
+    "CSR_04\/ExSec4_2_DLMMU04.xml": {
+        "YES": 1
+    },
+    "Maude_06\/csrdiv.xml": {
+        "YES": 1
+    },
+    "Maude_06\/emmes.xml": {
+        "YES": 1
+    },
+    "Maude_06\/LengthOfFiniteLists_complete-noand.xml": {
+        "YES": 1
+    },
+    "Maude_06\/LengthOfFiniteLists_complete.xml": {
+        "YES": 1
+    },
+    "Maude_06\/LengthOfFiniteLists_nokinds-noand.xml": {
+        "YES": 1
+    },
+    "Maude_06\/LengthOfFiniteLists_nokinds.xml": {
+        "YES": 1
+    },
+    "Maude_06\/LengthOfFiniteLists_nosorts-noand.xml": {
+        "NO": 1
+    },
+    "Maude_06\/LengthOfFiniteLists_nosorts.xml": {
+        "NO": 1
+    },
+    "Maude_06\/LISTUTILITIES_complete-noand.xml": {
+        "YES": 1
+    },
+    "Maude_06\/LISTUTILITIES_complete.xml": {
+        "MAYBE": 1
+    },
+    "Maude_06\/LISTUTILITIES_nokinds-noand.xml": {
+        "YES": 1
+    },
+    "Maude_06\/LISTUTILITIES_nokinds.xml": {
+        "MAYBE": 1
+    },
+    "Maude_06\/LISTUTILITIES_nosorts-noand.xml": {
+        "YES": 1
+    },
+    "Maude_06\/LISTUTILITIES_nosorts.xml": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_complete-noand-peanoSimple.xml": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_complete-noand.xml": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_complete-peanoSimple.xml": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_complete.xml": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_nokinds-noand-peanoSimple.xml": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_nokinds-noand.xml": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_nokinds-peanoSimple.xml": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_nokinds.xml": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_nosorts-noand-peanoSimple.xml": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_nosorts-noand.xml": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_nosorts-peanoSimple.xml": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_nosorts.xml": {
+        "YES": 1
+    },
+    "Maude_06\/OvConsOS_complete-noand.xml": {
+        "YES": 1
+    },
+    "Maude_06\/OvConsOS_complete.xml": {
+        "MAYBE": 1
+    },
+    "Maude_06\/OvConsOS_nokinds-noand.xml": {
+        "YES": 1
+    },
+    "Maude_06\/OvConsOS_nokinds.xml": {
+        "MAYBE": 1
+    },
+    "Maude_06\/OvConsOS_nosorts-noand.xml": {
+        "NO": 1
+    },
+    "Maude_06\/OvConsOS_nosorts.xml": {
+        "NO": 1
+    },
+    "Maude_06\/PALINDROME_complete-noand.xml": {
+        "YES": 1
+    },
+    "Maude_06\/PALINDROME_complete.xml": {
+        "YES": 1
+    },
+    "Maude_06\/PALINDROME_nokinds-noand.xml": {
+        "YES": 1
+    },
+    "Maude_06\/PALINDROME_nokinds.xml": {
+        "YES": 1
+    },
+    "Maude_06\/PALINDROME_nosorts-noand.xml": {
+        "YES": 1
+    },
+    "Maude_06\/PALINDROME_nosorts.xml": {
+        "YES": 1
+    }
+}

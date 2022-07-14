@@ -1,0 +1,1901 @@
+{
+    "AProVE_numeric\/avg-true-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/binomial-true-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/et1-true-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/et2-true-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/et3-true-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/et4-true-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/ex2-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/ex3-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/le-user-def-rec-true.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/log-recursive-c-true.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/parts-true-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/rec-counter1-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-a-01-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-a-04-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-a-05-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-a-06-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-a-07-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-a-08-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-a-09-assume-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-a-10-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-ackermann01-true-unreach-call-modified-modified-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-addition01-true-unreach-call-true-termination-modified-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-01-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-b-02-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-03-assume-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-03-no-inv-assume-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-b-04-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-05-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-06-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-b-07-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-09-assume-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-09-no-inv-assume-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-10-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-11-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-12-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-13-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-14-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-15-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-16-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-17-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-18-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-c-01-assume-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-c-01-no-inv-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-c-02-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-c-03-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-c-07-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-c-08-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-easy-sum-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-even-odd-01-true-unrech-call-true-termination-modified-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-ex1-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-ex2-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-ex3a-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-ex3b-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-fermat-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-fibonacci-01-true-unreach-call-modified-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-flag-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-gcd-01-true-unreach-call-true-termination-modified-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-java-ag313-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-java-break-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-java-continue-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-java-log-built-in-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-java-nested-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-java-sequence-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-mult-commutative-true-unreach-call-true-termination-modified-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-rec-hanoi02-true-unreach-call-true-termination-modified.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-twisted-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/terminator-rec-02-true.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/two-way-true.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/addneg.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/and1.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/and2.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/divrempredef.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/dyck.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/equality1.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/equality2.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/even.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/even2.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/even3.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/existpredef.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/grammar.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/inequality1.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/inequality2.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/lateinstance.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/nonterm.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/nounify.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/term.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/term2.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/terminate.pl": {
+        "MAYBE": 1
+    },
+    "Euler_queensu-cs260\/count.pl": {
+        "MAYBE": 1
+    },
+    "Euler_queensu-cs260\/countall.pl": {
+        "MAYBE": 1
+    },
+    "Euler_queensu-cs260\/euler-01.pl": {
+        "MAYBE": 1
+    },
+    "Euler_queensu-cs260\/euler-02-nonterm.pl": {
+        "MAYBE": 1
+    },
+    "Euler_queensu-cs260\/euler-02.pl": {
+        "YES": 1
+    },
+    "Euler_queensu-cs260\/euler-03.pl": {
+        "MAYBE": 1
+    },
+    "Euler_queensu-cs260\/euler-04.pl": {
+        "MAYBE": 1
+    },
+    "Euler_queensu-cs260\/evenspaced.pl": {
+        "YES": 1
+    },
+    "Euler_queensu-cs260\/evenspaced2.pl": {
+        "YES": 1
+    },
+    "Euler_queensu-cs260\/evenspacedwithdiff.pl": {
+        "YES": 1
+    },
+    "Euler_queensu-cs260\/gcd.pl": {
+        "YES": 1
+    },
+    "Euler_queensu-cs260\/insert.pl": {
+        "YES": 1
+    },
+    "Euler_queensu-cs260\/isort.pl": {
+        "YES": 1
+    },
+    "Euler_queensu-cs260\/prime.pl": {
+        "MAYBE": 1
+    },
+    "Art-of-prolog\/exercise_area.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_between.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_hanoi.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_length.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_min.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_power.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_power2.pl": {
+        "MAYBE": 1
+    },
+    "Art-of-prolog\/exercise_range.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_squareroot.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_timeslist.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_triangle.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_triangle2.pl": {
+        "MAYBE": 1
+    },
+    "Art-of-prolog\/program-8-1.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-10.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-11.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-12.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-2.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-3.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-4.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-5.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-6-a.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-6-b.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-7-a.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-7-b.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-8.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-9.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/append_linear.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/existential.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/hidden_flatten.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/len.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/less1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/less2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/max_valued.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/negationasfailure.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/psk01.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/psk02.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/psk03.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/shape.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/shuffle.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/soundex.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/star1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/star2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/thief1.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_09\/thief2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_08\/appendex.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_08\/divminus.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_08\/divminuslinear.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_08\/minus1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_08\/minus2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_08\/minus3.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_08\/minus4.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_08\/negationasfailure.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_08\/short1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Schneider_Kamp_08\/short2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/add1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/add2.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/add3.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/app1.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/app2.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/app3.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/applast.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/average1.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/bappend.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/blist.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/blist2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/btappend.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/btapplast.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/btree.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/btree2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/confdel.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/convert.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/countstack.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/countstack2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/cutpos1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/cutpos2.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/dependency.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/dependency2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/divminus2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/divremain.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/divremain2.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/duplicate1.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/duplicate2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/evenodd1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/evenodd2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/flatten.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/fold1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/fold2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/fold3.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/giesl97.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/gopher1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/gopher2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/inorder-oi.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/len.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/len2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/less.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/lessleaves.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/list.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/list2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/lte1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/lte2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/map.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/mul1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/num.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/num2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/ordered.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/ordered2.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/ordered3.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/overlap1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/overlap2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/plumer356.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/plumer453a.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/plumer453b.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/plumer453c.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/preorder.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/prime_fact.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/quot1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/quot2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/rev.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/rev2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/select1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/select2.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/subset-oi.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/times1.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/transpose1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/tree.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/tree2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/ts01.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/ts02.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/ts03.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/Stroeder_09\/vlcnd.pl": {
+        "MAYBE": 1
+    },
+    "prolog_mixed\/curry_ap.pl": {
+        "MAYBE": 1
+    },
+    "prolog_mixed\/dc_schema.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/factorial.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/fib-oi.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/fib.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/gtsolve.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/hanoi.pl": {
+        "MAYBE": 1
+    },
+    "prolog_mixed\/kay4.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/mergesort.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/mergesort_ap_variant.pl": {
+        "MAYBE": 1
+    },
+    "prolog_mixed\/numbervars.pl": {
+        "MAYBE": 1
+    },
+    "prolog_mixed\/permute2.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/primes.pl": {
+        "MAYBE": 1
+    },
+    "prolog_mixed\/psk09-cycle.pl": {
+        "MAYBE": 1
+    },
+    "prolog_mixed\/psk09-distance.pl": {
+        "MAYBE": 1
+    },
+    "prolog_mixed\/quicksort.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/taboch_queens.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/tautology.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/terminweb_queens.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/totient.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_03.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_04.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_11.pl": {
+        "MAYBE": 1
+    },
+    "Hett\/p1_12.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_13.pl": {
+        "MAYBE": 1
+    },
+    "Hett\/p1_15.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_16.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_17.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_18.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_19.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_20.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_21.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_22.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_27_a.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_27_b.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_28_a.pl": {
+        "YES": 1
+    },
+    "Hett\/p2_01.pl": {
+        "YES": 1
+    },
+    "Hett\/p2_02.pl": {
+        "MAYBE": 1
+    },
+    "Hett\/p2_03.pl": {
+        "MAYBE": 1
+    },
+    "Hett\/p2_04.pl": {
+        "MAYBE": 1
+    },
+    "Hett\/p2_05.pl": {
+        "MAYBE": 1
+    },
+    "Hett\/p2_06.pl": {
+        "MAYBE": 1
+    },
+    "Hett\/p2_07.pl": {
+        "YES": 1
+    },
+    "Hett\/p2_08.pl": {
+        "YES": 1
+    },
+    "Hett\/p2_09.pl": {
+        "YES": 1
+    },
+    "Hett\/p2_10.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/ackermann-cut.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/ackermann.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/descend-nonterm.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/descend.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/division-nonterm.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/division.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/double-is.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/double.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/extend.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/factorial.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/factorial_and.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/factorial_or.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/fib-cut.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/fibonacci.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/frac-reduce.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/get-from-list-cut.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/get-from-list.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/is.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/prime.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/sum.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/sumrecursive.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/vector.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/aiakl.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/ann.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/bid.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/boyer.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/browse.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/deriv-oii.pl": {
+        "YES": 1
+    },
+    "talp_maria\/deriv.pl": {
+        "YES": 1
+    },
+    "talp_maria\/fib.pl": {
+        "YES": 1
+    },
+    "talp_maria\/grammar.pl": {
+        "YES": 1
+    },
+    "talp_maria\/grammar2.pl": {
+        "YES": 1
+    },
+    "talp_maria\/hanoiapp.pl": {
+        "YES": 1
+    },
+    "talp_maria\/mmatrix.pl": {
+        "YES": 1
+    },
+    "talp_maria\/money.pl": {
+        "YES": 1
+    },
+    "talp_maria\/occur.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/peephole.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/progeom.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/qplan.pl": {
+        "YES": 1
+    },
+    "talp_maria\/qsortapp.pl": {
+        "YES": 1
+    },
+    "talp_maria\/query.pl": {
+        "YES": 1
+    },
+    "talp_maria\/rdtok.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/read.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/serialize.pl": {
+        "YES": 1
+    },
+    "talp_maria\/tak.pl": {
+        "YES": 1
+    },
+    "talp_maria\/tictactoe.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/warplan.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/lpexamples\/ackermann-ioi.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/lpexamples\/ackermann.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/lpexamples\/average-ioi.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/lpexamples\/average.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/lpexamples\/lategen.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/lpexamples\/log2a-oi.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/lpexamples\/log2a.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/lpexamples\/log2b-oi.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/lpexamples\/log2b.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/lpexamples\/mapcolor.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/lpexamples\/mergesort-oi.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/lpexamples\/mergesort.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/lpexamples\/shapes.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/lpexamples\/ts08.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/ackerman.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/append-bff.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/append-ffb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/delete-bbf.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/delete-bfb.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/delete-bff.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/delete-fbf.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/delete-ffb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/delmin-bff.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/delmin-ffb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/der-bf.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/der-fb.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/factor.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/flat-bf.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/flat-fb.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/flatlength-bbf.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/flatlength-bfb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/flatlength-bff.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/flatlength-fbf.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/flatlength-ffb.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/frontier-bf.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/frontier-fb.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/g.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/in-bf.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/in-fb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/inorder-bf.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/inorder-fb.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/insert-bbf.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/insert-bfb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/insert-bff.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/insert-fbf.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/insert-ffb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/length.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/length1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/less-bf.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/less-fb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/list.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/map_color.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/maximum-bff.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/maximum-fbf.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/maximum-ffb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/member-bf.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/member-fb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/mergesort.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/minimum-bf.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/minimum-fb.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/mult.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/naive_reverse-bf.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/naive_reverse-fb.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/numeral.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/ordered.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/p.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/palindrome.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/parse.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/permutation-bf.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/permutation-fb.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/permutation1-fb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/prefix-bf.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/prefix-fb.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/p_nonlin.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/quicksort-bf.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/quicksort-fb.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/reverse-bf.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/reverse-fb.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/search_tree.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/select-bff.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/select-fbf.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/select-ffb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/slowsort-bb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/slowsort-bf.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/slowsort-fb.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/sublist-bf.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/sublist-fb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/subset-bf.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/subset-fb.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/suffix-bf.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/suffix-fb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/sum-fbf.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/sum-ffb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/t.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/transpose-bb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/transpose-bf.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/transpose-fb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/tree.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/tree_member-bf.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/BCGGV05\/tree_member-fb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/append.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/fold.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/list.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/lte.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/map.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/map1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/member.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/mergesort.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/mergesort_ap.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/naive_rev-oi.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/naive_rev.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/ordered.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/overlap.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/permutation.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/quicksort-oi.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/quicksort.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/select.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/select1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/SS_map.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/SS_map_out.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/SS_map_t.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/subset.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/subset1.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_apt\/sum.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/ackermann.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/ag01.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/applast.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/at.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/avg-bfb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/avg.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/baby91.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/bappend.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/blist.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/btappend.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/btapplast.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/btree.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/cconfdel.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/cnfequiv.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/confdel.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/convert.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/countstack.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/csnake.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/d.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/doublehalfpred.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/evenodd.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/factor.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/flatten.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/flatten_phd.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/giesl97.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/gopher.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/hbal_tree.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/ifdiv.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/ifminus.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/incomplete.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/incomplete2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/incomplete_variant.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/intlist.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/lessleaves.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/log.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/mapcolor.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/p.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/palindrome.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/paper1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/paper2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/parse.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/perm.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/plus.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/pplus.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/pplus2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/preorder.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/prime.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/psk09-append_variant.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/psk09-maxsort-bool-nocut.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/p_nonlin.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/quot.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/rev.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/samefringe.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/shuffle.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/snake.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/times.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/times2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/toyama.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/transpose-fb.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/transpose2.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/SGST06\/weight.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/ackerman.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/append3-bis.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/append3.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/balance_tree.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/balance_tree2.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/inorder.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/interleave.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/permutation1.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/permutation2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/reach.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/rotate.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/sameleaves.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/sublist.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/sublist0.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/sublist_bad.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/subset-no.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/subset.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_old\/untupled_bal_tree.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_new\/append-ooi.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_new\/backwards_append.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_new\/basic_append.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_new\/der.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_new\/NJ1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_new\/NJ2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_new\/NJ3.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_new\/NJ4.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_new\/NJ5.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_new\/NJ6.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_new\/preorder_dl.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_new\/som.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_new\/transpose.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_new\/type-based_append.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/terminweb_new\/ways.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/AProVE_10_cut\/lateinst.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/AProVE_10_cut\/latesplit.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/AProVE_10_cut\/ts04.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/AProVE_10_cut\/ts05.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/AProVE_10_cut\/ts06.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/AProVE_10_cut\/ts07.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/AProVE_10_cut\/ts09.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming_with_Cut\/AProVE_10_cut\/ts10.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/ack.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/bad_sublist.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/fib_t.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/flat-oi.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/flat.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/hanoiapp.suc.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/mergesort.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/p.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/perm.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/permute1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/qicksort.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/queens.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/reverse.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/rotate.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/sameleaves.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/sicstus1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/sublist.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/sublist1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_mixed\/zebra.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_dds\/append.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_dds\/dis_con-bis.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_dds\/dis_con.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_dds\/duplicate.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_dds\/merge.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_dds\/permute.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_dds\/reverse-iio.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_dds\/reverse.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_dds\/sum-ioi.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_dds\/sum.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/append.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/binary.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/binary2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/binary3.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/binary4.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/div.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/evaluate.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/example1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/example4-2.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/example4.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/flat.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/gcd.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/nat.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/normal.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/palindrome.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/perm.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/permute.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/qsort.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/reminder-ioi.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/reminder.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/simple.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/slowsort-oi.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/slowsort.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/transitive_closure.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_talp\/vangelder.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/mergesort_t.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl1.1.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl1.2.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl1.2_t.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl2.3.1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl3.1.1.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl3.5.6.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl3.5.6a.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl4.0.1-oooi.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl4.0.1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl4.4.3.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl4.4.6a.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl4.5.2.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl4.5.3a.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl4.5.3b.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl4.5.3c.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl5.2.2.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl6.1.1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl7.2.9.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl7.6.2a.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl7.6.2b.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl7.6.2c.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl8.2.1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl8.2.1a.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl8.3.1.pl": {
+        "MAYBE": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl8.3.1a.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl8.4.1.pl": {
+        "YES": 1
+    },
+    " Programming-2018-07-14 11:02:29.694177 UTC\/Logic_Programming\/talp_plumer\/pl8.4.2.pl": {
+        "YES": 1
+    }
+}
