@@ -90,6 +90,7 @@ $categories = [
 		'Logic Programming' => [
 			'type' => 'termination',
 			'dir' => 'Logic_Programming',
+			'previous' => null,
 			'id' => 33595,
 		],
 		'Integer Transition Systems' => [

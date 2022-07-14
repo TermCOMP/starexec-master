@@ -210,9 +210,13 @@ foreach( $mcats as $mcatname => $cats ) {
 			'refresh' => $refresh,
 		];
 		if( isset($previous) ) {
-			$jobargs['previous-competition'] = $previous;
 			if( array_key_exists('previous',$cat) ) {
-				$jobargs['previous-category'] = $cat['previous'];
+				if( $cat['previous'] != null ) {
+					$jobargs['previous-category'] = $cat['previous'];
+					$jobargs['previous-competition'] = $previous;
+				}
+			} else {
+				$jobargs['previous-competition'] = $previous;
 			}
 		}
 		$query = http_build_query( $jobargs, '', ' ' );

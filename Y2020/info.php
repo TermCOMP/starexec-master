@@ -382,6 +382,7 @@ $categories = [
 			'spaceid' => 425864,
 			'type' => 'complexity',
 			'dir' => 'Derivational_Complexity_Innermost_Rewriting',
+			'previous' => null,
 			'id' => 41500,
 			'participants' => [
 				"TcT" => 360385,

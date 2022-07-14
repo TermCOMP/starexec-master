@@ -62,7 +62,7 @@
 			)
 		);
 	} else {
-		$past_claims = [];
+		$past_claims = null;
 	}
 
 	echo ' <title>'. $competitionname .': '. $jobname .'</title>'.PHP_EOL.
@@ -76,12 +76,13 @@
 ?>
  <span class="headerFollower">Showing
   <select id="resultsFilter" type="text" placeholder="Filter..." oninput="filteredTable.refresh()">
-   <option value="b">started</option>
+   <option value="s">started</option>
    <option value="">all</option>
    <option value="i">interesting</option>
    <option value="c">conflicting</option>
    <option value="u">unsolved</option>
-   <option value="n">new</option>
+   <option value="n">new result</option>
+   <option value="b">new benchmark</option>
    <option value="f">finished</option>
   </select> results.
  </span>
@@ -112,18 +113,18 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		     '   <script>filteredTable.register('.$i.',"filter'.$i.'");</script>'.PHP_EOL;
 	}
 
-	$i = 2;
+	// 2nd column is for the virtual best solver
+	echo '  <th>VBS'.PHP_EOL;
+	makeFilterField(2);
+	$i = 3;
 	foreach( $participants as $configid => &$p ) {
 		echo '  <th><a href="'. solverid2url($p['solver id']).'">'.$p['solver'].'</a>'.PHP_EOL.
 		     '   <a class=config href="'. configid2url($configid) .'">'. $p['configuration'].'</a>'.PHP_EOL;
 		makeFilterField($i);
 		$i++;
 	}
-	// 2nd last column is for the virtual best solver
-	echo '  <th>VBS'.PHP_EOL;
-	makeFilterField($i);
-	if( !empty($past_claims) ) {
-		// the last column is for past results
+	// the last column is for past results
+	if( $past_claims != null ) {
 		echo '  <th>'.$past_competition.PHP_EOL;
 		makeFilterField(++$i);
 	}
@@ -132,7 +133,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 	foreach( $results as $bm_name => $records ) {
 		$bench = [];
 		init_claim_set($claims); /* collects results for each benchmark */
-		if( isset($past_claims) && array_key_exists($bm_name,$past_claims) ) {
+		if( $past_claims != null && array_key_exists($bm_name,$past_claims) ) {
 			$past_claim = (array)$past_claims[$bm_name];
 			add_claim($claims,$past_claim);
 		} else {
@@ -189,7 +190,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				'score' => $score,
 			];
 		}
-		$d = claims2description( $claims, $past_claim ?? [] );
+		$d = claims2description( $claims, $past_claim );
 		$conflicting = $d['conflicting'];
 		if( $conflicting ) {
 			foreach( array_keys($bench) as $me ) {
@@ -212,6 +213,19 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		     '   <a href="'.$bm_url.'">'.format_bm($bm_name).'</a>'.PHP_EOL.
 		     '   <a class="starexecid" href="'.bmid2remote($bm_id).'">'.$bm_id.'</a></td>'.PHP_EOL.
 		     '  <td style="display:none">'.$d['key'];
+		// virtual best solver
+		if( $conflicting ) {
+			echo '  <td>';
+		} else {
+			$claim = $d['vbs'];
+			$vbs_results[$bm_name] = $claim;
+			echo '  <td class="'.claim2class($claim,'').'">'.claim2str($claim).PHP_EOL;
+			$scores = claim2scores($claim,'',$max_score);
+			foreach( $scores as $key => $val ) {
+				$vbs[$key] += $val;
+			}
+		}
+		// solvers
 		foreach( $bench as $me => $my ) {
 			$status = $my['status'];
 			$claim = $my['claim'];
@@ -234,19 +248,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				     (status2complete($status) ? '   <a href="'. $outurl .'">[out]</a>'.PHP_EOL : '' );
 			}
 		}
-		// virtual best solver
-		if( $conflicting ) {
-			echo '  <td>';
-		} else {
-			$claim = $d['vbs'];
-			$vbs_results[$bm_name] = $claim;
-			$claim_str = claim2str($claim);
-			echo '  <td class="'.claim2class($claim,'').'">'.$claim_str.PHP_EOL;
-			$scores = claim2scores($claim,'',$max_score);
-			foreach( $scores as $key => $val ) {
-				$vbs[$key] += $val;
-			}
-		}
+		// past result
 		if( $past_claim != null ) {
 			echo '  <td class="'.claim2class($past_claim,'').'">'.claim2str($past_claim).PHP_EOL;
 		}

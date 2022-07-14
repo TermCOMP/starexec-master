@@ -452,21 +452,26 @@ set_time_limit(300);
 			$nLOW = count(array_filter($LOW,function($low){return $low == $maxLOW;}));
 			$vLOW = count(array_unique($LOW));
 		}
-		$begun = !($YES == 0 && $NO == 0 && $MAYBE == 0 && empty($UP) && empty($LOW));
+		$started = !($YES == 0 && $NO == 0 && $MAYBE == 0 && empty($UP) && empty($LOW));
 		$conflicting = ( $YES > 0 && $NO > 0 ) || isset($minUP) && $minUP < $maxLOW;
 		$interesting = ( ( $YES > 0 || $NO > 0 ) && $MAYBE > 0) || $vUP > 1 || $vLOW > 1;
 		$finished = $togo == 0;
 		$unsolved = $finished && $YES == 0 && $NO == 0 && $nUP == 0 && $nLOW == 0;
-		$new = $interesting && empty($past_claim);
+		if( empty($vbs) ) {
+			$vbs['MAYBE'] = 1;// we need to add MAYBE for JSON-medium data transportation
+		}
+		$new_result = $past_claim != null && $vbs != $past_claim;
+		$new_benchmark = $past_claim == null;
 		return [
 			'vbs' => $vbs,
-			'begun' => $begun,
+			'started' => $started,
 			'conflicting' => $conflicting,
 			'interesting' => $interesting,
 			'finished' => $finished,
-			'new' => $new,
+			'new result' => $new_result,
+			'new benchmark' => $new_benchmark,
 			'unsolved' => $unsolved,
-			'key' => ($begun ? 'b':'').($conflicting ? 'c':'').($interesting ? 'i' : '').($new ? 'n' : '').($unsolved ? 'u' : '').($finished ? 'f':''),
+			'key' => ($started ? 's':'').($conflicting ? 'c':'').($interesting ? 'i' : '').($new_result ? 'n' : '').($new_benchmark ? 'b':'').($unsolved ? 'u' : '').($finished ? 'f':''),
 		];
 	}
 	// Making certified and demonstration categories

@@ -5,7 +5,7 @@
 <meta http-equiv="Cache-Control" content="max-age=5, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
-<link rel="stylesheet" type="text/css" href="master.css">
+<link rel="stylesheet" type="text/css" href="../master.css">
 <?php
 
 include 'definitions.php';
