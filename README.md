@@ -9,7 +9,7 @@ The registration procedure is as follows.
       Please provide sufficient information so that the organizer can **identify you**,
       and be convinced that you will **use StarExec for research related to termination**.
    1. Upload your solver and remember *configuration id*s.
-1. Edit Y20XX_info.php, where 20XX is the current year, so that a line
+1. Edit Y20XX/info.php, where 20XX is the current year, so that a line
    ```
         'Tool' => 1234,
    ```
