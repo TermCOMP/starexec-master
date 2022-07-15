@@ -6,7 +6,7 @@ do
 done
 for c in $past
 do
-  ./generate.sh $c&
+  ./generate.sh $c
 done
 while [ 1 ]; do
   echo Refreshing...
