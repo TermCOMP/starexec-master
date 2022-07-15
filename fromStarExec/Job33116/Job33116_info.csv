@@ -1,3 +1,4 @@
+benchmark,solver,configuration,configuration id,status,result,wallclock time,cpu time,certification-result,certification-time,
 TRS_Standard/CiME_04/filliatre2.xml,AProVE,certified,302125,complete,YES,4.18,2.66,CERTIFIED,0.0,
 TRS_Standard/CiME_04/filliatre2.xml,ttt2-1.19,ttt2_cert,325889,complete,YES,7.68,2.24,CERTIFIED,0.2,
 TRS_Standard/CiME_04/tree.xml,AProVE,certified,302125,complete,YES,5.85,2.27,CERTIFIED,0.2,

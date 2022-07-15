@@ -71,7 +71,7 @@
 	     '<h1><a href=".">'. $competitionname .'</a>: '. $jobname .PHP_EOL;
 	for( $i = 0; $i < $jobidc; $i++ ) {
 		echo ' <a class=starexecid href="'. jobid2url($jobids[$i]) .'">'. $jobids[$i] .'</a>'.PHP_EOL.
-		     ' <a class=csv href="'. jobid2csv($jobids[$i]) .'">Job info CSV</a>'.PHP_EOL;
+		     ' <a class=csv href="'. $root.jobid2csv($jobids[$i]) .'">Job info CSV</a>'.PHP_EOL;
 	}
 ?>
  <span class="headerFollower">Showing
