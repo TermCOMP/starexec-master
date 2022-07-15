@@ -4,7 +4,7 @@ for c in $past $current
 do
   cp index-wait.html $c/index.html
 done
-for c in $past
+(for c in $past
 do
   ./generate.sh $c
 done
@@ -13,4 +13,5 @@ while [ 1 ]; do
   ./generate.sh $current refresh
   echo Done! Sleeping...
   sleep 5
-done&
+done
+)&
