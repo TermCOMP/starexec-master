@@ -30,7 +30,6 @@ $categories = [
 			'dir' => 'TRS_Standard',
 			'id' => 41483,
 			'spaceid' => 426103,
-			'previous' => 'Y2018/TRS_Standard.VBS.json',
 			'participants' => [
 				"NTI" => 360349,
 				"NaTT" => 350520,
