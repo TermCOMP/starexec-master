@@ -133,10 +133,7 @@ set_time_limit(300);
 		return escape_filename($jobname).'.graph.html';
 	}
 	function jobname2sumfile($jobname) {
-		return escape_filename($jobname).'.json';
-	}
-	function id2sumfile($id) {
-		return 'Job'.$id.'.json';
+		return escape_filename($jobname).'.summary.json';
 	}
 	function jobname2vbsfile($jobname) {
 		return escape_filename($jobname).'.VBS.json';

@@ -36,6 +36,7 @@ $mcats = make_categories($categories,$closed);
 
 $refresh = array_key_exists( 'refresh', $_GET );
 $finalize = array_key_exists( 'finalize', $_GET );
+$team_ranking = array_key_exists( 'team-ranking', $_GET );
 
 ?>
  <title><?php echo $title; ?></title>
@@ -71,7 +72,7 @@ var columnToggler = StyleToggler(
 	]
 );
 <?php
-if( isset($team_ranking) ) {
+if( $team_ranking ) {
 	// team scoring
 	echo 'var teamCategoryScores = [';
 	foreach($teams as $team) { echo '[],'; }
