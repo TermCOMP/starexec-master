@@ -125,7 +125,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 	}
 	// the last column is for past results
 	if( $past_claims != null ) {
-		echo '  <th>'.$past_competition.PHP_EOL;
+		echo '  <th>~'.$past_competition.PHP_EOL;
 		makeFilterField(++$i);
 	}
 
