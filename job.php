@@ -142,7 +142,6 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		foreach( $records['participants'] as $configid => $record ) {
 			$p =& $participants[$configid];
 			$status = $record['status'];
-			$score = 0;
 			if( status2finished($status) ) {
 				$cpu = parse_time($record['cpu time']);
 				$time = parse_time($record['wallclock time']);
@@ -168,16 +167,14 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 					(status2timeout($status) ? timeout_claim() :
 					(status2memout($status) ? memout_claim() : str2claim($record['result'])));
 				add_claim($claims,$claim);
-				$scores = claim2scores($claim,$cert,$max_score);
+				$scores = claim2scores($claim,$cert,$max_score,$past_claim);
 				foreach( $scores as $key => $val ) {
 					$p[$key] += $val;
 				}
-				$score = $scores['score'];
 			} else {
 				$p['togo'] += 1;
 				$p['scorestogo'] += $max_score;
 				add_claim_togo($claims);
-				$score = 0;
 			}
 			$bench[$configid] = [
 				'status' => $status,
@@ -187,17 +184,11 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				'certtime' => $certtime,
 				'pair' => $record['pair id'],
 				'claim' => $claim,
-				'score' => $score,
 			];
 		}
 		$d = claims2description( $claims, $past_claim );
 		$conflicting = $d['conflicting'];
 		if( $conflicting ) {
-			foreach( array_keys($bench) as $me ) {
-				if( $bench[$me]['score'] > 0 ) {
-					$participants[$me]['conflicts']++;
-				}
-			}
 			echo ' <tr class="conflict">'.PHP_EOL;
 			$conflicts += 1;
 		} else {
@@ -217,7 +208,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			$claim = $d['vbs'];
 			$vbs_results[$bm_name] = $claim;
 			echo '  <td class="'.claim2class($claim,'').'">'.claim2str($claim).PHP_EOL;
-			$scores = claim2scores($claim,'',$max_score);
+			$scores = claim2scores($claim,'',$max_score,$past_claim);
 			foreach( $scores as $key => $val ) {
 				$vbs[$key] += $val;
 			}

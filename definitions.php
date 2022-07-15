@@ -47,19 +47,20 @@ set_time_limit(300);
 		return $record;
 	}
 	$scored_keys = [
-		'CERTIFIED YES' => ['text' => 'YES', 'scored' => true],
-		'CERTIFIED NO' => ['text' => 'NO', 'scored' => true],
-		'CERTIFIED UP' => ['text' => 'UP', 'scored' => true],
-		'CERTIFIED LOW' => ['text' => 'LOW', 'scored' => true],
-		'YES' => ['scored' => true],
-		'NO' => ['scored' => true],
-		'UP' => ['scored' => true],
-		'LOW' => ['scored' => true],
-		'togo' => ['scored' => false],
-		'MAYBE' => ['scored' => false],
-		'timeout' => ['scored' => false],
-		'memout' => ['scored' => false],
-		'error' => ['scored' => false],
+		'CERTIFIED YES' => ['text' => 'YES', 'bar' => true],
+		'CERTIFIED NO' => ['text' => 'NO', 'bar' => true],
+		'CERTIFIED UP' => ['text' => 'UP', 'bar' => true],
+		'CERTIFIED LOW' => ['text' => 'LOW', 'bar' => true],
+		'YES' => ['bar' => true],
+		'NO' => ['bar' => true],
+		'UP' => ['bar' => true],
+		'LOW' => ['bar' => true],
+		'news' => ['bar' => false],
+		'togo' => ['bar' => true],
+		'MAYBE' => ['bar' => true],
+		'timeout' => ['bar' => true],
+		'memout' => ['bar' => true],
+		'error' => ['bar' => true],
 	];
 	function new_scores() {
 		return [
@@ -72,6 +73,7 @@ set_time_limit(300);
 			'cpu' => 0,
 			'time' => 0,
 			'certtime' => 0,
+			'news' => 0,
 		];
 	}
 	function parse_record(&$record,$bm_dir,$len,&$results) {
@@ -242,8 +244,14 @@ set_time_limit(300);
 	function add_claim_togo(&$claims) {
 			$claims['togo']++;
 	}
-	function claim2scores($claim,$cert,$max_score) {
-		$ret = ['score' => 0, 'miss' => $max_score ];
+	function up2score($up) {
+		return 1 + .5**$up;
+	}
+	function low2score($low) {
+		return $low == 1000 ? 1.0 : 1.0 - .5**$low;
+	}
+	function claim2scores($claim,$cert,$max_score,$past_claim) {
+		$ret = ['score' => 0, 'miss' => $max_score, 'news' => 0 ];
 		if( $cert == 'REJECTED' || $cert == 'UNSUPPORTED' ) {
 			return $ret;
 		}
@@ -252,22 +260,47 @@ set_time_limit(300);
 			$ret['score']++;
 			$ret['miss']--;
 			$ret[$pre.'NO'] = 1;
+			if( $past_claim != null && !array_key_exists('NO',$past_claim) ) {
+				$ret['news']++;
+			}
 		} else if( array_key_exists('LOW',$claim) ) {
-			$low = $claim['LOW'];
-			$lowscore = $low == 1000 ? 1.0 : 1.0 - .5**$low;
+			$lowscore = low2score($claim['LOW']);
 			$ret['score'] += $lowscore;
 			$ret['miss'] -= $lowscore;
 			$ret[$pre.'LOW'] = $lowscore;
+			if( $past_claim != null ) {
+				if( array_key_exists('LOW',$past_claim) ) {
+					$diff = $lowscore - low2score($past_claim['LOW']);
+					if( $diff > 0 ) {
+						$ret['news'] += $diff;
+					}
+				} else {
+					$ret['news'] += $lowscore;
+				}
+			}
 		}
 		if( array_key_exists('UP',$claim) ) {
-			$upscore = 1 + .5**$claim['UP'];
+			$upscore = up2score($claim['UP']);
 			$ret['score'] += $upscore;
 			$ret['miss'] -= $upscore;
 			$ret[$pre.'UP'] = $upscore;
+			if( $past_claim != null ) {
+				if( array_key_exists('UP',$past_claim) ) {
+					$diff = $upscore - up2score($past_claim['UP']);
+					if( $diff > 0 ) {
+						$ret['news'] += $diff;
+					}
+				} else {
+					$ret['news'] += $upscore;
+				}
+			}
 		} else if( array_key_exists('YES',$claim) ) {
 			$ret['score']++;
 			$ret['miss']--;
 			$ret[$pre.'YES'] = 1;
+			if( $past_claim != null && !array_key_exists('YES',$past_claim) ) {
+				$ret['news']++;
+			}
 		}
 		if( array_key_exists('MAYBE',$claim) ) {
 			$ret['MAYBE'] = 1;

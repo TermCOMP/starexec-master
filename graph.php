@@ -81,6 +81,7 @@ foreach( $solvers as $configid => $s ) {
 	$certtime = $s['certtime'];
 	$conflicts = $s['conflicts'];
 	$timeout = $s['timeout'];
+	$news = $s['news'];
 	$url = solverid2url($id);
 	$count[$layer] += 1;
 	if( $prev_score[$layer] != $score ) {
@@ -95,7 +96,7 @@ foreach( $solvers as $configid => $s ) {
 	     '     <table class="bar">'.PHP_EOL.
 	     '      <tr style="height:1ex">'.PHP_EOL;
 	foreach( $scored_keys as $key => $val ) {
-		if( array_key_exists($key,$s) && $s[$key] > 0 ) {
+		if( array_key_exists($key,$s) && $val['bar'] && $s[$key] > 0 ) {
 			echo '       <td class="'.$key.'" style="width:'.(100 * $s[$key] / $total).'%">'.PHP_EOL;
 		}
 	}
@@ -116,7 +117,7 @@ foreach( $solvers as $configid => $s ) {
 			}
 		}
 	}
-	echo '<span class="'.( $time == $best[$layer]['time'] ? 'best ' : '' ).'time">TIME:'.seconds2str($time).'</span>'. PHP_EOL;
+	echo '<span class="'.( $time == $best[$layer]['time'] ? 'best ' : '' ).'time">time:'.seconds2str($time).'</span>'. PHP_EOL;
 	if( $certtime != 0 ) {
 		echo '<span class="certified time">'.seconds2str($certtime).'</span>';
 	}

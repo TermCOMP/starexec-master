@@ -240,8 +240,10 @@ td.UP, .UP.d1, .UP.d1 * {
 	color: black;
 	font-weight: bold;
 }
-td.time, th.time {
-	width: 1%;
+span.news {
+	background-color: #FFFF00;
+	color: black;
+	font-weight: bold;
 }
 .time, .time a {
 	color: gray;
