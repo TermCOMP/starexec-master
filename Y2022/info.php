@@ -97,14 +97,14 @@ $categories = [
 //				"NaTT" => 552075,
 //				"TTT2" => 552234,
 //				"matchbox" => 550934,
-//				"AProVE" => 551423,
+				"AProVE" => 551423,
 //				"MnM" => 552058,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
 //					"TTT2" => 552235,
-//					"AProVE" => 552179,
+					"AProVE" => 552179,
 				],
 			],
 		],
@@ -285,7 +285,7 @@ $categories = [
 			'spaceid' => 466206,
 			'id' => null,
 			'participants' => [
-//				"AProVE" => 551423,
+				"AProVE" => 551423,
 			],
 			'certified' => [
 				'id' => null,
@@ -372,7 +372,7 @@ $categories = [
 			'spaceid' => 466341,
 			'id' => null,
 			'participants' => [
-//				"AProVE" => 551427
+				"AProVE" => 671123,
 			],
 			'certified' => [
 				'id' => null,
