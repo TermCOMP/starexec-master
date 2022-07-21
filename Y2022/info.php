@@ -176,12 +176,12 @@ $categories = [
 			'id' => null,
 			'participants' => [
 //				"MuTerm" => 326595,
-//				"AProVE" => 551423,
+				"AProVE" => 551423,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-//					"AProVE" => 552179,
+					"AProVE" => 552179,
 				],
 			],
 		],
@@ -191,12 +191,12 @@ $categories = [
 			'spaceid' => 466242,
 			'id' => null,
 			'participants' => [
-//				"AProVE" => 551423,
+				"AProVE" => 551423,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-//					"AProVE" => 552179,
+					"AProVE" => 552179,
 				],
 			],
 		],
@@ -271,7 +271,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 //				"Ctrl" => 23758,
-//				"AProVE" => 551423,
+				"AProVE" => 551423,
 			],
 			'certified' => [
 				'id' => null,
