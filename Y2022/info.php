@@ -401,7 +401,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 //				"TcT" => 360388,
-//				"AProVE" => 551421,
+				"AProVE" => 551421,
 			],
 			'certified' => [
 				'id' => null,
@@ -417,7 +417,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 //				"TcT" => 360385,
-//				"AProVE" => 551421,
+				"AProVE" => 551421,
 			],
 			'certified' => [
 				'id' => null,
@@ -433,7 +433,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 //				"TcT" => 360390,
-//				"AProVE" => 551428,
+				"AProVE" => 551428,
 			],
 			'certified' => [
 				'id' => null,
@@ -449,13 +449,13 @@ $categories = [
 			'id' => null,
 			'participants' => [
 //				"TcT" => 360386,
-//				"AProVE" => 551428,
+				"AProVE" => 551428,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
 //					"TcT" => 360384,
-//					"AProVE" => 552179,
+					"AProVE" => 552179,
 				],
 			],
 		],
