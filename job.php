@@ -27,6 +27,7 @@
 		$jobname = $_GET['name'];
 		$out_path = preg_replace('~[:/]~','_',$competition).'/';
 		$root = '../';
+		$note = array_key_exists('note',$_GET) ? $_GET['note'] : null;
 	} else {// just displaying a job.
 		$competition = 'Job_'.$id;
 		$competitionname = 'Job '.$id;
@@ -87,6 +88,11 @@
   </select> results.
  </span>
 </h1>
+<?php
+	if( isset($note) ) {
+		echo '<p>'.$note.'</p>';
+	}
+?>
 <table id="theTable">
 <script>
 var filteredTable = FilteredTable(document.getElementById("theTable"));

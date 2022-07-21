@@ -227,6 +227,9 @@ foreach( $mcats as $mcatname => $cats ) {
 				$jobargs['previous-competition'] = $previous;
 			}
 		}
+		if( isset($cat['note']) ) {
+			$jobargs['note'] = $cat['note'];
+		}
 		$query = http_build_query( $jobargs, '', ' ' );
 		$tmp = tempnam('','');
 		system( 'php-cgi -f "job.php" '. $query .' > "'. $tmp . '"');

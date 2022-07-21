@@ -145,6 +145,7 @@ $categories = [
 			'type' => 'termination',
 			'id' => null,
 			'spaceid' => 466363,
+			'note' => 'test',
 			'participants' => [
 			],
 			'certified' => [
