@@ -133,7 +133,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 //				"MuTerm" => 326595,
-//				"AProVE" => 551423,
+				"AProVE" => 551423,
 			],
 			'certified' => [
 				'id' => null,
@@ -161,7 +161,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 //				"MuTerm" => 163986,
-//				"AProVE" => 551423,
+				"AProVE" => 551423,
 			],
 			'certified' => [
 				'id' => null,
@@ -223,7 +223,7 @@ $categories = [
 			'spaceid' => 466367,
 			'id' => null,
 			'participants' => [
-//				"AProVE" => 551429,
+				"AProVE" => 671179,
 //				"Ultimate" => 552352,
 			],
 			'certified' => [
@@ -240,7 +240,7 @@ $categories = [
 			'participants' => [
 //				"Ultimate" => 552352,
 //				"iRankFinder" => 360226,
-//				"AProVE" => 551429,
+				"AProVE" => 671179,
 			],
 			'certified' => [
 				'id' => null,
