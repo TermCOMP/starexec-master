@@ -36,7 +36,7 @@ $categories = [
 //				"NaTT" => 552075,
 //				"TTT2" => 552234,
 				"AProVE" => 551423,
-//				"MuTerm" => 326595,
+				"MuTerm" => 326595,
 			],
 			'certified' => [
 				'id' => null,
@@ -53,7 +53,7 @@ $categories = [
 			'spaceid' => 466081,
 			'id' => null,
 			'participants' => [
-//				"MuTerm" => 326595,
+				"MuTerm" => 326595,
 //				"NaTT" => 552075,
 //				"TTT2" => 552234,
 //				"matchbox" => 550935,
@@ -114,7 +114,7 @@ $categories = [
 			'spaceid' => 466098,
 			'id' => null,
 			'participants' => [
-//				"MuTerm" => 163986,
+				"MuTerm" => 163986,
 //				"NaTT" => 350520,
 				"AProVE" => 551423,
 			],
@@ -132,8 +132,8 @@ $categories = [
 			'spaceid' => 466363,
 			'id' => null,
 			'participants' => [
-//				"MuTerm" => 326595,
 				"AProVE" => 551423,
+				"MuTerm" => 671245,
 			],
 			'certified' => [
 				'id' => null,
@@ -145,12 +145,13 @@ $categories = [
 			'type' => 'termination',
 			'id' => null,
 			'spaceid' => 466363,
-			'note' => 'test',
+			'note' => 'http://shorturl.at/aBFGY',
 			'participants' => [
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
+					"MuTerm" => 671244,
 				],
 			],
 		],
@@ -160,8 +161,8 @@ $categories = [
 			'spaceid' => 466359,
 			'id' => null,
 			'participants' => [
-//				"MuTerm" => 163986,
 				"AProVE" => 551423,
+				"MuTerm" => 163986,
 			],
 			'certified' => [
 				'id' => null,
@@ -175,8 +176,8 @@ $categories = [
 			'spaceid' => 466200,
 			'id' => null,
 			'participants' => [
-//				"MuTerm" => 326595,
 				"AProVE" => 551423,
+				"MuTerm" => 326595,
 			],
 			'certified' => [
 				'id' => null,
