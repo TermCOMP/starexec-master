@@ -35,14 +35,14 @@ $categories = [
 				"NTI" => 549724,
 //				"NaTT" => 552075,
 //				"TTT2" => 552234,
-//				"AProVE" => 551423,
+				"AProVE" => 551423,
 //				"MuTerm" => 326595,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
 //					"TTT2" => 552235,
-//					"AProVE" => 552179,
+					"AProVE" => 552179,
 //					"NaTT" => 552274,
 				],
 			],
@@ -57,14 +57,14 @@ $categories = [
 //				"NaTT" => 552075,
 //				"TTT2" => 552234,
 //				"matchbox" => 550935,
-//				"AProVE" => 551423,
+				"AProVE" => 551423,
 //				"MnM" => 552513,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
 //					"TTT2" => 552235,
-//					"AProVE" => 552179,
+					"AProVE" => 552179,
 //					"NaTT" => 552278,
 					"matchbox" => 647693,
 				],
