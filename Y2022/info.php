@@ -465,11 +465,11 @@ $categories = [
 			'spaceid' => 466379,
 			'id' => null,
 			'participants' => [
+				"AProVE" => 671239,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-					"AProVE" => 671239,
 				],
 			],
 		],
