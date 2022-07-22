@@ -145,7 +145,7 @@ $categories = [
 			'type' => 'termination',
 			'id' => null,
 			'spaceid' => 466363,
-			'note' => 'test',
+			'note' => 'http://shorturl.at/aBFGY',
 			'participants' => [
 			],
 			'certified' => [
