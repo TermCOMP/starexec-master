@@ -469,6 +469,7 @@ $categories = [
 			'certified' => [
 				'id' => null,
 				'participants' => [
+					"AProVE" => 671239,
 				],
 			],
 		],
