@@ -209,6 +209,7 @@ $categories = [
 			'participants' => [
 //				"SizeChangeTool" => 325830,
 				"Wanda" => 359682,
+				"SOL" => 671264,
 			],
 			'certified' => [
 				'id' => null,
