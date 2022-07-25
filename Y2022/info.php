@@ -209,7 +209,7 @@ $categories = [
 			'participants' => [
 //				"SizeChangeTool" => 325830,
 				"Wanda" => 359682,
-				"SOL" => 671284,
+				"SOL" => 671264,
 			],
 			'certified' => [
 				'id' => null,
@@ -241,7 +241,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				"Ultimate" => 552352,
-//				"iRankFinder" => 360226,
+				"iRankFinder" => 360226,
 				"AProVE" => 671179,
 			],
 			'certified' => [
@@ -257,7 +257,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 //				"Ctrl" => 23757,
-//				"iRankFinder" => 360226,
+				"iRankFinder" => 360226,
 				"LoAT" => 551398,
 			],
 			'certified' => [
