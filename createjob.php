@@ -7,7 +7,7 @@
 <body>
 <?php
 include 'definitions.php';
-include $_GET['competition'].'_info.php';
+include $_GET['competition'].'/info.php';
 
 $i = 0;
 
@@ -18,7 +18,7 @@ echo
 	foreach( $cats as $cat_name => $cat ) {
 		foreach(
 			[	['name' => $cat_name, 'postproc' => 363, 'participants' => $cat['participants'] ],
-				['name' => $cat_name.' Certified', 'postproc' => 723, participants => $cat['certified']['participants'] ]
+				['name' => $cat_name.' Certified', 'postproc' => 744, participants => $cat['certified']['participants'] ]
 			] as $job ) {
 			if( $job['participants'] != [] ) {
     			$i++;
@@ -28,7 +28,7 @@ echo
  target="_blank">
     <input type="submit" value="Create Job">
     <input type="text" name="name" value="'. $job['name'] . '" style="width:80%"><br>
-    queue: <input type="number" name="queue" value=149144>
+    queue: <input type="number" name="queue" value=183050>
     sid: <input type="number" name="sid" value='.$cat['spaceid'].'>
     desc: <input type="text" name="desc"><br>
     <select name="benchmarkingFramework">

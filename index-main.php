@@ -137,7 +137,7 @@ function updateScores(catname,participants) {
 }
 </script>
 ';
-	echo ' <div id="team_ranking">Team Ranking:'.PHP_EOL;
+	echo ' <div id="team_ranking">Competition-Wide Ranking:'.PHP_EOL;
 	// creating team ranking
 	$team_id = 0;
 	foreach( $teams as $team => $solvers ) {
