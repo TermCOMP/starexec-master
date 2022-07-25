@@ -21,7 +21,7 @@ $teams = [
 	'SOL' => ['SOL'],
 	'Tyrolean Tools' => ['TTT2', 'TcT'],
 	'Ultimate' => ['Ultimate'],
-	'Wanda-Ctrl' => ['Wanda', 'Ctrl'],
+	'Wanda' => ['Wanda'],
 ];
 
 $categories = [
@@ -256,7 +256,6 @@ $categories = [
 			'spaceid' => 466219,
 			'id' => null,
 			'participants' => [
-//				"Ctrl" => 23757,
 				"iRankFinder" => 360226,
 				"LoAT" => 551398,
 			],
@@ -272,7 +271,6 @@ $categories = [
 			'spaceid' => 466410,
 			'id' => null,
 			'participants' => [
-//				"Ctrl" => 23758,
 				"AProVE" => 551423,
 			],
 			'certified' => [
