@@ -21,7 +21,7 @@ $teams = [
 	'SOL' => ['SOL'],
 	'Tyrolean Tools' => ['TTT2', 'TcT'],
 	'Ultimate' => ['Ultimate'],
-	'Wanda-Ctrl' => ['Wanda', 'Ctrl'],
+	'Wanda' => ['Wanda'],
 ];
 
 $categories = [
@@ -209,7 +209,7 @@ $categories = [
 			'participants' => [
 //				"SizeChangeTool" => 325830,
 				"Wanda" => 359682,
-				"SOL" => 671284,
+				"SOL" => 671264,
 			],
 			'certified' => [
 				'id' => null,
@@ -241,7 +241,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				"Ultimate" => 552352,
-//				"iRankFinder" => 360226,
+				"iRankFinder" => 360226,
 				"AProVE" => 671179,
 			],
 			'certified' => [
@@ -256,8 +256,7 @@ $categories = [
 			'spaceid' => 466219,
 			'id' => null,
 			'participants' => [
-//				"Ctrl" => 23757,
-//				"iRankFinder" => 360226,
+				"iRankFinder" => 360226,
 				"LoAT" => 551398,
 			],
 			'certified' => [
@@ -272,7 +271,6 @@ $categories = [
 			'spaceid' => 466410,
 			'id' => null,
 			'participants' => [
-//				"Ctrl" => 23758,
 				"AProVE" => 551423,
 			],
 			'certified' => [
@@ -402,13 +400,13 @@ $categories = [
 			'spaceid' => 466043,
 			'id' => null,
 			'participants' => [
-//				"TcT" => 360388,
+				"TcT" => 360388,
 				"AProVE" => 551421,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-//					"TcT" => 360387,
+					"TcT" => 360387,
 				],
 			],
 		],
@@ -418,13 +416,13 @@ $categories = [
 			'spaceid' => 466273,
 			'id' => null,
 			'participants' => [
-//				"TcT" => 360385,
+				"TcT" => 360385,
 				"AProVE" => 551421,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-//					"TcT" => 360391,
+					"TcT" => 360391,
 				],
 			],
 		],
@@ -434,13 +432,13 @@ $categories = [
 			'spaceid' => 466246,
 			'id' => null,
 			'participants' => [
-//				"TcT" => 360390,
+				"TcT" => 360390,
 				"AProVE" => 551428,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-//					"TcT" => 360389,
+					"TcT" => 360389,
 				],
 			],
 		],
@@ -450,13 +448,13 @@ $categories = [
 			'spaceid' => 466379,
 			'id' => null,
 			'participants' => [
-//				"TcT" => 360386,
+				"TcT" => 360386,
 				"AProVE" => 551428,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-//					"TcT" => 360384,
+					"TcT" => 360384,
 					"AProVE" => 552179,
 				],
 			],
