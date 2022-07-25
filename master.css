@@ -2,7 +2,12 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: medium;
 }
-h1, h1 a {
+a {
+	color: inherit;
+	font: inherit;
+	text-decoration: inherit;
+}
+h1 {
 	font-weight:normal;
 }
 .headerFollower {
@@ -23,10 +28,6 @@ table {
 tr.head {
 	background-color: turquoise;
 }
-th a {
-	color: black;
-	text-decoration: none;
-}
 th.subhead {
 	background-color: paleturquoise;
 	font-weight: normal;
@@ -35,13 +36,10 @@ td {
 	border: .1pt solid silver;
 	text-align: center;
 }
-td a {
-	text-decoration: none;
-}
 .fill {
 	width:100%; height:100%; display:block;
 }
-.category, .category a {
+.category {
 	color: black;
 	text-align: left;
 	text-decoration: none;
@@ -56,7 +54,7 @@ div.category {
 .benchmark {
 	text-align: left;
 }
-.solver, .solver a {
+.solver {
 	display: inline-block;
 	color: black;
 }
@@ -65,7 +63,7 @@ div.category {
 	margin-left: 13pt;
 	padding: 0pt;
 }
-.best.solver, .best.solver a {
+.best.solver {
 	color: black;
 	font-weight: bold;
 }
@@ -136,11 +134,11 @@ div.category {
 	background: none;
 	color:darksalmon;
 }
-.YES, .YES * {
+.YES {
 	background-color:#60F0A0;
 	color: black;
 }
-.CERTIFIED.YES, .CERTIFIED.YES * {
+.CERTIFIED.YES {
 	background-color:#00F080;
 }
 .score>.best.YES {
@@ -152,11 +150,12 @@ div.category {
 	font-weight: bold;
 	color:#008020;
 }
-.NO, .NO * {
-	background-color: #60A060;
+.NO {
 	color: white;
+	background-color: #60A060;
 }
 .CERTIFIED.NO {
+	color: white;
 	background-color:#408040;
 }
 .score>.best.NO {
@@ -167,7 +166,7 @@ div.category {
 	background: none;
 	color: #006000;
 }
-.MAYBE, .MAYBE * {
+.MAYBE {
 	background-color: #E0D080;
 	color: black;
 }
@@ -175,15 +174,15 @@ div.category {
 	background: none;
 	color: #A09040;
 }
-.UNSUPPORTED, .UNSUPPORTED * {
+.UNSUPPORTED {
 	background-color: #888888;
 	color: white;
 }
-.REJECTED, .REJECTED * {
+.REJECTED {
 	background-color: #FF5500;
 	color: white; 
 }
-.error, .error * {
+.error {
 	background-color: #808080;
 	color: white; 
 }
@@ -191,19 +190,19 @@ div.category {
 	background: none;
 	color: #208020;
 }
-.LOW.d1, .LOW.d1 * {
+.LOW.d1 {
 	background-color: #b0e0b0;
 	color: black;
 }
-.LOW.d2, .LOW.d2 * {
+.LOW.d2 {
 	background-color: #80d080;
 	color: black;
 }
-td.LOW, .LOW.d3, .LOW.d3 * {
+td.LOW, .LOW.d3 {
 	background-color: #40A040;
 	color: white;
 }
-.LOW.np, .LOW.np * {
+.LOW.np {
 	background-color: #208020;
 	color: white;
 }
@@ -215,23 +214,23 @@ td.LOW, .LOW.d3, .LOW.d3 * {
 	background: none;
 	color: black;
 }
-.UP.d0, .UP.d0 * {
+.UP.d0 {
 	background-color: #00D0FF;
 	color: black;
 }
-td.UP, .UP.d1, .UP.d1 * {
+td.UP, .UP.d1 {
 	background-color: #a0fff0;
 	color: black;
 }
-.UP.d2, .UP.d2 * {
+.UP.d2 {
 	background-color: #b0ffc0;
 	color: black;
 }
-.UP.d3, .UP.d3 * {
+.UP.d3 {
 	background-color: #c0f0c0;
 	color: black;
 }
-.UP.poly, .UP.poly * {
+.UP.poly {
 	background-color: #C0F0C0;
 	color: black;
 }
@@ -245,7 +244,7 @@ span.news {
 	color: black;
 	font-weight: bold;
 }
-.time, .time a {
+.time {
 	color: gray;
 	font-size: small;
 }
