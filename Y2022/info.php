@@ -400,13 +400,13 @@ $categories = [
 			'spaceid' => 466043,
 			'id' => null,
 			'participants' => [
-//				"TcT" => 360388,
+				"TcT" => 360388,
 				"AProVE" => 551421,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-//					"TcT" => 360387,
+					"TcT" => 360387,
 				],
 			],
 		],
@@ -416,13 +416,13 @@ $categories = [
 			'spaceid' => 466273,
 			'id' => null,
 			'participants' => [
-//				"TcT" => 360385,
+				"TcT" => 360385,
 				"AProVE" => 551421,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-//					"TcT" => 360391,
+					"TcT" => 360391,
 				],
 			],
 		],
@@ -432,13 +432,13 @@ $categories = [
 			'spaceid' => 466246,
 			'id' => null,
 			'participants' => [
-//				"TcT" => 360390,
+				"TcT" => 360390,
 				"AProVE" => 551428,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-//					"TcT" => 360389,
+					"TcT" => 360389,
 				],
 			],
 		],
@@ -448,13 +448,13 @@ $categories = [
 			'spaceid' => 466379,
 			'id' => null,
 			'participants' => [
-//				"TcT" => 360386,
+				"TcT" => 360386,
 				"AProVE" => 551428,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-//					"TcT" => 360384,
+					"TcT" => 360384,
 					"AProVE" => 552179,
 				],
 			],
