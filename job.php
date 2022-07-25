@@ -77,7 +77,6 @@
 ?>
  <span class="headerFollower">Showing
   <select id="filter1" type="text" placeholder="Filter..." oninput="filteredTable.refresh()">
-   <option value="s">started</option>
    <option value="">all</option>
    <option value="i">interesting</option>
    <option value="c">conflicting</option>
