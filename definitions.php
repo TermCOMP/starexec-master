@@ -55,11 +55,8 @@ set_time_limit(300);
 		'NO' => ['bar' => true],
 		'UP' => ['bar' => true],
 		'LOW' => ['bar' => true],
-		'news' => ['bar' => false],
 		'togo' => ['bar' => true],
 		'MAYBE' => ['bar' => true],
-		'timeout' => ['bar' => true],
-		'memout' => ['bar' => true],
 		'error' => ['bar' => true],
 	];
 	function new_scores() {
