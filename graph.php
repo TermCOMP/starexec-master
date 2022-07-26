@@ -80,7 +80,6 @@ foreach( $solvers as $configid => $s ) {
 	$time = $s['time'];
 	$certtime = $s['certtime'];
 	$conflicts = $s['conflicts'];
-	$timeout = $s['timeout'];
 	$news = $s['news'];
 	$url = solverid2url($id);
 	$count[$layer] += 1;
