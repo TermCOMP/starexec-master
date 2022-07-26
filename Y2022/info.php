@@ -5,7 +5,7 @@ $showconfig = true;
 $showscore = false;
 $note = '';
 $db = 'TPDB 11.3';
-$closed = false;
+$closed = true;
 $previous = 'Y2021';
 
 $teams = [
