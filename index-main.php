@@ -19,11 +19,10 @@ if( preg_match('/\\.\\.?|.*[\\/:].*/',$competition) ) {
 	echo "Bad competition name.".PHP_EOL;
 	exit(-1);
 }
+$path_html = $competition.'/';
 if( array_key_exists('root',$_GET) ) {
 	$root_html = $_GET['root'].'/';
-	$path_html = '';
 } else {
-	$path_html = $competition.'/';
 	$root_html = '';
 }
 
@@ -78,7 +77,7 @@ if( $team_ranking ) {
 	foreach($teams as $team) { echo '[],'; }
 	echo '];'.PHP_EOL;
 	echo 'var teamScores = [';
-	foreach($teams as $team) { echo '[0],'; }
+	foreach($teams as $team) { echo '[0,0],'; }
 	echo '];'.PHP_EOL;
 	echo 'const solver_id2team_id = {'.PHP_EOL;
 	$team_id = 0;
@@ -104,44 +103,60 @@ if( $team_ranking ) {
 function updateScores(catname,participants) {
 	// first clear scores for the teams of this category
 	for( let solver_id in participants ) {
-		teamCategoryScores[solver_id2team_id[solver_id]][catname] = 0;
+		teamCategoryScores[solver_id2team_id[solver_id]][catname] = [0,0];
 	}
 	// then add up scores of the team, in case it participates in certified category. We don\'t support two tools from one team in the same category!
 	for( let solver_id in participants ) {
-		let score = participants[solver_id].normalized;
-		teamCategoryScores[solver_id2team_id[solver_id]][catname] += Math.pow(score,score_exponent);
+		let x = { it: teamCategoryScores[solver_id2team_id[solver_id]][catname] };
+		x.it[0] += Math.pow(participants[solver_id].normalized,score_exponent);
+		x.it[1] += participants[solver_id].news;
 	}
 	// updating the team scores
 	for( let i in teamScores ) {
-		let score_sum = Object.values(teamCategoryScores[i]).reduce((x,y) => { return x + y; }, 0);
-		teamScores[i][0] = Math.pow(score_sum,1/score_exponent).toFixed(4);
+		let score_sum = Object.values(teamCategoryScores[i]).reduce(
+			(x,y) => { return [ x[0] + y[0], x[1] + y[1] ]; }, [0,0]
+		);
+		teamScores[i] = [ Math.pow(score_sum[0],1/score_exponent).toFixed(4), score_sum[1] ];
 	}
 	// sorting the team ranking. For smooth display, do not apply sorting directly on the dom objects.
-	let ranking = Object.keys(teamScores).sort( (i,j) => { return teamScores[j][0] - teamScores[i][0];} );
-	// refreshing the display. For smooth display, do not move elements if they don\'t have to.
-	let div = document.getElementById("team_ranking");
-	var cur = div.firstElementChild;
-	for( var i = 0; i < ranking.length; i++ ) {
-		let span = document.getElementById("team"+ranking[i]);
-		let score = teamScores[ranking[i]][0];
-		let elt = span.querySelector(".score");
-		if( elt.innerHTML != score ) {// don\'t touch unless necessary
-			elt.innerHTML = score;
-		}
-		if( span == cur ) {
-			cur = cur.nextSibling;
-		} else {
-			div.insertBefore(span,cur);
+	for( var k = 0; k < 2; k++ ) {
+		let ranking = Object.keys(teamScores).sort(
+			(i,j) => { return teamScores[j][k] - teamScores[i][k]; }
+		);
+		// refreshing the display. For smooth display, do not move elements if they don\'t have to.
+		let div = document.getElementById( "team_ranking" + k );
+		var cur = div.firstElementChild;
+		for( var i = 0; i < ranking.length; i++ ) {
+			let span = document.getElementById("team"+ranking[i]+"_"+k);
+			let score = teamScores[ranking[i]][k];
+			let elt = span.querySelector(".score");
+			if( elt.innerHTML != score.toString() ) {// don\'t touch unless necessary
+				elt.innerHTML = score;
+			}
+			if( span == cur ) {
+				cur = cur.nextSibling;
+			} else {
+				div.insertBefore(span,cur);
+			}
 		}
 	}
 }
 </script>
 ';
-	echo ' <div id="team_ranking">Competition-Wide Ranking:'.PHP_EOL;
-	// creating team ranking
+	// creating team rankings
+	echo ' <h3>Competition-Wide Ranking</h3>'.PHP_EOL;
+	echo ' <div id="team_ranking0">'.PHP_EOL;
 	$team_id = 0;
 	foreach( $teams as $team => $solvers ) {
-		echo '  <span id="team'.$team_id.'">'.$team.'<span class="score"></span></span>'.PHP_EOL;
+		echo '  <span id="team'.$team_id.'_0" class="team">'.$team.'<span class="score"></span></span>'.PHP_EOL;
+		$team_id++;
+	}
+	echo ' </div>'.PHP_EOL;
+	echo ' <h3>Advancing-the-State-of-the-Art Ranking</h3>'.PHP_EOL;
+	echo ' <div id="team_ranking1">'.PHP_EOL;
+	$team_id = 0;
+	foreach( $teams as $team => $solvers ) {
+		echo '  <span id="team'.$team_id.'_1" class="team">'.$team.'<span class="score"></span></span>'.PHP_EOL;
 		$team_id++;
 	}
 	echo ' </div>'.PHP_EOL;

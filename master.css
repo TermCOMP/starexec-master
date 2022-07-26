@@ -307,7 +307,7 @@ div.participant::before {
 div.CERTIFIED.participant::before {
 	content: "✔";
 }
-#team_ranking>span+span::before {
+span.team::after {
 	content: " ";
 }
 

@@ -58,6 +58,7 @@ set_time_limit(300);
 		'togo' => ['bar' => true],
 		'MAYBE' => ['bar' => true],
 		'error' => ['bar' => true],
+		'news' => ['bar' => false],
 	];
 	function new_scores() {
 		return [
