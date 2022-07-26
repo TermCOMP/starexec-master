@@ -78,7 +78,7 @@ if( $team_ranking ) {
 	foreach($teams as $team) { echo '[],'; }
 	echo '];'.PHP_EOL;
 	echo 'var teamScores = [';
-	foreach($teams as $team) { echo '0,'; }
+	foreach($teams as $team) { echo '[0],'; }
 	echo '];'.PHP_EOL;
 	echo 'const solver_id2team_id = {'.PHP_EOL;
 	$team_id = 0;
@@ -114,16 +114,16 @@ function updateScores(catname,participants) {
 	// updating the team scores
 	for( let i in teamScores ) {
 		let score_sum = Object.values(teamCategoryScores[i]).reduce((x,y) => { return x + y; }, 0);
-		teamScores[i] = Math.pow(score_sum,1/score_exponent).toFixed(4);
+		teamScores[i][0] = Math.pow(score_sum,1/score_exponent).toFixed(4);
 	}
 	// sorting the team ranking. For smooth display, do not apply sorting directly on the dom objects.
-	let ranking = Object.keys(teamScores).sort( (i,j) => { return teamScores[j] - teamScores[i];} );
+	let ranking = Object.keys(teamScores).sort( (i,j) => { return teamScores[j][0] - teamScores[i][0];} );
 	// refreshing the display. For smooth display, do not move elements if they don\'t have to.
 	let div = document.getElementById("team_ranking");
 	var cur = div.firstElementChild;
 	for( var i = 0; i < ranking.length; i++ ) {
 		let span = document.getElementById("team"+ranking[i]);
-		let score = teamScores[ranking[i]];
+		let score = teamScores[ranking[i]][0];
 		let elt = span.querySelector(".score");
 		if( elt.innerHTML != score ) {// don\'t touch unless necessary
 			elt.innerHTML = score;
