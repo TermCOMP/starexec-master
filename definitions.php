@@ -47,18 +47,19 @@ set_time_limit(300);
 		return $record;
 	}
 	$scored_keys = [
-		'CERTIFIED YES' => ['text' => 'YES', 'bar' => true],
-		'CERTIFIED NO' => ['text' => 'NO', 'bar' => true],
-		'CERTIFIED UP' => ['text' => 'UP', 'bar' => true],
-		'CERTIFIED LOW' => ['text' => 'LOW', 'bar' => true],
-		'YES' => ['bar' => true],
-		'NO' => ['bar' => true],
-		'UP' => ['bar' => true],
-		'LOW' => ['bar' => true],
-		'togo' => ['bar' => true],
-		'MAYBE' => ['bar' => true],
-		'error' => ['bar' => true],
-		'news' => ['bar' => false],
+		'CERTIFIED YES' => ['text' => 'YES', 'bar' => true ],
+		'CERTIFIED NO' => ['text' => 'NO', 'bar' => true ],
+		'CERTIFIED UP' => ['text' => 'UP', 'bar' => true ],
+		'CERTIFIED LOW' => ['text' => 'LOW', 'bar' => true ],
+		'YES' => [ 'text' => 'YES', 'bar' => true ],
+		'NO' => [ 'text' => 'NO', 'bar' => true ],
+		'UP' => [ 'text' => 'UP', 'bar' => true ],
+		'LOW' => [ 'text' => 'LOW', 'bar' => true ],
+		'togo' => [ 'text' => 'togo', 'bar' => true ],
+		'MAYBE' => [ 'text' => null, 'bar' => true ],
+		'timeout' => [ 'text' => null, 'bar' => true ],
+		'error' => [ 'text' => 'error', 'bar' => true ],
+		'news' => [ 'text' => null, 'bar' => false ],
 	];
 	function new_scores() {
 		return [

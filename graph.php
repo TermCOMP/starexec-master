@@ -108,11 +108,11 @@ foreach( $solvers as $configid => $s ) {
 	     '      </span>'. PHP_EOL.
 	     '      <span class="score">';
 	foreach( $scored_keys as $key => $val ) {
-		if( array_key_exists( $key, $s ) ) {
+		if( array_key_exists($key,$s) && $val['text'] != null ) {
 			$subscore = $s[$key];
 			if( $subscore > 0 ) {
 				echo '<span class="'.( $subscore == $best[$layer][$key] ? 'best ' : '' ).$key.'">'.
-				     (array_key_exists('text',$val) ? $val['text'] : $key).':'.( is_int($subscore) ? $subscore : number_format($subscore,2) ).'</span>,'.PHP_EOL;
+				     ($val['text'] == '' ? $key : $val['text']).':'.( is_int($subscore) ? $subscore : number_format($subscore,2) ).'</span>,'.PHP_EOL;
 			}
 		}
 	}

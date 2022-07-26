@@ -19,10 +19,11 @@ if( preg_match('/\\.\\.?|.*[\\/:].*/',$competition) ) {
 	echo "Bad competition name.".PHP_EOL;
 	exit(-1);
 }
-$path_html = $competition.'/';
 if( array_key_exists('root',$_GET) ) {
+	$path_html = '';
 	$root_html = $_GET['root'].'/';
 } else {
+	$path_html = $competition.'/';
 	$root_html = '';
 }
 
