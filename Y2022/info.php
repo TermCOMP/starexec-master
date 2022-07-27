@@ -465,6 +465,7 @@ $categories = [
 		'Runtime Complexity: TRS Parallel Innermost' => [
 			'type' => 'complexity',
 			'dir' => 'Runtime_Complexity_Innermost_Rewriting',
+			'previous' => null,
 			'spaceid' => 466379,
 			'id' => 54078,
 			'participants' => [
