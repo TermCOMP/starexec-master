@@ -59,7 +59,7 @@ set_time_limit(300);
 		'MAYBE' => [ 'text' => null, 'bar' => true ],
 		'timeout' => [ 'text' => null, 'bar' => true ],
 		'error' => [ 'text' => 'error', 'bar' => true ],
-		'news' => [ 'text' => null, 'bar' => false ],
+		'news' => [ 'text' => 'news', 'bar' => false ],
 	];
 	function new_scores() {
 		return [
