@@ -146,11 +146,11 @@ $categories = [
 			'spaceid' => 531912,
 			'note' => 'http://shorturl.at/aBFGY',
 			'participants' => [
+				"MuTerm" => 671244,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-					"MuTerm" => 671244,
 				],
 			],
 		],
