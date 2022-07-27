@@ -142,7 +142,7 @@ $categories = [
 		],
 		'TRS Conditional - Termination' => [
 			'type' => 'termination',
-			'id' => null,
+			'id' => 54062,
 			'spaceid' => 531912,
 			'note' => 'http://shorturl.at/aBFGY',
 			'participants' => [
