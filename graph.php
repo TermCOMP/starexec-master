@@ -112,16 +112,13 @@ foreach( $solvers as $configid => $s ) {
 			$subscore = $s[$key];
 			if( $subscore > 0 ) {
 				echo '<span class="'.( $subscore == $best[$layer][$key] ? 'best ' : '' ).$key.'">'.
-				     ($val['text'] == '' ? $key : $val['text']).':'.( is_int($subscore) ? $subscore : number_format($subscore,2) ).'</span>,'.PHP_EOL;
+				     ($val['text'] == '' ? $key : $val['text']).':'.( is_int($subscore) ? $subscore : number_format($subscore,2) ).'</span>, ';
 			}
 		}
 	}
-	echo '<span class="'.( $time == $best[$layer]['time'] ? 'best ' : '' ).'time">time:'.seconds2str($time).'</span>'. PHP_EOL;
+	echo '<span class="'.( $time == $best[$layer]['time'] ? 'best ' : '' ).'time">time:'.seconds2str($time).'</span>';
 	if( $certtime != 0 ) {
-		echo '<span class="certified time">'.seconds2str($certtime).'</span>';
-	}
-	if( $togo > 0 ) {
-		echo ','.PHP_EOL.'<span class="togo">TOGO:' . $togo . '</span>';
+		echo ', <span class="certified time">'.seconds2str($certtime).'</span>';
 	}
 	echo '</span>'.PHP_EOL;
 	$cat_cpu += $cpu;

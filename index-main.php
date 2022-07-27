@@ -162,6 +162,7 @@ function updateScores(catname,participants) {
 	}
 	echo ' </div>'.PHP_EOL;
 } else {
+	echo 'function updateScores(catname,participants) {}'.PHP_EOL;
 	echo '</script>'.PHP_EOL;
 }
 if( !$closed ) {
