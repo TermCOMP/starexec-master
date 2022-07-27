@@ -1,7 +1,7 @@
 <?php
 $title = 'Termination Competition 2022';
 $shortname = 'TermCOMP 2022';
-$showconfig = true;
+$showconfig = false;
 $showscore = false;
 $note = '';
 $db = 'TPDB 11.3';
