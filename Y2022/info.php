@@ -1,7 +1,7 @@
 <?php
 $title = 'Termination Competition 2022';
 $shortname = 'TermCOMP 2022';
-$showconfig = true;
+$showconfig = false;
 $showscore = false;
 $note = '';
 $db = 'TPDB 11.3';
@@ -16,7 +16,7 @@ $teams = [
 	'MU-TERM' => ['MuTerm'],
 	'MultumNonMulta' => ['MnM'],
 	'NaTT' => ['NaTT'],
-	'NTI' => ['NTI', 'NTI+cTI'],
+	'NTI+cTI' => ['NTI', 'NTI+cTI'],
 	'SOL' => ['SOL'],
 	'Tyrolean Tools' => ['TTT2', 'TcT'],
 	'Ultimate' => ['Ultimate'],
@@ -128,8 +128,9 @@ $categories = [
 		'TRS Conditional - Operational Termination' => [
 			'type' => 'termination',
 			'dir' => 'TRS_Conditional',
+			'previous' => 'Y2021/TRS_Conditional.VBS.json',
 			'spaceid' => 531912,
-			'id' => null,
+			'id' => 54059,
 			'participants' => [
 				"AProVE" => 551423,
 				"MuTerm" => 671245,
@@ -142,15 +143,17 @@ $categories = [
 		],
 		'TRS Conditional - Termination' => [
 			'type' => 'termination',
-			'id' => null,
+			'dir' => 'TRS_Conditional',
+			'previous' => null,
 			'spaceid' => 531912,
+			'id' => 54062,
 			'note' => 'http://shorturl.at/aBFGY',
 			'participants' => [
+				"MuTerm" => 671244,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-					"MuTerm" => 671244,
 				],
 			],
 		],
