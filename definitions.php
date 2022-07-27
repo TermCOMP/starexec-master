@@ -47,10 +47,10 @@ set_time_limit(300);
 		return $record;
 	}
 	$scored_keys = [
-		'CERTIFIED YES' => ['text' => 'YES', 'bar' => true ],
-		'CERTIFIED NO' => ['text' => 'NO', 'bar' => true ],
-		'CERTIFIED UP' => ['text' => 'UP', 'bar' => true ],
-		'CERTIFIED LOW' => ['text' => 'LOW', 'bar' => true ],
+		'CERTIFIED YES' => [ 'text' => 'YES', 'bar' => true ],
+		'CERTIFIED NO' => [ 'text' => 'NO', 'bar' => true ],
+		'CERTIFIED UP' => [ 'text' => 'UP', 'bar' => true ],
+		'CERTIFIED LOW' => [ 'text' => 'LOW', 'bar' => true ],
 		'YES' => [ 'text' => 'YES', 'bar' => true ],
 		'NO' => [ 'text' => 'NO', 'bar' => true ],
 		'UP' => [ 'text' => 'UP', 'bar' => true ],
