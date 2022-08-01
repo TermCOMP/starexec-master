@@ -247,6 +247,9 @@ foreach( $mcats as $mcatname => $cats ) {
 		if( isset($cat['note']) ) {
 			$jobargs['note'] = $cat['note'];
 		}
+		if( isset($cat['untrusted']) ) {
+			$jobargs['untrusted'] = implode('_',$cat['untrusted']);
+		}
 		$query = http_build_query( $jobargs, '', ' ' );
 		$tmp = tempnam('','');
 		system( 'php-cgi -f "job.php" '. $query .' > "'. $tmp . '"');

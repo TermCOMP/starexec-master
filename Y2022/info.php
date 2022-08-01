@@ -208,7 +208,6 @@ $categories = [
 			'dir' => 'Higher_Order_Rewriting_Union_Beta',
 			'spaceid' => 531842,
 			'id' => 54038,
-			'previous' => 'Y2021/HRS_(union_beta).VBS.json',// avoid parenthesis as jobnames
 			'participants' => [
 //				"SizeChangeTool" => 325830,
 				"Wanda" => 359682,

@@ -184,7 +184,7 @@ $categories = [
 				],
 			],
 		],
-		'HRS (union beta)' => [
+		'HRS Union Beta' => [
 			'type' => 'termination',
 			'dir' => 'Higher_Order_Rewriting_Union_Beta',
 			'spaceid' => 466209,

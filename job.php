@@ -20,6 +20,7 @@
 	$bm_prefix = array_key_exists('dir',$_GET) ? $_GET['dir'].'/' : '';
 	$cops = $_GET['cops'];
 	$type = $_GET['type'];
+	$untrusted = array_key_exists('untrusted',$_GET) ? explode( '_', $_GET['untrusted'] ) : [];
 
 	if( array_key_exists('competition',$_GET) ) {// This means it is generating an HTML in the competition directory.
 		$competition = $_GET['competition'];
@@ -171,7 +172,9 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 					status2error($status) ? error_claim() :
 					(status2timeout($status) ? timeout_claim() :
 					(status2memout($status) ? memout_claim() : str2claim($record['result'])));
-				add_claim($claims,$claim);
+				if( !in_array($configid,$untrusted) ) {
+					add_claim($claims,$claim);
+				}
 				$scores = claim2scores($claim,$cert,$max_score,$past_claim);
 				foreach( $scores as $key => $val ) {
 					$p[$key] += $val;
