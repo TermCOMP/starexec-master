@@ -67,10 +67,11 @@ $categories = [
 				'id' => 30097,
 			],
 		],
-		'HRS (union beta)' => [
+		'HRS Union Beta' => [
 			'type' => 'termination',
 			'dir' => 'Higher_Order_Rewriting_Union_Beta',
 			'id' => 30047,
+			'untrusted' => [303214],
 		],
 	],
 	"Termination of Programs" => [

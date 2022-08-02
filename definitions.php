@@ -194,7 +194,7 @@ set_time_limit(300);
 		if( $str == 'YES' || $str == 'NO' ) {
 			return [ $str => 1 ];
 		}
-		if( preg_match( '/WORST_CASE\\(\\s*(.+)\\s*,\\s*(.+)\\s*\\)/', $str, $matches ) ) {
+		if( preg_match( '/WORST_CASE\\(\\s*(.+)\\s*,\\s*(.+)\\s*\\)\s*/', $str, $matches ) ) {
 			$ret = [];
 			$low = str2lower($matches[1]);
 			$up = str2upper($matches[2]);
