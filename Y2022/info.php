@@ -111,7 +111,7 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'TRS_Equational',
 			'spaceid' => 466098,
-			'id' => 54017,
+			'id' => 54162,
 			'participants' => [
 				"MuTerm" => 163986,
 				"NaTT" => 671548,
@@ -209,7 +209,6 @@ $categories = [
 			'spaceid' => 531842,
 			'id' => 54130,
 			'participants' => [
-//				"SizeChangeTool" => 325830,
 				"Wanda" => 359682,
 				"SOL" => 671336,
 			],
