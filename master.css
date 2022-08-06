@@ -182,9 +182,9 @@ div.category {
 	background-color: #FF5500;
 	color: white; 
 }
-.error {
+td.error {
 	background-color: #808080;
-	color: white; 
+	color: white;
 }
 .score>.LOW {
 	background: none;
@@ -244,7 +244,7 @@ span.news {
 	color: black;
 	font-weight: bold;
 }
-.time {
+.time,.error {
 	color: gray;
 	font-size: small;
 }
