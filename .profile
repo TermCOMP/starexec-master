@@ -10,7 +10,7 @@ do
 done&
 while [ 1 ]; do
   echo Refreshing...
-  ./generate.sh $current refresh
+  ./generate.sh $current refresh team-ranking
   echo Done! Sleeping...
   sleep 5
 done&
