@@ -211,7 +211,7 @@ $categories = [
 			'participants' => [
 //				"SizeChangeTool" => 325830,
 				"Wanda" => 359682,
-				"SOL" => 671336,
+				"SOL" => 671696,
 			],
 			'certified' => [
 				'id' => null,
@@ -228,7 +228,7 @@ $categories = [
 			'id' => 54039,
 			'participants' => [
 				"AProVE" => 671179,
-				"Ultimate" => 552352,
+				"Ultimate" => 671700,
 			],
 			'certified' => [
 				'id' => null,
@@ -242,7 +242,7 @@ $categories = [
 			'spaceid' => 466376,
 			'id' => 54040,
 			'participants' => [
-				"Ultimate" => 552352,
+				"Ultimate" => 671700,
 				"iRankFinder" => 360226,
 				"AProVE" => 671179,
 			],
@@ -329,7 +329,7 @@ $categories = [
 			'spaceid' => 531900,
 			'id' => 54035,
 			'participants' => [
-				"NTI+cTI" => 671137,
+				"NTI+cTI" => 671372,
 				"AProVE" => 551423,
 			],
 			'certified' => [
