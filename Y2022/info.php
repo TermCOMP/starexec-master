@@ -269,7 +269,7 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'Integer_TRS_Innermost',
 			'spaceid' => 466410,
-			'id' => null,
+			'id' => 54233,
 			'participants' => [
 				'AProVE' => 551423,
 			],
@@ -283,7 +283,7 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'Haskell',
 			'spaceid' => 466206,
-			'id' => null,
+			'id' => 54237,
 			'participants' => [
 				'AProVE' => 551423,
 			],
@@ -297,7 +297,7 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'Java_Bytecode',
 			'spaceid' => 466222,
-			'id' => null,
+			'id' => 54234,
 			'participants' => [
 				'AProVE' => 551423,
 			],
@@ -311,7 +311,7 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'Java_Bytecode_Recursive',
 			'spaceid' => 466352,
-			'id' => null,
+			'id' => 54235,
 			'participants' => [
 				'AProVE' => 551423,
 			],
@@ -340,7 +340,7 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'Logic_Programming_with_Cut',
 			'spaceid' => 466237,
-			'id' => null,
+			'id' => 54236,
 			'participants' => [
 				'AProVE' => 551423,
 			],
@@ -354,7 +354,7 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'Prolog',
 			'spaceid' => 466034,
-			'id' => null,
+			'id' => 54238,
 			'participants' => [
 				'AProVE' => 551423,
 			],
