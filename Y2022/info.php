@@ -9,16 +9,15 @@ $closed = true;
 $previous = 'Y2021';
 
 $teams = [
-	'AProVE' => ['AProVE'],
+	'AProVE+LoAT' => ['AProVE','LoAT'],
 	'iRankFinder' => ['iRankFinder'],
-	'LoAT' => ['LoAT'],
 	'Matchbox' => ['matchbox'],
 	'MU-TERM' => ['MuTerm'],
 	'MultumNonMulta' => ['MnM'],
 	'NaTT' => ['NaTT'],
 	'NTI+cTI' => ['NTI', 'NTI+cTI'],
 	'SOL' => ['SOL'],
-	'Tyrolean Tools' => ['TTT2', 'TcT'],
+	'TTT2+TcT' => ['TTT2', 'TcT'],
 	'Ultimate' => ['Ultimate'],
 	'Wanda' => ['Wanda'],
 ];
