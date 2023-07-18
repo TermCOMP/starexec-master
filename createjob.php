@@ -18,7 +18,7 @@ echo
 	foreach( $cats as $cat_name => $cat ) {
 		foreach(
 			[	['name' => $cat_name, 'postproc' => 363, 'participants' => $cat['participants'] ],
-				['name' => $cat_name.' Certified', 'postproc' => 758, participants => $cat['certified']['participants'] ]
+				['name' => $cat_name.' Certified', 'postproc' => 758, 'participants' => $cat['certified']['participants'] ]
 			] as $job ) {
 			if( $job['participants'] != [] ) {
     			$i++;

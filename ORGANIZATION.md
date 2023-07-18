@@ -4,7 +4,14 @@
 Edit `.profile` to specify the competition to be presented.
 Push the repository to a Heroku PHP server. Then it will work.
 
-To run locally, install a web server, enable PHP plugin and make the directory accessible.
+## Configuring Local Server
+1. install a web server
+2. enable the PHP plugin
+3. enable openssl in PHP by adding the following line in `php.ini`:
+```
+extension=php_openssl
+```
+4. make the directory accessible.
 `./.profile` will periodically update ranking.
 
 ## Finalization

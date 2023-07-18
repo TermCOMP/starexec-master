@@ -203,7 +203,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			echo ' <tr>'.PHP_EOL;
 		}
 
-		$bm_id = $records['benchmark id'];
+		$bm_id = $record['benchmark id'];
 		$bm_url = bm2url($bm_name,$bm_id,$bm_db,$bm_prefix);
 		echo '  <td class=benchmark>'.PHP_EOL.
 		     '   <a href="'.$bm_url.'">'.format_bm($bm_name).'</a>'.PHP_EOL.
