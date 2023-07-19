@@ -9,6 +9,13 @@
 include 'definitions.php';
 include $_GET['competition'].'/info.php';
 
+$queue = 183050;// StarExec queue id
+$postproc = 363;// postprocessor id
+$certified_postproc = 758;// postprocessor id for Certified categories
+$cpu_timeout = 1200;
+$timeout = 300;
+$max_memory = 128;
+
 $i = 0;
 
 foreach( make_categories($categories,$closed) as $mcat_name => $cats ) {
@@ -17,8 +24,8 @@ echo
 ';
 	foreach( $cats as $cat_name => $cat ) {
 		foreach(
-			[	['name' => $cat_name, 'postproc' => 363, 'participants' => $cat['participants'] ],
-				['name' => $cat_name.' Certified', 'postproc' => 758, 'participants' => $cat['certified']['participants'] ]
+			[	['name' => $cat_name, 'postproc' => $postproc, 'participants' => $cat['participants'] ],
+				['name' => $cat_name.' Certified', 'postproc' => $certified_postproc, 'participants' => $cat['certified']['participants'] ]
 			] as $job ) {
 			if( $job['participants'] != [] ) {
     			$i++;
@@ -28,7 +35,7 @@ echo
  target="_blank">
     <input type="submit" value="Create Job">
     <input type="text" name="name" value="'. $job['name'] . '" style="width:80%"><br>
-    queue: <input type="number" name="queue" value=183050>
+    queue: <input type="number" name="queue" value='.$queue.'>
     sid: <input type="number" name="sid" value='.$cat['spaceid'].'>
     desc: <input type="text" name="desc"><br>
     <select name="benchmarkingFramework">
@@ -37,9 +44,9 @@ echo
     </select>
     <input type="hidden" name="preProcess" value="-1">
     <input type="hidden" name="seed" value="0">
-    cpuTimeout: <input type="number" name="cpuTimeout" value="1200">
-    wallclockTimeout: <input type="number" name="wallclockTimeout" value="300">
-    maxMem: <input type="number" name="maxMem" value="128"><br>
+    cpuTimeout: <input type="number" name="cpuTimeout" value="'.$cpu_timeout.'">
+    wallclockTimeout: <input type="number" name="wallclockTimeout" value="'.$timeout.'">
+    maxMem: <input type="number" name="maxMem" value="'.$max_memory.'"><br>
     pause: <input checked type="radio" name="pause" value="yes" id="pause_yes">
     <label for="pause_yes">yes</label>
     <input type="radio" name="pause" value="no" id="pause_no">
