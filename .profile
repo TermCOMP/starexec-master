@@ -1,5 +1,5 @@
-past="Y2018 Y2019 Y2020 Y2021"
-current=Y2022
+past="Y2018 Y2019 Y2020 Y2021 Y2022"
+current=Y2023
 for c in $past $current
 do
   cp index-wait.html $c/index.html
