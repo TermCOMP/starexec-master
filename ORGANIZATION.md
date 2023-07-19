@@ -6,7 +6,9 @@
 
 2. Create `Y20XX/info.php` by copying last year's one.
 
-3. Set all
+3. Update the preamble.
+
+4. Set all
    ```
    id => xxxxx
    ```
@@ -15,7 +17,7 @@
    id => null
    ```
 
-4. Comment out participants informations.
+5. Comment out participants informations.
 
 ## Configuring Server
 
@@ -35,9 +37,11 @@ The following are automatic if you use Heroku with heroku-php-apache2 web server
    ```
    ./.profile
    ```
-and keep it running until competition is finished. This will fetch past data and periodically update the present status from StarExec.
+   and keep it running until competition is finished. This will fetch past data and periodically update the present status from StarExec.
 
-## Job Creation
+6. It will be nicer to automatically synchronize with the starexec-master repository.
+
+## Creating StarExec Jobs
 
 1. Open browser and log in to StarExec.
 

@@ -1,11 +1,11 @@
 <?php
 $title = 'Termination Competition 2023';
 $shortname = 'TermCOMP 2023';
-$showconfig = false;
+$showconfig = true;
 $showscore = false;
 $note = '';
 $db = 'TPDB 11.3';
-$closed = false;
+$closed = false;// make true when registration is closed.
 $previous = 'Y2022';
 
 $categories = [
