@@ -312,7 +312,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				'NTI+cTI' => 748115,
-//				'AProVE' => 551423,
+  				'AProVE' => 742587,
 			],
 			'certified' => [
 				'id' => null,
