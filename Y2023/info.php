@@ -241,7 +241,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 //				'iRankFinder' => 360226,
-				'LoAT' => 747601,
+				'LoAT' => 747594,
 			],
 			'certified' => [
 				'id' => null,
