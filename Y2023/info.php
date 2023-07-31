@@ -370,7 +370,7 @@ $categories = [
 			'spaceid' => 531862,
 			'id' => null,
 			'participants' => [
-//				'AProVE' => 671224,
+				'KoAT & LoAT' => 747959,
 			],
 			'certified' => [
 				'id' => null,
