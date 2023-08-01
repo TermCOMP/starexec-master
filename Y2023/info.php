@@ -241,7 +241,8 @@ $categories = [
 			'id' => null,
 			'participants' => [
 //				'iRankFinder' => 360226,
-				'LoAT' => 747594,
+				'LoAT' => 744508,
+				'KoAT' => 747951, // We disabled control-flow refinement by iRankFinder in this category.
 			],
 			'certified' => [
 				'id' => null,
