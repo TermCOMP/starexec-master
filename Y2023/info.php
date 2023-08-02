@@ -209,7 +209,7 @@ $categories = [
 			'spaceid' => 531852,
 			'id' => null,
 			'participants' => [
-//				'AProVE' => 671179,
+				'AProVE' => 742028,
 //				'Ultimate' => 671700,
 			],
 			'certified' => [
@@ -226,7 +226,7 @@ $categories = [
 			'participants' => [
 //				'Ultimate' => 671700,
 //				'iRankFinder' => 360226,
-//				'AProVE' => 671179,
+				'AProVE' => 742028,
 			],
 			'certified' => [
 				'id' => null,
