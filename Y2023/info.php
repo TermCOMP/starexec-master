@@ -311,7 +311,7 @@ $categories = [
 			'spaceid' => 531900,
 			'id' => null,
 			'participants' => [
-//				'NTI+cTI' => 748115,
+				'NTI+cTI' => 748115,
 //				'AProVE' => 551423,
 			],
 			'certified' => [
