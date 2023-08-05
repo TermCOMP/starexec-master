@@ -20,7 +20,7 @@ $categories = [
 //				'NaTT' => 671548,
 //				'TTT2' => 552234,
 				'AProVE' => 748141,
-//				'MuTerm' => 326595,
+				'MuTerm' => 326595,
 			],
 			'certified' => [
 				'id' => null,
@@ -37,7 +37,7 @@ $categories = [
 			'spaceid' => 466081,
 			'id' => null,
 			'participants' => [
-//				'MuTerm' => 326595,
+				'MuTerm' => 326595,
 //				'NaTT' => 671548,
 //				'TTT2' => 552234,
 //				'matchbox' => 671247,
@@ -98,7 +98,7 @@ $categories = [
 			'spaceid' => 466098,
 			'id' => null,
 			'participants' => [
-//				'MuTerm' => 163986,
+				'MuTerm' => 163986,
 //				'NaTT' => 671548,
 				'AProVE' => 748141,
 			],
@@ -117,7 +117,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				'AProVE' => 748141,
-//				'MuTerm' => 671245,
+				'MuTerm' => 671245,
 			],
 			'certified' => [
 				'id' => null,
@@ -132,7 +132,7 @@ $categories = [
 			'id' => null,
 			'note' => 'http://zenon.dsic.upv.es/muterm/benchmarks/ot-vs-t-20220721/benchmarks.html',
 			'participants' => [
-//				'MuTerm' => 671244,
+				'MuTerm' => 671244,
 			],
 			'certified' => [
 				'id' => null,
@@ -147,7 +147,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				'AProVE' => 748141,
-//				'MuTerm' => 163986,
+				'MuTerm' => 163986,
 			],
 			'certified' => [
 				'id' => null,
@@ -162,7 +162,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				'AProVE' => 748141,
-//				'MuTerm' => 326595,
+				'MuTerm' => 326595,
 			],
 			'certified' => [
 				'id' => null,
