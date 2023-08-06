@@ -21,6 +21,7 @@ $categories = [
 //				'TTT2' => 552234,
 				'AProVE' => 748141,
 				'MuTerm' => 326595,
+				'MnM' => 748281,
 			],
 			'certified' => [
 				'id' => null,
@@ -63,6 +64,7 @@ $categories = [
 //				'NaTT' => 671548,
 //				'TTT2' => 552234,
 				'AProVE' => 748141,
+				'MnM' => 748281,				
 			],
 			'certified' => [
 				'id' => null,
