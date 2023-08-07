@@ -17,17 +17,18 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				'NTI' => 741723,
-//				'NaTT' => 671548,
+				'NaTT' => 671548,
 //				'TTT2' => 552234,
 				'AProVE' => 748141,
 				'MuTerm' => 326595,
+				'MnM' => 748281,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
 //					'TTT2' => 552235,
 					'AProVE' => 748138,
-//					'NaTT' => 552278,
+					'NaTT' => 552278,
 				],
 			],
 		],
@@ -38,7 +39,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				'MuTerm' => 326595,
-//				'NaTT' => 671548,
+				'NaTT' => 671548,
 //				'TTT2' => 552234,
 				'matchbox' => 748264,
 				'AProVE' => 748141,
@@ -49,7 +50,7 @@ $categories = [
 				'participants' => [
 //					'TTT2' => 552235,
 					'AProVE' => 748138,
-//					'NaTT' => 552278,
+					'NaTT' => 552278,
 //					'matchbox' => 671248,
 				],
 			],
@@ -60,9 +61,10 @@ $categories = [
 			'spaceid' => 466103,
 			'id' => null,
 			'participants' => [
-//				'NaTT' => 671548,
+				'NaTT' => 671548,
 //				'TTT2' => 552234,
 				'AProVE' => 748141,
+				'MnM' => 748281,				
 			],
 			'certified' => [
 				'id' => null,
@@ -78,7 +80,7 @@ $categories = [
 			'spaceid' => 466194,
 			'id' => null,
 			'participants' => [
-//				'NaTT' => 671548,
+				'NaTT' => 671548,
 //				'TTT2' => 552234,
 				'matchbox' => 748264,
 				'AProVE' => 748141,
@@ -99,14 +101,14 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				'MuTerm' => 163986,
-//				'NaTT' => 671548,
+				'NaTT' => 350520,
 				'AProVE' => 748141,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
   					'AProVE' => 748138,
-//					'NaTT' => 552357,
+					'NaTT' => 360199,
 				],
 			],
 		],
