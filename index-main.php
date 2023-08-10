@@ -197,9 +197,6 @@ foreach( $mcats as $mcatname => $cats ) {
 		$type = $cat['type'];
 		$id = $cat['id'];
 		$spaceid = array_key_exists('spaceid',$cat) ? $cat['spaceid'] : null;
-		$jobids = explode('_',$id);
-		$jobid = $jobids[0];
-		$overlay = array_key_exists( 1, $jobids ) ? $jobids[1] : false;
 		if( $id == null ) {// This means the job is not yet started or linked to starexec-master.
 			echo ' <div class=category>';
 			if( $spaceid != null ) {
@@ -221,6 +218,9 @@ foreach( $mcats as $mcatname => $cats ) {
 			continue;
 		}
 		// creating job html
+		$jobids = explode('_',$id);
+		$jobid = $jobids[0];
+		$overlay = array_key_exists( 1, $jobids ) ? $jobids[1] : false;
 		$job_file = jobname2local($catname);
 		$graph_file = jobname2graph($catname);
 		$jobargs = [
