@@ -247,7 +247,7 @@ $categories = [
 			'participants' => [
 //				'iRankFinder' => 360226,
 				'LoAT' => 744508,
-				'KoAT' => 747951, // We disabled control-flow refinement by iRankFinder in this category.
+				'KoAT' => 748986, // We disabled control-flow refinement by iRankFinder in this category.
 				'MuVal' => 748257,
 				'MuVal-RL' => 748314,
 			],
@@ -364,7 +364,7 @@ $categories = [
 			'spaceid' => 548691,
 			'id' => null,
 			'participants' => [
-				'KoAT' => 747955,
+				'KoAT' => 748989,
 			],
 			'certified' => [
 				'id' => null,
@@ -378,7 +378,7 @@ $categories = [
 			'spaceid' => 548704,
 			'id' => null,
 			'participants' => [
-				'KoAT & LoAT' => 747959,
+				'KoAT & LoAT' => 748959,
 			],
 			'certified' => [
 				'id' => null,
