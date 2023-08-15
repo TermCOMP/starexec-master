@@ -213,7 +213,7 @@ $categories = [
 			'id' => 60659,
 			'participants' => [
 				'AProVE' => 748135,
-				'Ultimate' => 748316,
+				'Ultimate' => 748941,
 			],
 			'certified' => [
 				'id' => null,
@@ -227,7 +227,7 @@ $categories = [
 			'spaceid' => 466376,
 			'id' => 60660,
 			'participants' => [
-				'Ultimate' => 748316,
+				'Ultimate' => 748941,
 //				'iRankFinder' => 360226,
 				'AProVE' => 748135,
 				'MuVal' => 748241,
@@ -247,7 +247,7 @@ $categories = [
 			'participants' => [
 //				'iRankFinder' => 360226,
 				'LoAT' => 744508,
-				'KoAT' => 747951, // We disabled control-flow refinement by iRankFinder in this category.
+				'KoAT' => 748986, // We disabled control-flow refinement by iRankFinder in this category.
 				'MuVal' => 748257,
 				'MuVal-RL' => 748314,
 			],
@@ -319,7 +319,7 @@ $categories = [
 			'spaceid' => 548660,
 			'id' => 60662,
 			'participants' => [
-				'NTI+cTI' => 748115,
+				'NTI+cTI' => 748843,
   				'AProVE' => 742587,
 			],
 			'certified' => [
@@ -364,7 +364,7 @@ $categories = [
 			'spaceid' => 548691,
 			'id' => null,
 			'participants' => [
-				'KoAT' => 747955,
+				'KoAT' => 748989,
 			],
 			'certified' => [
 				'id' => null,
@@ -378,7 +378,7 @@ $categories = [
 			'spaceid' => 548704,
 			'id' => null,
 			'participants' => [
-				'KoAT & LoAT' => 747959,
+				'KoAT & LoAT' => 748959,
 			],
 			'certified' => [
 				'id' => null,
