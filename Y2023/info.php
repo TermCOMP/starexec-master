@@ -21,7 +21,7 @@ $categories = [
 				'TTT2' => 552234,
 				'AProVE' => 749005,
 				'MuTerm' => 326595,
-				'MnM' => 748281,
+				'MnM' => 749295,
 			],
 			'certified' => [
 				'id' => 60642,
@@ -43,7 +43,7 @@ $categories = [
 				'TTT2' => 552234,
 				'matchbox' => 748956,
 				'AProVE' => 749005,
-				'MnM' => 748265,
+				'MnM' => 749269,
 			],
 			'certified' => [
 				'id' => 60650,
@@ -64,7 +64,7 @@ $categories = [
 				'NaTT' => 749415,
 				'TTT2' => 552234,
 				'AProVE' => 749005,
-				'MnM' => 748281,
+				'MnM' => 749295,
 			],
 			'certified' => [
 				'id' => 60644,
@@ -84,7 +84,7 @@ $categories = [
 				'TTT2' => 552234,
 				'matchbox' => 748956,
 				'AProVE' => 749005,
-				'MnM' => 748265,
+				'MnM' => 749269,
 			],
 			'certified' => [
 				'id' => 60645,
