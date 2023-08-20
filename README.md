@@ -8,7 +8,7 @@ The registration procedure is as follows.
    1. Join the Termination Community:
       Please provide sufficient information so that the organizer can **identify you**,
       and be convinced that you will **use StarExec for research related to termination**.
-   1. Upload your solver and remember *configuration id*s.
+   1. Upload your solver to a space where **the organizer can read** (e.g. a public space), and remember *configuration id*s.
 1. Edit Y20XX/info.php, where 20XX is the current year, so that a line
    ```
         'Tool' => 1234,

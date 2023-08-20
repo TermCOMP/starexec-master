@@ -5,7 +5,7 @@ $showconfig = true;
 $showscore = false;
 $note = '';
 $db = 'TPDB 11.3';
-$closed = false;// make true when registration is closed.
+$closed = true;// make true when registration is closed.
 $previous = 'Y2022';
 
 $categories = [
@@ -13,45 +13,45 @@ $categories = [
 		'TRS Standard' => [
 			'type' => 'termination',
 			'dir' => 'TRS_Standard',
-			'spaceid' => 466107,
-			'id' => null,
+			'spaceid' => 548619,
+			'id' => 60641,
 			'participants' => [
 				'NTI' => 741723,
-//				'NaTT' => 671548,
-//				'TTT2' => 552234,
-				'AProVE' => 748141,
+				'NaTT' => 749415,
+				'TTT2' => 552234,
+				'AProVE' => 749005,
 				'MuTerm' => 326595,
-				'MnM' => 748281,
+				'MnM' => 749295,
 			],
 			'certified' => [
-				'id' => null,
+				'id' => 60642,
 				'participants' => [
-//					'TTT2' => 552235,
-					'AProVE' => 748138,
-//					'NaTT' => 552278,
+					'TTT2' => 552235,
+					'AProVE' => 749011,
+					'NaTT' => 552278,
 				],
 			],
 		],
 		'SRS Standard' => [
 			'type' => 'termination',
 			'dir' => 'SRS_Standard',
-			'spaceid' => 466081,
-			'id' => null,
+			'spaceid' => 548673,
+			'id' => 60661,
 			'participants' => [
 				'MuTerm' => 326595,
-//				'NaTT' => 671548,
-//				'TTT2' => 552234,
-				'matchbox' => 748264,
-				'AProVE' => 748141,
-				'MnM' => 748265,
+				'NaTT' => 749415,
+				'TTT2' => 552234,
+				'matchbox' => 748956,
+				'AProVE' => 749005,
+				'MnM' => 749269,
 			],
 			'certified' => [
-				'id' => null,
+				'id' => 60650,
 				'participants' => [
-//					'TTT2' => 552235,
-					'AProVE' => 748138,
-//					'NaTT' => 552278,
-//					'matchbox' => 671248,
+					'TTT2' => 552235,
+					'AProVE' => 749011,
+					'NaTT' => 552278,
+					'matchbox' => 748957,
 				],
 			],
 		],
@@ -59,38 +59,39 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'TRS_Relative',
 			'spaceid' => 466103,
-			'id' => null,
+			'id' => 60643,
 			'participants' => [
-//				'NaTT' => 671548,
-//				'TTT2' => 552234,
-				'AProVE' => 748141,
-				'MnM' => 748281,				
+				'NaTT' => 749415,
+				'TTT2' => 552234,
+				'AProVE' => 749005,
+				'MnM' => 749295,
 			],
 			'certified' => [
-				'id' => null,
+				'id' => 60644,
 				'participants' => [
-//					'TTT2' => 552235,
-					'AProVE' => 748138,
+					'TTT2' => 552235,
+					'AProVE' => 749011,
 				],
 			],
 		],
 		'SRS Relative' => [
 			'type' => 'termination',
 			'dir' => 'SRS_Relative',
-			'spaceid' => 466194,
-			'id' => null,
+			'spaceid' => 548612,
+			'id' => 60648,
 			'participants' => [
-//				'NaTT' => 671548,
-//				'TTT2' => 552234,
-				'matchbox' => 748264,
-				'AProVE' => 748141,
-				'MnM' => 748265,
+				'NaTT' => 749415,
+				'TTT2' => 552234,
+				'matchbox' => 748956,
+				'AProVE' => 749005,
+				'MnM' => 749269,
 			],
 			'certified' => [
-				'id' => null,
+				'id' => 60645,
 				'participants' => [
-//					'TTT2' => 552235,
-					'AProVE' => 748138,
+					'TTT2' => 552235,
+					'AProVE' => 749011,
+					'matchbox' => 748957,
 				],
 			],
 		],
@@ -98,17 +99,17 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'TRS_Equational',
 			'spaceid' => 466098,
-			'id' => null,
+			'id' => 60646,
 			'participants' => [
 				'MuTerm' => 163986,
-//				'NaTT' => 671548,
-				'AProVE' => 748141,
+				'NaTT' => 350520,
+				'AProVE' => 749005,
 			],
 			'certified' => [
-				'id' => null,
+				'id' => 60647,
 				'participants' => [
-  					'AProVE' => 748138,
-//					'NaTT' => 552357,
+  					'AProVE' => 749011,
+					'NaTT' => 360199,
 				],
 			],
 		],
@@ -116,9 +117,9 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'TRS_Conditional',
 			'spaceid' => 531912,
-			'id' => null,
+			'id' => 60649,
 			'participants' => [
-				'AProVE' => 748141,
+				'AProVE' => 749005,
 				'MuTerm' => 671245,
 			],
 			'certified' => [
@@ -131,7 +132,7 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'TRS_Conditional',
 			'spaceid' => 531912,
-			'id' => null,
+			'id' => 60652,
 			'note' => 'http://zenon.dsic.upv.es/muterm/benchmarks/ot-vs-t-20220721/benchmarks.html',
 			'participants' => [
 				'MuTerm' => 671244,
@@ -146,9 +147,9 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'TRS_Contextsensitive',
 			'spaceid' => 466359,
-			'id' => null,
+			'id' => 60651,
 			'participants' => [
-				'AProVE' => 748141,
+				'AProVE' => 749005,
 				'MuTerm' => 163986,
 			],
 			'certified' => [
@@ -161,15 +162,15 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'TRS_Innermost',
 			'spaceid' => 466200,
-			'id' => null,
+			'id' => 60655,
 			'participants' => [
-				'AProVE' => 748141,
+				'AProVE' => 749005,
 				'MuTerm' => 326595,
 			],
 			'certified' => [
-				'id' => null,
+				'id' => 60658,
 				'participants' => [
-					'AProVE' => 748138,
+					'AProVE' => 749011,
 				],
 			],
 		],
@@ -177,14 +178,14 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'TRS_Outermost',
 			'spaceid' => 466242,
-			'id' => null,
+			'id' => 60654,
 			'participants' => [
-				'AProVE' => 748141,
+				'AProVE' => 749005,
 			],
 			'certified' => [
-				'id' => null,
+				'id' => 60656,
 				'participants' => [
-					'AProVE' => 748138,
+					'AProVE' => 749011,
 				],
 			],
 		],
@@ -192,7 +193,7 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'Higher_Order_Rewriting_Union_Beta',
 			'spaceid' => 531842,
-			'id' => null,
+			'id' => 60657,
 			'participants' => [
 				'Wanda' => 359682,
 //				'SOL' => 671696,
@@ -209,10 +210,10 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'C',
 			'spaceid' => 531852,
-			'id' => null,
+			'id' => 60659,
 			'participants' => [
-				'AProVE' => 748135,
-//				'Ultimate' => 671700,
+				'AProVE' => 749009,
+				'Ultimate' => 748941,
 			],
 			'certified' => [
 				'id' => null,
@@ -224,11 +225,13 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'C_Integer',
 			'spaceid' => 466376,
-			'id' => null,
+			'id' => 60660,
 			'participants' => [
-//				'Ultimate' => 671700,
+				'Ultimate' => 748941,
 //				'iRankFinder' => 360226,
 				'AProVE' => 748135,
+				'MuVal' => 748241,
+				'MuVal-RL' => 748315,
 			],
 			'certified' => [
 				'id' => null,
@@ -240,11 +243,13 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'Integer_Transition_Systems',
 			'spaceid' => 466219,
-			'id' => null,
+			'id' => 60693,
 			'participants' => [
 //				'iRankFinder' => 360226,
-				'LoAT' => 744508,
-				'KoAT' => 747951, // We disabled control-flow refinement by iRankFinder in this category.
+				'LoAT' => 747594,
+				'KoAT' => 748986, // We disabled control-flow refinement by iRankFinder in this category.
+				'MuVal' => 748257,
+				'MuVal-RL' => 748314,
 			],
 			'certified' => [
 				'id' => null,
@@ -258,7 +263,7 @@ $categories = [
 			'spaceid' => 466410,
 			'id' => null,
 			'participants' => [
-				'AProVE' => 742587,
+				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -272,7 +277,7 @@ $categories = [
 			'spaceid' => 466206,
 			'id' => null,
 			'participants' => [
-  				'AProVE' => 742587,
+  				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -286,7 +291,7 @@ $categories = [
 			'spaceid' => 466222,
 			'id' => null,
 			'participants' => [
-				'AProVE' => 748141,
+				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -300,7 +305,7 @@ $categories = [
 			'spaceid' => 466352,
 			'id' => null,
 			'participants' => [
-				'AProVE' => 748141,
+				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -311,11 +316,11 @@ $categories = [
 		'Logic Programming' => [
 			'type' => 'termination',
 			'dir' => 'Logic_Programming',
-			'spaceid' => 531900,
-			'id' => null,
+			'spaceid' => 548660,
+			'id' => 60662,
 			'participants' => [
-				'NTI+cTI' => 748115,
-  				'AProVE' => 742587,
+				'NTI+cTI' => 748843,
+  				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -329,7 +334,7 @@ $categories = [
 			'spaceid' => 466237,
 			'id' => null,
 			'participants' => [
-  				'AProVE' => 742587,
+  				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -343,7 +348,7 @@ $categories = [
 			'spaceid' => 466034,
 			'id' => null,
 			'participants' => [
-  				'AProVE' => 742587,
+  				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -356,10 +361,10 @@ $categories = [
 		'Complexity: C Integer' => [
 			'type' => 'complexity',
 			'dir' => 'Complexity_C_Integer',
-			'spaceid' => 531830,
+			'spaceid' => 548691,
 			'id' => null,
 			'participants' => [
-				'KoAT' => 747955,
+				'KoAT' => 748989,
 			],
 			'certified' => [
 				'id' => null,
@@ -370,10 +375,10 @@ $categories = [
 		'Complexity: ITS' => [
 			'type' => 'complexity',
 			'dir' => 'Complexity_ITS',
-			'spaceid' => 531862,
+			'spaceid' => 548704,
 			'id' => null,
 			'participants' => [
-				'KoAT & LoAT' => 747959,
+				'KoAT & LoAT' => 748959,
 			],
 			'certified' => [
 				'id' => null,
@@ -388,7 +393,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 //				'TcT' => 360388,
-				'AProVE' => 748136,
+				'AProVE' => 749016,
 			],
 			'certified' => [
 				'id' => null,
@@ -404,7 +409,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 //				'TcT' => 360385,
-				'AProVE' => 748136,
+				'AProVE' => 749016,
 			],
 			'certified' => [
 				'id' => null,
@@ -420,7 +425,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 //				'TcT' => 360390,
-				'AProVE' => 748133,
+				'AProVE' => 749008,
 			],
 			'certified' => [
 				'id' => null,
@@ -436,13 +441,13 @@ $categories = [
 			'id' => null,
 			'participants' => [
 //				'TcT' => 360386,
-				'AProVE' => 748133,
+				'AProVE' => 749008,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
 //					'TcT' => 360384,
-					'AProVE' => 748138,
+					'AProVE' => 749011,
 				],
 			],
 		],
@@ -453,7 +458,7 @@ $categories = [
 			'spaceid' => 466379,
 			'id' => null,
 			'participants' => [
-				'AProVE' => 748137,
+				'AProVE' => 749014,
 			],
 			'certified' => [
 				'id' => null,
