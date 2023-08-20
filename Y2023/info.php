@@ -230,8 +230,8 @@ $categories = [
 				'Ultimate' => 748941,
 //				'iRankFinder' => 360226,
 				'AProVE' => 748135,
-				'MuVal' => 748241,
-				'MuVal-RL' => 748315,
+				'MuVal' => 749207,
+				'MuVal-RL' => 749463,
 			],
 			'certified' => [
 				'id' => null,
@@ -248,8 +248,8 @@ $categories = [
 //				'iRankFinder' => 360226,
 				'LoAT' => 747594,
 				'KoAT' => 748986, // We disabled control-flow refinement by iRankFinder in this category.
-				'MuVal' => 748257,
-				'MuVal-RL' => 748314,
+				'MuVal' => 749209,
+				'MuVal-RL' => 749466,
 			],
 			'certified' => [
 				'id' => null,
