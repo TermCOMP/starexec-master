@@ -22,6 +22,7 @@ $categories = [
 				'AProVE' => 749005,
 				'MuTerm' => 326595,
 				'MnM' => 749295,
+				'AutoNon' => 24242,
 			],
 			'certified' => [
 				'id' => 60642,
