@@ -230,7 +230,7 @@ $categories = [
 				'Ultimate' => 748941,
 //				'iRankFinder' => 360226,
 				'AProVE' => 748135,
-				'MuVal' => 749207,
+				'MuVal' => 749230,
 				'MuVal-RL' => 749463,
 			],
 			'certified' => [
