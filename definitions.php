@@ -4,7 +4,7 @@ set_time_limit(300);
 
 	function seconds2str($s) {
 		$d = floor($s/(24*60*60));
-		$s = $s%(24*60*60);
+		$s = (int)$s%(24*60*60);
 		$h = floor($s/(60*60));
 		$s = $s%(60*60);
 		$m = floor($s/60);
