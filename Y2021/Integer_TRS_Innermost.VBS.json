@@ -1,0 +1,353 @@
+{
+    "Mixed_ITRS_2014\/A03.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/13.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/divMinus.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/22.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/sqrt_patrs.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/extra1.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/A07.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/sumto_no_if.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/17.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/f91.itrs": {
+        "MAYBE": 1
+    },
+    "Mixed_ITRS_2014\/div.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/03.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/c.04.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/ackTen.itrs": {
+        "MAYBE": 1
+    },
+    "Mixed_ITRS_2014\/A13.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/complete1.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/poly1.itrs": {
+        "MAYBE": 1
+    },
+    "Mixed_ITRS_2014\/practical2.itrs": {
+        "MAYBE": 1
+    },
+    "Mixed_ITRS_2014\/countup.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/unsatCond1.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/a.06.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/increase1.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/07.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/csharp3.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/collatz.itrs": {
+        "MAYBE": 1
+    },
+    "Mixed_ITRS_2014\/A17.itrs": {
+        "MAYBE": 1
+    },
+    "Mixed_ITRS_2014\/powFast.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/a.02.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/Ex04.itrs": {
+        "MAYBE": 1
+    },
+    "Mixed_ITRS_2014\/c.05.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/02.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/A12.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/gcd_minmax.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/practical3.itrs": {
+        "MAYBE": 1
+    },
+    "Mixed_ITRS_2014\/increase4.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/thousand.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/randomFullUpDown.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/a.07.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/sum.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/poly4.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/complete4.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/pow.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/c.01.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/csharp2.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/06.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/A16.itrs": {
+        "MAYBE": 1
+    },
+    "Mixed_ITRS_2014\/incList.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/quicksort.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/eratosthenes_small.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/a.03.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/A02.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/random.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/Ex09.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/23.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/A06.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/16.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/A10.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/countdown.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/practical1.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/complete2.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/poly2.itrs": {
+        "MAYBE": 1
+    },
+    "Mixed_ITRS_2014\/a.05.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/unsatCond2.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/18.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/A08.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/countUpNo.itrs": {
+        "MAYBE": 1
+    },
+    "Mixed_ITRS_2014\/increase2.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/A14.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/04.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/c.03.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/sumto.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/a.01.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/10.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/log_RTA09.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/minsort.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/21.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/08.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/mult.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/extra2.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/random_full.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/a.09.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/A04.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/a.11.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/log_RTA08.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/11.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/choice.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/A01.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/maxsort.itrs": {
+        "MAYBE": 1
+    },
+    "Mixed_ITRS_2014\/20.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/indirect.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/09.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/abstractions.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/24.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/a.08.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/15.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/A05.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/sqrt_new.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/a.10.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/A11.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/01.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/random_no_wrap.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/round.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/poly3.itrs": {
+        "MAYBE": 1
+    },
+    "Mixed_ITRS_2014\/complete3.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/19.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/a.04.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/A09.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/conv.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/random_full_no_wrap.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/increase3.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/A15.itrs": {
+        "MAYBE": 1
+    },
+    "Mixed_ITRS_2014\/c.02.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/05.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/csharp1.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/terminate.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/countUpExp.itrs": {
+        "YES": 1
+    },
+    "Mixed_ITRS_2014\/eratosthenes.itrs": {
+        "YES": 1
+    }
+}

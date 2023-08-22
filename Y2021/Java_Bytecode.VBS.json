@@ -1,0 +1,902 @@
+{
+    "AProVE_10_iterative\/NestedLoop.jar": {
+        "YES": 1
+    },
+    "AProVE_10_iterative\/FlattenRTA.jar": {
+        "YES": 1
+    },
+    "AProVE_10_iterative\/CyclicPair2.jar": {
+        "YES": 1
+    },
+    "AProVE_10_iterative\/TypeSwitch.jar": {
+        "YES": 1
+    },
+    "AProVE_10_iterative\/CyclicPair.jar": {
+        "YES": 1
+    },
+    "AProVE_10_iterative\/AG313.jar": {
+        "YES": 1
+    },
+    "AProVE_10_iterative\/SharingPair.jar": {
+        "YES": 1
+    },
+    "AProVE_10_iterative\/CyclicList.jar": {
+        "YES": 1
+    },
+    "AProVE_10_iterative\/IntPath.jar": {
+        "YES": 1
+    },
+    "AProVE_10_iterative\/NullPair.jar": {
+        "YES": 1
+    },
+    "AProVE_10_iterative\/ArrayClasses.jar": {
+        "YES": 1
+    },
+    "AProVE_10_iterative\/IntRTA.jar": {
+        "YES": 1
+    },
+    "AProVE_10_iterative\/IntPath2.jar": {
+        "YES": 1
+    },
+    "AProVE_10_iterative\/DuplicateTreePath.jar": {
+        "YES": 1
+    },
+    "AProVE_11_iterative\/RetVal.jar": {
+        "YES": 1
+    },
+    "AProVE_11_iterative\/TreeLeftmostDepth.jar": {
+        "YES": 1
+    },
+    "AProVE_11_iterative\/TreeLeftmostPath.jar": {
+        "YES": 1
+    },
+    "AProVE_11_iterative\/SharingAnalysis.jar": {
+        "YES": 1
+    },
+    "AProVE_11_iterative\/ArrayObjects.jar": {
+        "YES": 1
+    },
+    "AProVE_11_iterative\/AlternatingGrowReduce2.jar": {
+        "YES": 1
+    },
+    "AProVE_11_iterative\/ClassAnalysis.jar": {
+        "YES": 1
+    },
+    "AProVE_11_iterative\/CyclicAnalysis.jar": {
+        "YES": 1
+    },
+    "AProVE_11_iterative\/AlternatingGrowReduce.jar": {
+        "YES": 1
+    },
+    "AProVE_11_iterative\/ArrayPrimitives.jar": {
+        "YES": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-moduloUp.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-plait.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-flip2.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-gauss.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-moduloLower.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-whileNested.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-marbie2.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-convLower.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-alternDivWidening.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-trueDiv.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-ex02.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-ex05.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-alternDivWide.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-ex09half.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/LoopingNonterm.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-gcd.jar": {
+        "MAYBE": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-factorial.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-cousot.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-upAndDown.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-mirrorIntervSim.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-alternatingIncr.jar": {
+        "MAYBE": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-whileBreak.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-whileTrue.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-ex04.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-narrowKonv.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-whileIncr.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-whileNestedOffset.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-alternDiv.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-whileSum.jar": {
+        "MAYBE": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-ex03.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-even.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-complInterv3.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-ex07.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-whilePart.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-whileDecr.jar": {
+        "YES": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-middle.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-mirrorInterv.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-whileIncrPart.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-lcm.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-whileSingle.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-narrowing.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-flip.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-complInterv.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-complxStruc.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-ex08.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-ex06.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-ex01.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-doubleNeg.jar": {
+        "MAYBE": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-fib.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-complInterv2.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/NonPeriodicNonterm2.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-collatz.jar": {
+        "MAYBE": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-sunset.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-twoFloatInterv.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-upAndDownIneq.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-alternKonv.jar": {
+        "NO": 1
+    },
+    "BSOG_FoVeOOS_11\/Velroyen08-marbie1.jar": {
+        "NO": 1
+    },
+    "Aprove_09\/LessLeaves.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaA9.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaA7.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaB12.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/ListContentTail.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaB15.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaB5.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/GCD3.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaB2.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/GCD4.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/ListContentArbitrary.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/Collatz.jar": {
+        "MAYBE": 1
+    },
+    "Aprove_09\/Mod.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaC3.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/Shuffle.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/MinusBuiltIn.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaB3.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/GCD5.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaB4.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/GCD2.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/MinusUserDefined.jar": {
+        "MAYBE": 1
+    },
+    "Aprove_09\/DuplicateNodes.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaA1.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaB14.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/CountUpRound.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaA6.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaB13.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaA8.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PlusSwap.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/LogAG.jar": {
+        "MAYBE": 1
+    },
+    "Aprove_09\/MirrorTree.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/ListContent.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/ListDuplicate.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/DivMinus.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/Take.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaC5.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/StupidArray.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaC2.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/CountMetaList.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/LogMult.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/LogIterative.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaC10.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/SortCount.jar": {
+        "MAYBE": 1
+    },
+    "Aprove_09\/PastaC1.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaB7.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/Round3.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/Convert.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/MinusMin.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/Count.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaA5.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaB10.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/AProVEMath.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/GCD.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaB17.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/Overflow.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/McCarthyIterative.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/DivMinus2.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaC9.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaC7.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaC11.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/FlattenTree.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/Duplicate.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/Samefringe.jar": {
+        "MAYBE": 1
+    },
+    "Aprove_09\/PastaA10.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/LogBuiltIn.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/DivWithoutMinus.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaB18.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/Log.jar": {
+        "MAYBE": 1
+    },
+    "Aprove_09\/Flatten.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/RunningPointers.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaB16.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaA4.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaB11.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaB1.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaB6.jar": {
+        "YES": 1
+    },
+    "Aprove_09\/PastaB8.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09\/Continue.jar": {
+        "NO": 1
+    },
+    "Costa_Julia_09\/Exc.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09\/costa09-example_2.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09\/costa09-example_5.jar": {
+        "NO": 1
+    },
+    "Costa_Julia_09\/Exc1.jar": {
+        "NO": 1
+    },
+    "Costa_Julia_09\/costa09-example_4.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09\/Loop1.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09\/costa09-example_3.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09\/Nested.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09\/Continue1.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09\/Exc4.jar": {
+        "NO": 1
+    },
+    "Costa_Julia_09\/Diff.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09\/Exc3.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09\/Break.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09\/KnapsackDP.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09\/CyclicalListDuplicate.jar": {
+        "NO": 1
+    },
+    "Costa_Julia_09\/BubbleSort.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09\/Exc2.jar": {
+        "NO": 1
+    },
+    "Costa_Julia_09\/Exc5.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09\/Sequence.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09\/Init.jar": {
+        "NO": 1
+    },
+    "Costa_Julia_09\/Sharing.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09\/costa09-example_1.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09\/LinkedList.jar": {
+        "YES": 1
+    },
+    "BMOG_CAV_12\/AProVE12-cyclic-Iterate.jar": {
+        "YES": 1
+    },
+    "BMOG_CAV_12\/ListReversePanhandleList.jar": {
+        "YES": 1
+    },
+    "BMOG_CAV_12\/AProVE12-cyclic-Length.jar": {
+        "YES": 1
+    },
+    "BMOG_CAV_12\/ListReverseCyclicList.jar": {
+        "YES": 1
+    },
+    "BMOG_CAV_12\/AProVE12-cyclic-Visit.jar": {
+        "YES": 1
+    },
+    "BMOG_CAV_12\/ListReverseAcyclicList.jar": {
+        "YES": 1
+    },
+    "Julia_11_iterative\/Continue.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/NO_20.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/NO_12.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/TaylorSeriesIte.jar": {
+        "YES": 1
+    },
+    "Julia_11_iterative\/NO_03.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/NO_04.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/NO_13.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/NO_21.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/NO_05.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/NO_02.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/Choose.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/Swingers.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/NO_01.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/NO_06.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/NO_10.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/NO_22.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/ChooseLife.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/NO_00.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/Loop.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/NO_23.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/NO_24.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/NO_11.jar": {
+        "NO": 1
+    },
+    "Julia_11_iterative\/Distances.jar": {
+        "YES": 1
+    },
+    "Julia_10_Iterative\/Test5.jar": {
+        "YES": 1
+    },
+    "Julia_10_Iterative\/Test2.jar": {
+        "YES": 1
+    },
+    "Julia_10_Iterative\/Iterations.jar": {
+        "YES": 1
+    },
+    "Julia_10_Iterative\/Graph.jar": {
+        "MAYBE": 1
+    },
+    "Julia_10_Iterative\/NonPeriodic.jar": {
+        "YES": 1
+    },
+    "Julia_10_Iterative\/Infix2Postfix.jar": {
+        "YES": 1
+    },
+    "Julia_10_Iterative\/Test13Loops.jar": {
+        "NO": 1
+    },
+    "Julia_10_Iterative\/Test3.jar": {
+        "YES": 1
+    },
+    "Julia_10_Iterative\/TriTas.jar": {
+        "YES": 1
+    },
+    "Julia_10_Iterative\/Carre.jar": {
+        "YES": 1
+    },
+    "Julia_10_Iterative\/Test9.jar": {
+        "YES": 1
+    },
+    "Julia_10_Iterative\/Test7.jar": {
+        "YES": 1
+    },
+    "Julia_10_Iterative\/Test11.jar": {
+        "YES": 1
+    },
+    "Julia_10_Iterative\/RSA.jar": {
+        "YES": 1
+    },
+    "Julia_10_Iterative\/Gauss.jar": {
+        "MAYBE": 1
+    },
+    "Julia_12_iterative\/Et3.jar": {
+        "YES": 1
+    },
+    "Julia_12_iterative\/Et4.jar": {
+        "YES": 1
+    },
+    "Julia_12_iterative\/Et5.jar": {
+        "YES": 1
+    },
+    "Julia_12_iterative\/Et2.jar": {
+        "YES": 1
+    },
+    "Julia_12_iterative\/Et1.jar": {
+        "YES": 1
+    },
+    "Julia_12_iterative\/Et6.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateToArray.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreate.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateAddLast.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateEquals.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateLastIndexOf.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateContainsAll.jar": {
+        "MAYBE": 1
+    },
+    "Java_Util\/juLinkedListCreateRemoveElement.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateRemoveFirst.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateOfferFirst.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreatePollLast.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juHashMapCreateHashCode.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateAddFirst.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateHashCode.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateAddAt.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juHashMapCreateContainsKey.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juHashMapCreateEquals.jar": {
+        "MAYBE": 1
+    },
+    "Java_Util\/juLinkedListCreatePollFirst.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateOfferLast.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateRemove.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juHashMapCreateIteratorKeyLoop.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateSize.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juHashMapCreatePutAll.jar": {
+        "MAYBE": 1
+    },
+    "Java_Util\/juLinkedListCreateGetLast.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateIteratorLoop.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreatePeek.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateOffer.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juHashMapCreateRemove.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateRetainAll.jar": {
+        "MAYBE": 1
+    },
+    "Java_Util\/juHashMapCreateContainsValue.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateAddAll.jar": {
+        "MAYBE": 1
+    },
+    "Java_Util\/juHashMapCreateGet.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juHashMapCreateSize.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateContains.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreatePush.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateRemoveRange.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateIndexOf.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juHashMapCreateIteratorValueLoop.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreatePop.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateGetFirst.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateIsEmpty.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juHashMapCreatePut.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateRemoveLastOccurrence.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreatePeekLast.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateClear.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateRemoveAt.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateRemoveAll.jar": {
+        "MAYBE": 1
+    },
+    "Java_Util\/juLinkedListCreateSubList.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateGet.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateRemoveFirstOccurrence.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateAdd.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juHashMapCreateClear.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreatePeekFirst.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juHashMapCreate.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateRemoveLast.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateSet.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreatePoll.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateListIteratorLoop.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateDescendingIteratorLoop.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateAddAllAt.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juHashMapCreateIsEmpty.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juLinkedListCreateElement.jar": {
+        "YES": 1
+    },
+    "Java_Util\/juHashMapCreateIteratorEntryLoop.jar": {
+        "YES": 1
+    },
+    "Fuhs_13\/Kernel93.jar": {
+        "MAYBE": 1
+    },
+    "Fuhs_13\/Kernel68.jar": {
+        "YES": 1
+    },
+    "Fuhs_13\/Kernel95.jar": {
+        "YES": 1
+    },
+    "Fuhs_13\/UnionFindIterative.jar": {
+        "MAYBE": 1
+    },
+    "Fuhs_13\/RandomHard.jar": {
+        "MAYBE": 1
+    },
+    "Fuhs_13\/Kernel88.jar": {
+        "YES": 1
+    },
+    "Fuhs_13\/MultiLasso.jar": {
+        "MAYBE": 1
+    }
+}

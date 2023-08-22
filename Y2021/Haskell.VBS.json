@@ -1,0 +1,5015 @@
+{
+    "full_haskell\/Prelude_fmap_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Queue_listToQueue_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showSigned_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_zipWithM_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_readParen_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_fromInteger_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_index_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_seq_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delListFromFM_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_sort_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_C_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_show_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_LE_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isSuffixOf_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_mapM_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_min_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LTEQ_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minusFM_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_mzero_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_scanr_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_LE_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_maxFM_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delListFromFM_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM2_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_PLUSPLUS_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_reads_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_intersect_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_minimum_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_elemFM_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_delete_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readSigned_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_sequence__4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_shows_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_CARETCARET_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_signum_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_mapAndUnzipM_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_elemIndices_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showList_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_span_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_C_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LT_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_GE_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_takeWhile_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_gcd_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delFromFM_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_acosh_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_insert_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_when_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_lookup_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_notElem_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_PERCENT_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromThen_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_isPrefixOf_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_negate_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_maximum_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_C_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_realToFrac_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readsPrec_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_C_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_mplus_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_sort_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_LE_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromInt_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_round_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Monad_foldM__1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_BARBAR_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM3_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_nub_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_floatRadix_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_LE_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_BACKSLBACKSL_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_GE_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_insert_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_union_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_isAlphaNum_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromInt_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_round_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_cycle_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_isAscii_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_not_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_LE_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_mplus_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_genericReplicate_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_sort_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_pred_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readsPrec_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_union_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_insert_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_insertBy_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_GE_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_exp_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_BACKSLBACKSL_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_LE_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_nub_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delFromFM_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_listToFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_maybe_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_foldr_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_GE_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LT_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showList_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Maybe_isJust_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndices_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_maximum_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_negate_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isPrefixOf_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromDouble_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_notElem_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_PLUS_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_insert_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delListFromFM_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_maxFM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_LE_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_AMPAMP_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fst_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_mzero_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minusFM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_mapAndUnzipM_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_readSigned_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_elemFM_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_delete_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_minimum_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_isLatin1_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_intersect_8.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_reads_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_C_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_sort_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delListFromFM_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_enumFromTo_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_index_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromInteger_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readParen_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_readList_8.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Monad_zipWithM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_isDigit_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LTEQ_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_min_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromIntegral_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_nub_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_toInteger_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isSuffixOf_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_scanr1_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_show_5.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_const_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_unzip3_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_null_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_LE_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_chr_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_delete_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_minimum_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_shows_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_CARETCARET_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_signum_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupWithDefaultFM_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_mapAndUnzipM_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_otherwise_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_all_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_print_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minusFM_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_lcm_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_LE_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_maxFM_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GT_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_threadToIOResult_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_LE_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isSuffixOf_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_LE_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_show_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_GE_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_mapM_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_nub_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LTEQ_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showSigned_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_zipWithM_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_readParen_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_GE_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_index_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_enumFromTo_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_unitFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fail___1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delListFromFM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readIO_8.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Monad_liftM3_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_foldM__2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_nub_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_isOctDigit_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_floatDigits_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readsPrec_5.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_C_11.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_zip_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_C_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_LE_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_insert_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_ord_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_even_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_PLUS_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_lookup_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_subtract_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_notElem_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GTEQ_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromThen_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_isPrint_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromDouble_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_negate_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_DOLLARBANG_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndices_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Queue_deQueue_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_C_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showList_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_denominator_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_GE_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_listToFM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_SLASHEQ_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_words_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delFromFM_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_maximum_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromDouble_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromThen_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_GTEQ_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_notElem_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_lookup_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_PLUS_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_insert_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_inits_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delFromFM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_emptyFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_SLASHEQ_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_listToFM_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LT_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_C_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_catch_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFrom_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndices_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_repeat_1.hs": {
+        "NO": 1
+    },
+    "full_haskell\/List_insert_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_lines_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_either_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_LE_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_flip_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_nub_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM3_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_foldM__3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_genericLength_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_round_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_fromInt_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_unfoldr_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_sort_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_mplus_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_C_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_C_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_error_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readsPrec_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_LTEQ_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_min_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_mapM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_GE_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_nub_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_show_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_LE_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_LE_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_zipWith3_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_isHexDigit_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_floor__1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_sort_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delListFromFM_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromTo_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_ioError_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_GE_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromInteger_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showSigned_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupWithDefaultFM_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_undefined_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_signum_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_CARETCARET_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_readSigned_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_shows_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_minimum_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_reads_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_delListFromFM_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GT_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_LE_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_maxFM_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_LE_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minusFM_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Monad_mzero_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_print_9.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_show_10.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Maybe_catMaybes_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minFM_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GTGTEQ_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Maybe_isNothing_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isPrefixOf_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_sort_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndex_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_C_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_LE_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_any_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_maximumBy_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_LE_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Maybe_mapMaybe_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_listToFM_11.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_unwords_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndices_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_GE_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LT_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_replicate_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showList_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_C_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_listToFM_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_lookup_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_subtract_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Monad_when_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_insert_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromThen_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_readLn_8.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_notElem_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromEnum_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_interact_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_zipWith_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_11.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_GE_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_maximum_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_negate_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_C_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_maxFM_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_intToDigit_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minusFM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_maxFM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showsPrec_10.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_userError_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_filterFM_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM2_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_getContents_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_lookupFM_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_reads_5.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_elemIndex_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_genericIndex_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isSuffixOf_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_sequence__2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_shows_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Monad_mapAndUnzipM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_zipWithM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_reverse_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_C_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fmap_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readParen_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_enumFromTo_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_groupBy_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_index_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_and_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_exponent_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delListFromFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isSuffixOf_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_show_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_LE_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GTGTEQ__1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromIntegral_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_read_8.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_LTEQ_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_SLASHEQ_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fail_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_index_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_mapAccumR_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromTo_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readParen_5.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_fromInteger_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fmap_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_C_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_elemFM_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LTEQ_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromIntegral_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_LE_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_show_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_isSuffixOf_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_break_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM2_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_C_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_msum_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Queue_queueToList_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_filterFM_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_foldl1_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_maxFM_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showsPrec_11.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_showList_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minusFM_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_blockIO_1.hs": {
+        "NO": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_BACKSLBACKSL_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readSigned_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_sequence__3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_shows_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showChar_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isSuffixOf_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_minimum_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_reads_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_elemIndex_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupFM_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_listToFM_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_C_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delFromFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showList_5.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_LT_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_scaleFloat_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_GE_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_elemIndices_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_primThrowException_1.hs": {
+        "NO": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_C_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromThenTo_8.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_maximum_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_toLower_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_GE_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromThen_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_insert_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_when_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_lookup_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_filter_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_sinh_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_genericLength_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_lookup_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromInt_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_GE_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_LE_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_C_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndex_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_sort_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isPrefixOf_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readsPrec_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_GTGTEQ_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_show_11.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_minFM_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Queue_emptyQueue_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_nub_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_listToFM_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_LE_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_unlines_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GTEQ_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_partition_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_DOLLAR_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_lookup_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_subtract_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_toEnum_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_when_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromThen_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_isNegativeZero_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_notElem_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_GE_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_maximum_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndices_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readLitChar_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_GE_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_DOT_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showList_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_LT_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delFromFM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_listToFM_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM3_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_foldM__4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GTEQ_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_LE_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_until_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_listToFM_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_nub_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_intersperse_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_compare_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_genericTake_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupFM_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readsPrec_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_sort_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_C_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_GE_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_toUpper_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_LE_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_lookup_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_genericLength_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_length_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_show_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_isSuffixOf_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_LE_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_min_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_mapM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_delete_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_max_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_C_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fmap_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_drop_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_elemFM_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showSigned_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_elem_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_transpose_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readParen_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_enumFromTo_5.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_fail_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_SLASHEQ_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delListFromFM_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndex_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_reads_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_lookupFM_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_EQEQ_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_minimum_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isSuffixOf_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_group_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_writeFile_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_shows_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_sequence__1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_tanh_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_intersectBy_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_BACKSLBACKSL_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showsPrec_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_signum_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_maxFM_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showList_10.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_concatMap_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showString_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_msum_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_C_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM2_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showsPrec_9.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_BACKSLBACKSL_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_getLine_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_shows_5.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_findIndex_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_group_8.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_minimum_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_EQEQ_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_deleteBy_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_reads_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_C_11.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_logBase_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_tails_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_msum_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showsPrec_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_maxFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minusFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showList_11.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_maxFM_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_max_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LTEQ_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_delete_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromIntegral_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_min_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_LE_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isSuffixOf_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delListFromFM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_SLASHEQ_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fail_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromTo_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readParen_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_elem_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_succ_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_elemFM_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupFM_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_compare_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_asTypeOf_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_nub_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_LE_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GTEQ_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_lookup_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_genericLength_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_LE_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_GE_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_C_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isPrefixOf_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_sort_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readsPrec_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_odd_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_show_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GTGTEQ_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_maximum_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_11.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_notElem_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_putStrLn_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromThen_5.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_insert_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_PLUS_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_subtract_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_lookup_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_listToFM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_head_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_delFromFM_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LT_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showList_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_GE_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_filterFM_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minFM_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_shows_11.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_abs_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_print_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minusFM_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_LE_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_floor_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_quotRem_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_maxFM_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GT_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_BANGBANG_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupWithDefaultFM_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_atan_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_EQEQ_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_inRange_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_intersect_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_group_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_elemFM_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LTEQ_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM4_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_significand_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_C_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_LE_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_truncate_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readList_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Monad_unless_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_or_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_rangeSize_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_approxRational_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_notElem_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_succ_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_GE_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_GE_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_read_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_range_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LTEQ_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_foldr1_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_concat_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_mapM__1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_show_9.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_isLower_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_group_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_realToFrac_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minFM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_pred_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndex_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_elem_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GT_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_print_11.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_BACKSLBACKSL_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndices_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_GE_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_compare_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_union_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readIO_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_CARET_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Monad_join_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_cosh_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_SLASHEQ_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_C_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_union_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_filterFM_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndices_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFrom_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isPrefixOf_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromEnum_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_MINUS_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_enumFromThenTo_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_C_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_maxBound_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_insert_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_atan2_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_getChar_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GTEQ_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_GE_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readLn_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_enumFrom_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_elemIndices_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_filterFM_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_union_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_C_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_lexDigits_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_isSpace_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_SLASHEQ_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readLn_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Monad_zipWithM__1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GTEQ_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_insert_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_toEnum_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_C_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readOct_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromThenTo_3.hs": {
+        "NO": 1
+    },
+    "full_haskell\/Prelude_STAR_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_fromEnum_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isPrefixOf_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_print_10.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_recip_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_elem_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndex_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_pred_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_replicateM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_sqrt_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minFM_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_realToFrac_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_tail_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_foldM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_isNaN_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_join_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readIO_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_union_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_ap_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_filterM_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_lookupFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_genericDrop_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_GE_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_BACKSLBACKSL_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_notElem_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_GE_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_elem_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_approxRational_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Maybe_listToMaybe_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_minBound_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_rangeSize_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readList_5.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_numerator_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_take_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_C_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_show_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_min_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Maybe_maybeToList_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LTEQ_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_replicateM__1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_max_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_range_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_iterate_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_read_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_delete_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_GE_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GT_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_maxFM_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_product_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_LE_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_toRational_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_sum_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_minusFM_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_print_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_abs_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_shows_10.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_minFM_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_filterFM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM4_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_elemFM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_intersect_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_putStr_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_EQLTLT_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_inRange_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showsPrec_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_lookupWithDefaultFM_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_EQEQ_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_sortBy_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_GE_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_delete_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_replicateM__3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_max_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_sequence_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_min_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_mapM__2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delListFromFM_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_C_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_LE_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_truncate_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_minBound_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readList_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_GE_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_elem_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_notElem_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_succ_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showLitChar_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_lookupWithDefaultFM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showsPrec_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_deleteFirstsBy_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_EQEQ_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_div_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_EQEQ_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_group_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_intersect_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_EQLTLT_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_minimum_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LTEQ_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_elemFM_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_quot_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minFM_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_filterFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_abs_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_genericSplitAt_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_shows_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_print_5.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_toRational_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_isControl_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_LE_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_floor_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_GT_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isPrefixOf_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromThenTo_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_MINUS_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_maxBound_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_toEnum_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_STARSTAR_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_scanl_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_primExitWith_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_notElem_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GTEQ_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_zipWithM__3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_GE_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delFromFM_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_C_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_SLASHEQ_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showInt_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_union_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFrom_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_BACKSLBACKSL_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndices_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_GE_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_toInt_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_compare_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_filterM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupFM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Queue_addToQueue_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_union_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readIO_5.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_pi_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_CARET_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_nub_8.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_cos_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_group_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_realToFrac_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_init_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readsPrec_8.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_pred_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_recip_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GT_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_print_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_join_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_nub_9.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_CARET_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_readIO_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_union_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupFM_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_filterM_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_compare_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_GE_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndices_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_BACKSLBACKSL_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_return_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_elem_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndex_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GT_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_recip_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_pred_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_map_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_realToFrac_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_group_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM5_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_GE_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readLn_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Monad_zipWithM__2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GTEQ_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_notElem_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_toEnum_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_asin_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_maxBound_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_MINUS_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_C_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromEnum_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isPrefixOf_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_rem_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_isUpper_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFrom_5.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_filterFM_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_uncurry_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_SLASHEQ_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delFromFM_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LTEQ_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_elemFM_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_minimum_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM4_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_EQLTLT_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_intersect_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_group_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_EQEQ_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_EQEQ_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupWithDefaultFM_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showsPrec_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_foldl_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GT_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_LE_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_toRational_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_print_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_isEmptyFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_min_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_mapM__3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_last_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_max_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_replicateM__2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_GE_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_delete_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Maybe_maybe_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_read_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_approxRational_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_elem_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_GE_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_succ_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readList_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_minBound_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_mod_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_truncate_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_LE_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_C_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delListFromFM_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_GE_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readFloat_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_nubBy_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showList_9.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_LT_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_C_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_GE_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFrom_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_STAR_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isPrefixOf_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromEnum_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_maximum_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_C_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_isInfinite_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromThenTo_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_toEnum_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readLn_5.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_sin_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_encodeFloat_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_properFraction_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_maximum_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_foldM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_LE_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_putChar_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_pred_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_replicateM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minFM_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_realToFrac_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_fromRational_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_sort_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_snd_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndex_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_GE_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_BACKSLBACKSL_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_union_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_ap_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_log_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_compare_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupFM_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_findIndices_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_LE_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_basicIORun_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_C_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GTGT_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_succ_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_GE_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_elem_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_minBound_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_rangeSize_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readList_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Monad_unless_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_range_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_lex_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_read_5.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_minusFM_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_delete_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_LE_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_intersect_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_max_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_max_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupWithDefaultFM_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_sequence_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isSuffixOf_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_ceiling_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_min_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LT_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_filterFM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_abs_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_sum_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_scanl1_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_LE_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_product_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showsPrec_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupWithDefaultFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_reads_8.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_id_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_inRange_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_EQEQ_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_elemFM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_intersect_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_group_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_product_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GT_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_print_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_sum_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_SLASH_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_filterFM_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LT_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_group_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_intersect_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readHex_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_elemFM_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM4_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_EQEQ_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_inRange_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_isIEEE_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showsPrec_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_minimum_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_compare_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readParen_8.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Monad_unless_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readList_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_rangeSize_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_succ_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_elem_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GTGT_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_C_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_min_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isSuffixOf_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupWithDefaultFM_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_max_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readInt_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_max_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_intersect_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_delete_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_GE_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_LE_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_read_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_range_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndex_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromRational_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_return_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_sort_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_realToFrac_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_replicateM_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minFM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_pred_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_minimumBy_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_LE_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_foldM_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Monad_liftM5_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_asinh_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_join_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_LE_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_delFromFM_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_isDenormalized_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readIO_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_acos_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupFM_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_compare_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_ap_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_union_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_BACKSLBACKSL_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readDec_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_GE_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GTGT___1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_curry_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_guard_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_SLASHEQ_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_GE_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_C_5.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_LT_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showList_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readFloat_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_GE_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GTEQ_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_dropWhile_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readLn_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_toEnum_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_maxBound_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromThenTo_5.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_C_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_maximum_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_STAR_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromEnum_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isPrefixOf_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_BACKSLBACKSL_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_union_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupFM_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_compare_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_CARET_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_readIO_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_delFromFM_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_maximum_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_properFraction_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM5_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minFM_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_pred_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_return_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndex_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readFile_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_C_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromEnum_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showParen_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromThenTo_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_lexLitChar_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_MINUS_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_C_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_lookup_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_toEnum_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_maxBound_4.hs": {
+        "NO": 1
+    },
+    "full_haskell\/Prelude_readLn_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_GTEQ_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_SLASHEQ_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_GE_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_C_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Monad_guard_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_listToFM_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFrom_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_shows_9.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_compare_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_minimum_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_splitAt_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_atanh_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupWithDefaultFM_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showsPrec_5.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_divMod_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_EQEQ_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_group_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_intersect_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_filterFM_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_LT_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_zip3_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_SLASH_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_print_3.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_GT_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_LE_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_GE_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_LE_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_delete_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_read_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_minusFM_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_max_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_intersect_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_sequence_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_isAlpha_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_min_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_ceiling_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_mapFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_mapM__4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_LE_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromTo_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GTGT_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_elem_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_GE_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_sizeFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_succ_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readList_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Monad_unless_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_minBound_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_LE_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_min_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_ceiling_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Maybe_fromMaybe_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_sequence_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupWithDefaultFM_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_appendFile_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_max_12.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_replicateM__4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_max_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_minusFM_10.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_read_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_eltsFM_GE_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_delete_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_range_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/List_find_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_rangeSize_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_minBound_4.hs": {
+        "NO": 1
+    },
+    "full_haskell\/FiniteMap_foldFM_GE_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_elem_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_succ_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_C_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_floatRange_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_tan_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_group_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_EQLTLT_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_elemFM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_EQEQ_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_inRange_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_unionBy_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupWithDefaultFM_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_showsPrec_4.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_minimum_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_compare_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_shows_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_product_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_keysFM_LE_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GT_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_print_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_toRational_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_sum_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Maybe_fromJust_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_SLASH_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_filterFM_6.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_GTEQ_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readLn_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Monad_zipWithM__4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_digitToInt_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_enumFromThen_8.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_maxBound_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_toEnum_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_lookup_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_C_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_enumFromThenTo_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_addListToFM_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_fromEnum_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_isPrefixOf_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_STAR_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_enumFrom_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_plusFM_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_listToFM_9.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_guard_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_intersectFM_C_6.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_SLASHEQ_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readFloat_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_decodeFloat_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_catchHugsException_1.hs": {
+        "NO": 1
+    },
+    "full_haskell\/FiniteMap_delFromFM_11.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_unzip_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_readIO_2.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Monad_filterM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_compare_5.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_lookupFM_4.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_ap_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_mapAccumL_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_fmToList_GE_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_C_8.hs": {
+        "YES": 1
+    },
+    "full_haskell\/List_elemIndex_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_return_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/FiniteMap_addToFM_7.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_fromRational_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_realToFrac_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/FiniteMap_minFM_7.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_replicateM_1.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_liftM5_2.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Monad_foldM_1.hs": {
+        "MAYBE": 1
+    },
+    "full_haskell\/Prelude_properFraction_3.hs": {
+        "YES": 1
+    },
+    "full_haskell\/Prelude_maximum_10.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/readParen_5.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/enumFromThen_4.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/readInt_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fromEnum_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/id_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/LTEQ_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/product_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/readHex_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/inRange_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/SLASHEQ_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/abs_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/index_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/readsPrec_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/enumFromThenTo_6.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/even_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/compare_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/min_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/readDec_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/max_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/foldl1_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/PLUS_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/compare_7.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/break_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/flip_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/replicate_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/abs_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fromIntegral_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/sequence_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/properFraction_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/LTEQ_7.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/userError_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/primThrowException_1.hs": {
+        "NO": 1
+    },
+    "basic_haskell\/inRange_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/DOLLAR_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/readLitChar_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/sequence__2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFrom_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFromThen_5.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/readParen_4.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/GT_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/ceiling_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/filter_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/lookup_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fromEnum_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/rem_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/inRange_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/mapM_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/LTEQ_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/until_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/product_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/show_4.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/fromEnum_7.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/maxBound_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/lookup_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/GT_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/map_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/readParen_6.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/enumFromThen_7.hs": {
+        "NO": 1
+    },
+    "basic_haskell\/enumFrom_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/span_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/min_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/compare_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/max_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/toRational_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/readsPrec_2.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/mod_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/shows_4.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/enumFromThenTo_5.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/length_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/SLASHEQ_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fromIntegral_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/isDenormalized_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/minBound_4.hs": {
+        "NO": 1
+    },
+    "basic_haskell\/sequence_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/div_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/properFraction_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/readList_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/minBound_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/abs_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fromIntegral_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/SLASHEQ_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/max_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/compare_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/min_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/PLUS_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFromThenTo_4.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/shows_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/isAlpha_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/lookup_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/maxBound_4.hs": {
+        "NO": 1
+    },
+    "basic_haskell\/fromEnum_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFrom_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFromThen_6.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/GT_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/sequence__1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/splitAt_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/show_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/null_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/GTGTEQ_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/LTEQ_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/concatMap_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/shows_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/reads_3.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/signum_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fromInteger_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/scanr_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/isSpace_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/SLASHEQ_7.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/sum_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/minBound_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/readOct_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/index_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/floatRange_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/or_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/show_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/BARBAR_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/drop_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fmap_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/inRange_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/realToFrac_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/GT_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/readParen_3.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/enumFromThen_2.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/digitToInt_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFrom_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fromEnum_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/negate_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/iterate_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/toInteger_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/lookup_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFromThen_3.hs": {
+        "NO": 1
+    },
+    "basic_haskell\/readParen_2.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/GT_7.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/floatDigits_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/snd_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/lexLitChar_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/maxBound_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/maybe_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/foldr_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fromEnum_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/quotRem_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/LTEQ_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/denominator_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/cycle_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/takeWhile_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/const_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/truncate_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/SLASHEQ_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/unzip3_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/scanr1_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/index_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/AMPAMP_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/reads_2.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/isLower_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFromThenTo_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/lex_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/max_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/head_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/BANGBANG_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/compare_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/min_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/isUpper_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/index_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/uncurry_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/SLASHEQ_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/sum_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/minBound_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/compare_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/min_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/signum_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fromInteger_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/max_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFromThenTo_3.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/shows_2.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/fromEnum_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/words_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/negate_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/lookup_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/maxBound_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/GT_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFromThen_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFrom_5.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/fmap_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/undefined_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/realToFrac_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/LTEQ_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/show_2.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/otherwise_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/error_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/either_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fail_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/show_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/LTEQ_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/lines_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/maxBound_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/lookup_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFrom_4.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/repeat_1.hs": {
+        "NO": 1
+    },
+    "basic_haskell\/readParen_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/GT_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/isInfinite_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/max_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fromInteger_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/signum_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/min_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/compare_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/reads_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/shows_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFromThenTo_2.hs": {
+        "NO": 1
+    },
+    "basic_haskell\/basicIORun_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/minBound_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/truncate_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/showInt_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/SLASHEQ_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/blockIO_1.hs": {
+        "NO": 1
+    },
+    "basic_haskell\/minimum_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/succ_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/elem_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/EQEQ_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/not_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/rangeSize_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fromDouble_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/toEnum_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/quot_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/scanl1_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/GTEQ_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/LT_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/readSigned_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/showChar_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/unlines_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fst_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/range_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/init_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/pred_7.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/showSigned_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/maximum_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/isHexDigit_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/dropWhile_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFromTo_2.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/toLower_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/range_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/unwords_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/zipWith_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFromTo_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/maximum_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/showSigned_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/pred_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/notElem_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/seq_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/LT_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/isNegativeZero_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/GTEQ_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/isIEEE_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/SLASH_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/rangeSize_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/reverse_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/EQEQ_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/DOLLARBANG_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/curry_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/subtract_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/toEnum_7.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/isOctDigit_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/last_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/read_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/return_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/gcd_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/succ_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/elem_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fromRational_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/toEnum_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/EQEQ_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fromDouble_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/rangeSize_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/minimum_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/succ_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/showsPrec_4.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/asTypeOf_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/pred_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/notElem_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFromTo_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/divMod_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/GTEQ_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/LT_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/toUpper_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/GTEQ_7.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/tail_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/chr_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/maximum_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/showSigned_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/showParen_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/notElem_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/pred_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/all_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/lcm_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/range_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/ord_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/showsPrec_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/elem_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fromRational_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/take_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/minimum_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/isAlphaNum_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/read_2.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/unzip_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/return_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/floatRadix_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/catchHugsException_1.hs": {
+        "NO": 1
+    },
+    "basic_haskell\/encodeFloat_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/subtract_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/toEnum_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/zip_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/mapM__1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/lexDigits_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/concat_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/foldr1_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/pred_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/notElem_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/maximum_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFromTo_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/LT_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/GTEQ_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/isAscii_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fromInt_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/isLatin1_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/EQEQ_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/isDigit_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/MINUS_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/numerator_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/rangeSize_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/zip3_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/CARET_1.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/succ_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/elem_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/showsPrec_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/GTGT_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/isNaN_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/succ_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/elem_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/minimum_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/recip_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/EQEQ_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/any_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/toEnum_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fromInt_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/STAR_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/GTEQ_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/LT_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/and_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/EQLTLT_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/PLUSPLUS_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/showString_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/range_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFromTo_5.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/maximum_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/floor_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/fromInt_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/zipWith3_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/notElem_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/pred_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/maximum_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFromTo_7.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/minimum_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/showsPrec_2.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/elem_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/succ_7.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/CARET_2.hs": {
+        "MAYBE": 1
+    },
+    "basic_haskell\/toInt_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/toEnum_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/EQEQ_7.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/scanl_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/MINUS_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/odd_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/toEnum_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/EQEQ_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/elem_7.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/succ_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/showsPrec_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/minimum_5.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/recip_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/isControl_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/DOT_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/enumFromTo_6.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/isPrint_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/pred_3.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/notElem_4.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/intToDigit_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/foldl_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/STAR_2.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/GTEQ_1.hs": {
+        "YES": 1
+    },
+    "basic_haskell\/LT_1.hs": {
+        "YES": 1
+    }
+}

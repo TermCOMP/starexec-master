@@ -1,0 +1,665 @@
+{
+    "Hett\/p2_07.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_15.pl": {
+        "YES": 1
+    },
+    "Hett\/p2_10.pl": {
+        "MAYBE": 1
+    },
+    "Hett\/p1_03.pl": {
+        "YES": 1
+    },
+    "Hett\/p2_06.pl": {
+        "MAYBE": 1
+    },
+    "Hett\/p2_04.pl": {
+        "MAYBE": 1
+    },
+    "Hett\/p1_16.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_17.pl": {
+        "YES": 1
+    },
+    "Hett\/p2_05.pl": {
+        "MAYBE": 1
+    },
+    "Hett\/p1_04.pl": {
+        "YES": 1
+    },
+    "Hett\/p2_01.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_13.pl": {
+        "MAYBE": 1
+    },
+    "Hett\/p1_28_a.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_12.pl": {
+        "YES": 1
+    },
+    "Hett\/p2_02.pl": {
+        "MAYBE": 1
+    },
+    "Hett\/p1_11.pl": {
+        "MAYBE": 1
+    },
+    "Hett\/p2_03.pl": {
+        "MAYBE": 1
+    },
+    "Hett\/p1_18.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_20.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_21.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_19.pl": {
+        "YES": 1
+    },
+    "Hett\/p2_09.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_22.pl": {
+        "YES": 1
+    },
+    "Hett\/p2_08.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_27_a.pl": {
+        "YES": 1
+    },
+    "Hett\/p1_27_b.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/fib-oi.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/psk09-distance.pl": {
+        "MAYBE": 1
+    },
+    "prolog_mixed\/fib.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/dc_schema.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/primes.pl": {
+        "MAYBE": 1
+    },
+    "prolog_mixed\/factorial.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/totient.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/quicksort.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/psk09-cycle.pl": {
+        "MAYBE": 1
+    },
+    "prolog_mixed\/terminweb_queens.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/mergesort.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/kay4.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/hanoi.pl": {
+        "MAYBE": 1
+    },
+    "prolog_mixed\/tautology.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/numbervars.pl": {
+        "MAYBE": 1
+    },
+    "prolog_mixed\/permute2.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/curry_ap.pl": {
+        "MAYBE": 1
+    },
+    "prolog_mixed\/gtsolve.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/taboch_queens.pl": {
+        "YES": 1
+    },
+    "prolog_mixed\/mergesort_ap_variant.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/peephole.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/mmatrix.pl": {
+        "YES": 1
+    },
+    "talp_maria\/rdtok.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/browse.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/grammar2.pl": {
+        "YES": 1
+    },
+    "talp_maria\/boyer.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/money.pl": {
+        "YES": 1
+    },
+    "talp_maria\/query.pl": {
+        "YES": 1
+    },
+    "talp_maria\/grammar.pl": {
+        "YES": 1
+    },
+    "talp_maria\/occur.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/deriv-oii.pl": {
+        "YES": 1
+    },
+    "talp_maria\/deriv.pl": {
+        "YES": 1
+    },
+    "talp_maria\/qsortapp.pl": {
+        "YES": 1
+    },
+    "talp_maria\/read.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/serialize.pl": {
+        "YES": 1
+    },
+    "talp_maria\/bid.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/aiakl.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/hanoiapp.pl": {
+        "YES": 1
+    },
+    "talp_maria\/ann.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/tak.pl": {
+        "YES": 1
+    },
+    "talp_maria\/warplan.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/qplan.pl": {
+        "YES": 1
+    },
+    "talp_maria\/progeom.pl": {
+        "MAYBE": 1
+    },
+    "talp_maria\/fib.pl": {
+        "YES": 1
+    },
+    "talp_maria\/tictactoe.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-a-10-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-13-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-flag-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/binomial-true-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-a-08-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-easy-sum-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-17-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-mult-commutative-true-unreach-call-true-termination-modified-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/le-user-def-rec-true.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/rec-counter1-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-c-02-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-a-04-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-ex3b-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-07-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-ex1-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-03-no-inv-assume-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-a-01-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-java-ag313-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-02-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-addition01-true-unreach-call-true-termination-modified-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-c-03-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-a-05-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-a-09-assume-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-c-07-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-06-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-rec-hanoi02-true-unreach-call-true-termination-modified.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-b-12-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-03-assume-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-c-01-no-inv-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-java-continue-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-twisted-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-16-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-18-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-even-odd-01-true-unrech-call-true-termination-modified-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/two-way-true.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/ex3-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-a-07-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/et4-true-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-09-no-inv-assume-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-04-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-ex3a-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-c-01-assume-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/et2-true-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-10-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/et3-true-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-java-sequence-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/et1-true-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-14-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-c-08-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-ackermann01-true-unreach-call-modified-modified-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-b-11-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/avg-true-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-fibonacci-01-true-unreach-call-modified-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-java-nested-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-15-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-java-log-built-in-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-ex2-c.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_numeric\/svcomp-b-09-assume-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-01-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/log-recursive-c-true.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/terminator-rec-02-true.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/ex2-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-fermat-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-a-06-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-gcd-01-true-unreach-call-true-termination-modified-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/parts-true-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-java-break-c.pl": {
+        "YES": 1
+    },
+    "AProVE_numeric\/svcomp-b-05-c.pl": {
+        "YES": 1
+    },
+    "Euler_queensu-cs260\/evenspacedwithdiff.pl": {
+        "YES": 1
+    },
+    "Euler_queensu-cs260\/euler-01.pl": {
+        "MAYBE": 1
+    },
+    "Euler_queensu-cs260\/euler-02-nonterm.pl": {
+        "MAYBE": 1
+    },
+    "Euler_queensu-cs260\/euler-02.pl": {
+        "YES": 1
+    },
+    "Euler_queensu-cs260\/euler-03.pl": {
+        "MAYBE": 1
+    },
+    "Euler_queensu-cs260\/count.pl": {
+        "MAYBE": 1
+    },
+    "Euler_queensu-cs260\/evenspaced.pl": {
+        "YES": 1
+    },
+    "Euler_queensu-cs260\/euler-04.pl": {
+        "MAYBE": 1
+    },
+    "Euler_queensu-cs260\/prime.pl": {
+        "MAYBE": 1
+    },
+    "Euler_queensu-cs260\/gcd.pl": {
+        "YES": 1
+    },
+    "Euler_queensu-cs260\/evenspaced2.pl": {
+        "YES": 1
+    },
+    "Euler_queensu-cs260\/countall.pl": {
+        "MAYBE": 1
+    },
+    "Euler_queensu-cs260\/insert.pl": {
+        "YES": 1
+    },
+    "Euler_queensu-cs260\/isort.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/ackermann.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/prime.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/get-from-list.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/is.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/descend-nonterm.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/double.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/frac-reduce.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/descend.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/division-nonterm.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/vector.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/get-from-list-cut.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/double-is.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/extend.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/division.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/factorial.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/factorial_and.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/sum.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/factorial_or.pl": {
+        "MAYBE": 1
+    },
+    "Weinert_15\/fibonacci.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/ackermann-cut.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/sumrecursive.pl": {
+        "YES": 1
+    },
+    "Weinert_15\/fib-cut.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-11.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_triangle2.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-10.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_range.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-12.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_timeslist.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-9.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-8.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_between.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_squareroot.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-2.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-3.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-7-a.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-1.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-7-b.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_triangle.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_min.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-4.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_area.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-5.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-6-b.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_power2.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_length.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_power.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/exercise_hanoi.pl": {
+        "YES": 1
+    },
+    "Art-of-prolog\/program-8-6-a.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/and2.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/equality1.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/term.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/equality2.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/and1.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/addneg.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/nounify.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/dyck.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/divrempredef.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/grammar.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/even3.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/even2.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/inequality2.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/inequality1.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/terminate.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/even.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/existpredef.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_prolog\/lateinstance.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/nonterm.pl": {
+        "YES": 1
+    },
+    "AProVE_10_prolog\/term2.pl": {
+        "MAYBE": 1
+    }
+}

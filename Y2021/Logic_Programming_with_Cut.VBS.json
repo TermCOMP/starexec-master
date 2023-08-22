@@ -1,0 +1,338 @@
+{
+    "Schneider_Kamp_09\/soundex.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_09\/psk02.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_09\/psk03.pl": {
+        "MAYBE": 1
+    },
+    "Schneider_Kamp_09\/psk01.pl": {
+        "MAYBE": 1
+    },
+    "Schneider_Kamp_09\/shuffle.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_09\/star2.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_09\/hidden_flatten.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_09\/star1.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_09\/negationasfailure.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_09\/less1.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_09\/less2.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_09\/len.pl": {
+        "MAYBE": 1
+    },
+    "Schneider_Kamp_09\/max_valued.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_09\/existential.pl": {
+        "MAYBE": 1
+    },
+    "Schneider_Kamp_09\/shape.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_09\/thief1.pl": {
+        "MAYBE": 1
+    },
+    "Schneider_Kamp_09\/append_linear.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_09\/thief2.pl": {
+        "YES": 1
+    },
+    "AProVE_10_cut\/ts09.pl": {
+        "YES": 1
+    },
+    "AProVE_10_cut\/lateinst.pl": {
+        "YES": 1
+    },
+    "AProVE_10_cut\/ts05.pl": {
+        "YES": 1
+    },
+    "AProVE_10_cut\/latesplit.pl": {
+        "YES": 1
+    },
+    "AProVE_10_cut\/ts04.pl": {
+        "YES": 1
+    },
+    "AProVE_10_cut\/ts06.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_cut\/ts10.pl": {
+        "MAYBE": 1
+    },
+    "AProVE_10_cut\/ts07.pl": {
+        "MAYBE": 1
+    },
+    "Schneider_Kamp_08\/short1.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_08\/short2.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_08\/minus1.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_08\/minus2.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_08\/minus3.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_08\/divminuslinear.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_08\/appendex.pl": {
+        "MAYBE": 1
+    },
+    "Schneider_Kamp_08\/negationasfailure.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_08\/minus4.pl": {
+        "YES": 1
+    },
+    "Schneider_Kamp_08\/divminus.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/lte1.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/prime_fact.pl": {
+        "MAYBE": 1
+    },
+    "Stroeder_09\/add2.pl": {
+        "MAYBE": 1
+    },
+    "Stroeder_09\/app2.pl": {
+        "MAYBE": 1
+    },
+    "Stroeder_09\/app3.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/confdel.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/add3.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/add1.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/lte2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/plumer356.pl": {
+        "MAYBE": 1
+    },
+    "Stroeder_09\/app1.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/list.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/inorder-oi.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/ordered.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/giesl97.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/divremain2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/mul1.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/average1.pl": {
+        "MAYBE": 1
+    },
+    "Stroeder_09\/tree.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/countstack.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/num2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/gopher2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/less.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/transpose1.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/countstack2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/dependency.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/gopher1.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/preorder.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/cutpos1.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/lessleaves.pl": {
+        "MAYBE": 1
+    },
+    "Stroeder_09\/ts03.pl": {
+        "MAYBE": 1
+    },
+    "Stroeder_09\/evenodd2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/quot2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/plumer453b.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/rev2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/divremain.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/btree2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/subset-oi.pl": {
+        "MAYBE": 1
+    },
+    "Stroeder_09\/map.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/plumer453c.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/dependency2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/ts02.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/btappend.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/evenodd1.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/len2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/cutpos2.pl": {
+        "MAYBE": 1
+    },
+    "Stroeder_09\/quot1.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/plumer453a.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/flatten.pl": {
+        "MAYBE": 1
+    },
+    "Stroeder_09\/applast.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/blist2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/num.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/btree.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/bappend.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/ts01.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/select2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/fold2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/ordered3.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/times1.pl": {
+        "MAYBE": 1
+    },
+    "Stroeder_09\/list2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/ordered2.pl": {
+        "MAYBE": 1
+    },
+    "Stroeder_09\/duplicate1.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/vlcnd.pl": {
+        "MAYBE": 1
+    },
+    "Stroeder_09\/btapplast.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/blist.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/overlap1.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/fold3.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/convert.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/fold1.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/select1.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/tree2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/divminus2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/rev.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/overlap2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/duplicate2.pl": {
+        "YES": 1
+    },
+    "Stroeder_09\/len.pl": {
+        "YES": 1
+    }
+}

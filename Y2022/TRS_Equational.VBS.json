@@ -1,0 +1,230 @@
+{
+    "Mixed_AC\/BAG_nokinds.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/bag-sum-prod.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/YWHM14_3.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/YWHM14_4.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/RENAMED-BOOL_nosorts.xml": {
+        "NO": 1
+    },
+    "Mixed_AC\/sequent_modulo.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/BAG_complete-noand.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/kusakari1.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/YWHM14_5.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/YWHM14_2.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/bag-sum-prod-bin.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/bag-sum-prod-distr.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/RENAMED-BOOL_nokinds.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/BAG_nosorts.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/YWHM14_1.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/differ.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/BAG_nosorts-noand.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/BAG_nokinds-noand.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/intersect.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/RENAMED-BOOL_complete-noand.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_AC\/RENAMED-BOOL_nokinds-noand.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/RENAMED-BOOL_nosorts-noand.xml": {
+        "NO": 1
+    },
+    "Mixed_AC\/boolean_rings.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/BAG_complete.xml": {
+        "YES": 1
+    },
+    "Mixed_AC\/RENAMED-BOOL_complete.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_AC_and_C\/AC47.xml": {
+        "YES": 1
+    },
+    "Mixed_AC_and_C\/AC08.xml": {
+        "YES": 1
+    },
+    "Mixed_AC_and_C\/rationals.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_AC_and_C\/AC29.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC01.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC06.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC48.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC41.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC50.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC22.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC17.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC10.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC19.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC49.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC07.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC09.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC18.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC11.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC16.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC23.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC24.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC51.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC15.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC12.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC27.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC20.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC52.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC03.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC04.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC54.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC28.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC53.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC21.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC26.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC13.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC14.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/IJCAR_AC1.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC05.xml": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC02.xml": {
+        "YES": 1
+    },
+    "Mixed_C\/PEANO-NAT_complete.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_C\/maude2.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_C\/PEANO-NAT_nosorts.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_C\/PEANO-NAT_complete-noand.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_C\/AC46.xml": {
+        "YES": 1
+    },
+    "Mixed_C\/AC42.xml": {
+        "YES": 1
+    },
+    "Mixed_C\/AC45.xml": {
+        "YES": 1
+    },
+    "Mixed_C\/AC44.xml": {
+        "YES": 1
+    },
+    "Mixed_C\/AC43.xml": {
+        "YES": 1
+    },
+    "Mixed_C\/PEANO-NAT_nosorts-noand.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_C\/PEANO-NAT_nokinds.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_C\/PEANO-NAT_nokinds-noand.xml": {
+        "MAYBE": 1
+    }
+}

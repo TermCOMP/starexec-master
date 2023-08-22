@@ -1,0 +1,4955 @@
+{
+    "Secret_05_SRS\/aprove1.xml": {
+        "YES": 1
+    },
+    "Secret_05_SRS\/jambox2.xml": {
+        "YES": 1
+    },
+    "Secret_05_SRS\/jambox5.xml": {
+        "YES": 1
+    },
+    "Secret_05_SRS\/matchbox1.xml": {
+        "YES": 1
+    },
+    "Secret_05_SRS\/torpa1.xml": {
+        "YES": 1
+    },
+    "Secret_05_SRS\/jambox4.xml": {
+        "YES": 1
+    },
+    "Secret_05_SRS\/jambox3.xml": {
+        "YES": 1
+    },
+    "Secret_05_SRS\/torpa2.xml": {
+        "YES": 1
+    },
+    "Secret_05_SRS\/aprove4.xml": {
+        "YES": 1
+    },
+    "Secret_05_SRS\/aprove3.xml": {
+        "YES": 1
+    },
+    "Secret_05_SRS\/jambox1.xml": {
+        "YES": 1
+    },
+    "Secret_05_SRS\/matchbox2.xml": {
+        "YES": 1
+    },
+    "Secret_05_SRS\/aprove2.xml": {
+        "YES": 1
+    },
+    "Secret_05_SRS\/torpa4.xml": {
+        "YES": 1
+    },
+    "Secret_05_SRS\/torpa3.xml": {
+        "YES": 1
+    },
+    "Secret_05_SRS\/aprove5.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z005.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z121.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z079.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z126.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z002.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z128.xml": {
+        "NO": 1
+    },
+    "Zantema_04\/z070.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z077.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z042.xml": {
+        "NO": 1
+    },
+    "Zantema_04\/z093.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z045.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z094.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z039.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z113.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z037.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z030.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z114.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z021.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z105.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z102.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z026.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z085.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z054.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z028.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z082.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z053.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z066.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z061.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z013.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z014.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z068.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z031.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z115.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z112.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z036.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z044.xml": {
+        "NO": 1
+    },
+    "Zantema_04\/z095.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z038.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z043.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z092.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z076.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z071.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z127.xml": {
+        "NO": 1
+    },
+    "Zantema_04\/syracuse.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_04\/z003.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z004.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z120.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z078.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z015.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z069.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z012.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z060.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z067.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z083.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z052.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z084.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z055.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z029.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z103.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z027.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z020.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z104.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z011.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z018.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z064.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z063.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z087.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z056.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z080.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z051.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z109.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z023.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z107.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z089.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z058.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z100.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z024.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z111.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z049.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z098.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z035.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z032.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z116.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z118.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z040.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z091.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z047.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z096.xml": {
+        "NO": 1
+    },
+    "Zantema_04\/z072.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z009.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z075.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z007.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z123.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z124.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z088.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z059.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z101.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z025.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z022.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z106.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z081.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z050.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z108.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z086.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z057.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z062.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z019.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z065.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z017.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z010.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z125.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z001.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z006.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z122.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z008.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z074.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z073.xml": {
+        "NO": 1
+    },
+    "Zantema_04\/z046.xml": {
+        "NO": 1
+    },
+    "Zantema_04\/z097.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z119.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z041.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z090.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z033.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z117.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z110.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z048.xml": {
+        "YES": 1
+    },
+    "Zantema_04\/z034.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_SRS\/uni-2.xml": {
+        "NO": 1
+    },
+    "Waldmann_06_SRS\/sym-4.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_SRS\/uni-5.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_SRS\/jw4.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_SRS\/jw3.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_SRS\/sym-5.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_SRS\/uni-4.xml": {
+        "NO": 1
+    },
+    "Waldmann_06_SRS\/sym-2.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_SRS\/uni-3.xml": {
+        "NO": 1
+    },
+    "Waldmann_06_SRS\/jw5.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_SRS\/jw1.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_SRS\/pi.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_SRS\/sym-1.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_SRS\/e.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_SRS\/sym-6.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_SRS\/uni-7.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_SRS\/z086-variant.xml": {
+        "YES": 1
+    },
+    "Waldmann_06_SRS\/uni-6.xml": {
+        "NO": 1
+    },
+    "Waldmann_06_SRS\/uni-1.xml": {
+        "YES": 1
+    },
+    "Mixed_SRS\/05.xml": {
+        "YES": 1
+    },
+    "Mixed_SRS\/1.xml": {
+        "NO": 1
+    },
+    "Mixed_SRS\/02.xml": {
+        "YES": 1
+    },
+    "Mixed_SRS\/turing_add.xml": {
+        "YES": 1
+    },
+    "Mixed_SRS\/03.xml": {
+        "YES": 1
+    },
+    "Mixed_SRS\/04.xml": {
+        "YES": 1
+    },
+    "Mixed_SRS\/08-oppelt08.xml": {
+        "NO": 1
+    },
+    "Mixed_SRS\/09.xml": {
+        "YES": 1
+    },
+    "Mixed_SRS\/4.xml": {
+        "YES": 1
+    },
+    "Mixed_SRS\/07.xml": {
+        "YES": 1
+    },
+    "Mixed_SRS\/3.xml": {
+        "YES": 1
+    },
+    "Mixed_SRS\/s6.xml": {
+        "YES": 1
+    },
+    "Mixed_SRS\/2.xml": {
+        "YES": 1
+    },
+    "Mixed_SRS\/01.xml": {
+        "YES": 1
+    },
+    "Mixed_SRS\/06-oppelt08.xml": {
+        "NO": 1
+    },
+    "Mixed_SRS\/touzet.xml": {
+        "YES": 1
+    },
+    "Mixed_SRS\/06.xml": {
+        "YES": 1
+    },
+    "Mixed_SRS\/turing_copy.xml": {
+        "NO": 1
+    },
+    "Mixed_SRS\/08.xml": {
+        "YES": 1
+    },
+    "Mixed_SRS\/07-oppelt08.xml": {
+        "NO": 1
+    },
+    "Mixed_SRS\/05-oppelt08.xml": {
+        "NO": 1
+    },
+    "Mixed_SRS\/04-oppelt08.xml": {
+        "NO": 1
+    },
+    "Mixed_SRS\/01-oppelt08.xml": {
+        "NO": 1
+    },
+    "Mixed_SRS\/turing_mult.xml": {
+        "NO": 1
+    },
+    "Mixed_SRS\/02-oppelt08.xml": {
+        "NO": 1
+    },
+    "Mixed_SRS\/03-oppelt08.xml": {
+        "NO": 1
+    },
+    "ICFP_2010\/165713.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/132540.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/264033.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27023.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/86526.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/85345.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/84977.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/41378.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/107220.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/136354.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/140631.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/86636.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/211915.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/158342.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/137087.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/159731.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/167041.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/214183.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/133010.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/149915.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/167452.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/85675.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/132622.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26886.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/85834.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/150815.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/107193.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/139282.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/132864.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/91242.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/211960.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/95858.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/150188.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/128280.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/135652.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/167742.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/138993.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26974.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4487.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/138468.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4824.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/127538.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/25731.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4002.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/152694.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/136934.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/40976.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/25736.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/68322.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4816.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26946.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/88143.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26862.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3939.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/128515.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3861.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/231480.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/214169.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4991.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/160462.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/153243.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212026.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/43650.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/139214.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/40033.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/135505.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/25388.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/149713.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/136534.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/137715.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/136623.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26127.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/211639.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/149251.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3930.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/211471.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/25743.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26933.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/130304.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/166558.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/85874.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/188238.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/130472.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96119.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/167240.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/153371.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/85294.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26226.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/158152.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26069.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212480.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/135604.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/161930.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/161593.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/213560.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212037.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/149415.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/57355.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/247992.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96086.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/138089.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/133827.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/214261.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/139036.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/57799.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26957.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/124269.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26986.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/213218.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96438.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212094.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/43987.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/86577.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/88183.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/139167.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/165904.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27009.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/57278.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/140359.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/58194.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/162095.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/64160.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/246924.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/85590.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/160254.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/39849.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3842.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96289.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26919.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/130161.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/231378.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26965.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96224.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/48328.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/41688.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/28643.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96642.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/136562.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/188674.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/136497.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/150258.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/165936.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/91254.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212774.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/107236.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/153170.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96403.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4964.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/247504.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4840.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/211978.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/54097.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26103.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26910.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/133159.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4847.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/150630.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3729.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96256.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/167391.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/139004.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/85749.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/138477.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96065.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/137404.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96612.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/142157.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3467.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3770.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27134.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/142150.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/134918.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/231043.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4819.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26998.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26949.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96274.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3995.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/167310.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/128430.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/124791.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/98623.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/180915.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96485.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27280.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/51424.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/136463.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/157161.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3705.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/97917.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/88283.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/5011.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4934.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/214320.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27019.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/188004.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/165755.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/128056.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/132611.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/86025.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4314.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26940.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/135936.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/187254.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/140639.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/231230.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/130962.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4036.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/259625.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/166848.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/45757.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26972.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/48267.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/213537.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/139378.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26741.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/5109.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/150468.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/85267.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96156.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/140287.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26105.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26916.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/167087.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/188261.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/136601.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/135714.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3831.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/139236.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4029.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/140318.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/150877.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27034.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/186222.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/85039.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/162244.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/132957.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212534.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/41865.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/43266.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/139185.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/213147.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96198.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/213281.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26896.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/95899.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/128620.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/44332.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/140654.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/249459.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212043.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26875.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96334.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26951.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/264405.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26980.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/85079.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/135782.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/188696.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/213051.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/85650.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/86745.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/25726.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/86452.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/137316.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/213437.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/166465.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/97888.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/131982.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/97901.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/65081.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/186333.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/137621.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/167636.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/249663.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27001.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/42683.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/149297.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3927.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/28838.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/132848.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/149319.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26923.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/48686.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26130.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27006.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/160068.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/150839.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/50904.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/167526.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/186023.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/42466.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/142146.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4282.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/58221.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27235.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/132833.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/160475.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/25409.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/42321.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/150067.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/230819.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212189.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/85380.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4051.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4893.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/167433.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27030.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/29415.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/149277.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/160398.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/140659.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3916.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3786.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26969.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3336.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96370.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/137799.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/56144.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/43603.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96302.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/248060.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/231149.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/160263.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/230948.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/138142.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/211857.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/157713.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/86816.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3498.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26960.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/138194.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/68989.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27039.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/247906.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/249386.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/25395.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/157436.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/136693.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3633.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/123759.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/132720.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/39830.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3589.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/57453.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26871.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212421.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/186919.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/91218.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/264370.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/133881.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/262998.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/161864.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96104.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/153288.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212612.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4374.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96176.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/128486.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/231604.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3762.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/25849.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212795.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/152865.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/86617.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/149361.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/135601.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4953.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/142142.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/5076.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/138269.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3989.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/133486.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26927.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/97885.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/58301.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96029.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/136280.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/247254.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/137956.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/167294.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/139025.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/187837.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27013.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/132738.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26931.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/137809.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/98362.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/213611.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/139174.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/147437.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/230780.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/184957.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/85920.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26943.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4248.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/186973.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/25734.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26186.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26291.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/183803.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/160364.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/157275.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4979.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/136571.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212308.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/25416.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/57132.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/247020.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/85782.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/160427.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/263745.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/166493.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27028.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/136323.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3856.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/28464.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4206.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/157150.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/139190.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/139256.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/213865.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26976.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/53216.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4854.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/160324.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96417.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4970.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26978.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96239.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3746.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/128691.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/85721.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/68535.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/186775.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/128550.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/186810.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/185453.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26903.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26110.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/135659.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27026.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/137623.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/91210.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/138330.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/150725.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/95952.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/54622.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4141.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/132782.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/57852.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27003.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/158620.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26132.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/86857.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212117.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26879.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/132969.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/165975.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/81452.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/54532.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/124211.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/157603.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/51842.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/166001.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/131633.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/161533.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/88156.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96673.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/41427.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26954.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96563.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4017.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/139163.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/152949.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4920.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/140664.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/25711.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/153444.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/25808.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/128182.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212364.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/231300.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26845.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/25192.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4106.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/162075.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/139180.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/259405.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/214011.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/133532.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/138254.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/132478.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/213407.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/88208.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/160210.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4057.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96523.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/132920.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/139310.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/133079.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/136051.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/133236.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/45970.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3268.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/151247.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/158208.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/213719.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27036.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3562.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/162016.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212693.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/97929.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/40540.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/84886.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/28293.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/86559.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/161519.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/135410.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/63142.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/157466.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/45720.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/254704.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26116.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4046.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/25775.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/132235.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/153090.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/160660.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/40708.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/161917.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27213.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/91233.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/157593.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3450.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26882.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/152786.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/96464.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/88172.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/139018.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3385.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4484.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/48262.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/149849.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4827.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/95978.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/42170.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/153034.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4200.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212062.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/186617.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/41843.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/5130.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/25422.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/48374.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/40093.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/43621.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/137136.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/135115.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/148543.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/85477.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/41838.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3865.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/158477.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212892.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/212263.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3533.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26993.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/133432.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/149633.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/188296.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/51577.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4938.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4412.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/160234.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27015.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/24100.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26123.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/58125.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/157388.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4157.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/27131.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3817.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/86499.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4181.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4943.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/135328.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/214091.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/139100.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/3680.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/182946.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/86052.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/4074.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/185628.xml": {
+        "YES": 1
+    },
+    "ICFP_2010\/26683.xml": {
+        "YES": 1
+    },
+    "Bouchare_06\/12.xml": {
+        "YES": 1
+    },
+    "Bouchare_06\/15.xml": {
+        "YES": 1
+    },
+    "Bouchare_06\/04.xml": {
+        "YES": 1
+    },
+    "Bouchare_06\/03.xml": {
+        "YES": 1
+    },
+    "Bouchare_06\/14.xml": {
+        "YES": 1
+    },
+    "Bouchare_06\/13.xml": {
+        "YES": 1
+    },
+    "Bouchare_06\/02.xml": {
+        "YES": 1
+    },
+    "Bouchare_06\/05.xml": {
+        "YES": 1
+    },
+    "Bouchare_06\/08.xml": {
+        "NO": 1
+    },
+    "Bouchare_06\/06.xml": {
+        "YES": 1
+    },
+    "Bouchare_06\/01.xml": {
+        "YES": 1
+    },
+    "Bouchare_06\/10.xml": {
+        "YES": 1
+    },
+    "Bouchare_06\/17.xml": {
+        "YES": 1
+    },
+    "Bouchare_06\/07.xml": {
+        "YES": 1
+    },
+    "Bouchare_06\/09.xml": {
+        "NO": 1
+    },
+    "Bouchare_06\/18.xml": {
+        "YES": 1
+    },
+    "Bouchare_06\/16.xml": {
+        "YES": 1
+    },
+    "Bouchare_06\/11.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-8.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-16.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-2-num-1.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-11.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-1.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-6.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-18.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-7.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-19.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-10.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-9.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-17.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-3.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-4.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-14.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-2-num-3.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-13.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-2-num-4.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-21.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-20.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-12.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-15.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-2-num-2.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-5.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size11\/size-11-alpha-3-num-2.xml": {
+        "YES": 1
+    },
+    "Secret_07_SRS\/x10.xml": {
+        "YES": 1
+    },
+    "Secret_07_SRS\/num-518.xml": {
+        "NO": 1
+    },
+    "Secret_07_SRS\/x08.xml": {
+        "YES": 1
+    },
+    "Secret_07_SRS\/x06.xml": {
+        "YES": 1
+    },
+    "Secret_07_SRS\/x01.xml": {
+        "YES": 1
+    },
+    "Secret_07_SRS\/dj.xml": {
+        "YES": 1
+    },
+    "Secret_07_SRS\/x07.xml": {
+        "YES": 1
+    },
+    "Secret_07_SRS\/x09.xml": {
+        "YES": 1
+    },
+    "Secret_07_SRS\/num-519.xml": {
+        "NO": 1
+    },
+    "Secret_07_SRS\/num-525.xml": {
+        "NO": 1
+    },
+    "Secret_07_SRS\/x04.xml": {
+        "YES": 1
+    },
+    "Secret_07_SRS\/x03.xml": {
+        "YES": 1
+    },
+    "Secret_07_SRS\/num-514.xml": {
+        "NO": 1
+    },
+    "Secret_07_SRS\/num-521.xml": {
+        "NO": 1
+    },
+    "Secret_07_SRS\/num-530.xml": {
+        "NO": 1
+    },
+    "Secret_07_SRS\/num-539.xml": {
+        "NO": 1
+    },
+    "Secret_07_SRS\/num-527.xml": {
+        "NO": 1
+    },
+    "Secret_07_SRS\/num-520.xml": {
+        "NO": 1
+    },
+    "Secret_07_SRS\/x02.xml": {
+        "YES": 1
+    },
+    "Secret_07_SRS\/num-515.xml": {
+        "NO": 1
+    },
+    "Secret_07_SRS\/x05.xml": {
+        "YES": 1
+    },
+    "Yolcu_21\/collatz-L.xml": {
+        "MAYBE": 1
+    },
+    "Yolcu_21\/michel.xml": {
+        "MAYBE": 1
+    },
+    "Yolcu_21\/collatz-T.xml": {
+        "MAYBE": 1
+    },
+    "Yolcu_21\/collatz-S.xml": {
+        "MAYBE": 1
+    },
+    "Yolcu_21\/farkas.xml": {
+        "MAYBE": 1
+    },
+    "Yolcu_21\/silva.xml": {
+        "MAYBE": 1
+    },
+    "Yolcu_21\/barina.xml": {
+        "MAYBE": 1
+    },
+    "Yolcu_21\/collatz-T-5or7mod8.xml": {
+        "MAYBE": 1
+    },
+    "Yolcu_21\/mahler.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/14.xml": {
+        "YES": 1
+    },
+    "Gebhardt_06\/13.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/02.xml": {
+        "YES": 1
+    },
+    "Gebhardt_06\/05.xml": {
+        "NO": 1
+    },
+    "Gebhardt_06\/12.xml": {
+        "NO": 1
+    },
+    "Gebhardt_06\/15.xml": {
+        "NO": 1
+    },
+    "Gebhardt_06\/20.xml": {
+        "MAYBE": 1
+    },
+    "Gebhardt_06\/04.xml": {
+        "YES": 1
+    },
+    "Gebhardt_06\/03.xml": {
+        "NO": 1
+    },
+    "Gebhardt_06\/07.xml": {
+        "YES": 1
+    },
+    "Gebhardt_06\/09.xml": {
+        "YES": 1
+    },
+    "Gebhardt_06\/18.xml": {
+        "YES": 1
+    },
+    "Gebhardt_06\/16.xml": {
+        "YES": 1
+    },
+    "Gebhardt_06\/11.xml": {
+        "YES": 1
+    },
+    "Gebhardt_06\/08.xml": {
+        "NO": 1
+    },
+    "Gebhardt_06\/06.xml": {
+        "NO": 1
+    },
+    "Gebhardt_06\/01.xml": {
+        "YES": 1
+    },
+    "Gebhardt_06\/10.xml": {
+        "NO": 1
+    },
+    "Gebhardt_06\/17.xml": {
+        "YES": 1
+    },
+    "Gebhardt_06\/19.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-255.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-284.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-194.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-283.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-558.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-90.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-400.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-376.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-41.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-472.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-304.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-220.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-556.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-378.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-227.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-551.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-99.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-409.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-48.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-475.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-303.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-564.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-105.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-179.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-491.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-563.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-215.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-511.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-170.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-267.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-498.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-74.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-343.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-435.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-392.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-395.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-177.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-260.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-338.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-384.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-355.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-14.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-7.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-271.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-507.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-19.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-489.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-383.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-65.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-352.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-13.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-456.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-17.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-487.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-7.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-204.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-113.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-203.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-9.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-114.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-451.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-10.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-327.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-480.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-168.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-59.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-88.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-418.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-121.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-540.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-236.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-22.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-369.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-126.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-547.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-231.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-292.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-535.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-243.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-367.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-128.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-549.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-360.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-21.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-57.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-86.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-416.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-238.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-532.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-72.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-345.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-176.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-339.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-499.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-448.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-434.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-497.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-330.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-446.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-565.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-104.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-213.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-178.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-337.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-441.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-226.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-131.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-550.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-98.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-408.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-49.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-474.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-35.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-473.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-32.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-221.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-195.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-282.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-559.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-91.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-401.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-377.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-40.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-406.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-47.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-522.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-285.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-20.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-361.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-417.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-239.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-152.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-294.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-293.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-366.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-51.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-410.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-129.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-548.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-23.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-462.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-368.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-127.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-546.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-120.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-541.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-237.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-465.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-202.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-450.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-11.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-1.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-508.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-16.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-6.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-279.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-112.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-488.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-8.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-160.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-382.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-64.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-12.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-353.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-1.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-385.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-15.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-354.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-328.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-270.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-506.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-241.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-52.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-413.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-83.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-362.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-414.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-84.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-468.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-297.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-180.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-123.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-299.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-248.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-20.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-461.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-158.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-545.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-124.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-233.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-454.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-485.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-5.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-15.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-206.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-111.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-18.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-359.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-201.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-453.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-482.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-2.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-386.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-16.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-273.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-164.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-274.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-163.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-502.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-350.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-11.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-67.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-265.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-219.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-341.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-76.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-437.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-109.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-568.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-346.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-71.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-430.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-107.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-566.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-210.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-348.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-399.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-493.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-494.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-100.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-561.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-217.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-439.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-198.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-149.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-470.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-31.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-222.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-135.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-225.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-553.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-132.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-288.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-477.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-301.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-95.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-44.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-373.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-191.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-257.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-286.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-140.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-479.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-281.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-526.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-402.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-92.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-374.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-275.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-503.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-427.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-10.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-351.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-66.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-209.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-3.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-17.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-356.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-61.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-4.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-272.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-165.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-389.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-19.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-200.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-452.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-3.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-13.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-455.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-4.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-484.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-14.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-429.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-207.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-110.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-21.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-460.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-159.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-125.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-232.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-543.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-122.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-467.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-298.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-249.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-2-num-22.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-363.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-415.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-85.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-469.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-296.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-181.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-247.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-291.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-536.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-186.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-412.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-82.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-146.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-309.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-403.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-375.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-94.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-45.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-190.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-287.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-478.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-224.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-552.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-133.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-289.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-476.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-300.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-199.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-30.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-223.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-134.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-495.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-101.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-560.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-438.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-106.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-211.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-492.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-335.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-443.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-108.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-347.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-70.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-396.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-431.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-174.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-263.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-340.xml": {
+        "NO": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-436.xml": {
+        "YES": 1
+    },
+    "Waldmann_07_size12\/size-12-alpha-3-num-391.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/8.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/6.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/1.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/secr10.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/aprove03.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/aprove04.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/secr6.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/multum3.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/secr1.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/multum4.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/secr8.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/5-matchbox.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/7.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/9.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/secr9.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/1-matchbox.xml": {
+        "NO": 1
+    },
+    "Secret_06_SRS\/multum5.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/10.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/secr7.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/multum2.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/2-matchbox.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/3-matchbox.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/aprove05.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/aprove02.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/multum1.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/secr4.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/multum6.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/secr3.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/aprove08.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/aprove01.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/aprove06.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/3.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/aprove07.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/aprove00.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/aprove09.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/secr2.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/secr5.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/2.xml": {
+        "YES": 1
+    },
+    "Secret_06_SRS\/5.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/14.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/13.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/beans7.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/loop2.xml": {
+        "NO": 1
+    },
+    "Zantema_06\/02.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/05.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/beans6.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/while2.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/beans1.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/12.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/15.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/04.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/03.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/abc.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/07.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/09.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/beans2.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/beans5.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/while1.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_06\/18.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/16.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/11.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/08.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/06.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/01.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/10.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/17.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/beans4.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/beans3.xml": {
+        "YES": 1
+    },
+    "Zantema_06\/loop1.xml": {
+        "NO": 1
+    },
+    "Trafo_06\/un04.xml": {
+        "NO": 1
+    },
+    "Trafo_06\/dup17.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/dup10.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/dup01.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/dup06.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/dup08.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/un15.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/un12.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/hom03.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/dup11.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/dup16.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/un05.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/un02.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/hom02.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/un13.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/dup09.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/un14.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/dup07.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/hom01.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/un17.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/un10.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/dup15.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/un08.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/dup12.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/un06.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/dup05.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/un18.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/un11.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/un16.xml": {
+        "MAYBE": 1
+    },
+    "Trafo_06\/un07.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/dup13.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/dup14.xml": {
+        "YES": 1
+    },
+    "Trafo_06\/un09.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-403.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-33.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-404.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-141.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-552.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-90.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-289.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-97.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-529.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-332.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-216.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-101.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-106.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-443.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-396.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-436.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-391.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-10.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-387.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-17.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-504.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-19.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-65.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-467.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-22.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-390.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-341.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-397.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-470.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-554.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-222.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-132.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-8.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-373.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-147.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-402.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-319.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-414.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-246.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-530.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-234.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-123.xml": {
+        "NO": 1
+    },
+    "Waldmann_19\/random-466.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-317.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-87.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-539.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_19\/random-158.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-545.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-453.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-421.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-361.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-239.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-152.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-27.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-55.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-230.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-127.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-546.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-120.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-115.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-202.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-450.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-169.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-486.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-488.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-425.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-354.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-78.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-266.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-268.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-330.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-519.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-408.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-254.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-355.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-383.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-320.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-278.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_19\/random-113.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-114.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-327.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-540.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-82.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-369.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-126.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-185.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-26.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-238.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-244.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-371.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-284.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-194.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-376.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-400.xml": {
+        "NO": 1
+    },
+    "Waldmann_19\/random-45.xml": {
+        "MAYBE": 1
+    },
+    "Waldmann_19\/random-472.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-77.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-215.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-498.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-395.xml": {
+        "YES": 1
+    },
+    "Waldmann_19\/random-516.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bacaaaaaa-aaaaaabacbaca.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abaaaa-aaaaabababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaa-aaaaaabaaabaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaaaa-aaaaaaaababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bababaaaba-aabaaababababa.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abacaaaaa-aaaaaabacabac.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbabbbbabb-abbbbabbabbbba.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabbaaaa-aaaaaabbaaabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abcbaaaa-aaaaabcbaaabcb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabbcaaaa-aaaaaabbcaabbc.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/baabbaab-aabbaabaabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/baababaab-ababaabaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaababaaab-aababaaababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaaa-aaaaaaaababab.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/aabaaaaaa-aaaaaaaabaaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bababaa-aaaababababa.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abaaaaaaa-aaaaaaaabaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bacaaaaaaa-aaaaaaabacbaca.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abaababa-aababababaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbaabbaaba-abaabbaabbaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abccaaaa-aaaaabccaabcc.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bcbaaaaaaa-aaaaaaabcbbcba.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/bcbaaaaaa-aaaaaabcbbcba.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abaaaa-aaaaabaaabaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/baababaaab-ababaaababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/cabababa-ababababccccca.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/ababaabaaba-abaabaabaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/ababaaba-abaababababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/ababaabababa-abaababababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbaaaaa-aaaaaabbabbabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaabaaaa-aaaaabaababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaababaab-ababaabaababa.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/baabbaaaabb-aabbaaaabbaabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaaaa-aaaaaabaabaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/cababababa-abababababccca.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/ababbabab-abbabababba.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bacaaaaaa-aaaaaaabacbac.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abbaaaa-aaaaabbaabbabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaabaaaaa-aaaaaaabaabaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbcaaaaa-aaaaaabbcabbc.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaa-aaaaaabababab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabbaaaabaa-aabaaaabbaaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/acbabacba-abacbacbabac.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaa-aaaaabaaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aaabaaaaaa-aaaaaaaaabaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaaa-aaaaaaababaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/baabbaab-aabbaabaabaabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaabababa-aabababababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaa-aaaaabaaabaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaabaaaaa-aaaaaabaabaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaa-aaaaaababaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abcbaaaaa-aaaaaabcbabcb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/ababaababa-aababababaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bacaaaaaaa-aaaaaaaabacbac.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abababaababa-aababaabababab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabcbaaaa-aaaaaabcbaabcb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaa-aaaaaabaaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/ababaabaaba-aabaabaababab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabbaaba-aabaabbaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaba-aabababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaba-aababababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaaaa-aaaaaaaabaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaabbaab-aabbaabaabbaa.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/babaaaaaa-aaaaaababbaba.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abbaaaaa-aaaaaabbabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/baaabbaaab-aaabbaaabaaabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abababaab-aabaabababab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abcbaaaaa-aaaaaabcbaabcb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/ababaaaa-aaaaababaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbaaaaa-aaaaaabbaaaabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabbaaaaa-aaaaaaabbaabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/ababaaaaa-aaaaaababab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bababaaba-ababaababababa.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaba-aabababababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abababaababa-ababaabababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabbaaaa-aaaaaabbaabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaa-aaaaaabaabaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bbcaaaaaa-aaaaaaabbcbbc.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/aabaaaaa-aaaaaaabaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bccaaaaaa-aaaaaabccbcca.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/aabbbaaaa-aaaaaabbbaabbb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaabaa-aaabaaabaaaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaaaaaaa-aaaaaaaaabaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaaaaaa-aaaaaaaaaaabab.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abaaaaaaaa-aaaaaaaaaabab.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abaaaaaaa-aaaaaaaaababab.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abaababa-aabababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaaaa-aaaaaaaababab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaa-aaaaabaababab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abacaaaa-aaaaabacaaabac.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aaabaaaaa-aaaaaaaabaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabccaaaa-aaaaaabccaabcc.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaaaaaaaa-aaaaaaaaaabaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abacaaaaa-aaaaaabacaabac.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbcaaaaa-aaaaaabbcaabbc.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaababaab-aababaabaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbaaaabaa-abaaaabbaaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/babaaaaaa-aaaaaaababbab.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/ababbabab-abbababababba.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/baabababba-abababbaababab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaaaaa-aaaaaaabaaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaaabaaba-aaabaabaabaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abacababab-ababababacabac.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaabababa-aababababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbaaaa-aaaaabbaabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbbaaaa-aaaaabbbaabbb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaa-aaaaabaababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbaaaaaaa-aaaaaaaaabbabb.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abbbaaaa-aaaaabbbaaabbb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabbababa-abababaabbaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabababab-ababababaaaaab.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/bababbababa-abababbababba.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/babbabbababa-abababbabbabba.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbcacabca-abcacabbcacab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/ababaababa-abaababababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bccaaaaaaa-aaaaaaaabccbcc.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/bbcaaaaaa-aaaaaabbcbbca.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abaaaaa-aaaaaaabababab.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/ababaaaaaaa-aaaaaaaababab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaaaaaaa-aaaaaaaaabaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbcaaaa-aaaaabbcaabbc.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bababababaa-aababababababa.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/babababaa-aaaabababababa.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abaabaaaa-aaaaabaabaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaababababa-aabababababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/ababbbabbab-abbabbbababbba.srs.xml": {
+        "MAYBE": 1
+    },
+    "Wenzel_16\/abaababa-aababababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aaabbaaaa-aaaaaaabbaaabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/ababaaaaa-aaaaaabababab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaabababa-aababababaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbaaaaaaa-aaaaaaaabbabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abcabbcab-abbcabcabbca.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaa-aaaaabaabaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbaaaa-aaaaabbabbaabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabbaabababa-aabababaabbaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bbcaaaaaaa-aaaaaaaabbcbbc.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/aabbaabbaaba-aabaabbaabbaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaaaa-aaaaaabaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaabaa-aaabaabaaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaaaa-aaaaaabaaabaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abacaaaa-aaaaabacaabac.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abababbabab-ababbabababba.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbaaaaaa-aaaaaaabbaaabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaaaa-aaaaaaaabaaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbbaaaaa-aaaaaabbbabbb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaaaaa-aaaaaaabaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aaabaaaa-aaaaaaabaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aaabaaaaa-aaaaaaaabaaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaababa-aabababababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabbaaaaa-aaaaaaabbaaabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaa-aaaaaababaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaa-aaaaabaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abababaaaaa-aaaaaabababab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaaaa-aaaaaaaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/baabbaabaab-aabbaabaabbaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bababaaab-aabaaabababab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abccaaaa-aaaaabccaaabcc.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bcbaaaaaa-aaaaaaabcbbcb.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/bcbaaaaaaa-aaaaaaaabcbbcb.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/aabacaaa-aaaaabacaabac.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/ababaabababa-aabababaababab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaa-aaaaaababaaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bababaa-aaaaaababababa.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abaaaaaaaa-aaaaaaaaaabaab.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abaaaaaaa-aaaaaaaabaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaababaab-aababaabaababa.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbcaabbca-aabbcabbcaabbc.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaa-aaaaababaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbaaba-abaabbaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abccaaaaa-aaaaaabccabcc.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bbcaaaaaaa-aaaaaaabbcbbca.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abaaaaa-aaaaaabaaaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/ababaababa-abaabababaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaabaaaa-aaaaaabaabaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abababaaab-aaabaaabababab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbaaaaaaa-aaaaaaaabbaabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaabaaaa-aaaaabaaabaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbbaaaaa-aaaaaabbbaabbb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/ababaaaaa-aaaaaababaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaaa-aaaaaaabaaaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/ababaababa-abaabababaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaaabaab-abaaabaabaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abacaabaca-aabacabacaabac.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbabbaaaaa-aaaaaabbabbabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaa-aaaaabaabaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaaaa-aaaaaabaabaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/baabbaaaab-aabbaaaabbaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/babbabbaba-ababbabbabba.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/babababaa-aaabababababa.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abbaaaaa-aaaaaabbaaabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/ababbababab-abbababababba.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbcaaaa-aaaaabbcaaabbc.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaa-aaaaaabaaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/baabaabbaab-aabbaabaabaabb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaaaaa-aaaaaaabaabaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bccaaaaaaa-aaaaaaabccbcca.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abababaab-aababaabababab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/babbaabba-abbaabbabba.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/caabccaabc-aabccaabcaabcc.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaaa-aaaaaaabaaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/baabbaaba-aabbaabaabba.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/babaaaaaaa-aaaaaaababbaba.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/babbabbaba-abababbabbabba.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaaa-aaaaaaabaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaa-aaaaababaabaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abcbaabcba-aabcbabcbaabcb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaaaaa-aaaaaaaaabaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abccaaaaa-aaaaaabccaabcc.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aababaaaa-aaaaaababaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaababaab-aababaababaaba.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bccaaaaaa-aaaaaaabccbcc.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abaaaaabaa-aaaaababaaaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaabaa-aaabaaababaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abababaababa-ababaababaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abbaababab-ababababbaabba.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaaa-aaaaaaabaaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abababaababa-abaababaababab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaaaa-aaaaaabaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/ababaaaa-aaaaababaaabab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abaaaaa-aaaaaababab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/aabaaaaaa-aaaaaaaabaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/babaaaaaaa-aaaaaaaababbab.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/aabaaaabaa-aaaabaabaaaab.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/abcbaaaa-aaaaabcbaabcb.srs.xml": {
+        "YES": 1
+    },
+    "Wenzel_16\/bababaa-aaaaababababa.srs.xml": {
+        "NO": 1
+    },
+    "Wenzel_16\/abaaababaab-abaababaaababa.srs.xml": {
+        "YES": 1
+    }
+}
