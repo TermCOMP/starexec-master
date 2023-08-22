@@ -33,7 +33,7 @@ The following are automatic if you use Heroku with heroku-php-apache2 web server
    extension=php_openssl
    ```
 4. Make the `starexec-master` directory accessible from the web server.
-5. Update `.profile` and keep it running until competition is finished. This will fetch past data and periodically update the present status from StarExec.
+5. Update `.profile` and keep it running until competition is finished. This will periodically update the present status from StarExec.
 6. It will be nicer to automatically synchronize with the starexec-master repository.
 
 ## Creating StarExec Jobs
