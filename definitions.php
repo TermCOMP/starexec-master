@@ -60,7 +60,7 @@ set_time_limit(300);
 		'timeout' => [ 'text' => null, 'bar' => true, 'class' => 'score timeout' ],
 		'error' => [ 'text' => 'error', 'bar' => true, 'class' => 'score error' ],
 		'news' => [ 'text' => 'news', 'bar' => false, 'class' => 'score news important' ],
-		'wrong' => [ 'text' => 'wrong', 'bar' => false, 'class' => 'score wrong important' ],
+		'wrong' => [ 'text' => 'wrong', 'bar' => true, 'class' => 'score wrong important' ],
 	];
 	function new_scores() {
 		return [
