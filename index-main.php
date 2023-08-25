@@ -59,7 +59,7 @@ var configToggler = StyleToggler(
 	<?php echo $showconfig ? '1' : '0'; ?>
 );
 var scoreToggler = StyleToggler(
-	document.getElementById("scoreToggler"), ".score", [
+	document.getElementById("scoreToggler"), ".score:not(.important)", [
 		{ text: "Show scores", assign: { display: "none" } },
 		{ text: "Hide scores", assign: { display: "" } },
 	],
@@ -223,6 +223,8 @@ foreach( $mcats as $mcatname => $cats ) {
 		$overlay = array_key_exists( 1, $jobids ) ? $jobids[1] : false;
 		$job_file = jobname2local($catname);
 		$graph_file = jobname2graph($catname);
+		// penalty file if exists
+		$penalty_file = $competition.'/'.jobname2penaltyfile($catname);
 		$jobargs = [
 			'id' => $id,
 			'name' => $catname,
@@ -247,8 +249,9 @@ foreach( $mcats as $mcatname => $cats ) {
 		if( isset($cat['note']) ) {
 			$jobargs['note'] = $cat['note'];
 		}
-		if( isset($cat['untrusted']) ) {
-			$jobargs['untrusted'] = implode('_',$cat['untrusted']);
+		if( file_exists($penalty_file) ) {
+error_log($penalty_file);
+			$jobargs['penalty'] = $penalty_file;
 		}
 		$query = http_build_query( $jobargs, '', ' ' );
 		$tmp = tempnam('','');

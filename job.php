@@ -20,8 +20,8 @@
 	$bm_prefix = array_key_exists('dir',$_GET) ? $_GET['dir'].'/' : '';
 	$cops = $_GET['cops'];
 	$type = $_GET['type'];
-	$untrusted = array_key_exists('untrusted',$_GET) ? explode( '_', $_GET['untrusted'] ) : [];
-
+	$penalized_pairs = array_key_exists('penalty',$_GET) ?
+		json_decode(file_get_contents($_GET['penalty'])) : [];
 	if( array_key_exists('competition',$_GET) ) {// This means it is generating an HTML in the competition directory.
 		$competition = $_GET['competition'];
 		$competitionname = $_GET['competitionname'];
@@ -148,6 +148,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		foreach( $records['participants'] as $configid => $record ) {
 			$p =& $participants[$configid];
 			$status = $record['status'];
+			$pair = $record['pair id'];
 			if( status2finished($status) ) {
 				$cpu = parse_time($record['cpu time']);
 				$time = parse_time($record['wallclock time']);
@@ -172,10 +173,13 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 					status2error($status) ? error_claim() :
 					(status2timeout($status) ? timeout_claim() :
 					(status2memout($status) ? memout_claim() : str2claim($record['result'])));
-				if( !in_array($configid,$untrusted) ) {
+				if( in_array($pair,$penalized_pairs) ) {
+error_log('penalty');
+					$scores = [ 'wrong' => -10 ];
+				} else {
 					add_claim($claims,$claim);
+					$scores = claim2scores($claim,$cert,$max_score,$past_claim);
 				}
-				$scores = claim2scores($claim,$cert,$max_score,$past_claim);
 				foreach( $scores as $key => $val ) {
 					$p[$key] += $val;
 				}
@@ -190,7 +194,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				'time' => $time,
 				'cpu' => $cpu,
 				'certtime' => $certtime,
-				'pair' => $record['pair id'],
+				'pair' => $pair,
 				'claim' => $claim,
 			];
 		}

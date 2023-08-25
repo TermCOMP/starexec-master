@@ -105,20 +105,19 @@ foreach( $solvers as $configid => $s ) {
 	     '      <span class="'.( $rank[$layer] == 1 ? 'best ' : '' ). 'solver">'.PHP_EOL.
 	     '       <span class="rank">'.$rank[$layer].'.</span> <a class="tool" href="'. $url . '">'. $name . '</a>'.PHP_EOL.
 	     '       <a class="config" href="' . configid2url($configid) . '">'. $config . '</a>'.PHP_EOL.
-	     '      </span>'. PHP_EOL.
-	     '      <span class="score">';
+	     '      </span>'. PHP_EOL;
 	foreach( $scored_keys as $key => $val ) {
 		if( array_key_exists($key,$s) && $val['text'] != null ) {
 			$subscore = $s[$key];
-			if( $subscore > 0 ) {
-				echo '<span class="'.( $subscore == $best[$layer][$key] ? 'best ' : '' ).$key.'">'.
-				     ($val['text'] == '' ? $key : $val['text']).':'.( is_int($subscore) ? $subscore : number_format($subscore,2) ).'</span>, ';
+			if( $subscore != 0 ) {
+				echo '<span class="'.( $subscore == $best[$layer][$key] ? 'best ' : '' ).$val['class'].'">'.
+				     ($val['text'] == '' ? $key : $val['text']).':'.( is_int($subscore) ? $subscore : number_format($subscore,2) ).'</span>';
 			}
 		}
 	}
-	echo '<span class="'.( $time == $best[$layer]['time'] ? 'best ' : '' ).'time">time:'.seconds2str($time).'</span>';
+	echo '<span class="score '.( $time == $best[$layer]['time'] ? 'best ' : '' ).'time">time:'.seconds2str($time).'</span>';
 	if( $certtime != 0 ) {
-		echo ', <span class="certified time">'.seconds2str($certtime).'</span>';
+		echo '<span class="score certified time">'.seconds2str($certtime);
 	}
 	echo '</span>'.PHP_EOL;
 	$cat_cpu += $cpu;

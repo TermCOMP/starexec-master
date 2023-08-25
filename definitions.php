@@ -47,19 +47,20 @@ set_time_limit(300);
 		return $record;
 	}
 	$scored_keys = [
-		'CERTIFIED YES' => [ 'text' => 'YES', 'bar' => true ],
-		'CERTIFIED NO' => [ 'text' => 'NO', 'bar' => true ],
-		'CERTIFIED UP' => [ 'text' => 'UP', 'bar' => true ],
-		'CERTIFIED LOW' => [ 'text' => 'LOW', 'bar' => true ],
-		'YES' => [ 'text' => 'YES', 'bar' => true ],
-		'NO' => [ 'text' => 'NO', 'bar' => true ],
-		'UP' => [ 'text' => 'UP', 'bar' => true ],
-		'LOW' => [ 'text' => 'LOW', 'bar' => true ],
-		'togo' => [ 'text' => 'togo', 'bar' => true ],
-		'MAYBE' => [ 'text' => null, 'bar' => true ],
-		'timeout' => [ 'text' => null, 'bar' => true ],
-		'error' => [ 'text' => 'error', 'bar' => true ],
-		'news' => [ 'text' => 'news', 'bar' => false ],
+		'CERTIFIED YES' => [ 'text' => 'YES', 'bar' => true, 'class' => 'score CERTIFIED YES' ],
+		'CERTIFIED NO' => [ 'text' => 'NO', 'bar' => true, 'class' => 'score CERTIFIED NO' ],
+		'CERTIFIED UP' => [ 'text' => 'UP', 'bar' => true, 'class' => 'score CERTIFIED UP' ],
+		'CERTIFIED LOW' => [ 'text' => 'LOW', 'bar' => true, 'class' => 'score CERTIFIED LOW' ],
+		'YES' => [ 'text' => 'YES', 'bar' => true, 'class' => 'score YES' ],
+		'NO' => [ 'text' => 'NO', 'bar' => true, 'class' => 'score NO' ],
+		'UP' => [ 'text' => 'UP', 'bar' => true, 'class' => 'score UP' ],
+		'LOW' => [ 'text' => 'LOW', 'bar' => true, 'class' => 'score LOW' ],
+		'togo' => [ 'text' => 'togo', 'bar' => true, 'class' => 'score togo' ],
+		'MAYBE' => [ 'text' => null, 'bar' => true, 'class' => 'score MAYBE' ],
+		'timeout' => [ 'text' => null, 'bar' => true, 'class' => 'score timeout' ],
+		'error' => [ 'text' => 'error', 'bar' => true, 'class' => 'score error' ],
+		'news' => [ 'text' => 'news', 'bar' => false, 'class' => 'score news important' ],
+		'wrong' => [ 'text' => 'wrong', 'bar' => false, 'class' => 'score wrong important' ],
 	];
 	function new_scores() {
 		return [
@@ -73,6 +74,7 @@ set_time_limit(300);
 			'time' => 0,
 			'certtime' => 0,
 			'news' => 0,
+			'wrong' => 0,
 		];
 	}
 	function parse_record(&$record,$bm_dir,$len,&$results) {
@@ -138,6 +140,9 @@ set_time_limit(300);
 	}
 	function jobname2vbsfile($jobname) {
 		return escape_filename($jobname).'.VBS.json';
+	}
+	function jobname2penaltyfile($jobname) {
+		return escape_filename($jobname).'.penalty.json';
 	}
 	function spaceid2url($id) {
 		return 'https://www.starexec.org/starexec/secure/explore/spaces.jsp?id='.$id;
