@@ -363,7 +363,7 @@ $categories = [
 			'type' => 'complexity',
 			'dir' => 'Complexity_C_Integer',
 			'spaceid' => 548691,
-			'id' => null,
+			'id' => 60863,
 			'participants' => [
 				'KoAT' => 748989,
 			],
@@ -377,7 +377,7 @@ $categories = [
 			'type' => 'complexity',
 			'dir' => 'Complexity_ITS',
 			'spaceid' => 548704,
-			'id' => null,
+			'id' => 60864,
 			'participants' => [
 				'KoAT & LoAT' => 748959,
 			],
