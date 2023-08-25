@@ -174,8 +174,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 					(status2timeout($status) ? timeout_claim() :
 					(status2memout($status) ? memout_claim() : str2claim($record['result'])));
 				if( in_array($pair,$penalized_pairs) ) {
-error_log('penalty');
-					$scores = [ 'score' => -10, 'wrong' => 10 ];
+					$scores = [ 'score' => -10, 'wrong' => 10, 'miss' => 20 ];
 				} else {
 					add_claim($claims,$claim);
 					$scores = claim2scores($claim,$cert,$max_score,$past_claim);
