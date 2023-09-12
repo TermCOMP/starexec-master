@@ -276,7 +276,7 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'Haskell',
 			'spaceid' => 466206,
-			'id' => null,
+			'id' => 60907,
 			'participants' => [
   				'AProVE' => 749005,
 			],
