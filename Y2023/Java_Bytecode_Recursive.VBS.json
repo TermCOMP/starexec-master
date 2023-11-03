@@ -1,0 +1,431 @@
+{
+    "Julia_12_recursive\/alternDivWidening_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/alternDivWide_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/alternDiv_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/alternKonv_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/BMOG_CAV_12_MarkingGraphVisitor.jar": {
+        "MAYBE": 1
+    },
+    "Julia_12_recursive\/complInterv2_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/complInterv3_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/complxStruc_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/convLower_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/cousot_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/Et1-rec.jar": {
+        "YES": 1
+    },
+    "Julia_12_recursive\/Et2-rec.jar": {
+        "YES": 1
+    },
+    "Julia_12_recursive\/Et3-rec.jar": {
+        "YES": 1
+    },
+    "Julia_12_recursive\/Et4-rec.jar": {
+        "YES": 1
+    },
+    "Julia_12_recursive\/Et5-rec.jar": {
+        "YES": 1
+    },
+    "Julia_12_recursive\/Et6-rec.jar": {
+        "YES": 1
+    },
+    "Julia_12_recursive\/EvenOdd.jar": {
+        "MAYBE": 1
+    },
+    "Julia_12_recursive\/even_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/ex01_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/ex02_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/ex03_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/ex04_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/ex05_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/ex06_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/ex07_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/ex08_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/flip2_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/flip_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/middle_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/mirrorIntervSim_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/mirrorInterv_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/narrowing_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/narrowKonv_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/sumGeneric2_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/sumGeneric_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/sum_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/sunset_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/trueDiv_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/twoFloatInterv_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/upAndDownIneq_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/upAndDown_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/whileNestedOffset_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/whileNested_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/whilePart_rec.jar": {
+        "NO": 1
+    },
+    "Julia_12_recursive\/whileSingle_rec.jar": {
+        "NO": 1
+    },
+    "Julia_10_Recursive\/AckR.jar": {
+        "YES": 1
+    },
+    "Julia_10_Recursive\/BTreeR.jar": {
+        "YES": 1
+    },
+    "Julia_10_Recursive\/BubbleSortR.jar": {
+        "MAYBE": 1
+    },
+    "Julia_10_Recursive\/FactSLR.jar": {
+        "YES": 1
+    },
+    "Julia_10_Recursive\/FibSLR.jar": {
+        "YES": 1
+    },
+    "Julia_10_Recursive\/HanR.jar": {
+        "YES": 1
+    },
+    "Julia_10_Recursive\/Matrix.jar": {
+        "MAYBE": 1
+    },
+    "Julia_10_Recursive\/MergeSort.jar": {
+        "MAYBE": 1
+    },
+    "Julia_10_Recursive\/Nim.jar": {
+        "MAYBE": 1
+    },
+    "Julia_10_Recursive\/Power.jar": {
+        "YES": 1
+    },
+    "Julia_10_Recursive\/Recursions.jar": {
+        "YES": 1
+    },
+    "Julia_10_Recursive\/Sudoku.jar": {
+        "MAYBE": 1
+    },
+    "Julia_10_Recursive\/Test1.jar": {
+        "YES": 1
+    },
+    "Julia_10_Recursive\/Test10.jar": {
+        "YES": 1
+    },
+    "Julia_10_Recursive\/Test12.jar": {
+        "YES": 1
+    },
+    "Julia_10_Recursive\/Test4.jar": {
+        "YES": 1
+    },
+    "Julia_10_Recursive\/Test6.jar": {
+        "YES": 1
+    },
+    "Julia_10_Recursive\/Test8.jar": {
+        "YES": 1
+    },
+    "Julia_10_Recursive\/TicTacToe.jar": {
+        "MAYBE": 1
+    },
+    "Julia_10_Recursive\/WorkingSignals.jar": {
+        "YES": 1
+    },
+    "Julia_11_recursive\/Binomial.jar": {
+        "YES": 1
+    },
+    "Julia_11_recursive\/Fractale1.jar": {
+        "YES": 1
+    },
+    "Julia_11_recursive\/Parts.jar": {
+        "YES": 1
+    },
+    "Julia_11_recursive\/TaylorSeriesRec.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09-recursive\/Ackermann.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09-recursive\/BinarySearchTree.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09-recursive\/BTree.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09-recursive\/Domino.jar": {
+        "MAYBE": 1
+    },
+    "Costa_Julia_09-recursive\/Double.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09-recursive\/Double2.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09-recursive\/Double3.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09-recursive\/Factorial.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09-recursive\/FactSum.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09-recursive\/FactSumList.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09-recursive\/Hanoi.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09-recursive\/List.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09-recursive\/ListInt.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09-recursive\/MysteriousProgram.jar": {
+        "MAYBE": 1
+    },
+    "Costa_Julia_09-recursive\/PartitionList.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09-recursive\/Queen.jar": {
+        "YES": 1
+    },
+    "Costa_Julia_09-recursive\/TestJulia6.jar": {
+        "NO": 1
+    },
+    "Costa_Julia_09-recursive\/TestJulia7.jar": {
+        "NO": 1
+    },
+    "Costa_Julia_09-recursive\/Virtual.jar": {
+        "YES": 1
+    },
+    "AProVE_11_recursive\/AlternatingGrowReduceRec.jar": {
+        "MAYBE": 1
+    },
+    "AProVE_11_recursive\/AlternatingGrowReduceRec2.jar": {
+        "YES": 1
+    },
+    "AProVE_11_recursive\/BinarySearch.jar": {
+        "YES": 1
+    },
+    "AProVE_11_recursive\/ClassAnalysisRec.jar": {
+        "YES": 1
+    },
+    "AProVE_11_recursive\/CyclicAnalysisRec.jar": {
+        "YES": 1
+    },
+    "AProVE_11_recursive\/RetValRec.jar": {
+        "YES": 1
+    },
+    "AProVE_11_recursive\/RotateTree.jar": {
+        "YES": 1
+    },
+    "AProVE_11_recursive\/SharingAnalysisRec.jar": {
+        "YES": 1
+    },
+    "AProVE_11_recursive\/TermCreateCollect.jar": {
+        "YES": 1
+    },
+    "AProVE_11_recursive\/TermsCreateMatch.jar": {
+        "YES": 1
+    },
+    "AProVE_11_recursive\/UnionFind.jar": {
+        "MAYBE": 1
+    },
+    "BOG_RTA_11\/Alternate.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/AppE.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/AProVEMathRecursive.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/AProVERec01.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/Avg.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/BinTreeChanger.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/CAppE.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/ConvertRec.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/Count.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/CountMetaListRec.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/DivMinus.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/DivTernary.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/DivTernary2.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/DupTreeRec.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/EqUserDefRec.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/Fibonacci.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/FlattenTreeListRec.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/FlattenTreeRec.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/Gopher.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/GrowTreeR.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/IntListDupRec.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/IntListSumRec.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/LessLeavesRec.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/LeUserDefRec.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/LogRecursive.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/Main.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/MainCopy.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/MainDelete.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/MainFind.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/MainGet.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/MainMove.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/MirrorBinTreeRec.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/MirrorMultiTreeRec.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/Nest.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/Norm.jar": {
+        "MAYBE": 1
+    },
+    "BOG_RTA_11\/QuicksortRec.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/SearchTreeR.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/Shuffle.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/TerminatorRec01.jar": {
+        "MAYBE": 1
+    },
+    "BOG_RTA_11\/TerminatorRec02.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/TerminatorRec03.jar": {
+        "NO": 1
+    },
+    "BOG_RTA_11\/TerminatorRec04.jar": {
+        "NO": 1
+    },
+    "BOG_RTA_11\/TimesPlusUserDef.jar": {
+        "YES": 1
+    },
+    "BOG_RTA_11\/TwoWay.jar": {
+        "YES": 1
+    }
+}

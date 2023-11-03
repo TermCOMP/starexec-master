@@ -1,0 +1,839 @@
+{
+    "Zantema_08\/assoc_c_rhs.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/assoc_f_rhs.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/bintree.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/cariboo_add1.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/cariboo_add2.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/cariboo_add2a.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/cariboo_add3.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/cariboo_len3.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/cariboo_nl_1.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/cariboo_nl_2.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/cariboo_nl_3.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/cariboo_nl_4.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/cariboo_nl_5.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/cariboo_nl_6.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/countbin.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/countter.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/dupl_rhs.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/ex0.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/ex1.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/ex2.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/ex3.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/ex4.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/ex5.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/ex6.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/ex7.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/ex8.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/ex9.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/ffb_SL.xml": {
+        "NO": 1
+    },
+    "Zantema_08\/ffg.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/fg.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/from_one.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/from_one_a.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/from_three.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/f_2_1.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/f_2_2.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/f_5.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/f_5_1.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/f_5_2.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/g_2_const.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/g_2_f_var.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/inn_out.xml": {
+        "NO": 1
+    },
+    "Zantema_08\/morse.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/outermost_gr.xml": {
+        "NO": 1
+    },
+    "Zantema_08\/toyama_out.xml": {
+        "NO": 1
+    },
+    "Zantema_08\/toyama_stop.xml": {
+        "YES": 1
+    },
+    "Zantema_08\/toyama_stop2.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/yoyo_2.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/yoyo_3.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/yoyo_3a.xml": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/yoyo_3b.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_outermost\/afbg.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_outermost\/even.xml": {
+        "NO": 1
+    },
+    "Mixed_outermost\/ex1.xml": {
+        "YES": 1
+    },
+    "Mixed_outermost\/ex2.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_outermost\/ex3.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_outermost\/ex4.xml": {
+        "YES": 1
+    },
+    "Mixed_outermost\/ex5.xml": {
+        "YES": 1
+    },
+    "Mixed_outermost\/ex6.xml": {
+        "YES": 1
+    },
+    "Mixed_outermost\/gfb.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_outermost\/non-lin1.xml": {
+        "YES": 1
+    },
+    "Mixed_outermost\/non-lin2.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_outermost\/non-lin3.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_outermost\/odd.xml": {
+        "YES": 1
+    },
+    "Mixed_outermost\/patterns1.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_outermost\/patterns2.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/#4.12a.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.13.xml": {
+        "YES": 1
+    },
+    "Strategy_outermost_added_08\/#4.14.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.15.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.16.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.17.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.18.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.2.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.3.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.4.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.7.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/001.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/003.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/2.05.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/4.06.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/4.34.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/4.40.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/4.49.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/4.54.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/append-wrong.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/cime4.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex14_AEGL02.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex14_AEGL02_FR.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex14_AEGL02_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex14_AEGL02_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex14_Luc06_GM.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex14_Luc06_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex14_Luc06_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex15_Luc06_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex15_Luc98.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex15_Luc98_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex16_Luc06_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_2_AEL03.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_2_AEL03_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_2_Luc02c.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_2_Luc02c_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GL02a.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GL02a_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GL02a_Z.xml": {
+        "YES": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GM03.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GM03_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GM03_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GM99.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GM99_GM.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GM99_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GM99_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GM99_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_Luc02b.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_Luc02b_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_Luc04b_FR.xml": {
+        "YES": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_Luc04b_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_Luc04b_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_Zan97.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_Zan97_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_Zan97_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex24_GM04.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex24_GM04_GM.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex24_GM04_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex24_Luc06_GM.xml": {
+        "YES": 1
+    },
+    "Strategy_outermost_added_08\/Ex24_Luc06_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex24_Luc06_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex26_Luc03b.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex2_8_1ConstSubstFix.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex2_Luc03b.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex3_12_Luc96a.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex3_12_Luc96a_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex3_2_Luc97.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex3_2_Luc97_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex3_3_25_Bor03.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex3_3_25_Bor03_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex49_GM04_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_4_Luc96b.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_4_Luc96b_FR.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_4_Luc96b_Z.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_7_15_Bor03.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_7_37_Bor03.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_7_37_Bor03_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_7_56_Bor03.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_7_56_Bor03_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_7_77_Bor03.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_7_77_Bor03_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_DLMMU04_FR.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_DLMMU04_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_DLMMU04_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_Zan97.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_Zan97_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex5_7_Luc97.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex5_7_Luc97_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex5_DLMMU04_FR.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex5_DLMMU04_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex5_DLMMU04_Z.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex5_Zan97.xml": {
+        "YES": 1
+    },
+    "Strategy_outermost_added_08\/Ex5_Zan97_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex6_15_AEL02.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex6_15_AEL02_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex6_15_AEL02_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex6_9_Luc02c.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex6_9_Luc02c_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex6_GM04.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex6_GM04_Z.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex6_Luc98.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex7_BLR02.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex7_BLR02_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex8_BLR02.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex8_BLR02_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex9_BLR02.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex9_Luc04_GM.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex9_Luc04_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex9_Luc04_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex9_Luc06_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex9_Luc06_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExAppendixB_AEL03.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExAppendixB_AEL03_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExConc_Zan97.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExConc_Zan97_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM01.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM01_FR.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM01_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM01_Z.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM04.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM04_FR.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM04_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM04_Z.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM99.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM99_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM99_Z.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_Zan97.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_Zan97_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_Zan97_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExSec11_1_Luc02a.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExSec4_2_DLMMU04_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/gkg.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Hamming.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/jwno1.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/jwno4.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/jwno6.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/jwno9.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_complete-noand_FR.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_complete-noand_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_complete-noand_Z.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_complete_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nokinds-noand_FR.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nokinds-noand_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nokinds-noand_Z.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nokinds_FR.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nokinds_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nokinds_Z.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nosorts-noand_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nosorts-noand_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nosorts_GM.xml": {
+        "YES": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nosorts_iGM.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nosorts_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nosorts_noand_GM.xml": {
+        "YES": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nosorts_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LISTUTILITIES_complete-noand_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LISTUTILITIES_complete_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LISTUTILITIES_nokinds-noand_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LISTUTILITIES_nokinds_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LISTUTILITIES_nosorts-noand_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LISTUTILITIES_nosorts_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/muladd.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/MYNAT_complete-noand_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/MYNAT_complete_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/MYNAT_nokinds-noand_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/MYNAT_nokinds_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/MYNAT_nosorts-noand_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/MYNAT_nosorts_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/n001.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/n002.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/n003.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/n004.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/n005.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/n006.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/n007.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/n008.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/nonterm.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/nonTermF.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_complete-noand_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_complete_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nokinds-noand_FR.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nokinds-noand_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nokinds-noand_Z.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nokinds_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nosorts-noand_FR.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nosorts-noand_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nosorts-noand_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nosorts_FR.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nosorts_GM.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nosorts_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nosorts_noand_GM.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nosorts_Z.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PALINDROME_complete-noand_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PALINDROME_complete_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PALINDROME_nokinds-noand_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PALINDROME_nokinds_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PALINDROME_nosorts_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PEANO_complete-noand_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PEANO_complete_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PEANO_nokinds-noand_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PEANO_nokinds_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PEANO_nosorts-noand_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PEANO_nosorts_L.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/round_nonterm.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/termMonTypes.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/test10.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/test75.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/test76.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/test77.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/test9.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/thiemann28.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/ttt1.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ttt2.xml": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/TypeEx3.xml": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/TypeEx5.xml": {
+        "NO": 1
+    }
+}

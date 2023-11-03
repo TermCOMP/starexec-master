@@ -1,0 +1,797 @@
+{
+    "Mixed_HO_12\/fuhs11frocos_a.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_HO_12\/listrepeat.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_HO_12\/prefixshuffle.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_12\/prenex_modif1.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_12\/sqr.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_HO_12\/tailrecgen.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_HO_12\/twice_modif4.xml": {
+        "YES": 1
+    },
+    "Kop_11\/average.xml": {
+        "YES": 1
+    },
+    "Kop_11\/lambda5.xml": {
+        "NO": 1
+    },
+    "Kop_11\/merge.xml": {
+        "YES": 1
+    },
+    "Kop_11\/noneating.xml": {
+        "YES": 1
+    },
+    "Kop_11\/shuffle.xml": {
+        "YES": 1
+    },
+    "Kop_11\/twice.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/churchNum.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/churchNum2.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/DicosmoKesner93.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/gstate.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/kripke.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/lambda_prod.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/lambda_sum.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/monad.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/pical.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/restriction.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/slml.xml": {
+        "MAYBE": 1
+    },
+    "Hamana_17\/SystemT.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/typed_lam.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/typed_lamUNC.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/ysllc.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/Blanqui_15\/01GoedelT.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/Blanqui_15\/02Ackermann.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/Blanqui_15\/03minus.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/Blanqui_15\/04arrow.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/Blanqui_15\/05height.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/Blanqui_15\/06plusmult.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/Blanqui_15\/07ordinal.xml": {
+        "YES": 1
+    },
+    "Hamana_17\/Blanqui_15\/09ex.xml": {
+        "YES": 1
+    },
+    "Kop_13\/fuhkop11frocos.xml": {
+        "YES": 1
+    },
+    "Kop_13\/fuhkop12rta1.xml": {
+        "YES": 1
+    },
+    "Kop_13\/fuhkop12rta2.xml": {
+        "YES": 1
+    },
+    "Kop_13\/kop11cai1.xml": {
+        "YES": 1
+    },
+    "Kop_13\/kop11cai2.xml": {
+        "YES": 1
+    },
+    "Kop_13\/kop12lmcs1.xml": {
+        "MAYBE": 1
+    },
+    "Kop_13\/kop12lmcs2.xml": {
+        "YES": 1
+    },
+    "Kop_13\/kop12thesis_ex2.11.xml": {
+        "YES": 1
+    },
+    "Kop_13\/kop12thesis_ex7.23.xml": {
+        "YES": 1
+    },
+    "Kop_13\/kop12thesis_ex7.45_1.xml": {
+        "MAYBE": 1
+    },
+    "Kop_13\/kop12thesis_ex7.45_2.xml": {
+        "MAYBE": 1
+    },
+    "Kop_13\/kop12thesis_sec3.3.3.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/app.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/applicative.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_HO_10\/apply.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/counterex1.xml": {
+        "NO": 1
+    },
+    "Mixed_HO_10\/counterex2.xml": {
+        "NO": 1
+    },
+    "Mixed_HO_10\/curry.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/curry1.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/deriv.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/eval.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/extrec.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/filter.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/findzero.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/foldl.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/foobar.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_HO_10\/from.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/hrsdif1.xml": {
+        "NO": 1
+    },
+    "Mixed_HO_10\/hrsdif2.xml": {
+        "MAYBE": 1
+    },
+    "Mixed_HO_10\/if.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/inlamb.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/iterative.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/lambda1.xml": {
+        "NO": 1
+    },
+    "Mixed_HO_10\/lambda2.xml": {
+        "NO": 1
+    },
+    "Mixed_HO_10\/lambda3.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/length.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/loopy.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/map.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/noabs.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/onearg.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/ordrec.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/plode.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/prefixsum.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/prenex.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/process.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/qsort.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/rec.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/reverse.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/sdu.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/sort.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/uncurry.xml": {
+        "YES": 1
+    },
+    "Mixed_HO_10\/zipWith.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__001.xml": {
+        "NO": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__002.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__003.xml": {
+        "NO": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__004.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__005.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__006.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__007.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__009.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__010.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__011.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__012.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__013.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__014.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__015.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__016.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__017.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__019.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__020.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__021.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__022.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__023.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__024.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__025.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__026.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__027.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__028.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__Ex1SimplyTyped.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/AotoYamada_05__Ex5TermProof.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__BTreeMember.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__Ex2PrimRec.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__Ex2_6_1Composition.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__Ex2_8_1ConstSubstFix.xml": {
+        "MAYBE": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__Ex3Lists.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__Ex4MapList.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__Ex5Folding.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__Ex5Sorting.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__Ex6Folding.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__Ex6Recursor.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__Ex6_11.xml": {
+        "MAYBE": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__Ex7OrdinalRec.xml": {
+        "MAYBE": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__Ex7Sorting.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__Ex7_9.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__Ex9Maps.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__Hamming.xml": {
+        "NO": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__mapDivMinus.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__mapDivMinusHard.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__ReverseLastInit.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__TakeDropWhile.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__termMonTypes.xml": {
+        "MAYBE": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__TreeFlatten.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__TreeHeight.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__TreeLevels.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__TreeMap.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__TreeSize.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__TypeEx3.xml": {
+        "MAYBE": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_05__TypeEx5.xml": {
+        "NO": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_AG01_innermost__#4.10.xml": {
+        "NO": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_AG01_innermost__#4.13.xml": {
+        "MAYBE": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_AG01_innermost__#4.15.xml": {
+        "NO": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_AG01_innermost__#4.17.xml": {
+        "NO": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_AG01_innermost__#4.19.xml": {
+        "MAYBE": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_AG01_innermost__#4.2.xml": {
+        "NO": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_AG01_innermost__#4.22.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_AG01_innermost__#4.24.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_AG01_innermost__#4.26.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_AG01_innermost__#4.28.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_AG01_innermost__#4.3.xml": {
+        "NO": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_AG01_innermost__#4.34.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_AG01_innermost__#4.36.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_AG01_innermost__#4.5.xml": {
+        "NO": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_AG01_innermost__#4.7.xml": {
+        "NO": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_AG01_innermost__#4.8.xml": {
+        "MAYBE": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.10.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.13.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.16.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.18.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.2.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.22.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.25.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.27.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.32.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.36.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.38.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.40.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.45.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.48.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.52.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.55.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.57.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.6.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__#3.8.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__01.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__02.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__06.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__08.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__11.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__12.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__13.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__17.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__18.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__21.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__29.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__30.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__31.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__33.xml": {
+        "MAYBE": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__hydra.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__minsort.xml": {
+        "MAYBE": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__motivation.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__perfect.xml": {
+        "YES": 1
+    },
+    "Uncurried_Applicative_11\/Applicative_first_order_05__perfect2.xml": {
+        "YES": 1
+    },
+    "Hamana_Imai_22\/10axGl.xml": {
+        "YES": 1
+    },
+    "Hamana_Imai_22\/11axHandler.xml": {
+        "YES": 1
+    },
+    "Hamana_Imai_22\/12axMAMhandler.xml": {
+        "YES": 1
+    },
+    "Hamana_Imai_22\/13lamX.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h00.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h01.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h02.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h03.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h04.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h05.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h06.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h07.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h08.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h09.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h10.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h11.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h12.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h13.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h14.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h15.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h16.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h17.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h18.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h19.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h20.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h21.xml": {
+        "NO": 1
+    },
+    "Hamana_Kikuchi_18\/h22.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h23.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h24.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h25.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h26.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h27.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h28.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h29.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h30.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h31.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h32.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h33.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h34.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h35.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h36.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h37.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h38.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h39.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h40.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h41.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h42.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h43.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h44.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h45.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h46.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h47.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h48.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h49.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h50.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h51.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h52.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h53.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h54.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h55.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h56.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h57.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h58.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h59.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h60.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h61.xml": {
+        "YES": 1
+    },
+    "Hamana_Kikuchi_18\/h62.xml": {
+        "YES": 1
+    }
+}
