@@ -1,11 +1,11 @@
 FROM ubuntu/apache2
 
-RUN apt -y update
+RUN apt-get -y update
 
-RUN apt -y install php
-RUN apt -y install libapache2-mod-php
-RUN apt -y install git
-RUN apt -y install php-cgi
+RUN apt-get -y install php
+RUN apt-get -y install libapache2-mod-php
+RUN apt-get -y install git
+RUN apt-get -y install php-cgi
 
 RUN echo 'extension=php_openssl' >> /etc/php/php.ini
 
