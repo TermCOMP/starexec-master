@@ -1,0 +1,22 @@
+#!/bin/bash
+
+stdoutfile=`mktemp`
+
+sed '1,/^-----*$/d' "$1" | sed '1,2d' > "$stdoutfile"
+
+result=`sed 1q "$stdoutfile"`
+
+regex="YES|NO|AST|SAST|PAST|WORST_CASE\((\?|NON_POLY|Omega\(n\^([0-9]+)\)),(\?|POLY|O\((1|n\^([0-9]+))\))\)"
+
+# WORST_CASE(?,?) is matched by the regex above, but it's not valid:
+# http://cl-informatik.uibk.ac.at/users/georg/cbr/competition/rules.php
+if [ "$result" = "WORST_CASE(?,?)" ];
+then
+    echo "MAYBE"
+elif [[ "$result" =~ $regex ]];
+then
+    echo $result
+else
+    echo "MAYBE"
+fi
+
