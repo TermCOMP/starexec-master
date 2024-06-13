@@ -1,10 +1,6 @@
 #!/bin/bash
 
-stdoutfile=`mktemp`
-
-sed '1,/^-----*$/d' "$1" | sed '1,2d' > "$stdoutfile"
-
-result=`sed 1q "$stdoutfile"`
+result=`head -n 1 $1 | sed 's/^[^\t]*\t//'`
 
 regex="YES|NO|AST|SAST|PAST|WORST_CASE\((\?|NON_POLY|Omega\(n\^([0-9]+)\)),(\?|POLY|O\((1|n\^([0-9]+))\))\)"
 
