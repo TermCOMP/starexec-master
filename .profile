@@ -9,6 +9,7 @@ while [ 1 ]; do
   git pull origin master
   echo Refreshing...
   ./generate.sh $current refresh
+  chmod -R a+r Y2024
   echo Done! Sleeping...
   sleep 5
 done
