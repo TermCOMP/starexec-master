@@ -13,4 +13,4 @@ RUN rm -rf /var/www/html
 WORKDIR /var/www
 RUN git clone https://github.com/TermCOMP/starexec-master.git html
 
-CMD ["sh", "/var/www/html/.profile"]
+CMD ["sh", "/var/www/html/start.sh"]
