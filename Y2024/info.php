@@ -5,7 +5,7 @@ $showconfig = true;
 $showscore = true;
 $note = '';
 $db = 'TPDB 11.4';
-$closed = false;// make true when registration is closed.
+$closed = true;// make true when registration is closed.
 $previous = 'Y2023';
 
 $categories = [
