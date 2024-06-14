@@ -9,7 +9,8 @@ RUN apt-get -y install php-cgi
 
 RUN echo 'extension=php_openssl' >> /etc/php/php.ini
 
-WORKDIR /var/www/html/
 RUN rm -rf /var/www/html
-COPY . .
+WORKDIR /var/www
+RUN git clone https://github.com/TermCOMP/starexec-master.git html
+
 CMD ["sh", "/var/www/html/.profile"]
