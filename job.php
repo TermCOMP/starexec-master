@@ -186,6 +186,8 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				$p['togo'] += 1;
 				$p['scorestogo'] += $max_score;
 				add_claim_togo($claims);
+				$cpu = 0;
+				$time = 0;
 			}
 			$bench[$configid] = [
 				'status' => $status,
