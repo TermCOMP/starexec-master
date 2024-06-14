@@ -12,5 +12,6 @@ RUN echo 'extension=php_openssl' >> /etc/php/php.ini
 RUN rm -rf /var/www/html
 WORKDIR /var/www
 RUN git clone https://github.com/TermCOMP/starexec-master.git html
+WORKDIR /var/www/html
 
 CMD ["sh", "/var/www/html/start.sh"]
