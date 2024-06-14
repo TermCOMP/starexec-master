@@ -264,7 +264,11 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		$p['cpu'] = (int)$p['cpu'];// eliminate round errors
 		$p['time'] = (int)$p['time'];// eliminate round errors
 		$score = $p['score'];
-		$p['normalized'] = $score / $vbs_score;
+        if (empty($vbs_score)) {
+            $p['normalized'] = 0;
+        } else {
+            $p['normalized'] = $score / $vbs_score;
+        }
 		echo '  <th>'.number_format($score,2);
 		$summer = &$sum[$p['layer']];
 		$summer['done'] += $p['done'];
