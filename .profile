@@ -9,4 +9,4 @@ while [ 1 ]; do
   ./generate.sh $current refresh
   echo Done! Sleeping...
   sleep 5
-done&
+done

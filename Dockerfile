@@ -12,3 +12,4 @@ RUN echo 'extension=php_openssl' >> /etc/php/php.ini
 WORKDIR /var/www/html/
 RUN rm -rf /var/www/html
 COPY . .
+CMD ["sh", "/var/www/html/.profile"]
