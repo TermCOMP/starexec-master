@@ -257,6 +257,7 @@ error_log($penalty_file);
 		$tmp = tempnam('','');
 		system( 'php-cgi -f "job.php" '. $query .' > "'. $tmp . '"');
 		rename($tmp,$competition.'/'.$job_file);
+		chmod($competition.'/'.$job_file, 0644);
 		$tmp = tempnam('','');
 		system( 'php-cgi -f "graph.php" '. $query .' > "'. $tmp . '"');
 		rename($tmp,$competition.'/'.$graph_file);
@@ -273,6 +274,7 @@ error_log($penalty_file);
 		     '    var data = JSON.parse(xhttp.responseText);'.PHP_EOL.
 		     '    progress'.$mcatid.'['.$catindex.'] = data["layers"].reduce(summer);'.PHP_EOL.
 		     '    updateProgress'.$mcatid.'();'.PHP_EOL;
+		chmod($competition.'/'.$graph_file, 0644);
 		if( $mcatname != 'Demonstrations' ) {
 			echo '    updateScores("'.$catname.'",data["participants"]);'.PHP_EOL;
 		}
