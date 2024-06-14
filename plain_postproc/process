@@ -8,11 +8,11 @@ regex="YES|NO|AST|SAST|PAST|WORST_CASE\((\?|NON_POLY|Omega\(n\^([0-9]+)\)),(\?|P
 # http://cl-informatik.uibk.ac.at/users/georg/cbr/competition/rules.php
 if [ "$result" = "WORST_CASE(?,?)" ];
 then
-    echo "MAYBE"
+    echo "starexec-result=MAYBE"
 elif [[ "$result" =~ $regex ]];
 then
-    echo $result
+    echo "starexec-result=$result"
 else
-    echo "MAYBE"
+    echo "starexec-result=MAYBE"
 fi
 
