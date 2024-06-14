@@ -2,7 +2,7 @@
 $title = 'Termination Competition 2024';
 $shortname = 'TermCOMP 2024';
 $showconfig = true;
-$showscore = false;
+$showscore = true;
 $note = '';
 $db = 'TPDB 11.4';
 $closed = false;// make true when registration is closed.
