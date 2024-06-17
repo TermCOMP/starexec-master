@@ -213,7 +213,7 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-				// 'AProVE' => null,
+				'AProVE' => 788030,
 				// 'Ultimate' => null,
 			],
 			'certified' => [
@@ -246,7 +246,7 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-				// 'AProVE' => null,
+				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -260,7 +260,7 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-  				// 'AProVE' => null,
+  				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -274,7 +274,7 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-				// 'AProVE' => null,
+				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -288,7 +288,7 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-				// 'AProVE' => null,
+				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -303,7 +303,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				// 'NTI+cTI' => null,
-  				// 'AProVE' => null,
+  				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -317,7 +317,7 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-  				// 'AProVE' => null,
+  				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -331,7 +331,7 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-  				// 'AProVE' => null,
+  				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
