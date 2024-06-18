@@ -221,7 +221,7 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-				// 'AProVE' => null,
+				'AProVE' => 788030,
 				// 'Ultimate' => null,
 			],
 			'certified' => [
@@ -254,7 +254,7 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-				// 'AProVE' => null,
+				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -268,7 +268,7 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-  				// 'AProVE' => null,
+  				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -282,7 +282,7 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-				// 'AProVE' => null,
+				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -296,7 +296,7 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-				// 'AProVE' => null,
+				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -311,7 +311,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				// 'NTI+cTI' => null,
-  				// 'AProVE' => null,
+  				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -325,7 +325,7 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-  				// 'AProVE' => null,
+  				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -339,7 +339,7 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-  				// 'AProVE' => null,
+  				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -458,5 +458,25 @@ $categories = [
 			],
 		],
 	],
+        'Probabilistic Termination' => [
+        	'PTRS Standard' => [
+	                'type' => 'termination',
+	                'dir' => 'PTRS_Standard',
+	                'spaceid' => null,
+	                'id' => null,
+	                'participants' => [
+	                	'AProVE' => 788252,
+	                ],
+        	],
+        	'PTRS Innermost' => [
+            		'type' => 'termination',
+            		'dir' => 'PTRS_Innermost',
+            		'spaceid' => null,
+            		'id' => null,
+			'participants' => [
+                		'AProVE' => 788248,
+            		],
+        	],
+   	],
 ];
 ?>
