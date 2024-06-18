@@ -9,7 +9,7 @@ $closed = false;// make true when registration is closed.
 $previous = 'Y2023';
 
 $categories = [
-		'Termination of Rewriting' => [
+    'Termination of Rewriting' => [
 		'TRS Standard' => [
 			'type' => 'termination',
 			'dir' => 'TRS_Standard',
@@ -203,7 +203,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				// 'Wanda' => null,
-//				'SOL' => null,
+                //				'SOL' => null,
 			],
 			'certified' => [
 				'id' => null,
@@ -221,6 +221,11 @@ $categories = [
 			'participants' => [
 				'AProVE' => 788252,
 			],
+			'certified' => [
+				'id' => null,
+				'participants' => [
+				],
+			],
 		],
 		'PTRS Innermost' => [
 			'type' => 'termination',
@@ -229,6 +234,11 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				'AProVE' => 788248,
+			],
+			'certified' => [
+				'id' => null,
+				'participants' => [
+				],
 			],
 		],
 	],
@@ -254,7 +264,7 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-//				'iRankFinder' => null,
+                //				'iRankFinder' => null,
 				// 'LoAT' => null,
 				'KoAT' => 748986, // We disabled control-flow refinement by iRankFinder in this category.
 				// 'MuVal' => null,
@@ -387,13 +397,13 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-//				'TcT' => null,
+                //				'TcT' => null,
 				// 'AProVE' => null,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-//					'TcT' => null,
+                    //					'TcT' => null,
 				],
 			],
 		],
@@ -403,13 +413,13 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-//				'TcT' => null,
+                //				'TcT' => null,
 				// 'AProVE' => null,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-//					'TcT' => null,
+                    //					'TcT' => null,
 				],
 			],
 		],
@@ -419,13 +429,13 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-//				'TcT' => null,
+                //				'TcT' => null,
 				// 'AProVE' => null,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-//					'TcT' => null,
+                    //					'TcT' => null,
 				],
 			],
 		],
@@ -435,13 +445,13 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-//				'TcT' => null,
+                //				'TcT' => null,
 				// 'AProVE' => null,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-//					'TcT' => null,
+                    //					'TcT' => null,
 					// 'AProVE' => null,
 				],
 			],
