@@ -52,6 +52,9 @@ set_time_limit(300);
 		'CERTIFIED UP' => [ 'text' => 'UP', 'bar' => true, 'class' => 'score CERTIFIED UP' ],
 		'CERTIFIED LOW' => [ 'text' => 'LOW', 'bar' => true, 'class' => 'score CERTIFIED LOW' ],
 		'YES' => [ 'text' => 'YES', 'bar' => true, 'class' => 'score YES' ],
+		'SAST' => [ 'text' => 'SAST', 'bar' => true, 'class' => 'score AST' ],
+		'PAST' => [ 'text' => 'PAST', 'bar' => true, 'class' => 'score AST' ],
+		'AST' => [ 'text' => 'AST', 'bar' => true, 'class' => 'score AST' ],
 		'NO' => [ 'text' => 'NO', 'bar' => true, 'class' => 'score NO' ],
 		'UP' => [ 'text' => 'UP', 'bar' => true, 'class' => 'score UP' ],
 		'LOW' => [ 'text' => 'LOW', 'bar' => true, 'class' => 'score LOW' ],
@@ -199,6 +202,22 @@ set_time_limit(300);
 		if( $str == 'YES' || $str == 'NO' ) {
 			return [ $str => 1 ];
 		}
+		if ( $str == 'SAST' ) {
+			$ret = [];
+			$ret['SAST'] = 1;
+			$ret['PAST'] = 1;
+			$ret['AST'] = 1;
+			return $ret;
+		}
+		if ( $str == 'PAST' ) {
+			$ret = [];
+			$ret['PAST'] = 1;
+			$ret['AST'] = 1;
+			return $ret;
+		}
+		if ( $str == 'AST' ) {
+			return [ $str => 1 ];
+		}
 		if( preg_match( '/WORST_CASE\\(\\s*(.+)\\s*,\\s*(.+)\\s*\\)\s*/', $str, $matches ) ) {
 			$ret = [];
 			$low = str2lower($matches[1]);
@@ -226,6 +245,9 @@ set_time_limit(300);
 		$claims['LOW'] = [];
 		$claims['miss'] = 0;
 		$claims['togo'] = 0;
+		$claims['SAST'] = 0;
+		$claims['PAST'] = 0;
+		$claims['AST'] = 0;
 	}
 	function add_claim(&$claims,$claim) {
 		foreach( ['MAYBE','timeout','memout','error'] as $key ) {
@@ -234,7 +256,7 @@ set_time_limit(300);
 				return;
 			}
 		}
-		foreach( ['YES','NO'] as $key ) {
+		foreach( ['YES','NO', 'SAST','PAST', 'AST'] as $key ) {
 			if( array_key_exists($key,$claim) ) {
 				$claims[$key]++;
 			}
@@ -305,6 +327,27 @@ set_time_limit(300);
 			if( $past_claim != null && !array_key_exists('YES',$past_claim) ) {
 				$ret['news']++;
 			}
+		} else if ( array_key_exists('SAST',$claim) ) {
+			$ret['score'] += 3;
+			$ret['miss']--;
+			$ret[$pre.'SAST'] = 1;
+			if( $past_claim != null && !array_key_exists('SAST',$past_claim) ) {
+				$ret['news']++;
+			}
+		} else if ( array_key_exists('PAST',$claim) ) {
+			$ret['score'] += 2;
+			$ret['miss']--;
+			$ret[$pre.'PAST'] = 1;
+			if( $past_claim != null && !array_key_exists('PAST',$past_claim) && !array_key_exists('SAST',$past_claim) ) {
+				$ret['news']++;
+			}
+		} else if ( array_key_exists('AST',$claim) ) {
+			$ret['score'] += 1;
+			$ret['miss']--;
+			$ret[$pre.'AST'] = 1;
+			if( $past_claim != null && !array_key_exists('AST',$past_claim) && !array_key_exists('PAST',$past_claim) !array_key_exists('SAST',$past_claim) ) {
+				$ret['news']++;
+			}
 		}
 		if( array_key_exists('MAYBE',$claim) ) {
 			$ret['MAYBE'] = 1;
@@ -339,8 +382,10 @@ set_time_limit(300);
 			}
 			return '&Omega;('.bound2str($low).')―';
 		}
-		if( array_key_exists('YES',$claim) ) {
-			return 'YES';
+		foreach( ['YES', 'SAST','PAST', 'AST'] as $key ) {
+			if( array_key_exists($key,$claim) ) {
+				return $key;
+			}
 		}
 		return 'MAYBE';
 	}
@@ -369,6 +414,9 @@ set_time_limit(300);
 		}
 		if(	array_key_exists('YES',$claim) ) {
 			return $pre.'YES';
+		}
+		if(	array_key_exists('SAST',$claim) || array_key_exists('PAST',$claim) || array_key_exists('AST',$claim) ) {
+			return $pre.'AST';
 		}
 		if( array_key_exists('error',$claim) ) {
 			return 'error';
@@ -463,6 +511,18 @@ set_time_limit(300);
 		if( $NO > 0 ) {
 			$vbs['NO'] = 1;
 		}
+		$SAST = $claims['SAST'];
+		if( $SAST > 0 ) {
+			$vbs['SAST'] = 1;
+		}
+		$PAST = $claims['PAST'];
+		if( $PAST > 0 ) {
+			$vbs['PAST'] = 1;
+		}
+		$AST = $claims['AST'];
+		if( $AST > 0 ) {
+			$vbs['AST'] = 1;
+		}
 		$UP = $claims['UP'];
 		$LOW = $claims['LOW'];
 		$MAYBE = $claims['miss'];
@@ -487,9 +547,9 @@ set_time_limit(300);
 			$vLOW = count(array_unique($LOW));
 		}
 		$conflicting = ( $YES > 0 && $NO > 0 ) || isset($minUP) && $minUP < $maxLOW;
-		$interesting = ( ( $YES > 0 || $NO > 0 ) && $MAYBE > 0) || $vUP > 1 || $vLOW > 1;
+		$interesting = ( ( $YES > 0 || $NO > 0 || $SAST > 0 || $PAST > 0 || $AST > 0 ) && $MAYBE > 0) || $vUP > 1 || $vLOW > 1;
 		$finished = $togo == 0;
-		$unsolved = $finished && $YES == 0 && $NO == 0 && $nUP == 0 && $nLOW == 0;
+		$unsolved = $finished && $YES == 0 && $NO == 0 && $SAST == 0 && $PAST == 0 && $AST == 0 && $nUP == 0 && $nLOW == 0;
 		if( empty($vbs) ) {
 			$vbs['MAYBE'] = 1;// we need to add MAYBE for JSON-medium data transportation
 		}
