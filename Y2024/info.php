@@ -458,5 +458,25 @@ $categories = [
 			],
 		],
 	],
+        'Probabilistic Termination' => [
+        	'PTRS Standard' => [
+	                'type' => 'termination',
+	                'dir' => 'PTRS_Standard',
+	                'spaceid' => null,
+	                'id' => null,
+	                'participants' => [
+	                	'AProVE' => 788252,
+	                ],
+        	],
+        	'PTRS Innermost' => [
+            		'type' => 'termination',
+            		'dir' => 'PTRS_Innermost',
+            		'spaceid' => null,
+            		'id' => null,
+			'participants' => [
+                		'AProVE' => 788248,
+            		],
+        	],
+   	],
 ];
 ?>
