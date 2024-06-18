@@ -18,7 +18,6 @@ $categories = [
 			'participants' => [
 				// 'NTI' => null,
 				// 'NaTT' => null,
-				// 'TTT2' => null,
 				'AProVE' => 782592
 				// 'MuTerm' => null,
 				// 'MnM' => null,
@@ -27,7 +26,6 @@ $categories = [
 			'certified' => [
 				'id' => null,
 				'participants' => [
-					// 'TTT2' => null,
 					// 'AProVE' => null,
 					// 'NaTT' => null,
 				],
@@ -41,7 +39,6 @@ $categories = [
 			'participants' => [
 				// 'MuTerm' => null,
 				// 'NaTT' => null,
-				// 'TTT2' => null,
 				// 'matchbox' => null,
 				// 'AProVE' => null,
 				// 'MnM' => null,
@@ -49,7 +46,6 @@ $categories = [
 			'certified' => [
 				'id' => null,
 				'participants' => [
-					// 'TTT2' => null,
 					// 'AProVE' => null,
 					// 'NaTT' => null,
 					// 'matchbox' => null,
@@ -63,14 +59,12 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				// 'NaTT' => null,
-				// 'TTT2' => null,
 				// 'AProVE' => null,
 				// 'MnM' => null,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-					// 'TTT2' => null,
 					// 'AProVE' => null,
 				],
 			],
@@ -82,7 +76,6 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				// 'NaTT' => null,
-				// 'TTT2' => null,
 				// 'matchbox' => null,
 				// 'AProVE' => null,
 				// 'MnM' => null,
@@ -90,7 +83,6 @@ $categories = [
 			'certified' => [
 				'id' => null,
 				'participants' => [
-					// 'TTT2' => null,
 					// 'AProVE' => null,
 					// 'matchbox' => null,
 				],
@@ -204,6 +196,22 @@ $categories = [
 				'participants' => [
 				],
 			],
+		],
+	],
+	'Probabilistic Termination of Rewriting' => [
+		'PTRS Standard' => [
+			'type' => 'termination',
+			'dir' => 'PTRS_Standard',
+			'spaceid' => null,
+			'id' => null,
+			'participants' => [],
+		],
+		'PTRS Innermost' => [
+			'type' => 'termination',
+			'dir' => 'PTRS_Innermost',
+			'spaceid' => null,
+			'id' => null,
+			'participants' => [],
 		],
 	],
 	'Termination of Programs' => [
