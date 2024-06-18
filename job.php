@@ -139,8 +139,10 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 	foreach( $results as $bm_name => $records ) {
 		$bench = [];
 		init_claim_set($claims); /* collects results for each benchmark */
-		if( $past_claims != null && array_key_exists($bm_name,$past_claims) ) {
-			$past_claim = (array)$past_claims[$bm_name];
+        $path_info = pathinfo($bm_name);
+        $past_bm_name = $path_info['dirname'].'/'.basename($bm_name, '.ari').'.xml';
+		if( $past_claims != null && array_key_exists($past_bm_name,$past_claims) ) {
+			$past_claim = (array)$past_claims[$past_bm_name];
 			add_claim($claims,$past_claim);
 		} else {
 			$past_claim = null;
