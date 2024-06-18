@@ -52,8 +52,8 @@ set_time_limit(300);
 		'CERTIFIED UP' => [ 'text' => 'UP', 'bar' => true, 'class' => 'score CERTIFIED UP' ],
 		'CERTIFIED LOW' => [ 'text' => 'LOW', 'bar' => true, 'class' => 'score CERTIFIED LOW' ],
 		'YES' => [ 'text' => 'YES', 'bar' => true, 'class' => 'score YES' ],
-		'SAST' => [ 'text' => 'SAST', 'bar' => true, 'class' => 'score AST' ],
-		'PAST' => [ 'text' => 'PAST', 'bar' => true, 'class' => 'score AST' ],
+		'SAST' => [ 'text' => 'SAST', 'bar' => true, 'class' => 'score SAST' ],
+		'PAST' => [ 'text' => 'PAST', 'bar' => true, 'class' => 'score PAST' ],
 		'AST' => [ 'text' => 'AST', 'bar' => true, 'class' => 'score AST' ],
 		'NO' => [ 'text' => 'NO', 'bar' => true, 'class' => 'score NO' ],
 		'UP' => [ 'text' => 'UP', 'bar' => true, 'class' => 'score UP' ],
@@ -328,14 +328,14 @@ set_time_limit(300);
 				$ret['news']++;
 			}
 		} else if ( array_key_exists('SAST',$claim) ) {
-			$ret['score'] += 3;
+			$ret['score'] += 1.5;
 			$ret['miss']--;
 			$ret[$pre.'SAST'] = 1;
 			if( $past_claim != null && !array_key_exists('SAST',$past_claim) ) {
 				$ret['news']++;
 			}
 		} else if ( array_key_exists('PAST',$claim) ) {
-			$ret['score'] += 2;
+			$ret['score'] += 1.5;
 			$ret['miss']--;
 			$ret[$pre.'PAST'] = 1;
 			if( $past_claim != null && !array_key_exists('PAST',$past_claim) && !array_key_exists('SAST',$past_claim) ) {
@@ -415,7 +415,13 @@ set_time_limit(300);
 		if(	array_key_exists('YES',$claim) ) {
 			return $pre.'YES';
 		}
-		if(	array_key_exists('SAST',$claim) || array_key_exists('PAST',$claim) || array_key_exists('AST',$claim) ) {
+		if(	array_key_exists('SAST',$claim) ) {
+			return $pre.'SAST';
+		}
+		if(	array_key_exists('PAST',$claim) ) {
+			return $pre.'PAST';
+		}
+		if(	array_key_exists('AAST',$claim) ) {
 			return $pre.'AST';
 		}
 		if( array_key_exists('error',$claim) ) {

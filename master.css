@@ -135,6 +135,18 @@ div.category {
 	background-color:#60F0A0;
 	color: black;
 }
+.SAST {
+	background-color:#008400;
+	color: black;
+}
+.AST {
+	background-color:#60F0A0;
+	color: black;
+}
+.PAST {
+	background-color:#008400;
+	color: black;
+}
 .CERTIFIED.YES {
 	background-color:#00F080;
 }
