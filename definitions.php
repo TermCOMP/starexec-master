@@ -345,7 +345,7 @@ set_time_limit(300);
 			$ret['score'] += 1;
 			$ret['miss']--;
 			$ret[$pre.'AST'] = 1;
-			if( $past_claim != null && !array_key_exists('AST',$past_claim) && !array_key_exists('PAST',$past_claim) !array_key_exists('SAST',$past_claim) ) {
+			if( $past_claim != null && !array_key_exists('AST',$past_claim) && !array_key_exists('PAST',$past_claim) && !array_key_exists('SAST',$past_claim) ) {
 				$ret['news']++;
 			}
 		}
