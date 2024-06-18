@@ -415,13 +415,13 @@ set_time_limit(300);
 		if(	array_key_exists('YES',$claim) ) {
 			return $pre.'YES';
 		}
-		if(	array_key_exists('SAST',$claim) ) {
+        if(	array_key_exists('SAST',$claim) ) {
 			return $pre.'SAST';
 		}
-		if(	array_key_exists('PAST',$claim) ) {
+        if(	array_key_exists('PAST',$claim) ) {
 			return $pre.'PAST';
 		}
-		if(	array_key_exists('AAST',$claim) ) {
+		if(	array_key_exists('AST',$claim) ) {
 			return $pre.'AST';
 		}
 		if( array_key_exists('error',$claim) ) {
