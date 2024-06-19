@@ -250,7 +250,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				'AProVE' => 788030,
-				// 'Ultimate' => null,
+			    'Ultimate' => 748941,
 			],
 			'certified' => [
 				'id' => null,
@@ -265,7 +265,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
                 //				'iRankFinder' => null,
-				// 'LoAT' => null,
+				'LoAT' => 747594,
 				'KoAT' => 748986, // We disabled control-flow refinement by iRankFinder in this category.
 				// 'MuVal' => null,
 				// 'MuVal-RL' => null,
