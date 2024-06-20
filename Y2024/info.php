@@ -16,7 +16,7 @@ $categories = [
 			'spaceid' => 550469,
 			'id' => 63348,
 			'participants' => [
-				// 'NTI' => null,
+				'NTI' => 783008,
 				// 'NaTT' => null,
 				'AProVE' => 788264
 				// 'MuTerm' => null,
@@ -324,7 +324,7 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-				// 'NTI+cTI' => null,
+				'NTI+cTI' => 788377,
 				'AProVE' => 749005,
 			],
 			'certified' => [
