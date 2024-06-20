@@ -181,6 +181,7 @@ $categories = [
 			'dir' => 'TRS_Outermost',
 			'spaceid' => 550912,
 			'id' => null,
+			'demo' => true,
 			'participants' => [
 				'AProVE' => 788254,
 			],
@@ -448,6 +449,7 @@ $categories = [
 			'dir' => 'Runtime_Complexity_Innermost_Rewriting',
 			'spaceid' => 550870,
 			'id' => null,
+			'demo' => true,
 			'participants' => [
 				'AProVE' => 788241,
 			],
