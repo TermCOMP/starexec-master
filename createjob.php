@@ -13,8 +13,7 @@ include 'definitions.php';
 include $_GET['competition'].'/info.php';
 
 $queue = 201402;// StarExec queue id
-$postproc = 784;// postprocessor id
-$certified_postproc = 758;// postprocessor id for Certified categories
+$default_postproc = 784;// postprocessor id
 $cpu_timeout = 1200;
 $timeout = 300;
 $max_memory = 128;
@@ -27,9 +26,12 @@ echo
 ';
 	foreach( $cats as $cat_name => $cat ) {
 		foreach(
-			[	['name' => $cat_name, 'postproc' => $postproc, 'participants' => $cat['participants'] ],
-				['name' => $cat_name.' Certified', 'postproc' => $certified_postproc, 'participants' => $cat['certified']['participants'] ]
+			[	['name' => $cat_name, 'postproc' => $cat['postproc'], 'participants' => $cat['participants'] ],
+				['name' => $cat_name.' Certified', 'postproc' => $cat['certified']['postproc'], 'participants' => $cat['certified']['participants'] ]
 			] as $job ) {
+            if( empty($job['postproc']) ) {
+                $job['postproc'] = $default_postproc;
+            }
 			if( $job['participants'] != [] ) {
     			$i++;
     			echo

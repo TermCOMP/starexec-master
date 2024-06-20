@@ -9,7 +9,7 @@ $closed = false;// make true when registration is closed.
 $previous = 'Y2023';
 
 $categories = [
-    'Termination of Rewriting' => [
+	'Termination of Rewriting' => [
 		'TRS Standard' => [
 			'type' => 'termination',
 			'dir' => 'TRS_Standard',
@@ -25,6 +25,7 @@ $categories = [
 			],
 			'certified' => [
 				'id' => null,
+				'postproc' => 807,
 				'participants' => [
 					'AProVE' => 788245,
 					// 'NaTT' => null,
@@ -45,6 +46,7 @@ $categories = [
 			],
 			'certified' => [
 				'id' => null,
+				'postproc' => 807,
 				'participants' => [
 					'AProVE' => 788245,
 					// 'NaTT' => null,
@@ -64,6 +66,7 @@ $categories = [
 			],
 			'certified' => [
 				'id' => null,
+				'postproc' => 807,
 				'participants' => [
 					'AProVE' => 788245,
 				],
@@ -82,6 +85,7 @@ $categories = [
 			],
 			'certified' => [
 				'id' => null,
+				'postproc' => 807,
 				'participants' => [
 					'AProVE' => 788245,
 					'matchbox' => 788340,
@@ -100,6 +104,7 @@ $categories = [
 			],
 			'certified' => [
 				'id' => null,
+				'postproc' => 807,
 				'participants' => [
 					'AProVE' => 788245,
 					// 'NaTT' => null,
@@ -117,6 +122,7 @@ $categories = [
 			],
 			'certified' => [
 				'id' => null,
+				'postproc' => 807,
 				'participants' => [
 				],
 			],
@@ -131,6 +137,7 @@ $categories = [
 				// 'MuTerm' => null,
 			],
 			'certified' => [
+				'postproc' => 807,
 				'id' => null,
 				'participants' => [
 				],
@@ -146,6 +153,7 @@ $categories = [
 				// 'MuTerm' => null,
 			],
 			'certified' => [
+				'postproc' => 807,
 				'id' => null,
 				'participants' => [
 				],
@@ -162,6 +170,7 @@ $categories = [
 			],
 			'certified' => [
 				'id' => null,
+				'postproc' => 791,
 				'participants' => [
 					'AProVE' => 788256,
 				],
@@ -177,6 +186,7 @@ $categories = [
 			],
 			'certified' => [
 				'id' => null,
+				'postproc' => 792,
 				'participants' => [
 					'AProVE' => 788255,
 				],
@@ -203,7 +213,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				// 'Wanda' => null,
-                //				'SOL' => null,
+				//				'SOL' => null,
 			],
 			'certified' => [
 				'id' => null,
@@ -250,7 +260,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				'AProVE' => 788030,
-			    	'Ultimate' => 748941,
+					'Ultimate' => 748941,
 			],
 			'certified' => [
 				'id' => null,
@@ -264,7 +274,7 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-                //				'iRankFinder' => null,
+				//				'iRankFinder' => null,
 				'LoAT' => 747594,
 				'KoAT' => 748986, // We disabled control-flow refinement by iRankFinder in this category.
 				// 'MuVal' => null,
@@ -397,13 +407,13 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-                //				'TcT' => null,
+				//				'TcT' => null,
 				'AProVE' => 788243,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-                    //					'TcT' => null,
+					//					'TcT' => null,
 				],
 			],
 		],
@@ -413,13 +423,13 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-                //				'TcT' => null,
+				//				'TcT' => null,
 				'AProVE' => 788262,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-                    //					'TcT' => null,
+					//					'TcT' => null,
 				],
 			],
 		],
@@ -429,13 +439,13 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-                //				'TcT' => null,
+				//				'TcT' => null,
 				'AProVE' => 788258,
 			],
 			'certified' => [
 				'id' => null,
 				'participants' => [
-                    //					'TcT' => null,
+					//					'TcT' => null,
 				],
 			],
 		],
@@ -445,13 +455,14 @@ $categories = [
 			'spaceid' => null,
 			'id' => null,
 			'participants' => [
-                //				'TcT' => null,
+				//				'TcT' => null,
 				'AProVE' => 788241,
 			],
 			'certified' => [
 				'id' => null,
+				'postproc' => 793,
 				'participants' => [
-                    //					'TcT' => null,
+					//					'TcT' => null,
 					'AProVE' => 788260,
 				],
 			],
