@@ -10,9 +10,9 @@ RUN apt-get -y install unzip
 
 RUN echo 'extension=php_openssl' >> /etc/php/php.ini
 
+WORKDIR /var/www/html/
 RUN rm -rf /var/www/html
-WORKDIR /var/www
-RUN git clone https://github.com/TermCOMP/starexec-master.git html
-WORKDIR /var/www/html
+
+COPY . .
 
 CMD ["sh", "/var/www/html/start.sh"]
