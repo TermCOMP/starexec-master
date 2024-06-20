@@ -210,10 +210,9 @@ $categories = [
 		'HRS Union Beta' => [
 			'type' => 'termination',
 			'dir' => 'Higher_Order_Rewriting_Union_Beta',
-			'spaceid' => null,
-			'id' => null,
+			'spaceid' => 531842,
+			'id' => 60901,
 			'participants' => [
-				// 'Wanda' => null,
 				//				'SOL' => null,
 			],
 			'certified' => [
