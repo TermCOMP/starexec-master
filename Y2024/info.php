@@ -192,11 +192,11 @@ $categories = [
 				],
 			],
 		],
-		'Integer TRS Innermost' => [
+        'Integer TRS Innermost' => [
 			'type' => 'termination',
 			'dir' => 'Integer_TRS_Innermost',
-			'spaceid' => null,
-			'id' => null,
+			'spaceid' => 466410,
+			'id' => 60902,
 			'participants' => [
 				'AProVE' => 749005,
 			],
@@ -260,7 +260,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				'AProVE' => 788030,
-					'Ultimate' => 748941,
+				'Ultimate' => 748941,
 			],
 			'certified' => [
 				'id' => null,
@@ -289,10 +289,10 @@ $categories = [
 		'Haskell' => [
 			'type' => 'termination',
 			'dir' => 'Haskell',
-			'spaceid' => null,
-			'id' => null,
+			'spaceid' => 466206,
+			'id' => 60907,
 			'participants' => [
-				'AProVE' => 749005,
+  				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -303,8 +303,8 @@ $categories = [
 		'Java Bytecode' => [
 			'type' => 'termination',
 			'dir' => 'Java_Bytecode',
-			'spaceid' => null,
-			'id' => null,
+			'spaceid' => 466222,
+			'id' => 60904,
 			'participants' => [
 				'AProVE' => 749005,
 			],
@@ -317,8 +317,8 @@ $categories = [
 		'Java Bytecode Recursive' => [
 			'type' => 'termination',
 			'dir' => 'Java_Bytecode_Recursive',
-			'spaceid' => null,
-			'id' => null,
+			'spaceid' => 466352,
+			'id' => 60905,
 			'participants' => [
 				'AProVE' => 749005,
 			],
@@ -346,10 +346,10 @@ $categories = [
 		'Logic Programming with Cut' => [
 			'type' => 'termination',
 			'dir' => 'Logic_Programming_with_Cut',
-			'spaceid' => null,
-			'id' => null,
+			'spaceid' => 466237,
+			'id' => 60906,
 			'participants' => [
-				'AProVE' => 749005,
+  				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -360,10 +360,10 @@ $categories = [
 		'Prolog' => [
 			'type' => 'termination',
 			'dir' => 'Prolog',
-			'spaceid' => null,
-			'id' => null,
+			'spaceid' => 466034,
+			'id' => 60908,
 			'participants' => [
-				'AProVE' => 749005,
+  				'AProVE' => 749005,
 			],
 			'certified' => [
 				'id' => null,
@@ -373,11 +373,11 @@ $categories = [
 		],
 	],
 	'Complexity Analysis' => [
-		'Complexity: C' => [
+		'Complexity: C Integer' => [
 			'type' => 'complexity',
 			'dir' => 'Complexity_C_Integer',
-			'spaceid' => null,
-			'id' => null,
+			'spaceid' => 548691,
+			'id' => 60863,
 			'participants' => [
 				'KoAT' => 748989,
 			],
@@ -390,8 +390,8 @@ $categories = [
 		'Complexity: ITS' => [
 			'type' => 'complexity',
 			'dir' => 'Complexity_ITS',
-			'spaceid' => null,
-			'id' => null,
+			'spaceid' => 548704,
+			'id' => 60864,
 			'participants' => [
 				'KoAT & LoAT' => 748959,
 			],
