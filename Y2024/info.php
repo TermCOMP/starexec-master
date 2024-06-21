@@ -277,8 +277,7 @@ $categories = [
 				//				'iRankFinder' => null,
 				'LoAT' => 747594,
 				'KoAT' => 748986, // We disabled control-flow refinement by iRankFinder in this category.
-				// 'MuVal' => null,
-				// 'MuVal-RL' => null,
+				'MuVal' => 789730,
 			],
 			'certified' => [
 				'id' => null,
