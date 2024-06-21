@@ -172,6 +172,7 @@ if( !$closed ) {
 $mcatid = 0;
 $catid = 0;
 foreach( $mcats as $mcatname => $cats ) {
+	if (empty($cats)) continue;
 	$total_done = 0;
 	$total_togo = 0;
 	$total_cpu = 0;
