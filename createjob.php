@@ -13,7 +13,7 @@ include 'definitions.php';
 include $_GET['competition'].'/info.php';
 
 $queue = 201402;// StarExec queue id
-$default_postproc = 784;// postprocessor id
+$default_postproc = 811;// postprocessor id
 $cpu_timeout = 1200;
 $timeout = 300;
 $max_memory = 128;
