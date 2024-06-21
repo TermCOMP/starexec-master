@@ -140,7 +140,11 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		$bench = [];
 		init_claim_set($claims); /* collects results for each benchmark */
         $path_info = pathinfo($bm_name);
-        $past_bm_name = $path_info['dirname'].'/'.basename($bm_name, '.ari').'.xml';
+        if (str_ends_with($bm_name, '.ari')) {
+            $past_bm_name = $path_info['dirname'].'/'.basename($bm_name, '.ari').'.xml';
+        } else {
+            $past_bm_name = $bm_name;
+        }
 		if( $past_claims != null && array_key_exists($past_bm_name,$past_claims) ) {
 			$past_claim = (array)$past_claims[$past_bm_name];
 			add_claim($claims,$past_claim);
