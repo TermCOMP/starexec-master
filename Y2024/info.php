@@ -42,7 +42,7 @@ $categories = [
 				'NaTT' => 788272,
 				'matchbox' => 788343,
 				'AProVE' => 788264,
-				// 'MnM' => null,
+				'MnM' => 788390,
 			],
 			'certified' => [
 				'id' => null,
@@ -81,7 +81,7 @@ $categories = [
 				// 'NaTT' => null,
 				'matchbox' => 788345,
 				'AProVE' => 788264,
-				// 'MnM' => null,
+				'MnM' => 788390,
 			],
 			'certified' => [
 				'id' => null,
