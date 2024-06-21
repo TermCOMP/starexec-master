@@ -1,6 +1,9 @@
 #!/bin/bash
 
-result=`head -n 1 $1 | sed 's/^[^\t]*\t//'`
+# for runsolver
+# result=`head -n 1 $1 | sed 's/^[^\t]*\t//'`
+# for BenchExev
+result=`head -n 1 $1`
 
 regex="YES|NO|AST|SAST|PAST|WORST_CASE\((\?|NON_POLY|Omega\(n\^([0-9]+)\)),(\?|POLY|O\((1|n\^([0-9]+))\))\)"
 
