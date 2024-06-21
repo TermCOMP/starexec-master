@@ -59,6 +59,7 @@ $categories = [
 			'dir' => 'TRS_Relative',
 			'spaceid' => 550835,
 			'id' => null,
+			'demo' => true,
 			'participants' => [
 				// 'NaTT' => null,
 				'AProVE' => 788264,
