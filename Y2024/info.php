@@ -373,7 +373,7 @@ $categories = [
 		],
 	],
 	'Complexity Analysis' => [
-		'Complexity: C Integer' => [
+		'Complexity: C' => [
 			'type' => 'complexity',
 			'dir' => 'Complexity_C_Integer',
 			'spaceid' => 548691,
