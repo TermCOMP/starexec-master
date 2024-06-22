@@ -167,7 +167,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				'AProVE' => 788266,
-				'MuTerm' => 789793,
+				'MuTerm' => 790016,
 			],
 			'certified' => [
 				'id' => null,
