@@ -135,7 +135,7 @@ $categories = [
 			'id' => null,
 			'note' => 'http://zenon.dsic.upv.es/muterm/benchmarks/ot-vs-t-20220721/benchmarks.html',
 			'participants' => [
-				'MuTerm' => 789788,
+				'MuTerm' => 790063,
 			],
 			'certified' => [
 				'postproc' => 818,
