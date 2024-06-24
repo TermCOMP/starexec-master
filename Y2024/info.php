@@ -25,7 +25,7 @@ $categories = [
 			],
 			'certified' => [
 				'id' => null,
-				'postproc' => 812,
+				'postproc' => 818,
 				'participants' => [
 					'AProVE' => 788245,
 					// 'NaTT' => null,
@@ -46,7 +46,7 @@ $categories = [
 			],
 			'certified' => [
 				'id' => null,
-				'postproc' => 812,
+				'postproc' => 818,
 				'participants' => [
 					'AProVE' => 788245,
 					// 'NaTT' => null,
@@ -67,7 +67,7 @@ $categories = [
 			],
 			'certified' => [
 				'id' => 63724,
-				'postproc' => 812,
+				'postproc' => 818,
 				'participants' => [
 					'AProVE' => 788245,
 				],
@@ -86,7 +86,7 @@ $categories = [
 			],
 			'certified' => [
 				'id' => null,
-				'postproc' => 812,
+				'postproc' => 818,
 				'participants' => [
 					'AProVE' => 788245,
 					'matchbox' => 788340,
@@ -105,7 +105,7 @@ $categories = [
 			],
 			'certified' => [
 				'id' => null,
-				'postproc' => 812,
+				'postproc' => 818,
 				'participants' => [
 					'AProVE' => 788245,
 					// 'NaTT' => null,
@@ -123,7 +123,7 @@ $categories = [
 			],
 			'certified' => [
 				'id' => null,
-				'postproc' => 812,
+				'postproc' => 818,
 				'participants' => [
 				],
 			],
@@ -138,7 +138,7 @@ $categories = [
 				'MuTerm' => 790063,
 			],
 			'certified' => [
-				'postproc' => 812,
+				'postproc' => 818,
 				'id' => null,
 				'participants' => [
 				],
@@ -154,7 +154,7 @@ $categories = [
 				'MuTerm' => 790062,
 			],
 			'certified' => [
-				'postproc' => 812,
+				'postproc' => 818,
 				'id' => null,
 				'participants' => [
 				],
@@ -171,7 +171,7 @@ $categories = [
 			],
 			'certified' => [
 				'id' => null,
-				'postproc' => 813,
+				'postproc' => 820,
 				'participants' => [
 					'AProVE' => 788256,
 				],
@@ -188,7 +188,7 @@ $categories = [
 			],
 			'certified' => [
 				'id' => 63662,
-				'postproc' => 814,
+				'postproc' => 819,
 				'participants' => [
 					'AProVE' => 788255,
 				],
@@ -454,7 +454,7 @@ $categories = [
 			],
 			'certified' => [
 				'id' => null,
-				'postproc' => 815,
+				'postproc' => 821,
 				'participants' => [
 					'AProVE' => 788260,
 				],
