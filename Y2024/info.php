@@ -447,13 +447,13 @@ $categories = [
 			'type' => 'complexity',
 			'dir' => 'Runtime_Complexity_Innermost_Rewriting',
 			'spaceid' => 550870,
-			'id' => null,
+			'id' => 63734,
 			'demo' => true,
 			'participants' => [
 				'AProVE' => 788241,
 			],
 			'certified' => [
-				'id' => null,
+				'id' => 63738,
 				'postproc' => 821,
 				'participants' => [
 					'AProVE' => 788260,
@@ -465,7 +465,7 @@ $categories = [
 			'dir' => 'Runtime_Complexity_Innermost_Rewriting',
 			'previous' => null,
 			'spaceid' => 550870,
-			'id' => null,
+			'id' => 63733,
 			'participants' => [
 				'AProVE' => 788261,
 			],
