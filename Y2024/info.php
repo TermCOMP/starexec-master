@@ -132,7 +132,7 @@ $categories = [
 			'type' => 'termination',
 			'dir' => 'TRS_Conditional',
 			'spaceid' => 550749,
-			'id' => null,
+			'id' => 63741,
 			'note' => 'http://zenon.dsic.upv.es/muterm/benchmarks/ot-vs-t-20220721/benchmarks.html',
 			'participants' => [
 				'MuTerm' => 790063,
@@ -405,7 +405,7 @@ $categories = [
 			'type' => 'complexity',
 			'dir' => 'Derivational_Complexity_Full_Rewriting',
 			'spaceid' => 550754,
-			'id' => null,
+			'id' => 63737,
 			'participants' => [
 				'AProVE' => 788243,
 			],
