@@ -99,7 +99,7 @@ $categories = [
 			'spaceid' => 550907,
 			'id' => null,
 			'participants' => [
-				'MuTerm' = 790115,
+				'MuTerm' => 790115,
 				// 'NaTT' => null,
 				'AProVE' => 788264,
 			],
@@ -119,7 +119,7 @@ $categories = [
 			'id' => null,
 			'participants' => [
 				'AProVE' => 788264,
-				'MuTerm' = 790115,
+				'MuTerm' => 790115,
 			],
 			'certified' => [
 				'id' => null,
