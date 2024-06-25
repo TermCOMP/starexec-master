@@ -66,7 +66,7 @@ $categories = [
 				// 'MnM' => null,
 			],
 			'certified' => [
-				'id' => 63724,
+				'id' => 63742,
 				'postproc' => 818,
 				'participants' => [
 					'AProVE' => 788245,
@@ -187,7 +187,7 @@ $categories = [
 				'AProVE' => 788254,
 			],
 			'certified' => [
-				'id' => 63662,
+				'id' => 63743,
 				'postproc' => 819,
 				'participants' => [
 					'AProVE' => 788255,
