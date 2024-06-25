@@ -21,7 +21,7 @@ $categories = [
 				'AProVE' => 788264,
 				'MuTerm' => 790115,
 				// 'MnM' => null,
-				// 'AutoNon' => null,
+				'AutoNon' => 790240,
 			],
 			'certified' => [
 				'id' => null,
