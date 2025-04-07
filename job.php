@@ -18,7 +18,6 @@
 	$refresh = $_GET['refresh'];
 	$bm_db = $_GET['db'];
 	$bm_prefix = array_key_exists('dir',$_GET) ? $_GET['dir'].'/' : '';
-	$cops = $_GET['cops'];
 	$type = $_GET['type'];
 	$penalized_pairs = array_key_exists('penalty',$_GET) ?
 		json_decode(file_get_contents($_GET['penalty'])) : [];
@@ -45,10 +44,11 @@
 	$participants = [];
 	$sum = [];
 	for( $i = 0; $i < $jobidc; $i++ ) {
-		$csv = jobid2csv($jobids[$i]);
-		cachezip(jobid2remote($jobids[$i]),$csv,$refresh);
-		parse_results($csv,$bm_prefix,$results,$participants,$i);
-		$sum[$i] = new_scores();
+        $files = glob("./jobs/" . $jobids[$i] . "/results/*");
+        foreach ($files as $file) {
+            parse_results($file,$bm_prefix,$results,$participants,$i);
+            $sum[$i] = new_scores();
+        }
 	}
 	// virtual best solver
 	$vbs = new_scores();
@@ -71,10 +71,6 @@
 	     '</head>'.PHP_EOL.
 	     '<body>'.PHP_EOL.
 	     '<h1><a href=".">'. $competitionname .'</a>: '. $jobname .PHP_EOL;
-	for( $i = 0; $i < $jobidc; $i++ ) {
-		echo ' <a class=starexecid href="'. jobid2url($jobids[$i]) .'">'. $jobids[$i] .'</a>'.PHP_EOL.
-		     ' <a class=csv href="'. $root.jobid2csv($jobids[$i]) .'">Job info CSV</a>'.PHP_EOL;
-	}
 ?>
  <span class="headerFollower">Showing
   <select id="filter1" type="text" placeholder="Filter..." oninput="filteredTable.refresh()">
@@ -124,8 +120,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 	makeFilterField(2);
 	$i = 3;
 	foreach( $participants as $configid => &$p ) {
-		echo '  <th><a href="'. solverid2url($p['solver id']).'">'.$p['solver'].'</a>'.PHP_EOL.
-		     '   <a class=config href="'. configid2url($configid) .'">'. $p['configuration'].'</a>'.PHP_EOL;
+		echo '  <th>'.$p['solver'].PHP_EOL;
 		makeFilterField($i);
 		$i++;
 	}
@@ -156,10 +151,10 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			$status = $record['status'];
 			$pair = $record['pair id'];
 			if( status2finished($status) ) {
-				$cpu = parse_time($record['cpu time']);
-				$time = parse_time($record['wallclock time']);
+#				$cpu = parse_time($record['cpu time']);
+				$time = $record['wallclock time'];
 				$p['done'] += 1;
-				$p['cpu'] += $cpu;
+#				$p['cpu'] += $cpu;
 				$p['time'] += $time;
 				if( array_key_exists('certification-result',$record) ) {
 					$cert = $record['certification-result'];
@@ -192,14 +187,14 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				$p['togo'] += 1;
 				$p['scorestogo'] += $max_score;
 				add_claim_togo($claims);
-				$cpu = 0;
+#				$cpu = 0;
 				$time = 0;
 			}
 			$bench[$configid] = [
 				'status' => $status,
 				'cert' => $cert,
 				'time' => $time,
-				'cpu' => $cpu,
+#				'cpu' => $cpu,
 				'certtime' => $certtime,
 				'pair' => $pair,
 				'claim' => $claim,
@@ -214,11 +209,9 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			echo ' <tr>'.PHP_EOL;
 		}
 
-		$bm_id = $record['benchmark id'];
-		$bm_url = bm2url($bm_name,$bm_id,$bm_db,$bm_prefix);
+		$bm_url = bm2url($bm_name,$bm_name,$bm_db,$bm_prefix);
 		echo '  <td class=benchmark>'.PHP_EOL.
-		     '   <a href="'.$bm_url.'">'.format_bm($bm_name).'</a>'.PHP_EOL.
-		     '   <a class="starexecid" href="'.bmid2remote($bm_id).'">'.$bm_id.'</a></td>'.PHP_EOL.
+		     '   <a href="'.$bm_url.'">'.format_bm($bm_name).'</a></td>'.PHP_EOL.
 		     '  <td style="display:none">'.$d['key'];
 		// virtual best solver
 		if( $conflicting ) {
@@ -229,7 +222,11 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			echo '  <td class="'.claim2class($claim,'').'">'.claim2str($claim).PHP_EOL;
 			$scores = claim2scores($claim,'',$max_score,$past_claim);
 			foreach( $scores as $key => $val ) {
-				$vbs[$key] += $val;
+                if (!array_key_exists($key,$vbs)) {
+                    $vbs[$key] = $val;
+                } else {
+                    $vbs[$key] += $val;
+                }
 			}
 		}
 		// solvers
@@ -238,21 +235,22 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			$claim = $my['claim'];
 			$cert = $my['cert'];
 			$certtime = $my['certtime'];
-			$url = pairid2url($my['pair']);
 			$outurl = pairid2outurl($my['pair']);
+            $errurl = pairid2errurl($my['pair']);
 			if( status2complete($status) ) {
 				echo '  <td class="' . claim2class($claim,$cert) . '">'.PHP_EOL.
-				     '   <a href="'. $outurl .'">' . claim2str($claim) . '</a>'.PHP_EOL.
-				     '   <a href="'. $url .'">'.PHP_EOL.
-				     '    <span class="time">' . $my['cpu'] . '/' . $my['time'] . '</span>'.PHP_EOL;
+				     '   <a href="'. "../". $outurl .'">' . claim2str($claim) . '</a>'.PHP_EOL.
+                     ( 0 == filesize( $errurl )  ? '' : '   <a href="'. $errurl .'">[err]</a>'.PHP_EOL);
+				     '    <span class="time">' .
+                                     # $my['cpu'] . '/' .
+                                     $my['time'] . '</span>'.PHP_EOL;
 				if( $cert ) {
 					echo '    '.cert2str($cert).'<span class="time">'. $certtime . '</span>'.PHP_EOL;
 				}
-				echo '   </a>'.PHP_EOL;
+            } else if ( status2error($status) ) {
+                echo '  <td class="' . status2class($status) . '"><a href="'. "../". $errurl .'">error</a></td>' . PHP_EOL;
 			} else {
-				echo '  <td class="' . status2class($status) . '">'.PHP_EOL.
-				     '   <a href="'. $url . '">' . $status . '</a>'.PHP_EOL.
-				     (status2complete($status) ? '   <a href="'. $outurl .'">[out]</a>'.PHP_EOL : '' );
+				echo '  <td class="' . status2class($status) . '">' . $status . PHP_EOL;
 			}
 		}
 		// past result
@@ -269,7 +267,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 	$vbs_score = $vbs['score'];
 	echo '  <th>'.number_format($vbs_score,2);
 	foreach( $participants as &$p ) {
-		$p['cpu'] = (int)$p['cpu'];// eliminate round errors
+#		$p['cpu'] = (int)$p['cpu'];// eliminate round errors
 		$p['time'] = (int)$p['time'];// eliminate round errors
 		$score = $p['score'];
         if (empty($vbs_score)) {
@@ -282,7 +280,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		$summer['done'] += $p['done'];
 		$summer['togo'] += $p['togo'];
 		$summer['scorestogo'] += $p['scorestogo'];
-		$summer['cpu'] += $p['cpu'];
+#		$summer['cpu'] += $p['cpu'];
 		$summer['time'] += $p['time'];
 	}
 	if( isset($out_path) ) {

@@ -24,7 +24,7 @@ $jobid = $ids[0];
 
 $cat_done = 0;
 $cat_togo = 0;
-$cat_cpu = 0;
+#$cat_cpu = 0;
 $cat_time = 0;
 $togo = 0;
 
@@ -59,9 +59,6 @@ for( $i = 0; $i < count($layers); $i++ ) {
 $jobpath = jobname2local($name);
 echo ' <div class=category>'.PHP_EOL.
      '  <a href="' . $jobpath . '">' . $name . '</a>'.PHP_EOL;
-foreach( $ids as $i ) {
-	echo '  <a class="starexecid" href="' . jobid2url($i) . '">' . $i . '</a>'.PHP_EOL;
-}
 if( $sum['conflicting'] ) {
 	echo '<a class="conflict" href="' . $jobpath . '?filter1=c">conflicting</a>'.PHP_EOL;
 } 
@@ -69,19 +66,18 @@ echo ' <table class=ranking>'.PHP_EOL;
 foreach( $solvers as $configid => $s ) {
 	$layer = $s['layer'];
 	$name = $s['solver'];
-	$id = $s['solver id'];
+	$id = $s['solver'];
 	$config = $s['configuration'];
 	$score = $s['score'];
 	$miss = $s['miss'];
 	$scorestogo = $s['scorestogo'];
 	$togo = $s['togo'];
 	$done = $s['done'];
-	$cpu = $s['cpu'];
+#	$cpu = $s['cpu'];
 	$time = $s['time'];
 	$certtime = $s['certtime'];
 	$conflicts = $s['conflicts'];
 	$news = $s['news'];
-	$url = solverid2url($id);
 	$count[$layer] += 1;
 	if( $prev_score[$layer] != $score ) {
 		$rank[$layer] = $count[$layer];
@@ -103,8 +99,7 @@ foreach( $solvers as $configid => $s ) {
 	// Textual display
 	echo '     <td>'.PHP_EOL.
 	     '      <span class="'.( $rank[$layer] == 1 ? 'best ' : '' ). 'solver">'.PHP_EOL.
-	     '       <span class="rank">'.$rank[$layer].'.</span> <a class="tool" href="'. $url . '">'. $name . '</a>'.PHP_EOL.
-	     '       <a class="config" href="' . configid2url($configid) . '">'. $config . '</a>'.PHP_EOL.
+	     '       <span class="rank">'.$rank[$layer].'.</span> <span class="tool">'. $name . '</span>'.PHP_EOL.
 	     '      </span>'. PHP_EOL;
 	foreach( $scored_keys as $key => $val ) {
 		if( array_key_exists($key,$s) && $val['text'] != null ) {
@@ -120,7 +115,7 @@ foreach( $solvers as $configid => $s ) {
 		echo '<span class="score certified time">'.seconds2str($certtime);
 	}
 	echo '</span>'.PHP_EOL;
-	$cat_cpu += $cpu;
+#	$cat_cpu += $cpu;
 	$cat_time += $time;
 	$cat_done += $done;
 	$cat_togo += $togo;

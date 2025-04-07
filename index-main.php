@@ -45,19 +45,11 @@ $team_ranking = array_key_exists( 'team-ranking', $_GET );
  <h1><?php echo $title; ?>
  <span class="headerFollower">
   <?php echo $note.PHP_EOL; ?>
-  <span id=configToggler class=button></span>
   <span id=scoreToggler class=button></span>
   <span id=columnToggler class=button></span>
  </span>
 </h1>
 <script>
-var configToggler = StyleToggler(
-	document.getElementById("configToggler"), ".config", [
-		{ text: "Show configs", assign: { display: "none" } },
-		{ text: "Hide configs", assign: { display: "" } },
-	],
-	<?php echo $showconfig ? '1' : '0'; ?>
-);
 var scoreToggler = StyleToggler(
 	document.getElementById("scoreToggler"), ".score:not(.important)", [
 		{ text: "Show scores", assign: { display: "none" } },
@@ -190,7 +182,8 @@ foreach( $mcats as $mcatname => $cats ) {
 	     '   var sum = progress'.$mcatid.'.reduce(summer);'.PHP_EOL.
 	     '   document.getElementById("stat'.$mcatid.'").innerHTML ='.PHP_EOL.
 	     '    "Progress: " + Math.floor(1000 * sum.done / (sum.done + sum.togo))/10 +'.PHP_EOL.
-	     '    "%, CPU Time: " + seconds2str(sum.cpu) + ", Node Time: "+ seconds2str(sum.time);'.PHP_EOL.
+#	     '    "%, CPU Time: " + seconds2str(sum.cpu) + ", Node Time: "+ seconds2str(sum.time);'.PHP_EOL.
+         '    "%, Node Time: "+ seconds2str(sum.time);'.PHP_EOL.
 	     '  }'.PHP_EOL.
 	     '</script>'.PHP_EOL;
 	$catindex = 0;
@@ -199,20 +192,15 @@ foreach( $mcats as $mcatname => $cats ) {
 		$id = $cat['id'];
 		$spaceid = array_key_exists('spaceid',$cat) ? $cat['spaceid'] : null;
 		if( $id == null ) {// This means the job is not yet started or linked to starexec-master.
-			echo ' <div class=category>';
-			if( $spaceid != null ) {
-				echo '<a href="'.spaceid2url($spaceid).'">'.$catname.'</a>'.PHP_EOL;
-			} else {
-				echo $catname.PHP_EOL;
-			}
+			echo ' <div class=category>'.$catname.PHP_EOL;
 			echo '  <div class=ranking>'.PHP_EOL;
 			foreach( $cat['certified']['participants'] as $partname => $configid ) {
 				echo '   <div class="CERTIFIED participant">'.PHP_EOL.
-				     '   '.$partname.'<a class=starexecid href="'. configid2url($configid) .'">'. $configid .'</a></div>'.PHP_EOL;
+				     '   '.$partname.'</div>'.PHP_EOL;
 			}
 			foreach( $cat['participants'] as $partname => $configid ) {
 				echo '   <div class="participant">'. $partname.
-				     '<a class=starexecid href="'. configid2url($configid) .'">'. $configid .'</a></div>'.PHP_EOL;
+				     '</div>'.PHP_EOL;
 			}
 			echo '  </div>'.PHP_EOL.
 			     ' </div>';

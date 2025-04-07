@@ -33,15 +33,15 @@ set_time_limit(300);
 		exec( "./fix-starexec-csv.sh '$local'" );
 		chmod( $local, 0766 );
 	}
-	function jobid2csv($jobid) {
-		return "fromStarExec/Job$jobid/Job" . $jobid . "_info.csv";
-	}
 	function row2record($header,$row) {
 		if( is_null($row[0]) ) {
 			return null;
 		}
 		$record = [];
 		foreach( $header as $i => $field ) {
+			if (!array_key_exists($i,$row)) {
+				return null;
+			}
 			$record[$field] = $row[$i];
 		}
 		return $record;
@@ -73,7 +73,7 @@ set_time_limit(300);
 			'conflicts' => 0,
 			'done' => 0,
 			'togo' => 0,
-			'cpu' => 0,
+#			'cpu' => 0,
 			'time' => 0,
 			'certtime' => 0,
 			'news' => 0,
@@ -86,7 +86,7 @@ set_time_limit(300);
 			unset($record['benchmark']);
 			$bm_name = substr( $bm_raw, strpos($bm_raw,$bm_dir) + $len);
 			$here = &$results[$bm_name];
-			$here['participants'][$record['configuration id']] = $record;
+			$here['participants'][$record['configuration']] = $record;
 		}
 	};
 	function parse_results($csv, $bm_dir, &$results, &$participants, $layer) {
@@ -95,39 +95,32 @@ set_time_limit(300);
 		$file = new SplFileObject($csv);
 		$file->setFlags( SplFileObject::READ_CSV );
 		$header = $file->current();
-		$file->next();
-		// first tool
-		$record = row2record($header,$file->current());
-		$file->next();
-		parse_record($record,$bm_dir,$len,$results);
-		$configid = $record['configuration id'];
-		$first = $configid;
-		// first loop
-		for(;;) {
-			$participants[$configid] = array_merge( new_scores(), [
-				'layer' => $layer,
-				'solver' => $record['solver'],
-				'solver id' => $record['solver id'],
-				'configuration' => $record['configuration'],
-			]);
-			foreach( $scored_keys as $key => $val ) {
-				$participants[$configid][$key] = 0;
-			}
+		for( $file->next(); !$file->eof(); $file->next() ) {
 			$record = row2record($header,$file->current());
-			$file->next();
-			parse_record($record,$bm_dir,$len,$results);
-			$configid = $record['configuration id'];
-			if( $configid == $first ) {
-				break;
-			}
+            if( $record != null ) {
+                $configid = $record['configuration'];
+                if (!array_key_exists($configid,$participants)) {
+                    $participants[$configid] = array_merge( new_scores(), [
+                        'layer' => $layer,
+                        'solver' => $record['solver'],
+                        'solver id' => $record['solver'],
+                        'configuration' => $record['configuration'],
+                    ]);
+                    foreach( $scored_keys as $key => $val ) {
+                        $participants[$configid][$key] = 0;
+                    }
+                }
+            }
 		}
-		// remaining
-		for(; !$file->eof(); $file->next() ) {
-			parse_record(row2record($header,$file->current()),$bm_dir,$len,$results);
+		$file = new SplFileObject($csv);
+		$file->setFlags( SplFileObject::READ_CSV );
+        $file->current(); // Without this, next() doesn't work. PHP is great.
+		for( $file->next(); !$file->eof(); $file->next() ) {
+            $record = row2record($header,$file->current());
+            if ($record != null) {
+                parse_record($record,$bm_dir,$len,$results);
+            }
 		}
-	}
-	function jobid2remote($jobid) {
-		return "https://www.starexec.org/starexec/secure/download?type=job&id=$jobid&returnids=true&getcompleted=false";
 	}
 	function escape_filename($name) {
 		return preg_replace('/[: \\/\\\\]/','_',$name);
@@ -147,14 +140,17 @@ set_time_limit(300);
 	function jobname2penaltyfile($jobname) {
 		return escape_filename($jobname).'.penalty.json';
 	}
-	function spaceid2url($id) {
-		return 'https://www.starexec.org/starexec/secure/explore/spaces.jsp?id='.$id;
-	}
-	function pairid2url($pairid) {
-		return "https://www.starexec.org/starexec/secure/details/pair.jsp?id=$pairid";
+	function pairid2errurl($pairid) {
+        $parts=explode("_", $pairid);
+        $job_id=$parts[0];
+        $benchmark_idx=$parts[1];
+		return "./jobs/".$job_id."/errors/".$benchmark_idx;
 	}
 	function pairid2outurl($pairid) {
-		return 'https://www.starexec.org/starexec/services/jobs/pairs/'. $pairid .'/stdout/1?limit=-1';
+        $parts=explode("_", $pairid);
+        $job_id=$parts[0];
+        $benchmark_idx=$parts[1];
+		return "./jobs/".$job_id."/proofs/".$benchmark_idx;
 	}
 // For complexity
 	function bound2str( $bound ) {
@@ -415,10 +411,10 @@ set_time_limit(300);
 		if(	array_key_exists('YES',$claim) ) {
 			return $pre.'YES';
 		}
-        if(	array_key_exists('SAST',$claim) ) {
+		if(	array_key_exists('SAST',$claim) ) {
 			return $pre.'SAST';
 		}
-        if(	array_key_exists('PAST',$claim) ) {
+		if(	array_key_exists('PAST',$claim) ) {
 			return $pre.'PAST';
 		}
 		if(	array_key_exists('AST',$claim) ) {
@@ -485,9 +481,6 @@ set_time_limit(300);
 		preg_match( '/([0-9]+\\.[0-9]?[0-9]?).*/', $string, $matches );
 		return $matches[1];
 	}
-	function jobid2url($jobid) {
-		return "https://www.starexec.org/starexec/secure/details/job.jsp?id=$jobid";
-	}
 	function bm2url($bm,$bmid,$db,$bm_prefix) {
 		if( preg_match( '/TPDB(\\s*([0-9.]+))?/', $db, $matches ) == 1 ) {
 			return 'https://termcomp.github.io/tpdb.html?'.($matches[1]=='' ? '' : 'ver='.$matches[2].'&').'path='.urlencode($bm_prefix.$bm);
@@ -500,12 +493,6 @@ set_time_limit(300);
 	}
 	function bmid2remote($bmid) {
 		return "https://www.starexec.org/starexec/secure/details/benchmark.jsp?id=$bmid";
-	}
-	function solverid2url($solverid) {
-		return "https://www.starexec.org/starexec/secure/details/solver.jsp?id=$solverid";
-	}
-	function configid2url($configid) {
-		return "https://www.starexec.org/starexec/secure/details/configuration.jsp?id=$configid";
 	}
 	function claims2description($claims,$past_claim) {
 		$vbs = [];
