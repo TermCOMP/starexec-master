@@ -10,4 +10,6 @@ RUN apt-get -y install unzip
 
 RUN echo 'extension=php_openssl' >> /etc/php/php.ini
 
+WORKDIR /var/www/html
+
 CMD ["sh", "/var/www/html/start.sh"]
