@@ -14,6 +14,16 @@ String.prototype.padStart = function(size,pad) {
   while (r.length < (size || 2)) {r = pad + r;}
   return r;
 }
+function milliseconds2str(ms) {
+	var s = Math.floor(ms/1000);
+	var d = Math.floor(s/(24*60*60));
+	s = s%(24*60*60);
+	var h = Math.floor(s/(60*60));
+	s = s%(60*60);
+	var m = Math.floor(s/60);
+	s = s%60;
+	return (d>0? d + 'd ' : '') + h + ':' + String(m).padStart(2,0) + ':' + String(s).padStart(2,0);
+}
 function loadURL(url,handle) {
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
