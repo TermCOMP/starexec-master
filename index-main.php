@@ -183,7 +183,7 @@ foreach( $mcats as $mcatname => $cats ) {
 	     '   document.getElementById("stat'.$mcatid.'").innerHTML ='.PHP_EOL.
 	     '    "Progress: " + Math.floor(1000 * sum.done / (sum.done + sum.togo))/10 +'.PHP_EOL.
 #	     '    "%, CPU Time: " + seconds2str(sum.cpu) + ", Node Time: "+ seconds2str(sum.time);'.PHP_EOL.
-         '    "%, Node Time: "+ seconds2str(sum.time);'.PHP_EOL.
+         '    "%, Node Time: "+ milliseconds2str(sum.time);'.PHP_EOL.
 	     '  }'.PHP_EOL.
 	     '</script>'.PHP_EOL;
 	$catindex = 0;

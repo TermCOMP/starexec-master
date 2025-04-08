@@ -110,9 +110,9 @@ foreach( $solvers as $configid => $s ) {
 			}
 		}
 	}
-	echo '<span class="score '.( $time == $best[$layer]['time'] ? 'best ' : '' ).'time">time:'.seconds2str(intdiv($time,1000)).'</span>';
+	echo '<span class="score '.( $time == $best[$layer]['time'] ? 'best ' : '' ).'time">time:'.milliseconds2str($time).'</span>';
 	if( $certtime != 0 ) {
-		echo '<span class="score certified time">'.seconds2str($certtime);
+		echo '<span class="score certified time">'.milliseconds2str($certtime);
 	}
 	echo '</span>'.PHP_EOL;
 #	$cat_cpu += $cpu;
