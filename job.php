@@ -243,7 +243,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
                      ( 0 == filesize( $errurl )  ? '' : '   <a href="'. $errurl .'">[err]</a>'.PHP_EOL).
 				     '    <span class="time">' .
                                      # $my['cpu'] . '/' .
-                                     ($my['time']/1000) . ',' . ($my['time']%1000) . '</span>'.PHP_EOL;
+                                     intdiv($my['time'],1000) . '.' . ($my['time']%1000) . '</span>'.PHP_EOL;
 				if( $cert ) {
 					echo '    '.cert2str($cert).'<span class="time">'. $certtime . '</span>'.PHP_EOL;
 				}
