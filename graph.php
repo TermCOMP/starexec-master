@@ -110,7 +110,7 @@ foreach( $solvers as $configid => $s ) {
 			}
 		}
 	}
-	echo '<span class="score '.( $time == $best[$layer]['time'] ? 'best ' : '' ).'time">time:'.seconds2str($time).'</span>';
+	echo '<span class="score '.( $time == $best[$layer]['time'] ? 'best ' : '' ).'time">time:'.seconds2str($time/1000).'</span>';
 	if( $certtime != 0 ) {
 		echo '<span class="score certified time">'.seconds2str($certtime);
 	}

@@ -240,10 +240,10 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			if( status2complete($status) ) {
 				echo '  <td class="' . claim2class($claim,$cert) . '">'.PHP_EOL.
 				     '   <a href="'. "../". $outurl .'">' . claim2str($claim) . '</a>'.PHP_EOL.
-                     ( 0 == filesize( $errurl )  ? '' : '   <a href="'. $errurl .'">[err]</a>'.PHP_EOL);
+                     ( 0 == filesize( $errurl )  ? '' : '   <a href="'. $errurl .'">[err]</a>'.PHP_EOL).
 				     '    <span class="time">' .
                                      # $my['cpu'] . '/' .
-                                     $my['time'] . '</span>'.PHP_EOL;
+                                     ($my['time']/1000) . ',' . ($my['time']%1000) . '</span>'.PHP_EOL;
 				if( $cert ) {
 					echo '    '.cert2str($cert).'<span class="time">'. $certtime . '</span>'.PHP_EOL;
 				}
