@@ -1,0 +1,52 @@
+{
+    "layers": [
+        {
+            "score": 0,
+            "miss": 0,
+            "scorestogo": 0,
+            "conflicts": 0,
+            "done": 519,
+            "togo": 0,
+            "cpu": 19772,
+            "time": 10969,
+            "certtime": 0,
+            "news": 0,
+            "wrong": 0
+        }
+    ],
+    "participants": {
+        "748989": {
+            "score": 501.84576416015625,
+            "miss": 536.1542358398438,
+            "scorestogo": 0,
+            "conflicts": 0,
+            "done": 519,
+            "togo": 0,
+            "cpu": 19772,
+            "time": 10969,
+            "certtime": 0,
+            "news": 0,
+            "wrong": 0,
+            "layer": 0,
+            "solver": "KoAT termcomp",
+            "solver id": "45558",
+            "configuration": "koat_c_complexity",
+            "CERTIFIED YES": 0,
+            "CERTIFIED NO": 0,
+            "CERTIFIED UP": 0,
+            "CERTIFIED LOW": 0,
+            "YES": 0,
+            "SAST": 0,
+            "PAST": 0,
+            "AST": 0,
+            "NO": 0,
+            "UP": 501.84576416015625,
+            "LOW": 0,
+            "MAYBE": 175,
+            "timeout": 0,
+            "error": 0,
+            "normalized": 1
+        }
+    },
+    "conflicting": false
+}

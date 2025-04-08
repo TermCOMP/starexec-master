@@ -1,0 +1,839 @@
+{
+    "Zantema_08\/assoc_c_rhs.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/assoc_f_rhs.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/bintree.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/cariboo_add1.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/cariboo_add2.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/cariboo_add2a.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/cariboo_add3.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/cariboo_len3.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/cariboo_nl_1.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/cariboo_nl_2.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/cariboo_nl_3.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/cariboo_nl_4.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/cariboo_nl_5.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/cariboo_nl_6.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/countbin.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/countter.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/dupl_rhs.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/ex0.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/ex1.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/ex2.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/ex3.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/ex4.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/ex5.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/ex6.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/ex7.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/ex8.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/ex9.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/ffb_SL.ari": {
+        "NO": 1
+    },
+    "Zantema_08\/ffg.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/fg.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/from_one.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/from_one_a.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/from_three.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/f_2_1.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/f_2_2.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/f_5.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/f_5_1.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/f_5_2.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/g_2_const.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/g_2_f_var.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/inn_out.ari": {
+        "NO": 1
+    },
+    "Zantema_08\/morse.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/outermost_gr.ari": {
+        "NO": 1
+    },
+    "Zantema_08\/toyama_out.ari": {
+        "NO": 1
+    },
+    "Zantema_08\/toyama_stop.ari": {
+        "YES": 1
+    },
+    "Zantema_08\/toyama_stop2.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/yoyo_2.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/yoyo_3.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/yoyo_3a.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_08\/yoyo_3b.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_outermost\/afbg.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_outermost\/even.ari": {
+        "NO": 1
+    },
+    "Mixed_outermost\/ex1.ari": {
+        "YES": 1
+    },
+    "Mixed_outermost\/ex2.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_outermost\/ex3.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_outermost\/ex4.ari": {
+        "YES": 1
+    },
+    "Mixed_outermost\/ex5.ari": {
+        "YES": 1
+    },
+    "Mixed_outermost\/ex6.ari": {
+        "YES": 1
+    },
+    "Mixed_outermost\/gfb.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_outermost\/non-lin1.ari": {
+        "YES": 1
+    },
+    "Mixed_outermost\/non-lin2.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_outermost\/non-lin3.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_outermost\/odd.ari": {
+        "YES": 1
+    },
+    "Mixed_outermost\/patterns1.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_outermost\/patterns2.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/#4.12a.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.13.ari": {
+        "YES": 1
+    },
+    "Strategy_outermost_added_08\/#4.14.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.15.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.16.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.17.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.18.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.2.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.3.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.4.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/#4.7.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/001.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/003.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/2.05.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/4.06.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/4.34.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/4.40.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/4.49.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/4.54.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/append-wrong.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/cime4.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex14_AEGL02.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex14_AEGL02_FR.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex14_AEGL02_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex14_AEGL02_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex14_Luc06_GM.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex14_Luc06_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex14_Luc06_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex15_Luc06_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex15_Luc98.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex15_Luc98_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex16_Luc06_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_2_AEL03.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_2_AEL03_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_2_Luc02c.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_2_Luc02c_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GL02a.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GL02a_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GL02a_Z.ari": {
+        "YES": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GM03.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GM03_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GM03_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GM99.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GM99_GM.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GM99_iGM.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GM99_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_GM99_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_Luc02b.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_Luc02b_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_Luc04b_FR.ari": {
+        "YES": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_Luc04b_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_Luc04b_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_Zan97.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_Zan97_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex1_Zan97_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex24_GM04.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex24_GM04_GM.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex24_GM04_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex24_Luc06_GM.ari": {
+        "YES": 1
+    },
+    "Strategy_outermost_added_08\/Ex24_Luc06_iGM.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex24_Luc06_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex26_Luc03b.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex2_8_1ConstSubstFix.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex2_Luc03b.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex3_12_Luc96a.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex3_12_Luc96a_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex3_2_Luc97.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex3_2_Luc97_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex3_3_25_Bor03.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex3_3_25_Bor03_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex49_GM04_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_4_Luc96b.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_4_Luc96b_FR.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_4_Luc96b_Z.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_7_15_Bor03.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_7_37_Bor03.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_7_37_Bor03_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_7_56_Bor03.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_7_56_Bor03_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_7_77_Bor03.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_7_77_Bor03_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_DLMMU04_FR.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_DLMMU04_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_DLMMU04_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_Zan97.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex4_Zan97_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex5_7_Luc97.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex5_7_Luc97_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex5_DLMMU04_FR.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex5_DLMMU04_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex5_DLMMU04_Z.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex5_Zan97.ari": {
+        "YES": 1
+    },
+    "Strategy_outermost_added_08\/Ex5_Zan97_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex6_15_AEL02.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex6_15_AEL02_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex6_15_AEL02_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex6_9_Luc02c.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex6_9_Luc02c_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex6_GM04.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex6_GM04_Z.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex6_Luc98.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex7_BLR02.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex7_BLR02_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex8_BLR02.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex8_BLR02_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex9_BLR02.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex9_Luc04_GM.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/Ex9_Luc04_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex9_Luc04_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex9_Luc06_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Ex9_Luc06_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExAppendixB_AEL03.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExAppendixB_AEL03_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExConc_Zan97.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExConc_Zan97_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM01.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM01_FR.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM01_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM01_Z.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM04.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM04_FR.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM04_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM04_Z.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM99.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM99_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_GM99_Z.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_Zan97.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_Zan97_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExIntrod_Zan97_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExSec11_1_Luc02a.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ExSec4_2_DLMMU04_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/gkg.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/Hamming.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/jwno1.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/jwno4.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/jwno6.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/jwno9.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_complete-noand_FR.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_complete-noand_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_complete-noand_Z.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_complete_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nokinds-noand_FR.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nokinds-noand_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nokinds-noand_Z.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nokinds_FR.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nokinds_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nokinds_Z.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nosorts-noand_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nosorts-noand_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nosorts_GM.ari": {
+        "YES": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nosorts_iGM.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nosorts_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nosorts_noand_GM.ari": {
+        "YES": 1
+    },
+    "Strategy_outermost_added_08\/LengthOfFiniteLists_nosorts_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LISTUTILITIES_complete-noand_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LISTUTILITIES_complete_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LISTUTILITIES_nokinds-noand_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LISTUTILITIES_nokinds_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LISTUTILITIES_nosorts-noand_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/LISTUTILITIES_nosorts_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/muladd.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/MYNAT_complete-noand_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/MYNAT_complete_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/MYNAT_nokinds-noand_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/MYNAT_nokinds_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/MYNAT_nosorts-noand_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/MYNAT_nosorts_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/n001.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/n002.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/n003.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/n004.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/n005.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/n006.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/n007.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/n008.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/nonterm.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/nonTermF.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_complete-noand_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_complete_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nokinds-noand_FR.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nokinds-noand_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nokinds-noand_Z.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nokinds_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nosorts-noand_FR.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nosorts-noand_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nosorts-noand_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nosorts_FR.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nosorts_GM.ari": {
+        "YES": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nosorts_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nosorts_noand_GM.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/OvConsOS_nosorts_Z.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PALINDROME_complete-noand_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PALINDROME_complete_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PALINDROME_nokinds-noand_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PALINDROME_nokinds_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PALINDROME_nosorts_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PEANO_complete-noand_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PEANO_complete_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PEANO_nokinds-noand_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PEANO_nokinds_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PEANO_nosorts-noand_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/PEANO_nosorts_L.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/round_nonterm.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/termMonTypes.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/test10.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/test75.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/test76.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/test77.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/test9.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/thiemann28.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/ttt1.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/ttt2.ari": {
+        "NO": 1
+    },
+    "Strategy_outermost_added_08\/TypeEx3.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_outermost_added_08\/TypeEx5.ari": {
+        "NO": 1
+    }
+}

@@ -1,0 +1,380 @@
+{
+    "Mixed_relative_TRS\/abp.ari": {
+        "YES": 1
+    },
+    "Mixed_relative_TRS\/abp2.ari": {
+        "YES": 1
+    },
+    "Mixed_relative_TRS\/assoc.ari": {
+        "NO": 1
+    },
+    "Mixed_relative_TRS\/carbridge.ari": {
+        "YES": 1
+    },
+    "Mixed_relative_TRS\/gcd.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_relative_TRS\/gcd_list.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_relative_TRS\/gcd_many.ari": {
+        "NO": 1
+    },
+    "Mixed_relative_TRS\/ijcar2006.ari": {
+        "YES": 1
+    },
+    "Mixed_relative_TRS\/relsubst.ari": {
+        "YES": 1
+    },
+    "Mixed_relative_TRS\/rt-rw4.ari": {
+        "YES": 1
+    },
+    "Mixed_relative_TRS\/trafic.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/combination.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/combination_2.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/conf_1.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/depGraph.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/depGraph_2.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/divMinusExchange.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/gcdSet_a.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/gcdSet_a2.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/gcdSet_b.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/gcdSet_b2.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/gcdSet_c.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/gcdSet_c2.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/lasso.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/lessleaves.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/log.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/mset.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/mset_a.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/mset_a2.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/mset_b.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/mset_b2.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/mset_c.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/mset_c2.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/purge.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/purge_2.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/shuffle_a.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/shuffle_a2.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/subsets.ari": {
+        "YES": 1
+    },
+    "AProVE_24\/subsets_2.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.10_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.15_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.16_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.17a_mset.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.17_mset.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.18_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.19_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.1_gen.ari": {
+        "NO": 1
+    },
+    "INVY_15\/#3.1_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.22_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.23_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.24_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.26_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.29_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.2_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.35_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.36_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.37_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.38_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.39_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.40_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.41_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.42_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.47_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.48_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.49_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.4_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.52_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.53a_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.53b_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.53_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.54_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.55_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.56_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.57_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.5a_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.5b_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.5_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.6a_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.6b_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.6_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.7_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.8a_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#3.8b_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/#4.30c_rand.ari": {
+        "YES": 1
+    },
+    "INVY_15\/ex1.ari": {
+        "NO": 1
+    },
+    "INVY_15\/ex2.ari": {
+        "YES": 1
+    },
+    "INVY_15\/ex3.ari": {
+        "NO": 1
+    },
+    "INVY_15\/ex4.ari": {
+        "YES": 1
+    },
+    "INVY_15\/ex6.ari": {
+        "NO": 1
+    },
+    "INVY_15\/ex7.ari": {
+        "NO": 1
+    },
+    "INVY_15\/invNSS03.ari": {
+        "YES": 1
+    },
+    "INVY_15\/quicktest.ari": {
+        "YES": 1
+    },
+    "INVY_15\/quicktest_sum.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rt1-1.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rt1-2.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rt1-3.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rt1-4.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rt1-5.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rt2-1.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rt2-2.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rt2-3.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rt2-4.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rt2-5.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rt2-7.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rt2-8.ari": {
+        "NO": 1
+    },
+    "Relative_05\/rt3-1.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rt3-2.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rt3-3.ari": {
+        "NO": 1
+    },
+    "Relative_05\/rt3-4.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rt3-5.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rt3-6.ari": {
+        "NO": 1
+    },
+    "Relative_05\/rt3-7.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rt3-8.ari": {
+        "NO": 1
+    },
+    "Relative_05\/rt3-9.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rtL-cbn1.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rtL-cbn5.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rtL-cbo.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rtL-evnz.ari": {
+        "NO": 1
+    },
+    "Relative_05\/rtL-evo.ari": {
+        "NO": 1
+    },
+    "Relative_05\/rtL-me2.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rtL-me3.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rtL-pwl.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rtL-rw2.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rtL-rw5.ari": {
+        "MAYBE": 1
+    },
+    "Relative_05\/rtL-wl1nz.ari": {
+        "YES": 1
+    },
+    "Relative_05\/rtL-wl1o.ari": {
+        "YES": 1
+    }
+}

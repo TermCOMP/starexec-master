@@ -1,0 +1,52 @@
+{
+    "layers": [
+        {
+            "score": 0,
+            "miss": 0,
+            "scorestogo": 0,
+            "conflicts": 0,
+            "done": 959,
+            "togo": 0,
+            "cpu": 220501,
+            "time": 114891,
+            "certtime": 0,
+            "news": 0,
+            "wrong": 0
+        }
+    ],
+    "participants": {
+        "788258": {
+            "score": 1123.0009765625,
+            "miss": 794.9990234375,
+            "scorestogo": 0,
+            "conflicts": 0,
+            "done": 959,
+            "togo": 0,
+            "cpu": 220501,
+            "time": 114891,
+            "certtime": 0,
+            "news": 0,
+            "wrong": 0,
+            "layer": 0,
+            "solver": "AProVE24",
+            "solver id": "47318",
+            "configuration": "comp_run",
+            "CERTIFIED YES": 0,
+            "CERTIFIED NO": 0,
+            "CERTIFIED UP": 0,
+            "CERTIFIED LOW": 0,
+            "YES": 0,
+            "SAST": 0,
+            "PAST": 0,
+            "AST": 0,
+            "NO": 0,
+            "UP": 507.4384765625,
+            "LOW": 615.5625,
+            "MAYBE": 3,
+            "timeout": 11,
+            "error": 0,
+            "normalized": 0.975143839595002
+        }
+    },
+    "conflicting": false
+}

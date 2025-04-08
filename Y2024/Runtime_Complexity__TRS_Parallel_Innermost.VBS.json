@@ -1,0 +1,2514 @@
+{
+    "Strategy_removed_AG01\/#4.22.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.23.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.26.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.27.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.28.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.29.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.30.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.30a.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.30b.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.30c.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.32.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Strategy_removed_AG01\/#4.33.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.34.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.36.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "Strategy_removed_AG01\/#4.37.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Der95\/06.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Der95\/08.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Der95\/11.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Der95\/18.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Der95\/21.ari": {
+        "LOW": 1000
+    },
+    "Der95\/27.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Der95\/32.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "hoca\/dfs-flatten.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "hoca\/fib_llist.ari": {
+        "MAYBE": 1
+    },
+    "hoca\/flatten.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "hoca\/foldsum.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "hoca\/id.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "hoca\/isort-fold.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "hoca\/isort.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "hoca\/mappplus.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "hoca\/mergesort-dc.ari": {
+        "LOW": "1"
+    },
+    "hoca\/mss.ari": {
+        "LOW": "1"
+    },
+    "hoca\/rev-dl.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "hoca\/rev-fletf.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "hoca\/rev-foldl.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "hoca\/sum.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "hoca\/sum_sqs3.ari": {
+        "LOW": "2"
+    },
+    "AProVE_04\/AAECC-ring.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_04\/AAECC.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_04\/fac.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "AProVE_04\/IJCAR_1.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "AProVE_04\/JFP_Ex51.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_04\/rta1.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_04\/rta2.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_04\/rta3.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/Ex14_AEGL02.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/Ex15_Luc98.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/Ex1_2_AEL03.ari": {
+        "LOW": "2"
+    },
+    "Strategy_removed_CSR_05\/Ex1_2_Luc02c.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/Ex1_GL02a.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/Ex1_GM03.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/Ex1_Luc02b.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/Ex1_Zan97.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/Ex26_Luc03b.ari": {
+        "LOW": "3"
+    },
+    "Strategy_removed_CSR_05\/Ex2_Luc03b.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/Ex3_12_Luc96a.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/Ex3_2_Luc97.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/Ex3_3_25_Bor03.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/Ex49_GM04.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/Ex4_4_Luc96b.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/Ex4_7_15_Bor03.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/Ex4_7_37_Bor03.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/Ex4_7_56_Bor03.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/Ex4_7_77_Bor03.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/Ex4_Zan97.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/Ex5_Zan97.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/Ex6_9_Luc02c.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/Ex6_GM04.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/Ex6_Luc98.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/Ex7_BLR02.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/Ex8_BLR02.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/Ex9_BLR02.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/ExAppendixB_AEL03.ari": {
+        "LOW": "2"
+    },
+    "Strategy_removed_CSR_05\/ExConc_Zan97.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/ExIntrod_GM01.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/ExIntrod_GM04.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_CSR_05\/ExIntrod_GM99.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_CSR_05\/ExIntrod_Zan97.ari": {
+        "LOW": "1"
+    },
+    "Strategy_removed_mixed_05\/muladd.ari": {
+        "MAYBE": 1
+    },
+    "Strategy_removed_mixed_05\/test76.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Strategy_removed_mixed_05\/test77.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Strategy_removed_mixed_05\/test830.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Zantema_05\/z12.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z13.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z14.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z15.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z16.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z17.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z18.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z23.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Zantema_05\/z24.ari": {
+        "MAYBE": 1
+    },
+    "Zantema_05\/z27.ari": {
+        "MAYBE": 1
+    },
+    "TCT_12\/polycounter-10.ari": {
+        "MAYBE": 1
+    },
+    "TCT_12\/polycounter-5.ari": {
+        "YES": 1,
+        "UP": "5"
+    },
+    "TCT_12\/recursion-10.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "TCT_12\/recursion-5.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "TCT_12\/sat.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Secret_07_TRS\/aprove01.ari": {
+        "MAYBE": 1
+    },
+    "Secret_07_TRS\/aprove02.ari": {
+        "MAYBE": 1
+    },
+    "Secret_07_TRS\/aprove03.ari": {
+        "MAYBE": 1
+    },
+    "Secret_07_TRS\/aprove04.ari": {
+        "MAYBE": 1
+    },
+    "Secret_07_TRS\/aprove05.ari": {
+        "MAYBE": 1
+    },
+    "Secret_07_TRS\/aprove06.ari": {
+        "MAYBE": 1
+    },
+    "Secret_07_TRS\/aprove07.ari": {
+        "MAYBE": 1
+    },
+    "Secret_07_TRS\/aprove08.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Secret_07_TRS\/aprove09.ari": {
+        "MAYBE": 1
+    },
+    "Secret_07_TRS\/aprove10.ari": {
+        "YES": 1,
+        "UP": "3"
+    },
+    "Secret_07_TRS\/secret3.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Others\/add.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Frederiksen_Others\/assrewriteSize.ari": {
+        "LOW": "1"
+    },
+    "Frederiksen_Others\/boolprog.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Frederiksen_Others\/bubblesort.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Frederiksen_Others\/deadcodeSize.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Others\/disj2_typed.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Frederiksen_Others\/div2.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Frederiksen_Others\/dup1_typed.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Others\/dup2_typed.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Frederiksen_Others\/eq.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Others\/ex6.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Others\/fgh.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Others\/fghSize.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Others\/gexgcd.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Frederiksen_Others\/gexgcd2.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Frederiksen_Others\/graphcolour1_typed.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Others\/graphcolour2Size_typed.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Others\/graphcolour2_typed.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Others\/graphcolour3_typed.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Others\/inssort.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Frederiksen_Others\/inssort_better.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Frederiksen_Others\/match.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Frederiksen_Others\/minsortSize.ari": {
+        "LOW": "1"
+    },
+    "Frederiksen_Others\/ocall-safe.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Others\/ocall-unsafe.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Others\/oddeven.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Others\/permut.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Frederiksen_Others\/power.ari": {
+        "LOW": "1"
+    },
+    "Frederiksen_Others\/quicksortPtime.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Frederiksen_Others\/quicksortSize.ari": {
+        "LOW": "1"
+    },
+    "Frederiksen_Others\/reach.ari": {
+        "LOW": "1"
+    },
+    "Frederiksen_Others\/rematch.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Others\/strmatch.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Frederiksen_Others\/thetrickSize.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_08\/log.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_08\/parting01_reverse.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_08\/parting02_doublelist.ari": {
+        "LOW": "1"
+    },
+    "AProVE_08\/parting03_minsort.ari": {
+        "LOW": "2"
+    },
+    "AProVE_08\/parting04_maxsort_h.ari": {
+        "LOW": "2"
+    },
+    "AProVE_08\/parting05_maxsort.ari": {
+        "LOW": "2"
+    },
+    "AProVE_08\/thiemann40_modified.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "raML\/appendAll.raml.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "raML\/bfs.raml.ari": {
+        "MAYBE": 1
+    },
+    "raML\/bft_mmult.raml.ari": {
+        "LOW": "1"
+    },
+    "raML\/bitvectors.raml.ari": {
+        "MAYBE": 1
+    },
+    "raML\/clevermmult.raml.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "raML\/duplicates.raml.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "raML\/dyade.raml.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "raML\/eratosthenes.raml.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "raML\/flatten.raml.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "raML\/insertionsort.raml.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "raML\/listsort.raml.ari": {
+        "MAYBE": 1
+    },
+    "raML\/longestCommonSubsequence.raml.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "raML\/matrix.raml.ari": {
+        "MAYBE": 1
+    },
+    "raML\/mergesort.raml.ari": {
+        "LOW": "1"
+    },
+    "raML\/minsort.raml.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "raML\/queue.raml.ari": {
+        "MAYBE": 1
+    },
+    "raML\/quicksort.raml.ari": {
+        "MAYBE": 1
+    },
+    "raML\/rationalPotential.raml.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "raML\/splitandsort.raml.ari": {
+        "MAYBE": 1
+    },
+    "raML\/subtrees.raml.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Endrullis_06\/direct.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex14_AEGL02_FR.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex14_AEGL02_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex14_AEGL02_L.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex14_AEGL02_Z.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex15_Luc06_FR.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex15_Luc06_GM.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex15_Luc06_L.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex15_Luc06_Z.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex15_Luc98_GM.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex16_Luc06_L.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex18_Luc06_GM.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex1_2_AEL03_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_2_Luc02c_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_GL02a_GM.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex1_GL02a_L.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_GM03_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_GM99_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_GM99_L.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Luc02b_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Luc02b_Z.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Transformed_CSR_04\/Ex1_Luc04b_FR.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Luc04b_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Luc04b_Z.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Zan97_FR.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex1_Zan97_GM.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex1_Zan97_L.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex23_Luc06_GM.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex24_Luc06_GM.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex24_Luc06_L.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex25_Luc06_GM.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex26_Luc03b_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex26_Luc03b_L.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex2_Luc02a_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex2_Luc02a_L.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "3"
+    },
+    "Transformed_CSR_04\/Ex2_Luc02a_Z.ari": {
+        "YES": 1,
+        "UP": "3"
+    },
+    "Transformed_CSR_04\/Ex2_Luc03b_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex2_Luc03b_L.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex2_Luc03b_Z.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex3_12_Luc96a_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex3_12_Luc96a_Z.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex3_2_Luc97_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex3_3_25_Bor03_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex3_3_25_Bor03_L.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex49_GM04_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex4_4_Luc96b_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex4_4_Luc96b_L.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/Ex4_4_Luc96b_Z.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex4_7_15_Bor03_GM.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex4_7_15_Bor03_L.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex4_7_15_Bor03_Z.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex4_7_37_Bor03_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex4_7_37_Bor03_Z.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex4_7_56_Bor03_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex4_7_56_Bor03_Z.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex4_7_77_Bor03_FR.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex4_7_77_Bor03_GM.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex4_DLMMU04_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex4_Zan97_FR.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex4_Zan97_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex4_Zan97_Z.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex5_7_Luc97_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex5_DLMMU04_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex5_Zan97_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex5_Zan97_Z.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex6_15_AEL02_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex6_9_Luc02c_FR.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex6_9_Luc02c_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex6_9_Luc02c_Z.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex6_GM04_FR.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex6_GM04_GM.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex6_Luc98_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex6_Luc98_L.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex6_Luc98_Z.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/Ex7_BLR02_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex7_BLR02_Z.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Transformed_CSR_04\/Ex8_BLR02_FR.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex8_BLR02_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex8_BLR02_Z.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex9_BLR02_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex9_BLR02_L.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/Ex9_BLR02_Z.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex9_Luc04_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/Ex9_Luc04_L.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExAppendixB_AEL03_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExAppendixB_AEL03_Z.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Transformed_CSR_04\/ExConc_Zan97_FR.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/ExConc_Zan97_GM.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/ExConc_Zan97_Z.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM01_FR.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM01_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM01_Z.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM04_FR.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM04_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM04_Z.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_GM99_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExIntrod_Zan97_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExProp7_Luc06_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExProp7_Luc06_L.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/ExProp7_Luc06_Z.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Transformed_CSR_04\/ExSec11_1_Luc02a_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExSec4_2_DLMMU04_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/ExSec4_2_DLMMU04_Z.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_complete_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_complete_noand_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nokinds_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nokinds_noand_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts-noand_FR.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts_FR.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LengthOfFiniteLists_nosorts_noand_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_complete_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_complete_noand_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nokinds_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nokinds_noand_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nosorts-noand_Z.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nosorts_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nosorts_noand_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/LISTUTILITIES_nosorts_Z.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Transformed_CSR_04\/MYNAT_complete_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/MYNAT_complete_noand_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/MYNAT_nokinds_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/MYNAT_nokinds_noand_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/MYNAT_nosorts-noand_FR.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/MYNAT_nosorts_FR.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "2"
+    },
+    "Transformed_CSR_04\/MYNAT_nosorts_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/MYNAT_nosorts_noand_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_complete_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_complete_noand_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nokinds_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nokinds_noand_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts-noand_FR.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts-noand_Z.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_FR.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_noand_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/OvConsOS_nosorts_Z.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_complete_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_complete_noand_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_nokinds_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_nokinds_noand_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_nosorts-noand_FR.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PEANO_nosorts_FR.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Transformed_CSR_04\/PEANO_nosorts_GM.ari": {
+        "MAYBE": 1
+    },
+    "Transformed_CSR_04\/PEANO_nosorts_noand_GM.ari": {
+        "MAYBE": 1
+    },
+    "CiME_04\/ack_prolog.ari": {
+        "MAYBE": 1
+    },
+    "CiME_04\/append-hard.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "CiME_04\/append-wrong.ari": {
+        "MAYBE": 1
+    },
+    "CiME_04\/append.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "CiME_04\/fact-hard.ari": {
+        "LOW": 1000
+    },
+    "CiME_04\/filliatre.ari": {
+        "MAYBE": 1
+    },
+    "CiME_04\/filliatre2.ari": {
+        "MAYBE": 1
+    },
+    "CiME_04\/filliatre3.ari": {
+        "MAYBE": 1
+    },
+    "CiME_04\/list-sum-prod.ari": {
+        "LOW": "1"
+    },
+    "Mixed_TRS\/Ex1_Luc04b_GM.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_TRS\/fossacs.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_TRS\/gcd.ari": {
+        "LOW": "1"
+    },
+    "Mixed_TRS\/gcdMinMax.ari": {
+        "LOW": "1"
+    },
+    "Mixed_TRS\/gcd_triple.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_TRS\/jones1.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Mixed_TRS\/jones2.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Mixed_TRS\/jones4.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Mixed_TRS\/jones5.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_TRS\/jones6.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Mixed_TRS\/minsort.ari": {
+        "LOW": "1"
+    },
+    "Mixed_TRS\/perfect.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Mixed_TRS\/perfect2.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "Mixed_TRS\/test1.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_TRS\/while.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Secret_05_TRS\/aprove2.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Secret_05_TRS\/aprove3.ari": {
+        "MAYBE": 1
+    },
+    "Secret_05_TRS\/cime4.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Secret_05_TRS\/tpa1.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Secret_05_TRS\/tpa2.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Secret_05_TRS\/tpa3.ari": {
+        "LOW": 1000
+    },
+    "Secret_05_TRS\/tpa4.ari": {
+        "LOW": 1000
+    },
+    "Secret_05_TRS\/tpa5.ari": {
+        "MAYBE": 1
+    },
+    "Secret_05_TRS\/ttt2.ari": {
+        "MAYBE": 1
+    },
+    "GTSSK07\/cade01.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade03.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade05t.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade06.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "GTSSK07\/cade07.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "GTSSK07\/cade08.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "GTSSK07\/cade09.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade10.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade11.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade12t.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade13t.ari": {
+        "LOW": "1"
+    },
+    "GTSSK07\/cade14.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade15.ari": {
+        "LOW": 1000
+    },
+    "GTSSK07\/cade16.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "GTSSK07\/cade17.ari": {
+        "LOW": "2"
+    },
+    "Beerendonk_07\/1.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/10.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/11.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/12.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/13.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/14.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/15.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/16.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/17.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/18.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/19.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/2.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/20.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Beerendonk_07\/21.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Beerendonk_07\/22.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Beerendonk_07\/23.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Beerendonk_07\/24.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Beerendonk_07\/3.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/4.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/5.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/6.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/7.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/8.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Beerendonk_07\/9.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Secret_06_TRS\/addList.ari": {
+        "LOW": "1"
+    },
+    "Secret_06_TRS\/division.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Secret_06_TRS\/double.ari": {
+        "MAYBE": 1
+    },
+    "Secret_06_TRS\/logarithm.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "Secret_06_TRS\/nrOfNodes.ari": {
+        "LOW": "1"
+    },
+    "Secret_06_TRS\/reverse.ari": {
+        "LOW": "1"
+    },
+    "Secret_06_TRS\/sumList.ari": {
+        "LOW": "2"
+    },
+    "Secret_06_TRS\/toList.ari": {
+        "MAYBE": 1
+    },
+    "Secret_06_TRS\/tpa04.ari": {
+        "LOW": "1"
+    },
+    "Secret_06_TRS\/tpa05.ari": {
+        "LOW": 1000
+    },
+    "Secret_06_TRS\/tpa06.ari": {
+        "MAYBE": 1
+    },
+    "Secret_06_TRS\/tpa07.ari": {
+        "LOW": 1000
+    },
+    "Secret_06_TRS\/tpa08.ari": {
+        "LOW": 1000
+    },
+    "Secret_06_TRS\/tpa09.ari": {
+        "LOW": 1000
+    },
+    "Secret_06_TRS\/tpa10.ari": {
+        "LOW": 1000
+    },
+    "Frederiksen_Glenstrup\/ack.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Glenstrup\/add.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Frederiksen_Glenstrup\/addlists.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Frederiksen_Glenstrup\/anchored.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Frederiksen_Glenstrup\/append.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/assrewrite.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Glenstrup\/badd.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Glenstrup\/binom.ari": {
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/decrease.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/deeprev_typed.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/disjconj.ari": {
+        "LOW": 1000
+    },
+    "Frederiksen_Glenstrup\/duplicate.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/equal.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Glenstrup\/evenodd.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/fold.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/game.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/gcd.ari": {
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/gcd2.ari": {
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/increase.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Glenstrup\/int.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Glenstrup\/intlookup.ari": {
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/lambdaint_typed.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Glenstrup\/letexp.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Glenstrup\/list.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Frederiksen_Glenstrup\/lte.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/map0.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Frederiksen_Glenstrup\/member.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/mergelists.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/mergesort.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Glenstrup\/minsort.ari": {
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/mul.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "3"
+    },
+    "Frederiksen_Glenstrup\/mul_better.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "3"
+    },
+    "Frederiksen_Glenstrup\/naiverev.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "2"
+    },
+    "Frederiksen_Glenstrup\/nestdec.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/nesteql.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Glenstrup\/nestimeql.ari": {
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/nestinc.ari": {
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/ordered.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Frederiksen_Glenstrup\/ordered_better.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Frederiksen_Glenstrup\/overlap.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/parsexp.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Glenstrup\/permute.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Glenstrup\/power.ari": {
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/quicksort.ari": {
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/revapp.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/select.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/shuffle.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "2"
+    },
+    "Frederiksen_Glenstrup\/sp1.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Glenstrup\/subsets.ari": {
+        "LOW": "1"
+    },
+    "Frederiksen_Glenstrup\/thetrick.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Glenstrup\/turing_typed.ari": {
+        "MAYBE": 1
+    },
+    "Frederiksen_Glenstrup\/vangelder_typed.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Waldmann_06\/jwmatchb1.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Waldmann_06\/jwmatchb2.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Waldmann_06\/jwno1.ari": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwno4.ari": {
+        "MAYBE": 1
+    },
+    "Waldmann_06\/jwno6.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_07\/kabasci04.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_07\/otto01.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_07\/otto02.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/otto03.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/otto04.ari": {
+        "LOW": "1"
+    },
+    "AProVE_07\/otto05.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_07\/otto06.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/otto07.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/otto08.ari": {
+        "LOW": "1"
+    },
+    "AProVE_07\/otto09.ari": {
+        "LOW": "1"
+    },
+    "AProVE_07\/otto10.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/otto11.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_07\/otto12.ari": {
+        "LOW": "2"
+    },
+    "AProVE_07\/otto13.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann01.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann02.ari": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann03.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "3"
+    },
+    "AProVE_07\/thiemann04.ari": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann05.ari": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann06.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann07.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_07\/thiemann08.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_07\/thiemann10.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann11.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann12.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann13.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann14.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_07\/thiemann15.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann16.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_07\/thiemann17.ari": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann18.ari": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann19.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_07\/thiemann20.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann21.ari": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann22.ari": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann23.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann24.ari": {
+        "LOW": "2"
+    },
+    "AProVE_07\/thiemann25.ari": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann26.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "AProVE_07\/thiemann27.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann28.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "AProVE_07\/thiemann29.ari": {
+        "LOW": "2"
+    },
+    "AProVE_07\/thiemann30.ari": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann31.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann32.ari": {
+        "LOW": "2"
+    },
+    "AProVE_07\/thiemann33.ari": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann34.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann36.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann37.ari": {
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann38.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_07\/thiemann40.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "AProVE_07\/thiemann41.ari": {
+        "LOW": "1"
+    },
+    "AG01\/#3.1.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.10.ari": {
+        "LOW": "1"
+    },
+    "AG01\/#3.12.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "3"
+    },
+    "AG01\/#3.13.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AG01\/#3.15.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "AG01\/#3.16.ari": {
+        "YES": 1,
+        "UP": "3"
+    },
+    "AG01\/#3.18.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "AG01\/#3.2.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.23.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.24.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.26.ari": {
+        "MAYBE": 1
+    },
+    "AG01\/#3.31.ari": {
+        "LOW": 1000
+    },
+    "AG01\/#3.33.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "AG01\/#3.35.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.36.ari": {
+        "LOW": "1"
+    },
+    "AG01\/#3.37.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "AG01\/#3.38.ari": {
+        "LOW": 1000
+    },
+    "AG01\/#3.41.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.42.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.47.ari": {
+        "MAYBE": 1
+    },
+    "AG01\/#3.48.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "AG01\/#3.49.ari": {
+        "MAYBE": 1
+    },
+    "AG01\/#3.5.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.52.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "AG01\/#3.53.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "3"
+    },
+    "AG01\/#3.53b.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "AG01\/#3.55.ari": {
+        "LOW": "2"
+    },
+    "AG01\/#3.5a.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.5b.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "AG01\/#3.6.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.6a.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.6b.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "AG01\/#3.7.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.8a.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AG01\/#3.8b.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "AG01\/#4.30c.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.09.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/2.11.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.12.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "SK90\/2.13.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/2.15.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/2.16.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/2.17.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.18.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "SK90\/2.19.ari": {
+        "YES": 1,
+        "UP": "2"
+    },
+    "SK90\/2.20.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/2.21.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/2.22.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "SK90\/2.23.ari": {
+        "MAYBE": 1
+    },
+    "SK90\/2.24.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/2.25.ari": {
+        "LOW": "1"
+    },
+    "SK90\/2.26.ari": {
+        "MAYBE": 1
+    },
+    "SK90\/2.27.ari": {
+        "MAYBE": 1
+    },
+    "SK90\/2.28.ari": {
+        "MAYBE": 1
+    },
+    "SK90\/2.29.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/2.30.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/2.31.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/2.36.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/2.37.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/2.39.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "2"
+    },
+    "SK90\/2.40.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/2.41.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.43.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.44.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/2.45.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/2.47.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.48.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/2.50.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/2.51.ari": {
+        "MAYBE": 1
+    },
+    "SK90\/2.52.ari": {
+        "MAYBE": 1
+    },
+    "SK90\/2.53.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/2.54.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/4.05.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.12.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.13.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.16.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.17.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "2"
+    },
+    "SK90\/4.18.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/4.24.ari": {
+        "LOW": "1"
+    },
+    "SK90\/4.27.ari": {
+        "LOW": "1"
+    },
+    "SK90\/4.29.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.30.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/4.31.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.34.ari": {
+        "MAYBE": 1
+    },
+    "SK90\/4.35.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/4.38.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.42.ari": {
+        "LOW": "1"
+    },
+    "SK90\/4.47.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/4.54.ari": {
+        "LOW": 1000
+    },
+    "SK90\/4.57.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "SK90\/4.59.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "SK90\/4.60.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "SK90\/4.61.ari": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/n002.ari": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/n003.ari": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/n004.ari": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/n005.ari": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/n006.ari": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/n007.ari": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/t001.ari": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/t002.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "HirokawaMiddeldorp_04\/t003.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "HirokawaMiddeldorp_04\/t004.ari": {
+        "LOW": 1000
+    },
+    "HirokawaMiddeldorp_04\/t009.ari": {
+        "MAYBE": 1
+    },
+    "HirokawaMiddeldorp_04\/t011.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "HirokawaMiddeldorp_04\/t013.ari": {
+        "LOW": "1"
+    },
+    "HirokawaMiddeldorp_04\/t014.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Various_04\/11.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Various_04\/15.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Various_04\/22.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Various_04\/24.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_06\/div_notCeTermin.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_06\/factorial1.ari": {
+        "LOW": "11"
+    },
+    "AProVE_06\/factorial2.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_06\/identity.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_06\/logarithm.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_06\/quicksort.ari": {
+        "LOW": "1"
+    },
+    "AProVE_06\/sizeChange.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "AProVE_06\/tower.ari": {
+        "LOW": "2"
+    },
+    "AProVE_06\/tower_sizeChange.ari": {
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/div.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/divhard.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/gcd.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/gcd2.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/gcdhard.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/log.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/maxsort.ari": {
+        "LOW": "2"
+    },
+    "AProVE_09_Inductive\/maxsortcondition.ari": {
+        "LOW": "2"
+    },
+    "AProVE_09_Inductive\/minsort.ari": {
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/mod.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/qsort.ari": {
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/qsortlast.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_09_Inductive\/qsortmiddle.ari": {
+        "LOW": "1"
+    },
+    "AProVE_09_Inductive\/zerolist.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Rubio_04\/bintrees.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Rubio_04\/division.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "1"
+    },
+    "Rubio_04\/elimdupl.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Rubio_04\/enno.ari": {
+        "YES": 1,
+        "UP": "2",
+        "LOW": "1"
+    },
+    "Rubio_04\/gcd.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Rubio_04\/gm.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Rubio_04\/gmnp.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Rubio_04\/logarquot.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Rubio_04\/ma96.ari": {
+        "MAYBE": 1
+    },
+    "Rubio_04\/mfp95.ari": {
+        "YES": 1,
+        "UP": 0
+    },
+    "Rubio_04\/nestrec.ari": {
+        "MAYBE": 1
+    },
+    "Rubio_04\/polo2.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Rubio_04\/prov.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Rubio_04\/quick.ari": {
+        "LOW": "2"
+    },
+    "Rubio_04\/revlist.ari": {
+        "LOW": "1"
+    },
+    "Rubio_04\/selsort.ari": {
+        "YES": 1,
+        "UP": "3",
+        "LOW": "2"
+    },
+    "Rubio_04\/test4.ari": {
+        "YES": 1,
+        "UP": "1",
+        "LOW": "1"
+    },
+    "Rubio_04\/test829.ari": {
+        "YES": 1,
+        "UP": "1"
+    },
+    "Rubio_04\/wst99.ari": {
+        "YES": 1,
+        "UP": "2"
+    }
+}

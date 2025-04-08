@@ -1,0 +1,959 @@
+{
+    "talp_mixed\/ack.pl": {
+        "YES": 1
+    },
+    "talp_mixed\/bad_sublist.pl": {
+        "NO": 1
+    },
+    "talp_mixed\/fib_t.pl": {
+        "YES": 1
+    },
+    "talp_mixed\/flat-oi.pl": {
+        "MAYBE": 1
+    },
+    "talp_mixed\/flat.pl": {
+        "YES": 1
+    },
+    "talp_mixed\/hanoiapp.suc.pl": {
+        "YES": 1
+    },
+    "talp_mixed\/mergesort.pl": {
+        "YES": 1
+    },
+    "talp_mixed\/p.pl": {
+        "YES": 1
+    },
+    "talp_mixed\/perm.pl": {
+        "YES": 1
+    },
+    "talp_mixed\/permute1.pl": {
+        "YES": 1
+    },
+    "talp_mixed\/qicksort.pl": {
+        "YES": 1
+    },
+    "talp_mixed\/queens.pl": {
+        "YES": 1
+    },
+    "talp_mixed\/reverse.pl": {
+        "YES": 1
+    },
+    "talp_mixed\/rotate.pl": {
+        "YES": 1
+    },
+    "talp_mixed\/sameleaves.pl": {
+        "YES": 1
+    },
+    "talp_mixed\/sicstus1.pl": {
+        "YES": 1
+    },
+    "talp_mixed\/sublist.pl": {
+        "YES": 1
+    },
+    "talp_mixed\/sublist1.pl": {
+        "YES": 1
+    },
+    "talp_mixed\/zebra.pl": {
+        "YES": 1
+    },
+    "lpexamples\/ackermann-ioi.pl": {
+        "NO": 1
+    },
+    "lpexamples\/ackermann.pl": {
+        "YES": 1
+    },
+    "lpexamples\/average-ioi.pl": {
+        "YES": 1
+    },
+    "lpexamples\/average.pl": {
+        "YES": 1
+    },
+    "lpexamples\/lategen.pl": {
+        "YES": 1
+    },
+    "lpexamples\/log2a-oi.pl": {
+        "NO": 1
+    },
+    "lpexamples\/log2a.pl": {
+        "YES": 1
+    },
+    "lpexamples\/log2b-oi.pl": {
+        "NO": 1
+    },
+    "lpexamples\/log2b.pl": {
+        "YES": 1
+    },
+    "lpexamples\/mapcolor.pl": {
+        "MAYBE": 1
+    },
+    "lpexamples\/mergesort-oi.pl": {
+        "NO": 1
+    },
+    "lpexamples\/mergesort.pl": {
+        "YES": 1
+    },
+    "lpexamples\/shapes.pl": {
+        "YES": 1
+    },
+    "lpexamples\/ts08.pl": {
+        "YES": 1
+    },
+    "terminweb_new\/append-ooi.pl": {
+        "YES": 1
+    },
+    "terminweb_new\/backwards_append.pl": {
+        "YES": 1
+    },
+    "terminweb_new\/basic_append.pl": {
+        "YES": 1
+    },
+    "terminweb_new\/der.pl": {
+        "YES": 1
+    },
+    "terminweb_new\/NJ1.pl": {
+        "YES": 1
+    },
+    "terminweb_new\/NJ2.pl": {
+        "YES": 1
+    },
+    "terminweb_new\/NJ3.pl": {
+        "YES": 1
+    },
+    "terminweb_new\/NJ4.pl": {
+        "YES": 1
+    },
+    "terminweb_new\/NJ5.pl": {
+        "YES": 1
+    },
+    "terminweb_new\/NJ6.pl": {
+        "YES": 1
+    },
+    "terminweb_new\/preorder_dl.pl": {
+        "YES": 1
+    },
+    "terminweb_new\/som.pl": {
+        "YES": 1
+    },
+    "terminweb_new\/transpose.pl": {
+        "YES": 1
+    },
+    "terminweb_new\/type-based_append.pl": {
+        "YES": 1
+    },
+    "terminweb_new\/ways.pl": {
+        "YES": 1
+    },
+    "SGST06\/ackermann.pl": {
+        "YES": 1
+    },
+    "SGST06\/ag01.pl": {
+        "YES": 1
+    },
+    "SGST06\/applast.pl": {
+        "YES": 1
+    },
+    "SGST06\/at.pl": {
+        "YES": 1
+    },
+    "SGST06\/avg-bfb.pl": {
+        "YES": 1
+    },
+    "SGST06\/avg.pl": {
+        "YES": 1
+    },
+    "SGST06\/baby91.pl": {
+        "YES": 1
+    },
+    "SGST06\/bappend.pl": {
+        "YES": 1
+    },
+    "SGST06\/blist.pl": {
+        "YES": 1
+    },
+    "SGST06\/btappend.pl": {
+        "YES": 1
+    },
+    "SGST06\/btapplast.pl": {
+        "YES": 1
+    },
+    "SGST06\/btree.pl": {
+        "YES": 1
+    },
+    "SGST06\/cconfdel.pl": {
+        "YES": 1
+    },
+    "SGST06\/cnfequiv.pl": {
+        "YES": 1
+    },
+    "SGST06\/confdel.pl": {
+        "YES": 1
+    },
+    "SGST06\/convert.pl": {
+        "YES": 1
+    },
+    "SGST06\/countstack.pl": {
+        "YES": 1
+    },
+    "SGST06\/csnake.pl": {
+        "MAYBE": 1
+    },
+    "SGST06\/d.pl": {
+        "YES": 1
+    },
+    "SGST06\/doublehalfpred.pl": {
+        "NO": 1
+    },
+    "SGST06\/evenodd.pl": {
+        "YES": 1
+    },
+    "SGST06\/factor.pl": {
+        "YES": 1
+    },
+    "SGST06\/flatten.pl": {
+        "YES": 1
+    },
+    "SGST06\/flatten_phd.pl": {
+        "YES": 1
+    },
+    "SGST06\/giesl97.pl": {
+        "YES": 1
+    },
+    "SGST06\/gopher.pl": {
+        "YES": 1
+    },
+    "SGST06\/hbal_tree.pl": {
+        "YES": 1
+    },
+    "SGST06\/ifdiv.pl": {
+        "NO": 1
+    },
+    "SGST06\/ifminus.pl": {
+        "YES": 1
+    },
+    "SGST06\/incomplete.pl": {
+        "YES": 1
+    },
+    "SGST06\/incomplete2.pl": {
+        "YES": 1
+    },
+    "SGST06\/incomplete_variant.pl": {
+        "YES": 1
+    },
+    "SGST06\/intlist.pl": {
+        "YES": 1
+    },
+    "SGST06\/lessleaves.pl": {
+        "YES": 1
+    },
+    "SGST06\/log.pl": {
+        "YES": 1
+    },
+    "SGST06\/mapcolor.pl": {
+        "MAYBE": 1
+    },
+    "SGST06\/p.pl": {
+        "YES": 1
+    },
+    "SGST06\/palindrome.pl": {
+        "YES": 1
+    },
+    "SGST06\/paper1.pl": {
+        "YES": 1
+    },
+    "SGST06\/paper2.pl": {
+        "YES": 1
+    },
+    "SGST06\/parse.pl": {
+        "YES": 1
+    },
+    "SGST06\/perm.pl": {
+        "YES": 1
+    },
+    "SGST06\/plus.pl": {
+        "YES": 1
+    },
+    "SGST06\/pplus.pl": {
+        "YES": 1
+    },
+    "SGST06\/pplus2.pl": {
+        "YES": 1
+    },
+    "SGST06\/preorder.pl": {
+        "YES": 1
+    },
+    "SGST06\/prime.pl": {
+        "YES": 1
+    },
+    "SGST06\/psk09-append_variant.pl": {
+        "MAYBE": 1
+    },
+    "SGST06\/psk09-maxsort-bool-nocut.pl": {
+        "YES": 1
+    },
+    "SGST06\/p_nonlin.pl": {
+        "YES": 1
+    },
+    "SGST06\/quot.pl": {
+        "YES": 1
+    },
+    "SGST06\/rev.pl": {
+        "YES": 1
+    },
+    "SGST06\/samefringe.pl": {
+        "YES": 1
+    },
+    "SGST06\/shuffle.pl": {
+        "YES": 1
+    },
+    "SGST06\/snake.pl": {
+        "MAYBE": 1
+    },
+    "SGST06\/times.pl": {
+        "YES": 1
+    },
+    "SGST06\/times2.pl": {
+        "YES": 1
+    },
+    "SGST06\/toyama.pl": {
+        "YES": 1
+    },
+    "SGST06\/transpose-fb.pl": {
+        "YES": 1
+    },
+    "SGST06\/transpose2.pl": {
+        "NO": 1
+    },
+    "SGST06\/weight.pl": {
+        "YES": 1
+    },
+    "talp_talp\/append.pl": {
+        "YES": 1
+    },
+    "talp_talp\/binary.pl": {
+        "YES": 1
+    },
+    "talp_talp\/binary2.pl": {
+        "YES": 1
+    },
+    "talp_talp\/binary3.pl": {
+        "YES": 1
+    },
+    "talp_talp\/binary4.pl": {
+        "NO": 1
+    },
+    "talp_talp\/div.pl": {
+        "YES": 1
+    },
+    "talp_talp\/evaluate.pl": {
+        "YES": 1
+    },
+    "talp_talp\/example1.pl": {
+        "YES": 1
+    },
+    "talp_talp\/example4-2.pl": {
+        "NO": 1
+    },
+    "talp_talp\/example4.pl": {
+        "YES": 1
+    },
+    "talp_talp\/flat.pl": {
+        "YES": 1
+    },
+    "talp_talp\/gcd.pl": {
+        "YES": 1
+    },
+    "talp_talp\/nat.pl": {
+        "YES": 1
+    },
+    "talp_talp\/normal.pl": {
+        "YES": 1
+    },
+    "talp_talp\/palindrome.pl": {
+        "YES": 1
+    },
+    "talp_talp\/perm.pl": {
+        "YES": 1
+    },
+    "talp_talp\/permute.pl": {
+        "YES": 1
+    },
+    "talp_talp\/qsort.pl": {
+        "YES": 1
+    },
+    "talp_talp\/reminder-ioi.pl": {
+        "YES": 1
+    },
+    "talp_talp\/reminder.pl": {
+        "YES": 1
+    },
+    "talp_talp\/simple.pl": {
+        "YES": 1
+    },
+    "talp_talp\/slowsort-oi.pl": {
+        "NO": 1
+    },
+    "talp_talp\/slowsort.pl": {
+        "YES": 1
+    },
+    "talp_talp\/transitive_closure.pl": {
+        "YES": 1
+    },
+    "talp_talp\/vangelder.pl": {
+        "YES": 1
+    },
+    "Payet_24\/payet-nonloop-1.pl": {
+        "NO": 1
+    },
+    "Payet_24\/payet-nonloop-2.pl": {
+        "NO": 1
+    },
+    "Payet_24\/payet-nonloop-3.pl": {
+        "NO": 1
+    },
+    "Payet_24\/payet-nonloop-4.pl": {
+        "NO": 1
+    },
+    "Payet_23\/payet-nonloop-1_1.pl": {
+        "NO": 1
+    },
+    "Payet_23\/payet-nonloop-1_2.pl": {
+        "NO": 1
+    },
+    "Payet_23\/payet-nonloop-1_3.pl": {
+        "NO": 1
+    },
+    "Payet_23\/payet-nonloop-2_1.pl": {
+        "NO": 1
+    },
+    "Payet_23\/payet-nonloop-2_2.pl": {
+        "NO": 1
+    },
+    "Payet_23\/payet-nonloop-3_1.pl": {
+        "NO": 1
+    },
+    "Payet_23\/payet-nonloop-3_2.pl": {
+        "NO": 1
+    },
+    "Payet_23\/payet-nonloop-4_1.pl": {
+        "NO": 1
+    },
+    "Payet_23\/payet-nonloop-4_2.pl": {
+        "NO": 1
+    },
+    "terminweb_old\/ackerman.pl": {
+        "YES": 1
+    },
+    "terminweb_old\/append3-bis.pl": {
+        "YES": 1
+    },
+    "terminweb_old\/append3.pl": {
+        "YES": 1
+    },
+    "terminweb_old\/balance_tree.pl": {
+        "YES": 1
+    },
+    "terminweb_old\/balance_tree2.pl": {
+        "MAYBE": 1
+    },
+    "terminweb_old\/inorder.pl": {
+        "YES": 1
+    },
+    "terminweb_old\/interleave.pl": {
+        "YES": 1
+    },
+    "terminweb_old\/permutation1.pl": {
+        "YES": 1
+    },
+    "terminweb_old\/permutation2.pl": {
+        "YES": 1
+    },
+    "terminweb_old\/reach.pl": {
+        "YES": 1
+    },
+    "terminweb_old\/rotate.pl": {
+        "YES": 1
+    },
+    "terminweb_old\/sameleaves.pl": {
+        "YES": 1
+    },
+    "terminweb_old\/sublist.pl": {
+        "YES": 1
+    },
+    "terminweb_old\/sublist0.pl": {
+        "YES": 1
+    },
+    "terminweb_old\/sublist_bad.pl": {
+        "NO": 1
+    },
+    "terminweb_old\/subset-no.pl": {
+        "MAYBE": 1
+    },
+    "terminweb_old\/subset.pl": {
+        "YES": 1
+    },
+    "terminweb_old\/untupled_bal_tree.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/ackerman.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/append-bff.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/append-ffb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/delete-bbf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/delete-bfb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/delete-bff.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/delete-fbf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/delete-ffb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/delmin-bff.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/delmin-ffb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/der-bf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/der-fb.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/factor.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/flat-bf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/flat-fb.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/flatlength-bbf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/flatlength-bfb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/flatlength-bff.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/flatlength-fbf.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/flatlength-ffb.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/frontier-bf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/frontier-fb.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/g.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/in-bf.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/in-fb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/inorder-bf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/inorder-fb.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/insert-bbf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/insert-bfb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/insert-bff.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/insert-fbf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/insert-ffb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/length.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/length1.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/less-bf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/less-fb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/list.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/map_color.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/maximum-bff.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/maximum-fbf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/maximum-ffb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/member-bf.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/member-fb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/mergesort.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/minimum-bf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/minimum-fb.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/mult.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/naive_reverse-bf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/naive_reverse-fb.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/numeral.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/ordered.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/p.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/palindrome.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/parse.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/permutation-bf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/permutation-fb.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/permutation1-fb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/prefix-bf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/prefix-fb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/p_nonlin.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/quicksort-bf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/quicksort-fb.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/reverse-bf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/reverse-fb.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/search_tree.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/select-bff.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/select-fbf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/select-ffb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/slowsort-bb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/slowsort-bf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/slowsort-fb.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/sublist-bf.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/sublist-fb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/subset-bf.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/subset-fb.pl": {
+        "MAYBE": 1
+    },
+    "BCGGV05\/suffix-bf.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/suffix-fb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/sum-fbf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/sum-ffb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/t.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/transpose-bb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/transpose-bf.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/transpose-fb.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/tree.pl": {
+        "YES": 1
+    },
+    "BCGGV05\/tree_member-bf.pl": {
+        "NO": 1
+    },
+    "BCGGV05\/tree_member-fb.pl": {
+        "YES": 1
+    },
+    "Payet_22\/payet-loop.pl": {
+        "NO": 1
+    },
+    "Payet_22\/payet-nonloop-1.pl": {
+        "NO": 1
+    },
+    "Payet_22\/payet-nonloop-2.pl": {
+        "NO": 1
+    },
+    "Payet_22\/payet-nonloop-3.pl": {
+        "NO": 1
+    },
+    "Payet_22\/payet-nonloop-4.pl": {
+        "NO": 1
+    },
+    "Payet_22\/payet-nonloop-5.pl": {
+        "NO": 1
+    },
+    "talp_dds\/append.pl": {
+        "YES": 1
+    },
+    "talp_dds\/dis_con-bis.pl": {
+        "YES": 1
+    },
+    "talp_dds\/dis_con.pl": {
+        "YES": 1
+    },
+    "talp_dds\/duplicate.pl": {
+        "YES": 1
+    },
+    "talp_dds\/merge.pl": {
+        "YES": 1
+    },
+    "talp_dds\/permute.pl": {
+        "YES": 1
+    },
+    "talp_dds\/reverse-iio.pl": {
+        "YES": 1
+    },
+    "talp_dds\/reverse.pl": {
+        "YES": 1
+    },
+    "talp_dds\/sum-ioi.pl": {
+        "YES": 1
+    },
+    "talp_dds\/sum.pl": {
+        "YES": 1
+    },
+    "talp_apt\/append.pl": {
+        "YES": 1
+    },
+    "talp_apt\/fold.pl": {
+        "YES": 1
+    },
+    "talp_apt\/list.pl": {
+        "YES": 1
+    },
+    "talp_apt\/lte.pl": {
+        "YES": 1
+    },
+    "talp_apt\/map.pl": {
+        "YES": 1
+    },
+    "talp_apt\/map1.pl": {
+        "YES": 1
+    },
+    "talp_apt\/member.pl": {
+        "YES": 1
+    },
+    "talp_apt\/mergesort.pl": {
+        "YES": 1
+    },
+    "talp_apt\/mergesort_ap.pl": {
+        "YES": 1
+    },
+    "talp_apt\/naive_rev-oi.pl": {
+        "NO": 1
+    },
+    "talp_apt\/naive_rev.pl": {
+        "YES": 1
+    },
+    "talp_apt\/ordered.pl": {
+        "YES": 1
+    },
+    "talp_apt\/overlap.pl": {
+        "YES": 1
+    },
+    "talp_apt\/permutation.pl": {
+        "YES": 1
+    },
+    "talp_apt\/quicksort-oi.pl": {
+        "NO": 1
+    },
+    "talp_apt\/quicksort.pl": {
+        "YES": 1
+    },
+    "talp_apt\/select.pl": {
+        "YES": 1
+    },
+    "talp_apt\/select1.pl": {
+        "YES": 1
+    },
+    "talp_apt\/SS_map.pl": {
+        "MAYBE": 1
+    },
+    "talp_apt\/SS_map_out.pl": {
+        "MAYBE": 1
+    },
+    "talp_apt\/SS_map_t.pl": {
+        "MAYBE": 1
+    },
+    "talp_apt\/subset.pl": {
+        "YES": 1
+    },
+    "talp_apt\/subset1.pl": {
+        "MAYBE": 1
+    },
+    "talp_apt\/sum.pl": {
+        "YES": 1
+    },
+    "talp_plumer\/mergesort_t.pl": {
+        "YES": 1
+    },
+    "talp_plumer\/pl1.1.pl": {
+        "NO": 1
+    },
+    "talp_plumer\/pl1.2.pl": {
+        "YES": 1
+    },
+    "talp_plumer\/pl1.2_t.pl": {
+        "YES": 1
+    },
+    "talp_plumer\/pl2.3.1.pl": {
+        "YES": 1
+    },
+    "talp_plumer\/pl3.1.1.pl": {
+        "NO": 1
+    },
+    "talp_plumer\/pl3.5.6.pl": {
+        "NO": 1
+    },
+    "talp_plumer\/pl3.5.6a.pl": {
+        "YES": 1
+    },
+    "talp_plumer\/pl4.0.1-oooi.pl": {
+        "NO": 1
+    },
+    "talp_plumer\/pl4.0.1.pl": {
+        "YES": 1
+    },
+    "talp_plumer\/pl4.4.3.pl": {
+        "YES": 1
+    },
+    "talp_plumer\/pl4.4.6a.pl": {
+        "YES": 1
+    },
+    "talp_plumer\/pl4.5.2.pl": {
+        "NO": 1
+    },
+    "talp_plumer\/pl4.5.3a.pl": {
+        "NO": 1
+    },
+    "talp_plumer\/pl4.5.3b.pl": {
+        "NO": 1
+    },
+    "talp_plumer\/pl4.5.3c.pl": {
+        "NO": 1
+    },
+    "talp_plumer\/pl5.2.2.pl": {
+        "MAYBE": 1
+    },
+    "talp_plumer\/pl6.1.1.pl": {
+        "YES": 1
+    },
+    "talp_plumer\/pl7.2.9.pl": {
+        "YES": 1
+    },
+    "talp_plumer\/pl7.6.2a.pl": {
+        "MAYBE": 1
+    },
+    "talp_plumer\/pl7.6.2b.pl": {
+        "MAYBE": 1
+    },
+    "talp_plumer\/pl7.6.2c.pl": {
+        "YES": 1
+    },
+    "talp_plumer\/pl8.2.1.pl": {
+        "YES": 1
+    },
+    "talp_plumer\/pl8.2.1a.pl": {
+        "YES": 1
+    },
+    "talp_plumer\/pl8.3.1.pl": {
+        "MAYBE": 1
+    },
+    "talp_plumer\/pl8.3.1a.pl": {
+        "YES": 1
+    },
+    "talp_plumer\/pl8.4.1.pl": {
+        "YES": 1
+    },
+    "talp_plumer\/pl8.4.2.pl": {
+        "YES": 1
+    }
+}

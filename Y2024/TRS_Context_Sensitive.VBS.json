@@ -1,0 +1,326 @@
+{
+    "CSR_04\/Ex14_AEGL02.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex14_Luc06.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex15_Luc06.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex15_Luc98.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex16_Luc06.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex18_Luc06.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex1_2_AEL03.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex1_2_Luc02c.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex1_GL02a.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex1_GM03.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex1_GM99.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex1_Luc02b.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex1_Luc04b.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex1_Zan97.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex23_Luc06.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex24_GM04.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex24_Luc06.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex25_Luc06.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex26_Luc03b.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex2_Luc02a.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex2_Luc03b.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex3_12_Luc96a.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex3_2_Luc97.ari": {
+        "MAYBE": 1
+    },
+    "CSR_04\/Ex3_3_25_Bor03.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex49_GM04.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex4_4_Luc96b.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex4_7_15_Bor03.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex4_7_37_Bor03.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex4_7_56_Bor03.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex4_7_77_Bor03.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex4_DLMMU04.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex4_Zan97.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex5_7_Luc97.ari": {
+        "MAYBE": 1
+    },
+    "CSR_04\/Ex5_DLMMU04.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex5_Zan97.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex6_15_AEL02.ari": {
+        "MAYBE": 1
+    },
+    "CSR_04\/Ex6_9_Luc02c.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex6_GM04.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex6_Luc98.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex7_BLR02.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex8_BLR02.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex9_BLR02.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex9_Luc04.ari": {
+        "YES": 1
+    },
+    "CSR_04\/Ex9_Luc06.ari": {
+        "YES": 1
+    },
+    "CSR_04\/ExAppendixB_AEL03.ari": {
+        "YES": 1
+    },
+    "CSR_04\/ExConc_Zan97.ari": {
+        "YES": 1
+    },
+    "CSR_04\/ExIntrod_GM01.ari": {
+        "YES": 1
+    },
+    "CSR_04\/ExIntrod_GM04.ari": {
+        "YES": 1
+    },
+    "CSR_04\/ExIntrod_GM99.ari": {
+        "YES": 1
+    },
+    "CSR_04\/ExIntrod_Zan97.ari": {
+        "YES": 1
+    },
+    "CSR_04\/ExProp7_Luc06.ari": {
+        "YES": 1
+    },
+    "CSR_04\/ExSec11_1_Luc02a.ari": {
+        "YES": 1
+    },
+    "CSR_04\/ExSec4_2_DLMMU04.ari": {
+        "YES": 1
+    },
+    "Maude_06\/csrdiv.ari": {
+        "YES": 1
+    },
+    "Maude_06\/emmes.ari": {
+        "YES": 1
+    },
+    "Maude_06\/LengthOfFiniteLists_complete-noand.ari": {
+        "YES": 1
+    },
+    "Maude_06\/LengthOfFiniteLists_complete.ari": {
+        "YES": 1
+    },
+    "Maude_06\/LengthOfFiniteLists_nokinds-noand.ari": {
+        "YES": 1
+    },
+    "Maude_06\/LengthOfFiniteLists_nokinds.ari": {
+        "YES": 1
+    },
+    "Maude_06\/LengthOfFiniteLists_nosorts-noand.ari": {
+        "NO": 1
+    },
+    "Maude_06\/LengthOfFiniteLists_nosorts.ari": {
+        "NO": 1
+    },
+    "Maude_06\/LISTUTILITIES_complete-noand.ari": {
+        "YES": 1
+    },
+    "Maude_06\/LISTUTILITIES_complete.ari": {
+        "MAYBE": 1
+    },
+    "Maude_06\/LISTUTILITIES_nokinds-noand.ari": {
+        "YES": 1
+    },
+    "Maude_06\/LISTUTILITIES_nokinds.ari": {
+        "MAYBE": 1
+    },
+    "Maude_06\/LISTUTILITIES_nosorts-noand.ari": {
+        "YES": 1
+    },
+    "Maude_06\/LISTUTILITIES_nosorts.ari": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_complete-noand-peanoSimple.ari": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_complete-noand.ari": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_complete-peanoSimple.ari": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_complete.ari": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_nokinds-noand-peanoSimple.ari": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_nokinds-noand.ari": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_nokinds-peanoSimple.ari": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_nokinds.ari": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_nosorts-noand-peanoSimple.ari": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_nosorts-noand.ari": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_nosorts-peanoSimple.ari": {
+        "YES": 1
+    },
+    "Maude_06\/MYNAT_nosorts.ari": {
+        "YES": 1
+    },
+    "Maude_06\/OvConsOS_complete-noand.ari": {
+        "YES": 1
+    },
+    "Maude_06\/OvConsOS_complete.ari": {
+        "MAYBE": 1
+    },
+    "Maude_06\/OvConsOS_nokinds-noand.ari": {
+        "YES": 1
+    },
+    "Maude_06\/OvConsOS_nokinds.ari": {
+        "MAYBE": 1
+    },
+    "Maude_06\/OvConsOS_nosorts-noand.ari": {
+        "NO": 1
+    },
+    "Maude_06\/OvConsOS_nosorts.ari": {
+        "NO": 1
+    },
+    "Maude_06\/PALINDROME_complete-noand.ari": {
+        "YES": 1
+    },
+    "Maude_06\/PALINDROME_complete.ari": {
+        "YES": 1
+    },
+    "Maude_06\/PALINDROME_nokinds-noand.ari": {
+        "YES": 1
+    },
+    "Maude_06\/PALINDROME_nokinds.ari": {
+        "YES": 1
+    },
+    "Maude_06\/PALINDROME_nosorts-noand.ari": {
+        "YES": 1
+    },
+    "Maude_06\/PALINDROME_nosorts.ari": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/cariboo_ex1.ari": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/cariboo_ex2.ari": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/cariboo_ex3.ari": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/cariboo_ex4.ari": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/cariboo_ex5.ari": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/cariboo_ex6.ari": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/ex5.3.ari": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/ex5.4.ari": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/ex5.5.ari": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/ex5.6.ari": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/ex5.7.ari": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/ex5.8.ari": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/f20.ari": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/f30.ari": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/f4.ari": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/f40.ari": {
+        "YES": 1
+    },
+    "Transformed_outermost_08\/morse.ari": {
+        "YES": 1
+    }
+}

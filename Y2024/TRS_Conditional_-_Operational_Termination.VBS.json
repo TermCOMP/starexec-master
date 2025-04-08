@@ -1,0 +1,413 @@
+{
+    "Gutierrez_22\/1159.ari": {
+        "NO": 1
+    },
+    "Gutierrez_22\/278.ari": {
+        "YES": 1
+    },
+    "Gutierrez_22\/279.ari": {
+        "YES": 1
+    },
+    "Gutierrez_22\/309.ari": {
+        "NO": 1
+    },
+    "Gutierrez_22\/357.ari": {
+        "MAYBE": 1
+    },
+    "Gutierrez_22\/386.ari": {
+        "NO": 1
+    },
+    "Gutierrez_22\/405.ari": {
+        "MAYBE": 1
+    },
+    "Gutierrez_22\/494.ari": {
+        "NO": 1
+    },
+    "Gutierrez_22\/495.ari": {
+        "NO": 1
+    },
+    "Gutierrez_22\/499.ari": {
+        "MAYBE": 1
+    },
+    "Gutierrez_22\/529.ari": {
+        "MAYBE": 1
+    },
+    "Gutierrez_22\/546.ari": {
+        "NO": 1
+    },
+    "Gutierrez_22\/553.ari": {
+        "NO": 1
+    },
+    "Gutierrez_22\/790.ari": {
+        "NO": 1
+    },
+    "Gutierrez_22\/791.ari": {
+        "NO": 1
+    },
+    "Gutierrez_22\/792.ari": {
+        "NO": 1
+    },
+    "Gutierrez_22\/793.ari": {
+        "NO": 1
+    },
+    "Gutierrez_22\/794.ari": {
+        "NO": 1
+    },
+    "Gutierrez_22\/799.ari": {
+        "NO": 1
+    },
+    "Gutierrez_22\/805.ari": {
+        "NO": 1
+    },
+    "COPS\/262.ari": {
+        "YES": 1
+    },
+    "COPS\/263.ari": {
+        "YES": 1
+    },
+    "COPS\/264.ari": {
+        "YES": 1
+    },
+    "COPS\/266.ari": {
+        "YES": 1
+    },
+    "COPS\/267.ari": {
+        "YES": 1
+    },
+    "COPS\/268.ari": {
+        "NO": 1
+    },
+    "COPS\/271.ari": {
+        "YES": 1
+    },
+    "COPS\/272.ari": {
+        "YES": 1
+    },
+    "COPS\/286.ari": {
+        "NO": 1
+    },
+    "COPS\/288.ari": {
+        "YES": 1
+    },
+    "COPS\/289.ari": {
+        "MAYBE": 1
+    },
+    "COPS\/292.ari": {
+        "YES": 1
+    },
+    "COPS\/293.ari": {
+        "NO": 1
+    },
+    "COPS\/294.ari": {
+        "YES": 1
+    },
+    "COPS\/307.ari": {
+        "YES": 1
+    },
+    "COPS\/308.ari": {
+        "YES": 1
+    },
+    "COPS\/310.ari": {
+        "YES": 1
+    },
+    "COPS\/311.ari": {
+        "MAYBE": 1
+    },
+    "COPS\/312.ari": {
+        "MAYBE": 1
+    },
+    "COPS\/315.ari": {
+        "YES": 1
+    },
+    "COPS\/316.ari": {
+        "YES": 1
+    },
+    "COPS\/317.ari": {
+        "YES": 1
+    },
+    "COPS\/319.ari": {
+        "YES": 1
+    },
+    "COPS\/321.ari": {
+        "YES": 1
+    },
+    "COPS\/322.ari": {
+        "YES": 1
+    },
+    "COPS\/323.ari": {
+        "YES": 1
+    },
+    "COPS\/324.ari": {
+        "NO": 1
+    },
+    "COPS\/325.ari": {
+        "YES": 1
+    },
+    "COPS\/326.ari": {
+        "YES": 1
+    },
+    "COPS\/329.ari": {
+        "YES": 1
+    },
+    "COPS\/330.ari": {
+        "NO": 1
+    },
+    "COPS\/332.ari": {
+        "YES": 1
+    },
+    "COPS\/333.ari": {
+        "YES": 1
+    },
+    "COPS\/334.ari": {
+        "YES": 1
+    },
+    "COPS\/337.ari": {
+        "MAYBE": 1
+    },
+    "COPS\/339.ari": {
+        "YES": 1
+    },
+    "COPS\/340.ari": {
+        "YES": 1
+    },
+    "COPS\/341.ari": {
+        "YES": 1
+    },
+    "COPS\/342.ari": {
+        "MAYBE": 1
+    },
+    "COPS\/343.ari": {
+        "YES": 1
+    },
+    "COPS\/344.ari": {
+        "YES": 1
+    },
+    "COPS\/351.ari": {
+        "YES": 1
+    },
+    "COPS\/353.ari": {
+        "YES": 1
+    },
+    "COPS\/354.ari": {
+        "YES": 1
+    },
+    "COPS\/355.ari": {
+        "NO": 1
+    },
+    "COPS\/356.ari": {
+        "YES": 1
+    },
+    "COPS\/358.ari": {
+        "YES": 1
+    },
+    "COPS\/359.ari": {
+        "YES": 1
+    },
+    "COPS\/361.ari": {
+        "NO": 1
+    },
+    "COPS\/364.ari": {
+        "YES": 1
+    },
+    "COPS\/365.ari": {
+        "YES": 1
+    },
+    "COPS\/366.ari": {
+        "YES": 1
+    },
+    "COPS\/367.ari": {
+        "YES": 1
+    },
+    "COPS\/368.ari": {
+        "YES": 1
+    },
+    "COPS\/369.ari": {
+        "YES": 1
+    },
+    "COPS\/370.ari": {
+        "YES": 1
+    },
+    "COPS\/371.ari": {
+        "YES": 1
+    },
+    "COPS\/372.ari": {
+        "YES": 1
+    },
+    "COPS\/373.ari": {
+        "YES": 1
+    },
+    "COPS\/374.ari": {
+        "YES": 1
+    },
+    "COPS\/375.ari": {
+        "YES": 1
+    },
+    "COPS\/376.ari": {
+        "YES": 1
+    },
+    "COPS\/377.ari": {
+        "YES": 1
+    },
+    "COPS\/378.ari": {
+        "YES": 1
+    },
+    "COPS\/379.ari": {
+        "NO": 1
+    },
+    "COPS\/380.ari": {
+        "YES": 1
+    },
+    "COPS\/381.ari": {
+        "YES": 1
+    },
+    "COPS\/382.ari": {
+        "YES": 1
+    },
+    "COPS\/383.ari": {
+        "YES": 1
+    },
+    "COPS\/384.ari": {
+        "YES": 1
+    },
+    "COPS\/385.ari": {
+        "YES": 1
+    },
+    "COPS\/387.ari": {
+        "YES": 1
+    },
+    "COPS\/388.ari": {
+        "YES": 1
+    },
+    "COPS\/389.ari": {
+        "NO": 1
+    },
+    "COPS\/390.ari": {
+        "YES": 1
+    },
+    "COPS\/391.ari": {
+        "YES": 1
+    },
+    "COPS\/403.ari": {
+        "YES": 1
+    },
+    "COPS\/404.ari": {
+        "YES": 1
+    },
+    "COPS\/405.ari": {
+        "MAYBE": 1
+    },
+    "COPS\/406.ari": {
+        "YES": 1
+    },
+    "COPS\/407.ari": {
+        "NO": 1
+    },
+    "COPS\/408.ari": {
+        "YES": 1
+    },
+    "COPS\/409.ari": {
+        "NO": 1
+    },
+    "COPS\/410.ari": {
+        "YES": 1
+    },
+    "COPS\/411.ari": {
+        "NO": 1
+    },
+    "Mixed_CTRS\/AAECC-ring-cond.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS\/AAECCcond.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS\/fib.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS\/gcd.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS\/quick.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS\/quicksort.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS\/quotrem.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ex1-lucmes-wrla14.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_CTRS_2014\/ex1-muterm14.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ex2-lucmes-wrla14.ari": {
+        "NO": 1
+    },
+    "Mixed_CTRS_2014\/ex2-muterm14.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ex3-muterm14.ari": {
+        "NO": 1
+    },
+    "Mixed_CTRS_2014\/hosc08-ex5-aecc-p46.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/jlap09-ex16.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/jlap09-ex17.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/logic.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/lucMarMes.ari": {
+        "NO": 1
+    },
+    "Mixed_CTRS_2014\/mar.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_CTRS_2014\/mar_simple1.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_CTRS_2014\/mar_simple2.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_CTRS_2014\/minus1.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ohl.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ohl190.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ohl194.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ohl196.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ohl206.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ohl211.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ohl216.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/ohl228.ari": {
+        "NO": 1
+    },
+    "Mixed_CTRS_2014\/ohl230.ari": {
+        "NO": 1
+    },
+    "Mixed_CTRS_2014\/plus1.ari": {
+        "YES": 1
+    },
+    "Mixed_CTRS_2014\/sche128.ari": {
+        "YES": 1
+    }
+}

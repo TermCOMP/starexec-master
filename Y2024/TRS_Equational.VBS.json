@@ -1,0 +1,230 @@
+{
+    "Mixed_C\/AC42.ari": {
+        "YES": 1
+    },
+    "Mixed_C\/AC43.ari": {
+        "YES": 1
+    },
+    "Mixed_C\/AC44.ari": {
+        "YES": 1
+    },
+    "Mixed_C\/AC45.ari": {
+        "YES": 1
+    },
+    "Mixed_C\/AC46.ari": {
+        "YES": 1
+    },
+    "Mixed_C\/maude2.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_C\/PEANO-NAT_complete-noand.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_C\/PEANO-NAT_complete.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_C\/PEANO-NAT_nokinds-noand.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_C\/PEANO-NAT_nokinds.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_C\/PEANO-NAT_nosorts-noand.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_C\/PEANO-NAT_nosorts.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_AC_and_C\/AC08.ari": {
+        "YES": 1
+    },
+    "Mixed_AC_and_C\/AC29.ari": {
+        "YES": 1
+    },
+    "Mixed_AC_and_C\/AC47.ari": {
+        "YES": 1
+    },
+    "Mixed_AC_and_C\/rationals.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_AC_04\/AC01.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC02.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC03.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC04.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC05.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC06.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC07.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC09.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC10.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC11.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC12.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC13.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC14.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC15.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC16.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC17.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC18.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC19.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC20.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC21.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC22.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC23.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC24.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC26.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC27.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC28.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC41.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC48.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC49.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC50.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC51.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC52.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC53.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/AC54.ari": {
+        "YES": 1
+    },
+    "AProVE_AC_04\/IJCAR_AC1.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/bag-sum-prod-bin.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/bag-sum-prod-distr.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/bag-sum-prod.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/BAG_complete-noand.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/BAG_complete.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/BAG_nokinds-noand.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/BAG_nokinds.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/BAG_nosorts-noand.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/BAG_nosorts.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/boolean_rings.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/differ.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/intersect.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/kusakari1.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/RENAMED-BOOL_complete-noand.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/RENAMED-BOOL_complete.ari": {
+        "MAYBE": 1
+    },
+    "Mixed_AC\/RENAMED-BOOL_nokinds-noand.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/RENAMED-BOOL_nokinds.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/RENAMED-BOOL_nosorts-noand.ari": {
+        "NO": 1
+    },
+    "Mixed_AC\/RENAMED-BOOL_nosorts.ari": {
+        "NO": 1
+    },
+    "Mixed_AC\/sequent_modulo.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/YWHM14_1.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/YWHM14_2.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/YWHM14_3.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/YWHM14_4.ari": {
+        "YES": 1
+    },
+    "Mixed_AC\/YWHM14_5.ari": {
+        "YES": 1
+    }
+}

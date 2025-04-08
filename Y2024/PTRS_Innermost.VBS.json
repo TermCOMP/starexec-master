@@ -1,0 +1,440 @@
+{
+    "AProVE_CADE23\/advantagePRP.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/boundLoop0.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/boundLoop1.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/boundLoop2.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/chainCritCompleteCounter0.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/chainCritCompleteCounter1.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/condLoop0.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/condLoop1.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_CADE23\/condLoop2.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/condLoop3.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/condLoop4.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/coupon.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/cowboyDuel.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/generate0.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/generate1.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/generate2.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/generate3.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/generate4.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/initialLoop0.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/initialLoop1.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/initialLoop2.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/initialLoop3.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/lists0.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/lists1.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/lists2.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/lists3.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_CADE23\/lists4.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_CADE23\/lists5.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/lists6.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/lists7.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/lists8.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/markovChain0.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/markovChain1.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/markovChain2.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/markovChain3.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/markovChain4.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/markovChain5.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_CADE23\/numbers0.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/numbers1.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/randSplayTree.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/rw0.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/rw1.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/rw10.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/rw2.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/rw3.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_CADE23\/rw4.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/rw5.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/rw6.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/rw7.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/rw8.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/rw9.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/rwbin0.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/rwbin1.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/rwbin2.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/rwTree0.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/rwTree1.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/smallEx0.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_CADE23\/smallEx1.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/smallEx2.ari": {
+        "AST": 1
+    },
+    "AProVE_CADE23\/smallEx3.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_CADE23\/spline0.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_CADE23\/spline1.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_CADE23\/spline2.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_CADE23\/spline3.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_CADE23\/strings0.ari": {
+        "AST": 1
+    },
+    "AProVE_FoSSaCS24\/coinflips01.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_FoSSaCS24\/coinflips02.ari": {
+        "AST": 1
+    },
+    "AProVE_FoSSaCS24\/div.ari": {
+        "AST": 1
+    },
+    "AProVE_FoSSaCS24\/Paper00.ari": {
+        "AST": 1
+    },
+    "AProVE_FoSSaCS24\/Paper01.ari": {
+        "AST": 1
+    },
+    "AProVE_FoSSaCS24\/Paper02a.ari": {
+        "AST": 1
+    },
+    "AProVE_FoSSaCS24\/Paper02b.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_FoSSaCS24\/Paper02c.ari": {
+        "AST": 1
+    },
+    "AProVE_FoSSaCS24\/Paper03.ari": {
+        "AST": 1
+    },
+    "AProVE_FoSSaCS24\/Paper04.ari": {
+        "AST": 1
+    },
+    "AProVE_FoSSaCS24\/Paper05.ari": {
+        "AST": 1
+    },
+    "AProVE_FoSSaCS24\/Paper06.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_FoSSaCS24\/Paper07.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_FoSSaCS24\/Paper08.ari": {
+        "AST": 1
+    },
+    "AProVE_FoSSaCS24\/qsandsimplify.ari": {
+        "AST": 1
+    },
+    "AProVE_FoSSaCS24\/tree01.ari": {
+        "AST": 1
+    },
+    "AProVE_FoSSaCS24\/tree02.ari": {
+        "AST": 1
+    },
+    "AProVE_FoSSaCS24\/tree03.ari": {
+        "AST": 1
+    },
+    "AProVE_Special\/data1.ari": {
+        "AST": 1
+    },
+    "AProVE_Special\/data2.ari": {
+        "AST": 1
+    },
+    "AProVE_Special\/data3.ari": {
+        "AST": 1
+    },
+    "AProVE_Special\/data4.ari": {
+        "AST": 1
+    },
+    "AProVE_Special\/data5.ari": {
+        "AST": 1
+    },
+    "AProVE_Special\/data6.ari": {
+        "AST": 1
+    },
+    "AProVE_Special\/data7.ari": {
+        "AST": 1
+    },
+    "AProVE_Special\/paper1.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_Special\/paper2.ari": {
+        "AST": 1
+    },
+    "AProVE_Special\/paper3.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_Special\/paper4.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_Special\/pgcl.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/Paper01.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/Paper02.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/Paper03.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/Paper04.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/Paper05.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_FLOPS24\/Paper06.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/Paper07.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/Paper08.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/Paper09.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/Paper10.ari": {
+        "SAST": 1,
+        "PAST": 1,
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/randData01.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/randData02.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/randData03.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/randData04.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/randData05.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/randData06.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/randNum01.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/randNum02.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/randNum03.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/randNum04.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/randNum05.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/randNum06.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/randNum07.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_FLOPS24\/randNum08.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/randNum09.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_FLOPS24\/randNum10.ari": {
+        "MAYBE": 1
+    },
+    "AProVE_FLOPS24\/Trans01.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/Trans02.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/Trans03.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/Trans04.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/Trans05.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/Trans06.ari": {
+        "AST": 1
+    },
+    "AProVE_FLOPS24\/Trans07.ari": {
+        "MAYBE": 1
+    }
+}
