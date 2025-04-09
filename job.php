@@ -152,6 +152,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			$jobid = $record['job id'];
 			$benchidx = $record['benchmark idx'];
 			$solveridx = $record['solver idx'];
+			$solver = $record['solver'];
 			$pair = array($benchidx, $solveridx);
 			if( status2finished($status) ) {
 #				$cpu = parse_time($record['cpu time']);
@@ -202,6 +203,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				'job id' => $jobid,
 				'benchmark idx' => $benchidx,
 				'solver idx' => $solveridx,
+				'solver' => $solver,
 				'claim' => $claim,
 			];
 		}
