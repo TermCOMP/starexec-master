@@ -141,17 +141,11 @@ set_time_limit(300);
 	function jobname2penaltyfile($jobname) {
 		return escape_filename($jobname).'.penalty.json';
 	}
-	function pairid2errurl($pairid) {
-        $parts=explode("_", $pairid);
-        $job_id=$parts[0];
-        $benchmark_idx=$parts[1];
-		return "./jobs/".$job_id."/errors/".$benchmark_idx;
+	function mkerrurl($job_id, $benchmark_idx, $solver_idx) {
+		return "./jobs/job_".$job_id."/errors/benchmark_".$benchmark_idx."/solver_".$solver_idx;
 	}
-	function pairid2outurl($pairid) {
-        $parts=explode("_", $pairid);
-        $job_id=$parts[0];
-        $benchmark_idx=$parts[1];
-		return "./jobs/".$job_id."/proofs/".$benchmark_idx;
+	function mkouturl($job_id, $benchmark_idx, $solver_idx) {
+		return "./jobs/job_".$job_id."/proofs/benchmark_".$benchmark_idx."/solver_".$solver_idx;
 	}
 // For complexity
 	function bound2str( $bound ) {

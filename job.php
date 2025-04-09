@@ -44,7 +44,7 @@
 	$participants = [];
 	$sum = [];
 	for( $i = 0; $i < $jobidc; $i++ ) {
-        $files = glob("./jobs/" . $jobids[$i] . "/results/*");
+        $files = glob("./jobs/job_" . $jobids[$i] . "/results/*");
         foreach ($files as $file) {
             parse_results($file,$bm_prefix,$results,$participants,$i);
             $sum[$i] = new_scores();
@@ -149,7 +149,10 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		foreach( $records['participants'] as $configid => $record ) {
 			$p =& $participants[$configid];
 			$status = $record['status'];
-			$pair = $record['pair id'];
+			$jobid = $record['job id'];
+			$benchidx = $record['benchmark idx'];
+			$solveridx = $record['solver idx'];
+			$pair = array($benchidx, $solveridx);
 			if( status2finished($status) ) {
 #				$cpu = parse_time($record['cpu time']);
 				$time = $record['wallclock time'];
@@ -196,7 +199,9 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				'time' => $time,
 #				'cpu' => $cpu,
 				'certtime' => $certtime,
-				'pair' => $pair,
+				'job id' => $jobid,
+				'benchmark idx' => $benchidx,
+				'solver idx' => $solveridx,
 				'claim' => $claim,
 			];
 		}
@@ -235,8 +240,11 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			$claim = $my['claim'];
 			$cert = $my['cert'];
 			$certtime = $my['certtime'];
-			$outurl = pairid2outurl($my['pair']);
-            $errurl = pairid2errurl($my['pair']);
+			$jobid = $my['job id'];
+			$benchidx = $my['benchmark idx'];
+			$solveridx = $my['solver idx'];
+			$outurl = mkouturl($jobid, $benchidx, $solveridx);
+			$errurl = mkerrurl($jobid, $benchidx, $solveridx);
 			if( status2complete($status) ) {
 				echo '  <td class="' . claim2class($claim,$cert) . '">'.PHP_EOL.
 				     '   <a href="'. "../". $outurl .'">' . claim2str($claim) . '</a>'.PHP_EOL.
