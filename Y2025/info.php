@@ -208,22 +208,22 @@ $categories = [
 	// 			],
 	// 		],
 	// 	],
-	// 	'HRS Union Beta' => [
-	// 		'type' => 'termination',
-	// 		'dir' => 'Higher_Order_Rewriting_Union_Beta',
-	// 		'spaceid' => 531842,
-	// 		'id' => 60901,
-	// 		'participants' => [
-	// 			'Wanda' => 359682,
-	// 			//				'SOL' => null,
-	// 		],
-	// 		'certified' => [
-	// 			'id' => null,
-	// 			'participants' => [
-	// 			],
-	// 		],
-	// 	],
-	// ],
+		'HRS Union Beta' => [
+			'type' => 'termination',
+			'dir' => 'Higher_Order_Rewriting_Union_Beta',
+			'spaceid' => 531842,
+			'id' => 57462468,
+			'participants' => [
+				'Wanda' => 359682,
+				//				'SOL' => null,
+			],
+			'certified' => [
+				'id' => null,
+				'participants' => [
+				],
+			],
+		],
+	],
 	// 'Probabilistic Termination of Rewriting' => [
 	// 	'PTRS Standard' => [
 	// 		'type' => 'termination',
