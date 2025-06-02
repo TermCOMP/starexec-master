@@ -248,7 +248,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			if( status2complete($status) ) {
 				echo '  <td class="' . claim2class($claim,$cert) . '">'.PHP_EOL.
 				     '   <a href="'. "../". $outurl .'">' . claim2str($claim) . '</a>'.PHP_EOL.
-                     ( 0 == filesize( $errurl )  ? '' : '   <a href="'. $errurl .'">[err]</a>'.PHP_EOL).
+                     ( 0 == filesize( $errurl )  ? '' : '   <a href="'. "../". $errurl .'">[err]</a>'.PHP_EOL).
 				     '    <span class="time">' .
                                      # $my['cpu'] . '/' .
                                      intdiv($my['time'],1000) . '.' . ($my['time']%1000) . '</span>'.PHP_EOL;
