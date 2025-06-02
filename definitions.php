@@ -572,7 +572,7 @@ set_time_limit(300);
 					$cnt = count($cat['participants']) + count($certinfo['participants']);
 					if( $cnt == 0 && $cat['id'] != null ) {
 						unset($cats[$cat_name]);// remove unparticipated category
-					} else if( $cnt == 1 || (array_key_exists('demo',$cat) && $cat['demo']) ) {
+					} else if( array_key_exists('demo',$cat) && $cat['demo'] ) {
 						$demos[$cat_name] = $cat;
 						unset($cats[$cat_name]);
 					}
