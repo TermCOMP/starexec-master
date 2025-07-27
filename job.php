@@ -139,9 +139,9 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
         if (str_ends_with($bm_name, '.ari')) {
             $smt2 = $path_info['dirname'].'/'.basename($bm_name, '.ari').'.smt2';
             $koat = $path_info['dirname'].'/'.basename($bm_name, '.ari').'.koat';
-            if (array_key_exists($past_bm_name,$smt2)) {
+            if (array_key_exists($smt2,$past_claims)) {
                 $past_bm_name = $smt2;
-            } else if (array_key_exists($past_bm_name,$koat)) {
+            } else if (array_key_exists($koat,$past_claims)) {
                 $past_bm_name = $koat;
             }
         }
