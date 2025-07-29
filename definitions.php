@@ -141,11 +141,16 @@ set_time_limit(300);
 	function jobname2penaltyfile($jobname) {
 		return escape_filename($jobname).'.penalty.json';
 	}
-	function mkerrurl($job_id, $benchmark_idx, $solver_idx) {
-		return "./jobs/job_".$job_id."/errors/benchmark_".$benchmark_idx."/solver_".$solver_idx;
+    function isCert($configid) {
+        return str_ends_with($configid, "_cert");
+    }
+    function mkerrurl($job_id, $benchmark_idx, $solver_idx, $configid) {
+        $mode = (isCert($configid)) ? "cert" : "uncert";
+		return "./jobs/job_".$job_id."/".$mode."/errors/benchmark_".$benchmark_idx."/solver_".$solver_idx;
 	}
-	function mkouturl($job_id, $benchmark_idx, $solver_idx) {
-		return "./jobs/job_".$job_id."/proofs/benchmark_".$benchmark_idx."/solver_".$solver_idx;
+	function mkouturl($job_id, $benchmark_idx, $solver_idx, $configid) {
+        $mode = (isCert($configid)) ? "cert" : "uncert";
+		return "./jobs/job_".$job_id."/".$mode."/proofs/benchmark_".$benchmark_idx."/solver_".$solver_idx;
 	}
 // For complexity
 	function bound2str( $bound ) {
@@ -269,9 +274,21 @@ set_time_limit(300);
 	}
 	function claim2scores($claim,$cert,$max_score,$past_claim) {
 		$ret = ['score' => 0, 'miss' => $max_score, 'news' => 0 ];
-		if( $cert == 'REJECTED' || $cert == 'UNSUPPORTED' ) {
+		if( $cert == 'REJECTED' ) {
 			return $ret;
 		}
+        if( array_key_exists('timeout',$claim) ) {
+            $ret['timeout'] = 1;
+        }
+        if( array_key_exists('memout',$claim) ) {
+            $ret['memout'] = 1;
+        }
+        if( array_key_exists('error',$claim) ) {
+            $ret['error'] = 1;
+        }
+        if ( $cert == 'UNSUPPORTED' ) {
+            return $ret;
+        }
 		$pre = $cert == 'CERTIFIED' ? $cert.' ' : '';
 		if( array_key_exists('NO',$claim) ) {
 			$ret['score']++;
@@ -342,15 +359,6 @@ set_time_limit(300);
 		}
 		if( array_key_exists('MAYBE',$claim) ) {
 			$ret['MAYBE'] = 1;
-		}
-		if( array_key_exists('timeout',$claim) ) {
-			$ret['timeout'] = 1;
-		}
-		if( array_key_exists('memout',$claim) ) {
-			$ret['memout'] = 1;
-		}
-		if( array_key_exists('error',$claim) ) {
-			$ret['error'] = 1;
 		}
 		return $ret;
 	}
