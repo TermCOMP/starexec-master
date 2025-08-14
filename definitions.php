@@ -146,11 +146,11 @@ set_time_limit(300);
     }
     function mkerrurl($job_id, $benchmark_idx, $solver_idx, $configid) {
         $mode = (isCert($configid)) ? "cert" : "uncert";
-		return "./jobs/job_".$job_id."/".$mode."/errors/benchmark_".$benchmark_idx."/solver_".$solver_idx;
+		return "./jobs/job_".$job_id."/".$mode."/errors/benchmark_".$benchmark_idx."/solver_".$solver_idx.".txt";
 	}
 	function mkouturl($job_id, $benchmark_idx, $solver_idx, $configid) {
         $mode = (isCert($configid)) ? "cert" : "uncert";
-		return "./jobs/job_".$job_id."/".$mode."/proofs/benchmark_".$benchmark_idx."/solver_".$solver_idx;
+		return "./jobs/job_".$job_id."/".$mode."/proofs/benchmark_".$benchmark_idx."/solver_".$solver_idx.".txt";
 	}
 // For complexity
 	function bound2str( $bound ) {
