@@ -11,6 +11,8 @@ RUN apt-get -y install unzip
 RUN echo 'extension=php_openssl' >> /etc/php/php.ini
 # enable .htaccess
 RUN sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
+RUN echo "AddDefaultCharset utf-8" >> /etc/apache2/apache2.conf
+RUN echo "AddCharset utf-8 .htm .html .js .css" >> /etc/apache2/apache2.conf
 
 WORKDIR /var/www/html
 
