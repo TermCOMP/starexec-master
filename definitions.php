@@ -52,10 +52,10 @@ set_time_limit(300);
 		'CERTIFIED NO' => [ 'text' => 'NO', 'bar' => true, 'class' => 'score CERTIFIED NO' ],
 		'CERTIFIED UP' => [ 'text' => 'UP', 'bar' => true, 'class' => 'score CERTIFIED UP' ],
 		'CERTIFIED LOW' => [ 'text' => 'LOW', 'bar' => true, 'class' => 'score CERTIFIED LOW' ],
-		'UNSUPPORTED YES' => [ 'text' => 'YES', 'bar' => true, 'class' => 'score UNSUPPORTED' ],
-		'UNSUPPORTED NO' => [ 'text' => 'NO', 'bar' => true, 'class' => 'score UNSUPPORTED' ],
-		'UNSUPPORTED UP' => [ 'text' => 'UP', 'bar' => true, 'class' => 'score UNSUPPORTED' ],
-		'UNSUPPORTED LOW' => [ 'text' => 'LOW', 'bar' => true, 'class' => 'score UNSUPPORTED' ],
+		'UNSUPPORTED YES' => [ 'text' => 'YES', 'bar' => true, 'class' => 'score UNSUPPORTED YES' ],
+		'UNSUPPORTED NO' => [ 'text' => 'NO', 'bar' => true, 'class' => 'score UNSUPPORTED NO' ],
+		'UNSUPPORTED UP' => [ 'text' => 'UP', 'bar' => true, 'class' => 'score UNSUPPORTED UP' ],
+		'UNSUPPORTED LOW' => [ 'text' => 'LOW', 'bar' => true, 'class' => 'score UNSUPPORTED LOW' ],
 		'YES' => [ 'text' => 'YES', 'bar' => true, 'class' => 'score YES' ],
 		'SAST' => [ 'text' => 'SAST', 'bar' => true, 'class' => 'score SAST' ],
 		'PAST' => [ 'text' => 'PAST', 'bar' => true, 'class' => 'score PAST' ],
@@ -103,29 +103,29 @@ set_time_limit(300);
 		$header = $file->current();
 		for( $file->next(); !$file->eof(); $file->next() ) {
 			$record = row2record($header,$file->current());
-            if( $record != null ) {
-                $configid = $record['configuration'];
-                if (!array_key_exists($configid,$participants)) {
-                    $participants[$configid] = array_merge( new_scores(), [
-                        'layer' => $layer,
-                        'solver' => $record['solver'],
-                        'solver id' => $record['solver'],
-                        'configuration' => $record['configuration'],
-                    ]);
-                    foreach( $scored_keys as $key => $val ) {
-                        $participants[$configid][$key] = 0;
-                    }
-                }
-            }
+			if( $record != null ) {
+				$configid = $record['configuration'];
+				if (!array_key_exists($configid,$participants)) {
+					$participants[$configid] = array_merge( new_scores(), [
+						'layer' => $layer,
+						'solver' => $record['solver'],
+						'solver id' => $record['solver'],
+						'configuration' => $record['configuration'],
+					]);
+					foreach( $scored_keys as $key => $val ) {
+						$participants[$configid][$key] = 0;
+					}
+				}
+			}
 		}
 		$file = new SplFileObject($csv);
 		$file->setFlags( SplFileObject::READ_CSV );
-        $file->current(); // Without this, next() doesn't work. PHP is great.
+		$file->current(); // Without this, next() doesn't work. PHP is great.
 		for( $file->next(); !$file->eof(); $file->next() ) {
-            $record = row2record($header,$file->current());
-            if ($record != null) {
-                parse_record($record,$bm_dir,$len,$results);
-            }
+			$record = row2record($header,$file->current());
+			if ($record != null) {
+				parse_record($record,$bm_dir,$len,$results);
+			}
 		}
 	}
 	function escape_filename($name) {
@@ -146,15 +146,15 @@ set_time_limit(300);
 	function jobname2penaltyfile($jobname) {
 		return escape_filename($jobname).'.penalty.json';
 	}
-    function isCert($configid) {
-        return str_ends_with($configid, "_cert");
-    }
-    function mkerrurl($job_id, $benchmark_idx, $solver_idx, $configid) {
-        $mode = (isCert($configid)) ? "cert" : "uncert";
+	function isCert($configid) {
+		return str_ends_with($configid, "_cert");
+	}
+	function mkerrurl($job_id, $benchmark_idx, $solver_idx, $configid) {
+		$mode = (isCert($configid)) ? "cert" : "uncert";
 		return "./jobs/job_".$job_id."/".$mode."/errors/benchmark_".$benchmark_idx."/solver_".$solver_idx.".txt";
 	}
 	function mkouturl($job_id, $benchmark_idx, $solver_idx, $configid) {
-        $mode = (isCert($configid)) ? "cert" : "uncert";
+		$mode = (isCert($configid)) ? "cert" : "uncert";
 		return "./jobs/job_".$job_id."/".$mode."/proofs/benchmark_".$benchmark_idx."/solver_".$solver_idx.".txt";
 	}
 // For complexity
@@ -279,24 +279,25 @@ set_time_limit(300);
 	}
 	function claim2scores($claim,$cert,$max_score,$past_claim) {
 		$ret = ['score' => 0, 'miss' => $max_score, 'news' => 0 ];
-		if( $cert == 'REJECTED' ) {
-			return $ret;
+		if( array_key_exists('timeout',$claim) ) {
+			$ret['timeout'] = 1;
 		}
-        if( array_key_exists('timeout',$claim) ) {
-            $ret['timeout'] = 1;
-        }
-        if( array_key_exists('memout',$claim) ) {
-            $ret['memout'] = 1;
-        }
-        if( array_key_exists('error',$claim) ) {
-            $ret['error'] = 1;
-        }
-        if ( $cert == 'UNSUPPORTED' ) {
-            return $ret;
-        }
-		$pre = $cert == 'CERTIFIED' ? $cert.' ' : '';
+		if( array_key_exists('memout',$claim) ) {
+			$ret['memout'] = 1;
+		}
+		if( array_key_exists('error',$claim) ) {
+			$ret['error'] = 1;
+		}
+		$pre = '';
+		$cert_failed = false;
+		if ( $cert == 'UNSUPPORTED' || $cert == 'REJECTED' || $cert == 'CERTIFIED' ) {
+			$pre = $cert.' ';
+			$cert_failed = $cert != 'CERTIFIED';
+		}
 		if( array_key_exists('NO',$claim) ) {
-			$ret['score']++;
+			if (!$cert_failed) {
+				$ret['score']++;
+			}
 			$ret['miss']--;
 			$ret[$pre.'NO'] = 1;
 			if( $past_claim != null && !array_key_exists('NO',$past_claim) ) {
@@ -304,7 +305,9 @@ set_time_limit(300);
 			}
 		} else if( array_key_exists('LOW',$claim) ) {
 			$lowscore = low2score($claim['LOW']);
-			$ret['score'] += $lowscore;
+			if (!$cert_failed) {
+				$ret['score'] += $lowscore;
+			}
 			$ret['miss'] -= $lowscore;
 			$ret[$pre.'LOW'] = $lowscore;
 			if( $past_claim != null ) {
@@ -319,7 +322,9 @@ set_time_limit(300);
 			}
 		}
 		if( array_key_exists('UP',$claim) ) {
-			$upscore = up2score($claim['UP']);
+			if (!$cert_failed) {
+				$upscore = up2score($claim['UP']);
+			}
 			$ret['score'] += $upscore;
 			$ret['miss'] -= $upscore;
 			$ret[$pre.'UP'] = $upscore;
@@ -334,28 +339,36 @@ set_time_limit(300);
 				}
 			}
 		} else if( array_key_exists('YES',$claim) ) {
-			$ret['score']++;
+			if (!$cert_failed) {
+				$ret['score']++;
+			}
 			$ret['miss']--;
 			$ret[$pre.'YES'] = 1;
 			if( $past_claim != null && !array_key_exists('YES',$past_claim) ) {
 				$ret['news']++;
 			}
 		} else if ( array_key_exists('SAST',$claim) ) {
-			$ret['score'] += 1.5;
+			if (!$cert_failed) {
+				$ret['score'] += 1.5;
+			}
 			$ret['miss']--;
 			$ret[$pre.'SAST'] = 1;
 			if( $past_claim != null && !array_key_exists('SAST',$past_claim) ) {
 				$ret['news']++;
 			}
 		} else if ( array_key_exists('PAST',$claim) ) {
-			$ret['score'] += 1.5;
+			if (!$cert_failed) {
+				$ret['score'] += 1.5;
+			}
 			$ret['miss']--;
 			$ret[$pre.'PAST'] = 1;
 			if( $past_claim != null && !array_key_exists('PAST',$past_claim) && !array_key_exists('SAST',$past_claim) ) {
 				$ret['news']++;
 			}
 		} else if ( array_key_exists('AST',$claim) ) {
-			$ret['score'] += 1;
+			if (!$cert_failed) {
+				$ret['score'] += 1;
+			}
 			$ret['miss']--;
 			$ret[$pre.'AST'] = 1;
 			if( $past_claim != null && !array_key_exists('AST',$past_claim) && !array_key_exists('PAST',$past_claim) && !array_key_exists('SAST',$past_claim) ) {
