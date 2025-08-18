@@ -62,6 +62,7 @@ set_time_limit(300);
 		'togo' => [ 'text' => 'togo', 'bar' => true, 'class' => 'score togo' ],
 		'MAYBE' => [ 'text' => null, 'bar' => true, 'class' => 'score MAYBE' ],
 		'timeout' => [ 'text' => null, 'bar' => true, 'class' => 'score timeout' ],
+		'memout' => [ 'text' => null, 'bar' => true, 'class' => 'score memout' ],
 		'error' => [ 'text' => 'error', 'bar' => true, 'class' => 'score error' ],
 		'news' => [ 'text' => 'news', 'bar' => false, 'class' => 'score news important' ],
 		'wrong' => [ 'text' => 'wrong', 'bar' => true, 'class' => 'score wrong important' ],
