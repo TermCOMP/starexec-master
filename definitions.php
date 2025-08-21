@@ -186,6 +186,8 @@ set_time_limit(300);
 			return $matches[1];
 		} else if( $string == 'POLY' ) {
 			return 999;
+		} else if ( $string == 'EXP' ) {
+			return 1000;
 		} else {
 			return 1001;
 		}
@@ -390,7 +392,7 @@ set_time_limit(300);
 			if( $low == $up ) {
 				return '&Theta;('.bound2str($up).')';
 			}
-			return ($low == 0 ? '' : '&Omega;('.bound2str($low).')').'―'.($up == 999 ? 'POLY' : 'O('.bound2str($up).')');
+			return ($low == 0 ? '' : '&Omega;('.bound2str($low).')').'―'.($up == 999 ? 'POLY' : ($up == 1000 ? 'EXP' : 'O('.bound2str($up).')'));
 		}
 		if( array_key_exists('LOW',$claim) ) {
 			$low = $claim['LOW'];
