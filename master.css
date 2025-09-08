@@ -183,6 +183,10 @@ div.category {
 	background: none;
 	color: #A09040;
 }
+.score>.UNSUPPORTED {
+	background-color: #888888;
+	color: white;
+}
 .UNSUPPORTED {
 	background-color: #888888;
 	color: white;
