@@ -1,5 +1,5 @@
 if [ -z "$1" ]; then
-  current=Y2025
+  current=Y2026
 else
   current=$1
 fi
