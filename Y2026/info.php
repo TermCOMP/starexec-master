@@ -20,7 +20,7 @@ $categories = [
 			'certified' => [
 			],
 		],
-                'nti' => [
+                'TRS_Standard_nti' => [
 			'type' => 'termination',
 			'dir' => 'TRS_Standard',
 			'id' => 275763,
@@ -31,5 +31,17 @@ $categories = [
 			],
 		],
 	],
+        'Termination of Programs' => [
+		'Logic Programming' => [
+			'type' => 'termination',
+			'dir' => 'Logic_Programming',
+			'id' => 276036,
+			'participants' => [
+				'NTI+cTI' => 788377,
+			],
+			'certified' => [
+			],
+		],
+        ], 
 ];
 ?>
