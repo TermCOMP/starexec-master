@@ -10,6 +10,16 @@ $previous = 'Y2025';
 
 $categories = [
 	'Termination of Rewriting' => [
+                'TRS_Standard' => [
+			'type' => 'termination',
+			'dir' => 'TRS_Standard',
+			'id' => 275763,
+			'participants' => [
+				'NTI' => 783008,
+			],
+			'certified' => [
+			],
+		],
                 'nti' => [
 			'type' => 'termination',
 			'dir' => 'TRS_Standard',
