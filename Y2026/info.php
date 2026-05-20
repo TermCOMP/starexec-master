@@ -33,7 +33,7 @@ $categories = [
                 'Integer Transition Systems' => [
 			'type' => 'termination',
 			'dir' => 'Integer_Transition_Systems',
-			'id' => 514426,
+			'id' => 518060,
 			'participants' => [
 			],
 			'certified' => [
