@@ -30,6 +30,15 @@ $categories = [
 			'certified' => [
 			],
 		],
+                'Integer Transition Systems' => [
+			'type' => 'termination',
+			'dir' => 'Integer_Transition_Systems',
+			'id' => 514426,
+			'participants' => [
+			],
+			'certified' => [
+			],
+		],
 	],
         'Termination of Programs' => [
 		'Logic Programming' => [
