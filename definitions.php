@@ -175,6 +175,8 @@ set_time_limit(300);
 			return $matches[1];
 		} else if( $string == 'NON_POLY' ) {
 			return 1000;
+		} else if( $string == 'INF' ) {
+			return 1001;
 		} else {
 			return 0;
 		}
@@ -184,9 +186,7 @@ set_time_limit(300);
 			return 0;
 		} else if( preg_match( '/O\\(n\\^([0-9]+)\\)/', $string, $matches ) ) {
 			return $matches[1];
-		} else if( $string == 'POLY' ) {
-			return 999;
-		} else if ( $string == 'EXP' ) {
+		} else if( $string == 'FINITE' ) {
 			return 1000;
 		} else {
 			return 1001;
