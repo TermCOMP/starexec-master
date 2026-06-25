@@ -409,9 +409,9 @@ set_time_limit(300);
                         if( $low == $up ) {
 				return tightbound2str($up);
 			}
-                        $low_str = lowerbound2str($low)
+                        $low_str = lowerbound2str($low);
 			if( !empty($low_str) ) {
-				return lowerbound2str($low).'―'.upperbound2str($up);
+				return $low_str.'―'.upperbound2str($up);
 			}
                         return upperbound2str($up);
 		}
