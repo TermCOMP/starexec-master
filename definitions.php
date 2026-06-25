@@ -409,7 +409,8 @@ set_time_limit(300);
                         if( $low == $up ) {
 				return tightbound2str($up);
 			}
-			if( array_key_exists('LOW',$claim) ) {
+                        $low_str = lowerbound2str($low)
+			if( $low_str !== '' ) {
 				return lowerbound2str($low).'―'.upperbound2str($up);
 			}
                         return upperbound2str($up);
