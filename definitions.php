@@ -158,14 +158,31 @@ set_time_limit(300);
 		return "./jobs/job_".$job_id."/".$mode."/proofs/benchmark_".$benchmark_idx."/solver_".$solver_idx.".txt";
 	}
 // For complexity
-	function bound2str( $bound ) {
+	function lowerbound2str( $bound ) {
 		switch( $bound ) {
-			case 0: return '1';
-			case 1: return 'n';
-			case 999: return 'n<sup>?</sup>';
+			case 0: return '';
+			case 1: return '&Omega;(n)';
 			case 1000: return 'NonPoly';
 			case 1001: return '&omega;';
-			default: return 'n<sup>'.$bound.'</sup>';
+			default: return '&Omega;(n<sup>'.$bound.'</sup>)';
+		}
+	}
+        function upperbound2str( $bound ) {
+		switch( $bound ) {
+			case 0: return '&Theta;(1)';
+			case 1: return 'O(n)';
+			case 1000: return 'Finite';
+                        case 1001: return '';
+			default: return 'O(n<sup>'.$bound.'</sup>)';
+		}
+	}
+        function tightbound2str( $bound ) {
+		switch( $bound ) {
+			case 0: return '&Theta;(1)';
+			case 1: return '&Theta;(n)';
+			case 1000: return 'NonPoly-Finite';
+			case 1001: return '&omega;';
+			default: return '&Theta;(n<sup>'.$bound.'</sup>)';
 		}
 	}
 	function str2lower( $string ) {
@@ -388,18 +405,17 @@ set_time_limit(300);
 		}
 		if( array_key_exists('UP',$claim) ) {
 			$up = $claim['UP'];
-			$low = array_key_exists('LOW',$claim) ? $claim['LOW'] : 0;
-			if( $low == $up ) {
-				return '&Theta;('.bound2str($up).')';
+                        $low = array_key_exists('LOW',$claim) ? 0 : $claim['LOW'];
+                        if( $low == $up ) {
+				return tightbound2str($up);
 			}
-			return ($low == 0 ? '' : '&Omega;('.bound2str($low).')').'―'.($up == 999 ? 'POLY' : ($up == 1000 ? 'EXP' : 'O('.bound2str($up).')'));
+			if( array_key_exists('LOW',$claim) ) {
+				return lowerbound2str($low).'―'.upperbound2str($up);
+			}
+                        return upperbound2str($up);
 		}
 		if( array_key_exists('LOW',$claim) ) {
-			$low = $claim['LOW'];
-			if( $low == 1000 ) {
-				return 'NON_POLY';
-			}
-			return '&Omega;('.bound2str($low).')―';
+			return lowerbound2str($claim['LOW']);
 		}
 		foreach( ['YES', 'SAST','PAST', 'AST'] as $key ) {
 			if( array_key_exists($key,$claim) ) {
