@@ -143,6 +143,14 @@ div.category {
 	background-color:#60F0A0;
 	color: black;
 }
+.Non-SAST {
+	background-color:#60F0A0;
+	color: black;
+}
+.Non-AST {
+	background-color:#208020;
+	color: black;
+}
 .PAST {
 	background-color:#008400;
 	color: black;
