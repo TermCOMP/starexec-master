@@ -222,20 +222,20 @@ set_time_limit(300);
 		if( $str == 'YES' || $str == 'NO' ) {
 			return [ $str => 1 ];
 		}
-		if ( $str == 'SAST' ) {
+		if ( preg_match( '.*SAST.*', $str ) ) {
 			$ret = [];
 			$ret['SAST'] = 1;
 			$ret['PAST'] = 1;
 			$ret['AST'] = 1;
 			return $ret;
 		}
-		if ( $str == 'PAST' ) {
+		if ( preg_match( '.*PAST.*', $str ) ) {
 			$ret = [];
 			$ret['PAST'] = 1;
 			$ret['AST'] = 1;
 			return $ret;
 		}
-		if ( $str == 'AST' ) {
+		if ( preg_match( '.*AST.*', $str ) ) {
 			return [ $str => 1 ];
 		}
 		if( preg_match( '/WORST_CASE\\(\\s*(.+)\\s*,\\s*(.+)\\s*\\)\s*/', $str, $matches ) || preg_match( '/YES\\(\\s*(.+)\\s*,\\s*(.+)\\s*\\)\s*/', $str, $matches ) ) {
