@@ -489,13 +489,13 @@ set_time_limit(300);
 			return $pre.'SAST';
 		}
                 if(	array_key_exists('Non-AST',$claim) ) {
-			return $pre.'NonAST';
+			return $pre.'NON.AST';
 		}
                 if(	array_key_exists('AST',$claim) ) {
 			return $pre.'AST';
 		}
 		if(	array_key_exists('Non-SAST',$claim) ) {
-			return $pre.'NonSAST';
+			return $pre.'NON.SAST';
 		}
 		if( array_key_exists('error',$claim) ) {
 			return 'error';

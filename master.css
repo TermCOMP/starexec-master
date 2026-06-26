@@ -143,12 +143,12 @@ div.category {
 	background-color:#60F0A0;
 	color: black;
 }
-.NonSAST {
+.NON.SAST {
 	background-color:#60F0A0;
 	color: black;
 }
-.NonAST {
-	background-color:#208020;
+.NON.AST {
+	background-color:#008400;
 	color: black;
 }
 .PAST {
