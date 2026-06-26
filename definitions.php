@@ -585,6 +585,10 @@ set_time_limit(300);
 		if( $SAST > 0 ) {
 			$vbs['SAST'] = 1;
 		}
+                $AST = $claims['AST'];
+		if( $AST > 0 ) {
+			$vbs['AST'] = 1;
+		}
 		$NONSAST = $claims['Non-SAST'];
 		if( $NONSAST > 0 ) {
 			$vbs['Non-SAST'] = 1;
