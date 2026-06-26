@@ -224,17 +224,15 @@ set_time_limit(300);
 			return [ $str => 1 ];
 		}
 		if ( preg_match( '/.*AST.*/', $str ) ) {
+			$ret = [];
 			if ( preg_match( '/WORST_CASE\\(Non-SAST.*/', $str ) ) {
-				$ret = [];
 				$ret['Non-SAST'] = 1;
 			}
 			if ( preg_match( '/.*SAST\\).*/', $str ) ) {
-				$ret = [];
 				$ret['SAST'] = 1;
 				$ret['AST'] = 1;
 			}
 			if ( preg_match( '/WORST_CASE\\(Non-AST.*/', $str ) ) {
-				$ret = [];
 				$ret['Non-AST'] = 1;
 				$ret['Non-SAST'] = 1;
 			}
@@ -433,32 +431,32 @@ set_time_limit(300);
 		if( array_key_exists('LOW',$claim) ) {
 			return lowerbound2str($claim['LOW']);
 		}
-                if( array_key_exists('YES',$claim) ) {
+		if( array_key_exists('YES',$claim) ) {
 			return 'YES';
 		}
-                $low = '?';
-                if ( array_key_exists('Non-SAST',$claim) ) {
-                        $low = 'Non-SAST';
-                }
-                if ( array_key_exists('Non-AST',$claim) ) {
-                        $low = 'Non-AST';
-                }
-                $up = '?';
-                if ( array_key_exists('AST',$claim) ) {
-                        $up = 'AST';
-                }
-                if ( array_key_exists('SAST',$claim) ) {
-                        $up = 'SAST';
-                }
-                if ( $low != '?' && $up != '?' ) {
-                        return $low.','.$up;
-                }
-                if ( $low != '?' ) {
-                        return $low;
-                }
-                if ( $up != '?' ) {
-                        return $up;
-                }
+		$low = '?';
+		if ( array_key_exists('Non-SAST',$claim) ) {
+			$low = 'Non-SAST';
+		}
+		if ( array_key_exists('Non-AST',$claim) ) {
+			$low = 'Non-AST';
+		}
+		$up = '?';
+		if ( array_key_exists('AST',$claim) ) {
+			$up = 'AST';
+		}
+		if ( array_key_exists('SAST',$claim) ) {
+			$up = 'SAST';
+		}
+		if ( $low != '?' && $up != '?' ) {
+			return $low.','.$up;
+		}
+		if ( $low != '?' ) {
+			return $low;
+		}
+		if ( $up != '?' ) {
+			return $up;
+		}
 		return 'MAYBE';
 	}
 	function cert2str($cert) {
@@ -493,7 +491,7 @@ set_time_limit(300);
 		if(	array_key_exists('AST',$claim) ) {
 			return $pre.'AST';
 		}
-                if(	array_key_exists('Non-SAST',$claim) ) {
+		if(	array_key_exists('Non-SAST',$claim) ) {
 			return $pre.'Non-SAST';
 		}
 		if(	array_key_exists('Non-AST',$claim) ) {
