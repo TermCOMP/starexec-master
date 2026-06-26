@@ -58,7 +58,8 @@ set_time_limit(300);
 		'UNSUPPORTED LOW' => [ 'text' => 'LOW', 'bar' => true, 'class' => 'score UNSUPPORTED LOW' ],
 		'YES' => [ 'text' => 'YES', 'bar' => true, 'class' => 'score YES' ],
 		'SAST' => [ 'text' => 'SAST', 'bar' => true, 'class' => 'score SAST' ],
-		'PAST' => [ 'text' => 'PAST', 'bar' => true, 'class' => 'score PAST' ],
+		'Non-SAST' => [ 'text' => 'Non-SAST', 'bar' => true, 'class' => 'score Non-SAST' ],
+		'Non-AST' => [ 'text' => 'Non-AST', 'bar' => true, 'class' => 'score Non-AST' ],
 		'AST' => [ 'text' => 'AST', 'bar' => true, 'class' => 'score AST' ],
 		'NO' => [ 'text' => 'NO', 'bar' => true, 'class' => 'score NO' ],
 		'UP' => [ 'text' => 'UP', 'bar' => true, 'class' => 'score UP' ],
@@ -167,16 +168,16 @@ set_time_limit(300);
 			default: return '&Omega;(n<sup>'.$bound.'</sup>)';
 		}
 	}
-        function upperbound2str( $bound ) {
+	function upperbound2str( $bound ) {
 		switch( $bound ) {
 			case 0: return '&Theta;(1)';
 			case 1: return 'O(n)';
 			case 1000: return 'Finite';
-                        case 1001: return '';
+			case 1001: return '';
 			default: return 'O(n<sup>'.$bound.'</sup>)';
 		}
 	}
-        function tightbound2str( $bound ) {
+	function tightbound2str( $bound ) {
 		switch( $bound ) {
 			case 0: return '&Theta;(1)';
 			case 1: return '&Theta;(n)';
@@ -222,21 +223,25 @@ set_time_limit(300);
 		if( $str == 'YES' || $str == 'NO' ) {
 			return [ $str => 1 ];
 		}
-		if ( preg_match( '.*SAST.*', $str ) ) {
-			$ret = [];
-			$ret['SAST'] = 1;
-			$ret['PAST'] = 1;
-			$ret['AST'] = 1;
+		if ( preg_match( '/.*AST.*/', $str ) ) {
+			if ( preg_match( '/WORST_CASE\\(Non-SAST.*/', $str ) ) {
+				$ret = [];
+				$ret['Non-SAST'] = 1;
+			}
+			if ( preg_match( '/.*SAST\\).*/', $str ) ) {
+				$ret = [];
+				$ret['SAST'] = 1;
+				$ret['AST'] = 1;
+			}
+			if ( preg_match( '/WORST_CASE\\(Non-AST.*/', $str ) ) {
+				$ret = [];
+				$ret['Non-AST'] = 1;
+				$ret['Non-SAST'] = 1;
+			}
+			if ( preg_match( '/.*AST\\).*/', $str ) ) {
+				$ret['AST'] = 1;
+			}
 			return $ret;
-		}
-		if ( preg_match( '.*PAST.*', $str ) ) {
-			$ret = [];
-			$ret['PAST'] = 1;
-			$ret['AST'] = 1;
-			return $ret;
-		}
-		if ( preg_match( '.*AST.*', $str ) ) {
-			return [ $str => 1 ];
 		}
 		if( preg_match( '/WORST_CASE\\(\\s*(.+)\\s*,\\s*(.+)\\s*\\)\s*/', $str, $matches ) || preg_match( '/YES\\(\\s*(.+)\\s*,\\s*(.+)\\s*\\)\s*/', $str, $matches ) ) {
 			$ret = [];
@@ -266,8 +271,9 @@ set_time_limit(300);
 		$claims['miss'] = 0;
 		$claims['togo'] = 0;
 		$claims['SAST'] = 0;
-		$claims['PAST'] = 0;
+		$claims['Non-SAST'] = 0;
 		$claims['AST'] = 0;
+		$claims['Non-AST'] = 0;
 	}
 	function add_claim(&$claims,$claim) {
 		foreach( ['MAYBE','timeout','memout','error'] as $key ) {
@@ -276,7 +282,7 @@ set_time_limit(300);
 				return;
 			}
 		}
-		foreach( ['YES','NO', 'SAST','PAST', 'AST'] as $key ) {
+		foreach( ['YES','NO', 'SAST', 'Non-SAST', 'AST', 'Non-AST'] as $key ) {
 			if( array_key_exists($key,$claim) ) {
 				$claims[$key]++;
 			}
@@ -375,13 +381,13 @@ set_time_limit(300);
 			if( $past_claim != null && !array_key_exists('SAST',$past_claim) ) {
 				$ret['news']++;
 			}
-		} else if ( array_key_exists('PAST',$claim) ) {
+		} else if ( array_key_exists('Non-SAST',$claim) ) {
 			if (!$cert_failed) {
 				$ret['score'] += 1.5;
 			}
 			$ret['miss']--;
-			$ret[$pre.'PAST'] = 1;
-			if( $past_claim != null && !array_key_exists('PAST',$past_claim) && !array_key_exists('SAST',$past_claim) ) {
+			$ret[$pre.'Non-SAST'] = 1;
+			if( $past_claim != null && !array_key_exists('Non-SAST',$past_claim) && !array_key_exists('Non-AST',$past_claim) ) {
 				$ret['news']++;
 			}
 		} else if ( array_key_exists('AST',$claim) ) {
@@ -390,7 +396,16 @@ set_time_limit(300);
 			}
 			$ret['miss']--;
 			$ret[$pre.'AST'] = 1;
-			if( $past_claim != null && !array_key_exists('AST',$past_claim) && !array_key_exists('PAST',$past_claim) && !array_key_exists('SAST',$past_claim) ) {
+			if( $past_claim != null && !array_key_exists('AST',$past_claim) && !array_key_exists('SAST',$past_claim) ) {
+				$ret['news']++;
+			}
+		} else if ( array_key_exists('Non-AST',$claim) ) {
+			if (!$cert_failed) {
+				$ret['score'] += 1;
+			}
+			$ret['miss']--;
+			$ret[$pre.'Non-AST'] = 1;
+			if( $past_claim != null && !array_key_exists('Non-AST',$past_claim) ) {
 				$ret['news']++;
 			}
 		}
@@ -405,20 +420,20 @@ set_time_limit(300);
 		}
 		if( array_key_exists('UP',$claim) ) {
 			$up = $claim['UP'];
-                        $low = array_key_exists('LOW',$claim) ? $claim['LOW'] : 0;
-                        if( $low == $up ) {
+			$low = array_key_exists('LOW',$claim) ? $claim['LOW'] : 0;
+			if( $low == $up ) {
 				return tightbound2str($up);
 			}
-                        $low_str = lowerbound2str($low);
+			$low_str = lowerbound2str($low);
 			if( !empty($low_str) ) {
 				return $low_str.'―'.upperbound2str($up);
 			}
-                        return upperbound2str($up);
+			return upperbound2str($up);
 		}
 		if( array_key_exists('LOW',$claim) ) {
 			return lowerbound2str($claim['LOW']);
 		}
-		foreach( ['YES', 'SAST','PAST', 'AST'] as $key ) {
+		foreach( ['YES', 'SAST', 'AST', 'Non-AST', 'Non-SAST'] as $key ) {
 			if( array_key_exists($key,$claim) ) {
 				return $key;
 			}
@@ -454,11 +469,14 @@ set_time_limit(300);
 		if(	array_key_exists('SAST',$claim) ) {
 			return $pre.'SAST';
 		}
-		if(	array_key_exists('PAST',$claim) ) {
-			return $pre.'PAST';
+		if(	array_key_exists('Non-SAST',$claim) ) {
+			return $pre.'Non-SAST';
 		}
 		if(	array_key_exists('AST',$claim) ) {
 			return $pre.'AST';
+		}
+		if(	array_key_exists('Non-AST',$claim) ) {
+			return $pre.'Non-AST';
 		}
 		if( array_key_exists('error',$claim) ) {
 			return 'error';
@@ -548,13 +566,13 @@ set_time_limit(300);
 		if( $SAST > 0 ) {
 			$vbs['SAST'] = 1;
 		}
-		$PAST = $claims['PAST'];
-		if( $PAST > 0 ) {
-			$vbs['PAST'] = 1;
+		$NONSAST = $claims['Non-SAST'];
+		if( $NONSAST > 0 ) {
+			$vbs['Non-SAST'] = 1;
 		}
-		$AST = $claims['AST'];
-		if( $AST > 0 ) {
-			$vbs['AST'] = 1;
+		$NONAST = $claims['Non-AST'];
+		if( $NONAST > 0 ) {
+			$vbs['Non-AST'] = 1;
 		}
 		$UP = $claims['UP'];
 		$LOW = $claims['LOW'];
@@ -580,9 +598,9 @@ set_time_limit(300);
 			$vLOW = count(array_unique($LOW));
 		}
 		$conflicting = ( $YES > 0 && $NO > 0 ) || isset($minUP) && $minUP < $maxLOW;
-		$interesting = ( ( $YES > 0 || $NO > 0 || $SAST > 0 || $PAST > 0 || $AST > 0 ) && $MAYBE > 0) || $vUP > 1 || $vLOW > 1;
+		$interesting = ( ( $YES > 0 || $NO > 0 || $SAST > 0 || $AST > 0 || $NONSAST > 0 || $NONAST > 0 ) && $MAYBE > 0) || $vUP > 1 || $vLOW > 1;
 		$finished = $togo == 0;
-		$unsolved = $finished && $YES == 0 && $NO == 0 && $SAST == 0 && $PAST == 0 && $AST == 0 && $nUP == 0 && $nLOW == 0;
+		$unsolved = $finished && $YES == 0 && $NO == 0 && $SAST == 0 && $AST == 0 && $NONSAST == 0 && $NONAST == 0 && $nUP == 0 && $nLOW == 0;
 		if( empty($vbs) ) {
 			$vbs['MAYBE'] = 1;// we need to add MAYBE for JSON-medium data transportation
 		}
