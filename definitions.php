@@ -456,7 +456,7 @@ set_time_limit(300);
                 if ( $low != '?' ) {
                         return $low;
                 }
-                if ( up != '?' ) {
+                if ( $up != '?' ) {
                         return $up;
                 }
 		return 'MAYBE';
