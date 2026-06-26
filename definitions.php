@@ -433,11 +433,32 @@ set_time_limit(300);
 		if( array_key_exists('LOW',$claim) ) {
 			return lowerbound2str($claim['LOW']);
 		}
-		foreach( ['YES', 'SAST', 'AST', 'Non-AST', 'Non-SAST'] as $key ) {
-			if( array_key_exists($key,$claim) ) {
-				return $key;
-			}
+                if( array_key_exists('YES',$claim) ) {
+			return 'YES';
 		}
+                $low = '?';
+                if ( array_key_exists('Non-SAST',$claim) ) {
+                        $low = 'Non-SAST';
+                }
+                if ( array_key_exists('Non-AST',$claim) ) {
+                        $low = 'Non-AST';
+                }
+                $up = '?';
+                if ( array_key_exists('AST',$claim) ) {
+                        $up = 'AST';
+                }
+                if ( array_key_exists('SAST',$claim) ) {
+                        $up = 'SAST';
+                }
+                if ( $low != '?' && $up != '?' ) {
+                        return $low.','.$up;
+                }
+                if ( $low != '?' ) {
+                        return $low;
+                }
+                if ( up != '?' ) {
+                        return $up;
+                }
 		return 'MAYBE';
 	}
 	function cert2str($cert) {
