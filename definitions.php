@@ -405,7 +405,7 @@ set_time_limit(300);
 		}
 		if( array_key_exists('UP',$claim) ) {
 			$up = $claim['UP'];
-                        $low = array_key_exists('LOW',$claim) ? 0 : $claim['LOW'];
+                        $low = array_key_exists('LOW',$claim) ? $claim['LOW'] : 0;
                         if( $low == $up ) {
 				return tightbound2str($up);
 			}
