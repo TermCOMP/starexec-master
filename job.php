@@ -44,11 +44,11 @@
 	$participants = [];
 	$sum = [];
 	for( $i = 0; $i < $jobidc; $i++ ) {
-        $files = glob("./jobs/job_" . $jobids[$i] . "/results/*");
-        foreach ($files as $file) {
-            parse_results($file,$bm_prefix,$results,$participants,$i);
-            $sum[$i] = new_scores();
-        }
+	$files = glob("./jobs/job_" . $jobids[$i] . "/results/*");
+	foreach ($files as $file) {
+	    parse_results($file,$bm_prefix,$results,$participants,$i);
+	    $sum[$i] = new_scores();
+	}
 	}
 	// virtual best solver
 	$vbs = new_scores();
@@ -102,56 +102,57 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 <?php
 
 	function makeFilterField($i) {
-		echo '   <select id="filter'.$i.'" oninput="filteredTable.refresh()">'.PHP_EOL.
-		     '    <option value="">--</option>'.PHP_EOL.
-		     '    <option value="YES">YES</option>'.PHP_EOL.
-		     '    <option value="NO">NO</option>'.PHP_EOL.
-		     '    <option value="MAYBE">MAYBE</option>'.PHP_EOL.
-		     '    <option value="timeout">timeout</option>'.PHP_EOL.
-		     '    <option value="memout">memout</option>'.PHP_EOL.
-		     '    <option value="REJECTED">REJECTED</option>'.PHP_EOL.
-		     '    <option value="error">error</option>'.PHP_EOL.
-		     '   </select>'.PHP_EOL.
-		     '   <script>filteredTable.register('.$i.',"filter'.$i.'");</script>'.PHP_EOL;
+		echo '	 <select id="filter'.$i.'" oninput="filteredTable.refresh()">'.PHP_EOL.
+		     '	  <option value="">--</option>'.PHP_EOL.
+		     '	  <option value="YES">YES</option>'.PHP_EOL.
+		     '	  <option value="NO">NO</option>'.PHP_EOL.
+		     '	  <option value="MAYBE">MAYBE</option>'.PHP_EOL.
+		     '	  <option value="timeout">timeout</option>'.PHP_EOL.
+		     '	  <option value="memout">memout</option>'.PHP_EOL.
+		     '	  <option value="REJECTED">REJECTED</option>'.PHP_EOL.
+		     '	  <option value="error">error</option>'.PHP_EOL.
+		     '	 </select>'.PHP_EOL.
+		     '	 <script>filteredTable.register('.$i.',"filter'.$i.'");</script>'.PHP_EOL;
 	}
 
 	// 2nd column is for the virtual best solver
-	echo '  <th>VBS'.PHP_EOL;
+	echo '	<th>VBS'.PHP_EOL;
 	makeFilterField(2);
 	$i = 3;
 	foreach( $participants as $configid => &$p ) {
-		echo '  <th>'.$p['solver'];
-        if (isCert($configid)) {
-            echo ' (cert)';
-        }
-        echo PHP_EOL;
+		echo '	<th>'.$p['solver'];
+	if (isCert($configid)) {
+	    echo ' (cert)';
+	}
+	echo PHP_EOL;
 		makeFilterField($i);
 		$i++;
 	}
 	// the last column is for past results
 	if( $past_claims != null ) {
-		echo '  <th>~'.$past_competition.PHP_EOL;
+		echo '	<th>~'.$past_competition.PHP_EOL;
 		makeFilterField($i);
 	}
 
 	$conflicts = 0;
+	ksort($results);
 	foreach( $results as $bm_name => $records ) {
 		$bench = [];
 		init_claim_set($claims); /* collects results for each benchmark */
-        $path_info = pathinfo($bm_name);
-        $past_bm_name = $bm_name;
-        if (str_ends_with($bm_name, '.ari')) {
-            $smt2 = $path_info['dirname'].'/'.basename($bm_name, '.ari').'.smt2';
-            $koat = $path_info['dirname'].'/'.basename($bm_name, '.ari').'.koat';
-            $xml = $path_info['dirname'].'/'.basename($bm_name, '.ari').'.xml';
-            if (array_key_exists($smt2,$past_claims)) {
-                $past_bm_name = $smt2;
-            } else if (array_key_exists($koat,$past_claims)) {
-                $past_bm_name = $koat;
-            } else if (array_key_exists($xml,$past_claims)) {
-                $past_bm_name = $xml;
-            }
-        }
+	$path_info = pathinfo($bm_name);
+	$past_bm_name = $bm_name;
+	if (str_ends_with($bm_name, '.ari')) {
+	    $smt2 = $path_info['dirname'].'/'.basename($bm_name, '.ari').'.smt2';
+	    $koat = $path_info['dirname'].'/'.basename($bm_name, '.ari').'.koat';
+	    $xml = $path_info['dirname'].'/'.basename($bm_name, '.ari').'.xml';
+	    if (array_key_exists($smt2,$past_claims)) {
+		$past_bm_name = $smt2;
+	    } else if (array_key_exists($koat,$past_claims)) {
+		$past_bm_name = $koat;
+	    } else if (array_key_exists($xml,$past_claims)) {
+		$past_bm_name = $xml;
+	    }
+	}
 		if( $past_claims != null && array_key_exists($past_bm_name,$past_claims) ) {
 			$past_claim = (array)$past_claims[$past_bm_name];
 			add_claim($claims,$past_claim);
@@ -227,23 +228,23 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 		}
 
 		$bm_url = bm2url($bm_name,$bm_name,$bm_db,$bm_prefix);
-		echo '  <td class=benchmark>'.PHP_EOL.
-		     '   <a href="'.$bm_url.'">'.format_bm($bm_name).'</a></td>'.PHP_EOL.
-		     '  <td style="display:none">'.$d['key'];
+		echo '	<td class=benchmark>'.PHP_EOL.
+		     '	 <a href="'.$bm_url.'">'.format_bm($bm_name).'</a></td>'.PHP_EOL.
+		     '	<td style="display:none">'.$d['key'];
 		// virtual best solver
 		if( $conflicting ) {
-			echo '  <td>';
+			echo '	<td>';
 		} else {
 			$claim = $d['vbs'];
 			$vbs_results[$bm_name] = $claim;
-			echo '  <td class="'.claim2class($claim,'').'">'.claim2str($claim).PHP_EOL;
+			echo '	<td class="'.claim2class($claim,'').'">'.claim2str($claim).PHP_EOL;
 			$scores = claim2scores($claim,'',$max_score,$past_claim);
 			foreach( $scores as $key => $val ) {
-                if (!array_key_exists($key,$vbs)) {
-                    $vbs[$key] = $val;
-                } else {
-                    $vbs[$key] += $val;
-                }
+		if (!array_key_exists($key,$vbs)) {
+		    $vbs[$key] = $val;
+		} else {
+		    $vbs[$key] += $val;
+		}
 			}
 		}
 		// solvers
@@ -258,24 +259,24 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			$outurl = mkouturl($jobid, $benchidx, $solveridx, $me);
 			$errurl = mkerrurl($jobid, $benchidx, $solveridx, $me);
 			if( status2complete($status) ) {
-				echo '  <td class="' . claim2class($claim,$cert) . '">'.PHP_EOL.
-				     '   <a href="'. "../". $outurl .'">' . claim2str($claim) . '</a>'.PHP_EOL.
-                     ( 0 == filesize( $errurl )  ? '' : '   <a href="'. "../". $errurl .'">[err]</a>'.PHP_EOL).
-				     '    <span class="time">' .
-                                     # $my['cpu'] . '/' .
-                                     intdiv($my['time'],1000) . '.' . ($my['time']%1000) . '</span>'.PHP_EOL;
+				echo '	<td class="' . claim2class($claim,$cert) . '">'.PHP_EOL.
+				     '	 <a href="'. "../". $outurl .'">' . claim2str($claim) . '</a>'.PHP_EOL.
+		     ( 0 == filesize( $errurl )	 ? '' : '   <a href="'. "../". $errurl .'">[err]</a>'.PHP_EOL).
+				     '	  <span class="time">' .
+				     # $my['cpu'] . '/' .
+				     intdiv($my['time'],1000) . '.' . ($my['time']%1000) . '</span>'.PHP_EOL;
 				if( $cert ) {
-					echo '    '.cert2str($cert).'<span class="time">'. intdiv($certtime,1000) . '.' . ($certtime%1000) . '</span>'.PHP_EOL;
+					echo '	  '.cert2str($cert).'<span class="time">'. intdiv($certtime,1000) . '.' . ($certtime%1000) . '</span>'.PHP_EOL;
 				}
-            } else if ( status2error($status) ) {
-                echo '  <td class="' . status2class($status) . '"><a href="'. "../". $errurl .'">error</a></td>' . PHP_EOL;
+	    } else if ( status2error($status) ) {
+		echo '	<td class="' . status2class($status) . '"><a href="'. "../". $errurl .'">error</a></td>' . PHP_EOL;
 			} else {
-				echo '  <td class="' . status2class($status) . '">' . $status . PHP_EOL;
+				echo '	<td class="' . status2class($status) . '">' . $status . PHP_EOL;
 			}
 		}
 		// past result
 		if( $past_claim != null ) {
-			echo '  <td class="'.claim2class($past_claim,'').'">'.claim2str($past_claim).PHP_EOL;
+			echo '	<td class="'.claim2class($past_claim,'').'">'.claim2str($past_claim).PHP_EOL;
 		}
 	}
 	echo ' <tr><th>'.PHP_EOL;
@@ -285,17 +286,17 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 	$max_score = max(array_map(function($p){return $p['score'];},$participants));
 	// vbs
 	$vbs_score = $vbs['score'];
-	echo '  <th>'.number_format($vbs_score,2);
+	echo '	<th>'.number_format($vbs_score,2);
 	foreach( $participants as &$p ) {
 #		$p['cpu'] = (int)$p['cpu'];// eliminate round errors
 		$p['time'] = (int)$p['time'];// eliminate round errors
 		$score = $p['score'];
-        if (empty($vbs_score)) {
-            $p['normalized'] = 0;
-        } else {
-            $p['normalized'] = $score / $vbs_score;
-        }
-		echo '  <th>'.number_format($score,2);
+	if (empty($vbs_score)) {
+	    $p['normalized'] = 0;
+	} else {
+	    $p['normalized'] = $score / $vbs_score;
+	}
+		echo '	<th>'.number_format($score,2);
 		$summer = &$sum[$p['layer']];
 		$summer['done'] += $p['done'];
 		$summer['togo'] += $p['togo'];
