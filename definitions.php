@@ -358,8 +358,10 @@ set_time_limit(300);
                         $ret['miss'] -= $lowscore;
                         $ret[$pre.'LOW'] = $lowscore;
                         if( $past_claim != null ) {
-                                if( !array_key_exists('LOW',$past_claim) || $past_claim['LOW'] < $claim['LOW'] ) {
-                                        $ret['news']++;
+                                if (!array_key_exists('NO',$past_claim)) {
+                                        if( !array_key_exists('LOW',$past_claim) || $past_claim['LOW'] < $claim['LOW'] ) {
+                                                $ret['news']++;
+                                        }
                                 }
                         }
                 }
