@@ -294,13 +294,37 @@ set_time_limit(300);
 	function add_claim_togo(&$claims) {
 			$claims['togo']++;
 	}
-	function up2score($up) {
-		return 1 + .5**$up;
+	function up2score($up, $claims) {
+		if ($up == 1001) {
+			return 0;
+		}
+		$better = [];
+		$worse = [1001];
+		foreach ( $claims["UP"] as $other ) {
+			if ($other < $up && !in_array($other, $better)) {
+				$better[] = $other;
+			} else if ($other > $up && !in_array($other, $worse)) {
+				$worse[] = $other;
+			}
+		}
+		return count($worse) / (count($better) + count($worse));
 	}
-	function low2score($low) {
-		return $low == 1000 ? 1.0 : 1.0 - .5**$low;
+	function low2score($low, $claims) {
+		if ($low == 0) {
+			return 0;
+		}
+		$better = [];
+		$worse = [0];
+		foreach ( $claims["LOW"] as $other ) {
+			if ($other > $low && !in_array($other, $better)) {
+				$better[] = $other;
+			} else if ($other < $low && !in_array($other, $worse)) {
+				$worse[] = $other;
+			}
+		}
+		return count($worse) / (count($better) + count($worse));
 	}
-	function claim2scores($claim,$cert,$max_score,$past_claim) {
+	function claim2scores($claim,$claims,$cert,$max_score,$past_claim) {
 		$ret = ['score' => 0, 'miss' => $max_score, 'news' => 0 ];
 		if( array_key_exists('timeout',$claim) ) {
 			$ret['timeout'] = 1;
@@ -327,38 +351,28 @@ set_time_limit(300);
 				$ret['news']++;
 			}
 		} else if( array_key_exists('LOW',$claim) ) {
-			$lowscore = low2score($claim['LOW']);
+			$lowscore = low2score($claim['LOW'], $claims);
 			if (!$cert_failed) {
 				$ret['score'] += $lowscore;
 			}
 			$ret['miss'] -= $lowscore;
 			$ret[$pre.'LOW'] = $lowscore;
 			if( $past_claim != null ) {
-				if( array_key_exists('LOW',$past_claim) ) {
-					$diff = $lowscore - low2score($past_claim['LOW']);
-					if( $diff > 0 ) {
-						$ret['news'] += $diff;
-					}
-				} else {
-					$ret['news'] += $lowscore;
+				if( !array_key_exists('LOW',$past_claim) || $past_claim['LOW'] < $claim['LOW'] ) {
+					$ret['news']++;
 				}
 			}
 		}
 		if( array_key_exists('UP',$claim) ) {
 			if (!$cert_failed) {
-				$upscore = up2score($claim['UP']);
+				$upscore = up2score($claim['UP'], $claims);
 			}
 			$ret['score'] += $upscore;
 			$ret['miss'] -= $upscore;
 			$ret[$pre.'UP'] = $upscore;
 			if( $past_claim != null ) {
-				if( array_key_exists('UP',$past_claim) ) {
-					$diff = $upscore - up2score($past_claim['UP']);
-					if( $diff > 0 ) {
-						$ret['news'] += $diff;
-					}
-				} else {
-					$ret['news'] += $upscore;
+				if( !array_key_exists('UP',$past_claim) || $past_claim['UP'] > $claim['UP'] ) {
+					$ret['news']++;
 				}
 			}
 		} else if( array_key_exists('YES',$claim) ) {
@@ -488,10 +502,10 @@ set_time_limit(300);
 		if(	array_key_exists('SAST',$claim) ) {
 			return $pre.'SAST';
 		}
-                if(	array_key_exists('Non-AST',$claim) ) {
+		if(	array_key_exists('Non-AST',$claim) ) {
 			return $pre.'NONAST';
 		}
-                if(	array_key_exists('AST',$claim) ) {
+		if(	array_key_exists('AST',$claim) ) {
 			return $pre.'AST';
 		}
 		if(	array_key_exists('Non-SAST',$claim) ) {
@@ -585,7 +599,7 @@ set_time_limit(300);
 		if( $SAST > 0 ) {
 			$vbs['SAST'] = 1;
 		}
-                $AST = $claims['AST'];
+		$AST = $claims['AST'];
 		if( $AST > 0 ) {
 			$vbs['AST'] = 1;
 		}

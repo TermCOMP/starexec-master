@@ -155,7 +155,6 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 	}
 		if( $past_claims != null && array_key_exists($past_bm_name,$past_claims) ) {
 			$past_claim = (array)$past_claims[$past_bm_name];
-			add_claim($claims,$past_claim);
 		} else {
 			$past_claim = null;
 		}
@@ -190,14 +189,8 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 					status2error($status) ? error_claim() :
 					(status2timeout($status) ? timeout_claim() :
 					(status2memout($status) ? memout_claim() : str2claim($record['result'])));
-				if( in_array($pair,$penalized_pairs) ) {
-					$scores = [ 'score' => -10, 'wrong' => 10, 'miss' => 20 ];
-				} else {
+				if( !in_array($pair,$penalized_pairs) ) {
 					add_claim($claims,$claim);
-					$scores = claim2scores($claim,$cert,$max_score,$past_claim);
-				}
-				foreach( $scores as $key => $val ) {
-					$p[$key] += $val;
 				}
 			} else {
 				$p['togo'] += 1;
@@ -217,6 +210,28 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 				'solver idx' => $solveridx,
 				'claim' => $claim,
 			];
+		}
+		// compute scores
+		foreach( $records['participants'] as $configid => $record ) {
+		    $p =& $participants[$configid];
+		    $benchidx = $record['benchmark idx'];
+		    $solveridx = $record['solver idx'];
+		    $pair = array($benchidx, $solveridx);
+		    if( status2finished($status) ) {
+			if( in_array($pair,$penalized_pairs) ) {
+			    $scores = [ 'score' => -10, 'wrong' => 10, 'miss' => 20 ];
+			} else {
+			    $claim = $bench[$configid]['claim'];
+			    $cert = $bench[$configid]['cert'];
+			    $scores = claim2scores($claim,$claims,$cert,$max_score,$past_claim);
+			}
+			foreach( $scores as $key => $val ) {
+			    $p[$key] += $val;
+			}
+		    }
+		}
+		if ($past_claim != null) {
+		   add_claim($claims,$past_claim);
 		}
 		$d = claims2description( $claims, $past_claim );
 		$conflicting = $d['conflicting'];
@@ -238,13 +253,13 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
 			$claim = $d['vbs'];
 			$vbs_results[$bm_name] = $claim;
 			echo '	<td class="'.claim2class($claim,'').'">'.claim2str($claim).PHP_EOL;
-			$scores = claim2scores($claim,'',$max_score,$past_claim);
+			$scores = claim2scores($claim,$claims,'',$max_score,$past_claim);
 			foreach( $scores as $key => $val ) {
-		if (!array_key_exists($key,$vbs)) {
-		    $vbs[$key] = $val;
-		} else {
-		    $vbs[$key] += $val;
-		}
+			    if (!array_key_exists($key,$vbs)) {
+				$vbs[$key] = $val;
+			    } else {
+				$vbs[$key] += $val;
+			    }
 			}
 		}
 		// solvers
