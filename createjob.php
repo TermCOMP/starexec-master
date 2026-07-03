@@ -24,17 +24,17 @@ foreach( make_categories($categories,$closed) as $mcat_name => $cats ) {
 echo
 '<h2>'.$mcat_name.'</h2>
 ';
-	foreach( $cats as $cat_name => $cat ) {
-		foreach(
-			[	['name' => $cat_name, 'postproc' => $cat['postproc'], 'participants' => $cat['participants'] ],
-				['name' => $cat_name.' Certified', 'postproc' => $cat['certified']['postproc'], 'participants' => $cat['certified']['participants'] ]
-			] as $job ) {
+        foreach( $cats as $cat_name => $cat ) {
+                foreach(
+                        [       ['name' => $cat_name, 'postproc' => $cat['postproc'], 'participants' => $cat['participants'] ],
+                                ['name' => $cat_name.' Certified', 'postproc' => $cat['certified']['postproc'], 'participants' => $cat['certified']['participants'] ]
+                        ] as $job ) {
             if( empty($job['postproc']) ) {
                 $job['postproc'] = $default_postproc;
             }
-			if( $job['participants'] != [] ) {
-    			$i++;
-    			echo
+                        if( $job['participants'] != [] ) {
+                        $i++;
+                        echo
 '<form method="POST" id="myform'.$i.'"
  action="https://www.starexec.org/starexec/secure/add/job"
  target="_blank">
@@ -46,7 +46,7 @@ echo
     <label>sid: <input type="number" name="sid" value='.$cat['spaceid'].'></label>
     <select name="benchmarkingFramework">
         <option value="BENCHEXEC" selected="selected">BenchExec</option>
-	    <option value="RUNSOLVER">runsolver</option>
+            <option value="RUNSOLVER">runsolver</option>
     </select>
     <label>pause: <input checked type="radio" name="pause" value="yes">yes</label>
     <label><input type="radio" name="pause" value="no" id="pause_no">no</label>
@@ -74,19 +74,19 @@ echo
     <label>postProcess: <input type="number" name="postProcess" value='. $job['postproc'] . '></label>
     <br>
 ';
-				foreach( $job['participants'] as $partname => $configid ) {
-					echo
+                                foreach( $job['participants'] as $partname => $configid ) {
+                                        echo
 '   <label>'. $partname .':
      <input type="number" name="configs" value='. $configid . '>
     </label>
 ';
-				}
-				echo
+                                }
+                                echo
 '</form><br>
 ';
-			}
-		}
-	}
+                        }
+                }
+        }
 }
 ?>
 </body>
