@@ -164,7 +164,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
                         $jobid = $record['job id'];
                         $benchidx = $record['benchmark idx'];
                         $solveridx = $record['solver idx'];
-                        $pair = array($benchidx, $solveridx);
+                        $pair = array($benchidx, $configid);
                         if( status2finished($status) ) {
 #                               $cpu = parse_time($record['cpu time']);
                                 $time = $record['wallclock time'];
@@ -216,7 +216,7 @@ var filteredTable = FilteredTable(document.getElementById("theTable"));
                     $p =& $participants[$configid];
                     $benchidx = $record['benchmark idx'];
                     $solveridx = $record['solver idx'];
-                    $pair = array($benchidx, $solveridx);
+                    $pair = array($benchidx, $configid);
                     if( status2finished($status) ) {
                         if( in_array($pair,$penalized_pairs) ) {
                             $scores = [ 'score' => -10, 'wrong' => 10, 'miss' => 20 ];
